@@ -3,8 +3,8 @@
 ## in Ubuntu 20.04
 als root:
 <pre>add-apt-repository ppa:openjdk-r/ppa
-apt update
-apt install openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless openjdk-21-source
+apt-get -y update
+apt-get -y install openjdk-21-jdk openjdk-21-jre openjdk-21-jre-headless openjdk-21-source
 </pre>
 
 ## in Ubuntu 22.04 und 24.04
