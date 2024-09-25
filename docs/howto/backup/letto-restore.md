@@ -1,3 +1,0 @@
-# Restore einer LeTTo-Sicherung
-
-# 
