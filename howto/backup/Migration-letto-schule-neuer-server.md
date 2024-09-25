@@ -1,7 +1,8 @@
 # Migration einer bestehenden Docker-Installation auf einen neuen Server
 
-* Bei dieser Variante werden sämtliche Konfigurationen des alten Servers auf den neuen Server übernommen. 
-* die DNS-Adresse des neuen Servers muss der Adresse des alten Servers entprechen 
+* Bei dieser Variante wird ein neuer Server installiert und nur die Schule importiert
+* spezielle Schul-Einstellungen werden dabei nicht übernommen, Daten und Bilder natürlich schon.
+* andere Services wie download etc. müssen separat nachinstalliert werden
 
 ## Sicherung der Daten des bestehenden Servers
 1. LeTTo-Server der Schule stoppen im Setup-Service ![img.png](img.png)
@@ -10,20 +11,23 @@
    Die Sicherung wird dann in der Datei /opt/letto/docker/storage/database-dump/letto-schulkürzel.sql  
    erscheinen - bitte Datum und Dateigröße kontrollieren.
    <pre>ls /opt/letto/docker/storage/database-dump -al</pre>
-3. Verzeichnis /opt/letto/docker in eine Datei packen <pre>tar -czf lettodocker.tgz -C /opt/letto docker</pre>
-4. Die erstellte Datei lettodocker.tgz enthält nun alle Daten die am neuen Server benötigt werden!
+3. Verzeichnis /opt/letto/docker/storage in eine Datei packen <pre>tar -czf lettostorage.tgz -C /opt/letto/docker storage</pre>
+4. Die erstellte Datei lettostorage.tgz enthält nun alle Daten die am neuen Server benötigt werden!
+5. Zum Vergleich der neuen mit der alten Installation kann man noch die Verzeichniss compose, proxy und public ebenfalls packen
+   <pre>tar -czf lettocpp.tgz -C /opt/letto/docker compose proxy public</pre>
 
 ## Den neuen Server mit Ubuntu 22.04 server installieren
 Bei einem virtuellen Server ist folgendes zu beachten.
 * Unter Linux nur vollvirtualisierte Systeme verwenden, keine LXC-Container-Virtualisierungen verwenden
 * Bei der Linux-Installation nicht die Docker-Version aus den Ubuntu oder Debian-Quellen verwenden
-* Installation des Linux-Host-Systems wie bei einer Neuinstallation 
+* Installation des Linux-Host-Systems wie bei einer Neuinstallation
 
 ## Kopieren der gesicherten Daten auf den neuen Server
 1. kopiere die am alten Server erstellte Datei lettodocker.tgz nach /opt/letto
+2. entpacke 
 2. verschiebe oder lösche den neu installierten docker-Ordner
-   * entweder löschen <pre>rm /opt/letto/docker -rf
-   * oder verschieben und später löschen <pre>mv /opt/letto/docker /opt/dockernew</pre>
+    * entweder löschen <pre>rm /opt/letto/docker -rf
+    * oder verschieben und später löschen <pre>mv /opt/letto/docker /opt/dockernew</pre>
 3. entpacke die Sicherung <pre>tar -xzf /opt/letto/lettodocker.tgz -C /opt/letto</pre>
 
 ## Initialisiere die Datenbank komplett neu (Wird zukünftig mal das Setup-Service übernehmen)
@@ -41,7 +45,7 @@ man am besten die komplette Datenbank neu.
   <pre>docker exec -it letto-mysql cua letto passwort_von_letto_aus_der_env_datei
   docker exec -it letto-mysql cua lettolti passwort_von_lettolti_aus_der_env_datei
   </pre>
-* Einspielen der Schuldatenbank einer Schule (für alle Schulen machen!) 
+* Einspielen der Schuldatenbank einer Schule (für alle Schulen machen!)
   <pre>docker exec -it letto-mysql import letto_schulkuerzel</pre>
 * Einspielen der LTI-Datenbank
   <pre>docker exec -it letto-mysql import lettolti</pre>
