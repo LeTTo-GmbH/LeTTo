@@ -36,8 +36,8 @@ footer {
 
 /* Scrollbarer Inhalt */
 .content {
-    margin-top: 70px; /* Höhe des Headers */
-    margin-bottom: 70px; /* Höhe des Footers */
+    margin-top: 75px; /* Höhe des Headers */
+    margin-bottom: 75px; /* Höhe des Footers */
     padding: 20px;
     flex: 1;
     overflow-y: auto;
