@@ -5,7 +5,7 @@
 * Sprache - Deutsch
 * Aktualisieren auf neuen Installer
 * Keyboard: German(Austria) - No dead keys <br>![img.png](img.png)
-  * Ubuntu Server <br>![img_1.png](img_1    .png)
+  * Ubuntu Server <br>![img_1.png](img_1.png)
 * Netzwerkkonfiguration einstellen
 * kein Proxy
 * Mirror belassen
