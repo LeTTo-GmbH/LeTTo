@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Suchbegriff eingeben...">
+    <ul id="results-container"></ul>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json'
+    })
+</script>

@@ -1,2 +1,16 @@
 title: "LeTTo HowTo"
 description: "HowTo's für den LeTTo-Server"
+
+# Jekyll-Plugins (Gems)
+plugins:
+  - jekyll-seo-tag   # SEO-Plugin für Meta-Tags und Suchmaschinenoptimierung
+  - jekyll-sitemap   # Sitemap-Plugin für bessere Indexierung durch Suchmaschinen
+  - jekyll-feed      # Fügt RSS-Feed-Unterstützung hinzu
+  - jekyll-paginate  # Unterstützt die Paginierung für Blog-Posts
+  - jekyll-search    # Fügt eine einfache JavaScript-Suchfunktion hinzu
+  - jekyll-archives  # Ermöglicht Archivierungsseiten, z.B. nach Jahren oder Kategorien
+
+# Konfiguration für die Suchfunktion (einfaches Suchplugin)
+search:
+  json: "/search.json"  # Pfad zur Suchdatei
+  files: [".md", ".html"]  # Welche Dateitypen durchsucht werden sollen
