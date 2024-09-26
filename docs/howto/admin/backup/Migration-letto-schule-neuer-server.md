@@ -6,12 +6,14 @@
 
 ## Sicherung der Daten des bestehenden Servers
 1. LeTTo-Server der Schule stoppen im Setup-Service ![img.png](img.png)
-2. Datenbanksicherung erstellen<pre>docker exec -it letto-mysql export letto-schulkürzel</pre>
+2. Datenbanksicherung erstellen
+   <pre>docker exec -it letto-mysql export letto-schulkürzel</pre>
    Bitte statt letto-schulkürzel den wirklichen Namen der Datenbank verwenden.
    Die Sicherung wird dann in der Datei /opt/letto/docker/storage/database-dump/letto-schulkürzel.sql  
    erscheinen - bitte Datum und Dateigröße kontrollieren.
    <pre>ls /opt/letto/docker/storage/database-dump -al</pre>
-3. Verzeichnis /opt/letto/docker/storage in eine Datei packen <pre>tar -czf lettostorage.tgz -C /opt/letto/docker storage</pre>
+3. Verzeichnis /opt/letto/docker/storage in eine Datei packen 
+   <pre>tar -czf lettostorage.tgz -C /opt/letto/docker storage</pre>
 4. Die erstellte Datei lettostorage.tgz enthält nun alle Daten die am neuen Server benötigt werden!
 5. Zum Vergleich der neuen mit der alten Installation kann man noch die Verzeichniss compose, proxy und public ebenfalls packen
    <pre>tar -czf lettocpp.tgz -C /opt/letto/docker compose proxy public</pre>
@@ -26,9 +28,12 @@ Bei einem virtuellen Server ist folgendes zu beachten.
 1. kopiere die am alten Server erstellte Datei lettodocker.tgz nach /opt/letto
 2. entpacke 
 2. verschiebe oder lösche den neu installierten docker-Ordner
-    * entweder löschen <pre>rm /opt/letto/docker -rf
-    * oder verschieben und später löschen <pre>mv /opt/letto/docker /opt/dockernew</pre>
-3. entpacke die Sicherung <pre>tar -xzf /opt/letto/lettodocker.tgz -C /opt/letto</pre>
+    * entweder löschen 
+      <pre>rm /opt/letto/docker -rf
+    * oder verschieben und später löschen 
+      <pre>mv /opt/letto/docker /opt/dockernew</pre>
+3. entpacke die Sicherung 
+   <pre>tar -xzf /opt/letto/lettodocker.tgz -C /opt/letto</pre>
 
 ## Initialisiere die Datenbank komplett neu (Wird zukünftig mal das Setup-Service übernehmen)
 Wenn das root-Passwort der neuen Installation mit dem root-Passwort der alten Installation nicht übereinstimmt initialisiert

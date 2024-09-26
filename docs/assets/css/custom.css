@@ -93,3 +93,19 @@ nav a:hover {
 nav.footer_nav a:hover {
     background-color: #555;
 }
+
+pre {
+    background-color: #2d2d2d; /* Dunkler Hintergrund */
+    color: #f8f8f2; /* Helle Schriftfarbe */
+    font-family: 'Courier New', Courier, monospace; /* Monospace-Schrift für Code */
+    font-size: 15px;
+    line-height: 1.5; /* Besserer Zeilenabstand */
+    padding: 15px; /* Abstand innerhalb des <pre>-Tags */
+    border-radius: 5px; /* Abgerundete Ecken */
+    overflow: auto; /* Scrollen bei langem Code */
+    border: 1px solid #444; /* Rahmen für den <pre>-Tag */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leichter Schatteneffekt */
+    /* Links-Einrückung */
+    margin-left: 40px; /* Abstand zur linken Seite */
+    width: calc(100% - 80px); /* Box verkleinern, damit der rechte Rand nicht abgeschnitten wird */
+}
