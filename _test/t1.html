@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopfzeile mit Bild, Titel und Links</title>
+    <style>
+        /* Allgemeine Stile */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Kopfzeilen-Styling */
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Logo-Styling */
+        .logo img {
+            height: 50px;
+            width: 50px;
+        }
+
+        /* Titel-Styling */
+        .header-title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Navigationslinks */
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Linkes Logo -->
+    <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+    </div>
+
+    <!-- Mittlerer Titel -->
+    <div class="header-title">
+        Meine Webseite
+    </div>
+
+    <!-- Rechte Navigationslinks -->
+    <nav>
+        <a href="#home">Startseite</a>
+        <a href="#about">Über Uns</a>
+        <a href="#services">Dienste</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+</body>
+</html>
