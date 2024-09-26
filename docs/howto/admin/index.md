@@ -6,7 +6,7 @@
 ### virtueller Server mit LeTTo als Docker-Konfiguration
 * [Installation von LeTTo auf einem Ubuntu 22.04 Server](./install/ubuntu-22_04/)
 ### JDK-21
-* [JDK-21 Installation auf dem Host-Linux](./install/jdk/)
+* [JDK-21 Installation auf dem Host-Linux](./install/jdk/jdk21/)
 
 ## Backup - Migration
 * [Migration eines Servers auf eine neue Hardware mit Übernahme aller Einstellungen](./backup/Migration-letto-docker-neuer-server.html)

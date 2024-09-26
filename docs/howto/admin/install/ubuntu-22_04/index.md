@@ -4,15 +4,15 @@
 * starte Ubuntu von Ubuntu-Server 22.04.4 ISO-Image
 * Sprache - Deutsch
 * Aktualisieren auf neuen Installer
-* Keyboard: German(Austria) - No dead keys ![img.png](img.png)
-  * Ubuntu Server ![img_1.png](img_1    .png)
+* Keyboard: German(Austria) - No dead keys <br>![img.png](img.png)
+  * Ubuntu Server <br>![img_1.png](img_1    .png)
 * Netzwerkkonfiguration einstellen
 * kein Proxy
 * Mirror belassen
 * use entire disk
 * Benutzer letto mit Passwort anlegen
 * ohne Ubuntu-pro
-* Install OpenSSH server![img_2.png](img_2.png)
+* Install OpenSSH server <br>![img_2.png](img_2.png)
 * kein weiteren Packages installieren (Vor allem nicht docker)
 * Nach Installation den Rechner neu starten
 ## Konfiguration
@@ -28,8 +28,7 @@ als root
 wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh
 bash ./install-letto-ubuntu-docker.sh
 </pre>
-* Verbinde über den Browser mit '''https://ipadresse:3096/config'''
-![img_4.png](img_4.png)
-* Nun sollten alle notwendigen Docker-Container heruntergeladen und installiert werden ![img_5.png](img_5.png)
+* Verbinde über den Browser mit '''https://ipadresse:3096/config''' <br>![img_4.png](img_4.png)
+* Nun sollten alle notwendigen Docker-Container heruntergeladen und installiert werden <br>![img_5.png](img_5.png)
 * Warten bis die Zeit nicht mehr nach oben zählt und dann auf "Refresh"
-* Nun sollte ein weiterer Login angefordert werden und dann das Setup in etwa so aussehen: ![img_6.png](img_6.png)
+* Nun sollte ein weiterer Login angefordert werden und dann das Setup in etwa so aussehen: <br>![img_6.png](img_6.png)

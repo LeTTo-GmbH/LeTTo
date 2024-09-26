@@ -109,3 +109,19 @@ pre {
     margin-left: 40px; /* Abstand zur linken Seite */
     width: calc(100% - 80px); /* Box verkleinern, damit der rechte Rand nicht abgeschnitten wird */
 }
+
+pre.config {
+    background-color: #fffdc7; /* Dunkler Hintergrund */
+    color: #474646; /* Helle Schriftfarbe */
+    font-family: 'Courier New', Courier, monospace; /* Monospace-Schrift für Code */
+    font-size: 15px;
+    line-height: 1.5; /* Besserer Zeilenabstand */
+    padding: 15px; /* Abstand innerhalb des <pre>-Tags */
+    border-radius: 5px; /* Abgerundete Ecken */
+    overflow: auto; /* Scrollen bei langem Code */
+    border: 1px solid #eadeb3; /* Rahmen für den <pre>-Tag */
+    box-shadow: 0 4px 8px rgba(136, 122, 73, 0.3); /* Leichter Schatteneffekt */
+    /* Links-Einrückung */
+    margin-left: 40px; /* Abstand zur linken Seite */
+    width: calc(100% - 80px); /* Box verkleinern, damit der rechte Rand nicht abgeschnitten wird */
+}
