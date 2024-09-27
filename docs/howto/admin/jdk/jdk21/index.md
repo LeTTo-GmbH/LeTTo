@@ -1,5 +1,5 @@
 # Installieren von JDK-21
-Ab rev6600 (August 2024) vom Setup-Service welches direkt am Host installiert ist muss mindestens JDK-21 
+Ab rev6600 (August 2024) vom Setup-Service, welches direkt am Host installiert ist, muss mindestens JDK-21 
 am Host installiert sein. Dies betrifft nicht die Services welche in Docker-Containern laufen da dort
 das JDK vom Container bereitgestellt wird.
 

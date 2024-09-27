@@ -23,7 +23,7 @@
 Bei einem virtuellen Server ist folgendes zu beachten.
 * Unter Linux nur vollvirtualisierte Systeme verwenden, keine LXC-Container-Virtualisierungen verwenden
 * Bei der Linux-Installation nicht die Docker-Version aus den Ubuntu oder Debian-Quellen verwenden
-* Installation des Linux-Host-Systems wie bei einer Neuinstallation
+* Installation des Linux-Host-Systems wie bei einer [Neuinstallation](/howto/admin/install)
 
 ## Kopieren der gesicherten Daten auf den neuen Server
 1. kopiere die am alten Server erstellte Datei lettodocker.tgz nach /opt/letto

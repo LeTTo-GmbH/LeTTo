@@ -6,7 +6,7 @@ Der Name der Datei ist von der Schnittstelle abhängig z.B:
   >/etc/netplan/00-installer-config.yaml
    
 ## Beispiel für manuelle Konfiguration
-<pre># Bemerkung - Netzwerk eines Rechners in einer Hyper-V
+<pre class="config"># Bemerkung - Netzwerk eines Rechners in einer Hyper-V
 network:
   ethernets:
     eth0:
