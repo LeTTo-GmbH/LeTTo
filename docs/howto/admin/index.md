@@ -1,6 +1,7 @@
 # Administrative HowTo's
 
-## [Installation](./install)
+## Installation
+* [Installation auf Linux-Server](./install)
 
 ### JDK-21
 * [JDK-21 Installation auf dem Host-Linux](./jdk/jdk21/)
