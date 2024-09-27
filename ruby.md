@@ -23,11 +23,11 @@
   <pre>echo 'source "https://rubygems.org"' > Gemfile
   echo 'gem "jekyll"' >> Gemfile
   </pre>
-* wandle mit Geany die Datei Gemfile in eine UTF-8 Datei!
+* wandle mit Geany die Datei Gemfile in eine UTF-8 Datei! 
+* Füge alle notwendigen Packete in das Gemfile ein
 * weiter im gleichen Verzeichnis
   <pre>bundle install
-  gem install jekyll-seo-tag
-  bundle install
+  bundle exec jekyll build
   </pre>
 
 

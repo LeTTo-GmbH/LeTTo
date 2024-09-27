@@ -13,3 +13,8 @@
 # compilierte Programme
 **/*.war
 **/*.jar
+
+# jekyll Ausgabe
+docs/Gemfile.lock
+docs/_site
+doc/.jekyll-cache
