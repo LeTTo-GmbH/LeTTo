@@ -1,8 +1,9 @@
-# Migration einer bestehenden Docker-Installation auf einen neuen Server
+# Migration einer bestehenden Docker-Installation einer Schule auf einen neuen Server
 
 * Bei dieser Variante wird ein neuer Server installiert und nur die Schule importiert
 * spezielle Schul-Einstellungen werden dabei nicht übernommen, Daten und Bilder natürlich schon.
 * andere Services wie download etc. müssen separat nachinstalliert werden
+* serverbezogene Einstellungen wie Datensicherung, Zertifikat werden nicht übernommen
 
 ## Sicherung der Daten des bestehenden Servers
 1. LeTTo-Server der Schule stoppen im Setup-Service ![img.png](img.png)

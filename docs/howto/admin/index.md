@@ -1,10 +1,10 @@
-* zurück zu [HowTo's](../)
-
 # Administrative HowTo's
 
 ## Installation
 ### virtueller Server mit LeTTo als Docker-Konfiguration
+Bitte verwende sie als virtuellen Server einen vollvirtualisierten Server und keinen LXC-Container!
 * [Installation von LeTTo auf einem Ubuntu 22.04 Server](./install/ubuntu-22_04/)
+
 ### JDK-21
 * [JDK-21 Installation auf dem Host-Linux](./jdk/jdk21/)
 
