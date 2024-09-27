@@ -6,7 +6,7 @@
 * serverbezogene Einstellungen wie Datensicherung, Zertifikat werden nicht übernommen
 
 ## Sicherung der Daten des bestehenden Servers
-1. LeTTo-Server der Schule stoppen im Setup-Service ![img.png](img.png)
+1. LeTTo-Server der Schule stoppen im Setup-Service <br>![img.png](img.png)
 2. Datenbanksicherung erstellen
    <pre>docker exec -it letto-mysql export letto-schulkürzel</pre>
    Bitte statt letto-schulkürzel den wirklichen Namen der Datenbank verwenden.
@@ -58,16 +58,16 @@ man am besten die komplette Datenbank neu.
 
 ## Restart aller Container und Start der Schulen
 Im Setup-Service https://rechnername/config oder https://ip-adresse:9096/config
-* Im Punkt Update-Config : ![img_2.png](img_2.png)
+* Im Punkt Update-Config : <br>![img_2.png](img_2.png)
 * RESTART ALL
 * nach dem Restart ist nun wieder das admin-Passwort der alten Installation im Setup-Service gültig
-* Alle Schule aus dem Setup-Service heraus starten (RESTART) ![img_7.png](img_7.png)
+* Alle Schule aus dem Setup-Service heraus starten (RESTART) <br>![img_7.png](img_7.png)
 * Warten bis alle Schulen hochgefahren sind.
 
 ## Restart aller Container und aktualisiere das komplette System auf die aktuelle Stable-Version
 Im Setup-Service https://rechnername/config oder https://ip-adresse:9096/config
-* Im Punkt Update-Config : ![img_2.png](img_2.png)
-* aktualisere auf Stable-Version (STABLE-Tag,yml and update)![img_1.png](img_1.png)
+* Im Punkt Update-Config : <br>![img_2.png](img_2.png)
+* aktualisere auf Stable-Version (STABLE-Tag,yml and update) <br>![img_1.png](img_1.png)
 
 ## Zertifikat für https
 * Die Einstellungen des Zertifikates werden nicht automatisch von der alten Installation übernommen und müssen demnach wie bei einer Neuinstallation noch konfiguriert werden
