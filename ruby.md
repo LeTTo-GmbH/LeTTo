@@ -19,3 +19,17 @@
   <pre>gem install bundler jekyll
   bundle install
   </pre>
+* gehe ins Verzeichnis docs
+  <pre>echo 'source "https://rubygems.org"' > Gemfile
+  echo 'gem "jekyll"' >> Gemfile
+  </pre>
+* wandle mit Geany die Datei Gemfile in eine UTF-8 Datei!
+* weiter im gleichen Verzeichnis
+  <pre>bundle install
+  gem install jekyll-seo-tag
+  bundle install
+  </pre>
+
+
+bundle exec jekyll serve
+bundle exec jekyll build
