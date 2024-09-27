@@ -24,10 +24,19 @@ Bei einem virtuellen Server ist folgendes zu beachten.
 * Unter Linux nur vollvirtualisierte Systeme verwenden, keine LXC-Container-Virtualisierungen verwenden
 * Bei der Linux-Installation nicht die Docker-Version aus den Ubuntu oder Debian-Quellen verwenden
 * Installation des Linux-Host-Systems wie bei einer [Neuinstallation](/howto/admin/install)
+* Den Restkey noch NICHT setzen, er wird beim Import der Schule mit dem alten Wert gesetzt.
 
 ## Kopieren der gesicherten Daten auf den neuen Server
 1. kopiere die am alten Server erstellte Datei lettostorage.tgz nach /opt/letto/docker
 2. entpacke die Sicherung 
-   <pre>tar -xzf /opt/letto/docker/lettodocker.tgz -C /opt/letto/docker</pre>
+   <pre>tar -xzf /opt/letto/docker/lettostorage.tgz -C /opt/letto/docker</pre>
 
 ## anlegen der Schule mit gleichzeitigem Import der Daten
+* Im Setup-Server "Schule hinzufügen" <br>![img_8.png](img_8.png)
+* Auswählen der Datenbankdump-Datei <br>![img_9.png](img_9.png)
+* Button "Neu anlegen und Datenbank importieren"
+* Warten bis "FINISHED" <br>![img_10.png](img_10.png)
+
+## wenn LTI verwendet wurde und am neuen Server noch nicht konfiguriert wurde 
+* rücksichern der LTI-Datenbank
+  <pre>docker exec -it letto-mysql import lettolti</pre> 
