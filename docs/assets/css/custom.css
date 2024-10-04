@@ -128,25 +128,45 @@ pre.config {
 
 /* Allgemeine Tabellenstile */
 table {
-    /*width: 100%;               /* Tabelle soll die gesamte verfügbare Breite einnehmen */
-    border-collapse: collapse; /* Rahmenlinien zusammenführen */
-    background-color: #ffffff; /* Weißer Hintergrund */
+    /*width: 100%;                 Die Tabelle nimmt die gesamte verfügbare Breite ein */
+    border-collapse: collapse;  /* Zellenränder zusammenführen */
+    background-color: #ffffff;  /* Weißer Hintergrund für die gesamte Tabelle */
 }
 
-/* Rahmenlinien für Zellen */
+/* Zellenränder definieren */
 table, th, td {
-    border: 1px solid #dddddd; /* Dünne, graue Linien */
+    border: 1px solid #dddddd;  /* Dünne, graue Linien für die Tabelle und Zellen */
 }
 
 /* Tabellenkopf anpassen */
-th {
-    padding: 12px;             /* Abstand innerhalb der Kopfzeilenzellen */
-    background-color: #f2f2f2; /* Hellgrauer Hintergrund für Kopfzeilen */
-    text-align: center;        /* Kopfzeilentext zentrieren */
+thead th {
+    padding: 12px;              /* Abstand innerhalb der Kopfzeilenzellen */
+    background-color: #f2f2f2;  /* Hellgrauer Hintergrund für Kopfzeilen */
+    text-align: center;         /* Text in den Kopfzeilen zentrieren */
 }
 
-/* Zelleninhalt */
-td {
-    padding: 10px;             /* Abstand innerhalb der Zellen */
-    text-align: left;          /* Text links ausrichten */
+/* Stile für Tabellenkörper */
+tbody td {
+    padding: 10px;              /* Abstand innerhalb der Zellen */
+    text-align: left;           /* Text links ausrichten */
+}
+
+/* Hyperlinks in der Tabelle */
+tbody td a {
+    color: #0073e6;             /* Links in der Tabelle mit einer definierten Farbe */
+    text-decoration: none;      /* Standardunterstreichung von Links entfernen */
+}
+
+/* Hover-Effekt für Links */
+tbody td a:hover {
+    text-decoration: underline; /* Links unterstreichen bei Hover */
+}
+
+/* Abwechselnde Hintergrundfarbe für Tabellenzeilen */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Hellgraue Zeilenfarbe für gerade Zeilen */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;  /* Weiße Zeilenfarbe für ungerade Zeilen */
 }
