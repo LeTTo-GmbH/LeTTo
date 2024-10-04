@@ -1,5 +1,4 @@
 # Hauptseite
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Browser-Empfehlung        | Firefox &amp; Chrome                                                                      |                                                                                            |                                                                                                                                       |                                                               |                                                    |                                                                                                  |
 |---------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -10,7 +9,7 @@
 | Kompetenzen               | [Kompetenzen](../Kompetenzen/index.md)                                                    | [Lehrpläne](../Lehrpläne/index.md)                                                         | [ Zuordnung v. Beispielen](../Zuordnungv.Beispielen/index.md)                                                                         | [mehreren Beispiel zuordnen](/notimplemented/index.md)        | [Ergebnisse](/notimplemented/index.md)             |                                                                                                  |
 | Mathematik                | [Datensätze](../Datensätzedefinieren/index.md) [Video](https://youtu.be/fZEv62EWVtE)      | [Einheiten](../Einheit/index.md)                                                           | [Berechnungen](../Berechnungen/index.md)                                                                                              | [Plugins](../Plugins/index.md)                                | [Zahlendarstellung](../Zahlendarstellung/index.md) | [Folgefehlerbehandlung](../Folgefehlerbehandlung/index.md) [Video](https://youtu.be/CbpX537brTM) |
 | Sonstiges                 | [Neuigkeiten/Änderungen](../Neuigkeiten/index.md)                                         | [Shortcuts](../Shortcuts/index.md)                                                         | [FAQ](../FAQ/index.md)                                                                                                                |                                                               |                                                    |                                                                                                  |
-</div>
+
 
 **Vorgänge**:
 <div  class="wikitable" style="text-align: left; width: 100%;" >
@@ -19,6 +18,7 @@
 |--------------|-----------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------|---------------------------------------------|
 | Online-Tests | [Test anlegen](../Testanlegen/index.md)                   | [Beispiele zu Test hinzufügen](../BeispielezuTesthinzufügen/index.md) | [Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md) | [Test ausführen](/notimplemented/index.md)                               | [Test beenden](/notimplemented/index.md) | [Test beurteilen](/notimplemented/index.md) |
 | Labor        | [Labor Benotung](../LaborBenotung/index.md)               | [Laborübung anlegen](../Laborübunganlegen/index.md)                   | [Labor Übungstest](../LaborÜbungstest/index.md)                     |                                                                          |                                          |                                             |
+
 </div>
 
 **Administration**: 
@@ -26,7 +26,7 @@
 gehe zu [Administration](../Administration/index.md)
 
 ## Allgemeines
-![300px-lettoEditHardcopy.jpg](300px-lettoEditHardcopy.jpg)
+![300px-LettoEditHardcopy.jpg](300px-lettoEditHardcopy.jpg)
 
 **LeTTo** ist ein, vom Österreichischen Bundesministerium für Bildung, Wissenschaft und Forschung empfohlener E-Learning-Server. LeTTo ist breit einsetzbar und vor allem für technisch-mathematische-Gegenstände optimiert. LeTTo zeichnet sich durch einen kompetenzorientierten im System integrierten Notenkatalog aus.
 
