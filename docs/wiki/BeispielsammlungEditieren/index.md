@@ -307,10 +307,10 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   * Im Fragemodus "Drag and Drop" muss der Schüler aus einer Liste von Antworttexten den richtigen Text über die Lücke ziehen. Hierbei wird die Liste der Antworttexte aus allen richtigen und falschen Antworten der Texteingabe-Felder zusammengesetzt.
   * Syntax:
 
-| \[text\]                 | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
+| &#91;text&#93;                 | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| \[2\|text\]              | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
-| \[2\|text,50:alt,0:nix\] | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
+| &#91;2\|text&#93;              | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
+| &#91;2\|text,50:alt,0:nix&#93; | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
 
 
 * **Multiple-Choice:**
@@ -318,9 +318,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      mindestens eine Antwort muss richtig sein
   *      Syntax:
 
-| \[M\|x:richtig,falsch1,falsch2\] | Die richtigen Antwortfelder sind mit x: markiert |
+| &#91;M\|x:richtig,falsch1,falsch2&#93; | Die richtigen Antwortfelder sind mit x: markiert |
 |----------------------------------|--------------------------------------------------|
-| \[M\|x:rot,x:grün,blau,gelb\]    | rot und grün sind richtig                        |
+| &#91;M\|x:rot,x:grün,blau,gelb&#93;    | rot und grün sind richtig                        |
 
 
 * **Single-Choice:**
@@ -328,9 +328,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      der Schüler muss eine Antwort aus mehreren wählen
   *      Syntax:
 
-| \[S\|x:richtig,falsch,falsch\]   | x kennzeichnet eine richtige Antwort                                           |
+| &#91;S\|x:richtig,falsch,falsch&#93;   | x kennzeichnet eine richtige Antwort                                           |
 |----------------------------------|--------------------------------------------------------------------------------|
-| \[S\|x:rot,x:grün,50:blau,gelb\] | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
+| &#91;S\|x:rot,x:grün,50:blau,gelb&#93; | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
 
 
 * **Sonderzeichen** innerhalb einer Lücke 
@@ -338,17 +338,17 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
 | Komma(Beistrich)   | ,       | ,,            |
-| Komma(Beistrich)   | ,       | \\,           |
-| eckige Klammer auf | \[      | \\\[          |
-| eckige Klammer zu  | \]      | \\\]          |
+| Komma(Beistrich)   | ,       | &#92;,           |
+| eckige Klammer auf | &#91;      | &#92;&#91;         |
+| eckige Klammer zu  | &#93;      | &#92;&#93;          |
 
 
 * **Sonderzeichen** im Fragetext, welche nicht in einer Lücke sind:
 
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
-| eckige Klammer auf | \[      | \\\[          |
-| eckige Klammer zu  | \]      | \\\]          |
+| eckige Klammer auf | &#91;      | &#92;&#91;          |
+| eckige Klammer zu  | &#93;      | &#92;&#93;          |
 
 
 ##### Schülereingabe der Frage:
