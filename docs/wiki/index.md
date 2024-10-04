@@ -1,4 +1,6 @@
 # Wiki - Index
+[Hauptseite](Hauptseite/index.md)
+
 ## Seiten
 * [AD-check](AD-check/index.md)
 * [Abos](Abos/index.md)

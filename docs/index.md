@@ -1,8 +1,10 @@
 # Links
-* LeTTo - Wiki : [https://wiki.letto.at/wiki/index.php/Hauptseite](https://wiki.letto.at/wiki/index.php/Hauptseite)
+* LeTTo - Wiki alt : [https://wiki.letto.at/wiki/index.php/Hauptseite](https://wiki.letto.at/wiki/index.php/Hauptseite)
 * LeTTo - Homepage: [https://letto.at/wordpress/](https://letto.at/wordpress/)
 
 # [HowTo](./howto/index.md)
 * [Administrative HowTo's](./howto/admin/index.md)
 
-# [Wiki](./wiki/index.md)
+# Wiki
+* [Wiki](./wiki/Hauptseite/index.md)
+* [Wiki-Index](./wiki/index.md)
