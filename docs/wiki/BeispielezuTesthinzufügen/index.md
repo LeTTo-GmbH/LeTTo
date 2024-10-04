@@ -3,6 +3,8 @@
 * Um zu einem Test weitere Beispiele hinzufügen zu können muss sich der Test im Zustand "Testbearbeitung" befinden. Dies erkennt man an dem Button "Gruppe 1" in der Symbolleiste im Modus "Beispiele Editieren" oder "Beispielsammlung":
 <br>![ClipCapIt-190927-093051.PNG](ClipCapIt-190927-093051.PNG)
 * In den Modus "Testbearbeitung" kann man durch [Test anlegen](../Testanlegen/index.md) oder [Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md) gelangen
+* Neu: Ein Test kann auch nach Auswahl eines Tests durch den Link "Aktivität zur Bearbeitung festlegen" aktiviert werden:<br>![img.png](img.png)
+* Weiters können Fragen auch über Copy und Paste (Ctrl-C, CTRL-V) in einen Test eingefügt werden.
 
 ###  Beispiele hinzufügen 
 * Auswahl des gewünschten Beispiels aus Kategrie und Frageliste (auch mehrere Beispiele können seletiert werden)

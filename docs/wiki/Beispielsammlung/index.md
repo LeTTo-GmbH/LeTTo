@@ -1,13 +1,16 @@
 # Beispielsammlung
 In der Beispielsammlung kann auf alle Beispiele, die auf dem Server gespeichert sind, zugegriffen werden. Die Organisation der Beispiele erfolgt über eine Ordnerstruktur im [Tree](../Ordnerverwaltung/index.md). In der [Fragenliste](../Fragenliste/index.md) kann eine Frage zur Ansicht ausgewählt werden, daneben sieht man die Vorschau der Frage.
 
-![600px-BeispielsammlungIcons.jpg](600px-BeispielsammlungIcons.jpg)
+![beispielsammlung.png](beispielsammlung.png)
 
-###  Vorschau 
+### Editor / Bibliothek
+Dieser Teil der Anwendung besteht aus zwei Teilen:
+* Der **Bibliothek** zum Ansehen der fertigen Beispiele bzw. zur Auswahl von Beispielen für Online-Aktivitäten. Die ehemalige Feedback-Ansicht entfällt in der neuen Version und wurde durch den Button **Prüfen/Ergebnisanzeige** ersetzt. 
+* Dem **Editor** zum Bearbeiten der Beispiele
 
-In der Vorschau können auch Werte eingegeben werden. Durch Umschalten auf die Feedback-Ansicht kann kontrolliert werden, ob das Ergebnis stimmt, bzw. was das richtige Ergebnis wäre.
-
-![600px-FeedbackAnsicht.jpeg](600px-FeedbackAnsicht.jpeg)
+### Toolbar
+In beiden Modis sind im Toolbar die folgenden Buttons sichtbar:<br>
+![toolbar.png](toolbar.png)
 
 ###  siehe auch 
 * [LeTTo](/notimplemented/index.md)

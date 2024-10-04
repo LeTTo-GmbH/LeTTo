@@ -1,13 +1,13 @@
-# Beispielsammlung Editieren
+# Editor (Beispielsammlung editieren)
 In der Edit-Ansicht können Beispiele verändert, geprüft und neu erstellt werden. 
 
 Zurück zu [LeTTo](/notimplemented/index.md), [Beispielsammlung](../Beispielsammlung/index.md)
 ![700px-FrageEditor.jpg](700px-FrageEditor.jpg)
 
 ## Übersicht
-Im Modus **Beispielsammlung editieren** ist oben eine [Symbolleiste](../Toolbar/index.md) zur Steuerung der Anwendung angeordnet. Nähere Beschreibung der jeweiligen Buttons finden Sie unter [Toolbar](../Toolbar/index.md).
+Im Modus **Editor**  (ehemals Beispielsammlung editieren) ist oben eine [Symbolleiste](../Toolbar/index.md) zur Steuerung der Anwendung angeordnet. Nähere Beschreibung der jeweiligen Buttons finden Sie unter [Toolbar](../Toolbar/index.md).
 
-Im Bereich der Themen (siehe obige Abbildung) finden Sie eine [Ordnerstruktur](../Ordnerverwaltung/index.md) ähnlich einem Dateimanager zur Sortierung und Speicherung der Fragen. Weiters finden Sie in diesem Bereich unten die Definition von [Online-Tests](../Online-Tests/index.md). 
+Im Bereich der Ordner (siehe obige Abbildung) finden Sie eine [Ordnerstruktur](../Ordnerverwaltung/index.md) ähnlich einem Dateimanager zur Sortierung und Speicherung der Fragen. Weiters finden Sie in diesem Bereich unten die Definition von [Online-Aktivitäten](../Online-Tests/index.md). 
 
 Die [Fragenliste](../Fragenliste/index.md) enthält alle Fragen eines Ordners sowie Möglichkeiten zum Hinzufügen, Ändern und Klonen ... von Fragen. 
 
@@ -22,64 +22,75 @@ Der Fragename bezeichnet die Frage und sollte Information über den Frageninhalt
 Oberhalb des Fragennamens finden Sie noch den Fragetyp, den diese Frage hat.
 
 ## Dokumente zu dieser Frage hochladen
-<br>![500px-ClipCapIt-181021-141443.PNG](500px-ClipCapIt-181021-141443.PNG)
+<br>![500px-ClipCapIt-181021-141443.PNG](500px-ClipCapIt-181021-141443.PNG)<br>
 Ist die Checkbox **Doks:** ausgewählt, dann kann der Schüler bei der Beantwortung der Fragen auch Dokumente zur Testfrage auf den Server hochladen. 
 
-Die folgende Abbildung zeigt die Buttons zum Testen der Lösung und den zusätzlichen Button **Datei zur Frage hochladen**, der dann eingeblendet wird, wenn bei der Fragedefinition die Option **Doks:** ausgewählt wurde.
-<br>![350px-ClipCapIt-181021-142155.PNG](350px-ClipCapIt-181021-142155.PNG)
-Solange der Testversuch aktiv ist, können die Dokumnete vom Schüler wieder über den **X**-Button gelöscht werden oder weitere Dokumnete zu dieser Testfrage hochgeladen werden.
+Die folgende Abbildung zeigt die Buttons zum Testen der Lösung und den zusätzlichen Button 
+**Datei zur Frage hochladen**, der dann eingeblendet wird, 
+wenn bei der Fragedefinition die Option **Doks:** ausgewählt wurde.
+<br>![350px-ClipCapIt-181021-142155.PNG](350px-ClipCapIt-181021-142155.PNG)<br>
+Solange der Testversuch aktiv ist, können die Dokumnete vom Schüler wieder über den 
+**X**-Button gelöscht werden oder weitere Dokumente zu dieser Testfrage hochgeladen werden.
 
 Nach Beendigung des Testversuchs können die Dokumente nicht mehr geändert, sondern nur mehr heruntergeladen und angesehen werden.
 
-## Gefundene Werte
-Hier sind alle Konstante, die im Angabetext gefunden wurden, aufgelistet. Dieses Feld wird nach dem Verlassen des Editors für den Angabetext automatisch aktualisiert: Enthält der Fragetext Konstante in geschwungenen Klammern, die keine Datensätze sind, so werden diese Variablen automatisch aus dem Text extrahiert und angezeigt. Diese Werte können dann für die Berechnung der Lösung herangezogen werden.
+[//]: # (## Gefundene Werte)
+[//]: # (Hier sind alle Konstante, die im Angabetext gefunden wurden, aufgelistet. Dieses Feld wird nach dem Verlassen des Editors für den Angabetext automatisch aktualisiert: Enthält der Fragetext Konstante in geschwungenen Klammern, die keine Datensätze sind, so werden diese Variablen automatisch aus dem Text extrahiert und angezeigt. Diese Werte können dann für die Berechnung der Lösung herangezogen werden.)
 
-## Frage-Textfeld
+## Eingabe des Fragetextes
 Siehe [Editor für den Angabetext](../EditorfürdenAngabetext/index.md).
 
-## Plugin-Info
-Im Bereich Plugin-Info finden Sie einen Button **Plugins** zur Definition der Plugins der Frage. Dadurch wird der [Dialog zur Plugindefinition](../DefinitionvonPlugins/index.md) geöffnet.
+## Plugins
+Im Bereich Plugins finden Sie einen Button **Plugins** zur Definition der Plugins der Frage. 
+Dadurch wird der [Dialog zur Plugindefinition](../DefinitionvonPlugins/index.md) geöffnet.
 
-Die Plugindefinition bildet immer einen Text-String. Dieser wird nach dem Schliessen des Dialogs im nebenstehenden Feld angezeigt und kann theoretisch auch verändert werden. Diese Option sollten aber nur erfahrene Benutzer verwenden, die sich mit der Syntax der Plugin-Definition auskennen.
+Die Plugindefinition bildet immer einen Text-String. Dieser wird nach dem Schliessen des Dialogs 
+im nebenstehenden Feld angezeigt und kann theoretisch auch verändert werden. 
+Diese Option sollten aber nur erfahrene Benutzer verwenden, die sich mit der Syntax der 
+Plugin-Definition auskennen.
 
-Der Scroller ![40px-ClipCapIt-180831-204926.PNG](40px-ClipCapIt-180831-204926.PNG) neben dem Eingabefeld dient zum Durchlaufen von allen definierten [Datensätzen](../Datensätze/index.md) und zeigt die Änderungen der Grafiken an, wenn der Cursor auf einem [Plugin-Grafik-Tag#spezielle-tags-im-fragentext-](../EditorfürdenAngabetext#spezielle-tags-im-fragentext-/index.md#spezielle-tags-im-fragentext-) [PIG...](PIG...) im [Editor für den Angabetext](../EditorfürdenAngabetext/index.md) steht.
+[//]: # (Der Scroller ![40px-ClipCapIt-180831-204926.PNG]&#40;40px-ClipCapIt-180831-204926.PNG&#41; neben dem Eingabefeld dient zum Durchlaufen von allen definierten [Datensätzen]&#40;../Datensätze/index.md&#41; und zeigt die Änderungen der Grafiken an, wenn der Cursor auf einem [Plugin-Grafik-Tag#spezielle-tags-im-fragentext-]&#40;../EditorfürdenAngabetext#spezielle-tags-im-fragentext-/index.md#spezielle-tags-im-fragentext-&#41; [PIG...]&#40;PIG...&#41; im [Editor für den Angabetext]&#40;../EditorfürdenAngabetext/index.md&#41; steht.)
 
 ## Beurteilungsbereich
-##### <span id="qPunkte"></span>Punkte
-Punkte, die bei richtiger Beantwortung der Frage für die gesamte Frage maximal vergeben werden können. Bei Mehrfachberechnungsfragen ist dieses Feld gesperrt und die Punkteanzahl wird automatisch als Gesamtpunktezahl aus allen Teilfragen berechnet.
+##### Punkte ####
+Punkte, die bei richtiger Beantwortung der Frage für die gesamte Frage maximal vergeben werden können. 
+Bei Mehrfachberechnungsfragen ist dieses Feld gesperrt und die Punkteanzahl wird automatisch als 
+Gesamtpunktezahl aus allen Teilfragen berechnet.
 
-##### <span id="qPenalty"></span>Penalty
-Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus#testart-](../Online-Tests#testart-/index.md#testart-) pro Versuch abgezogen wird.
+##### Penalty ####
+Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus](../Online-Tests#testart-/index.md#testart-) pro Versuch 
+abgezogen wird.
 
-##### <span id="qEinheitenFehler"></span>Einheitenfehler
-Im Feld "EH-Fehler" wird ein Faktor angeben, der von den Punkten der richtigen Lösung abgezogen wird, wenn die Einheit falsch angegeben wurde.
+##### EinheitenFehler ####
+Im Feld "EH-Fehler" wird ein Faktor angeben, der von den Punkten der richtigen Lösung abgezogen wird, 
+wenn die Einheit falsch angegeben wurde.
 
 Der Wert von EH-Fehler muss zwischen 0 und 1 liegen!
 
-Erreichtepunkte = Maximalpunkte* (1 - EHFehler)
+Erreichte Punkte = Maximalpunkte * (1 - EHFehler)
 
-z.B:
+z.B:<br>
 Das Beispiel hat 4 Punkte, der EH-Faktor ist 0.1.
 Gibt nun der Schüler statt 0.2A den Wert 0.2V an, so erhält er 4*(1-0.1) = 3.6 Punkte.
 Gibt der Schüler einen falschen Einheitenvorsatz wie 0.2mA an, so erhält er keine Punkte, da der Wert falsch ist!
 
-Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen#einheiteneinstellungen-](../Online-Tests#einheiteneinstellungen-/index.md#einheiteneinstellungen-)!
+Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen](../Online-Tests#einheiteneinstellungen-/index.md#einheiteneinstellungen-)!
 
-##### <span id="cbParser"></span>Checkbox Parser
-Ist diese Checkbox ausgewählt, dann wird beim Berechnen der Symbolischen Lösung für das Ergebnis der Frage ud allen Teilfragen nicht [Maxima#berechnung-mit-maxima-](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-), sondern der [Interne Parser verwendet#berechnung-mit-dem-internen-parser-](../Berechnungen#berechnung-mit-dem-internen-parser-/index.md#berechnung-mit-dem-internen-parser-).
+##### Checkbox Parser ####
+Ist diese Checkbox ausgewählt, dann wird beim Berechnen der symbolischen Lösung für das Ergebnis der Frage und 
+allen Teilfragen nicht [Maxima](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-), sondern der [Interne Parser](../Berechnungen#berechnung-mit-dem-internen-parser-/index.md#berechnung-mit-dem-internen-parser-) verwendet.
 
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
-##### <span id="cbSymbolisch"></span>Checkbox Symbolisch
+##### Checkbox Symbolisch ####
 Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.
 
-## Datensätze
-Siehe [Datensätze definieren#erstellung-/-änderung-über-den-datensatz-bereich-](../Datensätzedefinieren#erstellung-/-änderung-über-den-datensatz-bereich-/index.md#erstellung-/-änderung-über-den-datensatz-bereich-)
+## Variable / Datensätze
+Siehe [Variable / Datensätze definieren](../Datensätzedefinieren#erstellung-/-änderung-über-den-datensatz-bereich-/index.md#erstellung-/-änderung-über-den-datensatz-bereich-)
 
-## Kompetenzen zuordnen
-Mit dem Button ![20px-ClipCapIt-180901-220702.PNG](20px-ClipCapIt-180901-220702.PNG) aus dem [Toolbar](../Toolbar/index.md) kann man zwischen der Datensatz- und der Kompetenz-Ansicht umschalten.
-
-Siehe auch [Kompetenzzuordnung](/notimplemented/index.md).
+[//]: # (## Kompetenzen zuordnen)
+[//]: # (Mit dem Button ![20px-ClipCapIt-180901-220702.PNG]&#40;20px-ClipCapIt-180901-220702.PNG&#41; aus dem [Toolbar]&#40;../Toolbar/index.md&#41; kann man zwischen der Datensatz- und der Kompetenz-Ansicht umschalten.)
+[//]: # (Siehe auch [Kompetenzzuordnung]&#40;/notimplemented/index.md&#41;.)
 
 ## Maxima-Feld
 
@@ -88,7 +99,7 @@ Das Maximafeld wird für die Berechnung der Ergebnisformel verwendet. Für die B
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
 ##### Maxima Berechnung
-Siehe [Maxima-Berechnungen#berechnung-mit-maxima-](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-)
+Siehe [Maxima-Berechnungen](../Berechnungen/index.md)
 
 * Zahlenwerte mit Einheiten werden, bevor das Feld an Maxima geschickt wird, durch interne Variablen ersetzt, die bei der Berechnung des Ergebnisses dann wieder mit Einheiten eingesetzt werden. Die Maxima-Berechnung erfolgt dadurch wie in Maxima üblich ohne Einheiten.
 * graphische Elemente von Maxima wie plot etc. können nicht verwendet werden
