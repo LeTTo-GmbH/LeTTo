@@ -56,14 +56,14 @@ grant {
   permission java.lang.RuntimePermission "setSecurityManager";
   permission java.security.SecurityPermission "getPolicy";
   permission java.lang.RuntimePermission "accessDeclaredMembers";
-  permission java.io.FilePermission "C:\workspace-oxygen-letto\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\webapps", "read";
+  permission java.io.FilePermission "C:&#92;workspace-oxygen-letto&#92;.metadata&#92;.plugins&#92;org.eclipse.wst.server.core&#92;tmp0&#92;webapps", "read";
   permission java.lang.RuntimePermission "setIO";
   permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
 };
 </pre>
 * In der Eclipse: Run-Run Configurations -&gt; Apache Tomcat - Tomcat v8.5 Server -&gt; Arguments - VM-Arguments: füge hinzu:
 <pre>
--Djava.security.policy="C:\workspace-oxygen-letto\Servers\Tomcat v8.5 Server at localhost-config\catalina.policy"
+-Djava.security.policy="C:&#92;workspace-oxygen-letto&#92;Servers&#92;Tomcat v8.5 Server at localhost-config&#92;catalina.policy"
 </pre>
 
 ####  andere JavaEE-Server 
