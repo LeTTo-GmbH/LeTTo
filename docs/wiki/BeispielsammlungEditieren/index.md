@@ -327,7 +327,7 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
 | Komma(Beistrich)   | ,       | ,,            |
-| Komma(Beistrich)   | ,       | \,            |
+| Komma(Beistrich)   | ,       | \ ,           |
 | eckige Klammer auf | [       | \[            |
 | eckige Klammer zu  | ]       | \]            |
 
