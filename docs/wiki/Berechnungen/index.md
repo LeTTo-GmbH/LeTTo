@@ -616,7 +616,7 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 |----------------|--------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
 | dateparse      | Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000                                           |          |          | 6530     |
 | date           | date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.000                                      |          |          | 6530     |
-| datestring     | datestring(x) datestring(x,\"format\") erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe        |          |          | 6530     |
+| datestring     | datestring(x) datestring(x,&quot;format&quot;) erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe        |          |          | 6530     |
 | timestring     | erzeugt eine Uhrzeit als String                                                                                    |          |          | 6530     |
 | datetimestring | erzeugt Datum und Uhrzeit als String                                                                               |          |          | 6530     |
 | dateyear       | Erzeugt aus einem Datum als Ganzzahl das Jahr                                                                      |          |          | 6530     |
