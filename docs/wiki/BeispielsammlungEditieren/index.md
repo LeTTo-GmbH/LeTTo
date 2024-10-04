@@ -327,17 +327,17 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
 | Komma(Beistrich)   | ,       | ,,            |
-| Komma(Beistrich)   | ,       | \ ,           |
-| eckige Klammer auf | [       | \[            |
-| eckige Klammer zu  | ]       | \]            |
+| Komma(Beistrich)   | ,       | \\,           |
+| eckige Klammer auf | [       | \\[           |
+| eckige Klammer zu  | ]       | \\]           |
 
 
 * **Sonderzeichen** im Fragetext, welche nicht in einer Lücke sind:
 
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
-| eckige Klammer auf | [       | \[            |
-| eckige Klammer zu  | ]       | \]            |
+| eckige Klammer auf | [       | \\[           |
+| eckige Klammer zu  | ]       | \\]           |
 
 
 ##### Schülereingabe der Frage:
