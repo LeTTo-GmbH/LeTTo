@@ -1,7 +1,5 @@
 # Hauptseite
 
-<span  class="wikitable" style="text-align: left; width: 100%;" >
-
 | Browser-Empfehlung        | Firefox &amp; Chrome                                                                      |                                                                                            |                                                                                                                                       |                                                               |                                                    |                                                                                                  |
 |---------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Einführung                | [Einführung](../Einführung/index.md)                                                      | [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)                                       | [Beispielsammlung](../Beispielsammlung/index.md)                                                                                      | [Beispiele bearbeiten](../BeispielsammlungEditieren/index.md) | [Fragetypen](../Fragetypen/index.md)               |                                                                                                  |
@@ -12,18 +10,13 @@
 | Mathematik                | [Datensätze](../Datensätzedefinieren/index.md) [Video](https://youtu.be/fZEv62EWVtE)      | [Einheiten](../Einheit/index.md)                                                           | [Berechnungen](../Berechnungen/index.md)                                                                                              | [Plugins](../Plugins/index.md)                                | [Zahlendarstellung](../Zahlendarstellung/index.md) | [Folgefehlerbehandlung](../Folgefehlerbehandlung/index.md) [Video](https://youtu.be/CbpX537brTM) |
 | Sonstiges                 | [Neuigkeiten/Änderungen](../Neuigkeiten/index.md)                                         | [Shortcuts](../Shortcuts/index.md)                                                         | [FAQ](../FAQ/index.md)                                                                                                                |                                                               |                                                    |                                                                                                  |
 
-</span>
-
 **Vorgänge**:
 
-<p  class="wikitable" style="text-align: left; width: 100%;" >
-
-| Passwort     | [eigenes Lehrerpasswort ändern](/notimplemented/index.md) | [Schülerpasswort setzen](../Schülerpasswortsetzen/index.md)           | [Lehrerpasswort setzen](../Lehrerpasswortsetzen/index.md)           | [Passwort mit Domain-Passwort synchronisieren](/notimplemented/index.md) |                                          |                                             |
-|--------------|-----------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------|---------------------------------------------|
-| Online-Tests | [Test anlegen](../Testanlegen/index.md)                   | [Beispiele zu Test hinzufügen](../BeispielezuTesthinzufügen/index.md) | [Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md) | [Test ausführen](/notimplemented/index.md)                               | [Test beenden](/notimplemented/index.md) | [Test beurteilen](/notimplemented/index.md) |
-| Labor        | [Labor Benotung](../LaborBenotung/index.md)               | [Laborübung anlegen](../Laborübunganlegen/index.md)                   | [Labor Übungstest](../LaborÜbungstest/index.md)                     |                                                                          |                                          |                                             |
-
-</p>
+<table  class="wikitable" style="text-align: left; width: 100%;" >
+<tr><td>Passwort</td><td> [eigenes Lehrerpasswort ändern](/notimplemented/index.md) </td><td>[Schülerpasswort setzen](../Schülerpasswortsetzen/index.md)</td><td>[Lehrerpasswort setzen](../Lehrerpasswortsetzen/index.md)</td><td>[Passwort mit Domain-Passwort synchronisieren](/notimplemented/index.md)</td><td></td><td></td></tr>
+<tr><td>Online-Tests</td><td>[Test anlegen](../Testanlegen/index.md)</td><td>[Beispiele zu Test hinzufügen](../BeispielezuTesthinzufügen/index.md)</td><td>[Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md)</td><td>[Test ausführen](/notimplemented/index.md)</td><td>[Test beenden](/notimplemented/index.md)</td><td>[Test beurteilen](/notimplemented/index.md)</td></tr>
+<tr><td>Labor</td><td>[Labor Benotung](../LaborBenotung/index.md)</td><td>[Laborübung anlegen](../Laborübunganlegen/index.md)</td><td>[Labor Übungstest](../LaborÜbungstest/index.md)</td><td></td><td></td><td></td><td></td></tr>
+</table>
 
 **Administration**: 
 
