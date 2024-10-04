@@ -8,14 +8,13 @@ Fragen können einzeln als PDF-Dokument erzeugt werden oder es können alle Frag
 
 Folgende Einstellungsmöglichkeiten sind verfügbar:
 
-<div  class="wikitable" >
 
 | Ausdruck nur mit Fragen             | Am Druck sind nur die Angaben der Fragen vorhanden                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Ausdruck mit Antworten              | Ausgedruckt werden die Angaben und die Ergebnisse der Fragen                                     |
 | Ausdruck mit Antwort und Lösungsweg | Ausgedruckt werden die Angaben, die Ergebnisse und der Lösungsweg in Form des Maxima-Lösungswegs |
 | komplett mit Info                   | Alle Infos zur Frage inklusive Angabe, Ergebnisse, … ausgeben                                    |
-</div>
+
 
 ### Art der PDF-Ausgabe
 Die Ausgabe kann als PDF-Dokument oder als TEX-Code exportiert werden.
@@ -27,13 +26,12 @@ Möglich sind einzelne Datensatzangeben, Kombinationen aus Zahlen mit Beistriche
 * 1,3,5-8: Die Werte des 1,3,5,6,7,und 8. Datensatzes werden verwendet
 
 ### Angaben für den Ausdruck von Kategorien
-<div  class="wikitable" >
 
 | Rekursive Ausgabe         | Wenn diese Checkbox angewählt wurde, dann werden alle Unterordner und alle darin enthaltenen Fragen in den Ausdruck eingebunden |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Neue Seite pro Blatt      | Jede Seite wird auf ein getrenntes Blatt ausgedruckt                                                                            |
 | Trennstrich nach Beispiel | Nach jedem Beispiel wird ein Trennstrich über die ganze Seitenbreite gezogen                                                    |
-</div>
+
 
 
 Kategorie:Dialoge

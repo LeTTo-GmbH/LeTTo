@@ -7,7 +7,6 @@ siehe auch
 **lettohub/letto-proxy**
 
 ###  Tags 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Tag     | Beschreibung                                                                         | Anmerkung |
 |---------|--------------------------------------------------------------------------------------|-----------|
@@ -16,20 +15,18 @@ siehe auch
 | stable  | letzte stabile Version für den Produktivbetrieb                                      |           |
 | debug   | Bitte nicht verwenden ist tagesaktuell nur für Debugging-Zwecke                      |           |
 | revXXXX | Revision mit der Nummer XXXX. Nur wenn man eine definierte Version verwenden möchte. |           |
-</div>
+
 
 ###  Ports 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Port | Beschreibung |
 |------|--------------|
 | 80   | http-Port    |
 | 443  | https-Port   |
-</div>
+
 
 ###  Pfade welche als Volume verbunden werden sollten 
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Pfad im Docker Container     | Beschreibung                                                       | üblicher Wert                      |
 |------------------------------|--------------------------------------------------------------------|------------------------------------|
@@ -45,10 +42,9 @@ siehe auch
 | /var/www/html/export         | Export-Dateien für Import und Export                               | /opt/letto/docker/storage/export   |
 | /var/www/html/public         | veränderbare statische Inhalte zB. für Werbung                     | /opt/letto/docker/public           |
 | /log                         | Verzeichnis für die Logfiles                                       | /opt/letto/docker/storage/log      |
-</div>
+
 
 ###  Environment Variable 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable          | Beschreibung                                                                                                      | üblicher Wert     | muss gesetzt sein |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|-------------------|-------------------|
@@ -62,7 +58,7 @@ siehe auch
 | CERT_EXTERN       | Gibt an ob ein externes Zertifikat verwendet werden soll                                                          | 0                 | ja                |
 | CREATE_HTTPS_CONF | Gibt an ob die Datei https.conf der Proxy-Konfiguration automatisch beim Start des Proxy neu erzeugt werden soll. | 1                 | ja                |
 | USE_HTTP          | Gibt an ob HTTP-Anfragen an Port 80 verarbeitet (1) oder automatisch an Port 443 redirected werden sollen(0).     | 0                 | ja                |
-</div>
+
 
 ##  Docker Compose 
 * .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-letto.yml](http://letto.at/download/letto/setup/yml/docker-compose-letto.yml)

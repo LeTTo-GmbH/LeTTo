@@ -14,7 +14,6 @@ docker compose down
 docker compose up -d</pre>
 
 ##  Einträge in der .env Datei für die Zertifikatsverwaltung 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable          | Beschreibung                                                                                                                                                  | gültige Werte | Default   |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----------|
@@ -24,7 +23,7 @@ docker compose up -d</pre>
 | USE_HTTP          | Gibt an ob HTTP-Anfragen an Port 80 verarbeitet (1) oder automatisch an Port 443 redirected werden sollen(0).                                                 | 0,1           | 0         |
 | SERVER_NAME       | Standard Domain Name als Hauptname für ein Lets-Encrypt Certifikat                                                                                            |               | localhost |
 | DOMAIN_ALTERNATIV | Liste von weiteren Domain-Bezeichnungen für den Server für die ein  Lets-Encrypt Certifikat erzeugt werden soll. Die Domains sind duch Leerzeichen zu trennen |               |           |
-</div>
+
 Anmerkung: wird CREATE_HTTPS von 1 auf 0 geändert, könnte danach die Datei https.conf im Verzeichnis /opt/letto/docker/proxy fehlerhaft sein (ein nicht vorhandenes Zertifikat enthalten). Ist USE_HTTP=1 kann einfach die Datei /opt/letto/docker/proxy/https.conf gelöscht werden und der Proxy neu gestartet werden, andernfalls sollte der Fehler genauer analysiert werden.
 
 ##  selbstsigniertes Zertifikat 

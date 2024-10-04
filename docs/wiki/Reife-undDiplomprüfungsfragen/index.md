@@ -8,13 +8,12 @@ Der Dialog zur Erstellung von **Reife- und Diplomprüfungsfragen** kann entweder
 
 Folgende Einstellungsmöglichkeiten sind verfügbar:
 
-<div  class="wikitable" >
 
 | Prüfungsart | Reife- und Diplomprüfung oder Abschlussprüfung |
 |-------------|------------------------------------------------|
 | Abteilung   | Auswahl von gewünschter Abteilung              |
 | Klasse      | Auswahl von gewünschter Klasse                 |
-</div>
+
 
 Damit wird im rechten Bereich eine sortierbare Liste mit allen Einträgen der Lehrfächerverteilung für diese Klasse (Gegenstand + Lehrerkurzzeichen) angezeigt, sowie alle Schüler in einer weiteren sortierbaren Liste aufgelistet. Aus diesen beiden Listen kann Prüfer sowie Kandidat ausgewählt werden. Optional können alle Daten im linken Bereich, die dann für die Dokumneterzeugung verwendet werden, manuell eingegeben oder überschrieben werden.
 

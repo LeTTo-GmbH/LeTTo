@@ -5,7 +5,6 @@
 In der Titelzeile der Fragenliste wird die aktuelle Kategorie, die diese Fragen enthält, angezeigt.
 Von allen Fragen wird immer der [Name der Frage#name-der-frage-](../BeispielsammlungEditieren#name-der-frage-/index.md#name-der-frage-) in der Liste geführt, der [Fragetyp](../Fragetypen/index.md) wird durch ein Icon gekennzeichnet:
 
-<div   >
 
 | ![20px-ClipCapIt-180618-211134.PNG](20px-ClipCapIt-180618-211134.PNG) | [Mehrfachberechnungsfrage#mehrfachberechnungsfrage-](../Fragetypen#mehrfachberechnungsfrage-/index.md#mehrfachberechnungsfrage-) |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -14,7 +13,7 @@ Von allen Fragen wird immer der [Name der Frage#name-der-frage-](../Beispielsamm
 | ![20px-ClipCapIt-180618-211926.PNG](20px-ClipCapIt-180618-211926.PNG) | [Freitextfrage#freitextfrage-](../Fragetypen#freitextfrage-/index.md#freitextfrage-)                                             |
 | ![20px-ClipCapIt-180618-211857.PNG](20px-ClipCapIt-180618-211857.PNG) | [Berchnungsfrage#berchnungsfrage-](../Fragetypen#berchnungsfrage-/index.md#berchnungsfrage-)                                     |
 | ![20px-ClipCapIt-180618-212005.PNG](20px-ClipCapIt-180618-212005.PNG) | [Lückentextfrage#lückentextfrage-](../Fragetypen#lückentextfrage-/index.md#lückentextfrage-)                                     |
-</div>
+
 ### Kontextmenü zur Fragenliste
 <br>![300px-ClipCapIt-200504-110036.PNG](300px-ClipCapIt-200504-110036.PNG)
 Das Kontextmenü wird über die rechte Maustaste aktiviert und enthält folgende Einträge:

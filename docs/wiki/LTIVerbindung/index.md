@@ -58,7 +58,6 @@ Nach dem ersten Start des LTI-Services muss das LTI-Service noch mit LeTTo verbu
 * Existiert noch keine Verbindung mit einem Moodle-Server oder soll eine zusätzlicher Moodle-Server verbunden werden, so kann man diesen mit **Neue Plattform erzeugen** anlegen. Ist der Server schon vorhanden so braucht man nur auf die Zeile klicken und die Konfiguration wird geöffnet.
 * Parallel dazu sollte man am Moodle-Server ein externes Tool anlegen. Am Besten als Administrator (unter Website Administration - Plugins - externesTool - Tool Verwalten) oder wenn man kein Administrator ist bei einem Kurs als Aktivität.
 * Konfigurationsparameter am LeTTo-Server:
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | -                                             |                                                                                                                                                                                    |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,10 +68,9 @@ Nach dem ersten Start des LTI-Services muss das LTI-Service noch mit LeTTo verbu
 | Deployment-ID                                 | Kommt vom Moodle Server und ist im Normalfall 1                                                                                                                                    |
 | Tool-KID-ID                                   | Ist eine ID die den LeTTo-Server beschreibt und wird aktuell noch nicht verwendet. Setze hier irgendeinen Wert ein.                                                                |
 | Plattform-KID                                 | Ist eine ID die den Moodle-Server beschreibt und wird aktuell noch nicht verwendet. Setze hier irgendeinen Wert ein.                                                               |
-</div>
+
 * Nach der Konfiguration des LeTTo-Servers bitte die Daten **speichern**.
 *  Konfigurationsparameter am **externen Tool** von **Moodle**:
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | -                                                   |                                                                                                                                                                            |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,7 +87,7 @@ Nach dem ersten Start des LTI-Services muss das LTI-Service noch mit LeTTo verbu
 | Datenschutz - Anwendernamen an Tool übergeben       | Immer                                                                                                                                                                      |
 | Datenschutz - Email des Anwenders an Tool übergeben | Immer                                                                                                                                                                      |
 | Datenschutz - Bewertungen aus dem Tool akzeptieren  | Immer                                                                                                                                                                      |
-</div>
+
 
 ##  Verhalten des LTI-Service in einer Schule konfigurieren 
 Ist eine Schüler, Lehrer oder Kurs am LeTTo-Server nicht vorhanden, so kann dieser bei einer Verlinkung über LTI automatische angelegt werden. Dieses Verhalten kann für die Schule global konfiguriert werden.

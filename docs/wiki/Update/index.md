@@ -10,7 +10,6 @@ Bei einem nicht-automatisierten Update bitte darauf achten, dass die war-Datei b
 * Der Download der aktuellen Version von letto erfolgt von [https://letto.at/download/letto/](https://letto.at/download/letto/)
 * Eine gültiger Download-Benutzer und das dazugehörige Passwort wird gleichzeitig mit der Lizenzvergabe vergeben, bzw. kann auch bei [office@letto.at](mailto://office@letto.at) angefragt werden.
 * Folgende Dateien stehen auf dem Download-Server zur Verfügung:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Datei               | Inhalt                                                                              |
 |---------------------|-------------------------------------------------------------------------------------|
@@ -20,7 +19,7 @@ Bei einem nicht-automatisierten Update bitte darauf achten, dass die war-Datei b
 | stable-revision.txt | Revisionsnummer der Stable-Version                                                  |
 | lettoupdate.sh      | Update-Script für den automatischen Download und die Installation des Letto-Updates |
 | archiv              | Verzeichnis aller älteren Versionen von Letto                                       |
-</div>
+
 
 [Administration](../Administration/index.md)
 

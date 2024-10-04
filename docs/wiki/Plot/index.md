@@ -9,7 +9,6 @@ Das Plot-Plugin dient zum Zeichnen von beliebigen Funktionsgraphen:
 Der Parameter **function** muss nicht angegeben werden, da er die Standardeinstellung für Plot ist.
 
 mögliche Funktionsdefinitionen:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                                                                                                                                                                             | Beschreibung                                                                           | Beispiel                                                                                               | Graph                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -19,33 +18,31 @@ mögliche Funktionsdefinitionen:
 | f(x,y):=[''{x}'',''{y}''](''{x}'',''{y}'')                                                                                                                                           | Punkt                                                                                  | f(x,y):=[3,4](3,4)                                                                                     | <br>![100px-ClipCapIt-190416-172349.PNG](100px-ClipCapIt-190416-172349.PNG) |
 | f(x,y):= _{boolsche Funktion in x und y}_                                                                                                                                            | implizit deklarierte Funktion muss auf der rechten Seite ein boolsches Ergebnis haben! | f(x,y):=x*y&lt;3                                                                                       | <br>![100px-ClipCapIt-190416-172124.PNG](100px-ClipCapIt-190416-172124.PNG) |
 | f(x,y):=_{Zeichenelement}_(_{Koordinaten durch Komma getrennt}_,_{parameter}_=_{wert}_) **oder**<br> _{Zeichenelement}_(_{Koordinaten durch Komma getrennt}_,_{parameter}_=_{wert}_) | Zeichnet vordefiniert graphische Funktionen wie Linen,Punkte,Kreise,etc.               | f(x,y):=line(1,3,5,-3,color=red,points,text=abc) **oder**<br> line(1,3,5,-3,color=red,points,text=abc) | <br>![100px-ClipCapIt-200507-075942.PNG](100px-ClipCapIt-200507-075942.PNG) |
-</div>
+
 
 ####  Füllungen zwischen Graphen 
 
 Füllbereiche können zwischen zwei Funktionen eingefügt werden. 
 
 Syntax:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Füllungsdefinition                        | Beschreibung                                                      | Beispiel                                                       | Graph                                                                       |
 |-------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------|
 | fill:_{Funktion1}_ **&gt;** _{Funktion2}_ | Füllung des Bereichs wo die Funkion1 größer als die Funktion2 ist | y(x):=-0.1*x^2+7;y(x):=0.2*x+1;**fill:ch1&gt;ch2,color=green** | <br>![100px-ClipCapIt-190420-123342.PNG](100px-ClipCapIt-190420-123342.PNG) |
 | fill:_{Funktion1}_ **&lt;** _{Funktion2}_ | Füllung des Bereichs wo die Funkion1 kleine als die Funktion2 ist | y(x):=-0.1*x^2+7;y(x):=0.2*x+1;**fill:ch1&lt;ch2,color=green** | <br>![100px-ClipCapIt-190420-123533.PNG](100px-ClipCapIt-190420-123533.PNG) |
 | fill:_{Funktion1}_ **-** _{Funktion2}_    | Füllung des Bereichs zwischen Funkion1 und Funktion2              | y(x):=-0.1*x^2+7;y(x):=0.2*x+1;**fill:ch1-ch2,color=green**    | <br>![100px-ClipCapIt-190420-123555.PNG](100px-ClipCapIt-190420-123555.PNG) |
-</div>
+
 
 * Als Funktionsnamen kann der Name der Funktion, oder die Nummer der Funktion (ch1, ch2,...) verwendet werden
 * Nach der Funktionsdefinition kann durch Beistrich getrennt die Füllung konfiguriert werden.
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter       | Beschreibung                                                                                                                                   | Beispiel   |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | color=_{Farbe}_ | [Farbe](../Farben/index.md) der Füllung setzen                                                                                                 | color=blue |
 | size            | Linienstärke der Füllungsumrandung                                                                                                             | size=5     |
 | fill            | Füllstärke (mit der Farbe der Linienfarbe) einer Füllung von der Graphenlinie bis zur Nulllinie 0..keine Füllung (Standard) 1..deckend gefüllt | fill=0.3   |
-</div>
+
 
 ###  gespiegelter Funktionsplot (functiony) 
 X und Y-Achse werden vertauscht! 
@@ -57,7 +54,6 @@ f(x):=x^2;x:-3,3;y:-3,3;f:size=5;functiony
 <br>![300px-ClipCapIt-190416-172840.PNG](300px-ClipCapIt-190416-172840.PNG)
 
 ###  Bodediagramm (bode, bodeabs, bodearg) 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                 | Beschreibung                              | Beispiel                                          | Graph                                                                       |
 |--------------------------|-------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------|
@@ -67,7 +63,7 @@ f(x):=x^2;x:-3,3;y:-3,3;f:size=5;functiony
 | G(w):= _{Funkion in w}_  | Fouriertransformierte mit Frequenz f      | G(w):=1/(1+j*w);bode;f:0.01,100;abs:-60,20,size=4 | <br>![200px-ClipCapIt-190417-074615.PNG](200px-ClipCapIt-190417-074615.PNG) |
 | G(s):= _{Funktion in s}_ | Nur Betragsfrequenzgang                   | G(s):=1/(1+0.01*s);bodeabs                        | <br>![200px-ClipCapIt-190417-074756.PNG](200px-ClipCapIt-190417-074756.PNG) |
 | G(s):= _{Funktion in s}_ | Nur Betragsfrequenzgang                   | G(s):=1/(1+0.01*s);bodearg                        | <br>![200px-ClipCapIt-190417-074848.PNG](200px-ClipCapIt-190417-074848.PNG) |
-</div>
+
 
 ###  Konfiguration von Achsen und Funktionen 
 Alle Konfigurationen zu Achsen und Funktionen beginnen mit dem Namen der Achse oder Funktion (Bsp: i(t) dann muss i:color=red --&gt; setzt die Farbe auf rot) gefolgt von einem Doppelpunkt und der durch Beistrich getrennten Parameterliste.
@@ -77,7 +73,6 @@ Name:par1=wert1,par2=wert2,switch1,switch2
 </pre>
 
 ####  Name 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Name          | Beschreibung                                                                       | Beispiel           | Name |
 |---------------|------------------------------------------------------------------------------------|--------------------|------|
@@ -85,13 +80,12 @@ Name:par1=wert1,par2=wert2,switch1,switch2
 | Funktion      | Eine Funktion, welche auf einer Achse aufgetragen ist                              | f(x):=x^2+2*x      | f    |
 | Absolutbetrag | Der Absolutbetrag einer komplexen Funktion                                         | G(s):=1/(1+s);bode | abs  |
 | Argument      | Das Argument einer komplexen Funktion                                              | G(s):=1/(1+s);bode | arg  |
-</div>
+
 
 ####  Parameter 
 Wenn die **ersten zwei Parameter** aus Variablen und Datensätzen numerisch berechenbar sind, werden sie als **Grenzen der Achsen** verwendet. 
 
 Weitere Parameter:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter  | Beschreibung                                                                                                                                                        | Beispiel                                    |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
@@ -105,12 +99,11 @@ Weitere Parameter:
 | eh         | Einheit die bei einem parametrischen Plot angezeigt werden soll                                                                                                     | f(x,y):=[[1,2]([1,2),[3,4](3,4)];y:0,3,eh=V |
 | grid       | fixiert das Achsraster auf den angegebenen Wert                                                                                                                     | f(x):=x^2-3;x:-4,4,grid=1                   |
 | griddiv    | setzt die Anzahl der Teilungen zwischen zwei Grid-Werte einer Achse                                                                                                 | f(x):=x^2-3;x:-4,4,griddiv=2                |
-</div>
+
 
 ####  Schalter 
 Schalter haben keinen Wert, sondern werden nur aktiv wenn sie angegeben werden.
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Schalter | Beschreibung                                               |
 |----------|------------------------------------------------------------|
@@ -119,7 +112,7 @@ Schalter haben keinen Wert, sondern werden nur aktiv wenn sie angegeben werden.
 | 1000     | setzt die Anzahl der berechneten Werte auf 1000            |
 | log      | Ändert die Skala der Achse auf eine logarithmische Skala   |
 | dB       | Ändert die Skala der Achse auf eine dB-Skala               |
-</div>
+
 
 ####  Beispiele 
 <pre>
@@ -129,7 +122,6 @@ arg:color=blue
 
 ###  allgemeine Parameter 
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                               | Beispiel                                                                                                         |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -163,7 +155,7 @@ arg:color=blue
 | ort(f)                                  | Zeichnet die durch Punkte gegebene Funktion aus einzelnen Ortsvektoren                                                                                                                                                                                                                                                                                                     | f(x,y):[[0,a]([0,a),[a,b](a,b)];ort(f)                                                                           |
 | linepoint(f)                            | Zeichnet die durch Punkte gegebene Funktion als Linienzug mit Stützpunkten                                                                                                                                                                                                                                                                                                 | f(x,y):[[0,a]([0,a),[a,b](a,b)];linepoint(f)                                                                     |
 | view=x1,y1,x2,y2                        | Setzt den sichtbaren Bereich bezüglich des normal quadratischen Zeichenfensters auf das angegebene Rechteck (x1,y1)(x2,y2). Die Angabe von x1,x2,y1,y2 erfolgt mittels Ganzzahlen als Prozentwerte wobei links oben 0,0 und rechts unten 100,100 liegen. Die Standardeinstellung ist somit view=0,0,100,100<br> Prozentwerte sind größer als 100 und auch negativ möglich! | f(x):=sin(x);x:0,2pi;view=10,0,60,70 <br>![100px-ClipCapIt-200527-101423.PNG](100px-ClipCapIt-200527-101423.PNG) |
-</div>
+
 
 ###  Ortskurve (ortskurve) 
 Zeichnet die **Frequenzgangsortskurve** einer Funktion im Laplacebereich mit dem **Laplaceoperator s** oder einer Fouriertransformierten mit der **Kreisfrequenz w**.
@@ -240,7 +232,6 @@ Ein Anführungszeichen " muss bei der Verwendung im PIG-Tag im Definitionsstring
 
 ####  definierte Zeichenelemente 
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                                                    | Beschreibung                                                                                                                                                           | Beispiel                                                                                                                                                                                           | Graph                                                                                                                                                        |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -274,11 +265,10 @@ Ein Anführungszeichen " muss bei der Verwendung im PIG-Tag im Definitionsstring
 | imgif(bedingung,function1,function2)                        | Zeichnet je nachdem ob eine Bedingung erfüllt (function1) oder nicht erfüllt (function2) die entsprechende Funktion.                                                   | imgif(y!=0,line(1,2,3,4),rect(1,2,3,4))                                                                                                                                                            | <br>![100px-ClipCapIt-200608-152824.PNG](100px-ClipCapIt-200608-152824.PNG)                                                                                  |
 | imgfor(variable,first,second,last,function)                 | Zeichnet eine Funktion mit einer Schleife mehrmals.                                                                                                                    | imgfor(x,-4,-3,4,line(x,1,x+4,6))                                                                                                                                                                  | <br>![100px-ClipCapIt-200608-152751.PNG](100px-ClipCapIt-200608-152751.PNG)                                                                                  |
 | boxplot(uw,uq,m,oq,ow,pos,height)                           | Zeichnet einen Boxplot. pos und height sind optional.                                                                                                                  | boxplot(-6,-3,1,2,4);boxplot(-4,-2,1,2,5,3,2);boxplot([setboxplot#mengen-funktionen-](../Berechnungen#mengen-funktionen-/index.md#mengen-funktionen-)([1,2,3,4,5,6](1,2,3,4,5,6)),-4,text="Hallo") | <br>![100px-ClipCapIt-201002-172706.PNG](100px-ClipCapIt-201002-172706.PNG)                                                                                  |
-</div>
+
 
 ####  Konfigurations-Parameter 
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter                                                                     | Beschreibung                                                                                                                                                                        | Beispiel                                                                                                                 | Graph                                                                       |
 |-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -312,7 +302,7 @@ Ein Anführungszeichen " muss bei der Verwendung im PIG-Tag im Definitionsstring
 | top                                                                           | schreibt den Text nach oben bündig                                                                                                                                                  | text(-3,2,6,7,text="Text Demo",top,points,pointcolor=red)                                                                | <br>![100px-ClipCapIt-200512-160740.PNG](100px-ClipCapIt-200512-160740.PNG) |
 | bottom                                                                        | schreibt den Text nach unten bündig                                                                                                                                                 | text(-3,2,6,7,text="Text Demo",bottom,points,pointcolor=red)                                                             | <br>![100px-ClipCapIt-200512-160801.PNG](100px-ClipCapIt-200512-160801.PNG) |
 | back                                                                          | Zeichnet das Zeichenelement im Hintergrund                                                                                                                                          | image(-6,-6,8,6,0,back)                                                                                                  | <br>![100px-ClipCapIt-200622-120418.PNG](100px-ClipCapIt-200622-120418.PNG) |
-</div>
+
 
 ##  siehe auch 
 * [Plugins](../Plugins/index.md)

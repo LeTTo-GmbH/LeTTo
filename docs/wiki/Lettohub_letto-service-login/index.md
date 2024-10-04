@@ -7,7 +7,6 @@ siehe auch
 **lettohub/letto-service-login**
 
 ###  Tags 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Tag     | Beschreibung                                                                         | Anmerkung |
 |---------|--------------------------------------------------------------------------------------|-----------|
@@ -16,29 +15,26 @@ siehe auch
 | stable  | letzte stabile Version für den Produktivbetrieb                                      |           |
 | debug   | Bitte nicht verwenden ist tagesaktuell nur für Debugging-Zwecke                      |           |
 | revXXXX | Revision mit der Nummer XXXX. Nur wenn man eine definierte Version verwenden möchte. |           |
-</div>
+
 
 ###  Ports 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Port | Beschreibung                                                                |
 |------|-----------------------------------------------------------------------------|
 | 8095 | http-Port für die interne Kommunikation innerhalb des Docker-Netzwerkes     |
 | 9095 | https-Port mit selbstsigniertem Zertifikat für externe Kommunkation         |
 | 5095 | debugging-Port, aktiv wenn die Environment-Variable debug=true gesetzt wird |
-</div>
+
 
 ###  Pfade welche als Volume verbunden werden sollten 
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Pfad im Docker Container | Beschreibung                 | üblicher Wert                       |
 |--------------------------|------------------------------|-------------------------------------|
 | /log                     | Verzeichnis für die Logfiles | /opt/letto/docker/storage/log/login |
-</div>
+
 
 ###  Environment Variable 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable                  | Beschreibung                                                                                        | üblicher Wert                    | muss gesetzt sein |
 |---------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------|-------------------|
@@ -57,7 +53,7 @@ siehe auch
 | letto_setup_uri           | Docker-Interne URL des Setup-Services im Docker-Container                                           | http://letto-setup.nw-letto:8096 | ja                |
 | JAVA_OPTS                 | Java Options-Variable für das Service                                                               | -Xms50m -Xmx100m                 | nein              |
 | debug                     | Startet den Container im Debugging-Mode auf Port 5096                                               | false                            | nein              |
-</div>
+
 
 ##  Docker Compose 
 * .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-letto.yml](http://letto.at/download/letto/setup/yml/docker-compose-letto.yml)

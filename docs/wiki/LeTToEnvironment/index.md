@@ -11,7 +11,6 @@ siehe auch
 * Undokumentierte Variablen welche in den yml-Dateien verwendet werden sollten einen Defaultwert haben und können natürlich ebenfalls in der .env-Datei gesetzt werden. 
 
 ###  LeTTo Environment 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable                   | Beschreibung                                                                                                      | mögliche/default Werte                      |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
@@ -82,7 +81,7 @@ siehe auch
 | CERT_EXTERN                | Gibt an ob ein externes Zertifikat verwendet werden soll                                                          | 0,1                                         |
 | CREATE_HTTPS_CONF          | Gibt an ob die Datei https.conf der Proxy-Konfiguration automatisch beim Start des Proxy neu erzeugt werden soll. | 1,0                                         |
 | USE_HTTP                   | Gibt an ob HTTP-Anfragen an Port 80 verarbeitet (1) oder automatisch an Port 443 redirected werden sollen(0).     | 1,0                                         |
-</div>
+
 
 ###  Environment Variablen für jede installierte Schule 
 * Alle Variablen beginngn mit LETTO_X_ wobei X durch die Nummer der Schule ( 1,2,...)  zu ersetzen ist. 

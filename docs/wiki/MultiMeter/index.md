@@ -11,18 +11,16 @@ Das Plugin ist noch in der Erstellungsphase. Aktuell sind die analogen Multimete
 
 * Durch die Verwendung des Plugins mit einem PIG-Tag kann ein Wert am Multimeter angezeigt werden.
 * Folgende Parameter können beim PIG-Tag sinnvoll verwendet werden:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Beschreibung                                                                                                                                                                                                                                                                                         |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | image     | (Standardeinstellung wenn nichts angegeben ist.) Das Messgerät zeigt einen durch var.. (Je nach Gerätetyp var,varac,varu,vari) angegebenen Wert mit einer automatischen Wahl des Messbereiches an. Hier funktioniert auch der **PDF-Ausdruck** der Anzeige.                                          |
 | view      | An das Messgerät wird ein durch var.. (Je nach Gerätetyp var,varac,varu,vari) angegebener Wert angelegt. Der Schüler muss den richtigen Messbereich einstellen um ihn vom Messgerät ablesen zu können. Der Schüler nimmt durch die Veränderung des Messbereichsendwerts Einfluss auf die Zeigerlage. |
-</div>
+
 
 ###  Multimeter als Plugin-Teilfrage einer Mehrfachberechnungsfrage 
 * Durch die Verwendung des Plugins in einer Teilfrage kann der Schüler am Messgerät Messbereich und Zeigerausschalg interaktiv einstellen
 * Folgende Parameter können sinnvoll (=immer nur ein Parameter) verwendet werden. Bei Mehrfachnennung wird der letzt genannte gültig:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Beschreibung                                                                                                                                                                                                                    |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,7 +28,7 @@ Das Plugin ist noch in der Erstellungsphase. Aktuell sind die analogen Multimete
 | input     | (Standardeinstellung) Das Messgerät wählt automatisch den korrekten Messbereich für den durch var.. (Je nach Gerätetyp var,varac,varu,vari) angegebenen Wert. Der Schüler muss den korrekten Zeigerausschlag selbst einstellen. |
 | in        | ist eine Kurzschreibweise von input mit gleicher Funktion                                                                                                                                                                       |
 | all       | Der Schüler kann Messbereich und Zeigerausschlag selbst einstellen.                                                                                                                                                             |
-</div>
+
 #####  Vorgangsweise bei der Verwendung des Multimeter-Plugins in einer Teilfrage 
 * Mehrfachberechnungsfrage Erstellen
 * Erstellung des Plugins 
@@ -50,7 +48,6 @@ Bsp:
 ###  Angabe des angezeigten Wertes 
 * Der angezeigte Wert muss je nach Type des Messgerätes korrekt angegeben werden
 * Über die Einheit des angegebenen Wertes wird über den Messbereich entschieden
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Beschreibung                                                                                                                                                                     | Beispiel                 |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -63,10 +60,9 @@ Bsp:
 | P         | Wattmeter in der Betriebsart - Wirkleistung                                                                                                                                      | varU=50V,varI=2A+%i*1A,P |
 | Q         | Wattmeter in der Betriebsart - Blindleistung                                                                                                                                     | varU=U1,varI=I1,Q        |
 | S         | Wattmeter in der Betriebsart - Scheinleistung (wenn es vom Wattmeter unterstützt wird                                                                                            | varU=U1,varI=I1,S        |
-</div>
+
 
 ###  sonstige Parameter 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Beschreibung                                                                                                                                              |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,11 +72,10 @@ Bsp:
 | back      | zeigt die Rückseite des Gerätes wenn sie bei dem angegebenen Geräte zur Verfügung steht                                                                   |
 | off       | Es wird kein Zeiger angezeigt (Alter Parameter nur mehr aus Kompatibilitätsgründen), sollte nicht mehr verwendet werden.                                  |
 |           |                                                                                                                                                           |
-</div>
+
 
 ###  realisierte Multimeter 
 Die Art des Multimeters muss in der **Plugin-Definition** angegeben werden (nicht erst im PIG-Tag oder in der Teilfrage)
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Multimeter | Beschreibung | Bild                                                                        | Rückseite                                                                   |
 |------------|--------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -90,10 +85,9 @@ Die Art des Multimeters muss in der **Plugin-Definition** angegeben werden (nich
 | GANZUNIV1  |              | <br>![200px-ClipCapIt-201218-112616.PNG](200px-ClipCapIt-201218-112616.PNG) | <br>![200px-ClipCapIt-201221-164610.PNG](200px-ClipCapIt-201221-164610.PNG) |
 | NORMAMETER |              | <br>![400px-ClipCapIt-201218-112655.PNG](400px-ClipCapIt-201218-112655.PNG) | <br>![400px-ClipCapIt-201221-164657.PNG](400px-ClipCapIt-201221-164657.PNG) |
 | LM1010     |              | <br>![200px-ClipCapIt-201218-112741.PNG](200px-ClipCapIt-201218-112741.PNG) |                                                                             |
-</div>
+
 
 ###  Beispiele PIG 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Plugin-Definition                | Beschreibung              | Bild                                                                        |
 |----------------------------------|---------------------------|-----------------------------------------------------------------------------|
@@ -102,7 +96,7 @@ Die Art des Multimeters muss in der **Plugin-Definition** angegeben werden (nich
 | CA5011,var=10V,varac=5V;acdc     | Spannungsmessung True-RMS | <br>![200px-ClipCapIt-201221-174614.PNG](200px-ClipCapIt-201221-174614.PNG) |
 | LM1010,varU=140V,varI=3A+%i*2A,P | Wirkleistungsmessung      | <br>![200px-ClipCapIt-201221-175434.PNG](200px-ClipCapIt-201221-175434.PNG) |
 | GANZUNIV1,var=35kOhm             | Widerstandsmessung        | <br>![ClipCapIt-201221-175637.PNG](ClipCapIt-201221-175637.PNG)             |
-</div>
+
 
 [Plugins](../Plugins/index.md)
 

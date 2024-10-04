@@ -19,7 +19,6 @@
 * [Eingabe von Resultaten](../EingabevonResultateninLeTTo/index.md)
 
 ####  Basiseinheiten 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Einheit | Name    | Dimension                                                          | Dimensionssymbol |
 |---------|---------|--------------------------------------------------------------------|------------------|
@@ -32,12 +31,11 @@
 | cd      | Candela | Lichtstärke                                                        | J                |
 | Euro    | Euro    | Währung (keine richtige Einheit aber als Basiseinheit realisiert)  | W                |
 | Dollar  | Dollar  | Währung2 (keine richtige Einheit aber als Basiseinheit realisiert) | X                |
-</div>
+
 
 ####  Einheiten 
 
 #####  Grundeinheiten: 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Einheit | Name                | Basiseinheit | Größe                         | Dimensionssymbol |
 |---------|---------------------|--------------|-------------------------------|------------------|
@@ -64,10 +62,9 @@
 | Gy      | Gray                | J/kg         | Energiedosis                  | Ed               |
 | Sv      | Sievert             | J/kg         | Äquivalenzdosis               | Da               |
 | kat     | Katal               | mol/s        | Katalystische Aktivität       | Kat              |
-</div>
+
 
 #####  nicht SI-Einheiten: 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Einheit  | Name                   | Basiseinheit | Größe(Symbol)     | Faktor      |
 |----------|------------------------|--------------|-------------------|-------------|
@@ -88,10 +85,9 @@
 | €        | Euro                   | Euro         | Währung           | 1           |
 | $        | Dollar                 | Dollar       | Währung2          | 1           |
 | Eurocent | Eurocent               | Euro         | Währung           | 0.01        |
-</div>
+
 
 #####  Winkel: Hier sind keine Einheitenvielfachen erlaubt! 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Einheit | Name         | Basiseinheit | Faktor zu Basiseinheit |
 |---------|--------------|--------------|------------------------|
@@ -101,10 +97,9 @@
 | ´´      | Bogensekunde | 1            | %pi/180/3600           |
 | pi      | Radiant      | 1            | %pi                    |
 | sr      | Steradiant   | 1            | 1                      |
-</div>
+
 
 #####  Sondereinheiten für Einheitenlose Größen: Hier sind keine Einheitenvielfachen erlaubt! 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Einheit  | Name              | Beschreibung/Faktor zu 1                        |
 |----------|-------------------|-------------------------------------------------|
@@ -113,19 +108,17 @@
 | promille | Promille          | 0.001                                           |
 | ppm      | parts per million | 1e-6                                            |
 | °        | Grad              | pi/180                                          |
-</div>
+
 
 #####  Sondereinheiten Digitaltechnik: 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | -    |
 |------|
 | Byte |
 | Bit  |
-</div>
+
 
 ####  Dimensionen, die kein eigenes Einheitenzeichen haben, aber trotzdem definiert sind 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Größe                      | Dimensionssymbol | Einheit   |
 |----------------------------|------------------|-----------|
@@ -159,10 +152,9 @@
 | spezifische Wärmekapazität | c                | kJ/kgK    |
 | Wärmekapazität             | C                | J/K       |
 | thermischer Widerstand     | Rth              | K/W       |
-</div>
+
 
 ####  Einheitenvielfache 
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Zeichen | Name  | Faktor |
 |---------|-------|--------|
@@ -186,7 +178,7 @@
 | E       | Exa   | 1e18   |
 | Z       | Zetta | 1e21   |
 | Y       | Yotta | 1e24   |
-</div>
+
 
 Kategorie:Berechnung
 

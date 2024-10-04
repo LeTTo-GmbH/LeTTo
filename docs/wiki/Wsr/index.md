@@ -6,7 +6,6 @@ Zeichnet lineare elektrische Schaltungen und liefert auch das mathematische Mode
 ### Definition der Schaltung
 #### Schaltungselemente
 Die Schaltung wird im Plugindialog über einen String(Zeichenkette) definiert, wobei folgende Zeichen definiert sind:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Name              | Bedeutung                                                    | Symbol                                                          |
 |-------------------|--------------------------------------------------------------|-----------------------------------------------------------------|
@@ -33,20 +32,18 @@ Die Schaltung wird im Plugindialog über einen String(Zeichenkette) definiert, w
 | Ser(R,R)          | Serienschaltung von zwei Widerständen                        | <br>![ClipCapIt-181127-103220.PNG](ClipCapIt-181127-103220.PNG) |
 | B(R1,R2,R3,R4,R5) | Brückenschaltung von 5 Bauelementen                          | <br>![ClipCapIt-181127-103314.PNG](ClipCapIt-181127-103314.PNG) |
 | B(R)              | Brückenschaltung von 5 Widerständen mit verschiedenen Werten | <br>![ClipCapIt-181127-103314.PNG](ClipCapIt-181127-103314.PNG) |
-</div>
+
 
 Die Verschaltung der Bauelement erfolgt über die folgenden Operatoren:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Bedeutung                                                                                                                                                      |
 |----------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *        | 15        | Parallelschaltung                                                                                                                                              |
 | +        | 10        | Serienschaltung                                                                                                                                                |
 | ?        |           | Wird nach einem Bauteil ein Fragezeichen gesetzt, so wird der Bauteil in der Angabe nicht angegeben und der Bauteilwert wird in der Schaltung nicht gezeichnet |
-</div>
+
 
 #### Zusammenschaltung von Zweipolen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Schaltung                                                               | Bedeutung                                                | Beispiel           | Bild                                                            |
 |-------------------------------------------------------------------------|----------------------------------------------------------|--------------------|-----------------------------------------------------------------|
@@ -60,13 +57,12 @@ Die Verschaltung der Bauelement erfolgt über die folgenden Operatoren:
 | Vierpol als T-Glied                                                     |                                                          | ,R1,R2,,R3,LL      | <br>![ClipCapIt-181127-211052.PNG](ClipCapIt-181127-211052.PNG) |
 | Vierpol als Pi-Glied                                                    |                                                          | ,,R1,,R2,R3,,      | <br>![ClipCapIt-181127-211158.PNG](ClipCapIt-181127-211158.PNG) |
 | Zweipol mit mehreren Elementen                                          |                                                          | ,R1,R2,R3,R4,R5,R6 | <br>![ClipCapIt-181127-211246.PNG](ClipCapIt-181127-211246.PNG) |
-</div>
+
 
 #### angezeigte Spannungen und Ströme
 * Die angezeigten Ströme und Spannung können nach der Schaltungsdefinition durch einen Strichpunkt getrennt erfolgen. 
 * Sie werden einfach durch Beistrich getrennt angegeben
 Folgenden Definitionen sind hierbei möglich:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator      | Beispiel | Bedeutung                                                                                                                                                        |
 |---------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,12 +74,11 @@ Folgenden Definitionen sind hierbei möglich:
 | ?             | UR1?     | Der Pfeil wird ohne Namen gezeichnet                                                                                                                             |
 | &gt;          | UR1&gt;x | Der Index der Größe wird in Schaltung und Zeigerdiagramm ausgetauscht. In diesem Beispiel wird Ux statt UR1 geschrieben. In Maxima bleibt der Index unverändert. |
 | :             | R1:Rx    | Ein Bauteilname kann umbenannt werden. Hier R1 auf Rx.                                                                                                           |
-</div>
+
 Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwendet werden wie zB: UR4&gt;x!_ 
 <br>![ClipCapIt-181127-212621.PNG](ClipCapIt-181127-212621.PNG)
 
 #### Beispiele
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Definition                                        | Schaltung                                                                   |
 |---------------------------------------------------|-----------------------------------------------------------------------------|
@@ -92,7 +87,7 @@ Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwe
 | U,R,R,A;UR1,UR2,IR1&gt;1,IA1-,A1:.,R2:Rx,URx&gt;x | <br>![300px-ClipCapIt-181127-213502.PNG](300px-ClipCapIt-181127-213502.PNG) |
 | ,R,R;Ue?,Ie-,UR1?,UR2&gt;a                        | <br>![300px-ClipCapIt-181127-213912.PNG](300px-ClipCapIt-181127-213912.PNG) |
 | ,R,C?,,                                           | <br>![300px-ClipCapIt-190322-142038.PNG](300px-ClipCapIt-190322-142038.PNG) |
-</div>
+
 
 ### Datensätze
 * Das Plugin erstellt automatisch beim Beenden des Plugin-Editors die benötigten Datensätze
@@ -106,12 +101,11 @@ Im Frageeditor kann man mit der rechten Maustaste und Plugin-Angabe die Angabe f
 Wird später das Plugin verändert wird dieser Test **nicht automatisch** nachgeführt. Er muss dann entweder gelöscht und neu eingefügt, oder händisch angepasst werden.
 
 Beispiel:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Schaltung                                                       | Angabe                                               |
 |-----------------------------------------------------------------|------------------------------------------------------|
 | <br>![ClipCapIt-181127-214655.PNG](ClipCapIt-181127-214655.PNG) | $U_{Q1}={UQ1}$, $R_{1}={R1}$, $C_{1}={C1}$ , $f={f}$ |
-</div>
+
 			
 #### Einfügen von Graphiken
 Eine Graphik kann durch das Plugin-Tag 
@@ -122,7 +116,6 @@ im Fragetext eingefügt werden. Dies erfolgt entweder direkt über die Eingabe d
 
 Folgende Parameter können angegeben werden:
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Graphiktyp     | typ parameter   | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Beispiel                                                 |
 |----------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -131,7 +124,7 @@ Folgende Parameter können angegeben werden:
 | Bodediagramm   | BODE UR1,W,w20  | erster Parameter ist die Ausgangs-Spannung oder der Ausgangs-Strom <br> weitere Parameter durch Komma getrennt<br> O..Frequenzachse Kreisfrequenz<br> B,BF..Betragsfrequenzgang mit Frequenzachse in Hz<br> BO..Betragsfrequenzgang mit Frequenzachse als Kreisfrequenz <br> W,WF..Winkelfrequenzgang mit Frequenzachse in Hz<br> WO..Winkelfrequenzgang mit Frequenzachse als Kreisfrequenz<br> w50..Breite in Prozent des Bildschirms                                                                                                                                                                                                                                                                                 | [PIG plugin1 "bode UC2"/](PIG plugin1 "bode UC2"/)       |
 | Zeigerdiagramm | ZD w40          | Parameter durch Komma getrennt<br> U Zeigerdiagramm der Spannungen<br> I Zeigerdiagramm der Ströme<br> UI Zeigerdiagramm der Ströme und Spannungen<br> UR1 erzwingt das Zeichnen der Spannung UR1<br> IC1 erzwingt das Zeichnen des Stromes IC1<br> u unterstreicht alle Ströme und Spannungen<br> UR1? zeichnet den Zeiger ohne Beschriftung<br> UR1/ die Beschriftung erfolgt auf der anderen Seite des Zeigers<br> UR2- Die Spannung wird nicht gezeichnet<br> P(UR1,UR2,IC1) nur die angegebenen Spannungen und Ströme werden gezeichnet<br> w50 Breite in Prozent des Bildschirms	<br> noscale keine Angabe über die Größe der Spannungen und Ströme<br> nolegend keine Beschriftung der Spannungen und Ströme<br> | [PIG plugin1 "zd UI,w50"/](PIG plugin1 "zd UI,w50"/)     |
 | Ortskurve      | OK UC1,w20      | erster Parameter ist die Ausgangs-Spannung oder der Ausgangs-Strom <br> weitere Parameter durch Komma getrennt<br> w50..Breite in Prozent des Bildschirms                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | [PIG plugin1 "ok UC2,w40\"/](PIG plugin1 "ok UC2,w40\"/) |
-</div>	 
+	 
 Bodediagramm und Ortskurve werden grundsätzlich als Verhältnis von 
 angegebener Ausgangsspannung oder Ausgangsstrom zur Eingangsspannung
 oder zum Eingangsstromg berechnet.<br>
@@ -146,12 +139,11 @@ Die positive horizontale Achse geht von links nach rechts von 0 bis 100 und bei 
 Die postitive vertikale Achse reicht unten nach oben und beginnt unten bei 0. Der maximale Wert ist abhängig vom Seitenverhältnis des Fensters.
 
 Beispiele:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Plugin-Definition | PIG-Tag                                                                                                      | Bild                                                                        |
 |-------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | ,R,R,,R,LL;Ia     | S w,w50;loop(2.5,1.5,0.6,tex="I");loop(7.5,1.5,0.6,tex="II");circle(5,4,0.3,color=red);text(5,4.7,tex="III") | <br>![200px-ClipCapIt-200603-133148.PNG](200px-ClipCapIt-200603-133148.PNG) |
-</div>
+
 
 #### Maximafeld
 Im Maximafeld kann ein Satz von Berechnungsformeln für das Plugin über den Tag
@@ -165,7 +157,6 @@ Das PIM-Tag wird vor der Maxima-Berechnung automatisch durch die Formeln des Plu
 
 Folgende Variablen werden im Maxima-Feld definiert und können für das Ergebnis 
 verwendet werden:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Variable | Beschreibung                                           | Ergebnistyp               |
 |----------|--------------------------------------------------------|---------------------------|
@@ -185,7 +176,7 @@ verwendet werden:
 | Ue       | Gesamtspannung am Eingang eines Zweipols oder Vierpols | Polynombruch in s         |
 | Ie       | Gesamtstrom am Eingang eines Zweipols oder Vierpols    | Polynombruch in s         |
 | cZges    | komplexe Gesamtimpedanz                                | komplexe Zahl             |
-</div>
+
 
 
 [Plugins](../Plugins/index.md)

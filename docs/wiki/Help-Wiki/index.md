@@ -75,12 +75,11 @@ In Tabellen:
 Erzeugt:
 
 &lt;tt&gt;Beispiel:
-<div   >
 
 | Zitat | Zitat |
 |-------|-------|
 | Zitat | Zitat |
-</div>
+
 &lt;/tt&gt;
 
 ##### &lt;nowiki&gt;&lt;code&gt;Text&lt;/code&gt;&lt;/nowiki&gt;
@@ -180,7 +179,6 @@ Hier sind '''Special:Categories|alle Kategorien''' aufgelistet.
 Das sind Seiten, die **manuell** zur Organisation oder Strukturierung mit Beiträgen verlinkt werden, z.B.: Portal:Datenverwaltung. Ist total flexibel, aber Arbeit.
 
 #### Suchen
-<div  class="wikitable" >
 
 | Special:Search/Server|&lt;code&gt;Server&lt;/code&gt;                                     | Suche nach Worten.                                                                    | n Ergebnisse &lt;sup&gt;(1.1.2019)&lt;/sup&gt; |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------|
@@ -188,7 +186,7 @@ Das sind Seiten, die **manuell** zur Organisation oder Strukturierung mit Beitr�
 | Special:Search/Server* |&lt;code&gt;Server*&lt;/code&gt;                                  | Platzhalter für einen Teil eines Wortes.                                              | m Ergebnisse &lt;sup&gt;-"-&lt;/sup&gt;        |
 | Special:Search/LSR -Quelle|&lt;code&gt;LSR -Quelle&lt;/code&gt;                           | Ausschluss eines Wortes oder einer Wortgruppe.                                        | n Ergebnisse &lt;sup&gt;-"-&lt;/sup&gt;        |
 | Special:Search/~Server|&lt;code&gt;~Server&lt;/code&gt;                                   | Anzeige des Suchergebnisses erzwingen und nicht automatisch zum Artikel weiterleiten. | m Ergebnisse &lt;sup&gt;-"-&lt;/sup&gt;        |
-</div>
+
 
 ### Drucken
 Das Erzeugen eines Druckdokuments ist für ausgewählte Beiträge am effizientesten, indem man einfach das HTML (Druckversion, links unten inder Navigation) in Word kopiert. Dann kann man noch formatieren,es kann ein Inhaltsverzeichnis generiert werden etc.
@@ -196,7 +194,6 @@ Das Erzeugen eines Druckdokuments ist für ausgewählte Beiträge am effizientes
 
 ![logo.png](logo.png)'''[Letto](/notimplemented/index.md)''' ist ein E-Learning-Server, der vor allem für technisch-mathematische-Gegenstände optimiert ist.
 Mit einer Tabelle auf der Startseite kann man eine übersichtliche Hauptnavigation gestalten:
-<div  class="wikitable" >
 
 | Tabellenbeispiel !! Link !! Bemerkung !! Zuständig !! begonnen!! erledigt |                                                                                                                                                              |                                                                     |                                     |           |  |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------|-----------|--|
@@ -206,7 +203,7 @@ Mit einer Tabelle auf der Startseite kann man eine übersichtliche Hauptnavigati
 | wichtige Links                                                            | [Beispielsammlung](../Beispielsammlung/index.md)                                                                                                             | [Beispielsammlung editieren](../BeispielsammlungEditieren/index.md) |                                     |           |  |
 |                                                                           | colspan=4 | &lt;span style="background-color:yellow"&gt;&lt;span style="color:red"&gt;**Neu:**&lt;/span&gt; _So lassen sich Infos hervorheben!_&lt;/span&gt; |                                                                     |                                     |           |  |
 | |                                                                         |                                                                                                                                                              |                                                                     |                                     |           |  |
-</div>
+
 &lt;div style="clear:both"&gt;&lt;/div&gt; 
 ----
 * Wie kann man eigentlich [selbst Wiki-Seiten machen](../Help-Wiki/index.md)?

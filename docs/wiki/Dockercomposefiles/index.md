@@ -13,7 +13,6 @@
 * Für die Verbindung der Container über das interne Docker-Netzwerk siehe [Container Struktur](../ContainerStruktur/index.md)
 * Das Setup-Service setzt eine Verzeichnisstruktur voraus (siehe [Verzeichnisse und Docker-Volumes](../VerzeichnisseundDocker-Volumes/index.md)) welche im Normalfall auf das Basisverzeichnis /opt/letto/docker aufbaut. 
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Dateiname                                                           | Download                                                                                                                                                     | Startet                        | Environment Variable                              |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|---------------------------------------------------|
@@ -29,7 +28,7 @@
 | /opt/letto/docker/compose/letto/docker-service-export.yml           | [http://letto.at/download/letto/setup/yml/docker-service-export.yml](http://letto.at/download/letto/setup/yml/docker-service-export.yml)                     | neues Export-Service           | [LeTTo Environment](../LeTToEnvironment/index.md) |
 | /opt/letto/docker/compose/letto/docker-service-main.yml             | [http://letto.at/download/letto/setup/yml/docker-service-main.yml](http://letto.at/download/letto/setup/yml/docker-service-main.yml)                         | neues Main-Service             | [LeTTo Environment](../LeTToEnvironment/index.md) |
 | /opt/letto/docker/compose/letto/docker-service-question.yml         | [http://letto.at/download/letto/setup/yml/docker-service-question.yml](http://letto.at/download/letto/setup/yml/docker-service-question.yml)                 | neues Question-Service         | [LeTTo Environment](../LeTToEnvironment/index.md) |
-</div>
+
 
 ###  Mindestkonfiguration für den Betrieb des LeTTo-Servers Rev6539 
 * MySQL-Server
@@ -49,7 +48,6 @@
 ###  Container auf Dockerhub 
 Doku in Arbeit
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Name                                                     | Beschreibung                  |
 |----------------------------------------------------------|-------------------------------|
@@ -59,7 +57,7 @@ Doku in Arbeit
 | [lettohub/letto-mysql](/notimplemented/index.md)         | MySQL-Server                  |
 | [lettohub/lettoserver](/notimplemented/index.md)         | LeTTo Hauptprogramm (aktuell) |
 | [lettohub/letto-service-data](/notimplemented/index.md)  | LeTTo Data-Service            |
-</div>
+
 
 [Administration](../Administration/index.md)
 

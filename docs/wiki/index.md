@@ -164,7 +164,3 @@
 * [Liste aller Spezialseiten [q]](ListeallerSpezialseitenq/index.md)
 
 ## Kategorien
-* [Dialoge](Dialoge/index.md)
-* [Export‎](Export‎/index.md)
-* [Berechnung](Berechnung/index.md)
-* [Beispiele_Editieren](Beispiele_Editieren/index.md)

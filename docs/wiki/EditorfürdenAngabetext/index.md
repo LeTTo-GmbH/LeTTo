@@ -58,7 +58,6 @@ Tutorial zum Erstellen von Tex-Formeln: https://de.wikipedia.org/wiki/Hilfe:TeX
 Im Fragetext können nur die folgenden HTML-Tags verwendet werden, alle anderen Tags werden automatisch entfernt und sollten deshalb nicht verwendet werden.
 
 zulässige HTML-Tags:
-<div  class="wikitable" >
 
 | **name**                                                       | **Funktion**                                        |
 |----------------------------------------------------------------|-----------------------------------------------------|
@@ -93,10 +92,9 @@ zulässige HTML-Tags:
 | [h1,h2,h3,h4,h5,h6](https://www.w3schools.com/tags/tag_hn.asp) | Überschriften                                       |
 | [abbr](https://www.w3schools.com/tags/default.asp)             | Acronym                                             |
 | [audio](https://www.w3schools.com/tags/tag_audio.asp)          | Audio-Datei                                         |
-</div>
+
 
 ### Spezielle TAGs im Fragentext
-<div  class="wikitable" >
 
 | Tagbezeichnung     | Beschreibung                                                                                                                                                                                                                                                                                                                       |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -105,7 +103,7 @@ zulässige HTML-Tags:
 | [text](LINK0)      | Link auf eine Datei aus der Dateiliste der Frage. Der Text wird als Link-Text angezeigt.                                                                                                                                                                                                                                           |
 | [Q0](Q0)           | Referenz auf eine Teilfrage eine [Mehrfachberechnungsfrage](/notimplemented/index.md). Der [Q...](Q...)-Tag liefert dann in der fertigen Frage ein Eingabefeld zur Lösungseingabe für diese Teilfrage                                                                                                                              |
 | [..](PIG)          | Tag zum Einbinden einer Grafik, die von einem [Plugin](../Plugins/index.md) zur Laufzeit erzeugt wird.                                                                                                                                                                                                                             |
-</div>
+
 
 ### Bilder
 Bilder werden im Editor durch ein Image-Tag [IMG0](IMG0), [IMG1](IMG1), etc. als Platzhalter angezeigt. Grafiken werden als Dateien an die Frage angeschlossen und mit dem IMG-Tag zur Anzeige gebracht. 
@@ -139,7 +137,6 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 * Bis auf einige Ausnahmen können im Fragetext alle Zeichen des UTF-8-Zeichensatzes verwendet werden.
 * Spezielle Sonderzeichen des CK-Editors können mit dem Button <br>![ClipCapIt-220113-153145.PNG](ClipCapIt-220113-153145.PNG) eingefügt werden
 * Folgende Zeichen haben im Fragetext eine Sonderstellung und müssen deshalb teilweise gesondert behandelt werden:
-<div  class="wikitable" >
 
 | Zeichen !!  Bezeichnung !! Funktion   !!  Verwendung im Fragetext |                      |                                                  |                                                                                                                                           |
 |-------------------------------------------------------------------|----------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -148,12 +145,11 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 | &lt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                               |
 | &gt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                               |
 | [                                                                 | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                   |
-</div>
+
 
 ###  Sonderzeichen in einer Formelumgebung im Fragetext 
 * Eine Formelumgebung beginnt im Fragetext mit Dollar und endet mit Dollar. Dazwischen wird der Text als Formel wie in LaTeX gesetzt. 
 * Sonderzeichen werden dabei wie folgt angegeben:
-<div  class="wikitable" >
 
 | Zeichen !! Verwendung in der Formelumgebung |            |
 |---------------------------------------------|------------|
@@ -168,7 +164,7 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 | x²                                          | x^2        |
 | x³                                          | x^3        |
 | %                                           | \%         |
-</div>
+
 
 ### Datensätze und Variable
 Die Verwendung von Datensätzen oder Ergebnissen von Berechnungen erfolgt immer über geschwungene Klammern!
@@ -177,7 +173,6 @@ Datensatz erstellen: siehe [Datensätze definieren](../Datensätzedefinieren/ind
 
 Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der Maxima-Berechnung können im Fragetext innerhalb oder außerhalb von Tex-Formeln verwendet werden.
 
-<div  class="wikitable" >
 
 | Bezeichnung 	!!  Syntax !!  Beispiel   !!  Beschreibung      |                              |            |                                                                                                                                                                                     |
 |--------------------------------------------------------------|------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -197,7 +192,7 @@ Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der 
 | Zeilenvektor                                                 | {name,line}                  | {v,line}   | Vektor als Zeilenvektor: (1/2/3)                                                                                                                                                    |
 | Vektor in Eingabedarstellung                                 | {name,input}                 | {v,input}  | Vektor wird so dargestellt, wie er eingegeben werden kann: [1,2,3](1,2,3)                                                                                                           |
 | Matrix                                                       | {name}                       | {M}        | Darstellungsmodi von Matrizen sind gleich wie bei Vektoren                                                                                                                          |
-</div>
+
 
 ### Beispiele
 

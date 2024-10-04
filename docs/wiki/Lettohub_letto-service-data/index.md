@@ -8,7 +8,6 @@ Erledigt den Zugriff auf die Schuldatenbank einer Schule.
 **lettohub/letto-service-data**
 
 ###  Tags 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Tag     | Beschreibung                                                                         | Anmerkung |
 |---------|--------------------------------------------------------------------------------------|-----------|
@@ -17,30 +16,27 @@ Erledigt den Zugriff auf die Schuldatenbank einer Schule.
 | stable  | letzte stabile Version für den Produktivbetrieb                                      |           |
 | debug   | Bitte nicht verwenden ist tagesaktuell nur für Debugging-Zwecke                      |           |
 | revXXXX | Revision mit der Nummer XXXX. Nur wenn man eine definierte Version verwenden möchte. |           |
-</div>
+
 
 ###  Ports 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Port | Beschreibung                                                                |
 |------|-----------------------------------------------------------------------------|
 | 8300 | http-Port für die interne Kommunikation innerhalb des Docker-Netzwerkes     |
 | 9300 | https-Port mit selbstsigniertem Zertifikat für externe Kommunkation         |
 | 5300 | debugging-Port, aktiv wenn die Environment-Variable debug=true gesetzt wird |
-</div>
+
 
 ###  Pfade welche als Volume verbunden werden sollten 
 school muss durch das Schulkürzel ersetzt werden!!
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Pfad im Docker Container | Beschreibung                 | üblicher Wert                             |
 |--------------------------|------------------------------|-------------------------------------------|
 | /log                     | Verzeichnis für die Logfiles | /opt/letto/docker/storage/log/data/school |
-</div>
+
 
 ###  Environment Variable 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable                         | Beschreibung                                                                                        | üblicher Wert                                                                                                                                                               | muss gesetzt sein |
 |----------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
@@ -62,7 +58,7 @@ school muss durch das Schulkürzel ersetzt werden!!
 | letto_lettodata_redirecttokenuri | Öffentlich erreichbare URL des LeTTo-Servers für einen temporären Token                             | https://externe.dns.at/lettoschool/loginTempToken.jsf                                                                                                                       | ja                |
 | JAVA_OPTS                        | Java Options-Variable für den Speicherbedarf                                                        | -Xms50m -Xmx100m                                                                                                                                                            | nein              |
 | debug                            | Startet den Container im Debugging-Mode auf Port 5096                                               | false                                                                                                                                                                       | nein              |
-</div>
+
 
 ##  Docker Compose 
 * .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-school.yml](http://letto.at/download/letto/setup/yml/docker-compose-school.yml)

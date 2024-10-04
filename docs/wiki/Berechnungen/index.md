@@ -15,7 +15,6 @@ Die Berechnung und die Beurteilung einer Frage teilt sich in 3 grundsätzliche S
 Alle Konstante welche in Letto definiert sind beginnen mit einem Prozentzeichen. Verwendet man den Variablennamen ohne Prozenzzeichen, so wird die Konstante wie eine Variable mit dem Wert der Konstanten verwendet.
 
 Liste der definierten Konstanten:
-<div  class="wikitable" style="text-align: left; width: 100%"  >
 
 | Name      | Wert                                                       | Beschreibung                                                                                                                        |
 |-----------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +33,7 @@ Liste der definierten Konstanten:
 | %k        | Stefan Bolzman Konstante                                   | 1.3806485279E-23'J/K'                                                                                                               |
 | %R0       | Universelle Gaskonstante                                   | 8.314459848'J/Kmol'                                                                                                                 |
 | %h        | planksches Wirkungsquantum                                 | 6.6260704081E-34Js                                                                                                                  |
-</div>
+
 
 ## Berechnung mit Maxima
 * Maxima wird **nur für symbolische Berechnungen** bei der Erstellung von Beispielen verwendet. Hierbei wird, wie schon oberhalb im Schema angegeben, zuerst die Moodle.mac geladen, dann das [Maxima-Feld#maxima-feld-](../BeispielsammlungEditieren#maxima-feld-/index.md#maxima-feld-) berechnet und anschließend die Maxima-Felder aller Teilfragen. Das Ergebnis der Berechnung wird dann als symbolischer Ausdruck im Lösungfeld eingetragen.
@@ -76,7 +75,6 @@ if then
 
 #### Infix Operatoren
 ##### arithmetische Operatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator              | Priorität | Beschreibung                                                                 | Beispiel                  | Ergebnis  |
 |-----------------------|-----------|------------------------------------------------------------------------------|---------------------------|-----------|
@@ -88,10 +86,9 @@ if then
 | &amp;#124; &amp;#124; | 60        | Parallelschaltung                                                            | x &amp;#124; &amp;#124; y | x*y/(x+y) |
 | ^                     | 90        | Potenz                                                                       | 2^3                       | 8         |
 | .*.                   | 200       | Operator der intern für eine fehlende bindende Multiplikation verwendet wird | 4x                        | 4*x       |
-</div>
+
 
 ##### Bitoperatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Beschreibung                              | Beispiel              | Ergebnis    |
 |----------|-----------|-------------------------------------------|-----------------------|-------------|
@@ -103,10 +100,9 @@ if then
 | imp      | 23        | Bitweise oder logisches impliziert IMP    | 13 imp 10             | 8           |
 | &lt;&lt; | 35        | Bitweise links schieben                   | 5&lt;&lt;2            | 20          |
 | &gt;&gt; | 35        | Bitweise rechts schieben                  | 8&gt;&gt;2            | 2           |
-</div>
+
 
 ##### Vergleichsoperatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Beschreibung         | Beispiel |
 |----------|-----------|----------------------|----------|
@@ -117,9 +113,8 @@ if then
 | &lt;=    | 32        | Kleiner gleich       | x&lt;=y  |
 | &gt;     | 32        | größer               | x&gt;y   |
 | &gt;=    | 32        | größer gleich        | x&gt;=y  |
-</div>
+
 ##### Organisative Operatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Beschreibung                                     | Beispiel | Ergebnis |
 |----------|-----------|--------------------------------------------------|----------|----------|
@@ -127,10 +122,9 @@ if then
 | $        | 1         | Trennzeichen zwischen mehreren Berechnungen      |          |          |
 | ;        | 1         | Trennzeichen zwischen mehreren Berechnungen      |          |          |
 | :        | 2         | Zuweisung an eine Variablen auf der linken Seite | x:5      |          |
-</div>
+
 
 #### Prefix Operatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Beschreibung                                          | Beispiel  | Ergebnis                                                                |
 |----------|-----------|-------------------------------------------------------|-----------|-------------------------------------------------------------------------|
@@ -141,16 +135,15 @@ if then
 | ++       | 130       | Inkrement von Ganzzahlen                              | ++x       | erhöht x um eins und gibt das Ergebnis nach der Erhöhung zurück         |
 | --       | 130       | Dekrement von Ganzzahlen                              | --x       | vermindert x um eins und gibt das Ergebnis nach der Verminderung zurück |
 | %        | 200       | Prefix für Namen, welche als Konstante definiert sind | %pi       | 3.141592653589793                                                       |
-</div>
+
 
 #### Suffix Operatoren
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Beschreibung             | Beispiel | Ergebnis                                                                    |
 |----------|-----------|--------------------------|----------|-----------------------------------------------------------------------------|
 | ++       | 135       | Inkrement von Ganzzahlen | x++      | erhöht x um eins und gibt den Variablenwert vor der Erhöhung zurück         |
 | --       | 135       | Dekrement von Ganzzahlen | x--      | vermindert x um eins und gibt den Variablenwert vor der Verminderung zurück |
-</div>
+
 
 ### Klammern
 * () runde Klammern werden für mathematische Ausdrücke zur Klammerung verwendet
@@ -159,7 +152,6 @@ if then
 
 ### Funktionen
 #### Funktionen für Ganzzahlen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                                | Beschreibung                                                                                                                                                   | Beispiel                    | Ergebnis           |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|--------------------|
@@ -186,10 +178,9 @@ if then
 | [hamming](/notimplemented/index.md)     | Bestimmt den Hamming-Abstand von mehreren Codeworten                                                                                                           | hamming(1,2,4,8,16)         | 2                  |
 | [komplement](/notimplemented/index.md)  | Bildet das Zweierkomplement mit einer negativen Zahl mit einer bestimmten Bitanzahl, fehlt die Bitanzahl, so wird ein 32Bit-2er-komplement gebildet            | komplement(-5,8)            | 0b11111011         |
 | [bitstream](/notimplemented/index.md)   | Erzeugt aus einer Ganzzahl einen Bitstrom als String mit einer definierten Anzahl von Bit (MSB werden nötigenfalls mit 0 gefüllt) : bitstream(Daten,Bitanzahl) | bitstream(0x184,12)         | "000110000100"     |
-</div>
+
 
 #### Funktionen für rationale und Ganzzahlen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion  | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                            | Beispiel                                                 | Ergebnis                                                   |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
@@ -202,10 +193,9 @@ if then
 | frac      | erzeugt aus einer Menge aus 2 oder 3 Elementen (von defrac) eine rationale Zahl                                                                                                                                                                                                                                                                                                                         | frac([3,7](3,7))<br>frac([1,2,3](1,2,3))                 | 3/7 <br> 5/3                                               |
 | mod       | Mathematische Implementierung von [modulo](https://de.wikipedia.org/wiki/Division_mit_Rest#Modulo): Divisionsrest einer Division mit ganzzahligem Ergebnis                                                                                                                                                                                                                                              | mod(5,2) <br> mod(6.2,2.5) <br> mod(-4,3)                | 1<br>1.2 <br> 2                                            |
 | mod2      | Symmetrische Implementierung von [modulo](https://de.wikipedia.org/wiki/Division_mit_Rest#Modulo): Divisionsrest einer Division mit ganzzahligem Ergebnis <br>Der Unterschied zu mod liegt in der Behandlung von negativen Zahlen des ersten Arguments <br>Siehe auch Divisionsrest des Parser-Operators % [Berechnungen#arithmetische-operatoren-](../Berechnungen/index.md#arithmetische-operatoren-) | mod2(5,2) <br> mod2(6.2,2.5) <br> mod2(-4,3)             | 1<br>1.2 <br> -1                                           |
-</div>
+
 
 #### boolsche Funktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion  | Beschreibung                                                                                                                                                                                                 | Beispiel               | Ergebnis |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|
@@ -221,10 +211,9 @@ if then
 | lor       | logisches ODER                                                                                                                                                                                               | lor(a&lt;b,b&lt;c)     |          |
 | not       | logisches NICHT. Vorsicht ein symbolisches Ergebnis von Maxima liefert not als Prefix-Operator, welcher vom Parser nicht unterstützt wird ( Verwende statt dessen **lnot** )                                 | not(a&lt;b)            |          |
 | lnot      | logisches NICHT, wie not jedoch wird es von Maxima nicht ausgewertet                                                                                                                                         | lnot(a&lt;b)           |          |
-</div>
+
 
 #### Funktionen zu Einheiten
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion      | Beschreibung                                                                                                                                                                                                                                                                                                     | Beispiel                                                                    | Ergebnis                               |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------|
@@ -251,10 +240,9 @@ if then
 | fromdBmV      |                                                                                                                                                                                                                                                                                                                  |                                                                             |                                        |
 | dBuV          |                                                                                                                                                                                                                                                                                                                  |                                                                             |                                        |
 | fromdBuV      |                                                                                                                                                                                                                                                                                                                  |                                                                             |                                        |
-</div>
+
 
 #### arithmetische Funktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Beispiel                                       | Ergebnis             |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------|
@@ -272,12 +260,11 @@ if then
 | random   | Zufallszahl aus einem definierten Zahlenbereich random(minimal,maximal)<br>VORSICHT! Die Zufallszahl wird bei jedem Aufruf neu berechnet, weshalb sich der Wert bei jedem Anzeigevorgang einer Frage ändert. Sollte sich der berechnete Wert für eine Schülerangabe zwischen Fragestellung und Ergebniskontrolle nicht ändern dürfen (ist der Normalfall) muss man einen **Datensatz statt einer Zufallszahl** verwenden! <br> Zufallszahlen haben in der Ergebnisberechnung keinen Sinn, und sollten maximal für angezeigte zufällige Werte verwendet werden! | random(2,8)                                    | 3.4532               |
 | randomC  | komplexe Zufallszahl aus einem definierten Zahlenbereich für den Betrag<br>VORSICHT! Die Zufallszahl wird bei jedem Aufruf neu berechnet!                                                                                                                                                                                                                                                                                                                                                                                                                      | randomC(2,8)                                   | 3.4532arg40.3°       |
 | signum   | Liefert das Vorzeichen einer Zahl (-1,0,1). Bei einer komplexen Zahl das Vorzeichen des Realteils.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | signum(-4)                                     | -1                   |
-</div>
+
 
 ####  Maxima-basierte Funktionen 
 * Diese Funktionen funktionieren nur wenn Maxima installiert ist und werden immer an Maxima gesendet, auch wenn der interne Parser aktiviert ist.
 * Weiters werden sie bei der Ausgabe als TeX-Formel auch korrekt mit LaTeX gesetzt.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion  | Beschreibung                                                                                                                                         | Beispiel                                   | Ergebnis       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|----------------|
@@ -288,10 +275,9 @@ if then
 | ilt       | Bestimmt die inverse Laplace-Transformierte eine Laplace-Funktion                                                                                    | ilt(1/(1+s),s,t)                           | e^(-t)         |
 | sum       | Summenbildung                                                                                                                                        | sum(1/k,k,1,2)                             | 3/2            |
 | product   | Produktbildung                                                                                                                                       | product(1/k,k,1,3)                         | 1/6            |
-</div>
+
 
 #### erweiterte arithmetische Funktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                    | Beispiel                                                                 | Ergebnis                                                                                                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -308,10 +294,9 @@ if then
 | cnewton                              | Bestimmt eine komplexe Nullstelle einer Funktion nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der komplexe Startwert.                                                                                                                                                                                           | cnewton (x^2+4,4)                                                        | 2*%i                                                                                                                                                         |
 | newtonall                            | Bestimmt alle Nullstellen einer Funktion mit einem Betrag des Funktionsparameters kleiner als ein definierter Wert nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der maximale Betrag des Funktionsparameters. Das Ergebnis ist immer ein Vektor mit den nach aufsteigendem Funktionswert sortierten Nullstellen. | newtonall (x^2-4,4)                                                      | [-2,2](-2,2)                                                                                                                                                 |
 | cnewtonall                           | Bestimmt alle komplexen Nullstellen einer Funktion mit einem Betrag des Funktionsparameters kleiner als ein definierter Wert nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der maximale Betrag des Funktionsparameters. Das Ergebnis ist immer ein Vektor mit den Nullstellen.                                   | cnewtonall (x^2+4,4)                                                     | [-2*%i,2*%i](-2*%i,2*%i)                                                                                                                                     |
-</div>
+
 
 ####  Gleichungen und Gleichungssysteme 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                                                   | Beispiel                                                                                                                                  | Ergebnis                                         | ab Revision |
 |----------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------|
@@ -320,10 +305,9 @@ if then
 | rhs      | liefert die rechte Seite einer Gleichung, Ungleichung oder eines Infix Operators                                               | rhs(x+y=c+2)                                                                                                                              | c+2                                              | 6521        |
 | onlypos  | liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht nur die Lösungen welche positiv nicht Null sind | onlypos([[x=3,y=-3]([x=3,y=-3),[x=4,y=5](x=4,y=5),[x=-2,y=4](x=-2,y=4)]) <br> onlypos([x=-2,x=0,x=6,x=8](x=-2,x=0,x=6,x=8))               | [ [x=4,y=5]( [x=4,y=5) ] <br> [x=7,x=8](x=7,x=8) | 6522        |
 | onlyreal | liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht nur die Lösungen welche reell sind              | onlyreal([[x=1,y=%i]([x=1,y=%i),[x=1,y=-%i](x=1,y=-%i),[x=3,y=4](x=3,y=4)]) <br> onlyreal([x=%i+1,x=1-%i,x=3,x=8](x=%i+1,x=1-%i,x=3,x=8)) | [ [x=3,y=4]( [x=3,y=4) ] <br> [x=3,x=8](x=3,x=8) | 6522        |
-</div>
+
 
 #### Stringfunktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                        | Beispiel        | Ergebnis |
 |----------|-----------------------------------------------------------------------------------------------------|-----------------|----------|
@@ -331,10 +315,9 @@ if then
 | chr      | Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus einen String zusammen. | chr(0x65,105)   | "ei"     |
 | val      | Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter übergeben wurde.          | val("a")        | 97       |
 | strcat   | Fügt mehrere Strings zusammen.                                                                      | strcat("a","b") | "ab"     |
-</div>
+
 
 #### trigonometrische Funktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                             | Beschreibung                                                                                       | Beispiel         | Ergebnis                              |
 |--------------------------------------|----------------------------------------------------------------------------------------------------|------------------|---------------------------------------|
@@ -360,10 +343,9 @@ if then
 | [csin](/notimplemented/index.md)     | Erzeugt aus einer komplexen Zahl (Effektivwert) und einer Frequenz einen Sinusfunktion in der Zeit | csin(U)          | sqrt(2)*cabs(U)*sin(2*pi*f*t+carg(U)) |
 | [quadrant](/notimplemented/index.md) | Liefert den Quadranten eines Winkels mit einer Toleranzangabe.                                     | quadrant(20°,5°) | 1                                     |
 | argnorm                              | Wandelt einen Winkel auf den Bereich von 0°-360°                                                   | argnorm(-50°)    | 310°                                  |
-</div>
+
 
 #### Exponentialfunktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung             | Beispiel   | Ergebnis |
 |----------|--------------------------|------------|----------|
@@ -372,11 +354,10 @@ if then
 | log      | natürlicher Logarythmus  | log(%e)    | 1        |
 | ln       | natürlicher Logarythmus  | ln(%e)     | 1        |
 | log10    | Logarythmus zur Basis 10 | log10(100) | 2        |
-</div>
+
 
 #### komplexe Zahlen
 Die Funktionen zu komplexen Zahlen werden (anders als in Maxima) nur ausgewertet wenn das Ergebnis numerisch berechenbar ist, ansonsten bleibt die Funktion symbolisch erhalten.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion  | Beschreibung                                                                                                 | Beispiel          | Ergebnis |
 |-----------|--------------------------------------------------------------------------------------------------------------|-------------------|----------|
@@ -387,13 +368,12 @@ Die Funktionen zu komplexen Zahlen werden (anders als in Maxima) nur ausgewertet
 | imagpart  | Liefert den Imaginärteil einer komplexen Zahl                                                                | imagpart(3+4*%i)  | 4        |
 | conjugate | Liefert die konjugiert komplexe Zahl einer komplexen Zahl                                                    | conjugate(3+4*%i) | 3-4*%i   |
 | rectform  | hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert wird wie zB.: {=3arg2;karti} |                   |          |
-</div>
+
 
 #### Polynome
 Polynome mit reellen Koeffizienten in einer Variablen können mit folgenden Funktionen erstellt und verarbeitet werden. Für die interne Verarbeitung wird hierzu ein eigener Polynom-Datentyp verwendet.
 
 siehe auch [Zahlendarstellung Polynome#f.c3.bcr-polynome-und-gebrochen-rationale-funktionen-mit-numerischen-koeffizienten-in-einer-variablen-k.c3.b6nnen-folgende-parameter-angegeben-werden-](../Zahlendarstellung#f.c3.bcr-polynome-und-gebrochen-rationale-funktionen-mit-numerischen-koeffizienten-in-einer-variablen-k.c3.b6nnen-folgende-parameter-angegeben-werden-/index.md#f.c3.bcr-polynome-und-gebrochen-rationale-funktionen-mit-numerischen-koeffizienten-in-einer-variablen-k.c3.b6nnen-folgende-parameter-angegeben-werden-)
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                                           | Beschreibung                                                                                                                                                                                                                                                | Beispiel                                                   | Ergebnis                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|-----------------------------------------|
@@ -407,21 +387,19 @@ siehe auch [Zahlendarstellung Polynome#f.c3.bcr-polynome-und-gebrochen-rationale
 | polynomfromnull(n)                                 | Erzeugt aus einer Nullstellen-Polstellen-Liste, welche mit nullfrompolynom erstellt wurde ein neues Polynom                                                                                                                                                 | polynomfromnull([0.5,[-2](0.5,[-2),[-0.5](-0.5),x])        | (2+x)/(1+2*x)                           |
 | polynomfromnull(faktor,nullstellen,polstellen,var) | Erzeugt aus einer Faktor-Vektoren ein neues Polynom                                                                                                                                                                                                         | polynomfromnull(0.5,[-2](-2),[-0.5](-0.5),x)               | (2+x)/(1+2*x)                           |
 | polynomk(p)                                        | Bestimmt den Faktor, welcher vom Polynom herausgehoben werden kann, so dass die höchste Potenz der Polynomvariable den Multiplikator Eins hat.                                                                                                              | polynomk(polynom((2+x)/(1+2*x)))                           | 0.5                                     |
-</div>
+
 
 #### statistische Funktionen
 Die Funktionen funktionieren nur ohne Einheiten.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion  | Beschreibung                                                       | Beispiel      | Ergebnis |
 |-----------|--------------------------------------------------------------------|---------------|----------|
 | factorial | Liefert die Fakultät einer positiven ganzen Zahl                   | factorial(5)  | 120      |
 | binomial  | Liefert den Binomialkoeffizienten von zwei positiven ganzen Zahlen | binomial(5,2) | 10       |
-</div>
+
 
 #### Mengen-Funktionen
 Mengen werden intern als Vektoren verarbeitet und sind deshalb auch direkt durch Vektoren ersetzbar. Auch alle Vektor-Funktionen sind somit auch auf Mengen anwendbar und umgekehrt.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion         | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Beispiel                                                                                                                                                                                           | Ergebnis                                             | ab Rev |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|--------|
@@ -464,14 +442,13 @@ Mengen werden intern als Vektoren verarbeitet und sind deshalb auch direkt durch
 |                  | setmakelist(f,x,start,stop,schrittweite) setzt in den Ausdruck f für x die Werte von start bis stop mit dem Abstand schrittweite ein.                                                                                                                                                                                                                                                                                                                                       | setmakelist(x^2,x,1,2,0.5)                                                                                                                                                                         | [ 1,2.25,4 ]( 1,2.25,4 )                             |        |
 |                  | setmakelist(f,x,set) setzt die Werte des Vektors set in den Ausdruck f für x ein.                                                                                                                                                                                                                                                                                                                                                                                           | setmakelist(x^2,x,[3,1,2](3,1,2))                                                                                                                                                                  | [ 9,1,4 ]( 9,1,4 )                                   |        |
 | foreach          | Führt für jedes Element eine Berechnung aus und verbindet die Ergebnisse mit der Aggregatfunktion                                                                                                                                                                                                                                                                                                                                                                           | foreach([2,-3,5,-6](2,-3,5,-6),p,cabs(p),"+")                                                                                                                                                      | 16                                                   | 6075   |
-</div>
+
 
 ####  Punkte-Mengen-Funktionen 
 Bei der Eingabe mit dem Plot-Plugin werden Punkte-Mengen als Matrizen in der Form [[x1,y1]([x1,y1),[x2,y2](x2,y2),[y3,y3](y3,y3)] für die gespeicherten Punkte welcher der Schüler eingegeben hat verwendet.
 
 Um die Verarbeitung der Eingaben zu erleichtern kann man die Funktionen beginnend mit pv verwenden.
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion      | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Beispiel                                                                                                                                                                                 | Ergebnis                                                                                                                                   | ab Rev |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------|
@@ -503,11 +480,10 @@ Um die Verarbeitung der Eingaben zu erleichtern kann man die Funktionen beginnen
 | pvfunc        | Erzeugt aus einer Funktionen in einer Variablen (x-Achse) eine Punktmatrix der Funktionswerte (y-Achse). pvfunc(funktion,variable,minx,maxx,deltax)                                                                                                                                                                                                                                                                                                                                                                                                                                | pvfunc(x^2,x,-2,2,0.5)                                                                                                                                                                   | [[−2,4]([−2,4),[−1.5,2.25](−1.5,2.25),[−1,1](−1,1),[−0.5,0.25](−0.5,0.25),[0,0](0,0),[0.5,0.25](0.5,0.25),[1,1](1,1),[1.5,2.25](1.5,2.25)] | 6080   |
 | pvcompare     | Vergleicht einen Referenz-Linienzug mit einem eingegebenen Linienzug unter Berücksichtigung der Toleranz. Die Toleranz stellt eine relative Tolerenz bezogen auf den Bereich zwischen MinXY und MaxXY da, wobei eine Toleranz von 0.1 gleichbedeutend 10 Prozent bezogen auf Max-Min ist (Mit dem String "a0.1" könnte man auch ein absolute Toleranz von 0.1 für x und y realisieren) <br> pvcompare(Referenz,Eingabe)<br> pvcompare(Referenz,Eingabe,Toleranz)<br> pvcompare(Referenz,Eingabe,MinX,MaxX,MinY,MaxY) <br> pvcompare(Referenz,Eingabe,MinX,MaxX,MinY,MaxY,Toleranz) | pvcompare([[0,0]([0,0),[1,1](1,1),[2,1](2,1),[3,0](3,0)],[[0,0]([0,0),[1,1](1,1),[2,1](2,1),[3,0](3,0)],0,3,-5,5)                                                                        | true                                                                                                                                       | 6080   |
 | pvunion       | hängt mehrere Punktevektoren zu einem größereren Punktevektor zusammen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | pvunion([[1,2]([1,2),[3,4](3,4)],[[5,6]([5,6),[7,8](7,8)],[9,10](9,10))                                                                                                                  | [[1,2]([1,2),[3,4](3,4),[5,6](5,6),[7,8](7,8),[9,10](9,10)]                                                                                | 6569   |
-</div>
+
 
 #### Typ-Funktionen
 Werden nur dann ausgewertet wenn der Parameter ein numerischer Wert oder eine Menge ist.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion     | Beschreibung                                               | Beispiel                               | Ergebnis |
 |--------------|------------------------------------------------------------|----------------------------------------|----------|
@@ -515,7 +491,7 @@ Werden nur dann ausgewertet wenn der Parameter ein numerischer Wert oder eine Me
 | issetnumeric | Prüft ob es sich um eine Menge aus reellen Zahlen handelt. | issetnumeric([12,13.4,14](12,13.4,14)) | true     |
 | issetlong    | Prüft ob es sich um eine Menge aus ganzen Zahlen handelt.  | issetlong([12,13,14](12,13,14))        | true     |
 | islong       | Prüft ob es sich um eine ganze Zahl handelt.               | islong(12)                             | true     |
-</div>
+
 
 #### Algebra
 ##### Index von Matrizen
@@ -531,7 +507,6 @@ c:M[2](2)[3](3)
 a,b,c liefert immer das gleiche Element der Matrix!
 
 ##### Funktionen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion    | Beschreibung                                                                                                                                                                                                      | Beispiel                                                                                                    | Ergebnis                                                                                  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -579,19 +554,17 @@ a,b,c liefert immer das gleiche Element der Matrix!
 | range       | range(anzahl) liefert ein Feld von ganzzahligen Werten von 0 beginnend                                                                                                                                            | range(5)                                                                                                    | [0,1,2,3,4](0,1,2,3,4)                                                                    |
 | linspace    | linspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert mit gleichem Abstand                                                                                                             | linspace(4,8,5)                                                                                             | [4,5,6,7,8](4,5,6,7,8)                                                                    |
 | logspace    | logspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert mit gleichem logarithmischen Abstand                                                                                             | logspace(10,10000,4)                                                                                        | [10,100,1000,10000](10,100,1000,10000)                                                    |
-</div>
+
 
 #### Variable
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                                          | Beispiel                                      | Ergebnis                                                                                             |
 |----------|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------|
 | kill     | löscht Variable aus dem Variablenspeicher                                                                             | kill(x,y) <br> kill(allbut(y)) <br> kill(all) | löscht die Variablen x und y <br> löscht alle Variablen mit Ausnahme von y <br> löscht alle Variable |
 | allbut   | Liefert eine Liste aller Variablen des Parsers als Menge(Vektor) mit Ausnahme der als Parameter angegebenen Variablen | allbut(x,y)                                   | [a,b,c](a,b,c)                                                                                       |
-</div>
+
 
 #### Auswertung und Programmierung
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                         | Beschreibung                                                                                                                                                                                                                                                                                                                           | Beispiel                                                                           | Ergebnis                                                                          | Revision |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------|
@@ -608,10 +581,9 @@ a,b,c liefert immer das gleiche Element der Matrix!
 | foreach                          | Führt für jedes Element einer Menge eine Berechnung aus und verbindet die Ergebnisse mit der Aggregatfunktion                                                                                                                                                                                                                          | foreach([2,-3,5,-6](2,-3,5,-6),p,cabs(p),"+")                                      | 16                                                                                | 6075     |
 | pvforeachline                    | Führt für jedes Punktepaar einer Punktemenge eine Berechnung aus und verbindet die Ergebnisse mit der Aggregatfunktion                                                                                                                                                                                                                 | pvforeachline([[2,3]([2,3),[4,5](4,5),[6,3](6,3),[-2,4](-2,4)],p,pvlineabs(p),"+") | 10.890684873                                                                      | 6075     |
 | forloop                          | Führt eine Zählschleife aus forloop(Variable,Startwert,Wiederholbedingung,Inkrement,Ausdruck,Aggregatsfunktion). <br>Ohne Aggregatsfunktion wird ein Feld mit den Ergebnissen der Schleifeniterationen geliefert.                                                                                                                      | forloop(i,1,i&lt;7,i++,i,"+")<br>forloop(i,1,i&lt;7,i:i+2,i)                       | 21<br>[1,3,5](1,3,5)                                                              | 6077     |
-</div>
+
 
 #### Optimierung der Ausdrücke
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion    | Beschreibung                                                                                                                                                                                   | Beispiel         | Ergebnis         |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|
@@ -623,24 +595,22 @@ a,b,c liefert immer das gleiche Element der Matrix!
 | lnoopt      | Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {=  wird die Funktion entfernt und in der Lösung wird nach dem Einsetzen der Werte der Ausdruck nicht mehr optimiert.    | lnoopt(x+3+2)    | lnoopt(x+5)      |
 | loptnumeric | Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {=  wird die Funktion entfernt und in der Lösung wird nach dem Einsetzen der Werte der Ausdruck nur numerisch optimiert. | loptnumeric(x+y) | loptnumeric(x+y) |
 | aopt        | Bei Maxima und Lösung geht die Funktion verloren, nur innerhalb von noopt bleibt sie erhalten. Bei der Anzeige führt sie zur Optimierung das Ausdruckes nach Einsetzen der Datensätze.         | aopt(x)          | x                |
-</div>
+
 
 #### Anzeige und Lösungsberechnung
 Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter stellt die darzustellende Funktion dar, der zweite Parameter, welcher eine Ganzzahl sein muss, gibt an, wie die Darstellung erfolgen soll. Wird der 2.Parameter weggelassen, so wird er als 0 interpretiert.
 * 0 Bei Berechnungen hat die Funktion keine Wirkung, bleibt aber als Funktion erhalten. Bei Lösung und Anzeige wird die Funktion ausgewertet
 * 1 Wirkt nur bei Lösung, bei Berechnungen bleibt die Funktion erhalten
 * 2 Wirkt nur bei Anzeige, bei Berechnungen bleibt die Funktion erhalten
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                                  | Beispiel          | Ergebnis |
 |----------|---------------------------------------------------------------------------------------------------------------|-------------------|----------|
 | viewpow  | Gibt alle Wurzeln als Potenzen aus, und stellt alle Potenzen im Nenner als negativen Exponenten im Zähler dar | viewpow(sqrt(x))  | x^(1/2)  |
 | viewsqrt | Gibt Potenzen welche als Wurzel darstellbar sind auch als als Wurzeln mit der Funktion sqrt oder root aus     | viewsqrt(x^(1/2)) | sqrt(x)  |
-</div>
+
 
 
 ####  Datums und Zeitfunktionen 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion       | Beschreibung                                                                                                       | Beispiel | Ergebnis | REvision |
 |----------------|--------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
@@ -666,19 +636,17 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 | hours          | Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit                                                 |          |          | 6530     |
 | minutes        | Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit                                                 |          |          | 6530     |
 | seconds        | Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit                                                |          |          | 6530     |
-</div>
+
 
 ####  Spezialfunktionen LeTTo 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion | Beschreibung                                                                                                       | Beispiel  | Ergebnis |
 |----------|--------------------------------------------------------------------------------------------------------------------|-----------|----------|
 | points   | Berechnet die erreichbare Gesamtpunkteanzahl einer Frage                                                           | points()  | 2        |
 | points   | Berechnet die erreichbare Punkteanzahl einer Teilfrage. Als Parameter wird die Fragenummer als Ganzzahl angegeben. | points(0) | 1        |
-</div>
+
 
 #### Spezialfunktionen Technik
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion   | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                          | Beispiel                          | Ergebnis                   |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------------|
@@ -694,16 +662,15 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 | normup     | rundet einen Zahlenwert auf den nächstgrößerern Wert einer gegebenen Wertereihe oder [Normreihe](../Normreihe/index.md).                                                                                                                                                                                                                                                                              | normup(730Ohm,[1,3,5,8](1,3,5,8)) | 800Ohm                     |
 | normdown   | rundet einen Zahlenwert auf den nächstkleineren Wert einer gegebenen Wertereihe oder [Normreihe](../Normreihe/index.md).                                                                                                                                                                                                                                                                              | normdown(700Ohm,E12)              | 680Ohm                     |
 | isnorm     | prüft ob der als Parameter übergebenen Wert ein Wert einer gegebenen Wertereihe oder [Normreihe](../Normreihe/index.md) ist.                                                                                                                                                                                                                                                                          | isnorm(680Ohm,E12)                | true                       |
-</div>
+
 
 #### Raumzeiger für elektrische Maschinen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Funktion                                                       | Beschreibung                                                                                                                                                              | Beispiel                                  | Ergebnis                         |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|----------------------------------|
 | [svphtosv](/notimplemented/index.md)(a,b,c)                    | berechnet aus den Stranggrößen (a,b,c) einen komplexen Raumzeiger                                                                                                         | svphtosv(0.5,0.5,-1)                      | 1arg60°                          |
 | [svsvtoph](/notimplemented/index.md)(sv)<br>svsvtoph(sv,index) | berechnet aus einem komplexen Raumzeiger die Stranggrössen <br> berechnet aus einem komplexen Raumzeiger die Stranggrössen, index selektiert Stranggröße als Rückgabewert | svsvtoph(1arg60°)<br> svsvtoph(1arg60°,3) | [0.5,0.5,-1](0.5,0.5,-1) <br> -1 |
-</div>
+
 
 ## Probleme mit großen Gleichungssystemen
 Bei der Verwendung von Plugins (zB: Drehstromplugin) können sehr rasch sehr große Gleichungssysteme entstehen. Der Standard-Lösungsweg, dass die Gleichungen algebraisch aufgelöst werden und dann zur Laufzeit die Werte eingesetzt werden, kann somit sehr lange Berechnungszeiten nach sich ziehen. Effizienter ist es, das Gleichungssystem zur Laufzeit mit eingesetzten Zahlen zu rechnen.

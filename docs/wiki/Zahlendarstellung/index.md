@@ -14,7 +14,6 @@ Für die Schülereingabe kann die Eingabe durch ein Gleichheitszeichen vor dem Z
 
 ###  Zahlenformate 
 Für die Zahlendarstellung sind folgende Zahlenformate definiert:
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Format      | Bedeutung                                                                                                                     | Beispiel           | Wert                           | Ausgabe                     |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------------|-----------------------------|
@@ -35,10 +34,9 @@ Für die Zahlendarstellung sind folgende Zahlenformate definiert:
 | ,F{ziffern} | Gleitkommazahl mit einer fixen Anzahl Ziffern                                                                                 | {x,F3}<br>{x,F8}   | 1451.34                        | 1.45*10^3<br>1.4513400*10^3 |
 | ,Z{ziffern} | gekürzter Bruch aus einer Dezimalzahl mit einer definierten Anzahl von gültigen Ziffern                                       | {x,Z4}             | 203.2                          | 1016/5                      |
 | ,einheit    | es wird nur die Einheit **ohne Zahlenwert** dargestellt                                                                       | {=x,einheit}       | 32V/m                          | V/m                         |
-</div>
+
 
 #### für Vektoren, Matrizen und Mengen können weiters folgende Parameter angegeben werden
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Format | Bedeutung                                                                    | Beispiel  | Wert           | Ausgabe                       |
 |--------|------------------------------------------------------------------------------|-----------|----------------|-------------------------------|
@@ -47,19 +45,17 @@ Für die Zahlendarstellung sind folgende Zahlenformate definiert:
 | ,set   | gibt eine Menge mit Mengenklammern an                                        | {x,set}   | [2,3,4](2,3,4) | {2,3,4}                       |
 | ,list  | gibt eine Menge ohne Klammern an                                             | {x,list}  | [2,3,4](2,3,4) | 2,3,4                         |
 | ,frac  | stellt eine Menge mit 2 oder 3 Elementen als Bruch oder gemischten Bruch dar | {x,frac}  | [2,3,4](2,3,4) | 2 3/4                         |
-</div>
+
 
 #### für allgemeine Funtionen können folgende Parameter angegeben werden
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Format | Bedeutung                                                      | Beispiel                | Wert | Ausgabe   |
 |--------|----------------------------------------------------------------|-------------------------|------|-----------|
 | ;term  | lässt alle Malzeichen zwischen Variablen und Zahlenwerten weg. | {=x^2*y+2*x^2*y^3;term} |      | x²y+2x²y³ |
-</div>
+
 
 ####  für Polynome und gebrochen rationale Funktionen mit numerischen Koeffizienten in einer Variablen können folgende Parameter angegeben werden
 siehe auch [Berechnungen#polynome-](../Berechnungen/index.md#polynome-)
-<div  class="wikitable" style="text-align: left; width: 100%; >
 
 | Format  | Bedeutung                                                                                                                                  |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,7 +85,7 @@ siehe auch [Berechnungen#polynome-](../Berechnungen/index.md#polynome-)
 | ;pnNnFi | Faktordarstellung mit negativen Potenzen mit 1 bei der höchsten Potenz der Polynomvariable im Nenner und fallende Potenzen                 |
 | ;pnZni  | Faktordarstellung mit negativen Potenzen mit 1 bei der höchsten Potenz der Polynomvariable im Zähler und steigenden Potenzen               |
 | ;pnZnFi | Faktordarstellung mit negativen Potenzen mit 1 bei der höchsten Potenz der Polynomvariable im Zähler und fallende Potenzen                 |
-</div>
+
 
 * Mit Nullstellen und Polen: 
 <br>![ClipCapIt-211201-194105.PNG](ClipCapIt-211201-194105.PNG)

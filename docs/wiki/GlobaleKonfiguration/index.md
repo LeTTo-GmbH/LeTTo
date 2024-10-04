@@ -22,7 +22,6 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 
 ###  wichtige Parameter
 ####  Parameter für den Serverbetrieb 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter          | Beschreibung                                                                                                                                                          | Beispielwert                                                         |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -42,20 +41,18 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 | errTimerAntwort    | Fehlermeldung bei einem Fehler beim Rendern der Antworten                                                                                                             | Fehler beim Rendern von Antworten                                    |
 | errTimerCalcErg    | Fehler beim Berechnen der Lösung für die Frage                                                                                                                        | Fehler beim Berechnen der Lösung für die Frage                       |
 | externeBenutzer    | Gibt an ob externe Benutzer auf freigegebene Fragesammlungen zugreifen können                                                                                         | 0                                                                    |
-</div>
+
 
 ####  Parameter der Schule 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter       | Beschreibung                                                  | Beispielwert |
 |-----------------|---------------------------------------------------------------|--------------|
 | image           | Bild welches links-oben auf der Letto-Seite eingeblendet wird |              |
 | schulname       | Name der Schule                                               |              |
 | startSchulstufe | Schulstufe welche der ersten Klasse der Schule entspricht     | 9            |
-</div>
+
 
 ####  Parameter für den Active-Directory-Login 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter  | Beschreibung                                                              | Beispielwert                     |
 |------------|---------------------------------------------------------------------------|----------------------------------|
@@ -63,10 +60,9 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 | LDAPServer | Bezeichnung des LDAP Servers                                              | ldap://s0-wald.htl-stp.local:389 |
 | LDAPparams | Parameter der LDAP-Verbindung. Strichpunkt-getrennt par1=wert1;par2=wert2 |                                  |
 | domain     | Bezeichnung der lokalen Domain des Active-Directory                       | htl-stp.local                    |
-</div>
+
 
 ####  Parameter für die Druckausgabe 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter        | Beschreibung                                                                          | Beispielwert                                                                                                      |
 |------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -79,20 +75,18 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 | DocStartQuestion | Definition des Bereiches rund um begin{document} bei Fragesammlungen                  | \PageQuestion \begin{document}                                                                                    |
 | DocStartTest     | Definition des Bereiches rund um begin{document} bei Tests                            | \PageTest \begin{document}                                                                                        |
 | DocEnd           | Ende des TeX-Dokuments                                                                | \end{document}                                                                                                    |
-</div>
+
 
 ####  Parameter für das Beurteilungssystem 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter               | Beschreibung                                                                                                   | Beispielwert                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | BewertungsGruppen       | Mögliche Gruppierungen von Prüfungen                                                                           | Prüfung;Hausübung;Mitarbeit;Referat                                                                                              |
 | userBewertungen         | Beurteilungen für Benutzer (Wird bei jedem User überschrieben)                                                 |                                                                                                                                  |
 | angezeigteBeurteilungen | Angabe, welche Beurteilungsarten im Katalog angezeigt werden sollen. Einstellbar über Katalog und Setup-Button | [SMÜ, Test, Hausübung, Schularbeit, Rechenübung, Mahnung, Noten](SMÜ, Test, Hausübung, Schularbeit, Rechenübung, Mahnung, Noten) |
-</div>
+
 
 ####  Allgemeine Konfiguration des Serververhaltens 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter             | Beschreibung                                                                                                                                        | Beispielwert                                                                     |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -103,7 +97,7 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 | ShowWarningEmptyQuest | Definiert ob beim Benutzer eine Warnung bei unvollständigen Fragen angezeigt wird                                                                   | 0                                                                                |
 | alleGegenstaende      | Anzeige aller Gegenstände bei Lehrer-Klassen-Zuteilungen                                                                                            | 0                                                                                |
 | datasetDefault        | Angabe welche Werte und Einheiten Datensätze zugewiesen bekommen<br>Für jeden Eintrag eine  Zeile<br>Prefix des Variablennamen;Einheit;0;Definition | default;;0;I1-10<br> R;Ohm;0;E12:1k-100k<br> L;H;0;1m-100m<br> C;F;0;E12:1n-100n |
-</div>
+
 
 ### Siehe auch
 [Konfigurations-Tester](../Konfigurations-Tester/index.md)

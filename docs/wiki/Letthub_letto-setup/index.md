@@ -7,7 +7,6 @@ siehe auch
 **lettohub/letto-setup**
 
 ###  Tags 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Tag     | Beschreibung                                                                         | Anmerkung |
 |---------|--------------------------------------------------------------------------------------|-----------|
@@ -16,20 +15,18 @@ siehe auch
 | stable  | letzte stabile Version für den Produktivbetrieb                                      |           |
 | debug   | Bitte nicht verwenden ist tagesaktuell nur für Debugging-Zwecke                      |           |
 | revXXXX | Revision mit der Nummer XXXX. Nur wenn man eine definierte Version verwenden möchte. |           |
-</div>
+
 
 ###  Ports 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Port | Beschreibung                                                                |
 |------|-----------------------------------------------------------------------------|
 | 8096 | http-Port für die interne Kommunikation innerhalb des Docker-Netzwerkes     |
 | 9096 | https-Port mit selbstsigniertem Zertifikat für externe Kommunkation         |
 | 5096 | debugging-Port, aktiv wenn die Environment-Variable debug=true gesetzt wird |
-</div>
+
 
 ###  Pfade welche als Volume verbunden werden sollten 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Pfad im Docker Container | Beschreibung                                                                                                               | üblicher Wert                   |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -38,10 +35,9 @@ siehe auch
 | /letto_compose           | Verzeichnis wo sich die Unterverzeichnisse mysql,setup und letto mit den yml-Dateien für docker-compose befinden.          | /opt/letto/docker/compose/letto |
 | /var/run/docker.sock     | Zugriff auf das Docker-System um mit dem Setup-Service alle Docker-Informationen und Docker-Befehle ausführen zu können    | /var/run/docker.sock            |
 | /opt/letto/log           | Verzeichnis für alle Logfiles der LeTTo-Installation                                                                       | /opt/letto/docker/storage/log   |
-</div>
+
 
 ###  Environment Variable 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable                  | Beschreibung                                                                       | üblicher Wert                    | muss gesetzt sein                              |
 |---------------------------|------------------------------------------------------------------------------------|----------------------------------|------------------------------------------------|
@@ -63,7 +59,7 @@ siehe auch
 | JAVA_OPTS                 | Java Options-Variable für das Setup-Service                                        | -Xms50m -Xmx100m                 | nein                                           |
 | setup_debug               | Konfigurationsparameter für das Debugging sind aktiviert                           | false                            | nein                                           |
 | debug                     | Startet den Container im Debugging-Mode auf Port 5096                              | false                            | nein                                           |
-</div>
+
 jaSE: ja - wird vom Setup erzeugt und in die .env Datei geschrieben
 
 ##  Docker Compose 

@@ -125,3 +125,28 @@ pre.config {
     margin-left: 40px; /* Abstand zur linken Seite */
     width: calc(100% - 80px); /* Box verkleinern, damit der rechte Rand nicht abgeschnitten wird */
 }
+
+/* Allgemeine Tabellenstile */
+table {
+    /*width: 100%;               /* Tabelle soll die gesamte verfügbare Breite einnehmen */
+    border-collapse: collapse; /* Rahmenlinien zusammenführen */
+    background-color: #ffffff; /* Weißer Hintergrund */
+}
+
+/* Rahmenlinien für Zellen */
+table, th, td {
+    border: 1px solid #dddddd; /* Dünne, graue Linien */
+}
+
+/* Tabellenkopf anpassen */
+th {
+    padding: 12px;             /* Abstand innerhalb der Kopfzeilenzellen */
+    background-color: #f2f2f2; /* Hellgrauer Hintergrund für Kopfzeilen */
+    text-align: center;        /* Kopfzeilentext zentrieren */
+}
+
+/* Zelleninhalt */
+td {
+    padding: 10px;             /* Abstand innerhalb der Zellen */
+    text-align: left;          /* Text links ausrichten */
+}

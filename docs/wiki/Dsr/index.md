@@ -7,7 +7,6 @@ Zeichnet Schaltungen der Drehstromtechnik.
 Die Schaltung wird im Plugindialog über einen String(Zeichenkette) definiert, der Drehstromelemente durch Beistrich getrennt beinhaltet.<br>
 #### Drehstrom-Schaltungselemente
 Folgende Drehstrom-Schaltungselemente können verwendet werden, wobei als Parameter alle Zweipol-Schaltelemente zulässig sind, welche in der danach folgenden Tabelle angegeben sind.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Name                       | Bedeutung                           | Symbol                                                                      |
 |----------------------------|-------------------------------------|-----------------------------------------------------------------------------|
@@ -21,11 +20,10 @@ Folgende Drehstrom-Schaltungselemente können verwendet werden, wobei als Parame
 | DSNE(R,R,R)                | Drehstrom Sternschaltung Vierleiter | <br>![200px-ClipCapIt-190520-203849.PNG](200px-ClipCapIt-190520-203849.PNG) |
 | DSN(R,L,C,R)               | Drehstrom Sternschaltung Vierleiter | <br>![200px-ClipCapIt-190513-102458.PNG](200px-ClipCapIt-190513-102458.PNG) |
 | DD(R,L,C)                  | Drehstrom Dreieckschaltung          | <br>![200px-ClipCapIt-190513-102354.PNG](200px-ClipCapIt-190513-102354.PNG) |
-</div>
+
 
 #### Zweipol Schaltungselemente
 Die Schaltung wird im Plugindialog über einen String(Zeichenkette) definiert, wobei folgende Zeichen definiert sind:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Name              | Bedeutung                                                    | Symbol                                                          |
 |-------------------|--------------------------------------------------------------|-----------------------------------------------------------------|
@@ -49,32 +47,29 @@ Die Schaltung wird im Plugindialog über einen String(Zeichenkette) definiert, w
 | Ser(R,R)          | Serienschaltung von zwei Widerständen                        | <br>![ClipCapIt-181127-103220.PNG](ClipCapIt-181127-103220.PNG) |
 | B(R1,R2,R3,R4,R5) | Brückenschaltung von 5 Bauelementen                          | <br>![ClipCapIt-181127-103314.PNG](ClipCapIt-181127-103314.PNG) |
 | B(R)              | Brückenschaltung von 5 Widerständen mit verschiedenen Werten | <br>![ClipCapIt-181127-103314.PNG](ClipCapIt-181127-103314.PNG) |
-</div>
+
 
 Die Verschaltung der Bauelement erfolgt über die folgenden Operatoren:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator | Priorität | Bedeutung                                                                                                                                                      |
 |----------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *        | 15        | Parallelschaltung                                                                                                                                              |
 | +        | 10        | Serienschaltung                                                                                                                                                |
 | ?        |           | Wird nach einem Bauteil ein Fragezeichen gesetzt, so wird der Bauteil in der Angabe nicht angegeben und der Bauteilwert wird in der Schaltung nicht gezeichnet |
-</div>
+
 
 #### Zusammenschaltung von Zweipolen
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Schaltung                               | Bedeutung                                                | Beispiel | Bild                                                            |
 |-----------------------------------------|----------------------------------------------------------|----------|-----------------------------------------------------------------|
 | einzelner Zweipol als Serienschaltung   | Wird horizontal dargestellt und ohne Beistrich definiert | R+C      | <br>![ClipCapIt-181123-102901.PNG](ClipCapIt-181123-102901.PNG) |
 | einzelner Zweipol als Parallelschaltung | Wird horizontal dargestellt und ohne Beistrich definiert | R*C      | <br>![ClipCapIt-181127-210445.PNG](ClipCapIt-181127-210445.PNG) |
-</div>
+
 
 #### angezeigte Spannungen und Ströme
 * Die angezeigten Ströme und Spannung können nach der Schaltungsdefinition durch einen Strichpunkt getrennt erfolgen. 
 * Sie werden einfach durch Beistrich getrennt angegeben
 Folgenden Definitionen sind hierbei möglich:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Operator      | Beispiel | Bedeutung                                                                                                                                                          |
 |---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,7 +81,7 @@ Folgenden Definitionen sind hierbei möglich:
 | ?             | UR1?     | Der Pfeil wird ohne Namen gezeichnet                                                                                                                               |
 | &gt;          | UR1&gt;x | Der Indizes der Größe wird in Schaltung und Zeigerdiagramm ausgetauscht. In diesem Beispiel wird Ux statt UR1 geschrieben. In Maxima bleibt der Index unverändert. |
 | :             | R1:Rx    | Ein Bauteilname kann umbenannt werden. Hier R1 auf Rx.                                                                                                             |
-</div>
+
 Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwendet werden wie zB: UR4&gt;x!_ 
 <br>![ClipCapIt-181127-212621.PNG](ClipCapIt-181127-212621.PNG)
 
@@ -94,13 +89,12 @@ Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwe
 * Nach den weiteren Drehstrom-Schaltungselementen können ebenfalls mit Ia,Ib,Ua,Ub,etc. Strom und Spannungspfeile eingezeichnet werden.
 
 #### Beispiele
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Definition                            | Schaltung                                                                   |
 |---------------------------------------|-----------------------------------------------------------------------------|
 | N3(),DD(R,R,R),DS(R,R,R);I,U,Ia,Ua,Ib | <br>![600px-ClipCapIt-190518-142635.PNG](600px-ClipCapIt-190518-142635.PNG) |
 | N4(),DSN(R,L,C);I,UR1                 | <br>![300px-ClipCapIt-190518-142924.PNG](300px-ClipCapIt-190518-142924.PNG) |
-</div>
+
 
 ### Datensätze
 * Das Plugin erstellt automatisch beim Beenden des Plugin-Editors die benötigten Datensätze
@@ -122,14 +116,13 @@ im Fragetext eingefügt werden. Dies erfolgt entweder direkt über die Eingabe d
 
 Folgende Parameter können angegeben werden:
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Graphiktyp     | typ parameter   | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Beispiel                                             |
 |----------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Schaltung      | keine Parameter |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [plugin1](PIG)                                       |
 | Schaltung      | S W,w20         | W,werte..Werte der Bauteile drucken<br> w20..Breite in Prozent des Bildschirms<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [PIG plugin1 "S W,w60\"/](PIG plugin1 "S W,w60\"/)   |
 | Zeigerdiagramm | ZD w40          | Parameter durch Komma getrennt<br> U Zeigerdiagramm der Spannungen<br> I Zeigerdiagramm der Ströme<br> UI Zeigerdiagramm der Ströme und Spannungen<br> UR1 erzwingt das Zeichnen der Spannung UR1<br> IC1 erzwingt das Zeichnen des Stromes IC1<br> u unterstreicht alle Ströme und Spannungen<br> UR1? zeichnet den Zeiger ohne Beschriftung<br> UR1/ die Beschriftung erfolgt auf der anderen Seite des Zeigers<br> UR2- Die Spannung wird nicht gezeichnet<br> P(UR1,UR2,IC1) nur die angegebenen Spannungen und Ströme werden gezeichnet<br> w50 Breite in Prozent des Bildschirms	<br> noscale keine Angabe über die Größe der Spannungen und Ströme<br> nolegend keine Beschriftung der Spannungen und Ströme<br> | [PIG plugin1 "zd UI,w50"/](PIG plugin1 "zd UI,w50"/) |
-</div>
+
 
 #### Zeichenelemente des Plot-Plugins
 Durch Strichpunkt getrennt können auch die [Zeichenelemente#vordefinierte-graphische-funktionen-](../Plot#vordefinierte-graphische-funktionen-/index.md#vordefinierte-graphische-funktionen-) des Plot-Plugins eingefügt werden.
@@ -154,7 +147,6 @@ Das PIM-Tag wird vor der Maxima-Berechnung automatisch durch die Formeln des Plu
 
 Folgende Variablen werden im Maxima-Feld definiert und können für das Ergebnis 
 verwendet werden:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Variable | Beschreibung                                                                                                      | Ergebnistyp               |
 |----------|-------------------------------------------------------------------------------------------------------------------|---------------------------|
@@ -178,7 +170,7 @@ verwendet werden:
 | Sa       | Betrag der Gesamtscheinleistung nach dem zweiten Drehstrom-Schaltelement                                          | double                    |
 | P        | Gesamtwirkleistung nach dem ersten Drehstrom-Schaltelement                                                        | double                    |
 | Qb       | Gesamtblindleistung nach dem dritten Drehstrom-Schaltelement                                                      | double                    |
-</div>
+
 
 
 [Plugins](../Plugins/index.md)

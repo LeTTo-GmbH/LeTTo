@@ -41,7 +41,6 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 * an die Einheit kann noch ein '''[Zahlenformat](../Zahlendarstellung/index.md)** durch **Beistrich** getrennt angehängt werden. Diese Ziffernanzahl wird für die Anzeige der richtigen Lösung verwendet hat jedoch keinen Einfluss auf die Bewertung! Setzt man jedoch vor die Definition ein **Gleichheitszeichen**, dann **muss''' der Schüler das Ergebnis in dieser Form eingegeben (zB: =f2)!!
 (zB: A,2 bedeutet Einheit Ampere mit 2 gültigen Ziffern in der Ergebnis-Anzeige)
 * Für _komplexe Zahlen_ kann an die Einheit noch die Art der Darstellung der komplexen Zahl durch einen **Beistrich** getrennt eingestellt werden. Setzt man vor die Definition ein **Gleichheitszeichen**, dann **muss** der Schüler das Ergebnis in dieser Form eingeben (zB: =karti)!!
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Art    | Darstellung                        | Eingabe                                                                                                                                                                           |
 |--------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,9 +52,8 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 | kart   | karthesische Koordinaten           | 2+3i 2+3*i 2+i*3 2+i3 i3+2 i*3+2 3i+2 3*i+2 2+3j 2+3*j 2+j*3 2+j3 j3+2 j*3+2 3j+2 3*j+2                                                                                           |
 | karti  | karthesische Koordinaten 2+2i      | 2+3i 2+3*i 2+i*3 2+i3 i3+2 i*3+2 3i+2 3*i+2                                                                                                                                       |
 | kartj  | karthesische Koordinaten 2+2j      | 2+3j 2+3*j 2+j*3 2+j3 j3+2 j*3+2 3j+2 3*j+2                                                                                                                                       |
-</div>
+
 * Beispiele:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Zieleinheit | berechnetes Ergebnis | korrektes Ergebnis               | Ergebnis mit Einheitenfehler | Falsches Ergebnis                     |
 |-------------|----------------------|----------------------------------|------------------------------|---------------------------------------|
@@ -63,22 +61,20 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 | m/s         | 2m/s                 | 2m/s oder 0.002km/s              | 2m oder 7.2km/h              | 2km oder 7.2km                        |
 | =m/s        | 2m/s                 | 2m/s                             |                              | 2km oder 7.2km oder 7.2km/h 0.002km/s |
 | =kart       | 3+6*%i               | 3+6i <br> 3+6*j                  |                              | 6.7082arg63.435°                      |
-</div>
+
 
 ####  einheitenlose Zahlen 
 Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Sondereinheit | Bedeutung          | Zieleinheit | korrekte Antwort | falsche Antwort |
 |---------------|--------------------|-------------|------------------|-----------------|
 | float         | einheitenlose Zahl | =float      | 0.25             | 25%             |
-</div>
+
 
 
 ####  Sondereinheiten für ganze Zahlen 
 Sondereinheiten für ganze Zahlen verhalten sich immer wie mit vorangestelltem Gleichheitszeichen, weshalb das vorangestellt Gleichheitszeichen auch weggelassen werden kann.
 Das bedeutet der Schüler muss das Ergebnis immer in der Form eingeben wie es die Zieleinheit verlangt!
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Sondereinheit | Bedeutung                                                                                                                                                                              | Zieleinheit       | korrekte Antwort               | falsche Antwort             |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------------------------------|-----------------------------|
@@ -87,7 +83,7 @@ Das bedeutet der Schüler muss das Ergebnis immer in der Form eingeben wie es di
 | hex           | Hexadezimalzahl                                                                                                                                                                        | hex oder =hex     | 0x20 oder 20                   | 32                          |
 | bin           | Binärzahl                                                                                                                                                                              | bin oder =bin     | 0b101 oder 101                 | 5                           |
 | long          | Dezimale Ganzzahl                                                                                                                                                                      | long oder =long   | 32                             | 30 oder 0x20 oder 0b100000  |
-</div>
+
 
 ####  rational (Brüche) 
 Bei der Zieleinheit **rational** muss der Schüler einen Bruch aus Ganzzahlen eingeben. 
@@ -105,7 +101,6 @@ Soll der Schüler ein symbolisches Ergebnis eingeben, so muss die symbolische Be
 Der **Optimierungsgrad** gibt an, wie das Schülerergebnis und die Lösung des Beispiels umgeformt werden dürfen um dann den gleichen Ausdruck zu liefern.
 
 Folgende smbolischen Modi sind definiert:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Zieleinheit     | Optimierungsgrad                           | Beschreibung                                                                                                                |
 |-----------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -121,7 +116,7 @@ Folgende smbolischen Modi sind definiert:
 | symbollog       | Optimierung von logarithmischen Funktionen | Logarithmus-Therme werden vereinfacht (noch nicht realisiert)                                                               |
 | symbolfull      | vollständige Optimierung                   | Alle Optimierungstufen werden ausgeführt bzw. wenn das nicht hilft wird das Ergebnis durch Testvektoren numerische geprüft. |
 | symbolboolsch   | Optimierung von boolschen Funktionen       | boolsche Funktionen werden vereinfacht (noch nicht realisiert)                                                              |
-</div>
+
 
 Nach dem Optimierungsmode folgt durch **Strichpunkt** getrennt die Verarbeitungsart von Konstanten und durch einen weiteren Strichpunkt getrennt die Verarbeitungsart von Datensätzen.
 
@@ -131,7 +126,6 @@ Hier wird definiert welche Konstanten bei der Berechnung der Lösung als Zahlenw
 Die Konstantenverarbeitung bezieht sich hierbei nur auf Konstante welche nicht mit einem Prozent beginnen! Alle Konstanten welche mit einem Prozent beginnen bleiben solange erhalten, bis sie numerisch ausgewertet werden, dann werden sie immer sofort eingesetzt!
 
 Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | String für die Konstantenverarbeitung | Beschreibung |                                                                            |
 |------------------------------------------------------|----------------------------------------------------------------------------|
@@ -141,13 +135,12 @@ Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
 | constsnone                                           | Es werden keine Konstanten im Ergebnis eingesetzt                          |
 | consts(e)                                            | Es wird nur die Konstante e im Ergebnis eingesetzt                         |
 | constsall                                            | Es werden alle definierten Konstaten im Ergebnis eingesetzt                |
-</div>
+
 
 #####  Datensatzverarbeitung 
 Hier wird definiert welche Datensätze bei der Berechnung der Lösung als Zahlenwert eingesetzt werden. Wird ein Datensatz nicht eingesetzt, so wird er in einem symbolischen Ergebnis wie eine Variable behandelt.
 
 Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | String für die Datensatzverarbeitung | Beschreibung |                                                                    |
 |-----------------------------------------------------|--------------------------------------------------------------------|
@@ -155,7 +148,7 @@ Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
 | constvars(u,i)                                      | Es werden nur die Datensätze von u und i als Zahlenwert eingesetzt |
 | constvarsnone                                       | Es wird kein einziger Datensatz in das Ergebnis eingesetzt         |
 | constvarsall                                        | Es werden alle Datensätze in das Ergebnis eingesetzt (Standard)    |
-</div>
+
 
 ####  Funktionen 
 Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funktionsparameter als Variable vorkommen dürfen. Da diese Variablen durch Name und Einheit vorgegeben sind, ist auch eine Einheitenprüfung von Funktionen mögliche, was bei symbolischen Ausdrücken im Allgemeinen nicht möglich ist.
@@ -172,7 +165,6 @@ Im wesentlichen gibt es zwei Arten wie das Suchmuster definiert sein kann:
 ####  Zeichen für die Definition 
 
 Folgende Zeichen sind definiert:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Zeichen | Bedeutung                                                                                    |
 |---------|----------------------------------------------------------------------------------------------|
@@ -184,20 +176,19 @@ Folgende Zeichen sind definiert:
 | V       | beliebige Variable welche mit einem Buchstaben beginnt und aus Buchstaben und Zahlen besteht |
 | K       | Konstante                                                                                    |
 | E       | Einheit                                                                                      |
-</div>
+
 Alle anderen Zeichen haben keine spezielle Funktion.
 
 ####  Mengendefinition 
 Bei der Mengendefinition werden zu Beginn in eckigen Klammern alle Elemente definiert welche im Ergebnis vorkommen dürfen gefolgt von allen Funktionen durch Beistrich getrennt.
 
 Beispiele:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Muster               | trifft bei                                         | trifft nicht bei                 |
 |----------------------|----------------------------------------------------|----------------------------------|
 | [NK*(](NK*(),sin,cos | 4<br>pi<br>2*pi<br>sin(2*pi)<br>sin(4)<br>5*sin(4) | tan(pi)<br>sin(pi/2)<br>5+sin(4) |
 | [N*](N*)             | 3*4 <br>3                                          | 3+4<br>1.2*3                     |
-</div>
+
 
 ####  Definition als regulärer Ausdruck 
 Ein Regulärer Ausdruck besteht aus den definierten Mengen, fixen Zeichen und Gruppierungen mit Verknüpfungen. 
@@ -205,7 +196,6 @@ Ein Regulärer Ausdruck besteht aus den definierten Mengen, fixen Zeichen und Gr
 Die Mengen NZRCGVKE sind wie schon zuvor definiert.
 
 Für Gruppierung und Verknüpfung stehen folgende Zeichen zur Verfügung:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Zeichen | Bedeutung                                                                                     |
 |---------|-----------------------------------------------------------------------------------------------|
@@ -215,6 +205,6 @@ Für Gruppierung und Verknüpfung stehen folgende Zeichen zur Verfügung:
 | { }?    | optionales Vorkommen einer Gruppe                                                             |
 | { }+?   | Gruppe kann einmal oder mehrmals vorkommen                                                    |
 | { }*?   | Gruppe kann nicht, einmal oder mehrmals vorkommen                                             |
-</div>
+
 
 Beispiele:

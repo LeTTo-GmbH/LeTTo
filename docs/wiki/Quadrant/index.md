@@ -9,7 +9,6 @@ An den Quadranten-Grenzen kann mittels einer Toleranz der Grenzbereich als Quadr
 
 Folgende Quadranten sind definiert: 
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Quadrant | Beschreibung     | Bereich   |
 |----------|------------------|-----------|
@@ -21,7 +20,7 @@ Folgende Quadranten sind definiert:
 | 6        |                  | 90°       |
 | 7        |                  | 180°      |
 | 8        |                  | 270°      |
-</div>
+
  
 
 Bsp: y(f):=quadrant(f,5°)

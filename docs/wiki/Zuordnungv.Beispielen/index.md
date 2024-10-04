@@ -6,7 +6,6 @@ Um ein einzelnes Beispiel eine oder mehrere Kompetenzen zu zuordnen, gehen Sie w
 <br>![200px-ClipCapIt-201014-104443.PNG](200px-ClipCapIt-201014-104443.PNG)
 
 Nachstehende Tabelle dient als Anleitung - Kochrezept - zum Zuordnen von Kompetenzen zu einem Beispiel.
-<div  class="wikitable" >
 
 | Graphikverweis | Anmerkung                                                                                                                        |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -16,7 +15,7 @@ Nachstehende Tabelle dient als Anleitung - Kochrezept - zum Zuordnen von Kompete
 | 4              | Wählen Sie eine oder mehrere Kompetenzen aus                                                                                     |
 | 5              | Mit abermaligen Klick auf das Kompetenzsymbol (3) wird das Kompetenzfenster ausgeblendet und die Paramterliste wieder sichtbar.  |
 | 6              | Klick auf das Symbol Baumneuaubauen refresht die Baumstruktur und die zugewiesen Kompetenz wird angezeigt. Tipp:Tooltip auf Bsp. |
-</div>
+
 
 <br>![400px-ClipCapIt-201014-110227.PNG](400px-ClipCapIt-201014-110227.PNG)
 
@@ -28,7 +27,6 @@ LeTTo unterstützt die Zuordnung von einer oder mehreren Kompetenzen auch über 
 <br>![200px-ClipCapIt-201014-104443.PNG](200px-ClipCapIt-201014-104443.PNG)
 Nachstehende Tabelle dient als Anleitung - Kochrezept - zum Zuordnen von Kompetenzen zu einem Beispielpool. Dabei werden allen Beispielen in diesem Ordner die ausgewählten Kompetenzen zugeordnet.
 <br>![400px-ClipCapIt-201014-112823.PNG](400px-ClipCapIt-201014-112823.PNG)
-<div  class="wikitable" >
 
 | Graphikverweis | Anmerkung                                                                                                                                                             |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +34,7 @@ Nachstehende Tabelle dient als Anleitung - Kochrezept - zum Zuordnen von Kompete
 | 2              | Wählen Sie die Option **Einzelne Kompetenz zuweisen** - es öffnet sich ein Dialog - siehe Abb. darunter.                                                              |
 | 3              | Definieren Sie jene Kompetenzen welche allen Beispiel in diesem Ordner zugewiesen werden sollen                                                                       |
 | 4              | Schließen Sie die Zuweisung ab                                                                                                                                        |
-</div>
+
 
 <br>![450px-ClipCapIt-201014-114113.PNG](450px-ClipCapIt-201014-114113.PNG)
 

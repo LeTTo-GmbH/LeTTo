@@ -43,7 +43,6 @@ Es gibt zwei Varianten einen Wertebereich zu definieren:
 
 Folgende Typbezeichner sind möglich:
 
-<div  class="wikitable" >
 
 | Bezeichner                                          | Beschreibung                                                                                                                                                                                                              | Beispiel                |
 |-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
@@ -67,12 +66,11 @@ Folgende Typbezeichner sind möglich:
 | sF:wert,wert,wert                                   | erzeugt Gleitkomma-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!)                                                      | sF:34.5,3.4,6,5,-43.4   |
 | sS:wert,wert,wert                                   | erzeugt String-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!) Ein Beistrich muss mit einem Backslash verblockt werden! | sS:Hut,Kappe,Hose       |
 | Startwert:Schrittweite:Endwert                      | erzeugt Werte zwischen Startwert und Endwert mit einem Abstand von Schrittweite zwischen den Werten                                                                                                                       | 2:0.1:5                 |
-</div>
+
 	
 #### Bereichsdefinitionen
 Folgende Bereichsdefinitionen sind möglich:
 	
-<div  class="wikitable" >
 
 | Beschreibung                                             | Beispiel     |                                         |
 |----------------------------------------------------------|--------------|-----------------------------------------|
@@ -86,7 +84,7 @@ Folgende Bereichsdefinitionen sind möglich:
 | Werte einer geometrischen Folge                          | 3*2:100      | 3,6,12,24,48,96                         |
 | Normreihe                                                | E12:10k-80k  | 10k,12k,15k,22k,27k,33k,39k,47k,56k,68k |
 | Dezimale Reihe                                           | D2:10-600    | 10,50,100,500                           |
-</div>
+
 
 Mögliche Normreihen mit logarithmisch verteilten Werten pro Dekade: E3,E6,E12,E24,E48
 
@@ -99,7 +97,6 @@ Mögliche Einheitenvielfache: m,u,n,p,f,a,k,M,G,T
 * Als [Einheit](../Einheit/index.md) kann jede gültige SI Einheit angegeben werden
 * Beginnt die Einheit mit einem Gleichheitszeichen, so wird die Einheit bei der Darstellung der Variable in der angegebenen Form und mit dem angegebenen Prefix erzwungen.
 * Als Sondereinheiten sind zulässig
-<div  class="wikitable" >
 
 | dB  | Dezibel           |
 |-----|-------------------|
@@ -108,6 +105,6 @@ Mögliche Einheitenvielfache: m,u,n,p,f,a,k,M,G,T
 | °   | Grad              |
 | €   | Euro              |
 | $   | Dollar            |
-</div>
+
 
 * Bei komplexen Zahlen kann durch Beistrich getrennt die Darstellung der komplexen Zahl definiert werden. Folgende Darstellungsvarianten sind zulässig:

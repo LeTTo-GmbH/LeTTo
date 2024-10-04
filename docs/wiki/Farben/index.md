@@ -1,7 +1,6 @@
 # Farben
 ## Farben
 Für die Angabe von Farben sind folgende Farb-Angaben entweder als "Farbe", als "Farbname deutsch" oder als "Farbcode" möglich:
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Farbe       | Farbname deutsch | Farbcode | Bsp                                                       |
 |-------------|------------------|----------|-----------------------------------------------------------|
@@ -21,7 +20,7 @@ Für die Angabe von Farben sind folgende Farb-Angaben entweder als "Farbe", als 
 | greenyellow | grüngelb         | #bebe00  | &lt;hr style="height:0px;border: 10px solid #bebe00;"&gt; |
 | orange      | orange           | #ff7f00  | &lt;hr style="height:0px;border: 10px solid #ff7f00;"&gt; |
 | cyan        |                  | #00ffff  | &lt;hr style="height:0px;border: 10px solid #00ffff;"&gt; |
-</div>
+
 
 ##  siehe auch 
 * [Graph](../Graph/index.md)-Plugin

@@ -6,7 +6,6 @@ Dieser Toolbar ist in zwei Bereiche unterteilt: Links kann das Verhalten der Kat
 
 ### Toolbar für Kategorien 
 ![450px-ClipCapIt-180618-215657.PNG](450px-ClipCapIt-180618-215657.PNG)
-<div  >
 
 | ![60px-ClipCapIt-180618-220345.PNG](60px-ClipCapIt-180618-220345.PNG) | Zurückwechseln zur [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)                                                        |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -20,7 +19,7 @@ Dieser Toolbar ist in zwei Bereiche unterteilt: Links kann das Verhalten der Kat
 | ![22px-ClipCapIt-180618-221159.PNG](22px-ClipCapIt-180618-221159.PNG) | [Festlegung von angezeigten Themen und Benutzern](../Abos/index.md)                                                            |
 | ![22px-ClipCapIt-180618-221259.PNG](22px-ClipCapIt-180618-221259.PNG) | Einstellungen konfigurieren                                                                                                    |
 | ![22px-ClipCapIt-180618-221343.PNG](22px-ClipCapIt-180618-221343.PNG) | Hilfe öffnen                                                                                                                   |
-</div>
+
 
 ###  Toolbar für Fragen im Edit-Modus 
 ![300px-ClipCapIt-180618-215723.PNG](300px-ClipCapIt-180618-215723.PNG)

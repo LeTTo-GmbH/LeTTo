@@ -1,6 +1,5 @@
 # Plot-Plugin Cursor Darstellung
 Der Cursor im Plot Plugin kann mit dem Parameter **cursor=**WERT gesetzt werden - siehe [Video](https://youtu.be/AA95ipIXtac).
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | WERT    | Beschreibung                                                                                                           | Beispiel                                                                    |
 |---------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -19,7 +18,7 @@ Der Cursor im Plot Plugin kann mit dem Parameter **cursor=**WERT gesetzt werden 
 | HNUM    | Cursor nur horizontale Linie, Fußlegende und Cursor als Werte                                                          | <br>![300px-ClipCapIt-211027-095705.PNG](300px-ClipCapIt-211027-095705.PNG) |
 | VLINE   | Cursor nur vertikale Linie, keine Fußlegende keine Cursorangaben                                                       | <br>![300px-ClipCapIt-211027-095733.PNG](300px-ClipCapIt-211027-095733.PNG) |
 | VNUM    | Cursor nur vertikale Linie, Fußlegende und Cursor als Werte                                                            | <br>![300px-ClipCapIt-211027-095755.PNG](300px-ClipCapIt-211027-095755.PNG) |
-</div>
+
 
 ##  siehe auch 
 * [Plugins](../Plugins/index.md)

@@ -117,7 +117,6 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 * Bemerkungen werden wie in C oder Java übliche am Zeilenanfang mit einem doppelten Schrägstrich eingefügt
 
 ##### Wichtige Funktionen
-<div  class="wikitable" >
 
 | Funktion !!  Beschreibung 	!! Beispiel 	!! Ergebnis                                                                          |                                               |               |   |
 |------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------|---|
@@ -136,11 +135,10 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 | log10(x)                                                                                                                     | 10er Logarithmus                              | log10(100)    | 2 |
 | log(x)                                                                                                                       | natürlicher Logarithmus                       |               |   |
 | pow(x,y)                                                                                                                     | berechnet die Potenz x hoch y                 | pow(2,3)      | 8 |
-</div>
+
 
 ##### Tipps für Maxima-Newcomer
 
-<div  class="wikitable" >
 
 | Befehl 	!!  Beschreibung                                                                                                                                                    |                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
@@ -149,7 +147,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 | | 	Gleichungssystem lösen mit den Gleichungen g1 und g2  solve löst das Gleichungssystem und liefert den Ergebnisvektor L  ev berechnet aus dem Lösungsvektor die Variablen |                                    |
 | c:4+5*%i                                                                                                                                                                    | komplexe Zahl                      |
 | e:ratsimp(c*(2+3*%i))                                                                                                                                                       | komplexes Ergebnis auswerten       |
-</div>
+
 
 ## Eingabemasken für die unterschiedlichen Fragetypen
 
@@ -214,7 +212,6 @@ Die Toleranz, wie genau ein Schüler seine Antwort angeben muss:
 
 ##### &lt;span id="sqLoesungInput"&gt;Lösung der Antwort einer Teilfrage
 In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode hat das Lösungsfeld verschiedene Funktionalität!
-<div  class="wikitable" >
 
 | Fragemode 	!! Demovideo !!Bedeutung des Lösungsfeldes 	!! Inhalt |                                                                            |                                                                                                                          |                                            |
 |------------------------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
@@ -230,7 +227,7 @@ In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode ha
 | Schieber-Eingabe für Befragung                                   | [Video](https://youtu.be/oqaiSU11oxA)                                      | minimaler und maximaler Schieberendwert(min:0;max:100)                                                                   |                                            |
 | Berechnung für mit Eingabefeldern für jede Antwort               |                                                                            |                                                                                                                          |                                            |
 | Texteingabe mit Eingabefeldern für jede Antwort                  |                                                                            |                                                                                                                          |                                            |
-</div>
+
 
 ##### &lt;span id="sqErgInfoInput"&gt;Infofeld der Antwort einer Teilfrage
 * Bei Berechnungsfragen die Antwort des ersten Datensatzes, das Feld ist dann schreibgeschützt
@@ -255,7 +252,6 @@ Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mi
 
 Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.
 
-<div  class="wikitable" >
 
 | Feld !!  Beschreibung |                                                                                                                            |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -264,7 +260,7 @@ Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches
 | **Prozent:**          | [Prozent_für_die_Antwort_einer_Teilfrage](#prozent-für-die-antwort-einer-teilfrage-)                                       |
 | **Toleranz:**         | [Toleranz_der_Antwort_einer_Teilfrage](#toleranz-der-antwort-einer-teilfrage-)                                             |
 | **Mode:**             | [Antwortmode](#antwortmode-)                                                                                               |
-</div>
+
 
 Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.
 
@@ -301,38 +297,34 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   * Im Fragemodus "Normal" muss der Schüler den Text in der Lücke eingeben
   * Im Fragemodus "Drag and Drop" muss der Schüler aus einer Liste von Antworttexten den richtigen Text über die Lücke ziehen. Hierbei wird die Liste der Antworttexte aus allen richtigen und falschen Antworten der Texteingabe-Felder zusammengesetzt.
   * Syntax:
-<div  class="wikitable" style="margin-left:50px" >
 
 | [text](text)                                                                                         | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | [2&lt;nowiki&gt;|&lt;/nowiki&gt;text](2&lt;nowiki&gt;|&lt;/nowiki&gt;text)                           | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
 | [2&lt;nowiki&gt;|&lt;/nowiki&gt;text,50:alt,0:nix](2&lt;nowiki&gt;|&lt;/nowiki&gt;text,50:alt,0:nix) | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
-</div>
+
 
 * **Multiple-Choice:**
   *      unabhängig vom Fragemodus
   *      mindestens eine Antwort muss richtig sein
   *      Syntax:
-<div  class="wikitable" style="margin-left:50px" >
 
 | [M&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch1,falsch2](M&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch1,falsch2) | Die richtigen Antwortfelder sind mit x: markiert |
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | [M&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,blau,gelb](M&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,blau,gelb)       | rot und grün sind richtig                        |
-</div>
+
 
 * **Single-Choice:**
   *      unabhängig vom Fragemodus
   *      der Schüler muss eine Antwort aus mehreren wählen
   *      Syntax:
-<div  class="wikitable" style="margin-left:50px" >
 
 | [S&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch,falsch](S&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch,falsch)     | x kennzeichnet eine richtige Antwort                                           |
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [S&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,50:blau,gelb](S&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,50:blau,gelb) | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
-</div>
+
 
 * **Sonderzeichen** innerhalb einer Lücke 
-<div  class="wikitable" style="margin-left:50px" >
 
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
@@ -340,16 +332,15 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
 | Komma(Beistrich)   | ,       | \,            |
 | eckige Klammer auf | [       | \[            |
 | eckige Klammer zu  | ]       | \]            |
-</div>
+
 
 * **Sonderzeichen** im Fragetext, welche nicht in einer Lücke sind:
-<div  class="wikitable" style="margin-left:50px" >
 
 | Bezeichnung        | Zeichen | Ersatzzeichen |
 |--------------------|---------|---------------|
 | eckige Klammer auf | [       | \[            |
 | eckige Klammer zu  | ]       | \]            |
-</div>
+
 
 ##### Schülereingabe der Frage:
 Die oben in der Abbildung definierte Lückentextfrage führt zu der links abgebildeten Aufgabenstellung während eines [Online-Tests](../Online-Tests/index.md).
@@ -379,14 +370,13 @@ Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen 
 Es sind 4 Beurteilungsmöglichkeiten implementiert.
 
 <br>![200px-ClipCapIt-201206-205949.PNG](200px-ClipCapIt-201206-205949.PNG)
-<div  class="wikitable" style="margin-left:50px" >
 
 | Normal      | Werden die korrekten Antworten teilweise markiert, gibt es Teilpunkte auf die Frage. Schüler kann mit richtigen Antworten Punkte sammeln. Eine falsche selektierte Antwort führt zu Null Prozent auf die ganze Frage. |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Streng      | Das Lösungsmuster muss **exakt** getroffen werden. Wird eine korrekte Antwort nicht selektiert bzw. eine falsche Antwort selektiert führt das zu Null Prozent auf die ganze Frage.                                    |
 | mild        | Treffer werdern gegen Nieten gegengerechnet. Alle korrekten Antworten führen zur Summation der Teilpunkte und alle nicht korrekten Antworten zur Punktereduktion.                                                     |
 | HundertProz | Unabhängig von der Antwort gibt es immer 100 Prozent - TIPP: Kann interessant sein, wenn man SchülerInnenmeinungen abfragen möchte. BSP: War die Frage schwer?                                                        |
-</div>
+
 
 Das Maxima-Feld kann auch für Multiple-Choice-Fragen für Berechnungen und für die Definition von Formeln verwendet werden. In den Antworten für die Multiple-Choice-Frage können Sie sich über {= ...} auf die Ergebnisse beziehen.
 <br>![400px-ClipCapIt-180901-215517.PNG](400px-ClipCapIt-180901-215517.PNG)
@@ -403,14 +393,13 @@ Mit der Auswahlliste für das Anzeigeverhalten kann gesteuert werden, ob und wie
 _Nur links mischen_ bedeutet, dass die Antwortmöglichkeiten auf der linken Seite der Zuordnungsfrage bei jedem Öffnen der Frage anders dargestellt werden.
 
 Folgende Einstellungen sind möglich:
-<div  class="wikitable" >
 
 | Nicht mischen      | Die Reihenfolge wird so, wie sie in der Frage definiert ist, gewählt                         |
 |--------------------|----------------------------------------------------------------------------------------------|
 | Mischen            | Auf der linken und auf der rechten Seite werden die Antwortmöglichkeiten zufällig angeordnet |
 | Nur links mischen  | Nur auf der linken Seite werden die Antwortmöglichkeiten zufällig angeordnet                 |
 | Nur rechts mischen | Nur auf der rechten Seite werden die Antwortmöglichkeiten zufällig angeordnet                |
-</div>
+
 
 Pro Zeile werden die zusammengehörenden Begriffe in die Tabelle eingetragen.
 Um Zuordnungsfragen zu erschweren, können auf der rechten Seite auch falsche Begrife angeführt werden, die nicht eine Entsprechung auf der linken Seite haben.

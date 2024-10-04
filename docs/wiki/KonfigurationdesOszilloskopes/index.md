@@ -30,7 +30,6 @@ Bsp:
 </pre>
 
 ###  Schalter 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Schalter | Funktion                                                                                                |
 |----------|---------------------------------------------------------------------------------------------------------|
@@ -38,13 +37,12 @@ Bsp:
 | graph    | Darstellung als x-y-Graph mit der Nulllinie in der Mitte und der y-Achse beim Triggerpunkt, ohne Gitter |
 | oszi2ch  | 2-Kanal-Oszilloskop mit automatischem Aufteilen der Kanale über das Display                             |
 | oszi4ch  | 4-Kanal-Oszilloskop mit automatischem Aufteilen der Kanale über das Display                             |
-</div>
+
 
 ###  Gruppen 
 ####  Channels 
 * Gruppenname: **ch1** für Kanal1, **ch2** für Kanal2, etc.
 * Es sind die Kanäle ch1 bis ch9 verwendbar wobei eine Legende nur für die Kanäle ch1 bis ch4 angezeigt wird!
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Funktion                                                                                                  | Bsp                |
 |-----------|-----------------------------------------------------------------------------------------------------------|--------------------|
@@ -57,35 +55,32 @@ Bsp:
 | gnd       | Signal wird auf 0 gesetzt                                                                                 | gnd                |
 | fill      | setzt den Füllgrad einer Flächenfüllung zwischen Nulllinie und Signal                                     | fill=0.3 <br> fill |
 | size      | setzt die Linienstärke der Signallinie                                                                    | size=4             |
-</div>
+
 
 ####  Zeitbasis 
 * Gruppenname: **time**
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Funktion                                                                                                      | Bsp       |
 |-----------|---------------------------------------------------------------------------------------------------------------|-----------|
 | div       | setzt die Teilung                                                                                             | div=20ms  |
 | trigger   | setzt die Lage des Tiggerpunktes (Zeit-Nullpunktes) in Skalenteilen von links bei Null beginnend (Standard:1) | trigger=3 |
-</div>
+
 ####  Design und Gitter 
 * Gruppenname: **grid**
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter | Funktion                                                        | Bsp               |
 |-----------|-----------------------------------------------------------------|-------------------|
 | color     | setzt die Gitterfarbe (siehe [Farben](../Farben/index.md))      | color=blue        |
 | bgcolor   | setzt die Hintergrundfarbe (siehe [Farben](../Farben/index.md)) | bgcolor=lightgray |
 | textcolor | setzt die Textfarbe (siehe [Farben](../Farben/index.md))        | textColor=red     |
-</div>
+
 
 ####  Bildgröße 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter         | Beschreibung                                                                                           | Beispiel |
 |-------------------|--------------------------------------------------------------------------------------------------------|----------|
 | w[breite](breite) | Breite des Bildes setzen. Die Breite wird als Zahlenwert zwischen 1 und 100 als Prozentwert angegeben. | w80      |
-</div>
+
 
 ##  siehe auch 
 * [Plugins](../Plugins/index.md)

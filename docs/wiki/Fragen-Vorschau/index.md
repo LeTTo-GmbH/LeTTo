@@ -12,14 +12,13 @@ Darunter werden die Werte von allen Datenensätzen (Variablen) angezeigt.
 In der rechten Hälfte des Dialoges ist oben ein Toolbar zur Steuerung der Vorschau zu sehen:
 ### Toolbar
 <br>![150px-ClipCapIt-180618-223712.PNG](150px-ClipCapIt-180618-223712.PNG)
-<div  class="wikitable" >
 
 | Hilfe    | Der Hilfe-Button führt auf diese Wiki-Seite                                                                                                                                                                                                  |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Feedback | Umschalten zwischen Eingabe- und Feedback-Ansicht: In der Eingabeansicht kann das Frageverhalten getestet werden, in der Feedback-Ansicht wird die Frage nach der Beurteilung dargestellt.                                                   |
 | Würfeln  | Mit diesem Button können die Antworten bei [Multiple-Choice-Fragen](/notimplemented/index.md) und bei [Zuordnungsfragen](/notimplemented/index.md) neu gewürfelt werden und damit das Verhalten von Fragen dieses Fragetyps getestet werden. |
 | Scroller | Mit dem Scroller können alle Datensätze getestet werden. Der Fragetext wird mit den Variablen der aktuell ausgewählten Datensatz-Nummer angezeigt und alle Grafiken von [Plugins](../Plugins/index.md) werden neu gezeichnet.                |
-</div>
+
 
 Im Bild zu sehen ist die Vorschau für eine [Multiple-Choice-Frage](/notimplemented/index.md).
 

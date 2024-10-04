@@ -13,7 +13,6 @@ f(x):=x^2-3;w30h
 
 ###  mögliche w-Parameter 
 
-<div  class="wikitable" style="text-align: left; width: 100%;"  >
 
 | Parameter                 | Beschreibung                                                | Beispiel    |
 |---------------------------|-------------------------------------------------------------|-------------|
@@ -26,7 +25,7 @@ f(x):=x^2-3;w30h
 | w{zahl}S                  | Auflösung 300x300 mit Bildbreite in Prozent                 | w40S        |
 | w{zahl}-{pixel}           | Auflösung pixel mal pixel mit einer Bildbreite in Prozent   | w30-500     |
 | w{zahl}-{pixelx}x{pixely} | Auflösung pixelx mal pixely mit einer Bildbreite in Prozent | w30-800x500 |
-</div>
+
 
 ###  mögliche size-Parameter 
 

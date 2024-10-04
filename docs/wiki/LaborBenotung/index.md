@@ -13,7 +13,6 @@ Eine Kopie wird angelegt. Diese Kopie kann wiederum adaptiert werden und bei and
 
 <br>![570px-ClipCapIt-201001-214519.PNG](570px-ClipCapIt-201001-214519.PNG)
 
-<div  class="wikitable" >
 
 | Graphikverweis | Beschreibung                                          | Anmerkung                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,7 +22,7 @@ Eine Kopie wird angelegt. Diese Kopie kann wiederum adaptiert werden und bei and
 | 4              | Definition der Einträge pro Laborübung                | in der Abb. darunter ist das Ergebnis sichtbar dargestellt. Das ***** vor dem Wort Prüfung erlaubt Online-Test in die Beurteilung aufzunehmen. Dabei wird die Note eines Online-Tests hier eingefügt - Ideal für Einstiegsprüfungen. Das **!** vor dem Protokoll färbt die Summennote ROT, solange keine Protokollnote eingetragen wurde - erhöht die Übersichtlichkeit im Notenkatalog. |
 | 5              | Bewertungsdefinition - Notenintervall                 |                                                                                                                                                                                                                                                                                                                                                                                          |
 | 6              | Soll die Summe über alle Lehrernoten gebildet werden? | Nur interessant im Team-Teaching - also mehr als ein Lehrer im Unterricht. Es wird nur mehr der Summen-Prozentwert der Lehrernote dargestellt (Werkstatt, Labor). Für die Brechnung des Summen-Prozentwertes sind die Einzelnoten der Leher individuell gewichtbar.                                                                                                                      |
-</div>
+
 
 
 Um die Gewichtung der Einzelleistungen der SchülerInnen zu verändern, schreibt man (wie folgend dargestellt) die gewünschten Gewichtungsfaktoren hinter die defnierten Einträge - siehe oben Beurteilungsschema mit Graphikverweis 4.

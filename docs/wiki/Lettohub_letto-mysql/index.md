@@ -7,7 +7,6 @@ siehe auch
 **lettohub/letto-mysql**
 
 ###  Tags 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Tag     | Beschreibung                                                                     | Anmerkung |
 |---------|----------------------------------------------------------------------------------|-----------|
@@ -18,35 +17,32 @@ siehe auch
 | rev6501 | Basierend auf MySQL 8.0.32 und Oracle Linux                                      |           |
 | rev6503 | Basierend auf MySQL 8.0.34 und Debian                                            |           |
 | rev6504 | Basierend auf MySQL 8.0.34 und Oracle Linux                                      |           |
-</div>
+
 
 ###  Ports 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Port | Beschreibung         |
 |------|----------------------|
 | 3306 | MySQL Datenbank-Port |
-</div>
+
 
 ###  Pfade welche als Volume verbunden werden sollten 
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Pfad im Docker Container | Beschreibung                                              | üblicher Wert                             |
 |--------------------------|-----------------------------------------------------------|-------------------------------------------|
 | /var/lib/mysql           | Docker-Volume für die eigentliche Datenbank               | lettomysql                                |
 | /opt/dump                | Verzeichnis für den Import und Export von Datenbank-Dumps | /opt/letto/docker/storage/database-dump   |
 | /opt/backup              | wird nicht verwendet                                      | /opt/letto/docker/storage/database-backup |
-</div>
+
 
 ###  Environment Variable 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Variable            | Beschreibung                         | üblicher Wert | muss gesetzt sein |
 |---------------------|--------------------------------------|---------------|-------------------|
 | TZ                  | Zeitzone                             | Europe/Berlin | nein              |
 | MYSQL_ROOT_PASSWORD | Passwort des Datebank root Benutzers |               | nein              |
-</div>
+
 
 ##  Docker Compose 
 * .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-mysql.yml](http://letto.at/download/letto/setup/yml/docker-compose-mysql.yml)
@@ -58,13 +54,12 @@ Der Container besitzt ein paar nützliche Scripts um die Verwaltung zu erleichte
 Aufruf der Scripts über die Commandline mit:
 <pre>docker exec -it letto-mysql scriptname parameter</pre>
 
-<div  class="wikitable" style="text-align: left; width: 100%;" >
 
 | Script | Beschreibung                                     | Beispiel                         |
 |--------|--------------------------------------------------|----------------------------------|
 | help   | gibt einen kurzen Hilfetext über die Scripts aus | docker exec -it letto-mysql help |
 |        |                                                  |                                  |
-</div>
+
 
 [Administration](../Administration/index.md)
 
