@@ -296,10 +296,10 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   * Im Fragemodus "Drag and Drop" muss der Schüler aus einer Liste von Antworttexten den richtigen Text über die Lücke ziehen. Hierbei wird die Liste der Antworttexte aus allen richtigen und falschen Antworten der Texteingabe-Felder zusammengesetzt.
   * Syntax:
 
-| [text](text)                                                                                         | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
-|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [2<nowiki>|</nowiki>text](2<nowiki>|</nowiki>text)                           | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
-| [2<nowiki>|</nowiki>text,50:alt,0:nix](2<nowiki>|</nowiki>text,50:alt,0:nix) | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
+| \[text]                | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| \[2\|text]              | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
+| \[2\|text,50:alt,0:nix] | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
 
 
 * **Multiple-Choice:**
@@ -307,9 +307,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      mindestens eine Antwort muss richtig sein
   *      Syntax:
 
-| [M<nowiki>|</nowiki>x:richtig,falsch1,falsch2](M<nowiki>|</nowiki>x:richtig,falsch1,falsch2) | Die richtigen Antwortfelder sind mit x: markiert |
-|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [M<nowiki>|</nowiki>x:rot,x:grün,blau,gelb](M<nowiki>|</nowiki>x:rot,x:grün,blau,gelb)       | rot und grün sind richtig                        |
+| \[M\|x:richtig,falsch1,falsch2] | Die richtigen Antwortfelder sind mit x: markiert |
+|---------------------------------|--------------------------------------------------|
+| \[M\|x:rot,x:grün,blau,gelb]    | rot und grün sind richtig                        |
 
 
 * **Single-Choice:**
@@ -317,9 +317,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      der Schüler muss eine Antwort aus mehreren wählen
   *      Syntax:
 
-| [S<nowiki>|</nowiki>x:richtig,falsch,falsch](S<nowiki>|</nowiki>x:richtig,falsch,falsch)     | x kennzeichnet eine richtige Antwort                                           |
-|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [S<nowiki>|</nowiki>x:rot,x:grün,50:blau,gelb](S<nowiki>|</nowiki>x:rot,x:grün,50:blau,gelb) | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
+| \[S\|x:richtig,falsch,falsch]   | x kennzeichnet eine richtige Antwort                                           |
+|---------------------------------|--------------------------------------------------------------------------------|
+| \[S\|x:rot,x:grün,50:blau,gelb] | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
 
 
 * **Sonderzeichen** innerhalb einer Lücke 
