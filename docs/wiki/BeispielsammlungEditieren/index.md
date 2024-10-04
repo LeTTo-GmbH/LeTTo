@@ -118,35 +118,33 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 
 ##### Wichtige Funktionen
 
-| Funktion !!  Beschreibung 	!! Beispiel 	!! Ergebnis                                                                          |                                               |               |   |
-|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------|---|
-| floor(x)                                                                                                                     | Kommazahl auf die nächste Ganzzahl abrunden   |               |   |
-| round(x)                                                                                                                     | Kommazahl auf Ganzzahl runden                 |               |   |
-| pi()                                                                                                                         | die Zahl Pi                                   |               |   |
-| exp(1)                                                                                                                       | die eulersche Zahl e                          |               |   |
-| exp(x)                                                                                                                       | Exponentialfunktion e hoch x                  |               |   |
-| abs(x)                                                                                                                       | Absolutbetrag                                 | abs(-2)       | 2 |
-| acos(x), acosh(x), asin(x),   asinh(x), atan2(y,x), atan(x),   atanh(x), cos(x), cosh(x),   sin(x), sinh(x), tan(x), tanh(x) |                                               |               |   |
-| |	Winkelfunktionen                                                                                                           |                                               |               |   |
-| deg2rad(x)                                                                                                                   | Grad in Radianten umwandeln                   |               |   |
-| rad2deg(x)                                                                                                                   | Radianten in Grad umwandeln                   |               |   |
-| max(x,y,z)                                                                                                                   | Liefert das Maximum der angegebenen Parameter | max(2,5,3)    | 5 |
-| min(x,y,z)                                                                                                                   | Liefert das Minimum der angegebenen Parameter | min(3,2,6,34) | 2 |
-| log10(x)                                                                                                                     | 10er Logarithmus                              | log10(100)    | 2 |
-| log(x)                                                                                                                       | natürlicher Logarithmus                       |               |   |
-| pow(x,y)                                                                                                                     | berechnet die Potenz x hoch y                 | pow(2,3)      | 8 |
+| Funktion                                                                                                                     | Beschreibung                                  | Beispiel      | Ergebnis |
+|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------|----------|
+| floor(x)                                                                                                                     | Kommazahl auf die nächste Ganzzahl abrunden   |               |          |
+| round(x)                                                                                                                     | Kommazahl auf Ganzzahl runden                 |               |          |
+| pi()                                                                                                                         | die Zahl Pi                                   |               |          |
+| exp(1)                                                                                                                       | die eulersche Zahl e                          |               |          |
+| exp(x)                                                                                                                       | Exponentialfunktion e hoch x                  |               |          |
+| abs(x)                                                                                                                       | Absolutbetrag                                 | abs(-2)       | 2        |
+| acos(x), acosh(x), asin(x),   asinh(x), atan2(y,x), atan(x),   atanh(x), cos(x), cosh(x),   sin(x), sinh(x), tan(x), tanh(x) | Winkelfunktionen                              |               |          |
+| deg2rad(x)                                                                                                                   | Grad in Radianten umwandeln                   |               |          |
+| rad2deg(x)                                                                                                                   | Radianten in Grad umwandeln                   |               |          |
+| max(x,y,z)                                                                                                                   | Liefert das Maximum der angegebenen Parameter | max(2,5,3)    | 5        |
+| min(x,y,z)                                                                                                                   | Liefert das Minimum der angegebenen Parameter | min(3,2,6,34) | 2        |
+| log10(x)                                                                                                                     | 10er Logarithmus                              | log10(100)    | 2        |
+| log(x)                                                                                                                       | natürlicher Logarithmus                       |               |          |
+| pow(x,y)                                                                                                                     | berechnet die Potenz x hoch y                 | pow(2,3)      | 8        |
 
 
 ##### Tipps für Maxima-Newcomer
 
 
-| Befehl 	!!  Beschreibung                                                                                                                                                    |                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| a:5                                                                                                                                                                         | Der Variablen a den Wert5 zuweisen |
-| g1:x+y=5  g2:x-y=3  L:solve([g1,g2](g1,g2),[x,y](x,y))  x:ev(x,L)  y:ev(y,L)                                                                                                |                                    |
-| | 	Gleichungssystem lösen mit den Gleichungen g1 und g2  solve löst das Gleichungssystem und liefert den Ergebnisvektor L  ev berechnet aus dem Lösungsvektor die Variablen |                                    |
-| c:4+5*%i                                                                                                                                                                    | komplexe Zahl                      |
-| e:ratsimp(c*(2+3*%i))                                                                                                                                                       | komplexes Ergebnis auswerten       |
+| Befehl                                                                       | Beschreibung                                                                                                                                                             |                                                                                                                                                                          
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a:5                                                                          | Der Variablen a den Wert5 zuweisen                                                                                                                                       |
+| g1:x+y=5  g2:x-y=3  L:solve([g1,g2](g1,g2),[x,y](x,y))  x:ev(x,L)  y:ev(y,L) | Gleichungssystem lösen mit den Gleichungen g1 und g2  solve löst das Gleichungssystem und liefert den Ergebnisvektor L  ev berechnet aus dem Lösungsvektor die Variablen |
+| c:4+5*%i                                                                     | komplexe Zahl                                                                                                                                                            |
+| e:ratsimp(c*(2+3*%i))                                                        | komplexes Ergebnis auswerten                                                                                                                                             |
 
 
 ## Eingabemasken für die unterschiedlichen Fragetypen
@@ -213,20 +211,20 @@ Die Toleranz, wie genau ein Schüler seine Antwort angeben muss:
 ##### &lt;span id="sqLoesungInput"&gt;Lösung der Antwort einer Teilfrage
 In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode hat das Lösungsfeld verschiedene Funktionalität!
 
-| Fragemode 	!! Demovideo !!Bedeutung des Lösungsfeldes 	!! Inhalt |                                                                            |                                                                                                                          |                                            |
-|------------------------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| Auswahl aus einer Listbox(Single-Choice)                         | [Video](https://youtu.be/xdQCwnmOP1E)                                      | Lösung wie sie am Browser ausgegeben wird                                                                                | Eingabe                                    |
-| Kurze Textantwort                                                | [Video](https://youtu.be/Hd44htzvh24)                                      | Lösung wie sie der Schüler eingeben sollte                                                                               | Eingabe                                    |
-| Textantwort, Bewertung über regulären Ausdruck                   | [ XXX Video]( XXX Video)                                                   | Regulärer Ausdruck (in Java Syntax) welcher für die richtige Lösung treffen muss                                         | Eingabe                                    |
-| Multiple-Choice-Frage                                            | [Video](https://youtu.be/MZMDNdg0jO0)                                      | Lösung wie sie am Browser ausgegeben wird.                                                                               | Eingabe                                    |
-| Berechnung                                                       | [Video](https://youtu.be/KUhgZ620kEI)                                      | Berechnungsformel, mit der zur Testzeit die richtige Lösung berechnet wird, die mit der Schülereingaben verglichen wird. | automatische Berechnung aus dem Maximafeld |
-| Plugin Beurteilung durch Plugin                                  | [https://youtu.be/ZhGxH5TcOCc Video ](https://youtu.be/ZhGxH5TcOCc Video ) | Plugin abhängig                                                                                                          |                                            |
-| Freitextfrage großes Eingabefeld                                 | [Video](https://youtu.be/XJCerPYhHLk)                                      | Feld bleibt leer                                                                                                         |                                            |
-| Zuordnungsfrage                                                  | [ XXX Video]( XXX Video)                                                   | Feld bleibt leer                                                                                                         |                                            |
-| Abgabe durch Foto oder aus Zwischenablage                        | [Video](https://youtu.be/HrsodAm9-eY)                                      | Feld bleibt leer                                                                                                         |                                            |
-| Schieber-Eingabe für Befragung                                   | [Video](https://youtu.be/oqaiSU11oxA)                                      | minimaler und maximaler Schieberendwert(min:0;max:100)                                                                   |                                            |
-| Berechnung für mit Eingabefeldern für jede Antwort               |                                                                            |                                                                                                                          |                                            |
-| Texteingabe mit Eingabefeldern für jede Antwort                  |                                                                            |                                                                                                                          |                                            |
+| Fragemode                                          | Demovideo                                                                  | Bedeutung des Lösungsfeldes                                                                                              | Inhalt                                     |
+|----------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| Auswahl aus einer Listbox(Single-Choice)           | [Video](https://youtu.be/xdQCwnmOP1E)                                      | Lösung wie sie am Browser ausgegeben wird                                                                                | Eingabe                                    |
+| Kurze Textantwort                                  | [Video](https://youtu.be/Hd44htzvh24)                                      | Lösung wie sie der Schüler eingeben sollte                                                                               | Eingabe                                    |
+| Textantwort, Bewertung über regulären Ausdruck     | [ XXX Video]( XXX Video)                                                   | Regulärer Ausdruck (in Java Syntax) welcher für die richtige Lösung treffen muss                                         | Eingabe                                    |
+| Multiple-Choice-Frage                              | [Video](https://youtu.be/MZMDNdg0jO0)                                      | Lösung wie sie am Browser ausgegeben wird.                                                                               | Eingabe                                    |
+| Berechnung                                         | [Video](https://youtu.be/KUhgZ620kEI)                                      | Berechnungsformel, mit der zur Testzeit die richtige Lösung berechnet wird, die mit der Schülereingaben verglichen wird. | automatische Berechnung aus dem Maximafeld |
+| Plugin Beurteilung durch Plugin                    | [https://youtu.be/ZhGxH5TcOCc Video ](https://youtu.be/ZhGxH5TcOCc Video ) | Plugin abhängig                                                                                                          |                                            |
+| Freitextfrage großes Eingabefeld                   | [Video](https://youtu.be/XJCerPYhHLk)                                      | Feld bleibt leer                                                                                                         |                                            |
+| Zuordnungsfrage                                    | [ XXX Video]( XXX Video)                                                   | Feld bleibt leer                                                                                                         |                                            |
+| Abgabe durch Foto oder aus Zwischenablage          | [Video](https://youtu.be/HrsodAm9-eY)                                      | Feld bleibt leer                                                                                                         |                                            |
+| Schieber-Eingabe für Befragung                     | [Video](https://youtu.be/oqaiSU11oxA)                                      | minimaler und maximaler Schieberendwert(min:0;max:100)                                                                   |                                            |
+| Berechnung für mit Eingabefeldern für jede Antwort |                                                                            |                                                                                                                          |                                            |
+| Texteingabe mit Eingabefeldern für jede Antwort    |                                                                            |                                                                                                                          |                                            |
 
 
 ##### &lt;span id="sqErgInfoInput"&gt;Infofeld der Antwort einer Teilfrage
@@ -253,13 +251,13 @@ Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mi
 Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.
 
 
-| Feld !!  Beschreibung |                                                                                                                            |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| '''Antwort Maxima     | [Lösung_der_Antwort_einer_Teilfrage](#lösung-der-antwort-einer-teilfrage-), siehe [Berechnungen](../Berechnungen/index.md) |
-| **Einheit:**          | [Defiition der Einheit oder sonstiges Frageerhalten](../ZielEinheit/index.md)                                              |
-| **Prozent:**          | [Prozent_für_die_Antwort_einer_Teilfrage](#prozent-für-die-antwort-einer-teilfrage-)                                       |
-| **Toleranz:**         | [Toleranz_der_Antwort_einer_Teilfrage](#toleranz-der-antwort-einer-teilfrage-)                                             |
-| **Mode:**             | [Antwortmode](#antwortmode-)                                                                                               |
+| Feld              | Beschreibung                                                                                                               |                                                                                                                            
+|-------------------|----------------------------------------------------------------------------------------------------------------------------|
+| '''Antwort Maxima | [Lösung_der_Antwort_einer_Teilfrage](#lösung-der-antwort-einer-teilfrage-), siehe [Berechnungen](../Berechnungen/index.md) |
+| **Einheit:**      | [Defiition der Einheit oder sonstiges Frageerhalten](../ZielEinheit/index.md)                                              |
+| **Prozent:**      | [Prozent_für_die_Antwort_einer_Teilfrage](#prozent-für-die-antwort-einer-teilfrage-)                                       |
+| **Toleranz:**     | [Toleranz_der_Antwort_einer_Teilfrage](#toleranz-der-antwort-einer-teilfrage-)                                             |
+| **Mode:**         | [Antwortmode](#antwortmode-)                                                                                               |
 
 
 Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.
