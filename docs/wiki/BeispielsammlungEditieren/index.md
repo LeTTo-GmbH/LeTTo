@@ -45,13 +45,13 @@ Die Plugindefinition bildet immer einen Text-String. Dieser wird nach dem Schlie
 Der Scroller ![40px-ClipCapIt-180831-204926.PNG](40px-ClipCapIt-180831-204926.PNG) neben dem Eingabefeld dient zum Durchlaufen von allen definierten [Datensätzen](../Datensätze/index.md) und zeigt die Änderungen der Grafiken an, wenn der Cursor auf einem [Plugin-Grafik-Tag#spezielle-tags-im-fragentext-](../EditorfürdenAngabetext#spezielle-tags-im-fragentext-/index.md#spezielle-tags-im-fragentext-) [PIG...](PIG...) im [Editor für den Angabetext](../EditorfürdenAngabetext/index.md) steht.
 
 ## Beurteilungsbereich
-##### &lt;span id="qPunkte"&gt;&lt;/span&gt;Punkte
+##### <span id="qPunkte"></span>Punkte
 Punkte, die bei richtiger Beantwortung der Frage für die gesamte Frage maximal vergeben werden können. Bei Mehrfachberechnungsfragen ist dieses Feld gesperrt und die Punkteanzahl wird automatisch als Gesamtpunktezahl aus allen Teilfragen berechnet.
 
-##### &lt;span id="qPenalty"&gt;&lt;/span&gt;Penalty
+##### <span id="qPenalty"></span>Penalty
 Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus#testart-](../Online-Tests#testart-/index.md#testart-) pro Versuch abgezogen wird.
 
-##### &lt;span id="qEinheitenFehler"&gt;&lt;/span&gt;Einheitenfehler
+##### <span id="qEinheitenFehler"></span>Einheitenfehler
 Im Feld "EH-Fehler" wird ein Faktor angeben, der von den Punkten der richtigen Lösung abgezogen wird, wenn die Einheit falsch angegeben wurde.
 
 Der Wert von EH-Fehler muss zwischen 0 und 1 liegen!
@@ -65,12 +65,12 @@ Gibt der Schüler einen falschen Einheitenvorsatz wie 0.2mA an, so erhält er ke
 
 Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen#einheiteneinstellungen-](../Online-Tests#einheiteneinstellungen-/index.md#einheiteneinstellungen-)!
 
-##### &lt;span id="cbParser"&gt;&lt;/span&gt;Checkbox Parser
+##### <span id="cbParser"></span>Checkbox Parser
 Ist diese Checkbox ausgewählt, dann wird beim Berechnen der Symbolischen Lösung für das Ergebnis der Frage ud allen Teilfragen nicht [Maxima#berechnung-mit-maxima-](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-), sondern der [Interne Parser verwendet#berechnung-mit-dem-internen-parser-](../Berechnungen#berechnung-mit-dem-internen-parser-/index.md#berechnung-mit-dem-internen-parser-).
 
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
-##### &lt;span id="cbSymbolisch"&gt;&lt;/span&gt;Checkbox Symbolisch
+##### <span id="cbSymbolisch"></span>Checkbox Symbolisch
 Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.
 
 ## Datensätze
@@ -165,18 +165,18 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 ##### Q....
 Spalte mit der Kurzbezeichnung für die Teilfrage. Unter diesem Namen wird im Editor für die Angabe die Teilfrage mit [Qx](Qx) referenziert. An dieser Position steht dann bei der Testausführung das Eingabeelement für diese Teilfrage.
 
-##### &lt;span id="sqProzInput"&gt;&lt;/span&gt;Prozent für die Antwort einer Teilfrage
+##### <span id="sqProzInput"></span>Prozent für die Antwort einer Teilfrage
 
 Wenn der Schüler die Antwort gibt, die in der Zeile dieser Teilantwort steht, bekommt er den prozentuellen Anteil der Gesamtpunkt der Teilfrage.
 
 Je nach Antwort-Modus muss sichergestellt sein, dass der Schüler durch die richtige Eingabe der Antwort 100 Prozent erreichen kann.
 
-##### &lt;span id="sqGradeInput"&gt;Punkte einer Teilfrage
+##### <span id="sqGradeInput">Punkte einer Teilfrage
 Punkteanzahl für die richtige Beantwortung einer Teilfrage.
 
 Die Gesamtpunktanzahl einer Mehrfachberechnungsfrage ergibt sich immer aus der Summe der Punkte der Teilfragen.
 
-##### &lt;span id="sqMaximaInput"&gt;Maximafeld für die Antwort einer Teilfrage
+##### <span id="sqMaximaInput">Maximafeld für die Antwort einer Teilfrage
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
 Dieses Feld wird nach dem Durchlaufen des globalen Maxima-Feldes der Frage mit Maxima aufgerufen und liefert als Lösung den Ausdruck, der im Lösungsfeld eingesetzt wird.
@@ -186,10 +186,10 @@ Es wird nur im Antwort-MODE "calculated","boolsch","text","plugin","regexp" und 
 * Beginnt das Feld mit einem **Doppelpunkt**, so wird die Berechnung mit dem internen Parser durchgeführt. Steht nach dem Doppelpunkt nur eine Variable, so wird nur der Inhalt ohne Berechnung verwendet, andernfalls wird eingesetzt und berechnet.
 * Beginnt das Feld mit **zwei Doppelpunkten**, so wird die Berechnung vom Parser ohne jegliche Optimierung durchgeführt.
 
-##### &lt;span id="sqEinheitInput"&gt;Ziel-Einheit der Antwort einer Teilfrage:
+##### <span id="sqEinheitInput">Ziel-Einheit der Antwort einer Teilfrage:
 Siehe unter [ZielEinheit](../ZielEinheit/index.md)!
 
-##### &lt;span id="modeSel_focus"&gt;Antwortmode
+##### <span id="modeSel_focus">Antwortmode
 Art der Antwort:
 
 * Single-Choice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen genau eine Auswählen. Die Lösungen stehen als String im Lösungsfeld
@@ -199,7 +199,7 @@ Art der Antwort:
 * Calculated: Im Lösungsfeld steht ein symbolischer Ausdruck, der aus dem Maxima-Feld errechnet wurde. Zur Laufzeit wird daraus mit dem Parser die Lösung berechnet.
 * Boolsch: Dieser Fragemode kann nur sinnvoll bei einer Mehrfachberechnungsfrage verwendet werden. In diesem Modus kann man die Schülereingaben anderer Teilfragen nach Eingabe durch den Parser auswerten lassen und damit Punkte vergeben. Es lassen sich somit Folgefehler von Schülern berücksichtigen und bei der Dimensionierung können Angabe-Bedingungen geprüft werden, die über die Lösung einer Teilfrage nicht eindeutig wären. Der Zugriff auf die Schülereingabe einer anderen Teilfrage erfolgt im Lösungsfeld mit der Variablen Q gefolgt von der Teilfragenummer (zB. Q1 für die Teilfrage 1)
 
-##### &lt;span id="sqToleranceInput"&gt;Toleranz der Antwort einer Teilfrage
+##### <span id="sqToleranceInput">Toleranz der Antwort einer Teilfrage
 Die Toleranz, wie genau ein Schüler seine Antwort angeben muss:
 * Die Toleranz ist im Normalfall eine **relative Angabe** und wird in **Prozent** angegeben
 * Wird bei der Toleranz kein Prozent angegeben, so muss der Wert zwischen 0 und 1 liegen und entspricht dann dem Prozentwert durch 100
@@ -208,7 +208,7 @@ Die Toleranz, wie genau ein Schüler seine Antwort angeben muss:
 * Behandlung von komplexen Zahlen bei absoluter Toleranzangabe: Die absolute Toleranzangabe definiert den Radius eines Toleranzkreises. Der Mittelpunkt dieses Kreises wird von der korrekten Lösung bestimmt. Liegt die Schülereingabe innerhalb dieses Kreises wird diese als korrekt gewertet - siehe Bsp.: roter Zeiger wird nicht, blauer Zeiger wird als Lösung zugelassen.
 <br>![200px-ClipCapIt-200528-210911.PNG](200px-ClipCapIt-200528-210911.PNG)
 
-##### &lt;span id="sqLoesungInput"&gt;Lösung der Antwort einer Teilfrage
+##### <span id="sqLoesungInput">Lösung der Antwort einer Teilfrage
 In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode hat das Lösungsfeld verschiedene Funktionalität!
 
 | Fragemode                                          | Demovideo                                                                  | Bedeutung des Lösungsfeldes                                                                                              | Inhalt                                     |
@@ -227,7 +227,7 @@ In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode ha
 | Texteingabe mit Eingabefeldern für jede Antwort    |                                                                            |                                                                                                                          |                                            |
 
 
-##### &lt;span id="sqErgInfoInput"&gt;Infofeld der Antwort einer Teilfrage
+##### <span id="sqErgInfoInput">Infofeld der Antwort einer Teilfrage
 * Bei Berechnungsfragen die Antwort des ersten Datensatzes, das Feld ist dann schreibgeschützt
 * Bei Boolschen Fragen kann hier eine Information erfolgen, wie die Frage bewertet wurde.
 
@@ -298,8 +298,8 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
 
 | [text](text)                                                                                         | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [2&lt;nowiki&gt;|&lt;/nowiki&gt;text](2&lt;nowiki&gt;|&lt;/nowiki&gt;text)                           | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
-| [2&lt;nowiki&gt;|&lt;/nowiki&gt;text,50:alt,0:nix](2&lt;nowiki&gt;|&lt;/nowiki&gt;text,50:alt,0:nix) | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
+| [2<nowiki>|</nowiki>text](2<nowiki>|</nowiki>text)                           | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
+| [2<nowiki>|</nowiki>text,50:alt,0:nix](2<nowiki>|</nowiki>text,50:alt,0:nix) | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
 
 
 * **Multiple-Choice:**
@@ -307,9 +307,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      mindestens eine Antwort muss richtig sein
   *      Syntax:
 
-| [M&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch1,falsch2](M&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch1,falsch2) | Die richtigen Antwortfelder sind mit x: markiert |
+| [M<nowiki>|</nowiki>x:richtig,falsch1,falsch2](M<nowiki>|</nowiki>x:richtig,falsch1,falsch2) | Die richtigen Antwortfelder sind mit x: markiert |
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [M&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,blau,gelb](M&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,blau,gelb)       | rot und grün sind richtig                        |
+| [M<nowiki>|</nowiki>x:rot,x:grün,blau,gelb](M<nowiki>|</nowiki>x:rot,x:grün,blau,gelb)       | rot und grün sind richtig                        |
 
 
 * **Single-Choice:**
@@ -317,9 +317,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      der Schüler muss eine Antwort aus mehreren wählen
   *      Syntax:
 
-| [S&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch,falsch](S&lt;nowiki&gt;|&lt;/nowiki&gt;x:richtig,falsch,falsch)     | x kennzeichnet eine richtige Antwort                                           |
+| [S<nowiki>|</nowiki>x:richtig,falsch,falsch](S<nowiki>|</nowiki>x:richtig,falsch,falsch)     | x kennzeichnet eine richtige Antwort                                           |
 |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [S&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,50:blau,gelb](S&lt;nowiki&gt;|&lt;/nowiki&gt;x:rot,x:grün,50:blau,gelb) | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
+| [S<nowiki>|</nowiki>x:rot,x:grün,50:blau,gelb](S<nowiki>|</nowiki>x:rot,x:grün,50:blau,gelb) | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
 
 
 * **Sonderzeichen** innerhalb einer Lücke 
