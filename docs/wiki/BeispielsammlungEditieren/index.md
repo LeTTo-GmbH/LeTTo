@@ -307,10 +307,10 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   * Im Fragemodus "Drag and Drop" muss der Schüler aus einer Liste von Antworttexten den richtigen Text über die Lücke ziehen. Hierbei wird die Liste der Antworttexte aus allen richtigen und falschen Antworten der Texteingabe-Felder zusammengesetzt.
   * Syntax:
 
-| &#91;text&#93;                 | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| &#91;2\|text&#93;              | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
-| &#91;2\|text,50:alt,0:nix&#93; | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
+| &#91;text&#93;                     | Das Wort "text" als Lücke mit 1 Punkt für die richtige Antwort                                                                |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| &#91;2&#124;text&#93;              | Das Wort "text" mit 2 Punkten für die richtige Antwort                                                                        |
+| &#91;2&#124;text,50:alt,0:nix&#93; | 2 Punkte für die richtige Antwort "text", 50%von zwei Punkten für "alt", "nix" als falsche Antwort für "Drag and Drop"-Fragen |
 
 
 * **Multiple-Choice:**
@@ -318,9 +318,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      mindestens eine Antwort muss richtig sein
   *      Syntax:
 
-| &#91;M\|x:richtig,falsch1,falsch2&#93; | Die richtigen Antwortfelder sind mit x: markiert |
+| &#91;M&#124;x:richtig,falsch1,falsch2&#93; | Die richtigen Antwortfelder sind mit x: markiert |
 |----------------------------------|--------------------------------------------------|
-| &#91;M\|x:rot,x:grün,blau,gelb&#93;    | rot und grün sind richtig                        |
+| &#91;M&#124;x:rot,x:grün,blau,gelb&#93;    | rot und grün sind richtig                        |
 
 
 * **Single-Choice:**
@@ -328,9 +328,9 @@ Im [Textbereich des Editors](../EditorfürdenAngabetext/index.md) werden die Lü
   *      der Schüler muss eine Antwort aus mehreren wählen
   *      Syntax:
 
-| &#91;S\|x:richtig,falsch,falsch&#93;   | x kennzeichnet eine richtige Antwort                                           |
+| &#91;S&#124;x:richtig,falsch,falsch&#93;   | x kennzeichnet eine richtige Antwort                                           |
 |----------------------------------|--------------------------------------------------------------------------------|
-| &#91;S\|x:rot,x:grün,50:blau,gelb&#93; | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
+| &#91;S&#124;x:rot,x:grün,50:blau,gelb&#93; | bei rot und grün alle Punkte, bei blau 50 Prozent der Punkt, bei gelb 0 Punkte |
 
 
 * **Sonderzeichen** innerhalb einer Lücke 
