@@ -70,7 +70,6 @@ Folgende Typbezeichner sind möglich:
 
 #### Bereichsdefinitionen
 Folgende Bereichsdefinitionen sind möglich:
-	
 
 | Beschreibung                                             | Beispiel     |                                         |
 |----------------------------------------------------------|--------------|-----------------------------------------|
