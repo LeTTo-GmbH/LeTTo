@@ -138,32 +138,32 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 * Spezielle Sonderzeichen des CK-Editors können mit dem Button <br>![ClipCapIt-220113-153145.PNG](ClipCapIt-220113-153145.PNG) eingefügt werden
 * Folgende Zeichen haben im Fragetext eine Sonderstellung und müssen deshalb teilweise gesondert behandelt werden:
 
-| Zeichen !!  Bezeichnung !! Funktion   !!  Verwendung im Fragetext |                      |                                                  |                                                                                                                                          |
-|-------------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| $                                                                 | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                        |
-| {                                                                 | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
-| &lt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                              |
-| &gt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                              |
-| [                                                                 | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                  |
+| Zeichen | Bezeichnung | Funktion | Verwendung im Fragetext |
+|---------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| $                                                             | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                        |
+| {                                                             | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
+| &lt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                              |
+| &gt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                              |
+| [                                                             | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                  |
 
 
 ###  Sonderzeichen in einer Formelumgebung im Fragetext 
 * Eine Formelumgebung beginnt im Fragetext mit Dollar und endet mit Dollar. Dazwischen wird der Text als Formel wie in LaTeX gesetzt. 
 * Sonderzeichen werden dabei wie folgt angegeben:
 
-| Zeichen !! Verwendung in der Formelumgebung |      |
-|--------------------------------------------|------|
-| $                                          | &#92;$   |
-| {                                          | &#92;{   |
-| }                                          | &#92;}   |
-| _                                          | &#92;_   |
-| ^                                          | &#92;^   |
-| #                                          | &#92;#   |
-| ~                                          | &#92;sim |
-| &#92;                                      | &#92;backslash |
-| x²                                         | x^2  |
-| x³                                         | x^3  |
-| %                                          | &#92;%    |
+| Zeichen |Verwendung in der Formelumgebung | 
+|------------------------------------------|------|
+| $                                        | &#92;$   |
+| {                                        | &#92;{   |
+| }                                        | &#92;}   |
+| _                                        | &#92;_   |
+| ^                                        | &#92;^   |
+| #                                        | &#92;#   |
+| ~                                        | &#92;sim |
+| &#92;                                    | &#92;backslash |
+| x²                                       | x^2  |
+| x³                                       | x^3  |
+| %                                        | &#92;%    |
 
 
 ### Datensätze und Variable
@@ -174,7 +174,7 @@ Datensatz erstellen: siehe [Datensätze definieren](../Datensätzedefinieren/ind
 Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der Maxima-Berechnung können im Fragetext innerhalb oder außerhalb von Tex-Formeln verwendet werden.
 
 
-| Bezeichnung 	!!  Syntax !!  Beispiel   !!  Beschreibung      |                              |            |                                                                                                                                                                                     |
+| Bezeichnung | Syntax | Beispiel| Beschreibung           |
 |--------------------------------------------------------------|------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Variable, die in einem Datensatz definiert wurde             | {name}                       | {x}        | x wird duch den Wert des Datensatzes ersetzt                                                                                                                                        |
 | Variable mit Einheit                                         | {name,einheit}               | {I1,A}     | I1 wird mit der Einheit A mit gültigen Einheitenvielfachen von A ausgegeben                                                                                                         |
