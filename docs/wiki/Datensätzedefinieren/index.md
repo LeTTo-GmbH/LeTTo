@@ -67,7 +67,7 @@ Folgende Typbezeichner sind möglich:
 | sS:wert,wert,wert                                   | erzeugt String-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!) Ein Beistrich muss mit einem Backslash verblockt werden! | sS:Hut,Kappe,Hose       |
 | Startwert:Schrittweite:Endwert                      | erzeugt Werte zwischen Startwert und Endwert mit einem Abstand von Schrittweite zwischen den Werten                                                                                                                       | 2:0.1:5                 |
 
-	
+
 #### Bereichsdefinitionen
 Folgende Bereichsdefinitionen sind möglich:
 	
