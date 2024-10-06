@@ -106,7 +106,7 @@ Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwe
 Im Frageeditor kann man mit der rechten Maustaste und Plugin-Angabe die Angabe für alle generierten Datensätze in den Fragetext einfügen lassen.
 <br>![ClipCapIt-181127-214344.PNG](ClipCapIt-181127-214344.PNG)
 Wird später das Plugin verändert wird dieser Test **nicht automatisch** nachgeführt. Er muss dann entweder gelöscht und neu eingefügt, oder händisch angepasst werden.
-	
+
 #### Einfügen von Graphiken
 Eine Graphik kann durch das Plugin-Tag 
 <pre>
