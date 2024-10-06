@@ -64,17 +64,17 @@ Die einzelnen Parameter sind über Tooltips kurz beschrieben:
 
 ####  Parameter für die Druckausgabe 
 
-| Parameter        | Beschreibung                                                                          | Beispielwert                                                                                                      |
-|------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| DocInit          | erste Zeilen jedes TeX-Dokuments                                                      | \documentclass[11pt,german,a4paper](11pt,german,a4paper){report} \def\name{Dr. Thomas Mayer / DI Werner Damböck } |
-| DocIinitQuestion | erste Zeilen des TeX-Dokuments einer gedruckten Frage                                 | \documentclass[11pt,german,a4paper](11pt,german,a4paper){report} \def\name{Dr. Thomas Mayer / DI Werner Damböck } |
-| DocInitTest      | erste Zeilen des TeX-Dokuments eines gedruckten Tests                                 | \documentclass[11pt,german,a4paper](11pt,german,a4paper){article}                                                 |
-| moodle.sty       | Tex-Packages welche bei Fragen und Tests direkt nach "DocIinit" geladen werden sollen |                                                                                                                   |
-| rdpfragen.sty    | Tex-Packages und Konfigurationen für den Reifeprüfungsdruck                           |                                                                                                                   |
-| DocStart         | Definition des Bereiches rund um begin{document}                                      | \PageNormal \begin{document}                                                                                      |
-| DocStartQuestion | Definition des Bereiches rund um begin{document} bei Fragesammlungen                  | \PageQuestion \begin{document}                                                                                    |
-| DocStartTest     | Definition des Bereiches rund um begin{document} bei Tests                            | \PageTest \begin{document}                                                                                        |
-| DocEnd           | Ende des TeX-Dokuments                                                                | \end{document}                                                                                                    |
+| Parameter        | Beschreibung                                                                          | Beispielwert                                                                                                |
+|------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| DocInit          | erste Zeilen jedes TeX-Dokuments                                                      | &#92;documentclass[11pt,german,a4paper](11pt,german,a4paper){report} &#92;def&#92;name{Dr. Thomas Mayer / DI Werner Damböck } |
+| DocIinitQuestion | erste Zeilen des TeX-Dokuments einer gedruckten Frage                                 | &#92;documentclass[11pt,german,a4paper](11pt,german,a4paper){report} &#92;def&#92;name{Dr. Thomas Mayer / DI Werner Damböck } |
+| DocInitTest      | erste Zeilen des TeX-Dokuments eines gedruckten Tests                                 | &#92;documentclass[11pt,german,a4paper](11pt,german,a4paper){article}                                         |
+| moodle.sty       | Tex-Packages welche bei Fragen und Tests direkt nach "DocIinit" geladen werden sollen |                                                                                                             |
+| rdpfragen.sty    | Tex-Packages und Konfigurationen für den Reifeprüfungsdruck                           |                                                                                                             |
+| DocStart         | Definition des Bereiches rund um begin{document}                                      | &#92;PageNormal &#92;begin{document}                                                                               |
+| DocStartQuestion | Definition des Bereiches rund um begin{document} bei Fragesammlungen                  | &#92;PageQuestion &#92;begin{document}                                                                             |
+| DocStartTest     | Definition des Bereiches rund um begin{document} bei Tests                            | &#92;PageTest &#92;begin{document}                                                                                 |
+| DocEnd           | Ende des TeX-Dokuments                                                                | &#92;end{document}                                                                                            |
 
 
 ####  Parameter für das Beurteilungssystem 

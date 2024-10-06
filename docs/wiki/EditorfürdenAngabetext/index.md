@@ -50,7 +50,7 @@ Wenn in der Frage [Plugins](../Plugins/index.md) definiert sind, dann können au
 
 ### Formeln
 Formeln werden innerhalb von **Dollarzeichen** gesetzt und können dann wie eine Formel in LaTeX gesetzt werden:
-zB. liefert **$k = \sum_{i=1}^{n} (i+2)$** die Formel im Browser: ![110px-ClipCapIt-180620-200224.PNG](110px-ClipCapIt-180620-200224.PNG)
+zB. liefert **$k = &#92;sum_{i=1}^{n} (i+2)$** die Formel im Browser: ![110px-ClipCapIt-180620-200224.PNG](110px-ClipCapIt-180620-200224.PNG)
 
 Tutorial zum Erstellen von Tex-Formeln: https://de.wikipedia.org/wiki/Hilfe:TeX
 
@@ -138,32 +138,32 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 * Spezielle Sonderzeichen des CK-Editors können mit dem Button <br>![ClipCapIt-220113-153145.PNG](ClipCapIt-220113-153145.PNG) eingefügt werden
 * Folgende Zeichen haben im Fragetext eine Sonderstellung und müssen deshalb teilweise gesondert behandelt werden:
 
-| Zeichen !!  Bezeichnung !! Funktion   !!  Verwendung im Fragetext |                      |                                                  |                                                                                                                                           |
-|-------------------------------------------------------------------|----------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| $                                                                 | Dollar               | Start und Ende einer Formelumgebung im Fragetext | \$                                                                                                                                        |
+| Zeichen !!  Bezeichnung !! Funktion   !!  Verwendung im Fragetext |                      |                                                  |                                                                                                                                          |
+|-------------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| $                                                                 | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                        |
 | {                                                                 | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
-| &lt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                               |
-| &gt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                               |
-| [                                                                 | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                   |
+| &lt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                              |
+| &gt;                                                              | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                              |
+| [                                                                 | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                  |
 
 
 ###  Sonderzeichen in einer Formelumgebung im Fragetext 
 * Eine Formelumgebung beginnt im Fragetext mit Dollar und endet mit Dollar. Dazwischen wird der Text als Formel wie in LaTeX gesetzt. 
 * Sonderzeichen werden dabei wie folgt angegeben:
 
-| Zeichen !! Verwendung in der Formelumgebung |            |
-|---------------------------------------------|------------|
-| $                                           | \$         |
-| {                                           | \{         |
-| }                                           | \}         |
-| _                                           | \_         |
-| ^                                           | \^         |
-| #                                           | \#         |
-| ~                                           | \sim       |
-| \                                           | \backslash |
-| x²                                          | x^2        |
-| x³                                          | x^3        |
-| %                                           | \%         |
+| Zeichen !! Verwendung in der Formelumgebung |      |
+|--------------------------------------------|------|
+| $                                          | &#92;$   |
+| {                                          | &#92;{   |
+| }                                          | &#92;}   |
+| _                                          | &#92;_   |
+| ^                                          | &#92;^   |
+| #                                          | &#92;#   |
+| ~                                          | &#92;sim |
+| &#92;                                      | &#92;backslash |
+| x²                                         | x^2  |
+| x³                                         | x^3  |
+| %                                          | &#92;%    |
 
 
 ### Datensätze und Variable

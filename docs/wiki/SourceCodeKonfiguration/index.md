@@ -46,12 +46,12 @@ Hier kann eine Prüfung des Code-Aufbaues definiert werden.
   * Teilpunkte: So viele Teilpunkte werden vergeben. ZB. ist Punkte=5, Teilpunkte=5 und Anz. der Fehler=2, werden Punkte-(Punkte/Teilpunkte)*Fehler=3 Punkte vergeben.
   * max-Fehler: Wenn Die Anzahl der Fehler über diesem Wert liegt, werden die in Abzug definierten Punkte abgezogen.
   * Abzug: So viele Punkte können abgezogen werden.
-  * Methodennamen: Wenn true, werden Methodennamen geprüft. Prüfung mit: "^[a-z_](a-z_)\\w*$"
-  * Klassennamen: Wenn true, werden Klassennamen geprüft. Prüfung mit: "^[A-Z_](A-Z_)\\w*$"
-  * lokaleVariablen: Wenn true, werden alle lokalen Variablen geprüft. Prüfung mit: "^[a-z_](a-z_)\\w*$"
-  * Instanzvariablen: Wenn true, werden Instanzvariablen geprüft. Prüfung mit: "^[a-z_](a-z_)\\w*$"
+  * Methodennamen: Wenn true, werden Methodennamen geprüft. Prüfung mit: "^[a-z_](a-z_)&#92;w*$"
+  * Klassennamen: Wenn true, werden Klassennamen geprüft. Prüfung mit: "^[A-Z_](A-Z_)&#92;w*$"
+  * lokaleVariablen: Wenn true, werden alle lokalen Variablen geprüft. Prüfung mit: "^[a-z_](a-z_)&#92;w*$"
+  * Instanzvariablen: Wenn true, werden Instanzvariablen geprüft. Prüfung mit: "^[a-z_](a-z_)&#92;w*$"
   * Konstanten: Wenn true, werden Konstanten geprüft. "^[A-Z_](A-Z_)*$"
-  * Packagename: Wenn true, werden packagenamen geprüft. Prüfung mit: "^[a-z_](a-z_)\\w*$" (mit Punkt getrennt)
+  * Packagename: Wenn true, werden packagenamen geprüft. Prüfung mit: "^[a-z_](a-z_)&#92;w*$" (mit Punkt getrennt)
 
 ##  dynamische Ausgabe 
 <br>![ClipCapIt-181031-140706.PNG](ClipCapIt-181031-140706.PNG)

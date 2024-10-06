@@ -143,7 +143,7 @@ Dazu ist eine Datei **/opt/tomee/bin/setenv.sh** zu erstellen, in der der Speich
 Hier ein Beispiel für einen Rechner mit 16GB physikalischem RAM und demnach 12GB Heap-Speicher:
 <pre>
 #!/bin/sh -e
-export CATALINA_OPTS="-Xms12000M -Xmx12000M\"
+export CATALINA_OPTS=&quot;-Xms12000M -Xmx12000M&quot;
 </pre>
 
 Diese Datei ist dann noch mit Ausführungsrechten zu versehen.

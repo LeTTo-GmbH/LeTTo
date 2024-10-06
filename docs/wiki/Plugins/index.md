@@ -23,7 +23,7 @@ Folgende Module stehen zur Verfügung:
 * Graphik: Hiermit  wird ein Graphig Tag in eckigen Klammern [PIG ... ](PIG ... ) im Fragetext eingefügt. Die Berechnung der Graphik erfolgt dann zur Laufzeit und wird deshalb individuell für jeden Schüler mit seinen Datensätzen berechnet. Der PIG-Tag kann je nach Plugin auch Parameter enthalten welcher zur Konfiguration der Graphik verwendet werden können. Diese Parameter sind vom Plugin abhängig und werden deshalb in der Plugin-Hilfe des Plugins beschrieben. Die Paramter des PIG-Tags können im Fragetext ganz normal verändert werden. 
 
 Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt werden.
-<pre> [PIG Plugin2 "text(2,2,tex=\"\alpha\")"/](PIG Plugin2 "text(2,2,tex=\"\alpha\")"/) </pre>
+<pre> [PIG Plugin2 "text(2,2,tex=&#92;"&#92;alpha&#92;")"/](PIG Plugin2 "text(2,2,tex=&#92;"&#92;alpha&#92;")"/) </pre>
 * Im [Maxima-Feld#maxima-feld-](../BeispielsammlungEditieren#maxima-feld-/index.md#maxima-feld-) kann mit der rechten Maustaste auf das Berechnungsmodul eines Plugins zugegriffen werden, falls das Plugin eine Maxima-Berechung ausgeben kann.
 
 ####  Plugin-Entwicklung 

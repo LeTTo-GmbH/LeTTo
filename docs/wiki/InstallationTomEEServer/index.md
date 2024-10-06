@@ -75,7 +75,7 @@ grant {
     permission java.lang.RuntimePermission "setSecurityManager";
     permission java.security.SecurityPermission "getPolicy";
     permission java.lang.RuntimePermission "accessDeclaredMembers";
-    permission java.io.FilePermission "C:\workspace-oxygen-letto\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\webapps", "read";
+    permission java.io.FilePermission "C:&#92;workspace-oxygen-letto&#92;.metadata&#92;.plugins&#92;org.eclipse.wst.server.core&#92;tmp0&#92;webapps", "read";
     permission java.lang.RuntimePermission "setIO";
     permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
 };
