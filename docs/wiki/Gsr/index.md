@@ -123,7 +123,6 @@ Beispiel:
 |-----------------------------------------------------------------|--------------------------------------------|
 | <br>![ClipCapIt-181127-214655.PNG](ClipCapIt-181127-214655.PNG) | $U_{Q1}={UQ1}$, $R_{1}={R1}$, $C_{1}={C1}$ |
 
-			
 #### Einfügen von Graphiken
 Eine Graphik kann durch das Plugin-Tag 
 <pre>
