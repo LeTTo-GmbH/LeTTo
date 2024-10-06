@@ -45,7 +45,7 @@ Als Datenbank wird eine MySQL-Datenbank verwendet, welche idealerweise am gleich
   * Eingehend TCP: 80(HTTP), 443(HTTPS)
   * Eingehend ICMP: echo(ping)
   * Ausgehend TCP: 80(HTTP), 443(HTTPS)
-  * Ausgehend UDP: 53(DNS)			
+  * Ausgehend UDP: 53(DNS)
   * Ausgehend ICMP: echo(ping)
   * Und natürlich alle Antworten auf ausgehende Anfragen
   * Falls eine Authentifizierung über LDAP gewünscht wird muss natürlich der LDAP oder AD-Server mit den notwendigen Ports erreichbar sein.
