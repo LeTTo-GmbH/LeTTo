@@ -17,7 +17,7 @@ Dort einen Proxy für die Anwendung tomee einfügen
 <pre>
 #Proxy für den Tomee8-Server
 &lt;Location /tomee&gt;
-	ProxyPass ajp://localhost:8089/tomee
+    ProxyPass ajp://localhost:8089/tomee
 &lt;/Location&gt;
 </pre>
 
