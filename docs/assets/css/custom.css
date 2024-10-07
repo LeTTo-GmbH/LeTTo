@@ -177,8 +177,8 @@ tbody tr:nth-child(odd) {
         display: none; /* Logo wird ausgeblendet */
     }
     nav a {
-        padding: 4px 4px;
-        border-radius: 2px;
+        padding: 2px 2px;
+        border-radius: 1px;
     }
 }
 
