@@ -150,8 +150,8 @@ Beispiel für Fußnote im Abschnitt (im nächsten Abschnitt beginnt die Nummerie
 Fußnote am Ende: &lt;ref&gt;das ist eine Fußnote&lt;/ref&gt;
 
 #### Bilder und Dateien
-![100px-lettoLogo.jpg](100px-lettoLogo.jpg) 
-Grafiken können nach dem Hochladen (Menü links "Datei hochladen") mit &lt;code&gt;&lt;nowiki&gt;![200px-lettoLogo.jpg](200px-lettoLogo.jpg)&lt;/nowiki&gt;&lt;/code&gt; eingebunden werden. Mehr: [https://de.wikipedia.org/wiki/Hilfe:Bilder Hilfe in Wikipedia](https://de.wikipedia.org/wiki/Hilfe:Bilder Hilfe in Wikipedia)
+![100px-lettoLogo.jpg](100px-LettoLogo.jpg) 
+Grafiken können nach dem Hochladen (Menü links "Datei hochladen") mit &lt;code&gt;&lt;nowiki&gt;![200px-lettoLogo.jpg](200px-LettoLogo.jpg)&lt;/nowiki&gt;&lt;/code&gt; eingebunden werden. Mehr: [https://de.wikipedia.org/wiki/Hilfe:Bilder Hilfe in Wikipedia](https://de.wikipedia.org/wiki/Hilfe:Bilder Hilfe in Wikipedia)
 
 PDF-Dateien können hochgeladen und direkt zum Öffnen verlinkt werden: 
 *&lt;code&gt;&lt;nowiki&gt;Medium:Handbuch.pdf|Handbuch&lt;/nowiki&gt;&lt;/code&gt;  Medium:Handbuch.pdf|Handbuch

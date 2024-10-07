@@ -24,7 +24,7 @@
 gehe zu [Administration](../Administration/index.md)
 
 ## Allgemeines
-![300px-lettoEditHardcopy.jpg](300px-lettoEditHardcopy.jpg)
+![300px-LettoEditHardcopy.jpg](300px-LettoEditHardcopy.jpg)
 
 **LeTTo** ist ein, vom Österreichischen Bundesministerium für Bildung, Wissenschaft und Forschung empfohlener E-Learning-Server. LeTTo ist breit einsetzbar und vor allem für technisch-mathematische-Gegenstände optimiert. LeTTo zeichnet sich durch einen kompetenzorientierten im System integrierten Notenkatalog aus.
 

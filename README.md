@@ -13,3 +13,6 @@ offenes Repository mit wiki, discussions und wichtigen Infos zur Lernplattform L
 | Einfachhochkomma   | &#39;   | #39    |
 | Kleiner            | &lt;    | lt     |
 | Größer             | &gt;    | gt     |
+
+# Google Custom Search
+* https://programmablesearchengine.google.com/controlpanel/all
