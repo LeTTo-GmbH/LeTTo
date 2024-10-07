@@ -103,7 +103,7 @@ Ist eine Schüler, Lehrer oder Kurs am LeTTo-Server nicht vorhanden, so kann die
 * Speichern und zum Kurs
 ####  Testverlinkung erstellen 
 * In LeTTo mit der rechten Maustaste auf einen Testlink und **LTI-Link kopieren**
-* Den angegebenen Text in die Zwischenablage kopieren		
+* Den angegebenen Text in die Zwischenablage kopieren
 * Im Moodle Kurs unter Bearbeiten Einschalten - Material oder Aktivität anlegen - externes Tool
 * Name der Aktivität: Beliebig vergeben
 * Vorkonfiguriertes Tool: Hier das Tool auswählen, welches im vorigen Punkt konfiguriert wurde.
