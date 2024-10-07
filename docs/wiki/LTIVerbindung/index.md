@@ -22,19 +22,19 @@ Hierzu wird wie folgt vorgegangen:
   * Mit &lt;Strg&gt;-O und Enter das Script speichern
   * Mit &lt;Strg&gt;-X den Editor verlassen 
 * Script **ausführbar** machen: <pre>chmod 755 install-letto-lti.sh</pre>
-* Wenn der Login auf der Datenbank als root-Benutzer ohne Passwort möglich ist kann das Script die MySQL-Datenbank und den MySQL-Benutzer selbst anlegen. Prüfe mit:<pre>mysql -u root -h localhost</pre>Funktioniert der Login, dann bitte wieder mit exit; aussteigen und mit der Installation fortfahren.<br>Funktioniert der Login nicht, dann müssen die MySQL-Datenbank und der MySQL-Benutzer vor dem Start des Scripts noch angelegt werden. 		
-* Script **starten**:<pre>./install-letto-lti.sh</pre>	
+* Wenn der Login auf der Datenbank als root-Benutzer ohne Passwort möglich ist kann das Script die MySQL-Datenbank und den MySQL-Benutzer selbst anlegen. Prüfe mit:<pre>mysql -u root -h localhost</pre>Funktioniert der Login, dann bitte wieder mit exit; aussteigen und mit der Installation fortfahren.<br>Funktioniert der Login nicht, dann müssen die MySQL-Datenbank und der MySQL-Benutzer vor dem Start des Scripts noch angelegt werden.
+* Script **starten**:<pre>./install-letto-lti.sh</pre>
 * Einen **AJP-Connector** für den LTI-Dienst am Apache2 konfigurieren. In der Konfigurationsdatei des LeTTo-Servers am Apache (meist: /etc/apache2/sites-enabled/letto.conf) sollte schon ein AJP-Connector für den LeTTo-Server gesetzt werden. Dieser sieht in etwa so aus: 
 <pre>      &lt;Location /letto&gt; 
-	    ProxyPass ajp://localhost:8089/letto
+     ProxyPass ajp://localhost:8089/letto
       &lt;/Location&gt; 
 </pre>
 * Danach bitte den AJP-Connector für LTI eintragen: 
-<pre>      &lt;Location  /lti3&gt; 
+<pre>      &lt;Location  /lti3&gt;
             ProxyPass ajp://localhost:9099/lti3 
-      &lt;/Location&gt;                                                             
+      &lt;/Location&gt;
       &lt;Location /oidc&gt;
-	    ProxyPass ajp://localhost:9099/oidc
+            ProxyPass ajp://localhost:9099/oidc
       &lt;/Location&gt;
 </pre>
 * Das Startscript /opt/letto/lti/ltistart.sh beim Systemstart als LeTTo-Benutzer starten. Dies kann z.B. in der Datei /etc/rc.local mit folgendem Eintrag erfolgen:<pre>sudo -u letto /opt/letto/lti/ltistart.sh </pre>
