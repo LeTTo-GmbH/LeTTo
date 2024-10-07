@@ -66,10 +66,10 @@ cp mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar /opt/tomee/lib/
   &lt;!-- activate next line to be able to deploy applications in apps --&gt;
   &lt;!-- &lt;Deployments dir="apps" /&gt; --&gt;
   &lt;Resource id="jdbc/letto" type="DataSource"&gt;
-		JdbcDriver  com.mysql.jdbc.Driver
-		JdbcUrl     jdbc:mysql://localhost/letto?autoReconnect=true
-		UserName    letto
-		Password    xxx-gewähltesPasswort-xxx                
+        JdbcDriver  com.mysql.jdbc.Driver
+        JdbcUrl     jdbc:mysql://localhost/letto?autoReconnect=true
+        UserName    letto
+        Password    xxx-gewähltesPasswort-xxx                
                 jtaManaged = true
                 testOnReturn = true
                 testWhileIdle = true
