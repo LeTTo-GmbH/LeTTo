@@ -15,4 +15,5 @@ offenes Repository mit wiki, discussions und wichtigen Infos zur Lernplattform L
 | Größer             | &gt;    | gt     |
 
 # Google Custom Search
-* https://programmablesearchengine.google.com/controlpanel/all
+* Konfiguration: https://programmablesearchengine.google.com/controlpanel/all
+* Prüfe die vorhandenen Daten: https://search.google.com/search-console/index?resource_id=sc-domain%3Adoc.letto.at

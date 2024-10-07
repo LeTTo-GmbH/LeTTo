@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../docs/assets/css/custom.css">
-    <title>TITEL</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel='icon' type='image/png' sizes='all' href='lettoTT.png'/>
+    <title>LeTTo</title>
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="../docs/assets/img/letto2-20.png" alt="LeTTo">
+        <img class="handyoff" src="letto2-20.png" alt="LeTTo" />
+        <img class="screenoff" src="lettoTT.png" alt="LeTTo" />
     </div>
 
     <!-- Mittlerer Titel -->
     <div class="header-title">
-        HowTo's
+        <span class="handyoff">Titel</span>
     </div>
 
     <!-- Rechte Navigationslinks -->
     <nav>
-        <a href="#home">Startseite</a>
-        <a href="#about">Über Uns</a>
-        <a href="#services">Dienste</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#" onclick="history.back(); return false;" title="zurück">&larr;</a>
+        <a href="../" title="übergeordnete Seite">&UpArrow;</a>
+        <a href="/" title="home">&#8962;</a>
+        <a href="/search.html" title="suche">&#128269;</a>
+        <!-- a href="/" title="home">&#127968;</a -->
+        <a href="/wiki/Hauptseite/index.html">Wiki</a>
+        <a href="https://letto.at/wordpress/" target="_blank">LeTTo</a>
+        <a href="https://project.letto.at" target="_blank">Project</a>
     </nav>
-
 </header>
 <main class="content">
     Das ist der Inhalt der Seite<br>
@@ -67,17 +72,18 @@
 </main>
 <footer>
     <div class="logo">
-        © 2024
+        © {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
     </div>
 
     <!-- Mittlerer Titel -->
     <div class="header-title">
-        Wiki
+        LeTTo
     </div>
 
     <!-- Rechte Navigationslinks -->
-    <nav class="footer_nav">
-        <a href="#home">Startseite</a>
+    <nav>
+        <a href="/">Start</a>
+        <a href="/howto/admin">Admin</a>
     </nav>
 </footer>
 </body>
