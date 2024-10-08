@@ -1,7 +1,7 @@
 # Test kopieren
 Zurück zum [Klassenzimmer](../Klassenzimmer/index.md)
 
-Mit diesem Dialog können Sie eigene Tests oder auch Tests von Kollegen (siehe [Fremde Daten#eigene-/-fremde-daten-](../Klassenzimmer#eigene-/-fremde-daten-/index.md#eigene-/-fremde-daten-)) in einen anderen Gegenstand/Ordner kopieren und dort unter neuem Namen anlegen.
+Mit diesem Dialog können Sie eigene Tests oder auch Tests von Kollegen (siehe [Fremde Daten](../Klassenzimmer/index.md#eigene--fremde-daten)) in einen anderen Gegenstand/Ordner kopieren und dort unter neuem Namen anlegen.
 <br>![500px-ClipCapIt-180911-205340.PNG](500px-ClipCapIt-180911-205340.PNG)
 
 Im Bereich **Wohin soll der Test kopiert werden...** wählen Sie bitte das Ziel aus, wo der Test kopiert und neu angelegt werden soll.

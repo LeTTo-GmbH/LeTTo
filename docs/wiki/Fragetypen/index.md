@@ -1,7 +1,7 @@
 # Fragetypen
 siehe auch [Beispielsammlung](../Beispielsammlung/index.md) und [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md)
 
-= [Mehrfachberechnungsfrage#mehrfachberechnungsfrage-](../BeispielsammlungEditieren#mehrfachberechnungsfrage-/index.md#mehrfachberechnungsfrage-) = 
+= [Mehrfachberechnungsfrage](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage) = 
 [Video](https://youtu.be/z_xfPxh33hA)
 * Fragen dieses Typs sind sehr flexibel. 
 * Die Frage kann mehrere Teilantworten beinhalten. Jede Teilfrage wird im Fragetext durch einen [Qx](Qx)-Tag (x..Fragenummer) positioniert. Bei der Schülereingabe wird der Tag durch ein Eingabefeld für die Ergebniseingabe ersetzt.
@@ -11,7 +11,7 @@ siehe auch [Beispielsammlung](../Beispielsammlung/index.md) und [Beispielsammlun
 
 [Berechnungen](../Berechnungen/index.md)
 
-##  [Zuordnungsfrage#zuordnungsfrage-](../BeispielsammlungEditieren#zuordnungsfrage-/index.md#zuordnungsfrage-) 
+##  [Zuordnungsfrage](../BeispielsammlungEditieren/index.md#zuordnungsfrage) 
 [Video](https://youtu.be/UUfoF03YkFM)
 
 Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.Bei der Zuordnungsfrage können die Begriffe auf der linken und auf der rechten Seite gemischt werden. Im Prinzip hat der Schüler 2 Listen mit Antworten und Fragen, die er richtig zuordnen muss. Geben Sie in den beiden Listen Elemente an, welche keine korrekten Zuordnungen haben sollen, dann ist die entsprechende Zelle in der Tabelle ohne Eintrag zu verwenden. Es können Bsp. der Variante 2 aus 5 oder 4 aus 8 sehr schnell und einfach erstellt werden. 
@@ -30,7 +30,7 @@ Für eine dynamische Fragenerstellung ist es möglich Werte aus dem Maximaberech
 Die Variable "wert" kann jetzt aus einem Datensatz oder aber auch als Berechnung aus dem Maximafeld stammen.
 Als Angabe bzw. Lösungen werden auch Bilder unterstützt. Diese sind in der betreffenden Zelle der Tabellen einfach mit STRG+V (wenn das Bild im Zwischenspeicher ist) oder über Klick der rechten Maustaste auf die entsprechende Zelle und dem Menüpunkt Image einfügen, einzubinden.
 
-= [Multiple-Choice-Frage#multiple-choice-frage-](../BeispielsammlungEditieren#multiple-choice-frage-/index.md#multiple-choice-frage-) = 
+## [Multiple-Choice-Frage](../BeispielsammlungEditieren/index.md#multiple-choice-frage) ## 
 
 [Video](https://youtu.be/NLEePJMMWoE)
 
@@ -47,7 +47,7 @@ Für eine dynamsiche Beispielgestaltung können Werte aus definierten Datensätz
 
 
 
-##  [Freitextfrage#freitextfrage-](../BeispielsammlungEditieren#freitextfrage-/index.md#freitextfrage-) 
+##  [Freitextfrage](../BeispielsammlungEditieren/index.md#freitextfrage-) 
 [Video](https://youtu.be/drhmdWO2PAE)
 
 Vorteile der Freitextfrage sind
@@ -69,16 +69,16 @@ Die Frage wird im Fragentextfenster formuliert. Der Schüler hat dich Möglichke
 Enthält die Fragenbeantwortung z.B. Handskizzen, dann sind diese nach deren Anfertigung auf Papier mittels der Funktion "Foto aufnehmen" vom Schüler hochladbar. Diese stehen dem Lehrkörper bei der Beurteilung zur Verfügung.
 <br>![300px-ClipCapIt-200504-131942.PNG](300px-ClipCapIt-200504-131942.PNG)
 
-##  [Berechnungsfrage#berechnungsfrage-](../BeispielsammlungEditieren#berechnungsfrage-/index.md#berechnungsfrage-) 
+##  [Berechnungsfrage](../BeispielsammlungEditieren/index.md#berechnungsfrage) 
 
 * Berechnende Fragen sind wie die [Mehrfachberechnungsfrage](#mehrfachberechnungsfrage-) mit nur einer Teilfrage, bei dem das Antwortfeld automatisch erscheint.
 * Jeder Schüler bekommt eine eigene Angabe
 * Durch das Drucken kann die Frage auch für Projektangaben verwendet werden (Jeder Schüler hat eigene Angaben).
-* [Berechnungen](../Berechnungen/index.md) erfolgen mit [Maxima#maxima-feld-](../BeispielsammlungEditieren#maxima-feld-/index.md#maxima-feld-)
+* [Berechnungen](../Berechnungen/index.md) erfolgen mit [Maxima](../BeispielsammlungEditieren/index.md#maxima-feld)
 * Alle verwendeten [Variablen](../Datensätze/index.md) müssen im Angabtext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.
-* Für jede Variable wird ein [Datensatz](../Datensätze/index.md) mit möglichen Werten angelegt. Diese [Datasets](../Datensätze/index.md) können über einen Formatierungsstring definiert werden und danach auch direkt in einer [Liste#anzeige-aller-variablenwerte-und-ergebnisse-](../Datensatz-Dialog#anzeige-aller-variablenwerte-und-ergebnisse-/index.md#anzeige-aller-variablenwerte-und-ergebnisse-) bearbeitet werden.
+* Für jede Variable wird ein [Datensatz](../Datensätze/index.md) mit möglichen Werten angelegt. Diese [Datasets](../Datensätze/index.md) können über einen Formatierungsstring definiert werden und danach auch direkt in einer [Liste](../Datensatz-Dialog/index.md#anzeige-aller-variablenwerte-und-ergebnisse) bearbeitet werden.
 
-##  [Lückentextfrage#lückentextfrage-](../BeispielsammlungEditieren#lückentextfrage-/index.md#lückentextfrage-) 
+##  [Lückentextfrage](../BeispielsammlungEditieren/index.md#lückentextfrage) 
 [Video](https://youtu.be/qfj6tPgWl0U)
 
 <br>![300px-ClipCapIt-200504-134347.PNG](300px-ClipCapIt-200504-134347.PNG)

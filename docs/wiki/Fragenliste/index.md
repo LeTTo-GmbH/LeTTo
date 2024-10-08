@@ -3,16 +3,16 @@
 
 <br>![200px-ClipCapIt-180618-205930.PNG](200px-ClipCapIt-180618-205930.PNG)
 In der Titelzeile der Fragenliste wird die aktuelle Kategorie, die diese Fragen enthält, angezeigt.
-Von allen Fragen wird immer der [Name der Frage#name-der-frage-](../BeispielsammlungEditieren#name-der-frage-/index.md#name-der-frage-) in der Liste geführt, der [Fragetyp](../Fragetypen/index.md) wird durch ein Icon gekennzeichnet:
+Von allen Fragen wird immer der [Name der Frage](../BeispielsammlungEditieren/index.md#name-der-frage) in der Liste geführt, der [Fragetyp](../Fragetypen/index.md) wird durch ein Icon gekennzeichnet:
 
 
-| ![20px-ClipCapIt-180618-211134.PNG](20px-ClipCapIt-180618-211134.PNG) | [Mehrfachberechnungsfrage#mehrfachberechnungsfrage-](../Fragetypen#mehrfachberechnungsfrage-/index.md#mehrfachberechnungsfrage-) |
+| ![20px-ClipCapIt-180618-211134.PNG](20px-ClipCapIt-180618-211134.PNG) | [Mehrfachberechnungsfrage](../Fragetypen/index.md#mehrfachberechnungsfrage) |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| ![20px-ClipCapIt-180618-211251.PNG](20px-ClipCapIt-180618-211251.PNG) | [Zuordnungsfrage#zuordnungsfrage-](../Fragetypen#zuordnungsfrage-/index.md#zuordnungsfrage-)                                     |
-| ![20px-ClipCapIt-180618-211353.PNG](20px-ClipCapIt-180618-211353.PNG) | [Multiple-Choice-Frage#multiple-choice-frage-](../Fragetypen#multiple-choice-frage-/index.md#multiple-choice-frage-)             |
-| ![20px-ClipCapIt-180618-211926.PNG](20px-ClipCapIt-180618-211926.PNG) | [Freitextfrage#freitextfrage-](../Fragetypen#freitextfrage-/index.md#freitextfrage-)                                             |
-| ![20px-ClipCapIt-180618-211857.PNG](20px-ClipCapIt-180618-211857.PNG) | [Berchnungsfrage#berchnungsfrage-](../Fragetypen#berchnungsfrage-/index.md#berchnungsfrage-)                                     |
-| ![20px-ClipCapIt-180618-212005.PNG](20px-ClipCapIt-180618-212005.PNG) | [Lückentextfrage#lückentextfrage-](../Fragetypen#lückentextfrage-/index.md#lückentextfrage-)                                     |
+| ![20px-ClipCapIt-180618-211251.PNG](20px-ClipCapIt-180618-211251.PNG) | [Zuordnungsfrage](../Fragetypen/index.md#zuordnungsfrage)                                                                        |
+| ![20px-ClipCapIt-180618-211353.PNG](20px-ClipCapIt-180618-211353.PNG) | [Multiple-Choice-Frage](../Fragetypen/index.md#multiple-choice-frage)                                                            |
+| ![20px-ClipCapIt-180618-211926.PNG](20px-ClipCapIt-180618-211926.PNG) | [Freitextfrage](../Fragetypen/index.md#freitextfrage)                                                                            |
+| ![20px-ClipCapIt-180618-211857.PNG](20px-ClipCapIt-180618-211857.PNG) | [Berchnungsfrage](../Fragetypen/index.md#berchnungsfrage)                                                                        |
+| ![20px-ClipCapIt-180618-212005.PNG](20px-ClipCapIt-180618-212005.PNG) | [Lückentextfrage](../Fragetypen/index.md#lückentextfrage)                                                                        |
 
 ### Kontextmenü zur Fragenliste
 <br>![300px-ClipCapIt-200504-110036.PNG](300px-ClipCapIt-200504-110036.PNG)

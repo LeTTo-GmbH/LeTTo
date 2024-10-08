@@ -97,29 +97,29 @@ Als Datenbank wird eine MySQL-Datenbank verwendet, welche idealerweise am gleich
 ###  Migration einer Linux-basierten LeTTo-Installation direkt auf den bestehenden Server 
 Besteht bereits eine lokale Installation auf einem Linux Server (idealerweise Ubuntu 18.04,20.04,22.04 oder Debian 11) dann kann direkt auf diesem Server eine dockerbasierte Installation vorgenommen und dabei die bestehenden Daten übernommen werden.
 
-[Migration Linux Installation auf Docker am gleichen Server#migration-einer-linux-basierten-letto-installation-direkt-auf-den-bestehenden-server-](../MigrationLeTTozuDocker#migration-einer-linux-basierten-letto-installation-direkt-auf-den-bestehenden-server-/index.md#migration-einer-linux-basierten-letto-installation-direkt-auf-den-bestehenden-server-)
+[Migration Linux Installation auf Docker am gleichen Server](../MigrationLeTTozuDocker/index.md#migration-einer-linux-basierten-letto-installation-direkt-auf-den-bestehenden-server-)
 
 ###  Migration einer bestehenden LeTTo-Installation auf einen neuen Linux-Server als Docker-Installation 
 Liegt eine LeTTo-Installation auf einem beliebigen System vor, so kann sie wie hier beschrieben in eine Docker-Installation auf einem Linux-Server übertragen werden.
 
-[Migration LeTTo Installation auf Docker#migration-einer-bestehenden-letto-installation-auf-einen-neuen-linux-server-als-docker-installation-](../MigrationLeTTozuDocker#migration-einer-bestehenden-letto-installation-auf-einen-neuen-linux-server-als-docker-installation-/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-linux-server-als-docker-installation-)
+[Migration LeTTo Installation auf Docker](../MigrationLeTTozuDocker/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-linux-server-als-docker-installation-)
 
 ###  Migration einer bestehenden LeTTo-Installation auf einen neuen Windows-Server als Docker-Installation 
-[Migration zu Docker auf Windows#migration-einer-bestehenden-letto-installation-auf-einen-neuen-windows-server-als-docker-installation-](../MigrationLeTTozuDocker#migration-einer-bestehenden-letto-installation-auf-einen-neuen-windows-server-als-docker-installation-/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-windows-server-als-docker-installation-)
+[Migration zu Docker auf Windows](../MigrationLeTTozuDocker/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-windows-server-als-docker-installation-)
 
 ###  Migration einer bestehenden LeTTo-Installation auf einen neuen MAC-Server als Docker-Installation 
-[Migration zu Docker auf einem Mac#migration-einer-bestehenden-letto-installation-auf-einen-neuen-mac-server-als-docker-installation-](../MigrationLeTTozuDocker#migration-einer-bestehenden-letto-installation-auf-einen-neuen-mac-server-als-docker-installation-/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-mac-server-als-docker-installation-)
+[Migration zu Docker auf einem Mac](../MigrationLeTTozuDocker/index.md#migration-einer-bestehenden-letto-installation-auf-einen-neuen-mac-server-als-docker-installation-)
 
 ##  globale Konfiguration 
 Folgende Einstellungen sollte der [globale Administrator](../GlobalerAdministrator/index.md) vornehmen:
 * Anpassen der notwendigen Systemeinstellungen in der '''[globalen Konfiguration](../GlobaleKonfiguration/index.md)'''.
-  * [Parameter#parameter-für-den-active-directory-login-](../GlobaleKonfiguration#parameter-für-den-active-directory-login-/index.md#parameter-für-den-active-directory-login-) für die Active-Directory oder LDAP Authentifikation
-  * [Parameter#parameter-für-den-serverbetrieb-](../GlobaleKonfiguration#parameter-für-den-serverbetrieb-/index.md#parameter-für-den-serverbetrieb-) für den Server-Betrieb 
-  * Wenn nur eine Schule vorhanden ist, die Konfiguration der [Schul-Parameter#parameter-der-schule-](../GlobaleKonfiguration#parameter-der-schule-/index.md#parameter-der-schule-)
-  * Konfiguration des [Serververhaltens#allgemeine-konfiguration-des-serververhaltens-](../GlobaleKonfiguration#allgemeine-konfiguration-des-serververhaltens-/index.md#allgemeine-konfiguration-des-serververhaltens-)
+  * [Parameter](../GlobaleKonfiguration/index.md#parameter-für-den-active-directory-login-) für die Active-Directory oder LDAP Authentifikation
+  * [Parameter](../GlobaleKonfiguration/index.md#parameter-für-den-serverbetrieb-) für den Server-Betrieb 
+  * Wenn nur eine Schule vorhanden ist, die Konfiguration der [Schul-Parameter](../GlobaleKonfiguration/index.md#parameter-der-schule-)
+  * Konfiguration des [Serververhaltens](../GlobaleKonfiguration/index.md#allgemeine-konfiguration-des-serververhaltens-)
 * Konfiguration des [Schultyps](../Schultypen/index.md)
 * Anlegen einer neuen [Schule](../Schul-Konfiguration/index.md)
-* Konfiguration der [Schul-Parameter#parameter-der-schule-](../GlobaleKonfiguration#parameter-der-schule-/index.md#parameter-der-schule-)
+* Konfiguration der [Schul-Parameter](../GlobaleKonfiguration/index.md#parameter-der-schule-)
 
 ##  Lizenz-Key einspielen 
 * Im Regelfall wird die Lizenz automatisch bei der Konfiguration als globaler Administrator als Demolizenz angelegt. 
@@ -135,7 +135,7 @@ Folgende Einstellungen sollte der [globale Administrator](../GlobalerAdministrat
 
 ##  Letzte wichtige Server-Konfigurationen 
 Folgende Konfigurationen sollten noch vorgenommmen werden, werden aber in diesem Wiki nicht explizit beschrieben, sondern sollten von einem Linux/Unix-Fachmann vorgenommen werden.
-* [Datensicherung#datensicherung-](../Datensicherung-Docker#datensicherung-/index.md#datensicherung-) einrichten 
+* [Datensicherung](../Datensicherung-Docker/index.md#datensicherung-) einrichten 
 * Firewall einrichten
 
 [Administration](../Administration/index.md)

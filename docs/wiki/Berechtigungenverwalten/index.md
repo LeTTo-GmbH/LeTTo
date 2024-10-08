@@ -1,6 +1,6 @@
 # Berechtigungen verwalten
 <br>![400px-ClipCapIt-180621-070915.PNG](400px-ClipCapIt-180621-070915.PNG)
-Aufruf des Dialogs über das [Kontext-Menü der Ordnerverwaltung#kontext-menü-](../Ordnerverwaltung#kontext-menü-/index.md#kontext-menü-).
+Aufruf des Dialogs über das [Kontext-Menü der Ordnerverwaltung](../Ordnerverwaltung/index.md#kontext-menü).
 
 Um einen neuen Benutzer hinzuzufügen, tragen Sie den Benutzernamen in das Feld User ein. Sie müssen den Benutzernamen kennen und ausschreiben, im Moment gibt es keine Eingabeunterstützung.
 

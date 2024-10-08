@@ -9,7 +9,7 @@ LeTTo kann alle verwendeten Javascript-Libraries auch lokal bereitstellen, damit
 
 In rot werden die nicht lokal verfügbaren Bibliotheken angezeigt. Unterhalb sind die aktuellen Links auf alle js-Dateien aufgeführt, die in LeTTo verwendet werden. Die Links zeigen im Moment auf den Download-Bereich von LeTTo und sind nicht innerhalb der IP-Adressen des eigenen Servers.
 
-Über die Eingabefelder können der Speicherort, wo die Libraries abgelegt werden und die WEB-Referenz eingestellt werden. Siehe auch [Verlinkung am Apache-Server#erzeugung-der-ordner-und-verlinkung-zum-apache-server-](../InstallationTomEE-8#erzeugung-der-ordner-und-verlinkung-zum-apache-server-/index.md#erzeugung-der-ordner-und-verlinkung-zum-apache-server-)
+Über die Eingabefelder können der Speicherort, wo die Libraries abgelegt werden und die WEB-Referenz eingestellt werden. Siehe auch [Verlinkung am Apache-Server](../InstallationTomEE-8/index.md#erzeugung-der-ordner-und-verlinkung-zum-apache-server)
 <br>![400px-ClipCapIt-200215-075227.PNG](400px-ClipCapIt-200215-075227.PNG)
 Vor dem Download wird eine Testdatei geschrieben und versucht, diese über den Web-Server wieder zu lesen. Tritt hierbei ein Fehler auf, wird der Downloadvorgang unterbrochen. Der Link zur Testdatei ist neben den Eingabeldern zu finden und darf keine Not Found Meldung (404) liefern.
 
@@ -25,7 +25,7 @@ Mit der Bildverwaltung können Sie testen, ob die Konfiguration aller Ordner und
 
 Mit **Bildverwaltung laden** werden Testdaten am Filesystem abgelegt und wieder über den Webserver geladen und Status-Informationen angezeigt.
 
-Die Eingabefelder **Pfad im Filesystem** und **Webadresse** müssen die Verzeichnisse im Dateisystem und die entsprechende [Verlinkung am Apache-Server#erzeugung-der-ordner-und-verlinkung-zum-apache-server-](../InstallationTomEE-8#erzeugung-der-ordner-und-verlinkung-zum-apache-server-/index.md#erzeugung-der-ordner-und-verlinkung-zum-apache-server-) abbilden.
+Die Eingabefelder **Pfad im Filesystem** und **Webadresse** müssen die Verzeichnisse im Dateisystem und die entsprechende [Verlinkung am Apache-Server](../InstallationTomEE-8/index.md#erzeugung-der-ordner-und-verlinkung-zum-apache-server) abbilden.
 
 [Administration](../Administration/index.md)
 

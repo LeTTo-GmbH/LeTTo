@@ -37,7 +37,7 @@ Beispiele:
 
 
 #### Zeichenelemente des Plot-Plugins
-Durch Strichpunkt getrennt können auch die [Zeichenelemente#vordefinierte-graphische-funktionen-](../Plot#vordefinierte-graphische-funktionen-/index.md#vordefinierte-graphische-funktionen-) des Plot-Plugins eingefügt werden.
+Durch Strichpunkt getrennt können auch die [Zeichenelemente](../Plot/index.md#vordefinierte-graphische-funktionen-) des Plot-Plugins eingefügt werden.
 
 Das Koordinatensystem des Bildschirmfensters hat den Nullpunkt links unten.
 

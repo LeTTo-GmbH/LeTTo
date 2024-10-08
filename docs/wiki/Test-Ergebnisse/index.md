@@ -1,5 +1,5 @@
 # Test-Ergebnisse
-Ist ein Test aktiv, dann wird im [Navigationsbereich#navigation-](../LeTTo-Hauptansicht#navigation-/index.md#navigation-) der Baum mit **Test-Einstellungen** angezeigt.
+Ist ein Test aktiv, dann wird im [Navigationsbereich](../LeTTo-Hauptansicht/index.md#navigation) der Baum mit **Test-Einstellungen** angezeigt.
 <br>![600px-Neu_asch.jpg](600px-Neu_asch.jpg)
 
 Der Menüpunkt **Ergebnisse** führt zur Übersicht über alle Ergebnisse eines Online-Tests.

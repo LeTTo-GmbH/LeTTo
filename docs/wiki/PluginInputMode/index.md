@@ -25,7 +25,7 @@ Mit dem Parameter **input** kann die Art der interaktiven Eingabe beim [Plot](..
 
 
 ###  siehe auch 
-[Plot](../Plot/index.md) Plugin [allgemeine Parameter#allgemeine-parameter-](../Plot#allgemeine-parameter-/index.md#allgemeine-parameter-)
+[Plot](../Plot/index.md) Plugin [allgemeine Parameter](../Plot/index.md#allgemeine-parameter-)
 
 [Plot-Plugin graphische Multiple-Choice-Eingabe](/notimplemented/index.md)
 

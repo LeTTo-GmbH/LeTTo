@@ -16,7 +16,7 @@ Drücken Sie im Fragentext unmittelbar nach dem Variablennamen die **F3**-Taste 
 Aus dem Variablennamen wird laut SI-Einheitensystem die entsprechende SI-Einheit zugeordnet.
 Die Wertebereiche und die Einheiten können aber in jeder [Kategorie](../Ordnerverwaltung/index.md) eigens definiert und überschrieben werden.
 
-### Erstellung / Änderung über den Datensatz-Bereich
+### Erstellung - Änderung über den Datensatz-Bereich
 <br>![250px-ClipCapIt-180620-222938.PNG](250px-ClipCapIt-180620-222938.PNG)
 <br>![120px-ClipCapIt-180831-181125.PNG](120px-ClipCapIt-180831-181125.PNG)
 Die Tabelle zur Definition der Datensätze enthält drei Spalten:

@@ -129,7 +129,7 @@ angegebener Ausgangsspannung oder Ausgangsstrom zur Eingangsspannung
 oder zum Eingangsstromg berechnet.<br>
 
 #### Zeichenelemente des Plot-Plugins
-Durch Strichpunkt getrennt können auch die [Zeichenelemente#vordefinierte-graphische-funktionen-](../Plot#vordefinierte-graphische-funktionen-/index.md#vordefinierte-graphische-funktionen-) des Plot-Plugins eingefügt werden.
+Durch Strichpunkt getrennt können auch die [Zeichenelemente vordefinierte graphische funktionen](../Plot/index.md#vordefinierte-graphische-funktionen) des Plot-Plugins eingefügt werden.
 
 Das Koordinatensystem des Bildschirmfensters hat den Nullpunkt links unten.
 

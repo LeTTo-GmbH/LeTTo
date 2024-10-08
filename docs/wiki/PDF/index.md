@@ -1,5 +1,5 @@
 # PDF
-Der Dialog zur Erstellung von **PDF-Dokumenten** kann entweder aus dem [Kategorie-Baum](../Ordnerverwaltung/index.md) über das [Kontext-Menü#kontext-menü-](../Ordnerverwaltung#kontext-menü-/index.md#kontext-menü-) aufgerufen werden oder für eine einzelne Frage aus dem [Toolbar](../Toolbar/index.md) mit dem ![22px-ClipCapIt-180618-222240.PNG](22px-ClipCapIt-180618-222240.PNG) Button.
+Der Dialog zur Erstellung von **PDF-Dokumenten** kann entweder aus dem [Kategorie-Baum](../Ordnerverwaltung/index.md) über das [Kontext-Menü](../Ordnerverwaltung/index.md#kontext-menü) aufgerufen werden oder für eine einzelne Frage aus dem [Toolbar](../Toolbar/index.md) mit dem ![22px-ClipCapIt-180618-222240.PNG](22px-ClipCapIt-180618-222240.PNG) Button.
 
 ## Ausgabe in PDF-Dokumenten
 <br>![400px-ClipCapIt-180619-221709.PNG](400px-ClipCapIt-180619-221709.PNG)

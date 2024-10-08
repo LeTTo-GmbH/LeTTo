@@ -52,7 +52,7 @@
 * Leerzeichen im Maximafeld vor einer Zuweisung werden richtig verarbeitet
 
 ### 11.2.2019 Rev 4694
-* Bei _Klassenweisen Beurteilungen_ kann bei jeder Beurteilung das Datum eingeblendet werden und Noten können importiert werden. Siehe auch [Klassenweise Beurteilungen#hinzuf.c3.bcgen-einer-klassenweisen-beurteilung-](../Katalog#hinzuf.c3.bcgen-einer-klassenweisen-beurteilung-/index.md#hinzuf.c3.bcgen-einer-klassenweisen-beurteilung-).
+* Bei _Klassenweisen Beurteilungen_ kann bei jeder Beurteilung das Datum eingeblendet werden und Noten können importiert werden. Siehe auch [Klassenweise Beurteilungen](../Katalog/index.md#hinzufügen-einer-klassenweisen-beurteilung).
 * Fehler wurde behoben bei der Ergebnisdarstellung von Tests: Bisher gab es Probleme, wenn die Fragen eines Tests nachträglich geändert worden waren.
 * Umstellung des Hochladens von Dateien, die Dokumente zu Testfragen sind. Ab sofort wird der Pfadname des Dokuments in der Datenbank gespeichert.
 * Fehler beim Gruppieren von Tests wurde behoben.

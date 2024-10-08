@@ -5,7 +5,7 @@
   * Bsp: if then
 
 ## Parser
-* [Operatoren#operatoren-](../Berechnungen#operatoren-/index.md#operatoren-)
-* [Funktionen#funktionen-](../Berechnungen#funktionen-/index.md#funktionen-)
-* [Klammern#klammern-](../Berechnungen#klammern-/index.md#klammern-)
+* [Operatoren](../Berechnungen/index.md#operatoren)
+* [Funktionen](../Berechnungen/index.md#funktionen)
+* [Klammern](../Berechnungen/index.md#klammern)
 

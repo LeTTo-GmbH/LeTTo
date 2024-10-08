@@ -54,7 +54,7 @@ Mit **Test erstellen**, **Link**, **Ordner** können Sie diese Aktivitäten am S
 
 Bei allen Aktivitäten ist ein Kontext-Menü verfügbar:
 * [Test kopieren](../Testkopieren/index.md): Hiermit können Sie eigene Tests oder auch Tests von Kollegen (siehe [Eigene / Fremde Daten](#eigene-/-fremde-daten-)) in einen anderen Gegenstand/Ordner kopieren und dort unter neuem Namen anlegen.
-* [Test verschieben#test-verschieben-](../Testkopieren#test-verschieben-/index.md#test-verschieben-): Hiermit können Sie nur eigene Tests in einen anderen Gegenstand/Ordner verschieben.
+* [Test verschieben](../Testkopieren/index.md#test-verschieben): Hiermit können Sie nur eigene Tests in einen anderen Gegenstand/Ordner verschieben.
 * Testfragen bearbeiten: Hiermit wechseln Sie in die [Beispielsammlung](../Beispielsammlung/index.md) und es wird automatisch der ausgewählte Test zur Bearbeitung festgelegt, sodass Sie Testfragen hinzufügen, löschen oder ändern können.
 * Link für Test kopieren: Mit dem hiermit erstellen Link können Sie einen Verweis erstellen, den Sie auf externen HTML-Seiten verwenden können. Beim Aufruf dieses Links wird nach dem Login automatisch der gewünschte Test geöffnet.
 

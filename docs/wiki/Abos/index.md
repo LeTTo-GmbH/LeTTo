@@ -30,5 +30,5 @@ In der Liste der Themengebiete und der User können Sie durch entsprechende Ausw
 Bestätigung der Abo-Definitionen durch Klicken des Buttons 
 <br>![200px-ClipCapIt-180618-214613.PNG](200px-ClipCapIt-180618-214613.PNG)<br>
 
-Kategorie:Dialoge
+Kategorie: [Dialoge](../Dialoge/index.md)
 

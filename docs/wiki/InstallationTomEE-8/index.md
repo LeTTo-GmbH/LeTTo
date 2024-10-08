@@ -170,7 +170,7 @@ cp letto-daily.war /opt/tomee/webapps/letto.war
 Das Passwort wird von uns auf Anfrage zur Verfügung gestellt.
 
 ###  Update der Anwendung 
-[siehe Update TomEE #update-tomee-8-](../Update#update-tomee-8-/index.md#update-tomee-8-)
+[siehe Update TomEE](../Update/index.md#update-tomee-8-)
 
 
 ###  siehe auch 

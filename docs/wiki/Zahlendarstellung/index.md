@@ -55,7 +55,7 @@ Für die Zahlendarstellung sind folgende Zahlenformate definiert:
 
 
 ####  für Polynome und gebrochen rationale Funktionen mit numerischen Koeffizienten in einer Variablen können folgende Parameter angegeben werden
-siehe auch [Berechnungen#polynome-](../Berechnungen/index.md#polynome-)
+siehe auch [Berechnungen polynome](../Berechnungen/index.md#polynome)
 
 | Format  | Bedeutung                                                                                                                                  |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------|

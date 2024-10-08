@@ -43,7 +43,7 @@ In der ersten Zeile sind alle Arten von [Online-Tests](../Online-Tests/index.md)
 Die Checkboxen der zweiten Zeile haben folgende Bedeutung:
 * Mahnungen: Im Katalog wird pro Semester eine Spalte mit Checkboxen für Mahnungen eingeblendet.
 * Noten editierbar: Ist die Checkbox ausgewählt, dann können direkt im Katalog die Noten eingetragen werden. Bei negativen Noten wird automatisch eind Dialog zur Auswahl von negativen Lehrinhalten geöffnet.
-* Fotos: Im Katalog werden die Schülerfotos eingeblendet, wenn die [Fotos hochgeladen#hochladen-von-schülerfotos-](../Datenimport#hochladen-von-schülerfotos-/index.md#hochladen-von-schülerfotos-) wurden.
+* Fotos: Im Katalog werden die Schülerfotos eingeblendet, wenn die [Fotos hochgeladen hochladen-von-schülerfotos](../Datenimport/index.md#hochladen-von-schülerfotos) wurden.
 * Prozentanzeige: Im Katalog werden für die meisten Beurteilungen keine Symbole, sondern Prozentwerte angezeigt. Welche Beurteilungsformen davon betroffen sind, wird in der [Beurteilungskonfiguration](../Beurteilungskonfiguration/index.md) festgelegt.
 
 Mit dem ![35px-ClipCapIt-180826-190507.PNG](35px-ClipCapIt-180826-190507.PNG)-Button werden die Darstellungs-Optionen für all ihre Kataloge gespeichert. Mit der ESC-Taste kann der Dialog auch geschlossen werden.
@@ -116,7 +116,7 @@ Noteneingabe, die sich aus mehreren Teilnoten zB. bei einer Laborübung zusammen
 Bei mehreren Teilnoten wird durch die definierte Gewichtung (ist neben der Beichnung der Teilnoten in Klammern gesetzt) automatisch die Gesamtnote berechnet, die jedoch noch durch den Lehrer überschrieben werden kann.
 
 #### Zusammengesetzte Beurteilungen
-Bei Klassenweisen Beurteilungen kann sich eine Note aus mehreren Teilnoten zusammensetzen. Die verwendeten Teilergebnisse und deren Gewichtung wird in der [Beurteilungskonfiguration#weitere-beurteilungen-](../Beurteilungskonfiguration#weitere-beurteilungen-/index.md#weitere-beurteilungen-) definiert.
+Bei Klassenweisen Beurteilungen kann sich eine Note aus mehreren Teilnoten zusammensetzen. Die verwendeten Teilergebnisse und deren Gewichtung wird in der [Beurteilungskonfiguration](../Beurteilungskonfiguration/index.md#weitere-beurteilungen) definiert.
 
 Beispiele für solche zusammengesetzten Noten sind Laborübungen (Prüfung, Mitarbeit, Protokoll) oder Projekte (Mitarbeit, Dokumentation). Es kann auch festgelegt werden, welche Teile der Note zwingend vorgeschrieben sind, um alle Anforderungen zu erfüllen. Beispiel hierfür ist eine Laborübung, wo ein Laborprotokoll zwingend erforderlich ist. Die Labornote erscheint im Katalog in roter Farbe wenn die Labornote negativ ist und dies ist unter folgenden Umständen der Fall:
 * die Note für das Protokoll ist (noch) nicht eingetragen
@@ -139,7 +139,7 @@ Dieser Dialog ünterstützt Sie bei der Auswahl der neagtiven Lehrinhalte und De
 <br>![100px-ClipCapIt-180831-113320.PNG](100px-ClipCapIt-180831-113320.PNG)
 
 ### Gruppierung
-Wenn in der [Beurteilungskonfiguration#gruppierung-](../Beurteilungskonfiguration#gruppierung-/index.md#gruppierung-) für diesen Katalog die Gruppierung aktiviert wurde, dann ist im linken Bereich eine Spalte mit Gruppe vorhanden. Weiters ist in der obersten Button-Leiste des Katalogs der 
+Wenn in der [Beurteilungskonfiguration gruppierung](../Beurteilungskonfiguration/index.md#beurteilungsgruppierungen-) für diesen Katalog die Gruppierung aktiviert wurde, dann ist im linken Bereich eine Spalte mit Gruppe vorhanden. Weiters ist in der obersten Button-Leiste des Katalogs der 
 ![25px-ClipCapIt-180831-113134.PNG](25px-ClipCapIt-180831-113134.PNG)-Button sichtbar, mit dem die Gruppen-Spalte zum Bearbeiten freigeschaltet werden kann.
 
 Die Schüler können dann Gruppen zugeordnet werden. 

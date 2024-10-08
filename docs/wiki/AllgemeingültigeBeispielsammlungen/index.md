@@ -21,7 +21,7 @@ Bitte jedenfalls Themenbereich und Abteilung korrekt auswählen!
 Aus jeder Kategorie wird beim Erstellen der Beispielsammlung ein Test gemacht, in den die Fragen der aktuellen Kategorie automatisch eingefügt werden. Tests entsprechen dann der kleinsten Einheit der Beispielsammlung, die quasi ein Kapitel oder Unterkapitel abbilden. [Online-Tests](../Online-Tests/index.md) in immer-gültigen Schuljahren werden bei der Bearbeitung durch Schüler oder externe Benutzer zwar in der Datenbank gespeichert, fliessen aber nicht in die Beurteilungen für den Schüler ein. Diese Tests laufen immer im Rechenübungs-Modus, sodass Schüler üben können und dann die gerechneten oder beantworteten Aufgabenstellungen kontrolliert werden können. Der Start eines Tests über **Test starten** und das **Test beendent** entfällt im Übungsmodus.
 
 ### Sichtweise für Schüler
-Für jeden Schüler sind die angelegten Themenbereiche und die darin angelegten Gegenstände und Beispiele über die [Navigation#navigation-](../LeTTo-Hauptansicht#navigation-/index.md#navigation-) unter **Beispiele** zu finden:
+Für jeden Schüler sind die angelegten Themenbereiche und die darin angelegten Gegenstände und Beispiele über die [Navigation](../LeTTo-Hauptansicht/index.md#navigation) unter **Beispiele** zu finden:
 
 <br>![500px-ClipCapIt-181005-224850.PNG](500px-ClipCapIt-181005-224850.PNG)
 

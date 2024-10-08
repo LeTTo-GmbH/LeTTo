@@ -14,7 +14,7 @@ Im Menüpunkt **Lehrer** kann ein Lehrer mit seinen Klassen und Gegenständen di
 * Erst durch **speichern** wird der Eintrag übernommen
 
 ###  siehe auch 
-* [Hauptseite#administration-](../Hauptseite/index.md#administration-)
+* [Hauptseite administration](../Hauptseite/index.md#administration-)
 * [Datenimport aus Untis und Sokrates](../Datenimport/index.md)
 * [Datenimport ohne Untis-Daten](../DatenimportohneUntis-Daten/index.md) mit Hilfe von CSV-Dateien
 

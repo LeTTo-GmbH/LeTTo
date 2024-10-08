@@ -6,7 +6,7 @@ Wesentliche Parameter:
 * **DocInit**, **DocInitQuestion**: Hier können Sie ihren Namen festlegen, der beim Ausdruck auf den Dokumenten erscheinen soll.
 * **datasetDefault**: Hiermit legen Sie fest, welche Einheiten und Zahlenbereiche für Formelzeichen verwendet werden sollen.
 
-* **showQuestionCount**: Wenn dieser Parameter auf 1 gesetzt wird, dann werden in der [Baumstruktur der Fragensammlung](../Ordnerverwaltung/index.md) die [Anzahl an Fragen pro Ordner#anzeige-der-fragenanzahl-](../Ordnerverwaltung#anzeige-der-fragenanzahl-/index.md#anzeige-der-fragenanzahl-) dargestellt.
+* **showQuestionCount**: Wenn dieser Parameter auf 1 gesetzt wird, dann werden in der [Baumstruktur der Fragensammlung](../Ordnerverwaltung/index.md) die [Anzahl an Fragen pro Ordner anzeige-der-fragenanzahl](../Ordnerverwaltung/index.md#anzeige-der-fragenanzahl) dargestellt.
 
 
 **datasetDefault**:

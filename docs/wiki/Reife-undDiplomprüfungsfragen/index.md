@@ -1,5 +1,5 @@
 # Reife- und Diplomprüfungsfragen
-Der Dialog zur Erstellung von **Reife- und Diplomprüfungsfragen** kann entweder aus dem [Kategorie-Baum](../Ordnerverwaltung/index.md) über das [Kontext-Menü#kontext-menü-](../Ordnerverwaltung#kontext-menü-/index.md#kontext-menü-) aufgerufen werden oder für eine einzelne Frage aus der [Fragenliste](../Fragenliste/index.md) ebenfalls mit dem [Kontext-Menü#kontextmenü-zur-fragenliste-](../Fragenliste#kontextmenü-zur-fragenliste-/index.md#kontextmenü-zur-fragenliste-). 
+Der Dialog zur Erstellung von **Reife- und Diplomprüfungsfragen** kann entweder aus dem [Kategorie-Baum](../Ordnerverwaltung/index.md) über das [Kontext-Menü](../Ordnerverwaltung/index.md#kontext-menü) aufgerufen werden oder für eine einzelne Frage aus der [Fragenliste](../Fragenliste/index.md) ebenfalls mit dem [Kontext-Menü#kontextmenü-zur-fragenliste-](../Fragenliste#kontextmenü-zur-fragenliste-/index.md#kontextmenü-zur-fragenliste-). 
 
 ## Ausgabe von Fragen für die mündliche Reife- und Diplomprüfung
 

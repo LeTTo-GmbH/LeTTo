@@ -31,5 +31,3 @@
 * Beim Import oder Export einer großen .lto-Datei bekommt man einen OutOfMemoryError  -&gt; Abhilfe: Erhöhen des RAM-Speichers vom [Export-Service](../Export-Service/index.md)
 
 
-[Administration](../Administration/index.md)
-

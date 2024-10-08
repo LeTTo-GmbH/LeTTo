@@ -58,7 +58,7 @@ Bei Mehrfachberechnungsfragen ist dieses Feld gesperrt und die Punkteanzahl wird
 Gesamtpunktezahl aus allen Teilfragen berechnet.
 
 ##### Penalty ####
-Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus](../Online-Tests#testart-/index.md#testart-) pro Versuch 
+Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus](../Online-Tests/index.md#testart) pro Versuch 
 abgezogen wird.
 
 ##### EinheitenFehler ####
@@ -74,7 +74,7 @@ Das Beispiel hat 4 Punkte, der EH-Faktor ist 0.1.
 Gibt nun der Schüler statt 0.2A den Wert 0.2V an, so erhält er 4*(1-0.1) = 3.6 Punkte.
 Gibt der Schüler einen falschen Einheitenvorsatz wie 0.2mA an, so erhält er keine Punkte, da der Wert falsch ist!
 
-Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen](../Online-Tests#einheiteneinstellungen-/index.md#einheiteneinstellungen-)!
+Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen](../Online-Tests/index.md#einheiteneinstellungen)!
 
 ##### Checkbox Parser ####
 Ist diese Checkbox ausgewählt, dann wird beim Berechnen der symbolischen Lösung für das Ergebnis der Frage und 
@@ -86,7 +86,7 @@ Siehe auch [Berechnungen](../Berechnungen/index.md)!
 Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.
 
 ## Variable / Datensätze
-Siehe [Variable / Datensätze definieren](../Datensätzedefinieren#erstellung-/-änderung-über-den-datensatz-bereich-/index.md#erstellung-/-änderung-über-den-datensatz-bereich-)
+Siehe [Variable / Datensätze definieren](../Datensätzedefinieren/index.md#erstellung---änderung-über-den-datensatz-bereich)
 
 [//]: # (## Kompetenzen zuordnen)
 [//]: # (Mit dem Button ![20px-ClipCapIt-180901-220702.PNG]&#40;20px-ClipCapIt-180901-220702.PNG&#41; aus dem [Toolbar]&#40;../Toolbar/index.md&#41; kann man zwischen der Datensatz- und der Kompetenz-Ansicht umschalten.)
@@ -166,7 +166,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 * Die Frage kann mehrere Teilantworten beinhalten. Jede Teilfrage wird im Fragetext durch einen [Qx](Qx)-Tag (x..Fragenummer) positioniert. Bei der Schülereingabe wird der Tag durch ein Eingabefeld für die Ergebniseingabe ersetzt.
 * Die Angabewerte sind wie bei Berechnungsfragen mittels [Datensätzen](../Datensätze/index.md) definierbar und variieren von Schüler zu Schüler.
 * Alle verwendeten [Variablen](../Datensätze/index.md) müssen im Angabtext in geschwungene Klammern gesetzt werden. Im [Maximafeld](../Berechnungen/index.md) und im Lösungsfeld ist die Klammer nicht notwendig.
-* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen [Formatierungsstring#definition-der-werte-](../Datensätzedefinieren#definition-der-werte-/index.md#definition-der-werte-) definiert werden und danach auch direkt in einer Liste bearbeitet werden.
+* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen [Formatierungsstring](../Datensätzedefinieren/index.md#definition-der-werte) definiert werden und danach auch direkt in einer Liste bearbeitet werden.
 
 
 <br>![600px-ClipCapIt-180831-220929.PNG](600px-ClipCapIt-180831-220929.PNG)
@@ -273,7 +273,7 @@ Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches
 
 Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.
 
-Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung#berechnung-mit-maxima-](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-) oder den [internen Parser#berechnung-mit-dem-internen-parser-](../Berechnungen#berechnung-mit-dem-internen-parser-/index.md#berechnung-mit-dem-internen-parser-) bestimmt werden.
+Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung](../Berechnungen/index.md#berechnung-mit-maxima) oder den [internen Parser](../Berechnungen/index.md#berechnung-mit-dem-internen-parser) bestimmt werden.
 
 ### Lückentextfrage
 Ein Lückentext enthält Lücken innerhalb eines Fragetextes, die durch den Schüler mit dem korrekten Inhalt gefüllt werden sollen.
@@ -294,7 +294,7 @@ Der Fragemodus gibt an wie Texteingabe-Lücken verarbeitet werden
 * Drag-and-Drop: Der Schüler muss aus einer Liste von möglichen Antworten die richtigen Antworten auf die Lücken ziehen.
 
 **Funktionstasten:**
-F8: aktuelles Wort, bei dem der Cursor steht, als Textlücke definieren (Vorsicht: Wort nicht markieren!), siche auch  [alle Funktionstasten#schnelleingabe-.2f-tastatur-shortcuts-](../EditorfürdenAngabetext#schnelleingabe-.2f-tastatur-shortcuts-/index.md#schnelleingabe-.2f-tastatur-shortcuts-)
+F8: aktuelles Wort, bei dem der Cursor steht, als Textlücke definieren (Vorsicht: Wort nicht markieren!), siche auch  [alle Funktionstasten](../EditorfürdenAngabetext/index.md#schnelleingabe--tastatur-shortcuts)
 
 ##### Erstellung der Frage:
 

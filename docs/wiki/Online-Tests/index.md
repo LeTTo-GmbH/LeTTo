@@ -117,7 +117,7 @@ Angezeigt wird auch der Zeitraum, in dem die Testbearbeitung erlaubt war.
 
 #### &lt;span id="Testfragen"&gt;Testfragen
 <br>![200px-ClipCapIt-180826-091941.PNG](200px-ClipCapIt-180826-091941.PNG)
-Wurde der Testversuch gestartet, dann ist im [Navigationsbereich#navigation-](../LeTTo-Hauptansicht#navigation-/index.md#navigation-) auf der linken Seite eine Box mit **Fragenauswahl** zu sehen. 
+Wurde der Testversuch gestartet, dann ist im [Navigationsbereich](../LeTTo-Hauptansicht/index.md#navigation) auf der linken Seite eine Box mit **Fragenauswahl** zu sehen. 
 
 **Naviagation innerhalb des Tests**
 In der Fragenauswahl sind alle Beispiele dieses Tests durch Beispielnummern angeführt. Jedes Beispiel kann durch Klick auf die entsprechende Beispielnummer ausgewählt und angezeigt werden. Wird ein anderes Beispiel gewählt, dann werden alle Eingaben automatisch zwischengespeichert.

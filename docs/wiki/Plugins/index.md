@@ -24,7 +24,7 @@ Folgende Module stehen zur Verfügung:
 
 Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt werden.
 <pre> [PIG Plugin2 "text(2,2,tex=&#92;"&#92;alpha&#92;")"/](PIG Plugin2 "text(2,2,tex=&#92;"&#92;alpha&#92;")"/) </pre>
-* Im [Maxima-Feld#maxima-feld-](../BeispielsammlungEditieren#maxima-feld-/index.md#maxima-feld-) kann mit der rechten Maustaste auf das Berechnungsmodul eines Plugins zugegriffen werden, falls das Plugin eine Maxima-Berechung ausgeben kann.
+* Im [Maxima-Feld](../BeispielsammlungEditieren/index.md#maxima-feld) kann mit der rechten Maustaste auf das Berechnungsmodul eines Plugins zugegriffen werden, falls das Plugin eine Maxima-Berechung ausgeben kann.
 
 ####  Plugin-Entwicklung 
 
