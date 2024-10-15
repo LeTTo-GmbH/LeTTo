@@ -56,7 +56,7 @@ Liste der definierten Konstanten:
 * Setzen der Einheit Ampere(A) für alle Variablen die mit I oder ix beginnen
   //unit(I*,ix*)=A
 
-## Berechnung mit dem internen Parser
+## Berechnung mit dem internen Parser 
 * Der interne Parser kann durch Wahl der Checkbox "Parser" anstatt von Maxima für die Berechnung des Maxima-Feldes verwendet werden. 
 * Jedenfalls wird der Parser zur Test-Laufzeit für die Berechnung des Ergebnisses einer Frage aus Lösung und Datensätzen und zum Berechnen der Schülereingabe verwendet.
 

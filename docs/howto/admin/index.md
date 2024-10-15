@@ -13,3 +13,4 @@
 
 ## Konfigurationen
 * [Active-Directory(AD) und LDAP](./active-directory-ldap)
+* [Session-Timeout konfigurieren](./session-timeout)
