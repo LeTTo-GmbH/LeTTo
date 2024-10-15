@@ -17,7 +17,7 @@
 # jekyll Ausgabe
 docs/Gemfile.lock
 docs/_site
-doc/.jekyll-cache
+docs/.jekyll-cache
 
 # Wiki old
 # docs/wiki
