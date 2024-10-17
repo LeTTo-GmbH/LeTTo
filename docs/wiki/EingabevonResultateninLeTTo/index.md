@@ -10,7 +10,7 @@
 
 Reelle Einheiten bestehen immer aus einem Zahlenwert und einer [Einheit](../Einheit/index.md). Nachfolgend werden exemplarisch die wichtigsten physikalischen Größen zusammengefasst. LeTTo-Eingaben sind in &lt;code&gt;Schreibmaschinenschrift&lt;/code&gt; angegeben. Die Groß- und Kleinschreibung von Einheiten muss genau eingehalten werden. 
 
-Als &lt;b&gt;einfache Regel&lt;/b&gt; gilt, dass alle Einheiten unter einfache Hochkomma gesetzt werden. Das funktioniert immer. Das einfache Hochkomma ' findet man mit &lt;code&gt;SHIFT + #&lt;/code&gt;. Für einfache Einheiten, die ohne die Operatoren &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; und &lt;code&gt;^&lt;/code&gt; auskommen, dürfen die beiden Hochkomma auch weggelassen werden.
+Als <b>einfache Regel</b> gilt, dass alle Einheiten unter einfache Hochkomma gesetzt werden. Das funktioniert immer. Das einfache Hochkomma ' findet man mit &lt;code&gt;SHIFT + #&lt;/code&gt;. Für einfache Einheiten, die ohne die Operatoren &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; und &lt;code&gt;^&lt;/code&gt; auskommen, dürfen die beiden Hochkomma auch weggelassen werden.
 
 
 * &lt;code&gt;250V&lt;/code&gt; für eine Spannung von 250 V
