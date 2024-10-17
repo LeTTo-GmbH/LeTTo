@@ -5,9 +5,9 @@ und Tipps, die während der Aktivitäts-Ausführung angezeigt werden, definiert 
 
 ## Syntax
 
-## Allgemeiner Teil
+### Allgemeiner Teil
 * Allgemeiner Text
-* [hint]: Allgemeiner Tipp
+* \[hint\]: Allgemeiner Tipp
 
 Ist nur eine Teilfrage definiert oder ist die Frage eine Freitextfrage, dann wird dieser Teil
 der Feedbackdefinition für die gesamte Frage genommen. Es wird also der allgemeine
