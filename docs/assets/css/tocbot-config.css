@@ -1,0 +1,18 @@
+
+.toc-list-item {
+    display: block !important;
+}
+
+.toc-list-item > a {
+    display: block !important;
+    padding-left: 10px; /* Optional: Einrückung der Unterebenen */
+}
+
+/* Optional: Überschriften tieferer Ebenen stärker einrücken */
+.toc-list-item > .toc-list-item > a {
+    padding-left: 20px; /* Einrückung für h3 */
+}
+
+.toc-list-item > .toc-list-item > .toc-list-item > a {
+    padding-left: 60px; /* Einrückung für h4 */
+}
