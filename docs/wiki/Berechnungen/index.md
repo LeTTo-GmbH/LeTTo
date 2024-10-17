@@ -1,4 +1,8 @@
 # Berechnungen
+
+<!-- Inhaltsverzeichnis -->
+<div id="toc"></div>
+
 ##  Allgemeines 
 Berechnungen werden in mehreren Bereichen der Frageerstellung verwendet und bilden die Basis für [Berechnungsfrage](../Fragetypen/index.md#berechnungsfrage-) und [Mehrfachberechnungsfrage](../Fragetypen/index.md#mehfachberechnungsfrage).
 

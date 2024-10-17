@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/assets/css/custom.css">
     <link rel='icon' type='image/png' sizes='all' href='/assets/img/lettoTT.png'/>
+
+    <!-- tocbot 4.12.0 für das Inhaltsverzeichnis -->
+    <link rel="stylesheet" href="/assets/css/tocbot.css">
+    <script src="/assets/js/tocbot.min.js"></script>
+
     <title>{{ page.title }}</title>
 </head>
 <body>
@@ -50,5 +56,15 @@
         <a href="/howto/admin">Admin</a>
     </nav>
 </footer>
+<script>
+    tocbot.init({
+        // Container für das Inhaltsverzeichnis
+        tocSelector: '#toc',
+        // Wo die Überschriften durchsucht werden sollen
+        contentSelector: 'body',
+        // Welche Überschriften einbezogen werden (h2 und h3 zum Beispiel)
+        headingSelector: 'h1, h2, h3'
+    });
+</script>
 </body>
 </html>
