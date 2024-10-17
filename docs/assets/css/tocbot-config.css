@@ -1,6 +1,6 @@
 
-/*.toc>.toc-list{overflow:hidden;position:relative}
-.toc>.toc-list li{list-style:none}*/
+/*.toc>.toc-list{overflow:hidden;position:relative} */
+.toc>.toc-list li{list-style:none}
 .toc-list{margin:0;padding-left:10px}
 /*
 a.toc-link{color:currentColor;height:100%}
