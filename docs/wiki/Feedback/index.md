@@ -4,9 +4,9 @@ Mit dem Feedback-Eingabefeld können für Fragen Musterlösungen zu den Beispiel
 und Tipps, die während der Aktivitäts-Ausführung angezeigt werden, definiert werden.
 
 ### Öffnen des Feedback-Dialoges über die Toolbar-Leiste
-![img.png](img.png)
-dabei öffnet sich ein Dialog, in dem die Musterlösung und die Tipps eingegeben werden können.
-![img_1.png](img_1.png)
+![img.png](img.png)<br>
+Dabei öffnet sich ein Dialog, in dem die Musterlösung und die Tipps eingegeben werden können.
+![img_1.png](img_1.png)<br>
 Das Einfügen von Bildern und die Verwendung von Plugins ist wie bei der Eingabe des Fragetextes möglich.
 
 ## Syntax
