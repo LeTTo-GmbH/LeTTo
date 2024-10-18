@@ -6,7 +6,7 @@ Hiermit kann die Authentifikation an einem Active-Directory oder an einem LDAP-S
 
 ###  Folgende Daten müssen für die Authentifikation eingestellt und bekannt sein 
 * Ist die Active-Directory-ID bei einem Benutzer nicht gesetzt muss der **Login-Bezeichner von Letto als Benutzername am LDAP** existieren.
-<br>![ClipCapIt-190121-192228.PNG](ClipCapIt-190121-192228.PNG)
+<br><img src="ClipCapIt-190121-192228.PNG" width="500px"/>
 * Sind Login-Bezeichner von Letto und Benutzername am LDAP unterschiedlich, so muss der **Benutzername von LDAP als Active-Directory-ID** beim Benutzer angegeben werden. Dies kann beim [Datenimport](../Datenimport/index.md) über den Button "AD-User" für alle Lehrer automatisch importiert werden oder in der [Benutzer](../Benutzer/index.md)einstellung eingestellt werden.
 * IP-Adresse oder DNS-Name des LDAP/AD-Servers
 * ldap URL, gegebenenfalls mit verwendetem Port
@@ -26,7 +26,7 @@ Aktuell werden **4 verschieden Varianten des Login-Vorgangs** (AD-Login, LDAP-Lo
 Die Login-Varianten AD-Login, LDAP-Login(KS) und LDAP-Login(old) werden in zukünftigen Versionen entfernt werden, 
 da sie nur noch aus Kompatibilitätsgründen vorhanden sind. Für aktuelle und neue Installationen sollte die vierte Variante **LDAP-Login** 
 einen korrekten Login liefern.
-<br>![ClipCapIt-190121-194521.PNG](ClipCapIt-190121-194521.PNG)<br>
+<br><img src="ClipCapIt-190121-194521.PNG" width="800px"/><br>
 Nach einem erfolgreichen Login im AD-Test wird das erfolgreiche Login-Verfahren für alle weiteren 
 Logins gespeichert.
 
@@ -37,7 +37,8 @@ gespeichert werden.
 * Am LeTTo-Server als globaler Administrator(Rolle "global")
 * Im Menüpunkt "ADMIN globale Konfiguration"
 * Die 4 Parameter welche oben gesetzt worden sind dort dementsprechend eintragen.
-<img src="img.png" width="500px"/><br><img src="img_1.png" width="500px"/>
+<br><img src="img.png" width="800px"/>
+<br><img src="img_1.png" width="800px"/>
 
 
  
