@@ -15,7 +15,7 @@
 
 * [PDF](../PDF/index.md)
 
-* [Reife- und Diplomprüfungsfragen](../Reife- und Diplomprüfungsfragen/index.md)
+* [Reife- und Diplomprüfungsfragen](../Reife-undDiplomprüfungsfragen/index.md)
 
 * [Suche von Fragen in der Fragensammlung](../Suche von Fragen in der Fragensammlung/index.md)
 

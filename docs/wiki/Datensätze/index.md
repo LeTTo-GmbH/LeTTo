@@ -33,7 +33,7 @@ Sie können in der Angabe auch auf alle Berechnungsschritte des Lösungswegs zug
 Mit folgender Definition wird nun die Formel in der Angabe korrekt referenziert:
   {=:erg}
 
-Wenn nach der geschwungenen Klammer ein Istgleichzeichen folgt, dann wird kein Datensatz zum Einsetzen verwendet, sondern ein Berechnungsschritt aus der Lösungsdefinition. Die [Funktion#parser-funktionen-](../Funktionen#parser-funktionen-/index.md#parser-funktionen-) **noopt** dient dazu, dass eine Formel nicht vereinfacht wird und unverändert übernommen wird.
+Wenn nach der geschwungenen Klammer ein Istgleichzeichen folgt, dann wird kein Datensatz zum Einsetzen verwendet, sondern ein Berechnungsschritt aus der Lösungsdefinition. Die [Funktion](../Funktionen/index.md) **noopt** dient dazu, dass eine Formel nicht vereinfacht wird und unverändert übernommen wird.
 
 Der Doppelpunkt bewirkt, dass beim Einsetzen der Werte keine weiteren Vereinfachungen bzw. Berechnungen erfolgen.
 * {=2+3} liefert in der Angabe den Wert 5

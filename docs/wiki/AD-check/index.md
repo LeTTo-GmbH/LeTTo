@@ -14,13 +14,31 @@ Hiermit kann die Authentifikation an einem Active-Directory oder an einem LDAP-S
 * notwendige Parameter für die Konfiguration des LDAP-Strings
 
 ###  Prüfen der Einstellungen 
-Durch den Button "Test Active-Directory" wird die Authentifikation des Benutzers "User" mit den angegebenen Konfigurationseinstellungen geprüft. Hierzu muss als "**User**" ein Benutzer angegeben werden, welcher am **LDAP/AD-Server** existiert. Es ist für diese Prüfung nicht notwendig, dass der Benutzer auch als Letto-User existiert.
+Durch den Button "Test Active-Directory" wird die Authentifikation des Benutzers "User" mit den angegebenen Konfigurationseinstellungen geprüft. 
+Hierzu muss als "**User**" ein Benutzer angegeben werden, welcher am **LDAP/AD-Server** existiert. 
+Es ist für diese Prüfung nicht notwendig, dass der Benutzer auch als Letto-User existiert.
 
 Ob die Prüfung erfolgreich war wird rot und fett angegeben.
 
-Unterhalb sieht werden die Logmeldungen zu dem Login angegeben, um die Fehlersuche zu erleichtern.
+Unterhalb werden die Logmeldungen zu dem Login angegeben, um die Fehlersuche zu erleichtern.
 
-Aktuell werden **4 verschieden Varianten des Login-Vorgangs** (AD-Login, LDAP-Login(KS), LDAP-Login(old), LDAP-Login) durchprobiert. Die Login-Varianten AD-Login, LDAP-Login(KS) und LDAP-Login(old) werden in zukünftigen Versionen entfernt werden, da sie nur noch aus Kompatibilitätsgründen vorhanden sind. Für aktuelle und neue Installationen sollte die vierte Variante **LDAP-Login** einen korrekten Login liefern.
-<br>![ClipCapIt-190121-194521.PNG](ClipCapIt-190121-194521.PNG)
+Aktuell werden **4 verschieden Varianten des Login-Vorgangs** (AD-Login, LDAP-Login(KS), LDAP-Login(old), LDAP-Login) durchprobiert. 
+Die Login-Varianten AD-Login, LDAP-Login(KS) und LDAP-Login(old) werden in zukünftigen Versionen entfernt werden, 
+da sie nur noch aus Kompatibilitätsgründen vorhanden sind. Für aktuelle und neue Installationen sollte die vierte Variante **LDAP-Login** 
+einen korrekten Login liefern.
+<br>![ClipCapIt-190121-194521.PNG](ClipCapIt-190121-194521.PNG)<br>
+Nach einem erfolgreichen Login im AD-Test wird das erfolgreiche Login-Verfahren für alle weiteren 
+Logins gespeichert.
 
-###  Bekannte funktionierende Konfigurationen 
+Die Konfiguration welche eingestellt wurde muss anschließend noch in der globalen Konfiguration 
+gespeichert werden.
+
+### Speichern der Konfiguration in der globalen Konfiguration
+* Am LeTTo-Server als globaler Administrator(Rolle "global")
+* Im Menüpunkt "ADMIN globale Konfiguration"
+* Die 4 Parameter welche oben gesetzt worden sind dort dementsprechend eintragen.
+<img src="img.png" width="500px"/><br><img src="img_1.png" width="500px"/>
+
+
+ 
+

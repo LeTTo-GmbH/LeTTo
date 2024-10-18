@@ -4,11 +4,11 @@
 Kategorien und Hauptthemen sind Synonyme für einen Ordner, wie er in einem Dateisystem verwendet wird. In Letto wird für einen Ordner häufig auch der Begriff **Kategorie verwendet**, da in vielen Learn-Management-Systemen dieser Begriff üblich ist.
 
 ### Ordner-Baum
-<br>![Ordnerverwaltung.png](Ordnerverwaltung.png)
+<br>![Ordnerverwaltung](284px-Ordnerverwaltung.png)
 Die Themenliste dient als Basis für die Organisation der Fragesammlung. Sie ist als Baum aufgebaut und kann ähnlich dem Ordnerbaum im Explorer durchsucht werden.
 
 Die oberste Ordnerebene enthält die Hauptthemen, die nur vom Administrator angelegt werden können, um "Datenwildwuchs" zu verhindern. Innerhalb eines Hauptthemas  kann jeder Lehrer einen Unterordner mit seinem Loginnamen anlegen. 
-<br>![Userordner.png](Userordner.png)Innerhalb dieses Ordners kann jeder Lehrer seine eigene Ordnerstruktur mit Kategorien anlegen und hat in seinem Bereich alle Rechte.
+<br>![Userordner](img.png)Innerhalb dieses Ordners kann jeder Lehrer seine eigene Ordnerstruktur mit Kategorien anlegen und hat in seinem Bereich alle Rechte.
 Der Administrator kann auch '''[Globale Kategorien](../GlobaleKategorien/index.md)''' einfügen. Diese können als gemeinsame Ordner für mehrere Benutzer dienen, wenn der Administrator diesen Benutzern die entsprechenden Rechte zugewiesen hat.
 
 **Tipp zur Navigation:** Verwenden Sie bitte zum raschen Navigieren durch die Ordnerstruktur die **kleinen Dreiecke** ![15px-ClipCapIt-180618-205507.PNG](15px-ClipCapIt-180618-205507.PNG) auf der linken Seite jedes Ordners! Damit werden Order auf- und zugeklappt, ohne dass auf die Datenbank zugegriffen werden muss, was die Reaktionszeiten verkürzt.
@@ -20,7 +20,7 @@ Innerhalb eines eigenen Ordners hat jeder Lehrer volle Kontrolle über seine Dat
 Jeder Lehrer kann aber Kollegen das Recht geben, innerhalb eines Ordners Beispiele zu **ändern**, zu **löschen** oder neue Beispiele **eizufügen**. (Kontext-Menü =&gt; 
 
 #### Kontext-Menü
-<br>![Kontextmenü.png](Kontextmenü.png)
+<br>![Kontextmenu](img_1.png)
 Das Kontext-Menü kann immer mit der rechten Maustaste geöffnet werden. Folgende Optionen stehen zur Verfügung:
 * Ausschneiden (CTRL-X): Kategorie wird vorgemerkt zum späteren Verschieben
 * Einfügen (CTRL-V): Einfügen von Daten aus der Zwischenablage. Eingefügt oder verschoben werden Fragen oder Kategorien
