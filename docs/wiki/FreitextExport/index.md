@@ -16,6 +16,12 @@ Einstellungen öffnen: ![img.png](img.png)<br>
 Im Konfigurations-Dialog auf dem 2. Tab den AI-Token eintragen:<br>
 ![img_1.png](img_1.png)
 
+## Definition Angabe für KI / Musterlösungen
+Für die Angabe der Teilfragen wird der Fragetext herangezogen und automatisch in das DTo eingebunden.
+
+Für die Definition der Musterlösungen sollte das Feedback-Feld für Fragen verwendet werden: siehe [Feedback von Fragen](../Feedback/index.md)
+
+
 ## Export der Freitextfragen
 Wenn ein Token für die Verwendung der KI hinterlegt wurde, dann ist im Kontext-Menü von Aktivitäten 
 ein Eintrag zum ***Laden aller Eingaben auf Freitextfragen*** verfügbar.<br>
@@ -25,7 +31,6 @@ Alle Freitext-Antworten werden lt. untenstehender Schnittstellendefinition als J
 angezeigt. Der JSON-Text kann mit CTRL-A + CTRL-C in die Zwischenablage zur weiteren Verwendung 
 kopiert werden.<br>
 ![img_3.png](img_3.png)
-
 
 ## Schnittstelle 
 
