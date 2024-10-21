@@ -70,7 +70,16 @@ Ist diese Checkbox ausgewählt, dann wird beim Berechnen der Symbolischen Lösun
 Siehe auch [[Berechnungen]]!
 
 ====&lt;span id="cbSymbolisch"&gt;&lt;/span&gt;Checkbox Symbolisch====
-Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.
+Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt,
+wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet,
+wenn sie mit einer Gleitkommazahl verrechnet werden.<br>
+Auch mathematische Funktionen werden dann nicht ausgewertet und bleiben als Formel bestehen,
+wenn eine Ganzzahl als Parameter vorkommt und das Ergebnis keine Ganzzahl ist.
+
+Beispiel:
+* sqrt(13) bleibt als Funktion sqrt(13) bestehen
+* sqrt(16) wird zu 4 ausgewertet.
+
 
 =Datensätze=
 Siehe [[Datensätze definieren#Erstellung / Änderung über den Datensatz-Bereich|Datensätze definieren]]
