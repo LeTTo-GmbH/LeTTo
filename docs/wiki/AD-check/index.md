@@ -1,4 +1,5 @@
 # AD-check
+zurück zur [Konfiguration von AD/LDAP im Setup-Service]("../../../../howto/admin/active-directory-ldap/index.md)
 ## Allgemeines
 Hiermit kann die Authentifikation an einem Active-Directory oder an einem LDAP-Server konfiguriert und getestet werden.
 
@@ -36,7 +37,7 @@ gespeichert werden.
 ### Speichern der Konfiguration in der globalen Konfiguration
 * Am LeTTo-Server als globaler Administrator(Rolle "global")
 * Im Menüpunkt "ADMIN globale Konfiguration"
-* Die 4 Parameter welche oben gesetzt worden sind dort dementsprechend eintragen.
+* Die 4 Parameter welche beim AD-Check (oben beschrieben) gesetzt worden sind, sind dort dementsprechend einzutragen.
 <br><img src="img.png" width="800px"/>
 <br><img src="img_1.png" width="800px"/>
 

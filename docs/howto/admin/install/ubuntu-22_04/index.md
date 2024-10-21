@@ -28,7 +28,14 @@ als root
 wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh
 bash ./install-letto-ubuntu-docker.sh
 </pre>
-* Verbinde über den Browser mit '''https://ipadresse:3096/config''' <br>![img_4.png](img_4.png)
-* Nun sollten alle notwendigen Docker-Container heruntergeladen und installiert werden <br>![img_5.png](img_5.png)
-* Warten bis die Zeit nicht mehr nach oben zählt und dann auf "Refresh"
+## Erstkonfiguration im Setup-Service
+* Verbinden sie sich über den Browser mit '''https://ipadresse:3096/config''' und füllen sie das Formular mit ihren Daten aus. <br>![img_4.png](img_4.png)
+  * Der Server muss mit https über den angegebnen DNS-Namen von Schülern und Lehrern erreichbar sein
+  * Wird später ein Lets-Encrypt-Zertifikat verwendet muss der Server auch vom Internet über http und https auf dem DNS-Namen erreichbar sein!
+* Danach sollten alle notwendigen Docker-Container automatisch heruntergeladen und installiert werden <br>![img_5.png](img_5.png)
+* Warten sie bis die Zeit nicht mehr nach oben zählt und drücken sie dann auf "Refresh"
 * Nun sollte ein weiterer Login angefordert werden und dann das Setup in etwa so aussehen: <br>![img_6.png](img_6.png)
+* Ab jetzt ist das Setup-Service direkt über https://dns-name-des-servers/config erreichbar
+
+# Installation einer Schule
+weiter zur [Installation einer Schule](../schulinstallation/index.md)
