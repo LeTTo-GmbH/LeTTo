@@ -52,16 +52,16 @@ Plugin-Definition auskennen.
 [//]: # (Der Scroller ![40px-ClipCapIt-180831-204926.PNG]&#40;40px-ClipCapIt-180831-204926.PNG&#41; neben dem Eingabefeld dient zum Durchlaufen von allen definierten [Datensätzen]&#40;../Datensätze/index.md&#41; und zeigt die Änderungen der Grafiken an, wenn der Cursor auf einem [Plugin-Grafik-Tag#spezielle-tags-im-fragentext-]&#40;../EditorfürdenAngabetext#spezielle-tags-im-fragentext-/index.md#spezielle-tags-im-fragentext-&#41; [PIG...]&#40;PIG...&#41; im [Editor für den Angabetext]&#40;../EditorfürdenAngabetext/index.md&#41; steht.)
 
 ## Beurteilungsbereich
-##### Punkte ####
+#### Punkte ####
 Punkte, die bei richtiger Beantwortung der Frage für die gesamte Frage maximal vergeben werden können. 
 Bei Mehrfachberechnungsfragen ist dieses Feld gesperrt und die Punkteanzahl wird automatisch als 
 Gesamtpunktezahl aus allen Teilfragen berechnet.
 
-##### Penalty ####
+#### Penalty ####
 Abzug, der bei einer falschen Beantwortung im [Rechenübungs- oder Hausübungmodus](../Online-Tests/index.md#testart) pro Versuch 
 abgezogen wird.
 
-##### EinheitenFehler ####
+#### EinheitenFehler ####
 Im Feld "EH-Fehler" wird ein Faktor angeben, der von den Punkten der richtigen Lösung abgezogen wird, 
 wenn die Einheit falsch angegeben wurde.
 
@@ -76,14 +76,20 @@ Gibt der Schüler einen falschen Einheitenvorsatz wie 0.2mA an, so erhält er ke
 
 Siehe auch [Einheiten](../Einheit/index.md), [Einheiteneinstellungen](../Online-Tests/index.md#einheiteneinstellungen)!
 
-##### Checkbox Parser ####
+#### Checkbox Parser ####
 Ist diese Checkbox ausgewählt, dann wird beim Berechnen der symbolischen Lösung für das Ergebnis der Frage und 
 allen Teilfragen nicht [Maxima](../Berechnungen#berechnung-mit-maxima-/index.md#berechnung-mit-maxima-), sondern der [Interne Parser](../Berechnungen#berechnung-mit-dem-internen-parser-/index.md#berechnung-mit-dem-internen-parser-) verwendet.
 
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
-##### Checkbox Symbolisch ####
-Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.
+#### Checkbox Symbolisch ####
+Ist diese Checkbox ausgewählt, dann werden beim Berechnen der Lösung mathematische Konstanten nur dann eingesetzt, wenn sie mit einer Gleitkommazahl verrechnet werden. Weiters werden Berechnungen mit Ganzzahlen nur dann als Gleitkommazahl ausgerechnet, wenn sie mit einer Gleitkommazahl verrechnet werden.<br>
+Auch mathematische Funktionen werden dann nicht ausgewertet und bleiben als Formel bestehen,
+wenn eine Ganzzahl als Parameter vorkommt und das Ergebnis keine Ganzzahl ist.
+
+Beispiel:
+* sqrt(13) bleibt als Funktion sqrt(13) bestehen
+* sqrt(16) wird zu 4 ausgewertet.
 
 ## Variable / Datensätze
 Siehe [Variable / Datensätze definieren](../Datensätzedefinieren/index.md#erstellung---änderung-über-den-datensatz-bereich)
