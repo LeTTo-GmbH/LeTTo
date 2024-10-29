@@ -38,3 +38,10 @@ Wenn die Reihenfolge der Zahlenangaben nicht bekannt ist, dann kann durch
 eine Syntax gewählt werden, wo die Reihenfolge keinen Einfluss hat.
 
 Diese Parameter sind optional!
+
+
+### KI-Beurteilungs-Grundlagen pro Teilfrage
+
+* `[Qx, ai]` Text, der die Anweisungen an die KI enthält, wie die Teilfrage zu beurteilen ist.
+
+

@@ -41,6 +41,8 @@ kopiert werden.<br>
 public class OpenAiFreitextInput {
     /** Lizenz-Key zur Nutzung des AI-Services */
     private String aiKey = "";
+    /** Allgemeine Angaben, wie AI die Beurteilung vornehmen soll */
+    private String aiFeedback = "";
     /** ID des Tests, von dem die Antworten kommen */
     private int idTest;
     /** Bezeichnung des Tests */
@@ -75,6 +77,8 @@ public class OpenAiSubQuestion {
     private String angabe;
     /** Korrekte Lösung zum Vergleich */
     private String korrekteLoesung;
+    /** Text, der die Anweisungen an die KI enthält, wie die Teilfrage zu beurteilen ist */
+    private String beurteilungsAnweisung;
     /** Schülereingaben zu dieser Teilfrage */
     private List<OpenAiStudentInput> inputs;
 }
