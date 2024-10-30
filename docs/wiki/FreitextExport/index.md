@@ -71,6 +71,8 @@ public class OpenAiQuestion {
  * DTO für Teilfrage: Angabe, Musterlösung und alle Schülerinputs dazu
  */
 public class OpenAiSubQuestion {
+    /** ID der Teilfrage */
+    private int idSq;
     /** Name der Teilfrage */
     private String sqName;
     /** Angabetext zu dieser Teilfrage */
