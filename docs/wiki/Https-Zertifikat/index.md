@@ -51,7 +51,7 @@ Anmerkung: wird CREATE_HTTPS von 1 auf 0 geändert, könnte danach die Datei htt
   /opt/letto/docker/cert/cert.crt
   /opt/letto/docker/cert/cert.key
 * Setzen sie in der .env-Datei die Variable **CERT_EXTERN=1**
-  CERT_EXTERN=1
+  <pre>CERT_EXTERN=1</pre>
 * Restarten sie den letto-proxy mit "RESTART" bei "LeTTo Docker" im Setup-Service oder aus der Linux Kommandozeile wie oben beschrieben
 
 ##  Verwendung eines externen Reverse-Proxy welcher das https-Zertifikat verwaltet 
