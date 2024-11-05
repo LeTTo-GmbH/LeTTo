@@ -1,20 +1,25 @@
 # Online-Tests
-Unter Tests oder Online-Tests versteht man in LeTTo jedwede mögliche elektronische Aufgabenstellung, die auch teilweise automatisch von System korrigierbar ist. **Tests** im Sprachgebrauch von LeTTo umfassen also nicht nur Tests im herkömmlichen Sinn, sondern alle möglichen Beurteilungsformen wie Hausübungen, Mitarbeitskontrollen, Schularbeiten, Rechenübungen etc.
-Online-Test werden normalerweise für eine ganze Klasse zur Verfügung gestellt. Je nach Art und Konfiguration zeigen diese Onlne-Tests unterschiedliches Verhalten.
+Unter Aktivitäten (Tests) oder Online-Tests versteht man in LeTTo jedwede mögliche elektronische 
+Aufgabenstellung, die auch teilweise automatisch von System korrigierbar ist. 
+**Aktivitäten/Tests** im Sprachgebrauch von LeTTo umfassen also nicht nur Tests im herkömmlichen Sinn, 
+sondern alle möglichen Beurteilungsformen wie Hausübungen, Mitarbeitskontrollen, Schularbeiten, 
+Rechenübungen etc.
+Online-Aktivitäten werden normalerweise für eine ganze Klasse zur Verfügung gestellt. 
+Je nach Art und Konfiguration zeigen diese Onlne-Aktivitäten unterschiedliches Verhalten.
 
 Links zum [Klassenzimmer](../Klassenzimmer/index.md), zur [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)
-### Testnavigation für Lehrer
-<br>![250px-ClipCapIt-180826-115902.PNG](250px-ClipCapIt-180826-115902.PNG)
-Ist ein Test im [Klassenzimmer](../Klassenzimmer/index.md) ausgewählt worden, dann stehenen dem Lehrer folgende Links zur Navigation zur Verfügung:
+### Navigation in einer Aktivität für Lehrer
+![250px-ClipCapIt-180826-115902.PNG](250px-ClipCapIt-180826-115902.PNG)<br>
+Ist eine Aktivität im [Klassenzimmer](../Klassenzimmer/index.md) ausgewählt worden, dann stehenen dem Lehrer folgende Links zur Navigation zur Verfügung:
 * Zum Test: [Test durchführen](#test-durchführen-)
-* Testeinstellungen: [Testeinstellungen](#testeinstellungen-)
-* Fragen bearbeiten: in der [Beispielsammlung](../Beispielsammlung/index.md) können die Fragen dieses Tests geändert werden
-* Ergebnisse: [Anzeige aller Schülerergebnisse zu diesem Test](../Test-Ergebnisse/index.md)
-* Test Beenden: [Zentrales_Beenden](#zentrales-beenden-) 
+* Testeinstellungen: [Testeinstellungen](#testeinstellungen)
+* Fragen bearbeiten: In der [Beispielsammlung](../Beispielsammlung/index.md) können die Fragen dieser Aktivität geändert werden
+* Ergebnisse: [Anzeige aller Schülerergebnisse zu dieser Aktivität](../Test-Ergebnisse/index.md)
+* Test Beenden: [Zentrales Beenden](#zentrales-beenden) 
 
 Diese Box mit der Testnavigation ist solange sichtbar, bis der Test wieder verlassen wird.
 
-### Testeinstellungen
+### Testeinstellungen ###
 <br>![600px-ClipCapIt-210107-133621.PNG](600px-ClipCapIt-210107-133621.PNG)
 Unter dem Begriff TEST wird im Folgenden jede Online-Aktivität verstanden - also nicht nur Test an sich sondern auch SMÜ, HÜ etc.
 #### Testart
@@ -96,9 +101,8 @@ Abzug: Legt fest, wieviele Prozent bei einer fehlerhaften Einheit abgezogen werd
 
 Globale Einheitenkonfiguration: Es werden nicht die Testeinstellungen, sondern der global definierte Umgang mit Einheiten verwendet.
 
-### Test durchführen
-#### &lt;span id="Test starten"&gt;Test starten
-<br>![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)
+### Test durchführen ###
+<br>![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)<br>
 Durch Anklicken eines Online-Tests im [Klassenzimmer](../Klassenzimmer/index.md) wird der Tests zum Start vorbereitet.
 Ist der Test verfügbar (siehe auch [Testeinstellungen](#testeinstellungen-)) und noch nicht gestartet, dann kann ein Testversuch mit **Test starten** begonnen werden.
 
