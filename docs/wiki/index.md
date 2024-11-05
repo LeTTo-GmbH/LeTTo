@@ -98,7 +98,7 @@
 * [Lehrpläne](Lehrpläne/index.md)
 * [Letthub/letto-setup](Letthub_letto-setup/index.md)
 * [Letthub/setup](Letthub_setup/index.md)
-* [LettoViewsBeurteilungBeurteilungenAllUsers.xhtml](LettoViewsBeurteilungBeurteilungenAllUsers.xhtml/index.md)
+* [LettoViewsBeurteilungBeurteilungenAllUsers.xhtml](LeistungsUebersicht/index.md)
 * [Lettohub/letto-mysql](Lettohub_letto-mysql/index.md)
 * [Lettohub/letto-proxy](Lettohub_letto-proxy/index.md)
 * [Lettohub/letto-service-data](Lettohub_letto-service-data/index.md)
