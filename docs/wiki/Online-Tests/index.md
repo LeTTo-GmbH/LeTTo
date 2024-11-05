@@ -145,16 +145,25 @@ Mit **Test abgeben** wird der Test endgültig abgegeben, es sind dann keine Änd
 
 Mit **Test fortsetzten** kann man zurück zur Testbearbeitung wechseln.
 
-### Test-Ergebnisse
+## Aktivitäts-Ergebnisse
+### Ergebnisse für Schüler
+Nach Abgabe der Aktivität bekommt der Schüler eine Rückmeldung, abhängig vom Status des Tests:
+* In den Testeinstellungen kann konfiguriert sein, dass der Schüler keine Rückmeldung bekommt, sondern erst nach dem Schließen der Aktivität durch den Lehrer
+* Der Standardfall ist, dass der Schüler ein Gesamtergebnis angezeigt bekommt, wie in untenstehender Abbildung:<br>
+![img_1.png](img_1.png)<br>
+* Bis zum Freigeben der Aktivität durch den Lehrer durch [Test beenden](#test-beenden) werden dem Schüler keine Ergebnisse angezeigt.
+* War jedoch während der Laufzeit der ***Prüfen-Button*** verfügbar, dann sieht der Schüler die eingebenen Werte (aber keine korrekten Lösungen), andernfalls hat der Schüler keinen Zugriff auf die Testfragen, bis die Aktivität beendet wurde. 
+
+### Ergebnisse für Lehrer
 Siehe [Test-Ergebnisse](../Test-Ergebnisse/index.md)
 
 ### Zentrales Beenden
 Tests können zentral vom Lehrer geschlossen werden:
 <br>![500px-ClipCapIt-180826-102441.PNG](500px-ClipCapIt-180826-102441.PNG)
-#### Test schliessen
-Mit dem Button **Test schliessen** wird in den Testeinstellungen der betreffende Test als geschlossen markiert. Neue Testversuche können dann von Schülern nicht mehr geöffnet oder fortgesetzt (bspw. nach Focusverlust) werden. Die vom Schüler zur Laufzeit aktuell bearbeiteten Beispiele können aber noch gespeichert werden.
+#### Test schließen
+Mit dem Button **Test schließen** wird in den Testeinstellungen der betreffende Test als geschlossen markiert. Neue Testversuche können dann von Schülern nicht mehr geöffnet oder fortgesetzt (bspw. nach Focusverlust) werden. Die vom Schüler zur Laufzeit aktuell bearbeiteten Beispiele können aber noch gespeichert werden.
 
-Direkt nach dem Schliessen des Tests sind die korrekten Ergebnisse für jene Schüler sichtbar, welche bereits abgegeben haben und somit sind die korrekten Lösungen auch sichtbar.
+Direkt nach dem Schließen des Tests sind die korrekten Ergebnisse für jene Schüler sichtbar, welche bereits abgegeben haben und somit sind die korrekten Lösungen auch sichtbar.
 
 #### Zentrales Beenden des Tests
 Dies ist die schärfere Version des Test-Beendens. Alle Testversuche werden SOFORT geschlossen und auch beurteilt. Nach dem zentralen Beenden des Test werden clientseitige Eingaben der Schüler nicht mehr am Server gespeichert! Daher bitte nur nach vorheriger Ankündigung verwenden, da die aktuellen Eingaben nicht mehr übernommen werden! Es kommt durch den Klick auf den Button Nächste Frage, durch die direkte Beispielwahl des Schülers sowie der manuellen Testabgabe des Schülers zur Speicherung der Schülerlösungen am Server. 
