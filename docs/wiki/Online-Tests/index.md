@@ -69,7 +69,7 @@ Für jeden fehlerhaften Versuch werden Punkte abgezogen. Der Abzug wird in der F
 **Achtung:** Wenn Sie die Gruppenanzahl verkleinern, dann gehen die Beispiele in gelöschten Gruppen verloren!
 
 #### Gruppierung
-<br>![200px-ClipCapIt-180826-110327.PNG](200px-ClipCapIt-180826-110327.PNG)
+<br>![200px-ClipCapIt-180826-110327.PNG](200px-ClipCapIt-180826-110327.PNG)<br>
 Über Gruppierung können mehrer Tests zu einer Gruppe von Tests zusammengefasst werden, wobei immer nur der beste Testversuch im [Katalog](../Katalog/index.md) aufscheint und bewertet wird. Anwendung der Gruppierung bei Nachtests, Nachschularbeiten oder Prüfungen, die nach einer Abwesenheit für den versäumten Test durchgeführt werden.
 
 Im angezeigten Dialog sehen Sie alle weiteren Online-Tests, die dieser Aktivität zugeordnet sind. 
@@ -77,11 +77,9 @@ Mit der nebenstehenden Auswahlliste können Sie diesen Test einem anderen Test z
 
 #### Bereiche
 Es können Bereiche eines Tests definiert werden. Bspw. ist die Englisch-sRDP in mehrere Bereiche gegliedert. 
-<br>![270px-ClipCapIt-210107-174342.PNG](270px-ClipCapIt-210107-174342.PNG)
+<br>![270px-ClipCapIt-210107-174342.PNG](270px-ClipCapIt-210107-174342.PNG)<br>
 Diese Bereiche erlauben einen Test als einzelnen Test zu verwalten und durchzuführen. Die Testauswertung erfolgt seitens von LeTTo seperat für die einzelnen definierten Bereiche.
-
-<br>![100px-ClipCapIt-210107-174037.PNG](100px-ClipCapIt-210107-174037.PNG)
-
+<br>![100px-ClipCapIt-210107-174037.PNG](100px-ClipCapIt-210107-174037.PNG)<br>
 
 #### Zeitbegrenzung
 Mit Start und Stop können Sie festlegen, wann der Test verfügbar sein soll. Werden beide Optionen (Start und Stop) aktiviert, dann ist der Test für die Schüler nur in diesem Zeitintervall sichtbar/verfügbar und kann somit nur in diesem Zeitintervall gestartet werden. 
@@ -102,31 +100,31 @@ Abzug: Legt fest, wieviele Prozent bei einer fehlerhaften Einheit abgezogen werd
 Globale Einheitenkonfiguration: Es werden nicht die Testeinstellungen, sondern der global definierte Umgang mit Einheiten verwendet.
 
 ### Test durchführen ###
-<br>![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)<br>
+![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)<br>
 Durch Anklicken eines Online-Tests im [Klassenzimmer](../Klassenzimmer/index.md) wird der Tests zum Start vorbereitet.
 Ist der Test verfügbar (siehe auch [Testeinstellungen](#testeinstellungen-)) und noch nicht gestartet, dann kann ein Testversuch mit **Test starten** begonnen werden.
 
 Beim Starten des Tests werden die Zahlenwerte aller [Variablen](../Datensätze/index.md) von Berechnungsbeispielen festgelegt. **Achtung:** Diese Zahlenwerte können NICHT mehr geändert werden, da sonst die Schülerergebnisse nicht mehr zur Angabe passen würden. Fehler in Beispielen, die schon in gestarteten Test bemerkt werden, können geändert werden (vor allem math. Fehler), ausser Fehler die bei der Datensatz-Definition gemacht wurden!
 
-<br>![220px-ClipCapIt-180826-090304.PNG](220px-ClipCapIt-180826-090304.PNG)
+![220px-ClipCapIt-180826-090304.PNG](220px-ClipCapIt-180826-090304.PNG)<br>
 Tests können jederzeit unterbrochen werden. Ist ein Testversuch noch nicht beendet, dann kann er später fortgesetzt werden.
 
 In nebenstehender Abbildung ist ein Versuch eines Lehrers dargestellt. Lehrerversuche können mit dem x-Löschen-Button wieder entfernt werden. Für Schüler ist ein Löschen von Testversuchen nicht möglich.
 
-#### &lt;span id="Test nicht verfügbar"&gt;Test nicht verfügbar
+#### Test nicht verfügbar ####
 In der [Tests#testeinstellungen-](/notimplemented/index.md) kann festgelegt werden, zu welchen Zeitpunkten ein Test ausgeführt werden darf. Ist das Öffnen eines bereits begonnenen Testversuchts nicht mehr erlaubt, dann erscheint am Bildschirm folgende Meldung:
-<br>![400px-ClipCapIt-180826-091425.PNG](400px-ClipCapIt-180826-091425.PNG)
-
+<br>
+![img.png](img.png)<br>
 Angezeigt wird auch der Zeitraum, in dem die Testbearbeitung erlaubt war.
 
-#### &lt;span id="Testfragen"&gt;Testfragen
-<br>![200px-ClipCapIt-180826-091941.PNG](200px-ClipCapIt-180826-091941.PNG)
+#### Testfragen ####
+![200px-ClipCapIt-180826-091941.PNG](200px-ClipCapIt-180826-091941.PNG)<br>
 Wurde der Testversuch gestartet, dann ist im [Navigationsbereich](../LeTTo-Hauptansicht/index.md#navigation) auf der linken Seite eine Box mit **Fragenauswahl** zu sehen. 
 
 **Naviagation innerhalb des Tests**
 In der Fragenauswahl sind alle Beispiele dieses Tests durch Beispielnummern angeführt. Jedes Beispiel kann durch Klick auf die entsprechende Beispielnummer ausgewählt und angezeigt werden. Wird ein anderes Beispiel gewählt, dann werden alle Eingaben automatisch zwischengespeichert.
 
-<br>![300px-ClipCapIt-180826-092107.PNG](300px-ClipCapIt-180826-092107.PNG)
+![300px-ClipCapIt-180826-092107.PNG](300px-ClipCapIt-180826-092107.PNG)<br>
 Je nach [Testeinstellung](#testeinstellung-) sind Testfragen während der Testausführung kontrollierbar oder nicht. Im Modus 'Test' kann der Schüler die Eingaben natürlich nicht kontrollieren, am Ende des Beispiels ist nur der Button **Nächste Frage** eingeblendet.
 Im Modus **Hausübung** oder **Rechenübung** wird ein weiterer Button **Prüfen** angezeigt, mit dem die Eingabe auf Richtigkeit geprüft werden kann.
 
@@ -138,7 +136,7 @@ In der **Fragenauswahl** werden Fragen, die bereits beantwortet, aber noch nicht
 * hellgrün: richtig
 * Die Farben kräftiger bedeuten, dass der Lehrer das Ergebnis manuell und nachträglich geändert hat.
 
-#### &lt;span id="Test beenden"&gt;Test beenden
+#### Test beenden
 Vor der Abgabe eines Tests bekommt der Schüler noch eine Rückmeldung, ob alle Fragen beantwortet wurden. Sollten irrtümlich Fragen vergessen worden sein, dann kann man mit den entsprechenden Buttons neben den Fragen wieder zur Fragebeantwortung wechseln.
 
 <br>![200px-ClipCapIt-180826-102302.PNG](200px-ClipCapIt-180826-102302.PNG)
