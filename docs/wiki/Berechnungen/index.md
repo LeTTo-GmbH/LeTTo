@@ -196,6 +196,13 @@ Liste der definierten Konstanten:
 | mod       | Mathematische Implementierung von [modulo](https://de.wikipedia.org/wiki/Division_mit_Rest#Modulo): Divisionsrest einer Division mit ganzzahligem Ergebnis                                                                                                                                                                                                                                              | mod(5,2) <br> mod(6.2,2.5) <br> mod(-4,3)                | 1<br>1.2 <br> 2                                           |
 | mod2      | Symmetrische Implementierung von [modulo](https://de.wikipedia.org/wiki/Division_mit_Rest#Modulo): Divisionsrest einer Division mit ganzzahligem Ergebnis <br>Der Unterschied zu mod liegt in der Behandlung von negativen Zahlen des ersten Arguments <br>Siehe auch Divisionsrest des Parser-Operators % [Berechnungen arithmetische-operatoren-](../Berechnungen/index.md#arithmetische-operatoren-) | mod2(5,2) <br> mod2(6.2,2.5) <br> mod2(-4,3)             | 1<br>1.2 <br> -1                                          |
 
+#### Funktionen für Winkel im Gradmaß
+
+| Funktion  | Beschreibung                                                                                                                             | Beispiel                                                           | Ergebnis                          |
+|-----------|------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------|
+| degmix    | zerlegt einen Winkel im Bogenmaß in einen Winkel in Grad, Minuten und Sekunden in einem Vektor                                           | degmix(0.5)                                                        | &#91;28,38,52.4031239082&#93;     |
+| deg       | erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen WinkelString einen Winkel im Bogenmaß                 | deg(&#91;2,15,22&#93;) <br> deg(&quot;2°15&#39;22&#39;&#39;&quot;) | 2.25611111111°                    | 
+| degstring | erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen Winkel im Bogenmaß einen String der Winkeldarstellung | degstring(0.5)                                                     | &quot;2°15&#39;22&#39;&#39;&quot; |
 
 #### boolsche Funktionen
 
@@ -612,33 +619,33 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 | viewsqrt | Gibt Potenzen welche als Wurzel darstellbar sind auch als als Wurzeln mit der Funktion sqrt oder root aus     | viewsqrt(x^(1/2)) | sqrt(x)  |
 
 
-
 ####  Datums und Zeitfunktionen 
 
-| Funktion       | Beschreibung                                                                                                       | Beispiel | Ergebnis | REvision |
-|----------------|--------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
-| dateparse      | Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000                                           |          |          | 6530     |
-| date           | date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.000                                      |          |          | 6530     |
-| datestring     | datestring(x) datestring(x,&quot;format&quot;) erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe        |          |          | 6530     |
-| timestring     | erzeugt eine Uhrzeit als String                                                                                    |          |          | 6530     |
-| datetimestring | erzeugt Datum und Uhrzeit als String                                                                               |          |          | 6530     |
-| dateyear       | Erzeugt aus einem Datum als Ganzzahl das Jahr                                                                      |          |          | 6530     |
-| datemonth      | Erzeugt aus einem Datum als Ganzzahl das Monat                                                                     |          |          | 6530     |
-| dateday        | Erzeugt aus einem Datum als Ganzzahl den Tag                                                                       |          |          | 6530     |
-| datehour       | Erzeugt aus einem Datum als Ganzzahl die Stunde                                                                    |          |          | 6530     |
-| dateminute     | Erzeugt aus einem Datum als Ganzzahl die Minute                                                                    |          |          | 6530     |
-| datesecond     | Erzeugt aus einem Datum als Ganzzahl die Sekunde                                                                   |          |          | 6530     |
-| datediff       | Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datum. Ergebnis als Double in Sekunden |          |          | 6530     |
-| dateweekday    | Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7                                                 |          |          | 6530     |
-| dateweek       | Liefert die Kalenderwoche des Tages innerhalb des Jahres                                                           |          |          | 6530     |
-| datedayofyear  | Liefert den Tag des Jahres                                                                                         |          |          | 6530     |
-| years          | Erzeugt aus einem Sekundenwert die Jahre (/365d) als Double ohne Einheit                                           |          |          | 6530     |
-| months         | Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit                                           |          |          | 6530     |
-| weeks          | Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit                                            |          |          | 6530     |
-| days           | Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit                                                    |          |          | 6530     |
-| hours          | Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit                                                 |          |          | 6530     |
-| minutes        | Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit                                                 |          |          | 6530     |
-| seconds        | Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit                                                |          |          | 6530     |
+| Funktion       | Beschreibung                                                                                                        | Beispiel | Ergebnis | REvision |
+|----------------|---------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
+| dateparse      | Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000                                            |          |          | 6530     |
+| date           | date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.000                                       |          |          | 6530     |
+| datestring     | datestring(x) datestring(x,&quot;format&quot;) erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe |          |          | 6530     |
+| timestring     | erzeugt eine Uhrzeit als String                                                                                     |          |          | 6530     |
+| datetimestring | erzeugt Datum und Uhrzeit als String                                                                                |          |          | 6530     |
+| dateyear       | Erzeugt aus einem Datum als Ganzzahl das Jahr                                                                       |          |          | 6530     |
+| datemonth      | Erzeugt aus einem Datum als Ganzzahl das Monat                                                                      |          |          | 6530     |
+| dateday        | Erzeugt aus einem Datum als Ganzzahl den Tag                                                                        |          |          | 6530     |
+| datehour       | Erzeugt aus einem Datum als Ganzzahl die Stunde                                                                     |          |          | 6530     |
+| dateminute     | Erzeugt aus einem Datum als Ganzzahl die Minute                                                                     |          |          | 6530     |
+| datesecond     | Erzeugt aus einem Datum als Ganzzahl die Sekunde                                                                    |          |          | 6530     |
+| datemix        | Erzeugt aus einem Datumswert (Sekunden seit 1.1.00 0:00:00) einen Vektor mit Jahr,Monat,Tag,Stunde,Minute,Sekunde   |          |          | 6641     |
+| datediff       | Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datum. Ergebnis als Double in Sekunden  |          |          | 6530     |
+| dateweekday    | Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7                                                  |          |          | 6530     |
+| dateweek       | Liefert die Kalenderwoche des Tages innerhalb des Jahres                                                            |          |          | 6530     |
+| datedayofyear  | Liefert den Tag des Jahres                                                                                          |          |          | 6530     |
+| years          | Erzeugt aus einem Sekundenwert die Jahre (/365d) als Double ohne Einheit                                            |          |          | 6530     |
+| months         | Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit                                            |          |          | 6530     |
+| weeks          | Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit                                             |          |          | 6530     |
+| days           | Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit                                                     |          |          | 6530     |
+| hours          | Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit                                                  |          |          | 6530     |
+| minutes        | Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit                                                  |          |          | 6530     |
+| seconds        | Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit                                                 |          |          | 6530     |
 
 
 ####  Spezialfunktionen LeTTo 
