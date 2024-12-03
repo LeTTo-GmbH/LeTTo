@@ -156,6 +156,15 @@ Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
 ####  Funktionen 
 Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funktionsparameter als Variable vorkommen dürfen. Da diese Variablen durch Name und Einheit vorgegeben sind, ist auch eine Einheitenprüfung von Funktionen mögliche, was bei symbolischen Ausdrücken im Allgemeinen nicht möglich ist.
 
+### Parameter für den Ergebnisvergleich von Vektoren und Mengen bei der Schülereingabe
+
+* Sind durch **Strichpunkt** von der Einheit getrennt
+
+| parameter | Funktion                                                                                                     |
+|-----------|--------------------------------------------------------------------------------------------------------------|
+| set       | Vektoren werden ohne Berücksichtigung von doppelten Einträgen in beliebiger Reihenfolge als Menge verglichen |
+| multiset  | Vektoren werden ohne Berücksichtigung der Reihenfolge der Eintrag als Menge verglichen                       |
+
 ###  Muster 
 Das Muster dient vor allem bei symbolischen Auswertungen dazu, um zu definieren, wie die Lösung aussehen kann. Ist ein Muster definiert, so wird automatische mit Symbolfull ausgewertet. Hierbei wird zuerste überprüft, ob die Schülereingabe dem Suchmuster entspricht, und danach noch geprüft ob der Ausdruck des Schülers die gleiche Funktion ergibt wie der Ausdruck im Ergebnis.
 
