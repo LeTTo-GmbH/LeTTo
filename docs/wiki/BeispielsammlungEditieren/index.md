@@ -217,7 +217,7 @@ Art der Antwort:
 * Boolsch: Dieser Fragemode kann nur sinnvoll bei einer Mehrfachberechnungsfrage verwendet werden. In diesem Modus kann man die Schülereingaben anderer Teilfragen nach Eingabe durch den Parser auswerten lassen und damit Punkte vergeben. Es lassen sich somit Folgefehler von Schülern berücksichtigen und bei der Dimensionierung können Angabe-Bedingungen geprüft werden, die über die Lösung einer Teilfrage nicht eindeutig wären. Der Zugriff auf die Schülereingabe einer anderen Teilfrage erfolgt im Lösungsfeld mit der Variablen Q gefolgt von der Teilfragenummer (zB. Q1 für die Teilfrage 1)
 
 ##### <span id="sqToleranceInput">Toleranz der Antwort einer Teilfrage
-Die Toleranz, wie genau ein Schüler seine Antwort angeben muss:
+Die [Toleranz](./toleranz/index.md), wie genau ein Schüler seine Antwort angeben muss:
 * Die Toleranz ist im Normalfall eine **relative Angabe** und wird in **Prozent** angegeben
 * Wird bei der Toleranz kein Prozent angegeben, so muss der Wert zwischen 0 und 1 liegen und entspricht dann dem Prozentwert durch 100
 * Wird bei der Toleranz vor oder nach dem Wert ohne Prozentzeichen ein **a** angegeben, so wird dieser Wert als **absolute Toleranz** der Größe in SI-Einheiten interpretiert. ( z.B.: 0.1a bei einem eletrischen Strom in Ampere entspricht einer absoluten Toleranz von 0.1A ) Absolute Toleranzen sind vor allem bei Ergebnissen welche Null sind notwendig, da die Berechnung statt 0 meist eine sehr kleine Zahl berechnet, welche dann mit einer relativen Toleranz auch extrem genau eingegeben werden muss und 0 dadurch nicht im Toleranzbereich liegen kann!
