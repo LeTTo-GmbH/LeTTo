@@ -14,4 +14,5 @@
 ## Konfigurationen
 * [Active-Directory(AD) und LDAP](./active-directory-ldap/index.md)
 * [Session-Timeout konfigurieren](./session-timeout/index.md)
+* [https-Zertifikat konfigurieren](../../wiki/Https-Zertifikat/index.md)
 
