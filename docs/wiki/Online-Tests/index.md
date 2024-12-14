@@ -1,4 +1,4 @@
-# Online-Tests
+# Online-Aktivitäten
 Unter Aktivitäten (Tests) oder Online-Tests versteht man in LeTTo jedwede mögliche elektronische 
 Aufgabenstellung, die auch teilweise automatisch von System korrigierbar ist. 
 **Aktivitäten/Tests** im Sprachgebrauch von LeTTo umfassen also nicht nur Tests im herkömmlichen Sinn, 
@@ -12,7 +12,7 @@ Links zum [Klassenzimmer](../Klassenzimmer/index.md), zur [LeTTo-Hauptansicht](.
 ![250px-ClipCapIt-180826-115902.PNG](250px-ClipCapIt-180826-115902.PNG)<br>
 Ist eine Aktivität im [Klassenzimmer](../Klassenzimmer/index.md) ausgewählt worden, dann stehenen dem Lehrer folgende Links zur Navigation zur Verfügung:
 * Zum Test: [Test durchführen](#test-durchführen-)
-* Testeinstellungen: [Testeinstellungen](#testeinstellungen)
+* Testeinstellungen: [Aktivitäts-Einstellungen](#aktivitäts-einstellungen)
 * Fragen bearbeiten: In der [Beispielsammlung](../Beispielsammlung/index.md) können die Fragen dieser Aktivität geändert werden
 * Ergebnisse: [Anzeige aller Schülerergebnisse zu dieser Aktivität](../Test-Ergebnisse/index.md)
 * Test Beenden: [Zentrales Beenden](#zentrales-beenden) 
