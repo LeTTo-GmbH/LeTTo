@@ -19,85 +19,151 @@ Ist eine Aktivität im [Klassenzimmer](../Klassenzimmer/index.md) ausgewählt wo
 
 Diese Box mit der Testnavigation ist solange sichtbar, bis der Test wieder verlassen wird.
 
-### Testeinstellungen ###
-<br>![600px-ClipCapIt-210107-133621.PNG](600px-ClipCapIt-210107-133621.PNG)
-Unter dem Begriff TEST wird im Folgenden jede Online-Aktivität verstanden - also nicht nur Test an sich sondern auch SMÜ, HÜ etc.
-#### Testart
-Mit der Art des Tests wird das Verhalten zur Laufzeit des Tests festgelegt.
-Folgende Modi sind möglich:
+### Aktivitäts-Einstellungen ###
+![img_2.png](img_2.png)<br>
+Unter dem Begriff Aktivität (früher Test) wird im Folgenden jede Online-Aktivität verstanden - also nicht nur 
+ein Test an sich, sondern auch alle anderen Arten von Aufgabenstellungen wie SMÜ, HÜ etc.
+#### Art der Aktivität
+Mit der Art der Aktivität wird das Verhalten zur Laufzeit des Tests festgelegt.
+Folgende Modis sind normalerweise möglich:
 * Hausübung
 * Test
 * Rechenübung
 * Stundenwiederholung
 * Schularbeit
+* ...
 
-Bei Hausübungen und bei Rechenübungen ist die Kontrolle von Beispielen während der Testausführung möglich, um die Schüler zum korrekten Ergebnis hinzuführen. 
+Bei Hausübungen und bei Rechenübungen ist die Kontrolle von Beispielen während der Testausführung möglich, 
+um die Schüler zum korrekten Ergebnis hinzuführen.
 
-**Tipp:** Bei Rechenübungen sieht der Lehrer nach kurzer Zeit, welche Schüler noch intensiveren Betreuungsbedarf haben, während die guten Schüler selbständig arbeiten können.
+**Tipp:** Bei Rechenübungen sieht der Lehrer nach kurzer Zeit, welche Schüler noch intensiveren Betreuungsbedarf haben, 
+während die guten Schüler selbständig arbeiten können.
 
-Bei allen andern Testmodi gibt es während der Testausführung keine Rückmeldungen vom System. Die unterschiedlichen Modis sind deshalb verfügbar, um über die [Beurteilungskonfiguration](../Beurteilungskonfiguration/index.md) die unterschiedlichen Kategorien an Arbeiten unterschiedlich gewichten und beurteilen zu können. Siehe auch [Katalog](../Katalog/index.md).
+Bei allen andern Testmodis gibt es während der Testausführung keine Rückmeldungen vom System. 
+Die unterschiedlichen Modis sind deshalb verfügbar, um über die [Beurteilungskonfiguration](../Beurteilungskonfiguration/index.md) die 
+unterschiedlichen Kategorien an Arbeiten unterschiedlich gewichten und beurteilen zu können. 
+Siehe auch [Katalog](../Katalog/index.md).
 
-####  Testbezeichnung, Datum 
-Legt den Namen der Online-Aufgabenstellung und das Ausführungsdatum fest. Im [Klassenzimmer](../Klassenzimmer/index.md) wird immer die Kombination aus Testbezeichnung und Datum angezeigt. Der Systemvorschlag für den Namen kann geändert oder überschrieben werden.
+Die unterschiedlichen Modis sind von Administrator für die ganze Schule definierbar!
+
+####  Aktivitäts-Bezeichnung, Datum 
+Legt den Namen der Online-Aufgabenstellung und das Ausführungsdatum fest. Im [Klassenzimmer](../Klassenzimmer/index.md) wird immer die Kombination aus Bezeichnung und Datum angezeigt. 
+Der Systemvorschlag für den Namen kann geändert oder überschrieben werden.
+
+#### Gewichtung 
+Definition, wie stark diese Aktivität in die Gesamtbeurteilung eingehen soll.
 
 #### Sichtbarkeit
-Die Sichtbarkeit legt fest, ob der Test für SchülerInnen im [Klassenzimmer](../Klassenzimmer/index.md) verfügbar und sichtbar ist. Bei Änderung der Testart wird bei Test, Schularbeit, Stundenwiederholung die Sichtbarkeit automatisch auf unsichtbar gesetzt.
- 
-#### Abbruch bei Focusverlust
-Ist diese Option aktiviert, schließt sich ein gestarteter Test, sobald aus dem Browserfenster geklickt wird. Das bedeutet, es wird das Suchen in parallel geöffneten Dokumenten unterbunden. Abermaliges Öffnenen des Tests für SchülerInnen ist durch das Lehrpersonal möglich. Dazu muss bei laufenden Test der entsprechende Schülertest wieder geöffnet werden.
+Die Sichtbarkeit legt fest, ob der Test für SchülerInnen im [Klassenzimmer](../Klassenzimmer/index.md) verfügbar und sichtbar ist. 
+Bei Änderung der Testart wird bei Test, Schularbeit, Stundenwiederholung die Sichtbarkeit automatisch 
+auf unsichtbar gesetzt.
 
-#### Focusverlust bei Size-Änderung
-Diese Option bietet die gleiche Funktionalität wie die oben beschriebene (Abbruch bei Fokusverlust) und schaltet das Browserfenster bei Teststart zusätzlich in den Vollbildmodus. Funktioniert derzeit nicht bei mobilen Endgeräten nur bei Desktop-PC. Wird die Fenstergröße verändert folgt unmittelbar die Testschließung.
+#### Fragen mischen
+Beim Start einer Aktivität werden die Beispiele des Schülers in zufälliger Reihenfolge angeordnet.
 
-#### OnRampe
-Mit dieser Option müssen die Fragen, in der vom Lerhpersonal defnierten Reihenfolge beantwortet werden. Die zweite Frage wird erst freigeschalten (beantwortbar), wenn die erste Frage von den SchülerInnen korrekt beantwortet worden ist. 
+#### Antworten mischen
+Beim Muliple-Choice-Fragen, Zuordnungsfragen und Single-Choice-Fragen werden die Antworten 
+bei jedem Aufruf der Frage in zufälliger Reihenfolge angeordnet.
 
-**Tipp**: Es ist möglich den Lehrpfad vozugeben. 
+#### Fragenreihenfolge fixieren
+Die Fragen müssen in der vom Lehrer definierten Reihenfolge abgearbeitet werden. Ein Zurückwechseln auf eine bereits
+beantwortete Frage ist nicht mehr möglich.
 
-**Tipp**: Spielemodus: Jede Frage entspricht einem Spiele-Level. Die Fragen müssen didaktisch von der leichtesten bis zur schwierigsten Frage vom Lehrpersonal bei Testerstellung gereiht werden. Wir empfehlen einen **Didaktischen Faden** bereits bei der Fragennamendefinition zu berücksichtigen. LeTTo erlaubt bei der Fragenerstellung die Fragen alphabetisch (nummerisch) zu ordnen. Die Ordnung entspricht dann gleich der didaktischen Ordnung (=Schwierigkeitsgrad).
+#### Anzahl an Gruppen
+Über die Anzahl an Gruppen legen Sie fest, wieviele Gruppen ein Test haben soll. In der [Beispielsammlung](../Beispielsammlung/index.md) können sie dann für die unterschiedlichen Gruppen die Beispiele festlegen.
+**Achtung:** Wenn Sie die Gruppenanzahl verkleinern, dann gehen die Beispiele in gelöschten Gruppen verloren!
+
+#### Abbruch Fokusverlust
+Ist diese Option aktiviert, schließt sich ein gestarteter Test, sobald aus dem Browserfenster geklickt wird. 
+Das bedeutet, es wird das Suchen in parallel geöffneten Dokumenten unterbunden. 
+Abermaliges Öffnenen des Tests für SchülerInnen ist durch das Lehrpersonal möglich. 
+Dazu muss in der Ergebisansicht der laufenden Aktivität der entsprechende Schülertest wieder geöffnet werden.
+
+#### Fokusverlust bei Size-Änderung
+Diese Option bietet die gleiche Funktionalität wie die oben beschriebene (Abbruch bei Fokusverlust) 
+und schaltet das Browserfenster bei Aktivitätsbeginn zusätzlich in den Vollbildmodus. 
+Funktioniert derzeit nicht bei mobilen Endgeräten, sondern nur bei Desktop-PCs. 
+Wird die Fenstergröße verändert, wird die Aktivität unmittelbar beendet.
+
+#### OnRamp
+Mit dieser Option müssen die Fragen, in der vom Lehrer definierten Reihenfolge beantwortet werden. 
+Die zweite Frage wird erst freigeschaltet, wenn die erste Frage von den SchülerInnen korrekt beantwortet worden ist. 
+
+**Tipp**: Es ist möglich, den Lehrpfad vozugeben.<br>
+**Tipp**: Spielemodus: Jede Frage entspricht einem Spiele-Level.
+
+Die Fragen müssen didaktisch von der leichtesten bis zur schwierigsten Frage vom Lehrpersonal 
+bei Testerstellung gereiht werden. Wir empfehlen einen **Didaktischen Faden** bereits bei der 
+Fragennamendefinition zu berücksichtigen. LeTTo erlaubt bei der Fragenerstellung die Fragen 
+alphabetisch (nummerisch) zu ordnen. Die Ordnung entspricht dann gleich der didaktischen Ordnung (=Schwierigkeitsgrad).
 
 #### Punkteabzug bei fehlerhafter Eingabe
 Für jeden fehlerhaften Versuch werden Punkte abgezogen. Der Abzug wird in der Frage selbst unter der Einstellung Penalty festgelegt.
-<br>![500px-ClipCapIt-210107-140259.PNG](500px-ClipCapIt-210107-140259.PNG)
-
-
+<br>![500px-ClipCapIt-210107-140259.PNG](500px-ClipCapIt-210107-140259.PNG)<br>
 **Tipp**: Mit dieser Option wird die Schülerstrategie "Probieren bis richtig" unterbunden.
 
-#### Anzahl an Gruppen
-Über die Anzahl an Gruppen legen Sie fest, wieviele Gruppen ein Test haben soll. In der [Beispielsammlung](../Beispielsammlung/index.md) können sie dann für die unterschiedlichen Gruppen die Beispiele festlegen. 
 
-**Achtung:** Wenn Sie die Gruppenanzahl verkleinern, dann gehen die Beispiele in gelöschten Gruppen verloren!
+#### Info zur Gruppierung - Gruppierung von Aktivitäten
+Über eine Gruppierung können mehrere Aktivitäten zu einer Gruppe zusammengefasst werden, 
+wobei immer nur der beste, der erste oder der letzte Versuch im [Katalog](../Katalog/index.md) aufscheint und bewertet wird. 
+Anwendung der Gruppierung zB. bei Nachtests, Nachschularbeiten oder Prüfungen, die nach einer Abwesenheit
+für den versäumten Test durchgeführt werden.
+Im Dialog ***Gruppierungseigenschaften*** (![img_3.png](img_3.png)) können Sie festlegen, 
+wie die Gruppierung durchgeführt werden soll. Weiters sehen Sie, welche Aktivitäten zu einer Gruppe zusammengefasst sind.
+<br>![img_4.png](img_4.png)<br>
+Über die nebenstehende Auswahlliste können Sie eine Aktivität zur Gruppierung von Aktivitäten hinzufügen.
 
-#### Gruppierung
-<br>![200px-ClipCapIt-180826-110327.PNG](200px-ClipCapIt-180826-110327.PNG)<br>
-Über Gruppierung können mehrer Tests zu einer Gruppe von Tests zusammengefasst werden, wobei immer nur der beste Testversuch im [Katalog](../Katalog/index.md) aufscheint und bewertet wird. Anwendung der Gruppierung bei Nachtests, Nachschularbeiten oder Prüfungen, die nach einer Abwesenheit für den versäumten Test durchgeführt werden.
-
-Im angezeigten Dialog sehen Sie alle weiteren Online-Tests, die dieser Aktivität zugeordnet sind. 
-Mit der nebenstehenden Auswahlliste können Sie diesen Test einem anderen Test zuordnen oder diese Zuordnung mit _Keine Gruppe_ wieder entfernen.
+#### Feedback
+Dieser Auswahl ist im Moment noch nicht aktiviert!
 
 #### Bereiche
 Es können Bereiche eines Tests definiert werden. Bspw. ist die Englisch-sRDP in mehrere Bereiche gegliedert. 
-<br>![270px-ClipCapIt-210107-174342.PNG](270px-ClipCapIt-210107-174342.PNG)<br>
+<br>![img_6.png](img_6.png)<br>
 Diese Bereiche erlauben einen Test als einzelnen Test zu verwalten und durchzuführen. Die Testauswertung erfolgt seitens von LeTTo seperat für die einzelnen definierten Bereiche.
 <br>![100px-ClipCapIt-210107-174037.PNG](100px-ClipCapIt-210107-174037.PNG)<br>
+
+#### Passwort
+Sie können den Start einer Aktivität über ein Passwort schützen. Ist hier ein Passwort eingetragen, 
+dann muss der Schüler vor dem Starten das korrekte Passwort kennen!
+
+#### Keine Ergebnisse anzeigen
+Mit dieser Option kann unterbunden werden, dass nach Abgabe der Aktivität dem Schüler eine Note angezeigt wird.
+Dies kann dann sinnvoll sein, wenn in der Aktivität Freitextfragen verwendet wurden, die noch später korrigiert werden müssen.
+
+Die Noten werden erst nach Beendigung des Tests (Stop-Checkbox mit Datum ist gesetzt!) den Schülern angezeigt.
+
+#### IP-Bereich:
+Sie können hier festlegen, von welchen IP-Adressen auf die Aktivität zugegriffen werden kann.
+Die IP-Bereiche werden durch Strichpunkte getrennt.
+
+Bsp: 10.32.0.1-10.39.255.24;172.16.0.1-172.32.255.254
+
+Damit dies für Räume vordefiniert festgelegt werden kann, muss der Administrator die IP-Ranges in der Systemkonfiguration festlegen.
+Dann ist dann die Auswahl der IP-Ranges per Dialog und Checkbox möglich!
+<br>![img_5.png](img_5.png)<br>
 
 #### Zeitbegrenzung
 Mit Start und Stop können Sie festlegen, wann der Test verfügbar sein soll. Werden beide Optionen (Start und Stop) aktiviert, dann ist der Test für die Schüler nur in diesem Zeitintervall sichtbar/verfügbar und kann somit nur in diesem Zeitintervall gestartet werden. 
 
-**Achtung:** Nur wenn die Checkboxen gesetzt sind, ist die zeitbegrenzung aktiv!
+**Achtung:** Nur wenn die Checkboxen gesetzt sind, ist die Zeitbegrenzung aktiv!
 
 Mit **Begrenzung in Minuten** legen Sie fest, wie lange ein Testversuch maximal dauern darf. Der Schüler sieht bei Aktivierung der Zeitbegrenzung die noch zur Verfügung stehenden Arbeitszeit. Der Test schließt automatisch nach Ablauf der Zeit. 
 
 **Achtung:** Die Zeitbegrenzung führt bei vielen Schülern zu einem vermeidbaren, erhöhten Stresslevel.
 
-#### Sonstige Einstellungen
-Das Beurteilungsschema kann aus einer Liste von verfügbaren Voreinstellungen ausgewählt werden. Im Sinne der Einheitlichkeit können diese Beurteilungsschemen nur vom Administrator festgelegt werden.
+[//]: # ()
+[//]: # (#### Sonstige Einstellungen)
 
-#### Einheiteneinstellungen
+[//]: # (Das Beurteilungsschema kann aus einer Liste von verfügbaren Voreinstellungen ausgewählt werden. Im Sinne der Einheitlichkeit können diese Beurteilungsschemen nur vom Administrator festgelegt werden.)
 
-Abzug: Legt fest, wieviele Prozent bei einer fehlerhaften Einheit abgezogen werden. 
+[//]: # ()
+[//]: # (#### Einheiteneinstellungen)
 
-Globale Einheitenkonfiguration: Es werden nicht die Testeinstellungen, sondern der global definierte Umgang mit Einheiten verwendet.
+[//]: # ()
+[//]: # (Abzug: Legt fest, wieviele Prozent bei einer fehlerhaften Einheit abgezogen werden. )
+
+[//]: # ()
+[//]: # (Globale Einheitenkonfiguration: Es werden nicht die Testeinstellungen, sondern der global definierte Umgang mit Einheiten verwendet.)
 
 ### Test durchführen ###
 ![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)<br>
