@@ -16,13 +16,13 @@ Darunter finden sie die [Bildvorschau](/notimplemented/index.md), die immer das 
 Der rechte Bereich des Editiermodus enthält alle Infos zur aktuell ausgewählten und gerade bearbeiteten Frage. Der obere Teil der Eingabemaske für Fragen ist für alle [Fragetypen](../Fragetypen/index.md) gleich.
 
 ## Name der Frage
-<br>![400px-ClipCapIt-180618-180519.PNG](400px-ClipCapIt-180618-180519.PNG)
+<br>![img_8.png](img_8.png)<br>
 Der Fragename bezeichnet die Frage und sollte Information über den Frageninhalt bringen. Alle Fragen einer [Kategorie oder Ordners](../Ordnerverwaltung/index.md) werden mit ihrem Fragennamen in der [Fragenliste](../Fragenliste/index.md) angezeigt. Der Name sollte sprechend aber nicht zu lange sein, damit die Übersicht in der Fragenliste erhalten bleibt.
 
 Oberhalb des Fragennamens finden Sie noch den Fragetyp, den diese Frage hat.
 
 ## Dokumente zu dieser Frage hochladen
-<br>![500px-ClipCapIt-181021-141443.PNG](500px-ClipCapIt-181021-141443.PNG)<br>
+![500px-ClipCapIt-181021-141443.PNG](500px-ClipCapIt-181021-141443.PNG)<br>
 Ist die Checkbox **Doks:** ausgewählt, dann kann der Schüler bei der Beantwortung der Fragen auch Dokumente zur Testfrage auf den Server hochladen. 
 
 Die folgende Abbildung zeigt die Buttons zum Testen der Lösung und den zusätzlichen Button 
@@ -175,8 +175,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 * Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen [Formatierungsstring](../Datensätzedefinieren/index.md#definition-der-werte) definiert werden und danach auch direkt in einer Liste bearbeitet werden.
 
 
-<br>![600px-ClipCapIt-180831-220929.PNG](600px-ClipCapIt-180831-220929.PNG)
-
+<br>![img.png](img.png)<br>
 
 **Übersicht über alle Spalten der Detail-Ansicht:**
 ##### Q....
@@ -209,7 +208,7 @@ Siehe unter [ZielEinheit](../ZielEinheit/index.md)!
 ##### <span id="modeSel_focus">Antwortmode
 Art der Antwort:
 
-* Single-Choice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen genau eine Auswählen. Die Lösungen stehen als String im Lösungsfeld
+* Single-Choice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen genau eine Antwort auswählen. Die Lösungen stehen als String im Lösungsfeld. Es sind bei Single-Choice-Fragen keine TEX-Formeln zulässig.
 * Text: Die Lösung welche im Lösungsfeld steht ist eine Zeichenkette die vom Schüler genau so eingegeben werden muss
 * Regexp: Im Lösungsfeld wird ein regulärer Ausdruck angeben, mit dem überprüft wird, ob die Antwort des Schülers richtig ist.
 * Multichoice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen eine oder mehrere Auswählen. Die Lösungen stehen als String in Lösungsfeld.
@@ -248,38 +247,65 @@ In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode ha
 * Bei Berechnungsfragen die Antwort des ersten Datensatzes, das Feld ist dann schreibgeschützt
 * Bei Boolschen Fragen kann hier eine Information erfolgen, wie die Frage bewertet wurde.
 
-### Berechnungsfrage
-<br>![400px-ClipCapIt-180901-122143.PNG](400px-ClipCapIt-180901-122143.PNG)
-
-Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mit nur einer Berechnung. Diese Frage kann aber mehrere unterschiedliche Lösungen bereitstellen, um zB. typische Berechnungsfehler mit Punkteabzügen zu beurteilen. Es können also zusätzliche Reiter mit mehreren Antwortmöglichkeiten über das Kontextmenü erzeugt bzw. wieder gelöscht werden.
-
-<br>![450px-ClipCapIt-180901-212431.PNG](450px-ClipCapIt-180901-212431.PNG)
-
-<br>![400px-ClipCapIt-180901-132831.PNG](400px-ClipCapIt-180901-132831.PNG)
-
-* Berechnende Fragen sind wie Mehrfachberechnungsfragen mit nur einer Teilfrage bei dem das Antwortfeld automatisch erscheint.
-* Jeder Schüler bekommt eine eigene Angabe
-* Für den Druck kann die Frage auch für Projektangaben verwendet werden.
-* Berechnungen erfolgen mit Maxima
-* Alle verwendeten Variablen müssen im Angabtext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.
-* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen Formatierungsstring definiert werden und danach auch direkt in einer Liste bearbeitet werden.
+#### Ansicht umschalten auf Eingabe pro Teilfrage
+Mit dem Button ***Ansicht für Definition der Mehrfachberechnungsfrage ...*** ![img_1.png](img_1.png) können Sie auf eine Ansicht umschalten,
+in der Sie jede Teilfrage getrennt bearbeiten können. Diese Ansicht ist vor allem bei Mehrfachberechnungsfragen mit Multiple-Choice oder Zuordnungsfragen vorteilhaft.
+<br>![img_2.png](img_2.png)<br>
 
 
-Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.
 
+[//]: # (### Berechnungsfrage)
 
-| Feld              | Beschreibung                                                                                                               |                                                                                                                            
-|-------------------|----------------------------------------------------------------------------------------------------------------------------|
-| '''Antwort Maxima | [Lösung_der_Antwort_einer_Teilfrage](#lösung-der-antwort-einer-teilfrage-), siehe [Berechnungen](../Berechnungen/index.md) |
-| **Einheit:**      | [Defiition der Einheit oder sonstiges Frageerhalten](../ZielEinheit/index.md)                                              |
-| **Prozent:**      | [Prozent_für_die_Antwort_einer_Teilfrage](#prozent-für-die-antwort-einer-teilfrage-)                                       |
-| **Toleranz:**     | [Toleranz_der_Antwort_einer_Teilfrage](#toleranz-der-antwort-einer-teilfrage-)                                             |
-| **Mode:**         | [Antwortmode](#antwortmode-)                                                                                               |
+[//]: # (<br>![400px-ClipCapIt-180901-122143.PNG]&#40;400px-ClipCapIt-180901-122143.PNG&#41;)
 
+[//]: # ()
+[//]: # (Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mit nur einer Berechnung. Diese Frage kann aber mehrere unterschiedliche Lösungen bereitstellen, um zB. typische Berechnungsfehler mit Punkteabzügen zu beurteilen. Es können also zusätzliche Reiter mit mehreren Antwortmöglichkeiten über das Kontextmenü erzeugt bzw. wieder gelöscht werden.)
 
-Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.
+[//]: # ()
+[//]: # (<br>![450px-ClipCapIt-180901-212431.PNG]&#40;450px-ClipCapIt-180901-212431.PNG&#41;)
 
-Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung](../Berechnungen/index.md#berechnung-mit-maxima) oder den [internen Parser](../Berechnungen/index.md#berechnung-mit-dem-internen-parser) bestimmt werden.
+[//]: # ()
+[//]: # (<br>![400px-ClipCapIt-180901-132831.PNG]&#40;400px-ClipCapIt-180901-132831.PNG&#41;)
+
+[//]: # ()
+[//]: # (* Berechnende Fragen sind wie Mehrfachberechnungsfragen mit nur einer Teilfrage bei dem das Antwortfeld automatisch erscheint.)
+
+[//]: # (* Jeder Schüler bekommt eine eigene Angabe)
+
+[//]: # (* Für den Druck kann die Frage auch für Projektangaben verwendet werden.)
+
+[//]: # (* Berechnungen erfolgen mit Maxima)
+
+[//]: # (* Alle verwendeten Variablen müssen im Angabtext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.)
+
+[//]: # (* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen Formatierungsstring definiert werden und danach auch direkt in einer Liste bearbeitet werden.)
+
+[//]: # ()
+[//]: # ()
+[//]: # (Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.)
+
+[//]: # ()
+[//]: # ()
+[//]: # (| Feld              | Beschreibung                                                                                                               |                                                                                                                            )
+
+[//]: # (|-------------------|----------------------------------------------------------------------------------------------------------------------------|)
+
+[//]: # (| '''Antwort Maxima | [Lösung_der_Antwort_einer_Teilfrage]&#40;#lösung-der-antwort-einer-teilfrage-&#41;, siehe [Berechnungen]&#40;../Berechnungen/index.md&#41; |)
+
+[//]: # (| **Einheit:**      | [Defiition der Einheit oder sonstiges Frageerhalten]&#40;../ZielEinheit/index.md&#41;                                              |)
+
+[//]: # (| **Prozent:**      | [Prozent_für_die_Antwort_einer_Teilfrage]&#40;#prozent-für-die-antwort-einer-teilfrage-&#41;                                       |)
+
+[//]: # (| **Toleranz:**     | [Toleranz_der_Antwort_einer_Teilfrage]&#40;#toleranz-der-antwort-einer-teilfrage-&#41;                                             |)
+
+[//]: # (| **Mode:**         | [Antwortmode]&#40;#antwortmode-&#41;                                                                                               |)
+
+[//]: # ()
+[//]: # ()
+[//]: # (Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.)
+
+[//]: # ()
+[//]: # (Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung]&#40;../Berechnungen/index.md#berechnung-mit-maxima&#41; oder den [internen Parser]&#40;../Berechnungen/index.md#berechnung-mit-dem-internen-parser&#41; bestimmt werden.)
 
 ### Lückentextfrage
 Ein Lückentext enthält Lücken innerhalb eines Fragetextes, die durch den Schüler mit dem korrekten Inhalt gefüllt werden sollen.
@@ -292,9 +318,9 @@ Folgende Modi sind dabei für die Lücken möglich:
 Da es bei Lückentextfragen um Texte geht, gibt es hier keine Datensätze oder Maxima-Berechnungen.
 
 **Fragemodus:**
-<br>![200px-ClipCapIt-180901-155006.PNG](200px-ClipCapIt-180901-155006.PNG)
+<br>![img_3.png](img_3.png)
 
-Der Fragemodus gibt an wie Texteingabe-Lücken verarbeitet werden
+Der Fragemodus gibt an, wie Texteingabe-Lücken verarbeitet werden
 
 * Normal: Der Schüler muss den Text über die Tastatur in die Lücke eintragen.
 * Drag-and-Drop: Der Schüler muss aus einer Liste von möglichen Antworten die richtigen Antworten auf die Lücken ziehen.
@@ -362,29 +388,45 @@ Die oben in der Abbildung definierte Lückentextfrage führt zu der links abgebi
 <br>![350px-ClipCapIt-180901-185126.PNG](350px-ClipCapIt-180901-185126.PNG)
 
 ### Multiple-Choice-Frage
+Der Schüler kann eine oder mehrere vorgegebene Antworten als richtig ankreuzen.
+
+Die Definition der Antworten erfolgt über folgende Eingabemaske:
+<br>![img_4.png](img_4.png)<br>
+Die korrekten Antworten werden über die Checkboxen ausgewählt. Auch Formeln im TEX-Format sind möglich. 
+Das Einfügen von Bildern über `[IMGx]`-Tags sowie Plugins über `[PI...]`-Tags wird ebenfalls unterstützt.
+
+#### Sortierung
+![img_6.png](img_6.png)<br>
+Wenn die Auswahl ****Mischen**** ausgewählt wurde, dann werden die Antworten bei jedem Schüler in einer anderen Reihenfolge angezeigt.
+Vorraussetzung dafür ist, dass bei den Testeinstellungen ****Antworten mischen**** ausgewählt wurde.
+
+[//]: # (* Es gibt zwei mögliche Eingabeansichten)
+
+[//]: # (  *        automatische Prozentvergabe: Alle richtigen Antworten bekommen einen Haken. Der Computer teilt dann die Prozentwerte gleichmäßig auf alle richtigen Antworten auf.)
+
+[//]: # (  *        explizite Definition der Prozentwerte: Neben jeder Antwort kann ein Prozentwert angegeben werden, welcher zugewiesen wird wenn die Antwort angekreuzt ist. Die Summe der Prozentwerte aller richtigen Antworten muss dabei 100 ergeben!)
+
+[//]: # ()
+[//]: # (##### Beispiele für eine Multiple-Choice-Frage in unterschiedlichen Ansichten)
+
+[//]: # (**CheckboxFeedback: **)
+
+[//]: # (Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen Antworten bekommen links davon in der Checkbox ein Häckchen. Neben den Antworten können Sie ein Feedback angeben, warum Antworten falsch oder richtig sind.)
+
+[//]: # (<br>![400px-ClipCapIt-180901-214517.PNG]&#40;400px-ClipCapIt-180901-214517.PNG&#41;)
+
+[//]: # ()
+[//]: # (**Checkbox: **)
+
+[//]: # (Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen Antworten bekommen ein Häckchen. Feedback-Eingaben sind nicht möglich.)
+
+[//]: # (<br>![400px-ClipCapIt-180901-214538.PNG]&#40;400px-ClipCapIt-180901-214538.PNG&#41;)
 
 
-* Der Schüler kann eine oder mehrere vorgegebene Antworten als richtig ankreuzen.
-* Die Antworten werden bei jedem Schüler in einer anderen Reihenfolge vorgeschlagen.
-* Es gibt zwei mögliche Eingabeansichten
-  *        automatische Prozentvergabe: Alle richtigen Antworten bekommen einen Haken. Der Computer teilt dann die Prozentwerte gleichmäßig auf alle richtigen Antworten auf.
-  *        explizite Definition der Prozentwerte: Neben jeder Antwort kann ein Prozentwert angegeben werden, welcher zugewiesen wird wenn die Antwort angekreuzt ist. Die Summe der Prozentwerte aller richtigen Antworten muss dabei 100 ergeben!
 
-##### Beispiele für eine Multiple-Choice-Frage in unterschiedlichen Ansichten
-**CheckboxFeedback: **
-Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen Antworten bekommen links davon in der Checkbox ein Häckchen. Neben den Antworten können Sie ein Feedback angeben, warum Antworten falsch oder richtig sind.
-<br>![400px-ClipCapIt-180901-214517.PNG](400px-ClipCapIt-180901-214517.PNG)
-
-**Checkbox: **
-Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen Antworten bekommen ein Häckchen. Feedback-Eingaben sind nicht möglich.
-<br>![400px-ClipCapIt-180901-214538.PNG](400px-ClipCapIt-180901-214538.PNG)
-
-
-
-**Beurteilung: **
+#### Beurteilung: 
 Es sind 4 Beurteilungsmöglichkeiten implementiert.
-
-<br>![200px-ClipCapIt-201206-205949.PNG](200px-ClipCapIt-201206-205949.PNG)
+<br>![img_5.png](img_5.png)<br>
 
 | Normal      | Werden die korrekten Antworten teilweise markiert, gibt es Teilpunkte auf die Frage. Schüler kann mit richtigen Antworten Punkte sammeln. Eine falsche selektierte Antwort führt zu Null Prozent auf die ganze Frage. |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -394,17 +436,13 @@ Es sind 4 Beurteilungsmöglichkeiten implementiert.
 
 
 Das Maxima-Feld kann auch für Multiple-Choice-Fragen für Berechnungen und für die Definition von Formeln verwendet werden. In den Antworten für die Multiple-Choice-Frage können Sie sich über {= ...} auf die Ergebnisse beziehen.
-<br>![400px-ClipCapIt-180901-215517.PNG](400px-ClipCapIt-180901-215517.PNG)
-Die obige Frage wurde mit dieser Berechnung durchgeführt.
 
 ### Zuordnungsfrage
 
 Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.
 Im Prinzip hat der Schüler 2 Listen mit Antworten und Fragen, die er richtig zuordnen muss.
-
-![500px-ClipCapIt-180618-225643.PNG](500px-ClipCapIt-180618-225643.PNG)
-
-Mit der Auswahlliste für das Anzeigeverhalten kann gesteuert werden, ob und wie die Zuordnungen bei einem Test gemischt werden.
+<br>![img_7.png](img_7.png)<br>
+Mit der Auswahlliste für das Anzeigeverhalten (***Sortierung:***) kann gesteuert werden, ob und wie die Zuordnungen bei einem Test gemischt werden.
 _Nur links mischen_ bedeutet, dass die Antwortmöglichkeiten auf der linken Seite der Zuordnungsfrage bei jedem Öffnen der Frage anders dargestellt werden.
 
 Folgende Einstellungen sind möglich:
@@ -419,7 +457,14 @@ Folgende Einstellungen sind möglich:
 Pro Zeile werden die zusammengehörenden Begriffe in die Tabelle eingetragen.
 Um Zuordnungsfragen zu erschweren, können auf der rechten Seite auch falsche Begrife angeführt werden, die nicht eine Entsprechung auf der linken Seite haben.
 
-Weiters können auf der linken Seite auch mehrere gleichnamige Begriffe verwendet werden, um Zuordnungen zu Themengruppen zu ermöglichen.
+Weiters können auf der linken und rechten Seite auch mehrere gleichnamige Begriffe verwendet werden, um Zuordnungen zu Themengruppen zu ermöglichen.
+#### Beurteilung
+| Beurteilung |                                                                                                              |
+|-------------|--------------------------------------------------------------------------------------------------------------|
+| Normal      | Pro richtiger Zuordnung werden Punkte vergeben, bei falschen Antworten werden entsprechende Punkte abgezogen |
+| Streng      | Alle Zuordnungen müssen treffen                                                                              |
+| Mild        | Nur die richtigen Zuordnungen werden beurteilt                                                               |
+| HundertProz | Die ganze Frage (die aus mehreren Teilfragen besteht) muss richtig sein (RDP-Modus)                          |
 
 ### Freitextfrage
 Der Schüler erhält zur Fragebeantwortung ein Textfeld, in dem die Antwort eingetragen werden kann. Diese Fragen müssen aber manuell korrigiert werden!
