@@ -33,15 +33,15 @@ Sie kann sehr weitreichend parametriert werden.
   zB.: 
   <pre>test_x=[3,5,7]m
   </pre>
-* Gibt es mehrere Variablen werden die Tests jeweils mit den Testvektor-Elementen mit gleichen Modulo-Indizes durchgeführt.<br>
+* Gibt es mehrere Variablen werden die Tests jeweils mit den Testvektor-Elementen mit gleichem Modulo-Indizes durchgeführt.<br>
   zB.: 
   <pre>test_x=[2,4,5]
   test_y=[1,7]
   </pre>
   Es wird die Prüfung mit den Paaren (x=2,y=1),(x=4,y=7) und (y=5,y=1) durchgeführt.
 * Die Genauigkeit der Prüfung (Toleranz) bezieht sich beim Test mit Testvektoren immer auf das Ergebnis des Ausdruckes mit eingesetzten Zahlenwerten.
-* Damit das Ergebnis korrekt ist müssen ALLE Werte der Testvektoren als korrekt bewertet werden.
-* Bei einer relativen Toleranz wird zuerst der maximal Betrag von allen Tests bestimmt und dann wird die relative Toleranz auf diesen Zahlenwert bezogen. 
+* Damit das Ergebnis korrekt ist müssen **ALLE Werte** der Testvektoren als **korrekt** bewertet werden.
+* Bei einer **relativen Toleranz** wird zuerst der maximal Betrag von allen Tests bestimmt und dann wird die relative Toleranz auf diesen Zahlenwert bezogen. 
   Dadurch ist es auch kein Problem wenn es Testvektoren gibt welche 0 als Ergebnis liefern. 
 * Wegen obigem Verhalten sollten bei relativer Toleranz keine Test-Werte verwendet werden welche sehr große Zahlenwertunterschiede haben.
-* Tests mit Testvektoren werden nur durchgeführt wenn alle Variablen eines Ausdrucks als Testvektor definiert sind.
+* Tests mit Testvektoren werden nur durchgeführt wenn **alle Variablen eines Ausdrucks als Testvektor** definiert sind.
