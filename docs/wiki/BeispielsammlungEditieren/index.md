@@ -164,7 +164,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 | e:ratsimp(c*(2+3*%i))                                                        | komplexes Ergebnis auswerten                                                                                                                                             |
 
 
-## Eingabemasken für die unterschiedlichen Fragetypen
+## Eingabemasken für die unterschiedlichen [Fragetypen](../Fragetypen/index.md)
 
 ### Mehrfachberechnungsfrage
 
