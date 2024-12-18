@@ -30,9 +30,14 @@ Sie kann sehr weitreichend parametriert werden.
   zu **numerischen Zufälligkeiten** und nicht Erkennung von **Einheitenfehlern** kommen. Abhilfe schafft die
   Definition von Testvektoren für die verwendeten Variablen eines Ausdrucks.
 * Ein Testvektor wird im Maxima-Feld mit "test_" gefolgt vom Variablennamen als Vektor mit den einzusetzenden Werten definiert.<br>
-  zB.: <pre>test_x=[3,5,7]m</pre>
+  zB.: 
+  <pre>test_x=[3,5,7]m
+  </pre>
 * Gibt es mehrere Variablen werden die Tests jeweils mit den Testvektor-Elementen mit gleichen Modulo-Indizes durchgeführt.<br>
-  zB.: <pre>test_x=[2,4,5]<br>test_y=[1,7]</pre>
+  zB.: 
+  <pre>test_x=[2,4,5]
+  test_y=[1,7]
+  </pre>
   Es wird die Prüfung mit den Paaren (x=2,y=1),(x=4,y=7) und (y=5,y=1) durchgeführt.
 * Die Genauigkeit der Prüfung (Toleranz) bezieht sich beim Test mit Testvektoren immer auf das Ergebnis des Ausdruckes mit eingesetzten Zahlenwerten.
 * Damit das Ergebnis korrekt ist müssen ALLE Werte der Testvektoren als korrekt bewertet werden.
