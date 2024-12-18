@@ -1,4 +1,4 @@
-# Korrektur von Schülereingaben bei Mehrfachberechnungsfragen 
+# Korrektur von Schülereingaben bei [Mehrfachberechnungsfragen](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage) 
 
 Die automatische Korrektur von LeTTo stellt einen wesentlichen Bestandteil von LeTTo dar. 
 Sie kann sehr weitreichend parametriert werden. 

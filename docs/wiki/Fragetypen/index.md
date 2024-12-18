@@ -1,15 +1,16 @@
 # Fragetypen
 siehe auch [Beispielsammlung](../Beispielsammlung/index.md) und [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md)
 
-= [Mehrfachberechnungsfrage](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage) = 
-[Video](https://youtu.be/z_xfPxh33hA)
+## [Mehrfachberechnungsfrage](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage)  
+* [Video](https://youtu.be/z_xfPxh33hA)
 * Fragen dieses Typs sind sehr flexibel. 
 * Die Frage kann mehrere Teilantworten beinhalten. Jede Teilfrage wird im Fragetext durch einen [Qx](Qx)-Tag (x..Fragenummer) positioniert. Bei der Schülereingabe wird der Tag durch ein Eingabefeld für die Ergebniseingabe ersetzt.
 * Die Angabewerte sind wie bei Berechnungsfragen mittels Datensätzen definierbar und variieren von Schüler zu Schüler.
 * Alle verwendeten Variablen müssen im Angabetext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.
 * Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen Formatierungsstring definiert werden und danach auch direkt in einer Liste bearbeitet werden.
-
-[Berechnungen](../Berechnungen/index.md)
+* siehe auch:<br>
+  [Berechnungen](../Berechnungen/index.md)<br>
+  [Korrektur](../Korrektur/index.md)<br>
 
 ##  [Zuordnungsfrage](../BeispielsammlungEditieren/index.md#zuordnungsfrage) 
 [Video](https://youtu.be/UUfoF03YkFM)
