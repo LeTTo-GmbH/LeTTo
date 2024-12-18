@@ -1,11 +1,14 @@
 # ZielEinheit
-Die Zieleinheit von Berechnungsfragen und Mehrfachberechnungsfragen definiert die [Einheit](../Einheit/index.md) und die Art der Verarbeitung des Ergebnisses, welches der Schüler eingeben soll.
+Die Zieleinheit von Berechnungsfragen und Mehrfachberechnungsfragen definiert die [Einheit](../Einheit/index.md) und die Art der Verarbeitung des 
+Ergebnisses, welches der Schüler eingeben soll. Siehe auch [Korrektur](../Korrektur/index.md)
 
 Neben der Einheit die der Schüler eingeben soll/muss kann auch die Art der symbolischen Verarbeitung und ein Muster wie die Lösung aussehen soll definiert werden. 
 
 Die Zieleinheit ist eine Zeichenkette mit einem definierten Syntax, da das Eingabefeld der Zieleinheit für komplexere Angaben zu klein ist und der Syntax nicht immer bekannt ist kann die Zieleinheit auch über einen Dialog eingegeben werden, welcher über Doppelklick auf die Zieleinheit erreicht wird.
 
-Sehr ähnlich zur Zieleinheit ist auch die Einheitenangabe für Datensätze und Variable im Angabetext ( [Editor für den Angabetext](../EditorfürdenAngabetext/index.md#datensätze-und-variable) ). Einige Definitionen der Zieleinheit können auch hier verwendet werden.
+Sehr ähnlich zur Zieleinheit ist auch die Einheitenangabe für Datensätze und Variable im Angabetext 
+( [Editor für den Angabetext](../EditorfürdenAngabetext/index.md#datensätze-und-variable) ). 
+Einige Definitionen der Zieleinheit können auch hier verwendet werden.
 
 ###  Dialog zur Definition der Zieleinheit 
 Durch einen Doppelklick auf die Zieleinheit erhält man den Dialog zur Definition der Zieleinheit.
