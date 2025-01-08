@@ -35,11 +35,13 @@ Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt
   * Für die Registratur eines Plugins benötigt man den Endpoint **/config/auth/user/registerplugin** aus dem config-controller
 * Die Dokumentation befindet sich ebenfalls im Uhr-Plugin im Sourcecode.
   * JavaDoc vom Uhr-Plugin : https://build.letto.at/pluginuhr/open/javadoc/index.html
-*** DTO-Klassen für die REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/letto/plugins/dto/package-summary.html
-*** Controller-Klassen der REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
-  * Die notwendigen Controller für die REST-Kommunikation findet man im Verzeichnis **src/main/java/at/open/letto/plugin/controller** - https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
-*** [info-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/InfoController.html) :  allgemeine Information welche jedes Plugin liefern muss (von extern erreichbar)
-*** [api-extern-open-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiExternOpenController.html): offene Endpoints welche von extern erreichbar sein müssen für ajax und allgemeine Informationen (von extern erreichbar)
+    * DTO-Klassen für die REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/letto/plugins/dto/package-summary.html
+    * Controller-Klassen der REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
+  * Die notwendigen Controller für die REST-Kommunikation findet man im Verzeichnis 
+    * src/main/java/at/open/letto/plugin/controller
+    * https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
+    * [info-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/InfoController.html) :  allgemeine Information we lche jedes Plugin liefern muss (von extern erreichbar)
+    * [api-extern-open-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiExternOpenController.html): offene Endpoints welche von extern erreichbar sein müssen für ajax und allgemeine Informationen (von extern erreichbar)
 *** [api-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiController.html) : die eigentliche Plugin-Schnittstelle zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar)
 *** [api-extern-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiExternController.html) : für eine gesicherte Verbindung von einem externen LeTTo-Server wenn Plugin und LeTTo nicht auf dem gleichen Server liegen (noch nicht fertig implementiert) jedoch gleiche Funktion wie api-controller  (von extern erreichbar)
 *** [iframe-configuration-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/IFrameConfigurationController.html) : Wenn die Konfiguration des Plugins nicht über JavaScript sondern über ein IFrame in LeTTo eingebunden wird ist hier der Konfigurationsdialog des Plugins (von extern erreichbar)
