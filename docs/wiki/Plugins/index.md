@@ -32,7 +32,9 @@ Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt
 * Die Kommunikation erfolgt über eine Rest-Schnittstelle (Swagger-Doku des Uhr Plugins https://build.letto.at/pluginuhr/swagger-ui/index.html)
 * Das Plugin muss am eigenen LeTTo-Server der Schule wo es genutzt werden soll über das Setup-Service [https://servername/config](https://name/config) regisitriert werden und eingebunden sein.
   * Die Doku für die Endpoints des Setup-Services liegt ebenfalls als Swagger-Doku vor (https://build.letto.at/config/swagger-ui/index.html) 
-  * Für die Registratur eines Plugins benötigt man den Endpoint **/config/auth/user/registerplugin** aus dem config-controller
+  * Für die Registratur eines Plugins benötigt man den Endpoint 
+    * /config/auth/user/registerplugin
+    * aus dem config-controller
 * Die Dokumentation befindet sich ebenfalls im Uhr-Plugin im Sourcecode.
   * JavaDoc vom Uhr-Plugin : https://build.letto.at/pluginuhr/open/javadoc/index.html
     * DTO-Klassen für die REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/letto/plugins/dto/package-summary.html
