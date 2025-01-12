@@ -16,3 +16,6 @@
 * [Session-Timeout konfigurieren](./session-timeout/index.md)
 * [https-Zertifikat konfigurieren](../../wiki/Https-Zertifikat/index.md)
 
+## Problemlösungen
+* [Neuaufbau der MySQL-Datenbank](./datenbankneuaufbau/index.md)
+
