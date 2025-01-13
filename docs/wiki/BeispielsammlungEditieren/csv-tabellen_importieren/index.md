@@ -37,7 +37,8 @@ Zeit;Spannung;Strom
 * Nun erscheint die importierte Tabelle im Tabellen-Dialog: 
   <br><img alt="img_6.png" src="img_6.png" width="600px"/>
 * Ab sofort kann die Kennlinie im Maxima-Feld verwendet werden
-  <br><img alt="img_7.png" src="img_7.png" width="400px"/>
+  <br><img alt="img_7.png" src="img_7.png" width="600px"/>
+* Berechnungsfunktionen siehe [Berechnungen](../../Berechnungen/index.md#funktionen-für-importierte-tabellen)
 
 ### Import einer neuen Kennlinie und speichern als globale Tabelle
 * Wie zuvor die Kennlinie hochladen
@@ -45,18 +46,19 @@ Zeit;Spannung;Strom
 * Nun muss eine globale Kategorie gewählt werden der die importierte Kennlinie themenmäßig zugeordnet werden kann
   <br><img alt="img_8.png" src="img_8.png" width="300px"/>
 * Nun erscheint die Frage in der Liste der gewählten Kategorie
-  <br>![img_9.png](img_9.png)
+  <br><img alt="img_9.png" src="img_9.png" width="600px"/>
 * Soll die Tabelle auch in der Frage verfügbar sein - siehe nächster Punkt (Import einer bestehenden globalen Tabelle in eine Frage)
 
 ### Import einer bestehenden globalen Tabelle in eine Frage
 * Auswahl der Kategorie in der die globale Tabelle zu finden ist
 * Auswahl der korrekten Tabelle(Kennlinie)
-  <br>![img_10.png](img_10.png)
+  <br><img alt="img_10.png" src="img_10.png" width="600px"/>
 * Kennlinie **"Zur Frage"** hinzufügen
 * Es muss nun die **Variable** definiert werden über die die Kennlinie im Maxima-Feld ansprechbar ist:
   <br><img alt="img_5.png" src="img_5.png" width="300px"/>
 * Nun erscheint die importierte Tabelle im Tabellen-Dialog:
   <br><img alt="img_6.png" src="img_6.png" width="600px"/>
 * Ab sofort kann die Kennlinie im Maxima-Feld verwendet werden
-  <br><img alt="img_7.png" src="img_7.png" width="400px"/>
+  <br><img alt="img_7.png" src="img_7.png" width="600px"/>
+* Berechnungsfunktionen siehe [Berechnungen](../../Berechnungen/index.md#funktionen-für-importierte-tabellen)
 
