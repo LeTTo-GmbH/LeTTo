@@ -16,14 +16,16 @@ Sie kann sehr weitreichend parametriert werden.
 ## Korrektur von symbolischen Ausdrücken
 * Ist die korrekte Lösung symbolisch oder die ZielEinheit auf symbol... gesetzt wird symbolisch korrigiert.
 * Die Korrektur erfolgt stufenweise
-  * zuerst wird durch Umformen verglichen wobei nur die Operationen beim Umformen verwendet werden welche in der Zieleinheit definiert sind.
-  * falls es sich um ein Polynom handelt werden dann die Pole und Nullstellen verglichen
-  * schlussendlich werden zufällige Zahlenwerte für die Variablen in dem symbolischen Ausdruck eingesetzt und die berechnete Lösung verglichen
-    * Da die eingesetzten zufälligen Zahlenwerte keine Einheit haben erfolgt dieser Vergleich immer ohne Einheiten-Überprüfung
-    * zufällige Zahlenwerte führen bei manchen Funktionen wie etwa Potenzen zu stark abweichenden Berechnungswerten 
-      welche zu einer nicht nachvollziehbaren Zufälligkeit führen
-    * Um die Einheiten korrekt prüfen zu können und die Zufälligkeit der Überprüfung zu vermeiden können Testvektoren 
-      für die Variablen definiert werden mit denen die Schülereingabe gegen die korrekte Lösung geprüft wird (siehe nächster Punkt).
+  * zuerst wird der String der Schülereingabe mit dem String der korrekten Lösung verglichen 
+  * dann wird durch Umformen verglichen wobei nur die Operationen beim Umformen verwendet werden welche in der Zieleinheit definiert sind.
+  * Wenn keine Optimierungsstufe angegeben oder symbolfull gewählt wurde erfolg ein numerischer Vergleich
+    * falls es sich um ein Polynom handelt werden dann die Pole und Nullstellen verglichen
+    * schlussendlich werden zufällige Zahlenwerte für die Variablen in dem symbolischen Ausdruck eingesetzt und die berechnete Lösung verglichen
+      * Da die eingesetzten zufälligen Zahlenwerte keine Einheit haben erfolgt dieser Vergleich immer ohne Einheiten-Überprüfung
+      * zufällige Zahlenwerte führen bei manchen Funktionen wie etwa Potenzen zu stark abweichenden Berechnungswerten 
+        welche zu einer nicht nachvollziehbaren Zufälligkeit führen
+      * Um die Einheiten korrekt prüfen zu können und die Zufälligkeit der Überprüfung zu vermeiden können Testvektoren 
+        für die Variablen definiert werden mit denen die Schülereingabe gegen die korrekte Lösung geprüft wird (siehe nächster Punkt).
 
 ## Korrektur von symbolischen Ausdrücken mit Testvektoren
 * wie im vorigen Punkt erwähnt kann es beim numerischen Vergleich durch Einsetzen von Zahlenwerten 

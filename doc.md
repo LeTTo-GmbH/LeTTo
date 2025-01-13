@@ -15,3 +15,7 @@
 * Konfiguration: https://programmablesearchengine.google.com/controlpanel/all
 * Prüfe die vorhandenen Daten: https://search.google.com/search-console/index?resource_id=sc-domain%3Adoc.letto.at
   https://search.google.com/search-console?resource_id=sc-domain%3Adoc.letto.at
+
+# Kommentare in md-Dateien:
+[//]: Diese Art von Kommentaren ist nicht kompatibel mit Github-DOC!!!
+<!-- Dies ist ein Kommentar -->

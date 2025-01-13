@@ -1,4 +1,3 @@
-[//]: # (neu erstellt)
 # Aktivitäts-Statistiken
 [Zur Ergebnis-Übersicht der Aktivität](../Test-Ergebnisse/index.md)
 

@@ -151,6 +151,7 @@ Mit **Begrenzung in Minuten** legen Sie fest, wie lange ein Testversuch maximal 
 
 **Achtung:** Die Zeitbegrenzung führt bei vielen Schülern zu einem vermeidbaren, erhöhten Stresslevel.
 
+<!--
 [//]: # ()
 [//]: # (#### Sonstige Einstellungen)
 
@@ -164,6 +165,7 @@ Mit **Begrenzung in Minuten** legen Sie fest, wie lange ein Testversuch maximal 
 
 [//]: # ()
 [//]: # (Globale Einheitenkonfiguration: Es werden nicht die Testeinstellungen, sondern der global definierte Umgang mit Einheiten verwendet.)
+-->
 
 ### Test durchführen ###
 ![220px-ClipCapIt-180826-090323.PNG](220px-ClipCapIt-180826-090323.PNG)<br>

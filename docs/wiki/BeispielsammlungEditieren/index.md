@@ -34,9 +34,6 @@ Solange der Testversuch aktiv ist, können die Dokumnete vom Schüler wieder üb
 
 Nach Beendigung des Testversuchs können die Dokumente nicht mehr geändert, sondern nur mehr heruntergeladen und angesehen werden.
 
-[//]: # (## Gefundene Werte)
-[//]: # (Hier sind alle Konstante, die im Angabetext gefunden wurden, aufgelistet. Dieses Feld wird nach dem Verlassen des Editors für den Angabetext automatisch aktualisiert: Enthält der Fragetext Konstante in geschwungenen Klammern, die keine Datensätze sind, so werden diese Variablen automatisch aus dem Text extrahiert und angezeigt. Diese Werte können dann für die Berechnung der Lösung herangezogen werden.)
-
 ## Eingabe des Fragetextes
 Siehe [Editor für den Angabetext](../EditorfürdenAngabetext/index.md).
 
@@ -49,7 +46,9 @@ im nebenstehenden Feld angezeigt und kann theoretisch auch verändert werden.
 Diese Option sollten aber nur erfahrene Benutzer verwenden, die sich mit der Syntax der 
 Plugin-Definition auskennen.
 
+<!--
 [//]: # (Der Scroller ![40px-ClipCapIt-180831-204926.PNG]&#40;40px-ClipCapIt-180831-204926.PNG&#41; neben dem Eingabefeld dient zum Durchlaufen von allen definierten [Datensätzen]&#40;../Datensätze/index.md&#41; und zeigt die Änderungen der Grafiken an, wenn der Cursor auf einem [Plugin-Grafik-Tag#spezielle-tags-im-fragentext-]&#40;../EditorfürdenAngabetext#spezielle-tags-im-fragentext-/index.md#spezielle-tags-im-fragentext-&#41; [PIG...]&#40;PIG...&#41; im [Editor für den Angabetext]&#40;../EditorfürdenAngabetext/index.md&#41; steht.)
+-->
 
 ## Beurteilungsbereich
 #### Punkte ####
@@ -94,9 +93,11 @@ Beispiel:
 ## Variable / Datensätze
 Siehe [Variable / Datensätze definieren](../Datensätzedefinieren/index.md#erstellung---änderung-über-den-datensatz-bereich)
 
+<!--
 [//]: # (## Kompetenzen zuordnen)
 [//]: # (Mit dem Button ![20px-ClipCapIt-180901-220702.PNG]&#40;20px-ClipCapIt-180901-220702.PNG&#41; aus dem [Toolbar]&#40;../Toolbar/index.md&#41; kann man zwischen der Datensatz- und der Kompetenz-Ansicht umschalten.)
 [//]: # (Siehe auch [Kompetenzzuordnung]&#40;/notimplemented/index.md&#41;.)
+-->
 
 ## Maxima-Feld
 
@@ -104,7 +105,15 @@ Das Maximafeld wird für die Berechnung der Ergebnisformel verwendet. Für die B
 
 Siehe auch [Berechnungen](../Berechnungen/index.md)!
 
-##### Maxima Berechnung
+#### Aufbau des Maximafeldes
+![img_9.png](img_9.png)
+
+#### CSV-Tabelle importieren
+Hier können bestehende Tabellen welche zuvor gespeichert wurden und externe Tabellen
+aus [CSV-Dateien importiert](csv-tabellen_importieren/index.md) werden. Die Tabellen können dann über eine zu 
+konfigurierende Variable im Maxima-Feld verwendet werden.
+
+#### Maxima Berechnung
 Siehe [Maxima-Berechnungen](../Berechnungen/index.md)
 
 * Zahlenwerte mit Einheiten werden, bevor das Feld an Maxima geschickt wird, durch interne Variablen ersetzt, die bei der Berechnung des Ergebnisses dann wieder mit Einheiten eingesetzt werden. Die Maxima-Berechnung erfolgt dadurch wie in Maxima üblich ohne Einheiten.
@@ -112,7 +121,7 @@ Siehe [Maxima-Berechnungen](../Berechnungen/index.md)
 * Jeder Durchlauf des Maximafeldes beginnt mit einer neuen leeren Maxima-Umgebung in der die Datei letto.mac geladen wird. Die Datei moodle.mac kann in der globalen Einstellungen des Servers für alle Benutzer gemeinsam vom Administrator konfiguriert werden. Unter anderem wird hier der Operator || definiert, der für die Parallelschaltung von Widerständen und Impedanzen verwendet werden kann.
 * Es können auch alle Funktionen des internen Parsers, die Maxima nicht kennt verwendet werden. Jedoch kann Maxima diese Funktionen weder vereinfachen noch berechnen, dies muss dann Online beim Berechnen des Lösungsfeldes durch Letto direkt erfolgen. Dementsprechend kann auch der Befehl **solve** von Maxima keine Funktionen auflösen, die nur vom internen Parser untersützt werden.
 
-##### Interner Parser von Letto
+#### Interner Parser von Letto
 Siehe [Interner Parser](../Berechnungen/index.md#berechnung-mit-dem-internen-parser)
 
 * unterstützt Einheiten
@@ -120,7 +129,7 @@ Siehe [Interner Parser](../Berechnungen/index.md#berechnung-mit-dem-internen-par
 * unterstützt einige Funktionen, die für technische Berechnungen vorteilhaft verwendet werden können. Die Liste der möglichen Funktionen ist in der Hilfe direkt nachzulesen.
 * Der interne Parser von Letto wird immer für die Berechnung des Lösungsfeldes einer Berechnungs- oder Mehrfachberechnungsfrage verwendet.
 
-##### Einheiten
+#### Einheiten
 Zahlenwerte mit Einheit können auf mehrere Arten im Maximafeld verwendet werden:
 * Als Datensatz mit Einheit durch Verwendung des Datensatzbezeichners: Dies ist die einfachste Variante, bei der gleichzeitig auch für jeden Schüler ein anderer Zahlenwert definiert werden kann
 * Als Direkteingabe im Maxima-Feld mit Zahlenwert, gefolgt von der Einheit in einfachen Hochkomma ( x:13'A/m' oder y:x*56'VA-1' )
@@ -133,7 +142,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 * Bezeichner dürfen nur die Zeichen a-zA-Z0-9 enthalten (zB. der Unterstrich ist verboten)
 * Bemerkungen werden wie in C oder Java übliche am Zeilenanfang mit einem doppelten Schrägstrich eingefügt
 
-##### Wichtige Funktionen
+#### Wichtige Funktionen
 
 | Funktion                                                                                                                     | Beschreibung                                  | Beispiel      | Ergebnis |
 |------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------|----------|
@@ -153,7 +162,7 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 | pow(x,y)                                                                                                                     | berechnet die Potenz x hoch y                 | pow(2,3)      | 8        |
 
 
-##### Tipps für Maxima-Newcomer
+#### Tipps für Maxima-Newcomer
 
 
 | Befehl                                                                       | Beschreibung                                                                                                                                                             |                                                                                                                                                                          
@@ -162,7 +171,6 @@ Der Präprozessor, der das Maximafeld vor der Berechnung durchläuft hat folgend
 | g1:x+y=5  g2:x-y=3  L:solve([g1,g2](g1,g2),[x,y](x,y))  x:ev(x,L)  y:ev(y,L) | Gleichungssystem lösen mit den Gleichungen g1 und g2  solve löst das Gleichungssystem und liefert den Ergebnisvektor L  ev berechnet aus dem Lösungsvektor die Variablen |
 | c:4+5*%i                                                                     | komplexe Zahl                                                                                                                                                            |
 | e:ratsimp(c*(2+3*%i))                                                        | komplexes Ergebnis auswerten                                                                                                                                             |
-
 
 ## Eingabemasken für die unterschiedlichen [Fragetypen](../Fragetypen/index.md)
 
@@ -249,63 +257,39 @@ In der Lösungsformel steht die richtige Antwort der Frage, je nach Fragemode ha
 
 #### Ansicht umschalten auf Eingabe pro Teilfrage
 Mit dem Button ***Ansicht für Definition der Mehrfachberechnungsfrage ...*** ![img_1.png](img_1.png) können Sie auf eine Ansicht umschalten,
-in der Sie jede Teilfrage getrennt bearbeiten können. Diese Ansicht ist vor allem bei Mehrfachberechnungsfragen mit Multiple-Choice oder Zuordnungsfragen vorteilhaft.
+in der Sie jede Teilfrage getrennt bearbeiten können. Diese Ansicht ist vor allem bei Mehrfachberechnungsfragen mit Multiple-Choice 
+oder Zuordnungsfragen vorteilhaft.
 <br>![img_2.png](img_2.png)<br>
 
+<!--
+### Berechnungsfrage
 
+<br>![400px-ClipCapIt-180901-122143.PNG](400px-ClipCapIt-180901-122143.PNG);
 
-[//]: # (### Berechnungsfrage)
+Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mit nur einer Berechnung. Diese Frage kann aber mehrere unterschiedliche Lösungen bereitstellen, um zB. typische Berechnungsfehler mit Punkteabzügen zu beurteilen. Es können also zusätzliche Reiter mit mehreren Antwortmöglichkeiten über das Kontextmenü erzeugt bzw. wieder gelöscht werden.
+<br>![450px-ClipCapIt-180901-212431.PNG](450px-ClipCapIt-180901-212431.PNG);
+<br>![400px-ClipCapIt-180901-132831.PNG](400px-ClipCapIt-180901-132831.PNG);
 
-[//]: # (<br>![400px-ClipCapIt-180901-122143.PNG]&#40;400px-ClipCapIt-180901-122143.PNG&#41;)
+* Berechnende Fragen sind wie Mehrfachberechnungsfragen mit nur einer Teilfrage bei dem das Antwortfeld automatisch erscheint.
+* Jeder Schüler bekommt eine eigene Angabe
+* Für den Druck kann die Frage auch für Projektangaben verwendet werden.
+* Berechnungen erfolgen mit Maxima
+* Alle verwendeten Variablen müssen im Angabtext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.
+* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen Formatierungsstring definiert werden und danach auch direkt in einer Liste bearbeitet werden.
 
-[//]: # ()
-[//]: # (Die Berechnungsfrage ist ähnlich aufgebaut wie eine Mehrfachberechnungsfrage mit nur einer Berechnung. Diese Frage kann aber mehrere unterschiedliche Lösungen bereitstellen, um zB. typische Berechnungsfehler mit Punkteabzügen zu beurteilen. Es können also zusätzliche Reiter mit mehreren Antwortmöglichkeiten über das Kontextmenü erzeugt bzw. wieder gelöscht werden.)
+Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.
 
-[//]: # ()
-[//]: # (<br>![450px-ClipCapIt-180901-212431.PNG]&#40;450px-ClipCapIt-180901-212431.PNG&#41;)
-
-[//]: # ()
-[//]: # (<br>![400px-ClipCapIt-180901-132831.PNG]&#40;400px-ClipCapIt-180901-132831.PNG&#41;)
-
-[//]: # ()
-[//]: # (* Berechnende Fragen sind wie Mehrfachberechnungsfragen mit nur einer Teilfrage bei dem das Antwortfeld automatisch erscheint.)
-
-[//]: # (* Jeder Schüler bekommt eine eigene Angabe)
-
-[//]: # (* Für den Druck kann die Frage auch für Projektangaben verwendet werden.)
-
-[//]: # (* Berechnungen erfolgen mit Maxima)
-
-[//]: # (* Alle verwendeten Variablen müssen im Angabtext in geschwungene Klammern gesetzt werden. Im Maximafeld und im Lösungsfeld ist die Klammer nicht notwendig.)
-
-[//]: # (* Für jede Variable wird ein Dataset mit möglichen Werten angelegt. Diese Datasets können über einen Formatierungsstring definiert werden und danach auch direkt in einer Liste bearbeitet werden.)
-
-[//]: # ()
-[//]: # ()
-[//]: # (Wenn mehrer Antwortmöglichkeiten definiert wurden, wird links ein zusätzliches Eingabefeld **Antwort Maxima:** angezeigt. Damit können Sie unterschiedliche Ergebnisse der Maxima-Berechnungen den unterschiedlichen Antworten zuordnen.)
-
-[//]: # ()
-[//]: # ()
-[//]: # (| Feld              | Beschreibung                                                                                                               |                                                                                                                            )
-
-[//]: # (|-------------------|----------------------------------------------------------------------------------------------------------------------------|)
-
-[//]: # (| '''Antwort Maxima | [Lösung_der_Antwort_einer_Teilfrage]&#40;#lösung-der-antwort-einer-teilfrage-&#41;, siehe [Berechnungen]&#40;../Berechnungen/index.md&#41; |)
-
-[//]: # (| **Einheit:**      | [Defiition der Einheit oder sonstiges Frageerhalten]&#40;../ZielEinheit/index.md&#41;                                              |)
-
-[//]: # (| **Prozent:**      | [Prozent_für_die_Antwort_einer_Teilfrage]&#40;#prozent-für-die-antwort-einer-teilfrage-&#41;                                       |)
-
-[//]: # (| **Toleranz:**     | [Toleranz_der_Antwort_einer_Teilfrage]&#40;#toleranz-der-antwort-einer-teilfrage-&#41;                                             |)
-
-[//]: # (| **Mode:**         | [Antwortmode]&#40;#antwortmode-&#41;                                                                                               |)
-
-[//]: # ()
-[//]: # ()
-[//]: # (Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.)
-
-[//]: # ()
-[//]: # (Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung]&#40;../Berechnungen/index.md#berechnung-mit-maxima&#41; oder den [internen Parser]&#40;../Berechnungen/index.md#berechnung-mit-dem-internen-parser&#41; bestimmt werden.)
+| Feld              | Beschreibung                                                                                                             |                                                                                                                            
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|
+| '''Antwort Maxima | [Lösung_der_Antwort_einer_Teilfrage](#lösung-der-antwort-einer-teilfrage) siehe [Berechnungen](../Berechnungen/index.md) |
+| **Einheit:**      | [Definition der Einheit oder sonstiges Frageerhalten](../ZielEinheit/index.md)                                           |
+| **Prozent:**      | [Prozent_für_die_Antwort_einer_Teilfrage](#prozent-für-die-antwort-einer-teilfrage)                                      |
+| **Toleranz:**     | [Toleranz_der_Antwort_einer_Teilfrage](#toleranz-der-antwort-einer-teilfrage)                                            |
+| **Mode:**         | [Antwortmode](#antwortmode)                                                                                         |
+Die Zeile 'Lösung für 1. Datenstatz' zeigt das Ergebnis an, wenn der Werte des 1. Datensatzes in die Lösungsformel eingesetzt werden. Diese Zeile dient der Kontrolle, ob die Lösung mit Zahlenwerten auch Sinn macht und ob die Einheiten zusammenpassen.
+Das Eingabefeld **Lösung** ist schreibgeschützt und kann nur durch die [Maxima-Berechnung](../Berechnungen/index.md#berechnung-mit-maxima) oder
+den [internen Parser](../Berechnungen/index.md#berechnung-mit-dem-internen-parser) bestimmt werden.
+-->
 
 ### Lückentextfrage
 Ein Lückentext enthält Lücken innerhalb eines Fragetextes, die durch den Schüler mit dem korrekten Inhalt gefüllt werden sollen.
@@ -400,6 +384,7 @@ Das Einfügen von Bildern über `[IMGx]`-Tags sowie Plugins über `[PI...]`-Tags
 Wenn die Auswahl ****Mischen**** ausgewählt wurde, dann werden die Antworten bei jedem Schüler in einer anderen Reihenfolge angezeigt.
 Vorraussetzung dafür ist, dass bei den Testeinstellungen ****Antworten mischen**** ausgewählt wurde.
 
+<!--
 [//]: # (* Es gibt zwei mögliche Eingabeansichten)
 
 [//]: # (  *        automatische Prozentvergabe: Alle richtigen Antworten bekommen einen Haken. Der Computer teilt dann die Prozentwerte gleichmäßig auf alle richtigen Antworten auf.)
@@ -421,7 +406,7 @@ Vorraussetzung dafür ist, dass bei den Testeinstellungen ****Antworten mischen*
 [//]: # (Eingabe der Antworten der Multiple-Choice-Frage durch Checkboxen: Die richtigen Antworten bekommen ein Häckchen. Feedback-Eingaben sind nicht möglich.)
 
 [//]: # (<br>![400px-ClipCapIt-180901-214538.PNG]&#40;400px-ClipCapIt-180901-214538.PNG&#41;)
-
+-->
 
 
 #### Beurteilung: 
