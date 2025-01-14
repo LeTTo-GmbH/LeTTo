@@ -168,7 +168,16 @@ Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funkti
 | set       | Vektoren werden ohne Berücksichtigung von doppelten Einträgen in beliebiger Reihenfolge als Menge verglichen |
 | multiset  | Vektoren werden ohne Berücksichtigung der Reihenfolge der Eintrag als Menge verglichen                       |
 
-###  Muster 
+### Parameter für die Größe und Art des Eingabefeldes bei berechneten Teilfragen einer Mehrfachberechnungsfrage
+| parameter  | Funktion                                                                                      |
+|------------|-----------------------------------------------------------------------------------------------|
+| w30        | Definiert ein Eingabefeld welches in etwa 30 Zeichen anzeigen kann                            |
+| w30m       | Definiert ein mathematisches Eingabefeld welches in etwa 30 Zeichen anzeigen kann             |
+| w30t       | Definiert ein Text-Eingabefeld welches in etwa 30 Zeichen anzeigen kann                       |
+| w20c       | Definiert ein Eingabefeld mit Taschenrechnerfunktion welches in etwa 20 Zeichen anzeigen kann |
+| w30p       | Definiert ein Eingabefeld mit Vorschaufunktion welches in etwa 30 Zeichen anzeigen kann       |
+
+##  Muster 
 Das Muster dient vor allem bei symbolischen Auswertungen dazu, um zu definieren, wie die Lösung aussehen kann. Ist ein Muster definiert, so wird automatische mit Symbolfull ausgewertet. Hierbei wird zuerste überprüft, ob die Schülereingabe dem Suchmuster entspricht, und danach noch geprüft ob der Ausdruck des Schülers die gleiche Funktion ergibt wie der Ausdruck im Ergebnis.
 
 Mehrere Muster welche durch Raute getrennt werden können angegeben werden, wobei der Schülerausdruck mindestens einem Muster entsprechen muss.

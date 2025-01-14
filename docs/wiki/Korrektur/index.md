@@ -3,8 +3,8 @@
 Die automatische Korrektur von LeTTo stellt einen wesentlichen Bestandteil von LeTTo dar. 
 Sie kann sehr weitreichend parametriert werden. 
 
-## [Zieleinheit](../Zieleinheit/index.md)
-* In der Zieleinheit kann das Korrekturverhalten von symbolischen Eingaben und Zahlenwerten wesentlich beeinflusst werden.
+## [Zieleinheit](../ZielEinheit/index.md)
+* In der [Zieleinheit](../ZielEinheit/index.md) kann das Korrekturverhalten von symbolischen Eingaben und Zahlenwerten wesentlich beeinflusst werden.
 * Sie ist im Einheitenfeld der Teilfrage direkt als Text oder mit einem Doppelklick auf das Einheitenfeld per Dialog konfigurierbar.
 
 ## Korrektur von Zahlenwerten im Einheit

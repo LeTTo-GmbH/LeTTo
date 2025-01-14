@@ -1,5 +1,6 @@
 # Neuigkeiten
 ## laufend
+* Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
 * Base-Container auf Letztversionen aktualisiert
 * MathJax 3
 * Toleranz mit Testvektoren bei boolschen Teilfragen [Testvektoren](../Korrektur/index.md#korrektur-von-symbolischen-ausdrücken-mit-testvektoren)
