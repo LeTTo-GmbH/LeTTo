@@ -1,4 +1,4 @@
-# Neuigkeiten
+# ältere Änderungen - Archiv
 ## Aktuelle Änderungen in LeTTo
 ### 5.1.2020 Rev
 * Datensatz-Namen dürfen bei automatischer Erzeugung nur aus Buchstaben, Zahlen und Unterstrich bestehen, wobei sie mit einem Buchstaben beginnen müssen.
