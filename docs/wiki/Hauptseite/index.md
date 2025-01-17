@@ -18,8 +18,10 @@
 | Online-Tests | [Test anlegen](../Testanlegen/index.md)                   | [Beispiele zu Test hinzufügen](../BeispielezuTesthinzufügen/index.md) | [Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md) | [Test ausführen](/notimplemented/index.md)                               | [Test beenden](/notimplemented/index.md) | [Test beurteilen](/notimplemented/index.md) |
 | Labor        | [Labor Benotung](../LaborBenotung/index.md)               | [Laborübung anlegen](../Laborübunganlegen/index.md)                   | [Labor Übungstest](../LaborÜbungstest/index.md)                     |                                                                          |                                          |                                             |
 
+### Neuigkeiten
+[Neuigkeiten](../Neuigkeiten/index.md)
 
-**Administration**: 
+### Administration 
 
 gehe zu [Administration](../Administration/index.md)
 

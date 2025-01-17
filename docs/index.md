@@ -3,6 +3,9 @@
 * LeTTo - Homepage: [https://letto.at/wordpress/](https://letto.at/wordpress/)
 * LeTTo - YouTube-Channel: [https://www.youtube.com/@letto-mint](https://www.youtube.com/@letto-mint)
 
+# News
+[Neuigkeiten](./wiki/Neuigkeiten/index.md)
+
 # [HowTo](./howto/index.md)
 * [Administrative HowTo's](./howto/admin/index.md)
 
