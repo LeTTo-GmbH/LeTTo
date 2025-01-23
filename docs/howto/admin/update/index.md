@@ -2,7 +2,8 @@
 - Grundsätzlich erfolgt das Update über das Setupservice welches mit https://serveradresse/config erreichbar ist
 
 ## Information über die laufenden Versionen
-![img.png](img.png)
+
+<img alt="img.png" src="img.png" width="600px"/>
 * "UPDATE CONFIG" führt zum eingentlichen Update-Dialog und ist die **empfohlene** Variante für Updates!
 * "Update" betrifft immer nur das Service in der gleichen Zeile. 
   Aktualisiert man nur ein Service so kann dies zu einer Mischung von Revisionen führen
@@ -12,7 +13,8 @@
 * "UPDATE YAML" setzt die yml.-Konfigurationsdatei des betreffenden Services auf den aktuellen Standardwert zurück.
 
 ## Update Dialog
-![img_1.png](img_1.png)
+
+<img alt="img_1.png" src="img_1.png" width="600px"/>
 
 #### Update aller Services (mit Ausnahme des MySQL-Server)
 * "UPDATE/RESTART ALL YAML": aktualisiert alle Services auf den eingestellten Tag(Update-Plan) ohne den Tag zu ändern.
