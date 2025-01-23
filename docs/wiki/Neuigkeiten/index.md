@@ -8,7 +8,7 @@
 * Healthcheck Timout verlängert
 
 ## Stable - Rev6544 10.12.2024
-* verschiedenste Bugfixes
+* verschiedenste Bugfixes - siehe https://project.letto.at/projects/letto/work_packages
 * pom für alle Services angepasst
 * Setup-Service überarbeitet
 * globale und importierte Tabellen aus CSV-Dateien [CSV-Dateien importiert](../BeispielsammlungEditieren/csv-tabellen_importieren/index.md)
