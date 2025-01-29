@@ -1,16 +1,18 @@
 # ZielEinheit
-Die Zieleinheit von Berechnungsfragen und Mehrfachberechnungsfragen definiert die [Einheit](../Einheit/index.md) und die Art der Verarbeitung des 
+
+Die Zieleinheit von Berechnungsfragen und Mehrfachberechnungsfragen definiert die [Einheit](../Einheit/index.md) und die Art der Verarbeitung des
 Ergebnisses, welches der Schüler eingeben soll. Siehe auch [Korrektur](../Korrektur/index.md)
 
-Neben der Einheit die der Schüler eingeben soll/muss kann auch die Art der symbolischen Verarbeitung und ein Muster wie die Lösung aussehen soll definiert werden. 
+Neben der Einheit die der Schüler eingeben soll/muss kann auch die Art der symbolischen Verarbeitung und ein Muster wie die Lösung aussehen soll definiert werden.
 
 Die Zieleinheit ist eine Zeichenkette mit einem definierten Syntax, da das Eingabefeld der Zieleinheit für komplexere Angaben zu klein ist und der Syntax nicht immer bekannt ist kann die Zieleinheit auch über einen Dialog eingegeben werden, welcher über Doppelklick auf die Zieleinheit erreicht wird.
 
-Sehr ähnlich zur Zieleinheit ist auch die Einheitenangabe für Datensätze und Variable im Angabetext 
-( [Editor für den Angabetext](../EditorfürdenAngabetext/index.md#datensätze-und-variable) ). 
+Sehr ähnlich zur Zieleinheit ist auch die Einheitenangabe für Datensätze und Variable im Angabetext
+( [Editor für den Angabetext](../EditorfürdenAngabetext/index.md#datensätze-und-variable) ).
 Einige Definitionen der Zieleinheit können auch hier verwendet werden.
 
-###  Dialog zur Definition der Zieleinheit 
+###  Dialog zur Definition der Zieleinheit
+
 Durch einen Doppelklick auf die Zieleinheit erhält man den Dialog zur Definition der Zieleinheit.
 <br>![ClipCapIt-200201-194450.PNG](ClipCapIt-200201-194450.PNG)
 Es öffnet sich der folgende Diaglog:
@@ -24,15 +26,16 @@ Im linken Teil des Dialogs wird die Art der Zieleinheit eingstellt (Für genauer
 
 Bei **Formatierung der Zeichenkette** kann ein Muster definiert werden, welches der Ausdruck des Schülers erfüllen muss. Mehrere Muster, welche durch Raute getrennt werden, können angegeben werden. Der Schülerausdruck muss mindestens einem Muster entsprechen.
 
-###  Syntax der Zieleinheit-Zeichenkette 
+###  Syntax der Zieleinheit-Zeichenkette
 Die Zieleinheit beginnt mit einem optinalen Gleichheitszeichen gefolgt von Einheit, Funktion oder symbolischer Berechnungsart. Danach werden alle gültigen Suchmuster durch Raute getrennt angehängt
-####  keine Zieleinheit 
+####  keine Zieleinheit
 Ist keine Zieleinheit angegeben, so muss der Schüler als Ergebnis ein Ergebnis angeben, welches die gleiche Dimension und den gleichen Datentyp wie das Ergebnis der Berechnung hat.
 
 Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalzahlen(beginnen mit 0x) oder Binärzahlen(beginnen mit 0b eingeben, welche für den Ergebnisvergleich in eine Ganzzahl umgewandelt werden.
 
-####  Einheiten des SI-Systems 
-* Beginnt die Zieleinheit mit einem **Gleichheitszeichen**, so muss der Schüler die Einheit, welche rechts neben dem Gleichheitszeichen steht genauso eingeben wie angegeben. 
+####  Einheiten des SI-Systems
+
+* Beginnt die Zieleinheit mit einem **Gleichheitszeichen**, so muss der Schüler die Einheit, welche rechts neben dem Gleichheitszeichen steht genauso eingeben wie angegeben.
 <pre>=VA
 </pre>
 * Beginnt die Einheit mit einem **Fragezeichen**, so muss der Schüler die angegebene Einheit verwenden, darf jedoch einen gültigen Einheitenvielfachen-Vorsatz vor dieser Einheit verwenden. (zB.: statt m/s darf der Schüler auch km/s oder m/ms verwenden, er darf jedoch nicht m/h verwenden da die Stunde kein Einheitenvorsatz für die Sekunde ist).
@@ -66,7 +69,8 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 | =kart       | 3+6*%i               | 3+6i <br> 3+6*j                  |                              | 6.7082arg63.435°                      |
 
 
-####  einheitenlose Zahlen 
+####  einheitenlose Zahlen
+
 Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
 
 | Sondereinheit | Bedeutung          | Zieleinheit | korrekte Antwort | falsche Antwort |
@@ -75,7 +79,8 @@ Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten d
 
 
 
-####  Sondereinheiten für ganze Zahlen 
+####  Sondereinheiten für ganze Zahlen
+
 Sondereinheiten für ganze Zahlen verhalten sich immer wie mit vorangestelltem Gleichheitszeichen, weshalb das vorangestellt Gleichheitszeichen auch weggelassen werden kann.
 Das bedeutet der Schüler muss das Ergebnis immer in der Form eingeben wie es die Zieleinheit verlangt!
 
@@ -87,23 +92,26 @@ Das bedeutet der Schüler muss das Ergebnis immer in der Form eingeben wie es di
 | bin           | Binärzahl                                                                                                                                                                               | bin oder =bin     | 0b101 oder 101                 | 5                           |
 | long          | Dezimale Ganzzahl                                                                                                                                                                       | long oder =long   | 32                             | 30 oder 0x20 oder 0b100000  |
 | deg           | Eingabe im Gradmaß mit Grad Minuten und Sekunden(auch mit Komma)                                                                                                                        | deg               | °2&#39;22&#15;&#39;            | 2.42°                       |
-| date          | Eingabe eines Datums                                                                                                                                                                    | date              | 2.4.1970                       | 2342                        | 
+| date          | Eingabe eines Datums                                                                                                                                                                    | date              | 2.4.1970                       | 2342                        |
 | time          | Eingabe einer Uhrzeit                                                                                                                                                                   | time              | 10:30:21                       | 3242                        |
 | datetime      | Eingabe eines Datums mit Uhrzeit                                                                                                                                                        | datetime          | 2.4.1970 10:30:21              | 235234                      |
 
-####  rational (Brüche) 
-Bei der Zieleinheit **rational** muss der Schüler einen Bruch aus Ganzzahlen eingeben. 
+####  rational (Brüche)
+
+Bei der Zieleinheit **rational** muss der Schüler einen Bruch aus Ganzzahlen eingeben.
 
 rational unterstützt keine Einheiten!
 
 Bei **=rational** muss der Schüler exakt den gleichen Bruch wie gefordert eingeben, ohne Gleichheitszeichen darf der Schüler jeden Bruch eingeben der den gleichen Wert wie gefordert darstellt (auch ungekürzt).
 
-####  symbolische Berechnungen 
+####  symbolische Berechnungen
+
 Syntax: Optimierungsgrad;Konstantenverarbeitung;Datensatzverarbeitung#Muster1#Muster2
 
 Soll der Schüler ein symbolisches Ergebnis eingeben, so muss die symbolische Berechnung gewählt werden. Je nach Optimierungsgrad gibt es verschiedenen symbolische Berechnungsmodie, welche im Dialog nach der Auswahl der symbolischen Berechnung in der zweiten Spalte des Dialogs ausgewählt werden können.
 
-#####  Optimierungsgrad 
+#####  Optimierungsgrad
+
 Der **Optimierungsgrad** gibt an, wie das Schülerergebnis und die Lösung des Beispiels umgeformt werden dürfen um dann den gleichen Ausdruck zu liefern.
 
 Folgende smbolischen Modi sind definiert:
@@ -126,7 +134,8 @@ Folgende smbolischen Modi sind definiert:
 
 Nach dem Optimierungsmode folgt durch **Strichpunkt** getrennt die Verarbeitungsart von Konstanten und durch einen weiteren Strichpunkt getrennt die Verarbeitungsart von Datensätzen.
 
-#####  Konstantenverarbeitung 
+#####  Konstantenverarbeitung
+
 Hier wird definiert welche Konstanten bei der Berechnung der Lösung als Zahlenwert eingesetzt werden.
 
 Die Konstantenverarbeitung bezieht sich hierbei nur auf Konstante welche nicht mit einem Prozent beginnen! Alle Konstanten welche mit einem Prozent beginnen bleiben solange erhalten, bis sie numerisch ausgewertet werden, dann werden sie immer sofort eingesetzt!
@@ -143,7 +152,8 @@ Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
 | constsall                                            | Es werden alle definierten Konstaten im Ergebnis eingesetzt                |
 
 
-#####  Datensatzverarbeitung 
+#####  Datensatzverarbeitung
+
 Hier wird definiert welche Datensätze bei der Berechnung der Lösung als Zahlenwert eingesetzt werden. Wird ein Datensatz nicht eingesetzt, so wird er in einem symbolischen Ergebnis wie eine Variable behandelt.
 
 Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
@@ -156,7 +166,8 @@ Folgende Möglichkeiten gibt es für die Konstantenverarbeitung:
 | constvarsall                                        | Es werden alle Datensätze in das Ergebnis eingesetzt (Standard)    |
 
 
-####  Funktionen 
+####  Funktionen
+
 Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funktionsparameter als Variable vorkommen dürfen. Da diese Variablen durch Name und Einheit vorgegeben sind, ist auch eine Einheitenprüfung von Funktionen mögliche, was bei symbolischen Ausdrücken im Allgemeinen nicht möglich ist.
 
 ### Parameter für den Ergebnisvergleich von Vektoren und Mengen bei der Schülereingabe
@@ -168,7 +179,10 @@ Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funkti
 | set       | Vektoren werden ohne Berücksichtigung von doppelten Einträgen in beliebiger Reihenfolge als Menge verglichen |
 | multiset  | Vektoren werden ohne Berücksichtigung der Reihenfolge der Eintrag als Menge verglichen                       |
 
-### Parameter für die Größe und Art des Eingabefeldes bei berechneten Teilfragen einer Mehrfachberechnungsfrage
+### Parameter für die Größe bzw. Breite und Art des Eingabefeldes bei berechneten Teilfragen einer Mehrfachberechnungsfrage
+
+* Sind durch **Strichpunkt** von der Einheit getrennt
+
 | parameter  | Funktion                                                                                      |
 |------------|-----------------------------------------------------------------------------------------------|
 | w30        | Definiert ein Eingabefeld welches in etwa 30 Zeichen anzeigen kann                            |
@@ -177,16 +191,17 @@ Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funkti
 | w20c       | Definiert ein Eingabefeld mit Taschenrechnerfunktion welches in etwa 20 Zeichen anzeigen kann |
 | w30p       | Definiert ein Eingabefeld mit Vorschaufunktion welches in etwa 30 Zeichen anzeigen kann       |
 
-##  Muster 
+##  Muster
+
 Das Muster dient vor allem bei symbolischen Auswertungen dazu, um zu definieren, wie die Lösung aussehen kann. Ist ein Muster definiert, so wird automatische mit Symbolfull ausgewertet. Hierbei wird zuerste überprüft, ob die Schülereingabe dem Suchmuster entspricht, und danach noch geprüft ob der Ausdruck des Schülers die gleiche Funktion ergibt wie der Ausdruck im Ergebnis.
 
 Mehrere Muster welche durch Raute getrennt werden können angegeben werden, wobei der Schülerausdruck mindestens einem Muster entsprechen muss.
 
 Im wesentlichen gibt es zwei Arten wie das Suchmuster definiert sein kann:
 * Als Mengendefinition wenn das Suchmuster mit einer eckigen Klammer beginnt
-* ansonsten als regulärer Ausdruck, der vom Syntax her an die regulären Ausdrücke von Java angelehnt ist sich jedoch bei der Klammerung und den Platzhaltern von den Java-RegExp unterscheidet. 
+* ansonsten als regulärer Ausdruck, der vom Syntax her an die regulären Ausdrücke von Java angelehnt ist sich jedoch bei der Klammerung und den Platzhaltern von den Java-RegExp unterscheidet.
 
-####  Zeichen für die Definition 
+####  Zeichen für die Definition
 
 Folgende Zeichen sind definiert:
 
@@ -203,7 +218,8 @@ Folgende Zeichen sind definiert:
 
 Alle anderen Zeichen haben keine spezielle Funktion.
 
-####  Mengendefinition 
+####  Mengendefinition
+
 Bei der Mengendefinition werden zu Beginn in eckigen Klammern alle Elemente definiert welche im Ergebnis vorkommen dürfen gefolgt von allen Funktionen durch Beistrich getrennt.
 
 Beispiele:
@@ -214,8 +230,9 @@ Beispiele:
 | [N*](N*)             | 3*4 <br>3                                          | 3+4<br>1.2*3                     |
 
 
-####  Definition als regulärer Ausdruck 
-Ein Regulärer Ausdruck besteht aus den definierten Mengen, fixen Zeichen und Gruppierungen mit Verknüpfungen. 
+####  Definition als regulärer Ausdruck
+
+Ein Regulärer Ausdruck besteht aus den definierten Mengen, fixen Zeichen und Gruppierungen mit Verknüpfungen.
 
 Die Mengen NZRCGVKE sind wie schon zuvor definiert.
 
