@@ -226,7 +226,7 @@ Beispiele:
 
 | Muster                 | trifft bei                                                     | trifft nicht bei                     |
 | ---------------------- | -------------------------------------------------------------- | ------------------------------------ |
-| `[NK*(](NK*(),sin,cos` | `4`<br>`pi`<br>`2*pi`<br>`sin(2*pi)`<br>`sin(4)`<br>`5*sin(4)` | `tan(pi)`<br>`sin(pi/2)<br>5+sin(4)` |
+| `[NK*(](NK*(),sin,cos` | `4`<br>`pi`<br>`2*pi`<br>`sin(2*pi)`<br>`sin(4)`<br>`5*sin(4)` | `tan(pi)`<br>`sin(pi/2)`<br>`5+sin(4)` |
 | `[N*](N*)`             | `3*4`<br>`3`                                                   | `3+4`<br>`1.2*3`                     |
 
 
