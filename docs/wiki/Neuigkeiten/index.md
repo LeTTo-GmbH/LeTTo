@@ -6,6 +6,7 @@
 * Toleranz mit Testvektoren bei boolschen Teilfragen [Testvektoren](../Korrektur/index.md#korrektur-von-symbolischen-ausdrücken-mit-testvektoren)
 * Funktionen curveinterpol und curvepv für globale und importierte Tabellen [Berechnungen](../Berechnungen/index.md#funktionen-für-importierte-tabellen)
 * Healthcheck Timout verlängert
+* Redis-Datenbank
 
 ## Stable - Rev6544 10.12.2024
 * verschiedenste Bugfixes - siehe https://project.letto.at/projects/letto/work_packages
