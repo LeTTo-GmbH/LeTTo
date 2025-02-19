@@ -1,12 +1,21 @@
 # Neuigkeiten
+
 ## laufend
+* MathJax3 in Questionservice
+
+## Stable - Rev 6669/6670 - 13.2.2024
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
 * Base-Container auf Letztversionen aktualisiert
 * MathJax 3
 * Toleranz mit Testvektoren bei boolschen Teilfragen [Testvektoren](../Korrektur/index.md#korrektur-von-symbolischen-ausdrücken-mit-testvektoren)
 * Funktionen curveinterpol und curvepv für globale und importierte Tabellen [Berechnungen](../Berechnungen/index.md#funktionen-für-importierte-tabellen)
 * Healthcheck Timout verlängert
-* Redis-Datenbank
+* Redis-Datenbank 
+* Mongo-Datenbank
+* Bugfixes
+* Euro-Symbol
+* Latex-Parser für LeTTo-app
+* Login-Logging in Mongo-DB
 
 ## Stable - Rev6544 10.12.2024
 * verschiedenste Bugfixes - siehe https://project.letto.at/projects/letto/work_packages
