@@ -4,6 +4,9 @@
 * MathJax3 in Questionservice
 * Bugfixes #2066, #1932, #2124
 * Docker-Container aktualisiert
+* #2129
+* Rundungsfehler bei Genauigkeit a0 behoben
+* Logfilearchiv für Lettoserver definiert
 
 ## Stable - Rev 6669/6670 - 13.2.2024
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
