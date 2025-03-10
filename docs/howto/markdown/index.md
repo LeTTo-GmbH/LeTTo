@@ -29,7 +29,13 @@ Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der S
   <pre>&lt;!-- Dies ist ein Kommentar --&gt;</pre>
 
 # Probleme beim Such-Index
+## Indexierungs-Fehler
 Index in Datei: https://doc.letto.at/search.json
 * Im Browser öffnen - Fehlermeldungen lesen
 * Datei downloaden und in Geany öffnen - Fehler suchen
 * korrigieren im Markdown-Sourcecode
+
+## Zu wenige Suchtreffer
+* Wenn nur 10 Treffer gefunden werden die Einträge von limit in der Datei docs/assets/js/simple-jekyll-search.min.js von 10 auf 100 erhöhen
+* obige Korrektur immer anwenden wenn jekyll-search auf eine neue Version gesetzt wird.
+
