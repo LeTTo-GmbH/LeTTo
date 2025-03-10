@@ -1,5 +1,6 @@
 # Sonderzeichen
 ## Als Entity
+
 | Name               | Zeichen | Entity |
 |--------------------|---------|--------|
 | Backslash          | &#92;   | `&#92;` |
@@ -12,6 +13,7 @@
 | Größer             | &gt;    | gt     |
 
 ## verblockt
+
 | Bezeichnung        | Zeichen | Markdown |
 | ------------------ | ------- | -------- |
 | Backslash          | \\      | `\\`     |
