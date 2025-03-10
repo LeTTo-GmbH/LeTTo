@@ -1,5 +1,5 @@
 # Doc zu Markdown
-* https://github.github.com/gfm/
+* [https://github.github.com/gfm/](https://github.github.com/gfm/)
 
 # Sonderzeichen
 
@@ -17,7 +17,7 @@ Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der S
 | Größer             | &gt;    | `&gt;`   | `\>`     | \>          |
 
 # Google Custom Search
-* Konfiguration: https://programmablesearchengine.google.com/controlpanel/all
+* Konfiguration: [https://programmablesearchengine.google.com/controlpanel/all](https://programmablesearchengine.google.com/controlpanel/all)
 * Prüfe die vorhandenen Daten: https://search.google.com/search-console/index?resource_id=sc-domain%3Adoc.letto.at
   https://search.google.com/search-console?resource_id=sc-domain%3Adoc.letto.at
 
