@@ -3,6 +3,8 @@
 
 # Sonderzeichen
 
+`\`
+
 Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der Suche!
 
 | Name               | Zeichen | Entity   | Markdown | Als Zeichen |
