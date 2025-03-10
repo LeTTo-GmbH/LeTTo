@@ -3,7 +3,6 @@
 
 # Sonderzeichen
 
-`\`
 
 Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der Suche!
 
