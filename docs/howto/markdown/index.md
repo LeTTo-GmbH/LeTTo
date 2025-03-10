@@ -1,9 +1,8 @@
-
 # Sonderzeichen
 ## Als Entity
 | Name               | Zeichen | Entity |
 |--------------------|---------|--------|
-| Backslash          | &#92;   | #92    |
+| Backslash          | &#92;   | `&#92;` |
 | eckige Klammer auf | &#91;   | #91    |
 | eckige Klammer zu  | &#93;   | #93    |
 | senkrechter Strick | &#124;  | #124   |
