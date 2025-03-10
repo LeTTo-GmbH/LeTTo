@@ -3,6 +3,8 @@
 
 # Sonderzeichen
 
+Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der Suche!
+
 | Name               | Zeichen | Entity   | Markdown | Als Zeichen |
 |--------------------|---------|----------|----------|-------------|
 | Backslash          | &#92;   | `&#92;`  | `\\`     | `\`         |
@@ -21,4 +23,10 @@
 
 # Kommentare in md-Dateien:
 `[//]`: Diese Art von Kommentaren ist nicht kompatibel mit Github-DOC!!!
-`<!-- Dies ist ein Kommentar -->` : Funktioniert auch mit Girhub-DOC!!!
+`<!-- Dies ist ein Kommentar -->` : Funktioniert auch mit Github-DOC!!!
+
+# Probleme beim Such-Index
+Index in Datei: https://doc.letto.at/search.json
+* Im Browser öffnen - Fehlermeldungen lesen
+* Datei downloaden und in Geany öffnen - Fehler suchen
+* korrigieren im Markdown-Sourcecode
