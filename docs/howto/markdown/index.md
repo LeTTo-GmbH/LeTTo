@@ -24,14 +24,14 @@ Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der S
 
 # Kommentare in md-Dateien:
 * als Markdown-Kommentar:
-  > &#91;//&#93;
+  <pre>&#91;/&#93;(Das ist ein Kommentar)</pre>
   
-  Diese Art von Kommentaren ist nicht kompatibel mit Github-DOC!!!<br>
+  Diese Art von Kommentaren [](Das ist ein Kommentar) ist nicht kompatibel mit Github-DOC!!!<br>
 
 * Als HTML-Kommentar:
-  > &lt;!-- Dies ist ein Kommentar --&gt;
+  <pre>&lt;!-- Dies ist ein Kommentar --&gt;</pre>
 
-  Funktioniert auch mit Github-DOC!!!
+  Funktioniert auch <!-- Das ist ein Kommentar --> mit Github-DOC!!!
 
 
 # Probleme beim Such-Index
