@@ -3,19 +3,18 @@
 
 # Sonderzeichen
 
-Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der Suche!
+Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der Suche! `&#92`
 
-| Name               | Zeichen | Entity     | Markdown    | Als Zeichen |
-|--------------------|---------|------------|-------------|-------------|
-| Backslash          | &#92;   | &amp;#92;  | &#92;&#92;  |             |
-| eckige Klammer auf | &#91;   | &amp;#91;` | &#92;&#91;  |             |
-| eckige Klammer zu  | &#93;   | &amp;#93;  | &#92;&#93;  |             |
-| senkrechter Strich | &#124;  | &amp;#124; | &#92;&#124; |             |
-| Doppelhochkomma    | &quot;  | &amp;quot; | &#92;&quot; |             |
-| Einfachhochkomma   | &#39;   | &amp;#39;  | &#92;&#39;  |             |
-| Kleiner            | &lt;    | &amp;lt;   | &#92;&lt;   |             |
-| Größer             | &gt;    | &amp;gt;   | &#92;       |             |
-
+| Name               | Zeichen | Entity     | Markdown    | 
+|--------------------|---------|------------|-------------|
+| Backslash          | &#92;   | &amp;#92;  | &#92;&#92;  |
+| eckige Klammer auf | &#91;   | &amp;#91;` | &#92;&#91;  |
+| eckige Klammer zu  | &#93;   | &amp;#93;  | &#92;&#93;  |
+| senkrechter Strich | &#124;  | &amp;#124; | &#92;&#124; |
+| Doppelhochkomma    | &quot;  | &amp;quot; | &#92;&quot; |
+| Einfachhochkomma   | &#39;   | &amp;#39;  | &#92;&#39;  |
+| Kleiner            | &lt;    | &amp;lt;   | &#92;&lt;   |
+| Größer             | &gt;    | &amp;gt;   | &#92;       |
 
 # Google Custom Search
 * Konfiguration: [https://programmablesearchengine.google.com/controlpanel/all](https://programmablesearchengine.google.com/controlpanel/all)
