@@ -23,16 +23,11 @@ Verblocken mit Backslash als Markdown führt zu Fehlern in der Indexierung der S
   https://search.google.com/search-console?resource_id=sc-domain%3Adoc.letto.at
 
 # Kommentare in md-Dateien:
-* als Markdown-Kommentar:
-  <pre>&#91;/&#93;(Das ist ein Kommentar)</pre>
-  
-  Diese Art von Kommentaren [](Das ist ein Kommentar) ist nicht kompatibel mit Github-DOC!!!<br>
+* als Markdown-Kommentar [](Das ist ein Kommentar) :
+  <pre>&#91;&#93;(Das ist ein Kommentar)</pre>
 
-* Als HTML-Kommentar:
+* Als HTML-<!-- Das ist ein Kommentar -->Kommentar:
   <pre>&lt;!-- Dies ist ein Kommentar --&gt;</pre>
-
-  Funktioniert auch <!-- Das ist ein Kommentar --> mit Github-DOC!!!
-
 
 # Probleme beim Such-Index
 Index in Datei: https://doc.letto.at/search.json
