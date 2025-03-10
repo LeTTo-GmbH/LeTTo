@@ -3,16 +3,16 @@
 
 # Sonderzeichen
 
-| Name               | Zeichen | Zeichen | Entity   | Markdown |
-|--------------------|---------|---------|----------|----------|
-| Backslash          | &#92;   | \\      | `&#92;`  | `\\`     |
-| eckige Klammer auf | &#91;   | \[      | `&#91;`  | `\[`     |
-| eckige Klammer zu  | &#93;   | \]      | `&#93;`  | `\]`     |
-| senkrechter Strich | &#124;  | \|      | `&#124;` | `\|`     |
-| Doppelhochkomma    | &quot;  | \"      | `&quot;` | `\"`     |
-| Einfachhochkomma   | &#39;   | \'      | `&#39;`  | `\'`     |
-| Kleiner            | &lt;    | \<      | `&lt;`   | `\<`     |
-| Größer             | &gt;    | \>      | `&gt;`   | `\>`     |
+| Name               | Zeichen | Entity   | Markdown |
+|--------------------|---------|----------|----------|
+| Backslash          | &#92;   | `&#92;`  | `\\`     |
+| eckige Klammer auf | &#91;   | `&#91;`  | `\[`     |
+| eckige Klammer zu  | &#93;   | `&#93;`  | `\]`     |
+| senkrechter Strich | &#124;  | `&#124;` | `\|`     |
+| Doppelhochkomma    | &quot;  | `&quot;` | `\"`     |
+| Einfachhochkomma   | &#39;   | `&#39;`  | `\'`     |
+| Kleiner            | &lt;    | `&lt;`   | `\<`     |
+| Größer             | &gt;    | `&gt;`   | `\>`     |
 
 # Google Custom Search
 * Konfiguration: https://programmablesearchengine.google.com/controlpanel/all
