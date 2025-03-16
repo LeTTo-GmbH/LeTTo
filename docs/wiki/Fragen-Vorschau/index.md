@@ -1,5 +1,6 @@
 # Fragen-Vorschau
 <br>![500px-ClipCapIt-180618-223256.PNG](500px-ClipCapIt-180618-223256.PNG)
+
 Die Fragen-Vorschau kann in der Ansicht [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md) über den [Toolbar](../Toolbar/index.md) mit dem Button ![22px-ClipCapIt-180618-222430.PNG](22px-ClipCapIt-180618-222430.PNG) geöffnet werden.
 
 Mit der Vorschau einer Frage kann rasch eine Frage bei der Erstellung kontrolliert werden.
