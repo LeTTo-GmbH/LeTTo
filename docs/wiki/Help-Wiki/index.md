@@ -53,7 +53,7 @@ mehr in der [Wikipediahilfe](https://de.wikipedia.org/wiki/Hilfe:Textgestaltung)
 Es gibt verschiedene Möglichkeiten Text auszuzeichnen ([https://de.wikipedia.org/wiki/Wikipedia:Zitate#Layout siehe auch Wikipedia](https://de.wikipedia.org/wiki/Wikipedia:Zitate#Layout siehe auch Wikipedia)):
 
 ##### &lt;nowiki&gt;&lt;tt&gt;Text&lt;/tt&gt;&lt;/nowiki&gt;
-<code>&lt;nowiki&gt;&lt;tt&gt;vorformatierter Text<br>neue Zeile<br>"&amp;_nbsp;" mit einem erzwungenen Leerzeichen am Zeilenanfang&lt;/tt&gt;&lt;/nowiki&gt;</code> 
+<code>&lt;nowiki&gt;&lt;tt&gt;vorformatierter Text<br>neue Zeile<br>"&amp;nbsp;" mit einem erzwungenen Leerzeichen am Zeilenanfang&lt;/tt&gt;&lt;/nowiki&gt;</code> 
 
 Erzeugt:
 

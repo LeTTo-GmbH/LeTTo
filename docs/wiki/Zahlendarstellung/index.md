@@ -38,13 +38,13 @@ Für die Zahlendarstellung sind folgende Zahlenformate definiert:
 
 #### für Vektoren, Matrizen und Mengen können weiters folgende Parameter angegeben werden
 
-| Format | Bedeutung                                                                    | Beispiel  | Wert           | Ausgabe                       |
-|--------|------------------------------------------------------------------------------|-----------|----------------|-------------------------------|
-| ,line  | gibt den Vektorn in einer Zeile an                                           | {x,line}  | [2,3,4](2,3,4) | (2&amp;#x007C;3&amp;#x007C;4) |
-| ,input | gibt den Vektorn so an, wie er auch eingegeben werden kann                   | {x,input} | [2,3,4](2,3,4) | [2,3,4](2,3,4)                |
-| ,set   | gibt eine Menge mit Mengenklammern an                                        | {x,set}   | [2,3,4](2,3,4) | {2,3,4}                       |
-| ,list  | gibt eine Menge ohne Klammern an                                             | {x,list}  | [2,3,4](2,3,4) | 2,3,4                         |
-| ,frac  | stellt eine Menge mit 2 oder 3 Elementen als Bruch oder gemischten Bruch dar | {x,frac}  | [2,3,4](2,3,4) | 2 3/4                         |
+| Format | Bedeutung                                                                    | Beispiel  | Wert           | Ausgabe               |
+|--------|------------------------------------------------------------------------------|-----------|----------------|-----------------------|
+| ,line  | gibt den Vektorn in einer Zeile an                                           | {x,line}  | [2,3,4](2,3,4) | (2&#x007C;3&#x007C;4) |
+| ,input | gibt den Vektorn so an, wie er auch eingegeben werden kann                   | {x,input} | [2,3,4](2,3,4) | [2,3,4](2,3,4)        |
+| ,set   | gibt eine Menge mit Mengenklammern an                                        | {x,set}   | [2,3,4](2,3,4) | {2,3,4}               |
+| ,list  | gibt eine Menge ohne Klammern an                                             | {x,list}  | [2,3,4](2,3,4) | 2,3,4                 |
+| ,frac  | stellt eine Menge mit 2 oder 3 Elementen als Bruch oder gemischten Bruch dar | {x,frac}  | [2,3,4](2,3,4) | 2 3/4                 |
 
 
 #### für allgemeine Funtionen können folgende Parameter angegeben werden

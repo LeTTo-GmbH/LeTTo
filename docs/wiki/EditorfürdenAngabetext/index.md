@@ -139,12 +139,12 @@ Innerhalb von Listings können natürlich auch Variable verwendet werden, die da
 * Folgende Zeichen haben im Fragetext eine Sonderstellung und müssen deshalb teilweise gesondert behandelt werden:
 
 | Zeichen | Bezeichnung | Funktion | Verwendung im Fragetext |
-|---------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| $                                                             | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                        |
+|---------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| $                                                             | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                  |
 | {                                                             | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
-| &lt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;lt; gewandelt und ist deshalb normal verwendbar                              |
-| &gt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;amp;gt; gewandelt und ist deshalb normal verwendbar                              |
-| [                                                             | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                  |
+| &lt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;lt; gewandelt und ist deshalb normal verwendbar                            |
+| &gt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;gt; gewandelt und ist deshalb normal verwendbar                            |
+| [                                                             | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                            |
 
 
 ###  Sonderzeichen in einer Formelumgebung im Fragetext 

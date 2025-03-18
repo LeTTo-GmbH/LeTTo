@@ -68,7 +68,7 @@ school muss durch das Schulkürzel ersetzt werden!!
 |-
 | mysqldb || Datenbankname der Schuldatenbank || letto || ja
 |-
-| mysqlpars || Datenbankparameter für den Datenbankzugriff || useSSL=false&amp;amp;useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC&amp;amp;allowPublicKeyRetrieval=true || ja
+| mysqlpars || Datenbankparameter für den Datenbankzugriff || useSSL=false&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true || ja
 |-
 | memory || maximal verwendeter RAM-Speicher || 500m || nein
 |-
