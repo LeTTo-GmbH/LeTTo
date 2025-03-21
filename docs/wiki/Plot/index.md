@@ -31,17 +31,16 @@ Syntax:
 | fill:_{Funktion1}_ **&lt;** _{Funktion2}_ | Füllung des Bereichs wo die Funkion1 kleine als die Funktion2 ist | y(x):=-0.1*x^2+7;y(x):=0.2*x+1;**fill:ch1&lt;ch2,color=green** | <br>![100px-ClipCapIt-190420-123533.PNG](100px-ClipCapIt-190420-123533.PNG) |
 | fill:_{Funktion1}_ **-** _{Funktion2}_    | Füllung des Bereichs zwischen Funkion1 und Funktion2              | y(x):=-0.1*x^2+7;y(x):=0.2*x+1;**fill:ch1-ch2,color=green**    | <br>![100px-ClipCapIt-190420-123555.PNG](100px-ClipCapIt-190420-123555.PNG) |
 
-
 * Als Funktionsnamen kann der Name der Funktion, oder die Nummer der Funktion (ch1, ch2,...) verwendet werden
 * Nach der Funktionsdefinition kann durch Beistrich getrennt die Füllung konfiguriert werden.
-
 
 | Parameter       | Beschreibung                                                                                                                                   | Beispiel   |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | color=_{Farbe}_ | [Farbe](../Farben/index.md) der Füllung setzen                                                                                                 | color=blue |
-| size            | Linienstärke der Füllungsumrandung                                                                                                             | size=5     |
-| fill            | Füllstärke (mit der Farbe der Linienfarbe) einer Füllung von der Graphenlinie bis zur Nulllinie 0..keine Füllung (Standard) 1..deckend gefüllt | fill=0.3   |
-
+| size=           | Linienstärke der Füllungsumrandung                                                                                                             | size=5     |
+| fill=           | Füllstärke (mit der Farbe der Linienfarbe) einer Füllung von der Graphenlinie bis zur Nulllinie 0..keine Füllung (Standard) 1..deckend gefüllt | fill=0.3   |
+| from=           | Füllung beginnt bei der x-Koordinate                                                                                                           | from=2     |
+| to=             | Füllung endet bei der x-Koordinate                                                                                                             | to=5       |
 
 ###  gespiegelter Funktionsplot (functiony) 
 X und Y-Achse werden vertauscht! 
