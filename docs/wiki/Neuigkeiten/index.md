@@ -7,6 +7,7 @@
 * #2129
 * Rundungsfehler bei Genauigkeit a0 behoben
 * Logfilearchiv für Lettoserver definiert
+* Debug-Variable eingeführt
 * Überarbeiteter Scorer bei symbolischen Ergebnissen
 * pvremove, pvinsert, pvinserlast
 * debug-Variable in der Fragevorschau
