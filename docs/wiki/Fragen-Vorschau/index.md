@@ -1,27 +1,54 @@
 # Fragen-Vorschau
-<br>![500px-ClipCapIt-180618-223256.PNG](500px-ClipCapIt-180618-223256.PNG)
 
-Die Fragen-Vorschau kann in der Ansicht [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md) über den [Toolbar](../Toolbar/index.md) mit dem Button ![22px-ClipCapIt-180618-222430.PNG](22px-ClipCapIt-180618-222430.PNG) geöffnet werden.
+Die Fragen-Vorschau kann in der Ansicht [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md) über die [Toolbar](../Toolbar/index.md) mit dem
+Button ![img_1.png](img_1.png) geöffnet werden.
 
-Mit der Vorschau einer Frage kann rasch eine Frage bei der Erstellung kontrolliert werden.
-In der linken Hälfte des Dialoges wird die Frage dargestellt, wie sie später in einem [Online-Test](/notimplemented/index.md) verwendet werden kann.
-Es kann sofort das Verhalten der Frage und die entsprechende Ergebniskorrektur getestet werden.
+<img alt="img.png" src="img.png" width="800"/>
 
-Auf der rechten Seite sind alle Lösungen zur akt. ausgewählten Datensatz-Nummer angegeben.
-Darunter werden die Werte von allen Datenensätzen (Variablen) angezeigt.
+* Mit der Vorschau einer Frage kann rasch eine Frage bei der Erstellung kontrolliert werden.
+* In der linken Hälfte des Dialoges wird die Frage dargestellt, wie sie später in einem [Online-Test](/notimplemented/index.md) verwendet werden kann.
+* Es kann sofort das Verhalten der Frage und die entsprechende Ergebniskorrektur getestet werden.
+* In der rechten Hälfte des Dialoges ist oben eine Toolbar zur Steuerung der Vorschau zu sehen:
+* Darunter auf der rechten Seite sind alle Lösungen zur aktuell ausgewählten Datensatz-Nummer angegeben.
+* Darunter werden die Werte von allen Datenensätzen (Variablen) angezeigt.
+* Darunter werden nach Eingabe einer Lösung in der Debug-Vorschau Informationen über die Korrektur angezeigt.
 
-In der rechten Hälfte des Dialoges ist oben ein Toolbar zur Steuerung der Vorschau zu sehen:
+### linke Hälfte - Fragen Vorschau
+
+* Über den Button ![img_2.png](img_2.png) in der Toolbar kann zwischen Debug- ,Schüler- und App-Ansicht umgeschaltet werden.
+* Die Art der Ansicht kann an den Buttons der linken Hälfte des Dialoges erkannt werden.
+
+#### Debug-Ansicht mit Debug-Variablen
+* In dieser Ansicht können Schülereingaben simuliert werden und die Korrektur der Eingabe wird in der rechten Hälfte des 
+  Dialogs unterhalb der Datensätze angezeigt. Die Debug-Informationen sind nur in der Debug-Ansicht sichtbar.
+* Die Debug-Ansicht ist die Standardansicht, wenn die Vorschau das erste Mal geöffnet wird.
+* Die Debug-Informationen in der rechten Hälfte des Dialoges enthalten alle Teilfragen und deren Korrektur. 
+  Anschließend werden alle Variablen des Maxima-Feldes angezeigt welche mit dem Wort "debug" beginnen.
+* Buttons: 
+  
+  ![img_3.png](img_3.png)
+
+#### Schüler-Ansicht
+* In dieser Ansicht wird die Frage so dargestellt, wie sie später in einem Online-Test verwendet werden kann.
+
+  ![img_5.png](img_5.png)
+
+#### App-Ansicht
+* In dieser Ansicht wird die Frage so dargestellt, wie sie später in der LeTTo-App verwendet werden kann.
+* Die App-Ansicht ist nur sichtbar wenn die App im Setup-Service aktiviert ist.
+
+  ![img_4.png](img_4.png)
+
 ### Toolbar
-<br>![150px-ClipCapIt-180618-223712.PNG](150px-ClipCapIt-180618-223712.PNG)
 
-| Hilfe    | Der Hilfe-Button führt auf diese Wiki-Seite                                                                                                                                                                                                  |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Feedback | Umschalten zwischen Eingabe- und Feedback-Ansicht: In der Eingabeansicht kann das Frageverhalten getestet werden, in der Feedback-Ansicht wird die Frage nach der Beurteilung dargestellt.                                                   |
-| Würfeln  | Mit diesem Button können die Antworten bei [Multiple-Choice-Fragen](/notimplemented/index.md) und bei [Zuordnungsfragen](/notimplemented/index.md) neu gewürfelt werden und damit das Verhalten von Fragen dieses Fragetyps getestet werden. |
-| Scroller | Mit dem Scroller können alle Datensätze getestet werden. Der Fragetext wird mit den Variablen der aktuell ausgewählten Datensatz-Nummer angezeigt und alle Grafiken von [Plugins](../Plugins/index.md) werden neu gezeichnet.                |
+![img_6.png](img_6.png)
 
+* bei "Lösung(en) zur Angabe / Datensatz:" wird die Nummer des aktuell ausgewählten Datensatzes angezeigt.
 
-Im Bild zu sehen ist die Vorschau für eine [Multiple-Choice-Frage](/notimplemented/index.md).
-
-Kategorie:Dialoge Kategorie:Beispiele Editieren
+| Button                  | Funktion                                              |
+|-------------------------|-------------------------------------------------------|
+| ![img_7.png](img_7.png) | wechselt zum vorigen Datensatz.                       |
+| ![img_8.png](img_8.png) | wechselt zum nächsten Datensatz.                      |
+| ![img_9.png](img_9.png) | Schalten zwischen Debug- ,Schüler- und App-Ansicht um |
+| ![img_10.png](img_10.png) | Hilfe                                                 |
 

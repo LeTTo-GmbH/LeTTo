@@ -4,23 +4,41 @@
 Mit den Toolsbars im oberen Bereich der [Beispielsammlung](../Beispielsammlung/index.md) bzw. des Modus [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md) kann die Beispielerstellung gesteuert und unterschiedliche Dialoge zur Bearbeitung angezeigt werden.
 Dieser Toolbar ist in zwei Bereiche unterteilt: Links kann das Verhalten der Kategorien gesteuert werden, rechts sind die entsprechenden Buttons für die Bearbeitung einer ausgewählten Frage angeordnet.
 
-### Toolbar für Kategorien 
-![450px-ClipCapIt-180618-215657.PNG](450px-ClipCapIt-180618-215657.PNG)
+### Toolbar für Kategorien
 
-| ![60px-ClipCapIt-180618-220345.PNG](60px-ClipCapIt-180618-220345.PNG) | Zurückwechseln zur [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)                                                        |
-|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| ![80px-ClipCapIt-180618-220536.PNG](80px-ClipCapIt-180618-220536.PNG) | Umschalten zwischen der [Vorschau](../Beispielsammlung/index.md) und dem [Editiermodus](../BeispielsammlungEditieren/index.md) |
-| ![50px-ClipCapIt-180618-220709.PNG](50px-ClipCapIt-180618-220709.PNG) | Anzeige der aktuellen Versionsnummer                                                                                           |
-| ![22px-ClipCapIt-180618-220811.PNG](22px-ClipCapIt-180618-220811.PNG) | Neuladen aller [Kategorien](../Ordnerverwaltung/index.md)                                                                      |
-| ![22px-ClipCapIt-180618-220918.PNG](22px-ClipCapIt-180618-220918.PNG) | Ausloggen vom System                                                                                                           |
-| ![22px-ClipCapIt-180618-221017.PNG](22px-ClipCapIt-180618-221017.PNG) | [Suche von Fragen in der Fragensammlung](../SuchevonFrageninderFragensammlung/index.md)                                        |
-| ![22px-ClipCapIt-180618-221115.PNG](22px-ClipCapIt-180618-221115.PNG) | Kompetenzen zu Fragen hinzufügen                                                                                               |
-| ![22px-ClipCapIt-180620-170343.PNG](22px-ClipCapIt-180620-170343.PNG) | [Umschalten zwischen Eingabe- und Ergebnisansicht](../UmschaltenzwischenEingabe-undErgebnisansicht/index.md)                   |
-| ![22px-ClipCapIt-180618-221159.PNG](22px-ClipCapIt-180618-221159.PNG) | [Festlegung von angezeigten Themen und Benutzern](../Abos/index.md)                                                            |
-| ![22px-ClipCapIt-180618-221259.PNG](22px-ClipCapIt-180618-221259.PNG) | Einstellungen konfigurieren                                                                                                    |
-| ![22px-ClipCapIt-180618-221343.PNG](22px-ClipCapIt-180618-221343.PNG) | Hilfe öffnen                                                                                                                   |
+![img.png](img.png)
 
+| Button                    | Beschreibung                                                                                                                               |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| ![img_1.png](img_1.png)   | Zurückwechseln zur [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)                                                                    |
+| ![img_2.png](img_2.png)   | Umschalten zwischen der [Bibliotheks Vorschau](../Beispielsammlung/index.md) und dem [Editiermodus](../BeispielsammlungEditieren/index.md) |
+| ![img_3.png](img_3.png)   | Kontextmenü  für den aktuellen Bereich anzeigen                                                                                            |
+| ![img_4.png](img_4.png)   | Neuladen aller [Kategorien](../Ordnerverwaltung/index.md) des Ordnerbaumes                                                                 |
+| ![img_5.png](img_5.png)   | Ausloggen vom System                                                                                                                       |
+| ![img_6.png](img_6.png)   | [Suche von Fragen in der Fragensammlung](../SuchevonFrageninderFragensammlung/index.md)                                                    |
+| ![img_7.png](img_7.png)   | zuletzt bearbeitete Frage anzeigen                                                                                                         |
+| ![img_8.png](img_8.png)   | Einstellungen - Abos, Sprache, Design                                                                                                      |
+| ![img_9.png](img_9.png)   | Ansicht der Frage-Vorschau im Bibliotheksmodus umschalten - Vorschau, Debug, App                                                           |
+| ![img_10.png](img_10.png) | Hilfe öffnen                                                                                                                               |
 
-###  Toolbar für Fragen im Edit-Modus 
-![300px-ClipCapIt-180618-215723.PNG](300px-ClipCapIt-180618-215723.PNG)
+###  Toolbar für Fragen im Edit-Modus
+
+![img_11.png](img_11.png)
+
+| Button | Beschreibung                                          |
+|--------|-------------------------------------------------------|
+| ![img_12.png](img_12.png) | Speichern der Frage                                   |
+| ![img_13.png](img_13.png) | Zusatzinformationen zur Frage anzeigen                |
+| ![img_14.png](img_14.png) | Frage zurücksetzen - wird neu aus der Datenbank geladen |
+| ![img_15.png](img_15.png) | Historie der Fragetexte anzeigen                      |
+| ![img_16.png](img_16.png) | Frage drucken                                         |
+| ![img_17.png](img_17.png)  | Dialog für angehängte Dateien und Bilder              |
+| ![img_18.png](img_18.png) | Durchrechnen der Frage                                |
+| ![img_19.png](img_19.png) | Durchrechnen der Frage und Anzeige aller Berechnungen |
+| ![img_20.png](img_20.png) | Alle Teilergebnisse der Berechnung anzeigen           |
+| ![img_21.png](img_21.png) | Zahlenwerte der Datensätze neu Würfeln - Vorsicht: ist nicht rückgängig machbar |
+| ![img_22.png](img_22.png) | [Vorschaudialog](../Fragen-Vorschau/index.md) öffnen |
+| ![img_23.png](img_23.png) | Tabelle aller Datensätze und Ergebnisse anzeigen |
+| ![img_24.png](img_24.png) | Überflüssige Datensätze löschen |
+| ![img_25.png](img_25.png) | Hilfe zum aktuellen Fragetyp öffnen |
 
