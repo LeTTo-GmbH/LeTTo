@@ -76,6 +76,7 @@ Lösung auf der linken Seite einfügen zu können.
   * korrekte Lösung
   * Korrektur der Schülereingabe
 * Anschließend werden alle Variablen des Maxima-Feldes angezeigt welche mit dem Wort "debug" beginnen.
+  * In die Debug-Variablen können die Eingaben des Schülers über die Teilfrage-Nummer direkt eingesetzt werden.
   * Zum Beispiel folgt für das Maxima-Feld <br> ![img_17.png](img_17.png) 
   * die Ausgabe der Variablen mit dem Wort "debug" <br> ![img_16.png](img_16.png)
   
