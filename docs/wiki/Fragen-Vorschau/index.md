@@ -45,10 +45,37 @@ Button ![img_1.png](img_1.png) geöffnet werden.
 
 * bei "Lösung(en) zur Angabe / Datensatz:" wird die Nummer des aktuell ausgewählten Datensatzes angezeigt.
 
-| Button                  | Funktion                                              |
-|-------------------------|-------------------------------------------------------|
-| ![img_7.png](img_7.png) | wechselt zum vorigen Datensatz.                       |
-| ![img_8.png](img_8.png) | wechselt zum nächsten Datensatz.                      |
-| ![img_9.png](img_9.png) | Schalten zwischen Debug- ,Schüler- und App-Ansicht um |
+| Button                    | Funktion                                              |
+|---------------------------|-------------------------------------------------------|
+| ![img_7.png](img_7.png)   | wechselt zum vorigen Datensatz.                       |
+| ![img_8.png](img_8.png)   | wechselt zum nächsten Datensatz.                      |
+| ![img_9.png](img_9.png)   | Schaltet zwischen Debug- ,Schüler- und App-Ansicht um |
 | ![img_10.png](img_10.png) | Hilfe                                                 |
 
+### rechten Seite - alle Lösungen zur aktuell ausgewählten Datensatz-Nummer
+
+![img_11.png](img_11.png)
+
+* Mit dem Button ![img_12.png](img_12.png) kann die Lösung in die Zwischenablage kopiert werden um sie einfach als
+Lösung auf der linken Seite einfügen zu können.
+* Bei jeder Teilfrage wird die erste korrekte Lösung angezeigt.
+
+### rechte Seite - Datensätze
+
+![img_13.png](img_13.png)
+
+* In der Liste aller Datensätze werden alle Datensätze angezeigt wobei der gerade aktuelle Datensatz fett hervorgehoben ist.
+
+### rechte Seite - Debug-Informationen
+
+![img_15.png](img_15.png)
+
+* Für jede Teilfrage wird die Korrektur angezeigt mit:
+  * Fragetyp
+  * Schülereingabe
+  * korrekte Lösung
+  * Korrektur der Schülereingabe
+* Anschließend werden alle Variablen des Maxima-Feldes angezeigt welche mit dem Wort "debug" beginnen.
+  * Zum Beispiel folgt für das Maxima-Feld <br> ![img_17.png](img_17.png) 
+  * die Ausgabe der Variablen mit dem Wort "debug" <br> ![img_16.png](img_16.png)
+  
