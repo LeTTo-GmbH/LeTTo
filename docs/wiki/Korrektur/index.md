@@ -31,10 +31,20 @@ Sie kann sehr weitreichend parametriert werden.
 * wie im vorigen Punkt erwähnt kann es beim numerischen Vergleich durch Einsetzen von Zahlenwerten 
   zu **numerischen Zufälligkeiten** und nicht Erkennung von **Einheitenfehlern** kommen. Abhilfe schafft die
   Definition von Testvektoren für die verwendeten Variablen eines Ausdrucks.
+* Sind keine Testvektoren definiert wird der Ausdruck mit zufälligen Zahlenwerten geprüft.
 * Ein Testvektor wird im Maxima-Feld mit "test_" gefolgt vom Variablennamen als Vektor mit den einzusetzenden Werten definiert.<br>
   zB.: 
   <pre>test_x:[3,5,7]m
   </pre>
+* Manchmal ist es notwendig bei mehreren Teilfragen verschiedene Testvektoren für die einzelnen Teilfragen zu definieren.
+  In diesem Fall wird der Testvektor mit dem Namen der Teilfrage und dem Variablennamen definiert.<br>
+  zB.: 
+  <pre>test_Q0_x:[3,5,7]m
+  test_Q1_x:[4,6,8]m
+  </pre>
+  Ist test_Q0_x und test_Q1_x definiert wird der Testvektor test_Q0_x für die Teilfrage Q0 und der Testvektor test_Q1_x für die Teilfrage Q1 verwendet.<br>
+  Ist nur test_x definiert wird dieser Testvektor für alle Teilfragen verwendet.<br>
+  Ist test_Q0_x und test_x definiert wird der Testvektor test_Q0_x für die Teilfrage Q0 und der Testvektor test_x für alle anderene Teilfragen verwendet.<br>
 * Gibt es mehrere Variablen werden die Tests jeweils mit den Testvektor-Elementen mit gleichem Modulo-Indizes durchgeführt.<br>
   zB.: 
   <pre>test_x:[2,4,5]
@@ -43,7 +53,9 @@ Sie kann sehr weitreichend parametriert werden.
   Es wird die Prüfung mit den Paaren (x=2,y=1),(x=4,y=7) und (y=5,y=1) durchgeführt.
 * Die Genauigkeit der Prüfung (Toleranz) bezieht sich beim Test mit Testvektoren immer auf das Ergebnis des Ausdruckes mit eingesetzten Zahlenwerten.
 * Damit das Ergebnis korrekt ist müssen **ALLE Werte** der Testvektoren als **korrekt** bewertet werden.
-* Bei einer **relativen Toleranz** wird zuerst der maximal Betrag von allen Tests bestimmt und dann wird die relative Toleranz auf diesen Zahlenwert bezogen. 
-  Dadurch ist es auch kein Problem wenn es Testvektoren gibt welche 0 als Ergebnis liefern. 
-* Wegen obigem Verhalten sollten bei relativer Toleranz keine Test-Werte verwendet werden welche sehr große Zahlenwertunterschiede haben.
-* Tests mit Testvektoren werden nur durchgeführt wenn **alle Variablen eines Ausdrucks als Testvektor** definiert sind.
+
+#### obere Schranke für die Korrektur mit Testvektoren
+* Damit die Korrektur mit Testvektoren bei sehr großen Zahlenwerten nicht zu Problemen führt werden Testwerte welche mit der Lehrerlösung 
+  betragsmäßig größer als eine definierte obere Schranke sind nicht verwendet.
+* Die obere Schranke ist standardmäßig 1e50 und kann mit den Testvektoren test_SQ und test_Q0,test_Q1,... definiert werden.
+
