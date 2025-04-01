@@ -2,16 +2,14 @@
 
 ## laufend
 * MathJax3 in Questionservice
-* Bugfixes #2066, #1932, #2124
+* Bugfixes #2066, #1932, #2124, #2129
 * Docker-Container aktualisiert
-* #2129
 * Rundungsfehler bei Genauigkeit a0 behoben
 * Logfilearchiv für Lettoserver definiert
-* Debug-Variable eingeführt
 * Überarbeiteter Scorer bei symbolischen Ergebnissen
 * pvremove, pvinsert, pvinserlast
-* debug-Variable in der Fragevorschau
-
+* debug-Variable in der [Fragevorschau](../Fragen-Vorschau/index.md#debug-ansicht-mit-debug-variablen) 
+* Speicherüberlauf bei Maxima-Berechnungen behoben
 
 ## Stable - Rev 6669/6670 - 13.2.2024
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
