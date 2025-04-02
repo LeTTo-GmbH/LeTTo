@@ -71,13 +71,19 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 
 ####  einheitenlose Zahlen
 
-Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
+Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. 
+Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
 
 | Sondereinheit | Bedeutung          | Zieleinheit | korrekte Antwort | falsche Antwort |
 |---------------|--------------------|-------------|------------------|-----------------|
 | float         | einheitenlose Zahl | =float      | 0.25             | 25%             |
 
+#### Winkel
 
+Winkel werden intern immer im Bogenmaß als dimensionslose Größe behandelt. Verwendet man in der Zieleinheit
+jedoch Grad, so wird der Winkel in der Eingabe des Schülers in Grad erwartet. Wobei der Winkel über den
+Einheitskreis definiert wird und der Schüler daher auch negative Winkel und vielfache am Einheitskreis
+eingeben kann.
 
 ####  Sondereinheiten für ganze Zahlen
 
