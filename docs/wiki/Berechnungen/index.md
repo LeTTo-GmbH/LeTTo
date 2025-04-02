@@ -69,11 +69,18 @@ Liste der definierten Konstanten:
 * Einige Operatoren sind in **Maxima anders**, oder **nicht definiert**. Möchte man im Maximafeld die Operatoren des Parsers-verwenden, so muss das gesamte Maxima-Feld **mit dem Parser gerechnet** werden. Man verliert dadurch jedoch die Vorteile der Maxima-Berechnung.
 * Alternativ kann man statt der Operatoren auch **Funktionen verwenden** (zB: ne() statt != ). Diese werden dann von Maxima zwar nicht ausgewertet, die Berechnung bleibt aber trotzdem korrekt und kann mit Maxima durchgeführt werden.
 * Es gibt einige Funktionen welche in **Maxima existieren** aber im **Parser nicht, oder mit anderem Syntax**.
-  * Wenn diese von Maxima nicht ausgewertet werden können, da sie **Datensätze** enthalten welche zu Auswertezeitpunkt von Maxima noch **nicht mit Werten belegt** sind, **dürfen sie in der Berechnung nicht verwendet werden**, da der Parser dann damit nichts anfangen kann.
-  * Solche Funktionen haben entweder im Parser eine alternative Schreibweise welche auch mit Maxima verwendet werden kann (z.B.: wenn), oder sie können prinzipell nicht verwendet werden. (Für wichtige Funktionsweisen könnte man in zukünftigen Versionen neue Funktionalitäten in den Parser einbauen, die die gewünschte Funktion erfüllen)
-  * Ein weiter Möglichkeit für die Verwendung solcher Funktionen ist der Verzicht auf Datensätze in diesen Funktionen, damit diese Funktion beim Auswerten des Maxima-Feldes bereits ausgewertet werden kann und somit der Parser davon nichts mehr sieht.
-  * zB:
-<pre>if then</pre>
+  * Wenn diese von Maxima nicht ausgewertet werden können, da sie **Datensätze** enthalten welche zum Auswertezeitpunkt von Maxima 
+    noch **nicht mit Werten belegt** sind muss **"Vorberechnung"** in der Frage angehakt werden damit die Datensätze schon vor dem 
+    Durchlauf von Maxima eingesetzt werden.
+  * Manche Funktionen sind syntaktisch nicht funktional aufgebaut und können deshalb nicht vom Parser ausgewertet werden - in diesem 
+    Fall darf in der Frage das Hackerl "Parser" nicht angehakt werden oder es muss eine andere Funktion verwendet werden (wie etwa wenn statt if)
+
+Liste der problematischen Funktionen:
+
+| Funktion in Maxima                 | Funktion im Parser          | Beschreibung  |
+|------------------------------------|-----------------------------|---------------|
+| if bedingung then wahr else falsch | if(bedingung,wahr,falsch)   | Wenn-Funktion |
+|                                    | wenn(bedingung,wahr,falsch) | Wenn-Funktion |
 
 #### Infix Operatoren
 ##### arithmetische Operatoren
