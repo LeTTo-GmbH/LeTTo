@@ -46,7 +46,7 @@ x:1,2,3,4,5:A
 y:5,4,3,2
 </pre>
 
-Liefert die Datensätze:<br>![img.png](img.png)
+Liefert die Datensätze:<br>![img_1.png](img_1.png)
 
 Die generierten Datensätze sind bei importierten Werten immer sortiert und werden zyklisch wiederholt. 
 Im angegeben Bespiele folgt für den 1. Datensatz(Datensatz 0) folgt somit (x=1A,y=5) für den 2.Datensatz
