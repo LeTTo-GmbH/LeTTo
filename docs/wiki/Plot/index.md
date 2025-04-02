@@ -19,6 +19,14 @@ mögliche Funktionsdefinitionen:
 | f(x,y):= _{boolsche Funktion in x und y}_                                                                                                                                            | implizit deklarierte Funktion muss auf der rechten Seite ein boolsches Ergebnis haben! | f(x,y):=x*y&lt;3                                                                                       | <br>![100px-ClipCapIt-190416-172124.PNG](100px-ClipCapIt-190416-172124.PNG) |
 | f(x,y):=_{Zeichenelement}_(_{Koordinaten durch Komma getrennt}_,_{parameter}_=_{wert}_) **oder**<br> _{Zeichenelement}_(_{Koordinaten durch Komma getrennt}_,_{parameter}_=_{wert}_) | Zeichnet vordefiniert graphische Funktionen wie Linen,Punkte,Kreise,etc.               | f(x,y):=line(1,3,5,-3,color=red,points,text=abc) **oder**<br> line(1,3,5,-3,color=red,points,text=abc) | <br>![100px-ClipCapIt-200507-075942.PNG](100px-ClipCapIt-200507-075942.PNG) |
 
+Anmerkung: Die Definition der Funktion mit := ist nur im Plot-Plugin erlaubt. Möchte man eine Funktion im 
+Maxima-Feld definiern und dann im Plot-Plugin verwenden, so muss die Funktion im Maxima-Feld als normaler 
+Ausdruck mit Doppelpunkt (wie etwa G:x^2+1) definiert werden. 
+
+Bsp: 
+* Maxima-Feld: <br>![img.png](img.png)
+* Plot-Plugin: <br>![img_1.png](img_1.png)
+
 ####  Füllungen zwischen Graphen 
 
 Füllbereiche können zwischen zwei Funktionen eingefügt werden. 
