@@ -19,13 +19,40 @@ Die Wertebereiche und die Einheiten können aber in jeder [Kategorie](../Ordnerv
 ### Erstellung - Änderung über den Datensatz-Bereich
 <br>![250px-ClipCapIt-180620-222938.PNG](250px-ClipCapIt-180620-222938.PNG)
 <br>![120px-ClipCapIt-180831-181125.PNG](120px-ClipCapIt-180831-181125.PNG)
+
 Die Tabelle zur Definition der Datensätze enthält drei Spalten:
 * DS: Name der Variable
 * Werte: Definition des Wertebereiches und des Types der Variable
 * EH: Einheit der Variable
 
-Über das Kontext-Menüs (rechte Maustaste) dieser Datensatz-Tabelle können auch neue Variablen hinzugefügt und bestehende gelöscht werden. Weiters können auch Datensätze mit vordefinierten Werten aus einer Datei importiert werden.
-<br>![400px-ClipCapIt-180831-181504.PNG](400px-ClipCapIt-180831-181504.PNG)
+Über das Kontext-Menüs (rechte Maustaste) dieser Datensatz-Tabelle können auch neue Variablen hinzugefügt 
+und bestehende gelöscht werden. Weiters können auch Datensätze mit vordefinierten Werten aus einer 
+Datei importiert werden.
+
+#### Datensatz-Import aus einer Datei (Werte importieren)
+
+![400px-ClipCapIt-180831-181504.PNG](400px-ClipCapIt-180831-181504.PNG)
+
+* Über das Kontext-Menü (rechte Maustaste) der Datensatz-Tabelle kann eine Datei mit vordefinierten Werten importiert werden.
+* Die Datei muss im UTF-8 Format vorliegen.
+* Jede Zeile der Datei enthält einen Datensatz und ist in drei Spalten durch Doppelpunkt getrennt unterteilt:
+  * Name der Variable
+  * Werte durch Beistrich getrennt
+  * Einheit
+
+Beispieldatei: 
+<pre>
+x:1,2,3,4,5:A
+y:5,4,3,2
+</pre>
+
+Liefert die Datensätze:<br>![img.png](img.png)
+
+Die generierten Datensätze sind bei importierten Werten immer sortiert und werden zyklisch wiederholt. 
+Im angegeben Bespiele folgt für den 1. Datensatz(Datensatz 0) folgt somit (x=1A,y=5) für den 2.Datensatz
+(x=2A,y=4) und so weiter. Der 5. Datensatz (x=5A,y=5) hat dann den letzten Wert von x und den ersten Wert von y
+da die Werteanzahl verschieden ist. Bei einer gleichen Anzahl von Werten wiederholen sich die erzeugten 
+Datensätze zyklisch.
 
 ### Name der Variablen (Datensatz-Name)
 
