@@ -74,6 +74,8 @@ Liste der definierten Konstanten:
     Durchlauf von Maxima eingesetzt werden.
   * Manche Funktionen sind syntaktisch nicht funktional aufgebaut und können deshalb nicht vom Parser ausgewertet werden - in diesem 
     Fall darf in der Frage das Hackerl "Parser" nicht angehakt werden oder es muss eine andere Funktion verwendet werden (wie etwa wenn statt if)
+* Wenn "Parser" nicht angehakt ist bleiben alle Funktionen welche von Maxima nicht unterstützt werden von Maxima unberechnet und werden dann bei der Lösungsberechnung vom Parser ausgewertet.
+* Wenn "Parser" angehakt ist werden nur ausgewählte Funktionen (siehe weiter unten) von Maxima ausgewertet. Alle anderen Funktionen werden vom Parser ausgewertet.
 
 Liste der problematischen Funktionen:
 
