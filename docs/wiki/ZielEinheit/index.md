@@ -185,6 +185,20 @@ Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funkti
 | set       | Vektoren werden ohne Berücksichtigung von doppelten Einträgen in beliebiger Reihenfolge als Menge verglichen |
 | multiset  | Vektoren werden ohne Berücksichtigung der Reihenfolge der Eintrag als Menge verglichen                       |
 
+### Parameter für die vereinfachte Eingabe von symbolischen Ausdrücken
+
+* Um die Eingabe von symbolischen Ausdrücken für den Schüler zu vereinfachen, kann die Eingabe in einer vereinfachten Form erfolgen.
+* Bei der vereinfachten Termeingabe werden nur Variablen aus einem Buchstaben verwendet.
+* Variablen mit mehr als einem Buchstaben werden als Multiplikation der Buchstaben interpretiert (zB. abc entspricht a*b*c)
+* Einheiten können in dieser Eingabeform nur mit Hochkomma (') angegeben werden (zB.: 3'cm2')
+* Vergisst man die Hochkomma bei einer Einheit wird diese als Variable interpretiert (zB.: 3cm2 entspricht 2*c*m*2)
+* Da Einheiten nur mit Hochkomma erlaubt sind wird empfohlen die vereinfachte Termeingabe nur für Terme zu verwenden, bei denen keine Einheiten vorkommen.
+* Variablen welche mehr als einen Buchstaben haben dürfen in der Lehrer-Lösung nicht vorkommen, da diese dann vom Schüler nicht eingegeben werden können.
+
+| parameter | Funktion                 |
+|-----------|--------------------------|
+| term      | vereinfachte Termeingabe |
+
 ### Parameter für die Größe bzw. Breite und Art des Eingabefeldes bei berechneten Teilfragen einer Mehrfachberechnungsfrage
 
 * Sind durch **Strichpunkt** von der Einheit getrennt
