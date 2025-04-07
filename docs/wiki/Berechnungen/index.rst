@@ -272,7 +272,7 @@ if then
 |-
 |}
 
-===boolsche Funktionen===
+=== boolesche(boolsche) Funktionen===
 {| class="wikitable" style="text-align: left; width: 100%;" 
 | Funktion || Beschreibung || Beispiel || Ergebnis 
 |-

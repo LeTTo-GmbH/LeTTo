@@ -213,7 +213,7 @@ Liste der problematischen Funktionen:
 | deg       | erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen WinkelString einen Winkel im Bogenmaß                 | deg(&#91;2,15,22&#93;) <br> deg(&quot;2°15&#39;22&#39;&#39;&quot;) | 2.25611111111°                    | 
 | degstring | erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen Winkel im Bogenmaß einen String der Winkeldarstellung | degstring(0.5)                                                     | &quot;2°15&#39;22&#39;&#39;&quot; |
 
-#### boolsche Funktionen
+#### boolesche(boolsche) Funktionen
 
 | Funktion  | Beschreibung                                                                                                                                                                                                 | Beispiel               | Ergebnis |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|

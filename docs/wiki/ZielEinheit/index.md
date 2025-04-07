@@ -135,7 +135,7 @@ Folgende smbolischen Modi sind definiert:
 | symbolexp       | Optimierung von Exponentialfunktionen      | Exponentialfunktions-Terme werden vereinfacht (noch nicht realisiert)                                                       |
 | symbollog       | Optimierung von logarithmischen Funktionen | Logarithmus-Therme werden vereinfacht (noch nicht realisiert)                                                               |
 | symbolfull      | vollständige Optimierung                   | Alle Optimierungstufen werden ausgeführt bzw. wenn das nicht hilft wird das Ergebnis durch Testvektoren numerische geprüft. |
-| symbolboolsch   | Optimierung von boolschen Funktionen       | boolsche Funktionen werden vereinfacht (noch nicht realisiert)                                                              |
+| symbolboolsch   | Optimierung von booleschen(boolschen) Funktionen       | boolesche(boolsche) Funktionen werden vereinfacht (noch nicht realisiert)                                                              |
 
 
 Nach dem Optimierungsmode folgt durch **Strichpunkt** getrennt die Verarbeitungsart von Konstanten und durch einen weiteren Strichpunkt getrennt die Verarbeitungsart von Datensätzen.
