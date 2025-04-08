@@ -44,3 +44,13 @@ Folgende Buttons stehen zur Verfügung:
 ###  Frage - Ergebnisse 
 Anzeige des aktuellen Beispiels mit den Schülereingaben.
 
+###  Anzeige des Testprotokolls
+Klicken Sie auf das, durch den blauen Pfeil markierte Symbol - siehe folgende Abbildung.
+<br>![img_1.png](img_1.png)
+
+Das Testprotokol (Protokol der Online-Aktivität) wird angezeigt - siehe Abbildung darunter.
+* blauer Bereich: Allgemeine Daten der Online-Aktivität werden aufgelistet.
+* oranger Bereich: Schülerspezifische Informationen werden aufgelistet. Diese sind: Name, Note, Prozentwert, Start, Stop, Event-Loging
+
+<br>![img.png](img.png)
+
