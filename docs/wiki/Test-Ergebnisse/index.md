@@ -34,7 +34,7 @@ Der Link **Frage bearbeiten** dient dazu, dass bei ev. fehlerhaften Fragen diese
 
 Zu jedem Ergebnis kann der Lehrer ein **individuelles Feedback** geben und mit der Notenänderung speichern.
 
-###  Weiterschalten / Abschliessen der Eingaben 
+###  Weiterschalten / Abschliessen der Eingaben  
 Folgende Buttons stehen zur Verfügung:
 * Neu beurteilen: Die korrigierten Beurteilugen werden übernommen und der Dialog geschlossen
 * Pfeile nach oben und nach unten: Nächster / voriger Schüler: Beurteilungen übernehmen und zum nächsten oder vorigen Schüler bei gleichem Beispiel wechseln.
