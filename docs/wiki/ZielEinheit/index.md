@@ -71,13 +71,19 @@ Der Schüler kann hierbei auch IP-Adressen(getrennt durch Punkte), Hexadezimalza
 
 ####  einheitenlose Zahlen
 
-Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
+Einheitenlose Zahlen können und dürfen mit den einheitenlosen Hilfseinheiten dB,Prozent,° angegeben werden. 
+Ist dies nicht erwünscht, kann mit =float auch die einheitenlose Eingabe erzwungen werden.
 
 | Sondereinheit | Bedeutung          | Zieleinheit | korrekte Antwort | falsche Antwort |
 |---------------|--------------------|-------------|------------------|-----------------|
 | float         | einheitenlose Zahl | =float      | 0.25             | 25%             |
 
+#### Winkel
 
+Winkel werden intern immer im Bogenmaß als dimensionslose Größe behandelt. Verwendet man in der Zieleinheit
+jedoch Grad, so wird der Winkel in der Eingabe des Schülers in Grad erwartet. Wobei der Winkel über den
+Einheitskreis definiert wird und der Schüler daher auch negative Winkel und vielfache am Einheitskreis
+eingeben kann.
 
 ####  Sondereinheiten für ganze Zahlen
 
@@ -129,7 +135,7 @@ Folgende smbolischen Modi sind definiert:
 | symbolexp       | Optimierung von Exponentialfunktionen      | Exponentialfunktions-Terme werden vereinfacht (noch nicht realisiert)                                                       |
 | symbollog       | Optimierung von logarithmischen Funktionen | Logarithmus-Therme werden vereinfacht (noch nicht realisiert)                                                               |
 | symbolfull      | vollständige Optimierung                   | Alle Optimierungstufen werden ausgeführt bzw. wenn das nicht hilft wird das Ergebnis durch Testvektoren numerische geprüft. |
-| symbolboolsch   | Optimierung von boolschen Funktionen       | boolsche Funktionen werden vereinfacht (noch nicht realisiert)                                                              |
+| symbolboolsch   | Optimierung von booleschen(boolschen) Funktionen       | boolesche(boolsche) Funktionen werden vereinfacht (noch nicht realisiert)                                                              |
 
 
 Nach dem Optimierungsmode folgt durch **Strichpunkt** getrennt die Verarbeitungsart von Konstanten und durch einen weiteren Strichpunkt getrennt die Verarbeitungsart von Datensätzen.
@@ -178,6 +184,20 @@ Funktionen sind spezielle symbolische Ausdrücke, bei denen nur definiert Funkti
 |-----------|--------------------------------------------------------------------------------------------------------------|
 | set       | Vektoren werden ohne Berücksichtigung von doppelten Einträgen in beliebiger Reihenfolge als Menge verglichen |
 | multiset  | Vektoren werden ohne Berücksichtigung der Reihenfolge der Eintrag als Menge verglichen                       |
+
+### Parameter für die vereinfachte Eingabe von symbolischen Ausdrücken
+
+* Um die Eingabe von symbolischen Ausdrücken für den Schüler zu vereinfachen, kann die Eingabe in einer vereinfachten Form erfolgen.
+* Bei der vereinfachten Termeingabe werden nur Variablen aus einem Buchstaben verwendet.
+* Variablen mit mehr als einem Buchstaben werden als Multiplikation der Buchstaben interpretiert (zB. abc entspricht a*b*c)
+* Einheiten können in dieser Eingabeform nur mit Hochkomma (') angegeben werden (zB.: 3'cm2')
+* Vergisst man die Hochkomma bei einer Einheit wird diese als Variable interpretiert (zB.: 3cm2 entspricht 2*c*m*2)
+* Da Einheiten nur mit Hochkomma erlaubt sind wird empfohlen die vereinfachte Termeingabe nur für Terme zu verwenden, bei denen keine Einheiten vorkommen.
+* Variablen welche mehr als einen Buchstaben haben dürfen in der Lehrer-Lösung nicht vorkommen, da diese dann vom Schüler nicht eingegeben werden können.
+
+| parameter | Funktion                 |
+|-----------|--------------------------|
+| term      | vereinfachte Termeingabe |
 
 ### Parameter für die Größe bzw. Breite und Art des Eingabefeldes bei berechneten Teilfragen einer Mehrfachberechnungsfrage
 

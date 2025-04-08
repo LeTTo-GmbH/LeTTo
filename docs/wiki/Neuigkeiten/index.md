@@ -2,17 +2,21 @@
 
 ## laufend
 * MathJax3 in Questionservice
-* Bugfixes #2066, #1932, #2124
+* Bugfixes #2066, #1932, #2124, #2129
 * Docker-Container aktualisiert
-* #2129
 * Rundungsfehler bei Genauigkeit a0 behoben
 * Logfilearchiv für Lettoserver definiert
+* Überarbeiteter Scorer bei symbolischen Ergebnissen
+* pvremove, pvinsert, pvinserlast
+* debug-Variable in der [Fragevorschau](../Fragen-Vorschau/index.md#debug-ansicht-mit-debug-variablen) 
+* Speicherüberlauf bei Maxima-Berechnungen behoben
+* Einheiten Bit und Byte mit deren Vielfachen k,M,G,T,P
 
 ## Stable - Rev 6669/6670 - 13.2.2024
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
 * Base-Container auf Letztversionen aktualisiert
 * MathJax 3
-* Toleranz mit Testvektoren bei boolschen Teilfragen [Testvektoren](../Korrektur/index.md#korrektur-von-symbolischen-ausdrücken-mit-testvektoren)
+* Toleranz mit Testvektoren bei booleschen(boolschen) Teilfragen [Testvektoren](../Korrektur/index.md#korrektur-von-symbolischen-ausdrücken-mit-testvektoren)
 * Funktionen curveinterpol und curvepv für globale und importierte Tabellen [Berechnungen](../Berechnungen/index.md#funktionen-für-importierte-tabellen)
 * Healthcheck Timout verlängert
 * Redis-Datenbank 

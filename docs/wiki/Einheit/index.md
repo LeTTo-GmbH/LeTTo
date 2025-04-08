@@ -112,11 +112,20 @@
 
 #####  Sondereinheiten Digitaltechnik: 
 
-| -    |
-|------|
-| Byte |
-| Bit  |
-
+| Einheit | Beschreibung                                                                                       | Zahlenwert                 |
+|---------|----------------------------------------------------------------------------------------------------|----------------------------|
+| Bit     | Bit der Digitaltechnik als 0/1-Information - wird intern als Zahlenwert 1 einheitenlos gespeichert | 1                          |
+| Byte    | 8 Bit als 1 Byte - wird intern als Zahlenwert 8 einheitenlos gespeichert                           | 8                          |       
+| kBit    | 1024 Bit                                                                                           | 1024                       |
+| kByte   | 1024 Byte                                                                                          | 1024*8                     |
+| MBit    | 1024 kBit                                                                                          | 1024*1024                  |
+| MByte   | 1024 kByte                                                                                         | 1024*1024*8                |
+| GBit    | 1024 MBit                                                                                          | 1024*1024*1024             |
+| GByte   | 1024 MByte                                                                                         | 1024*1024*1024*8           | 
+| TBit    | 1024 GBit                                                                                          | 1024*1024*1024*1024        |
+| TByte   | 1024 GByte                                                                                         | 1024*1024*1024*1024*8      |
+| PBit    | 1024 TBit                                                                                          | 1024*1024*1024*1024*1024   |
+| PByte   | 1024 TByte                                                                                         | 1024*1024*1024*1024*1024*8 |
 
 ####  Dimensionen, die kein eigenes Einheitenzeichen haben, aber trotzdem definiert sind 
 

@@ -19,13 +19,40 @@ Die Wertebereiche und die Einheiten können aber in jeder [Kategorie](../Ordnerv
 ### Erstellung - Änderung über den Datensatz-Bereich
 <br>![250px-ClipCapIt-180620-222938.PNG](250px-ClipCapIt-180620-222938.PNG)
 <br>![120px-ClipCapIt-180831-181125.PNG](120px-ClipCapIt-180831-181125.PNG)
+
 Die Tabelle zur Definition der Datensätze enthält drei Spalten:
 * DS: Name der Variable
 * Werte: Definition des Wertebereiches und des Types der Variable
 * EH: Einheit der Variable
 
-Über das Kontext-Menüs (rechte Maustaste) dieser Datensatz-Tabelle können auch neue Variablen hinzugefügt und bestehende gelöscht werden. Weiters können auch Datensätze mit vordefinierten Werten aus einer Datei importiert werden.
-<br>![400px-ClipCapIt-180831-181504.PNG](400px-ClipCapIt-180831-181504.PNG)
+Über das Kontext-Menüs (rechte Maustaste) dieser Datensatz-Tabelle können auch neue Variablen hinzugefügt 
+und bestehende gelöscht werden. Weiters können auch Datensätze mit vordefinierten Werten aus einer 
+Datei importiert werden.
+
+#### Datensatz-Import aus einer Datei (Werte importieren)
+
+![400px-ClipCapIt-180831-181504.PNG](400px-ClipCapIt-180831-181504.PNG)
+
+* Über das Kontext-Menü (rechte Maustaste) der Datensatz-Tabelle kann eine Datei mit vordefinierten Werten importiert werden.
+* Die Datei muss im UTF-8 Format vorliegen.
+* Jede Zeile der Datei enthält einen Datensatz und ist in drei Spalten durch Doppelpunkt getrennt unterteilt:
+  * Name der Variable
+  * Werte durch Beistrich getrennt
+  * Einheit
+
+Beispieldatei: 
+<pre>
+x:1,2,3,4,5:A
+y:5,4,3,2
+</pre>
+
+Liefert die Datensätze:<br>![img_1.png](img_1.png)
+
+Die generierten Datensätze sind bei importierten Werten immer sortiert und werden zyklisch wiederholt. 
+Im angegeben Bespiele folgt für den 1. Datensatz(Datensatz 0) folgt somit (x=1A,y=5) für den 2.Datensatz
+(x=2A,y=4) und so weiter. Der 5. Datensatz (x=5A,y=5) hat dann den letzten Wert von x und den ersten Wert von y
+da die Werteanzahl verschieden ist. Bei einer gleichen Anzahl von Werten wiederholen sich die erzeugten 
+Datensätze zyklisch.
 
 ### Name der Variablen (Datensatz-Name)
 
@@ -44,29 +71,30 @@ Es gibt zwei Varianten einen Wertebereich zu definieren:
 Folgende Typbezeichner sind möglich:
 
 
-| Bezeichner                                  | Beschreibung                                                                                                                                                                                                              | Beispiel                       |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| I:                                          | Ganzzahl                                                                                                                                                                                                                  | I:10-20                        |
-| V&#91;Dimension&#93;:                       | Vektor                                                                                                                                                                                                                    | V3:1-10                        |
-| uV&#91;Dimension&#93;:                      | Vektor mit lauter unterschiedlichen Werten                                                                                                                                                                                | uV3:I1-5                       |
-| M&#91;Zeilen&#93;x&#91;Spalten&#93;:        | Matrix der Dimension &#91;Zeilen&#93;x&#91;Spalten&#93;                                                                                                                                                                   | M3x3:1-10                      |
-| M&#91;Dimension&#93;:                       | Matrix der Dimension &#91;Dimension&#93;x&#91;Dimension&#93; mit einer Determinante ungleich Null                                                                                                                         | M3:1-10                        |
-| P&#91;Grad&#93;:                            | Polynom der Ordnung &#91;Grad&#93; in der Variablen s **Noch nicht realisiert**                                                                                                                                           | P3:1-10                        |
-| B&#91;Zählergrad&#93;,&#91;Nennergrad&#93;: | Polynombruch in der Variablen s mit definiertem Zählergrad und Nennergrad **Noch nicht realisiert**                                                                                                                       | B2,3:1-20                      |
-| C:                                          | komplexe Zahl mit zufälligem Winkel zwischen 0° und 360°                                                                                                                                                                  | C:1-10                         |
-|                                             | komplexe Zahl mit Betrag und Winkel in Grad                                                                                                                                                                               | C:1-10arg10-90                 |
-|                                             | komplexe Zahl mit Realteil und Imaginärteil (j als imaginäre Einheit)                                                                                                                                                     | C:1-10j1-10                    |
-|                                             | komplexe Zahl mit Realteil und Imaginärteil (i als imaginäre Einheit)                                                                                                                                                     | C:1-10i1-10                    |
-| F&#91;ziffern&#93;:                         | Gleitkommazahl mit einer definierten Anzahl gültiger Ziffern                                                                                                                                                              | F3:5-9                         |
-| &#91;ziffern&#93;:                          | Gleitkommazahl aus einem Bereich mit einer definierten Anzahl von äquidistanten Werten                                                                                                                                    | 5:2-9                          |
-| S:                                          | Zeichenketten durch Beistrich getrennt. Ein Beistrich muss mit einem Backslash verblockt werden!                                                                                                                          | S:rot,grün,blau                |
-| R:                                          | Regulärer Ausdruck: Erzeugt einen String auf den der reguläre Ausdruck trifft.                                                                                                                                            | R:&#91;a-m&#93;x?&#91;^B&#93;+ |
-| R&#91;stellen&#93;:                         | Regulärer Ausdruck erzeugt einen String mit &#91;stellen&#93; Zeichen                                                                                                                                                     | R5:.+                          |
-| R&#91;minstellen&#93;-&#91;maxstellen&#93;: | Regulärer Ausdruck mit einen Stellenanzahl von "minstellen" bist "maxstellen"                                                                                                                                             | R5-8:&#91;a-z&#93;+&#93;d+     |
-| sI:wert,wert,wert                           | erzeugt Ganzzahl-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!)                                                        | sI:5,78,2,-5,4                 |
-| sF:wert,wert,wert                           | erzeugt Gleitkomma-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!)                                                      | sF:34.5,3.4,6,5,-43.4          |
+| Bezeichner                                  | Beschreibung                                                                                                                                                                                                             | Beispiel                       |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| I:                                          | Ganzzahl (64bit - etwa +-8e18)                                                                                                                                                                                           | I:10-20                        |
+| V&#91;Dimension&#93;:                       | Vektor                                                                                                                                                                                                                   | V3:1-10                        |
+| uV&#91;Dimension&#93;:                      | Vektor mit lauter unterschiedlichen Werten                                                                                                                                                                               | uV3:I1-5                       |
+| M&#91;Zeilen&#93;x&#91;Spalten&#93;:        | Matrix der Dimension &#91;Zeilen&#93;x&#91;Spalten&#93;                                                                                                                                                                  | M3x3:1-10                      |
+| M&#91;Dimension&#93;:                       | Matrix der Dimension &#91;Dimension&#93;x&#91;Dimension&#93; mit einer Determinante ungleich Null                                                                                                                        | M3:1-10                        |
+| P&#91;Grad&#93;:                            | Polynom der Ordnung &#91;Grad&#93; in der Variablen s **Noch nicht realisiert**                                                                                                                                          | P3:1-10                        |
+| B&#91;Zählergrad&#93;,&#91;Nennergrad&#93;: | Polynombruch in der Variablen s mit definiertem Zählergrad und Nennergrad **Noch nicht realisiert**                                                                                                                      | B2,3:1-20                      |
+| C&#91;ziffern&#93;:                         | komplexe Zahl mit einer definierten Anzahl gültiger Ziffer                                                                                                                                                               | C3:1-10                        |
+| C:                                          | komplexe Zahl mit zufälligem Winkel zwischen 0° und 360°                                                                                                                                                                 | C:1-10                         |
+|                                             | komplexe Zahl mit Betrag und Winkel in Grad                                                                                                                                                                              | C:1-10arg10-90                 |
+|                                             | komplexe Zahl mit Realteil und Imaginärteil (j als imaginäre Einheit)                                                                                                                                                    | C:1-10j1-10                    |
+|                                             | komplexe Zahl mit Realteil und Imaginärteil (i als imaginäre Einheit)                                                                                                                                                    | C:1-10i1-10                    |
+| F&#91;ziffern&#93;:                         | Gleitkommazahl mit einer definierten Anzahl gültiger Ziffern                                                                                                                                                             | F3:5-9                         |
+| &#91;ziffern&#93;:                          | Gleitkommazahl aus einem Bereich mit einer definierten Anzahl von äquidistanten Werten                                                                                                                                   | 5:2-9                          |
+| S:                                          | Zeichenketten durch Beistrich getrennt. Ein Beistrich muss mit einem Backslash verblockt werden!                                                                                                                         | S:rot,grün,blau                |
+| R:                                          | Regulärer Ausdruck: Erzeugt einen String auf den der reguläre Ausdruck trifft.                                                                                                                                           | R:&#91;a-m&#93;x?&#91;^B&#93;+ |
+| R&#91;stellen&#93;:                         | Regulärer Ausdruck erzeugt einen String mit &#91;stellen&#93; Zeichen                                                                                                                                                    | R5:.+                          |
+| R&#91;minstellen&#93;-&#91;maxstellen&#93;: | Regulärer Ausdruck mit einen Stellenanzahl von "minstellen" bist "maxstellen"                                                                                                                                            | R5-8:&#91;a-z&#93;+&#93;d+     |
+| sI:wert,wert,wert                           | erzeugt Ganzzahl-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!)                                                       | sI:5,78,2,-5,4                 |
+| sF:wert,wert,wert                           | erzeugt Gleitkomma-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!)                                                     | sF:34.5,3.4,6,5,-43.4          |
 | sS:wert,wert,wert                           | erzeugt String-Datensätze aus den angegebenen Werten, wobei die Reihenfolge der Werte wie angegeben beibehalten wird! (Zahlenbereiche sind hier nicht erlaubt!!) Ein Beistrich muss mit einem Backslash verblockt werden! | sS:Hut,Kappe,Hose              |
-| Startwert:Schrittweite:Endwert              | erzeugt Werte zwischen Startwert und Endwert mit einem Abstand von Schrittweite zwischen den Werten                                                                                                                       | 2:0.1:5                        |
+| Startwert:Schrittweite:Endwert              | erzeugt Werte zwischen Startwert und Endwert mit einem Abstand von Schrittweite zwischen den Werten                                                                                                                      | 2:0.1:5                        |
                                       
 
 #### Bereichsdefinitionen
