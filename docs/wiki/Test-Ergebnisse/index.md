@@ -39,7 +39,7 @@ Folgende Buttons stehen zur Verfügung:
 * Neu beurteilen: Die korrigierten Beurteilugen werden übernommen und der Dialog geschlossen
 * Pfeile nach oben und nach unten: Nächster / voriger Schüler: Beurteilungen übernehmen und zum nächsten oder vorigen Schüler bei gleichem Beispiel wechseln.
 * Pfeile nach rechts und links: Nächste / vorige Frage: Beurteilungen übernehmen und zur nächsten Frage bei gleichem Schüler gehen
-<br>![400px-ClipCapIt-181204-104725.PNG](400px-ClipCapIt-181204-104725.PNG)
+<br>![400px-ClipCapIt-181204-104725.PNG](400px-ClipCapIt-181204-104725.PNG) 
 
 ###  Frage - Ergebnisse 
 Anzeige des aktuellen Beispiels mit den Schülereingaben.
