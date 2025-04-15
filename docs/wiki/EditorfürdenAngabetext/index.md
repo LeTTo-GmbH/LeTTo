@@ -142,9 +142,12 @@ Diese Angabe wird dann beim Druck an das LaTeX Listings-Packet geschickt, online
 
 Innerhalb von Listings können natürlich auch Variable verwendet werden, die dann wie im Rest des Textes ersetzt werden.
 
-| Beispiele für Listings-Tag | Ergebnis | im HTML-Source |
-|----------------------------|----------|----------------|
-|                            |          |                |
+| Beispiele für Listings-Tag | Ergebnis                | im HTML-Source            |
+|----------------------------|-------------------------|---------------------------|
+| ![img.png](img.png)        | ![img_4.png](img_4.png) | ![img_8.png](img_8.png)   |
+| ![img_1.png](img_1.png)    | ![img_5.png](img_5.png) | ![img_9.png](img_9.png)   |
+| ![img_2.png](img_2.png)    | ![img_6.png](img_6.png) | ![img_10.png](img_10.png) |
+| ![img_3.png](img_3.png)    | ![img_7.png](img_7.png) | ![img_11.png](img_11.png) |
 
 ###  Sonderzeichen 
 * Bis auf einige Ausnahmen können im Fragetext alle Zeichen des UTF-8-Zeichensatzes verwendet werden.
