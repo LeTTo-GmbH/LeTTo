@@ -142,6 +142,8 @@ Diese Angabe wird dann beim Druck an das LaTeX Listings-Packet geschickt, online
 
 Innerhalb von Listings können natürlich auch Variable verwendet werden, die dann wie im Rest des Textes ersetzt werden.
 
+##### Beispiele in denen die Datensätze a und b verwendet werden:
+
 | Beispiele für Listings-Tag | Ergebnis                | im HTML-Source            |
 |----------------------------|-------------------------|---------------------------|
 | ![img.png](img.png)        | ![img_4.png](img_4.png) | ![img_8.png](img_8.png)   |
