@@ -14,37 +14,44 @@ Die Angabe für die Frage kann im Editor vernünftig formatiert werden, es könn
 * ![25px-ClipCapIt-180831-170909.PNG](25px-ClipCapIt-180831-170909.PNG): Sonderzeichen einfügen
 * ![25px-ClipCapIt-180831-170932.PNG](25px-ClipCapIt-180831-170932.PNG): Bild in den Fragetext einfügen
 * ![25px-ClipCapIt-180831-170942.PNG](25px-ClipCapIt-180831-170942.PNG): Bild löschen, wenn der Cursor auf einem Image-Tag [IMG...](IMG...) steht.
-* ![25px-ClipCapIt-180831-170951.PNG](25px-ClipCapIt-180831-170951.PNG): Neue Teilfrage in einer Mehrfachberechnungsfrage einfügen
+* ![25px-ClipCapIt-180831-170951.PNG](25px-ClipCapIt-180831-170951.PNG): Neue Teilfrage in einer [Mehrfachberechnungsfrage](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage) einfügen
 * ![25px-ClipCapIt-180831-171001.PNG](25px-ClipCapIt-180831-171001.PNG): Teilfrage löschen, wenn der Cursor auf einem Teilfrage-Tag [Q...](Q...) steht.
 * ![130px-ClipCapIt-180831-171032.PNG](130px-ClipCapIt-180831-171032.PNG): Absatzformate definieren, Textfarbe und Hintergrundfarbe auswählen
 
 ### Kontext-Menü des Editors
 <br>![200px-ClipCapIt-180831-175632.PNG](200px-ClipCapIt-180831-175632.PNG)
+
 ##### Einfügen:
 Einfügen des Inhalts der Zwischenablage. Wenn in der Zwischenablage ein Bild gespeichert ist, dann wird das Bild in der Frage gespeichert und der entsprechende zugordnete IMG-Tag an der Cursor-Position eingefügt.
+
 ##### Bild von Datei einbinden:
 Es wird ein Diolog zur Datei-Auswahl geöffnet und nach Auswahl des Bildes dieses zur Frage hinzugefügt und der IMG-Tag an der Cursor-Position eingefügt.
 
 Alle Dateien, die in der Frage verwendet werden können, können auch über den Dialog [Dateien zur Frage verwalten](../DateienzurFrageverwalten/index.md) verwaltet werden. 
-Auch das manuelle Eintippen von [IMG...](IMG...)-tags ist möglich, wenn Sie die den Tag des Bildes aus obigem Dialog ermittelt haben.
+Auch das manuelle Eintippen von &#91;IMG...]-tags ist möglich, wenn Sie die den Tag des Bildes aus obigem Dialog ermittelt haben.
 
-##### Listing einfügen (CTRL-L)
-Einfügen eines Listings, siehe auch [Listing](#listing-).
-##### Freihandskizze einfügen (CTRL-F)
+##### Listing einfügen (STRG-P)
+Einfügen eines Listings, siehe auch [Listings](#Listings).
+
+##### Freihandskizze einfügen (STRG-F)
 Öffnen einer Möglichkeit zum Erstellen von einfachen Freihand-Skizzen, die dann als Image zur Frage gebunden werden können.
 <br>![400px-ClipCapIt-180831-172611.PNG](400px-ClipCapIt-180831-172611.PNG)
+
 ##### Datensatz ergänzen (F2)
 Anlegen eines Datensatzes, die Variablenbezeichnung wird aus dem Wort der akt. Cursorposition abgeleitet. Die Variable wird in geschwungene Klammern gesetzt. Bp.: An der Cursorposition (vor dem Cursor) steht "U2". Es wird ein Datensatz (Variable) mit dem Namen U2 mit der Einheit Volt erzeugt und an der Cursorposition wird U2 durch {U2} ersetzt.
+
 ##### Datensatz als Formel ergänzen (F3)
 Anlegen eines Datensatz wie oben, die Variable wird mit einer Zuweisung in einer Formel gesetzt. 
 Bp.: aus "U1 &lt;F3&gt;" wird $U_1 = {U1}$
+
 ##### Neue Teilfrage (STRG-Q)
-Verwendung bei [Mehrfachberechnungsfragen](/notimplemented/index.md): Im Angabetext wird ein TAG für neue Teilfrage an der Cursorposition  gesetzt und eine neue Teilfrage wird erzeugt und im Detailbereich der Mehrfachberechnungsfrage angezeigt. Der [Q...](Q...)-Tag liefert dann in der fertigen Frage ein Eingabefeld zur Lösungseingabe. Die Ergebnisse der Teilfge sind im Detailbereich der Frage zu definieren.
+Verwendung bei [Mehrfachberechnungsfragen](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage): Im Angabetext wird ein TAG für neue Teilfrage an der Cursorposition  gesetzt und eine neue Teilfrage wird erzeugt und im Detailbereich der Mehrfachberechnungsfrage angezeigt. Der &#91;Q...]-Tag liefert dann in der fertigen Frage ein Eingabefeld zur Lösungseingabe. Die Ergebnisse der Teilfge sind im Detailbereich der Frage zu definieren.
 
 ##### Aktuellen Tag löschen (STRG-DEL)
-Wenn der Cursor auf oder hinter einem TAG steht, dann wird der tAG und die zugehörige Information gelöscht:
-zB: [IMG...](IMG...)-Tag: Der Tag verschwindet und das Bild wird aus der Datenbank gelöscht.
-[Q...](Q...)-Tag: Die zugehörige Teilfrage wird gelöscht.
+Wenn der Cursor auf oder hinter einem TAG steht, dann wird der TAG und die zugehörige Information gelöscht:
+zB: &#91;IMG...]-Tag: Der Tag verschwindet und das Bild wird aus der Datenbank gelöscht.
+&#91;Q...]-Tag: Die zugehörige Teilfrage wird gelöscht.
+
 ##### Plugin
 Wenn in der Frage [Plugins](../Plugins/index.md) definiert sind, dann können auch über das Kontext-Menü pluginspezifische Teile eingefügt werden. Pro definiertem Plugin wird eine Zeile im Kontext-Menü hinzugefügt. Die Menü-Einträge enthalten Namen und Art des Plugins. Je nach gewähltem Plugin unterscheiden sich die Untermenüs stark.
 
@@ -96,85 +103,90 @@ zulässige HTML-Tags:
 
 ### Spezielle TAGs im Fragentext
 
-| Tagbezeichnung     | Beschreibung                                                                                                                                                                                                                                                                                                                       |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [listing](listing) | Tag zum Einfügen von Programm-Listings in den Angabetext einer Frage. Zwischen dem Start mit [listing](listing)  und dem Ende mit [/listing](/listing) befindet sich dann der Programmcode, der speziell formatiert wird. Dies erreicht man am besten über die rechte Maustaste "Listing einfügen" oder mit STRG-L                 |
-| [IMG0](IMG0)       | Platzhaltersymbol für eine Grafik: Alle Grafiken werden als Dateien an die Frage angeschlossen und mit dem IMG-Tag zur Anzeige gebracht. Die Dateien, die in der Frage verwendet werden können, können über den Dialog [Dateien zur Frage verwalten](../DateienzurFrageverwalten/index.md) verwaltet werden. Details: Siehe Bilder |
-| [text](LINK0)      | Link auf eine Datei aus der Dateiliste der Frage. Der Text wird als Link-Text angezeigt.                                                                                                                                                                                                                                           |
-| [Q0](Q0)           | Referenz auf eine Teilfrage eine [Mehrfachberechnungsfrage](/notimplemented/index.md). Der [Q...](Q...)-Tag liefert dann in der fertigen Frage ein Eingabefeld zur Lösungseingabe für diese Teilfrage                                                                                                                              |
-| [..](PIG)          | Tag zum Einbinden einer Grafik, die von einem [Plugin](../Plugins/index.md) zur Laufzeit erzeugt wird.                                                                                                                                                                                                                             |
+| Tagbezeichnung   | Beschreibung                                                                                                                                                                                                                                                                                                                       |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| &#91;listing]    | Tag zum Einfügen von Programm-Listings in den Angabetext einer Frage. Zwischen dem Start mit &#91;listing&#93;  und dem Ende mit &#91;/listing&#93; befindet sich dann der Programmcode, der speziell formatiert wird. Dies erreicht man am besten über die rechte Maustaste "Listing einfügen" oder mit STRG-P                   |
+| &#91;IMG0]       | Platzhaltersymbol für eine Grafik: Alle Grafiken werden als Dateien an die Frage angeschlossen und mit dem IMG-Tag zur Anzeige gebracht. Die Dateien, die in der Frage verwendet werden können, können über den Dialog [Dateien zur Frage verwalten](../DateienzurFrageverwalten/index.md) verwaltet werden. Details: Siehe Bilder |
+| &#91;LINK0 TEXT] | Link auf eine Datei aus der Dateiliste der Frage. Der Text wird als Link-Text angezeigt.                                                                                                                                                                                                                                           |
+| &#91;Q0]         | Referenz auf eine Teilfrage einer [Mehrfachberechnungsfrage](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage). Der &#91;Q...]-Tag liefert dann in der fertigen Frage ein Eingabefeld zur Lösungseingabe für diese Teilfrage                                                                                         |
+| &#91;PIG]        | Tag zum Einbinden einer Grafik, die von einem [Plugin](../Plugins/index.md) zur Laufzeit erzeugt wird.                                                                                                                                                                                                                             |
 
 
 ### Bilder
-Bilder werden im Editor durch ein Image-Tag [IMG0](IMG0), [IMG1](IMG1), etc. als Platzhalter angezeigt. Grafiken werden als Dateien an die Frage angeschlossen und mit dem IMG-Tag zur Anzeige gebracht. 
+Bilder werden im Editor durch ein Image-Tag &#91;IMG0], &#91;IMG1], etc. als Platzhalter angezeigt. Grafiken werden als Dateien an die Frage angeschlossen und mit dem IMG-Tag zur Anzeige gebracht. 
 Die Vorschau des Bildes wird im linken unteren Vorschaufenster angezeigt, wenn der Image-Tag angeklickt wird.
 
 **Einfügen von neuen Bildern: ** 
-* Images aus der Zwischenablage können über _CTRL-V_ eingefügt werden. Das Bild wird als Datei an die Frage angehängt und der entsprechende [IMG](IMG)-Tag wird eingefügt.
-* Über den Toolbar des Editors mit dem Button ![22px-ClipCapIt-180620-202922.PNG](22px-ClipCapIt-180620-202922.PNG): Ein Dialog zum Auswählen einer Grafik wird angezeigt, nach erfolgter Auswahl wird der [IMG](IMG)-Tag und die Datei eingefügt.
+* Images aus der Zwischenablage können über _STRG-V_ eingefügt werden. Das Bild wird als Datei an die Frage angehängt und der entsprechende &#91;IMG]-Tag wird eingefügt.
+* Über den Toolbar des Editors mit dem Button ![22px-ClipCapIt-180620-202922.PNG](22px-ClipCapIt-180620-202922.PNG): Ein Dialog zum Auswählen einer Grafik wird angezeigt, 
+  nach erfolgter Auswahl wird der &#91;IMG]-Tag und die Datei eingefügt.
 
 ### Schnelleingabe / Tastatur-Shortcuts
 * F2: Tippt man nach der Eingabe eines Variablennamens die Funktionstaste F2, so wird ein Datensatz angelegt und die Variable wird in geschwungene Klammern gesetzt zB.: aus "U2 &lt;F2&gt;" wird {U2}
 * F3: Tippt man nach der Eingabe eines Variablennamens die Funktionstaste F3, so wird ein Datensatz angelegt und die Variable mit einer Zuweisung in einer Formel gesetzt zB. aus "U1 &lt;F3&gt;" wird $U_1 = {U1}$
 * F8: Nur bei Lückentextfragen: Mit F8 kann das aktuelle Wort, bei dem der Cursor steht, als Textlücke definiert werden.
-* CTRL-L: Einfügen eines Textbereichs für Programm-Listings
-* CTRL-F: Einfügen einer Freihandskizze
-* CTRL-Q: Einfügen einer neuen Teilfrage bei [Mehrfachberechnungsfragen](/notimplemented/index.md)
-* CTRL-DEL: Aktuellen Tag löschen, wenn der Cursor auf einem Tag mit eckigen Klammern steht.
+* STRG-P: Einfügen eines Textbereichs für Programm-Listings
+* STRG-F: Einfügen einer Freihandskizze
+* STRG-Q: Einfügen einer neuen Teilfrage bei [Mehrfachberechnungsfragen](../BeispielsammlungEditieren/index.md#mehrfachberechnungsfrage)
+* STRG-DEL: Aktuellen Tag löschen, wenn der Cursor auf einem Tag mit eckigen Klammern steht.
 
 Wird eine [Variable](../Datensätze/index.md) direkt in geschwungene Klammern gesetzt, so wird nach dem Verlassen des Editors geprüft, ob die Variable schon vorhanden ist und diese wird gegebenenfalls neu angelegt.
 
 Die Grafiken von [Plugins](../Plugins/index.md) werden im Editor ebenfalls durch Plugin-Tags mit Platzhaltern angezeigt.
 
 ### Listings
-Sourcecode Listings müssen innerhalb von Listings-Tags gesetzt werden. Dies erreicht man am Besten über die rechte Maustaste "Listing einfügen" oder mit STRG-L.
+Sourcecode Listings müssen innerhalb von Listings-Tags gesetzt werden. Dies erreicht man am Besten über die rechte Maustaste "Listing einfügen" oder mit STRG-P.
 
-Im Start-Tag des Listings kann auch mit dem Parameter lang="C" eine gewünschte Programmiersprache angegeben werden. Diese Angabe wird dann beim Druck an das LaTeX Listings-Packet geschickt, online wird diese Angabe ignoriert.
+Im Start-Tag des Listings kann auch mit dem Parameter lang="C" eine gewünschte Programmiersprache angegeben werden. 
+Diese Angabe wird dann beim Druck an das LaTeX Listings-Packet geschickt, online wird diese Angabe ignoriert.
 
 Innerhalb von Listings können natürlich auch Variable verwendet werden, die dann wie im Rest des Textes ersetzt werden.
+
+| Beispiele für Listings-Tag | Ergebnis | im HTML-Source |
+|----------------------------|----------|----------------|
+|                            |          |                |
 
 ###  Sonderzeichen 
 * Bis auf einige Ausnahmen können im Fragetext alle Zeichen des UTF-8-Zeichensatzes verwendet werden.
 * Spezielle Sonderzeichen des CK-Editors können mit dem Button <br>![ClipCapIt-220113-153145.PNG](ClipCapIt-220113-153145.PNG) eingefügt werden
 * Folgende Zeichen haben im Fragetext eine Sonderstellung und müssen deshalb teilweise gesondert behandelt werden:
 
-| Zeichen | Bezeichnung | Funktion | Verwendung im Fragetext |
-|---------------------------------------------------------------|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| $                                                             | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                  |
-| {                                                             | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
-| &lt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;lt; gewandelt und ist deshalb normal verwendbar                            |
-| &gt;                                                          | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;gt; gewandelt und ist deshalb normal verwendbar                            |
-| [                                                             | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                            |
+| Zeichen | Bezeichnung          | Funktion                                         | Verwendung im Fragetext                                                                                                                   |
+|---------|----------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| $       | Dollar               | Start und Ende einer Formelumgebung im Fragetext | &#92;$                                                                                                                                    |
+| {       | geschwungene Klammer | Variablen und Berechnungsfeld                    | wird nur als Variablenklammer interpretiert wenn dazu eine gültige Variable gefunden wird, ggf. nach der Klammer ein Leerzeichen einfügen |
+| &lt;    | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;lt; gewandelt und ist deshalb normal verwendbar                                   |
+| &gt;    | kleiner Zeichen      | HTML-Tag-Begrenzer                               | wird durch den CK-Editor automatisch in die Entity &amp;gt; gewandelt und ist deshalb normal verwendbar                                   |
+| [       | eckige Klammer       | Frage, Bild, Link Begrenzer                      | Kann normal verwendet werden wird nur bei einem gültigen Tag IMG,LINK,Q,... ausgewertet                                                   |
 
 
 ###  Sonderzeichen in einer Formelumgebung im Fragetext 
 * Eine Formelumgebung beginnt im Fragetext mit Dollar und endet mit Dollar. Dazwischen wird der Text als Formel wie in LaTeX gesetzt. 
 * Sonderzeichen werden dabei wie folgt angegeben:
 
-| Zeichen |Verwendung in der Formelumgebung | 
-|------------------------------------------|------|
-| $                                        | &#92;$   |
-| {                                        | &#92;{   |
-| }                                        | &#92;}   |
-| _                                        | &#92;_   |
-| ^                                        | &#92;^   |
-| #                                        | &#92;#   |
-| ~                                        | &#92;sim |
-| &#92;                                    | &#92;backslash |
-| x²                                       | x^2  |
-| x³                                       | x^3  |
-| %                                        | &#92;%    |
+| Zeichen | Verwendung in der Formelumgebung | 
+|---------|----------------------------------|
+| $       | &#92;$                           |
+| {       | &#92;{                           |
+| }       | &#92;}                           |
+| _       | &#92;_                           |
+| ^       | &#92;^                           |
+| #       | &#92;#                           |
+| ~       | &#92;sim                         |
+| &#92;   | &#92;backslash                   |
+| x²      | x^2                              |
+| x³      | x^3                              |
+| %       | &#92;%                           |
 
 
 ### Datensätze und Variable
 Die Verwendung von Datensätzen oder Ergebnissen von Berechnungen erfolgt immer über geschwungene Klammern!
 
-Datensatz erstellen: siehe [Datensätze definieren](../Datensätzedefinieren/index.md), [Eingabe im Editor#erstellung-aus-dem-editor-](../Datensätzedefinieren#erstellung-aus-dem-editor-/index.md#erstellung-aus-dem-editor-)
+Datensatz erstellen: siehe [Datensätze definieren](../Datensätzedefinieren/index.md), [Eingabe im Editor](../Datensätzedefinieren/index.md#erstellung-aus-dem-editor)
 
 Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der Maxima-Berechnung können im Fragetext innerhalb oder außerhalb von Tex-Formeln verwendet werden.
 
-
-| Bezeichnung | Syntax | Beispiel| Beschreibung           |
+| Bezeichnung                                                  | Syntax                       | Beispiel   | Beschreibung                                                                                                                                                                        |
 |--------------------------------------------------------------|------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Variable, die in einem Datensatz definiert wurde             | {name}                       | {x}        | x wird duch den Wert des Datensatzes ersetzt                                                                                                                                        |
 | Variable mit Einheit                                         | {name,einheit}               | {I1,A}     | I1 wird mit der Einheit A mit gültigen Einheitenvielfachen von A ausgegeben                                                                                                         |
@@ -190,7 +202,7 @@ Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der 
 | symbolscher Wert mit Einheit und Genauigkeit                 | {=ausdruck;=einheit,ziffern} | {=y;=mV,3} | setzt in den Ausdruck y, welcher in Maxima berechnet wurde, alle Datensätze ein und gibt in mV mit 3 gültigen Ziffern aus.                                                          |
 | Datensatz - Vektor                                           | {name}                       | {v}        | Vektoren werden normal als Spaltenvektor dargestellt                                                                                                                                |
 | Zeilenvektor                                                 | {name,line}                  | {v,line}   | Vektor als Zeilenvektor: (1/2/3)                                                                                                                                                    |
-| Vektor in Eingabedarstellung                                 | {name,input}                 | {v,input}  | Vektor wird so dargestellt, wie er eingegeben werden kann: [1,2,3](1,2,3)                                                                                                           |
+| Vektor in Eingabedarstellung                                 | {name,input}                 | {v,input}  | Vektor wird so dargestellt, wie er eingegeben werden kann: &#91;1,2,3]                                                                                                              |
 | Matrix                                                       | {name}                       | {M}        | Darstellungsmodi von Matrizen sind gleich wie bei Vektoren                                                                                                                          |
 
 
