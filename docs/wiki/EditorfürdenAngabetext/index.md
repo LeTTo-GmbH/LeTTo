@@ -137,17 +137,26 @@ Die Grafiken von [Plugins](../Plugins/index.md) werden im Editor ebenfalls durch
 ### Listings
 Sourcecode Listings müssen innerhalb von Listings-Tags gesetzt werden. Dies erreicht man am Besten über die rechte Maustaste "Listing einfügen" oder mit STRG-P.
 
-Im Start-Tag des Listings kann auch mit dem Parameter lang="C" eine gewünschte Programmiersprache angegeben werden. 
-Diese Angabe wird dann beim Druck an das LaTeX Listings-Packet geschickt, online wird diese Angabe ignoriert.
+Im HTML-Sourcecode wird das Listing dann innerhalb von HTML-Tag <pre>...</pre> dargestellt.
+
+Fügt man das Listing nicht über Strg-P oder "Listing einfügen" ein sondern tippt man es direkt in den Editor, so wird das Listing nicht innerhalb von pre-Tags formatiert 
+und die Zeilenumbrüche werden somit nicht korrekt gemacht (siehe Beispiele 3 und 4). Natürlich kann man in der Quellcode-Ansicht des Editors zuerst die
+pre-Tags einfügen und dann den Quellcode mit dem &#91;listing]-Tag dazwischen setzen - damit erhält man das gleiche Ergebnis wie mit Strg-P.
+
+Im Start-Tag des Listings kann auch mit dem **Parameter lang="C"** eine gewünschte **Programmiersprache** angegeben werden. 
+Diese Angabe wird dann **beim Druck an das LaTeX Listings-Packet** geschickt, im **Browser** wird die Sprache **automatisch** erkannt und somit die **lang-Angabe ignoriert**. 
+Die verfügbaren Sprachen sind vom LaTeX-Packet abhängig, die Standard-Programmiersprachen sind C, C++, Java, Python, Pascal, HTML, XML, SQL, PHP und JavaScript.
 
 Innerhalb von Listings können natürlich auch Variable verwendet werden, die dann wie im Rest des Textes ersetzt werden.
+
+Beginnt der Text des Listings direkt nach dem Start-Tag des Listings, so wird am Beginn des Listings keine Leerzeile eingefügt (siehe erstes Beispiel).
 
 ##### Beispiele in denen die Datensätze a und b verwendet werden:
 
 | Beispiele für Listings-Tag | Ergebnis                | im HTML-Source            |
 |----------------------------|-------------------------|---------------------------|
-| ![img.png](img.png)        | ![img_4.png](img_4.png) | ![img_8.png](img_8.png)   |
 | ![img_1.png](img_1.png)    | ![img_5.png](img_5.png) | ![img_9.png](img_9.png)   |
+| ![img.png](img.png)        | ![img_4.png](img_4.png) | ![img_8.png](img_8.png)   |
 | ![img_2.png](img_2.png)    | ![img_6.png](img_6.png) | ![img_10.png](img_10.png) |
 | ![img_3.png](img_3.png)    | ![img_7.png](img_7.png) | ![img_11.png](img_11.png) |
 
