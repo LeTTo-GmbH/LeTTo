@@ -244,10 +244,10 @@ Bei der Mengendefinition werden zu Beginn in eckigen Klammern alle Elemente defi
 
 Beispiele:
 
-| Muster                 | trifft bei                                                     | trifft nicht bei                     |
-| ---------------------- | -------------------------------------------------------------- | ------------------------------------ |
-| `[NK*(](NK*(),sin,cos` | `4`<br>`pi`<br>`2*pi`<br>`sin(2*pi)`<br>`sin(4)`<br>`5*sin(4)` | `tan(pi)`<br>`sin(pi/2)`<br>`5+sin(4)` |
-| `[N*](N*)`             | `3*4`<br>`3`                                                   | `3+4`<br>`1.2*3`                     |
+| Muster           | trifft bei                                                     | trifft nicht bei                       |
+|------------------|----------------------------------------------------------------|----------------------------------------|
+| `[NK*(],sin,cos` | `4`<br>`pi`<br>`2*pi`<br>`sin(2*pi)`<br>`sin(4)`<br>`5*sin(4)` | `tan(pi)`<br>`sin(pi/2)`<br>`5+sin(4)` |
+| `[N*]`           | `3*4`<br>`3`                                                   | `3+4`<br>`1.2*3`                       |
 
 
 ####  Definition als regulärer Ausdruck
@@ -258,14 +258,15 @@ Die Mengen NZRCGVKE sind wie schon zuvor definiert.
 
 Für Gruppierung und Verknüpfung stehen folgende Zeichen zur Verfügung:
 
-| Zeichen | Bedeutung                                                                                     |
-|---------|-----------------------------------------------------------------------------------------------|
-| { }     | Gruppierungsklammer                                                                           |
-| | |     | logische Oder-Verknüpfung des linken und rechten Ausdrucks                                    |
-| | ?     | optionales Vorkommen eines Zeichens (Das Zeichen links von ? kann Vorkommen, oder auch nicht) |
-| { }?    | optionales Vorkommen einer Gruppe                                                             |
-| { }+?   | Gruppe kann einmal oder mehrmals vorkommen                                                    |
-| { }*?   | Gruppe kann nicht, einmal oder mehrmals vorkommen                                             |
+| Zeichen   | Bedeutung                                                                                     |
+|-----------|-----------------------------------------------------------------------------------------------|
+| { }       | Gruppierungsklammer                                                                           |
+| \\&#124; | der senkrechte Strich wenn er in einem symbolischen Ausdruch vorkommen darf                   |
+| &#124;    | logische Oder-Verknüpfung des linken und rechten Ausdrucks                                    |
+| ?         | optionales Vorkommen eines Zeichens (Das Zeichen links von ? kann Vorkommen, oder auch nicht) |
+| { }?      | optionales Vorkommen einer Gruppe                                                             |
+| { }+?     | Gruppe kann einmal oder mehrmals vorkommen                                                    |
+| { }*?     | Gruppe kann nicht, einmal oder mehrmals vorkommen                                             |
 
 
 Beispiele:
