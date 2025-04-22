@@ -1,8 +1,17 @@
-# Test-Ergebnisse
+# Test-Ergebnisse / Aktivität-Ergebnisse
 Ist ein Test aktiv, dann wird im [Navigationsbereich](../LeTTo-Hauptansicht/index.md#navigation) der Baum mit **Test-Einstellungen** angezeigt.
 <br>![600px-Neu_asch.jpg](600px-Neu_asch.jpg)
 
-Der Menüpunkt **Ergebnisse** führt zur Übersicht über alle Ergebnisse eines Online-Tests.
+Der Menüpunkt **Ergebnisse** führt zur Übersicht über alle Ergebnisse eines Online-Tests bzw. Online-Aktivität.
+
+<img src="img_4.png" style="width:900px">
+
+Dabei bedeutet:
+* violett umrahmt: Das letzte selektierte Bsp. innerhalb der Aktivität bzw. zur Aktivitätslaufzeit, dass gerade aktive Bsp.
+* grün: Bsp. ist als korrekt gelöst evaluiert worden
+* dunkel grün: Bsp. ist vom Lehrer manuel als korrekt evaluiert worden
+* rot: Bsp. ist als inkorrekt (nicht korrekt) evaluiert worden
+* gelb: Bsp. ist als teilweise korrekt evaluiert worden
 
 ## Ergebnisse einer Befragung
 siehe [Anonyme Befragung](../AnonymeBefragung/index.md)
@@ -46,11 +55,29 @@ Anzeige des aktuellen Beispiels mit den Schülereingaben.
 
 ###  Anzeige des Testprotokolls
 Klicken Sie auf das, durch den blauen Pfeil markierte Symbol - siehe folgende Abbildung.
-<br>![img_1.png](img_1.png)
+<br>
+<img src="img_1.png" style="width:800px">
 
 Das Testprotokol (Protokol der Online-Aktivität) wird angezeigt - siehe Abbildung darunter.
 * blauer Bereich: Allgemeine Daten der Online-Aktivität werden aufgelistet.
 * oranger Bereich: Schülerspezifische Informationen werden aufgelistet. Diese sind: Name, Note, Prozentwert, Start, Stop, Event-Loging
+  * Name
+  * Beurteilung/Note
+  * Prozentwert
+  * Startdatum
+  * Stopdatum
+  * Event-Loging
+    * F: Zeitstempel der Schülerabgabe der Aktivität
+    * E: Datum der Bearbeitung der Aktivität - Bsp: HÜs werden an mehreren Tagen bearbeitet
+    * O: Zeitstempel des abermaligen Öffnens der Aktivität nach einem Focus-Verlust
+    * X: Zeitstempel bei Auftritt eines Focus-Verlusts 
 
-<br>![img.png](img.png)
+
+<img src="img.png" style="width:800px">
+
+
+
+
+
+
 

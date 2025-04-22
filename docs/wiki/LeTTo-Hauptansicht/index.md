@@ -23,6 +23,7 @@ Der ausgwählte Benutzer wird in grüner Farbe angezeigt.
 Wenn das System für 20 Minuten nicht bedient wird, dann werden Sie automatisch ausgeloggt. 
 Trotzdem melden Sie sich bitte vom System ab, wenn Sie den Arbeitsplatz verlassen.
 
+
 ## Navigation
 Die Navigation kann über die Baumstruktur im Bereich _Navigation_ erfolgen oder auch über die Links oberhalb des Hauptfensters.
 Beim Klick auf einen Link oder auf die Baumstruktur wird im [Arbeitsbereich](#arbeitsbereich-) eine Übersicht mit allen weiteren Möglichkeiten angeboten.
