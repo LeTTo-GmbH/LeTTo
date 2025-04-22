@@ -11,6 +11,8 @@
 * debug-Variable in der [Fragevorschau](../Fragen-Vorschau/index.md#debug-ansicht-mit-debug-variablen) 
 * Speicherüberlauf bei Maxima-Berechnungen behoben
 * Einheiten Bit und Byte mit deren Vielfachen k,M,G,T,P
+* Korrekte Verarbeitung von komplexem Logarithmus und Potenzen
+* Korrektur beim Mustervergleich in der Zieleinheit
 
 ## Stable - Rev 6669/6670 - 13.2.2024
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
