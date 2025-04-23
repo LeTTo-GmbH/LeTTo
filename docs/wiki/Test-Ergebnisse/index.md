@@ -67,10 +67,13 @@ Das Testprotokol (Protokol der Online-Aktivität) wird angezeigt - siehe Abbildu
   * Startdatum
   * Stopdatum
   * Event-Loging
-    * F: Zeitstempel der Schülerabgabe der Aktivität
-    * E: Datum der Bearbeitung der Aktivität - Bsp: HÜs werden an mehreren Tagen bearbeitet
-    * O: Zeitstempel des abermaligen Öffnens der Aktivität nach einem Focus-Verlust
-    * X: Zeitstempel bei Auftritt eines Focus-Verlusts 
+    * F: Zeitstempel bei der Fortsetzung des Schülers nach Wiederöffnung des Lehrers nach Fokusverlust des Schülers
+    * E: Zeitstempel bei Ergebnisabruf vom Schüler
+    * O: Zeitstempel des abermaligen Öffnens der Aktivität durch Lehrer nach einem Focus-Verlust
+    * X: Zeitstempel bei Auftritt eines Focus-Verlusts
+    
+
+[//]: # (    * NoCon: Systembedingter Fokusverlust - Bsp. Internetverbindung nicht vorhanden)
 
 
 <img src="img.png" style="width:800px">
