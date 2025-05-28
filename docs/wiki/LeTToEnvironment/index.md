@@ -81,6 +81,12 @@ siehe auch
 | CERT_EXTERN                | Gibt an ob ein externes Zertifikat verwendet werden soll                                                          | 0,1                                         |
 | CREATE_HTTPS_CONF          | Gibt an ob die Datei https.conf der Proxy-Konfiguration automatisch beim Start des Proxy neu erzeugt werden soll. | 1,0                                         |
 | USE_HTTP                   | Gibt an ob HTTP-Anfragen an Port 80 verarbeitet (1) oder automatisch an Port 443 redirected werden sollen(0).     | 1,0                                         |
+| SAVE_QUESTION_ASYNC        | Angabe, ob die Fragen im Main-Service asynchron gespeichert werden oder nicht.                                    | 1,0                                         |
+| LOGOUT_MISSING_FINGERPRINT | Logout am Letto-Server, wenn der Fingerprint bei einem Checktoken nicht übereinstimmt.                            | 1,0                                         |
+
+
+SAVE_QUESTION_ASYNC=false
+LOGOUT_MISSING_FINGERPRINT=true
 
 
 ###  Environment Variablen für jede installierte Schule 
