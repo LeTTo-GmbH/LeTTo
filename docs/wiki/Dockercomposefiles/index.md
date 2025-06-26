@@ -30,7 +30,6 @@
 | /opt/letto/docker/compose/letto/docker-service-main.yml             | [http://letto.at/download/letto/setup/yml/docker-service-main.yml](http://letto.at/download/letto/setup/yml/docker-service-main.yml)                         | neues Main-Service             | [LeTTo Environment](../LeTToEnvironment/index.md) |
 | /opt/letto/docker/compose/letto/docker-service-question.yml         | [http://letto.at/download/letto/setup/yml/docker-service-question.yml](http://letto.at/download/letto/setup/yml/docker-service-question.yml)                 | neues Question-Service         | [LeTTo Environment](../LeTToEnvironment/index.md) |
 
-
 ###  Mindestkonfiguration für den Betrieb des LeTTo-Servers Rev6539 
 * MySQL-Server
 * Setup-Service
@@ -45,10 +44,8 @@
 * Im Normalfall werden die Konfigurationsdateien über das Setup-Service verwaltet
 * Vorlagen für die Konfigurationsdateien findet man aber auch am [http://letto.at/download/letto/proxy/](http://letto.at/download/letto/proxy/)
 
-
 ###  Container auf Dockerhub 
 Doku in Arbeit
-
 
 | Name                                                     | Beschreibung                  |
 |----------------------------------------------------------|-------------------------------|
