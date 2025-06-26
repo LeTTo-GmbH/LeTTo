@@ -314,7 +314,6 @@ siehe auch
 | LETTO_1_LOGAD             | Gibt an ob der LeTTo-Server Logins am Active-Directory-Server protokollieren soll                     | true,false                                                                                                                                                                |
 | LETTO_1_LOGMAXIMA         | Gibt an ob die Maxima-Berechnungen genauer geloggt werden sollen                                      | true,false                                                                                                                                                                |
 
-
 #### zusätzliche Question-Service Variablen für externe Question-Services (Verlage, etc.)
 
 * Alle Variablen beginngn mit QUESTION_X_ wobei X durch die Nummer des Question-Services ( 1,2,...)  zu ersetzen ist.
