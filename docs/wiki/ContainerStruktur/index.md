@@ -12,8 +12,10 @@
 * Port 3096: https, Setup-Service des Setup als Docker-Container. Dient nur als Umgehung falls mal der Reverse-Proxy hängen würde.
 * Port 13306: mysql, Direkter Zugriff auf den MySQL-Server. Sollte nicht nach aussen durchgelassen werden.
 * Ports 5xxx: Debugging Ports der Container, sind nur reserviert und erst aktiv wenn man debug=true setzt.
+
 #####  nw-letto 
-Netzwerk welche aller Container vom LeTTo miteinander verbindet
+Netzwerk welches alle Container von LeTTo miteinander verbindet
+
 #####  nw-proxy 
 Netzwerk an welches nur der letto-proxy angeschlossen ist um andere Container an den Reverse-Proxy binden zu können.
 
