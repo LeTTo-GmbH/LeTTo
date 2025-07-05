@@ -1,6 +1,8 @@
 # Neuigkeiten
 
 ## laufend
+
+## Stable - Rev 6730 - 5.7.2025
 * MathJax3 in Questionservice
 * Bugfixes #2066, #1932, #2124, #2129
 * Docker-Container aktualisiert
@@ -13,8 +15,12 @@
 * Einheiten Bit und Byte mit deren Vielfachen k,M,G,T,P
 * Korrekte Verarbeitung von komplexem Logarithmus und Potenzen
 * Korrektur beim Mustervergleich in der Zieleinheit
+* Browser-Fingerprint für die Verhinderung von Mehrfachanmeldungen
+* Login-Logging in MongoDB
+* asynchornes Speichern von Fragen
+* RDP-Druck im Edit-Service
 
-## Stable - Rev 6669/6670 - 13.2.2024
+## Stable - Rev 6669/6670 - 13.2.2025
 * Definition der Größe und Art des Eingabefeldes der Schülerantwort bei Mehrfachberechnungsfragen über die [Zieleinheit](../ZielEinheit/index.md#parameter-für-die-größe-und-art-des-eingabefeldes-bei-berechneten-teilfragen-einer-mehrfachberechnungsfrage)
 * Base-Container auf Letztversionen aktualisiert
 * MathJax 3
