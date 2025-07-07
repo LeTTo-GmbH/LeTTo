@@ -2,6 +2,7 @@
 ##  siehe auch 
 * [Administration](../Administration/index.md)
 * [Installation](../Installation/index.md)
+* [Restore einer LeTTo-Sicherung](../../howto/admin/backup/letto-restore.md)
 
 ##  Datensicherung 
 Die Datensicherung einer LeTTo-Installation sollte in 2 Teilen erfolgen. 1. die tägliche Sicherung der Datenbank als SQL-Dump und 2. das Kopieren aller Daten auf einen externes Backup-Laufwerk. Natürlich kann auch das komplette Images eines virtuellen Servers gesichert werden, wobei dann aber keine teilweise Rücksicherung möglich ist.

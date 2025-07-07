@@ -1,6 +1,10 @@
 # Restore einer LeTTo-Sicherung
 
-# normaler Restore einer Datensicherung
+### siehe auch 
+* [Datensicherung-Docker](../../../wiki/Datensicherung-Docker/index.md)
+* [Administration](../../../wiki/Administration/index.md)
+
+## normaler Restore einer Datensicherung
 * Vorsicht! Der normale Restore einer Datensicherung löscht alle Daten in der Datenbank und ersetzt sie mit den Daten der Sicherung.
 * Gegebenenfalls sollte man vor der Rücksicherung eine Sicherung der aktuellen Datenbank machen, um diese später wiederherstellen zu können.
 * Die Sicherung muss im Verzeichnis /opt/letto/docker/storage/database-dump liegen.
