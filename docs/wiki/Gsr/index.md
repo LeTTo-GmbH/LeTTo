@@ -135,7 +135,7 @@ Folgende Parameter können angegeben werden:
 
 | Graphiktyp | typ parameter   | Beschreibung                                                                       | Beispiel                                         |
 |------------|-----------------|------------------------------------------------------------------------------------|--------------------------------------------------|
-| Schaltung  | keine Parameter |                                                                                    | [plugin1](PIG)                                   |
+| Schaltung  | keine Parameter |                                                                                    | [PIG plugin1]                                    |
 | Schaltung  | S W,w20         | W,werte..Werte der Bauteile drucken<br> w20..Breite in Prozent des Bildschirms<br> | [PIG plugin1 "S W,w60"/](PIG plugin1 "S W,w60"/) |
 
 

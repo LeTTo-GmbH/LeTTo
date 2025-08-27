@@ -82,10 +82,10 @@ Die Operatoren _-!? können auch nach einer Änderung mit &gt; zusätzlich verwe
 
 | Definition                                        | Schaltung                                                                   |
 |---------------------------------------------------|-----------------------------------------------------------------------------|
-| ,R,C,,R,LL;IC1&gt;p,UR1!,Ua_,Ue-                  | <br>![300px-ClipCapIt-181127-213036.PNG](300px-ClipCapIt-181127-213036.PNG) |
-| U,R,R,A;UR1,UR2,IR1&gt;1,IA1-                     | <br>![300px-ClipCapIt-181127-213202.PNG](300px-ClipCapIt-181127-213202.PNG) |
-| U,R,R,A;UR1,UR2,IR1&gt;1,IA1-,A1:.,R2:Rx,URx&gt;x | <br>![300px-ClipCapIt-181127-213502.PNG](300px-ClipCapIt-181127-213502.PNG) |
-| ,R,R;Ue?,Ie-,UR1?,UR2&gt;a                        | <br>![300px-ClipCapIt-181127-213912.PNG](300px-ClipCapIt-181127-213912.PNG) |
+| ,R,C,,R,LL;IC1&gt;p,UR1!,Ua_,Ue-                  | <br>![ClipCapIt-181127-213036.PNG](ClipCapIt-181127-213036.PNG) |
+| U,R,R,A;UR1,UR2,IR1&gt;1,IA1-                     | <br>![ClipCapIt-181127-213202.PNG](ClipCapIt-181127-213202.PNG) |
+| U,R,R,A;UR1,UR2,IR1&gt;1,IA1-,A1:.,R2:Rx,URx&gt;x | <br>![ClipCapIt-181127-213502.PNG](ClipCapIt-181127-213502.PNG) |
+| ,R,R;Ue?,Ie-,UR1?,UR2&gt;a                        | <br>![ClipCapIt-181127-213912.PNG](ClipCapIt-181127-213912.PNG) |
 | ,R,C?,,                                           | <br>![300px-ClipCapIt-190322-142038.PNG](300px-ClipCapIt-190322-142038.PNG) |
 
 
