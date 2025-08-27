@@ -12,10 +12,10 @@ Folgende Drehstrom-Schaltungselemente können verwendet werden, wobei als Parame
 |----------------------------|-------------------------------------|-----------------------------------------------------------------------------|
 | DSU()<br>DSU(U1,U2,U3)     | Drehstromnetz aus Einzelspannungen  | <br>![200px-ClipCapIt-190520-203503.PNG](200px-ClipCapIt-190520-203503.PNG) |
 | DSU()<br>DSU(U,U,U,U)      | Drehstromnetz aus Einzelspannungen  | <br>![200px-ClipCapIt-190520-203619.PNG](200px-ClipCapIt-190520-203619.PNG) |
-| N()<br>N4()<br>N4(U,U,U,U) | Drehstrom Vierleiternetz            | <br>![100px-ClipCapIt-190513-101729.PNG](100px-ClipCapIt-190513-101729.PNG) |
-| N3()<br> N3(U1,U2,U3)      | Drehstrom Dreileiternetz            | <br>![100px-ClipCapIt-190513-102026.PNG](100px-ClipCapIt-190513-102026.PNG) |
+| N()<br>N4()<br>N4(U,U,U,U) | Drehstrom Vierleiternetz            | <br>![ClipCapIt-190513-101729.PNG](ClipCapIt-190513-101729.PNG) |
+| N3()<br> N3(U1,U2,U3)      | Drehstrom Dreileiternetz            | <br>![ClipCapIt-190513-102026.PNG](ClipCapIt-190513-102026.PNG) |
 | DS(R,L,C)                  | Drehstrom Sternschaltung Dreileiter | <br>![200px-ClipCapIt-190513-102215.PNG](200px-ClipCapIt-190513-102215.PNG) |
-| DSE(R,R,R)                 | Drehstrom Sternschaltung Dreileiter | <br>![200px-ClipCapIt-190520-203746.PNG](200px-ClipCapIt-190520-203746.PNG) |
+| DSE(R,R,R)                 | Drehstrom Sternschaltung Dreileiter | <br>![ClipCapIt-190520-203746.PNG](ClipCapIt-190520-203746.PNG) |
 | DSN(R,L,C)                 | Drehstrom Sternschaltung Vierleiter | <br>![200px-ClipCapIt-190513-102307.PNG](200px-ClipCapIt-190513-102307.PNG) |
 | DSNE(R,R,R)                | Drehstrom Sternschaltung Vierleiter | <br>![200px-ClipCapIt-190520-203849.PNG](200px-ClipCapIt-190520-203849.PNG) |
 | DSN(R,L,C,R)               | Drehstrom Sternschaltung Vierleiter | <br>![200px-ClipCapIt-190513-102458.PNG](200px-ClipCapIt-190513-102458.PNG) |
