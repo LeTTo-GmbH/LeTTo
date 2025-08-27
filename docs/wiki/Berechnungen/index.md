@@ -378,16 +378,16 @@ Liste der problematischen Funktionen:
 #### komplexe Zahlen
 Die Funktionen zu komplexen Zahlen werden (anders als in Maxima) nur ausgewertet wenn das Ergebnis numerisch berechenbar ist, ansonsten bleibt die Funktion symbolisch erhalten.
 
-| Funktion  | Beschreibung                                                                                                 | Beispiel          | Ergebnis |
-|-----------|--------------------------------------------------------------------------------------------------------------|-------------------|----------|
-| abs       | Liefert den Absolutbetrag einer komplexen Zahl                                                               | abs(3+4*%i)       | 5        |
-| cabs      | Liefert den Absolutbetrag einer komplexen Zahl                                                               | cabs(3+4*%i)      | 5        |
-| carg      | Liefert das Argument einer komplexen Zahl                                                                    | carg(4*%e^(3*%i)) | 3        |
-| realpart  | Liefert den Realteil einer komplexen Zahl                                                                    | realpart(3+4*%i)  | 3        |
-| imagpart  | Liefert den Imaginärteil einer komplexen Zahl                                                                | imagpart(3+4*%i)  | 4        |
-| conjugate | Liefert die konjugiert komplexe Zahl einer komplexen Zahl                                                    | conjugate(3+4*%i) | 3-4*%i   |
-| rectform  | hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert wird wie zB.: {=3arg2;karti} |                   |          |
-
+| Funktion  | Beschreibung                                                                                                 | Beispiel                  | Ergebnis |
+|-----------|--------------------------------------------------------------------------------------------------------------|---------------------------|----------|
+| abs       | Liefert den Absolutbetrag einer komplexen Zahl                                                               | abs(3+4*%i)               | 5        |
+| cabs      | Liefert den Absolutbetrag einer komplexen Zahl                                                               | cabs(3+4*%i)              | 5        |
+| carg      | Liefert das Argument einer komplexen Zahl                                                                    | carg(4*%e^(3*%i))         | 3        |
+| realpart  | Liefert den Realteil einer komplexen Zahl                                                                    | realpart(3+4*%i)          | 3        |
+| imagpart  | Liefert den Imaginärteil einer komplexen Zahl                                                                | imagpart(3+4*%i)          | 4        |
+| conjugate | Liefert die konjugiert komplexe Zahl einer komplexen Zahl                                                    | conjugate(3+4*%i)         | 3-4*%i   |
+| rectform  | hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert wird wie zB.: {=3arg2;karti} |                           |          |
+| pol       | erzeugt aus Betrag und Argument eine komplexe Zahl                                                           | pol(5,0.9272952180016122) | 3+4*%i   |
 
 #### Polynome
 Polynome mit reellen Koeffizienten in einer Variablen können mit folgenden Funktionen erstellt und verarbeitet werden. Für die interne Verarbeitung wird hierzu ein eigener Polynom-Datentyp verwendet.
