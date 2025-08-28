@@ -23,8 +23,8 @@ apt-get autoremove -y</pre>
   <pre>mysqldump --user=letto --password=dasPasswortDesLeTToBenutzers -h 127.0.0.1 letto &gt;letto.sql</pre>
 * Stop des apache2-Webservers
   <pre>service apache2 stop</pre>
-* Download des Installationsscripts von [http://letto.at/download/letto/install-letto-ubuntu-docker.sh](http://letto.at/download/letto/install-letto-ubuntu-docker.sh)
-  <pre>wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh</pre>
+* Download des Installationsscripts von [https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh](https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh)
+  <pre>wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh</pre>
 * Start des Installationsscripts - Zu Beginn wird nach dem Passwort des administrativen Benutzers admin gefragt. Ist kein Benutzer letto am System angelegt, so wird dieser mit dem gleichen Passwort angelegt.
   <pre>bash ./install-letto-ubuntu-docker.sh</pre>
 
@@ -118,8 +118,8 @@ Liegt eine LeTTo-Installation auf einem beliebigen System vor, so kann sie wie h
   apt-get upgrade -y
   apt-get dist-upgrade -y
   apt-get autoremove -y
-* Download des Installationsscripts von [http://letto.at/download/letto/install-letto-ubuntu-docker.sh](http://letto.at/download/letto/install-letto-ubuntu-docker.sh)
-  wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh
+* Download des Installationsscripts von [https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh](https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh)
+  wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh
 * Start des Installationsscripts - Zu Beginn wird nach dem Passwort des administrativen Benutzers admin gefragt. Ist kein Benutzer letto am System angelegt, so wird dieser mit dem gleichen Passwort angelegt.
   bash ./install-letto-ubuntu-docker.sh
 

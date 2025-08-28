@@ -25,7 +25,7 @@ apt-get autoremove -y
 ## Installation von LeTTo
 als root
 <pre>cd /opt
-wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh
+wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh
 bash ./install-letto-ubuntu-docker.sh
 </pre>
 * Verbinde über den Browser mit '''https://ipadresse:3096/config'''

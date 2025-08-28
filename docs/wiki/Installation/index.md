@@ -20,8 +20,8 @@ Als Datenbank wird eine MySQL-Datenbank verwendet, welche idealerweise am gleich
 * Installation von Ubuntu 22.04 Server oder Debian 11 ohne apache webserver (Port 80,443 und 9096 müssen frei sein!)
   * !! **Docker aus den Ubuntu oder Debian-Quellen darf nicht installiert sein**, bzw. muss vor dem Installationsscript deinstalliert werden. Das Install-Script installiert Docker aus den original Docker-Quellen !! 
 * Einrichten der Namensauflösung dass der Server aus dem Internet über seinen Namen erreichbar ist
-* Download des Installationsscripts von [http://letto.at/download/letto/install-letto-ubuntu-docker.sh](http://letto.at/download/letto/install-letto-ubuntu-docker.sh)
-  <pre>wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh</pre>
+* Download des Installationsscripts von [https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh](https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh)
+  <pre>wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh</pre>
 * start des Installationsscripts als **root**
   <pre>bash ./install-letto-ubuntu-docker.sh</pre>
 * Nach der Installation ist das Setup-Service über einen Browser auf dem https-Port 9096 erreichbar. 
@@ -32,7 +32,7 @@ Als Datenbank wird eine MySQL-Datenbank verwendet, welche idealerweise am gleich
 
 ###  Installation auf anderen Host-Systemen mit Docker-Containern 
 * Prinzipiell ist natürlich jeder Server für die Docker-Installation von LeTTo verwendbar. Es existiert lediglich nur für Ubuntu ein fertiges Installationsscript für die Installation. Für andere Host-Betriebssysteme bitte ebenfalls das Installationsscript für Ubuntu herunterladen jedoch nicht direkt ausführen sondern an das Betriebssystem anpassen bzw. schrittweise angepasst die Installation händisch durchführen. Den Großteil der Installation übernimmt das Setup-Programm lettosetup.jar welches nach der Installation direkt am Host am https-Port 9096 läuft.
-* Unter Windows gibts es nur ein sehr experimentelles Basis-Script nachdem noch einige undokumentierte Anpassungen notwendig sind [https://letto.at/download/letto/install-letto-windows-docker.bat](https://letto.at/download/letto/install-letto-windows-docker.bat)
+* Unter Windows gibts es nur ein sehr experimentelles Basis-Script nachdem noch einige undokumentierte Anpassungen notwendig sind [https://build.letto.at/download/install/scripts/windows/install-letto-windows-docker.bat](https://build.letto.at/download/install/scripts/windows//install-letto-windows-docker.bat)
 
 ###  Installation unter Ubuntu (unterstützt bis September 2023) 
 * getestet für die LTS-Version 18.04, 20.04 und 22.04
