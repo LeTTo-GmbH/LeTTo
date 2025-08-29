@@ -1,19 +1,19 @@
-# Install debian 11 bullseye
-* download von https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso
-* starte Debian von Debian-11.x ISO-Image
-  * Graphical install
-  * Sprache - Deutsch oder wie gewünscht
-  * Location - Österreich oder wie gewünscht
-  * Keyboard: Deutsch
-  * root-Passwort setzen
-  * Benutzer letto mit Passwort anlegen
-  * Festplattenpartitionierung - Geführt - gesamte Platte verwenden - alle Dateien in einer Partition
-  * Netzwerkspiegel für die Installation verwenden - ja
-  * HTTP-Proxy leer lassen
-  * Softwareauswahl - "Standard-System-Utilities" und "SSH-Server" auswählen, keine weiteren Pakete auswählen<br>![img.png](img.png)
-  * Installation abschließen und neu starten
-  * Wenn der Server die IP-Konfiguration nicht über DHCP erhalten soll muss dies jetzt in der Datei /etc/network/interfaces konfiguriert werden <br> ![img_1.png](img_1.png)
-  * Dann Netzwerk neu starten mit: <pre>systemctl restart networking</pre> oder den Server neu starten
+# Install Debian 13 trixie
+* download von https://debian.anexia.at/debian-cd/13.0.0/amd64/iso-cd/debian-13.0.0-amd64-netinst.iso
+* starte Debian von Debian-13.x ISO-Image
+    * Graphical install
+    * Sprache - Deutsch oder wie gewünscht
+    * Location - Österreich oder wie gewünscht
+    * Keyboard: Deutsch
+    * root-Passwort setzen
+    * Benutzer letto mit Passwort anlegen
+    * Festplattenpartitionierung - Geführt - gesamte Platte verwenden - alle Dateien in einer Partition
+    * Netzwerkspiegel für die Installation auswählen
+    * HTTP-Proxy leer lassen
+    * Softwareauswahl - "Standard-System-Utilities" und "SSH-Server" auswählen, keine weiteren Pakete auswählen
+    * Installation abschließen und neu starten
+    * Wenn der Server die IP-Konfiguration nicht über DHCP erhalten soll muss dies jetzt in der Datei /etc/network/interfaces konfiguriert werden <br> ![img_1.png](img_1.png)
+    * Dann Netzwerk neu starten mit: <pre>systemctl restart networking</pre> oder den Server neu starten
 
 ## Konfiguration
 als root
@@ -30,7 +30,7 @@ wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto
 bash ./install-letto-ubuntu-docker.sh
 </pre>
 * setzte das Passwort welches dann im LetTo-Setup für den Benutzer admin verwendet wird
-* wenn das Script mit einer Lines-Meldung ![img_2.png](img_2.png) hängen bleibt ein paar mal Leertaste und dann q drücken bis das Script weiter läuft
+* wenn das Script mit einer Lines-Meldung ![img.png](img.png) hängen bleibt ein paar mal Leertaste und dann q drücken bis das Script weiter läuft
 
 
 ## Erstkonfiguration im Setup-Service
