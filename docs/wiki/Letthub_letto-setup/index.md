@@ -55,7 +55,7 @@ siehe auch
 | letto_user_gast_password  | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer gast  |                                  | jaSE                                           |
 | letto_user_admin_password | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer admin |                                  | jaSE                                           |
 | letto_login_uri           | Docker-interne URL des Login-Services                                              | http://letto-login.nw-letto:8095 | ja                                             |
-| letto_license_server      | Lizenzserver der verwendet wird                                                    | https://letto.at                 | nein                                           |
+| letto_license_server      | Lizenzserver der verwendet wird                                                    | https://license.letto.at         | nein                                           |
 | JAVA_OPTS                 | Java Options-Variable für das Setup-Service                                        | -Xms50m -Xmx100m                 | nein                                           |
 | setup_debug               | Konfigurationsparameter für das Debugging sind aktiviert                           | false                            | nein                                           |
 | debug                     | Startet den Container im Debugging-Mode auf Port 5096                              | false                            | nein                                           |
@@ -63,7 +63,7 @@ siehe auch
 jaSE: ja - wird vom Setup erzeugt und in die .env Datei geschrieben
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-setup.yml](http://letto.at/download/letto/setup/yml/docker-compose-setup.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-setup.yml](https://build.letto.at/download/install/yml/docker-compose-setup.yml)
 * Environment Einstellungen für die .env-Datei [Setup Environment](../SetupEnvironment/index.md)
 
 

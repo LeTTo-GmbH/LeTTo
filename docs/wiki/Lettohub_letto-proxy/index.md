@@ -61,7 +61,7 @@ siehe auch
 
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-letto.yml](http://letto.at/download/letto/setup/yml/docker-compose-letto.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-letto.yml](https://build.letto.at/download/install/yml/docker-compose-letto.yml)
 * Environment Einstellungen für die .env-Datei [LeTTo Environment](../LeTToEnvironment/index.md)
 
 [Administration](../Administration/index.md)

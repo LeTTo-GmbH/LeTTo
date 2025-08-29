@@ -36,27 +36,27 @@ siehe auch
 
 ###  Environment Variable 
 
-| Variable                  | Beschreibung                                                                                        | üblicher Wert                    | muss gesetzt sein |
-|---------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------|-------------------|
-| TZ                        | Zeitzone                                                                                            | Europe/Berlin                    | nein              |
-| LC_ALL                    | Spracheinstellung                                                                                   | de_DE.UTF-8                      | nein              |
-| letto_schulen             | Liste aller Schulkürzel der Schulen die auf dem gesamten Server laufen, durch Leerzeichen getrennt. |                                  | nein              |
-| jwt_secret                | Base64 kodiertes Token-Secret für die Authentifizierung                                             |                                  | ja                |
-| server_secret             | Base64 kodiertes Token-Secret für die Server-Server Kommunikation                                   |                                  | ja                |
-| use_http                  | Gibt an ob redirections mit http gemacht werden sollen                                              | 0                                | nein              |
-| letto_local_privatkey     | Privater Schlüssel für die Kommunkation                                                             |                                  | ja                |
-| letto_local_publickey     | öffentlicher Schlüssel für die Kommunikation                                                        |                                  | ja                |
-| letto_user_user_password  | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer user                   |                                  | ja                |
-| letto_user_gast_password  | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer gast                   |                                  | ja                |
-| letto_user_admin_password | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer admin                  |                                  | ja                |
-| letto_license_server      | zu verwendender Lizenzserver                                                                        | https://letto.at/lettolicense    | ja                |
-| letto_setup_uri           | Docker-Interne URL des Setup-Services im Docker-Container                                           | http://letto-setup.nw-letto:8096 | ja                |
-| JAVA_OPTS                 | Java Options-Variable für das Service                                                               | -Xms50m -Xmx100m                 | nein              |
-| debug                     | Startet den Container im Debugging-Mode auf Port 5096                                               | false                            | nein              |
+| Variable                  | Beschreibung                                                                                        | üblicher Wert                         | muss gesetzt sein |
+|---------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|
+| TZ                        | Zeitzone                                                                                            | Europe/Berlin                         | nein              |
+| LC_ALL                    | Spracheinstellung                                                                                   | de_DE.UTF-8                           | nein              |
+| letto_schulen             | Liste aller Schulkürzel der Schulen die auf dem gesamten Server laufen, durch Leerzeichen getrennt. |                                       | nein              |
+| jwt_secret                | Base64 kodiertes Token-Secret für die Authentifizierung                                             |                                       | ja                |
+| server_secret             | Base64 kodiertes Token-Secret für die Server-Server Kommunikation                                   |                                       | ja                |
+| use_http                  | Gibt an ob redirections mit http gemacht werden sollen                                              | 0                                     | nein              |
+| letto_local_privatkey     | Privater Schlüssel für die Kommunkation                                                             |                                       | ja                |
+| letto_local_publickey     | öffentlicher Schlüssel für die Kommunikation                                                        |                                       | ja                |
+| letto_user_user_password  | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer user                   |                                       | ja                |
+| letto_user_gast_password  | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer gast                   |                                       | ja                |
+| letto_user_admin_password | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer admin                  |                                       | ja                |
+| letto_license_server      | zu verwendender Lizenzserver                                                                        | https://license.letto.at/lettolicense | ja                |
+| letto_setup_uri           | Docker-Interne URL des Setup-Services im Docker-Container                                           | http://letto-setup.nw-letto:8096      | ja                |
+| JAVA_OPTS                 | Java Options-Variable für das Service                                                               | -Xms50m -Xmx100m                      | nein              |
+| debug                     | Startet den Container im Debugging-Mode auf Port 5096                                               | false                                 | nein              |
 
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-letto.yml](http://letto.at/download/letto/setup/yml/docker-compose-letto.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-letto.yml](https://build.letto.at/download/install/yml/docker-compose-letto.yml)
 * Environment Einstellungen für die .env-Datei [LeTTo Environment](../LeTToEnvironment/index.md)
 
 [Administration](../Administration/index.md)

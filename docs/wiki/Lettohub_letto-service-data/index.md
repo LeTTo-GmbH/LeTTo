@@ -61,7 +61,7 @@ school muss durch das Schulkürzel ersetzt werden!!
 
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-school.yml](http://letto.at/download/letto/setup/yml/docker-compose-school.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-school.yml](https://build.letto.at/download/install/yml/docker-compose-school.yml)
 * Environment Einstellungen für die .env-Datei [LeTTo Environment](../LeTToEnvironment/index.md)
 
 [Administration](../Administration/index.md)

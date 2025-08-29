@@ -25,7 +25,7 @@ Wenn Sie den Inhalt auswählen, dann wird die entsprechende Ansicht geladen und 
 Zum Erstellen von Beispielen wählen Sie in der Navigation bitte den Link mit [Beispiele editieren](../BeispielsammlungEditieren/index.md).
 
 ### Online-Test erstellen
-https://www.letto.at/mediawiki/index.php/Test_anlegen
+[https://doc.letto.at/wiki/Testanlegen/](https://doc.letto.at/wiki/Testanlegen/)
 
 ### Online-Test mit Schülern durchführen
 

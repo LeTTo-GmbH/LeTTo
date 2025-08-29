@@ -83,7 +83,7 @@ school muss durch das Schulkürzel ersetzt werden!!
 | letto_schule_standard_login_uriextern    | Öffentlich ereichbare URL des Login-Services                                                        | https://externe.dns.at/login                                                                                                                                                        | ja                |
 | letto_schule_standard_letto_uriextern    | Öffentlich erreichbar URL des LeTTo-Servers                                                         | https://externe.dns.at/lettoschool                                                                                                                                                  | ja                |
 | letto_lizenzAutomatic=0                  | automatische Lizenz sollte auf 0 gesetzt sein!                                                      | ja                                                                                                                                                                                  |                   |
-| letto_license_server                     | URL des Lizenz-Servers für den Lizenz-Check                                                         | https://letto.at/lettolicense                                                                                                                                                       | nein              |
+| letto_license_server                     | URL des Lizenz-Servers für den Lizenz-Check                                                         | https://license.letto.at/lettolicense                                                                                                                                               | nein              |
 | letto_user_user_password                 | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer user                   |                                                                                                                                                                                     | ja                |
 | letto_user_gast_password                 | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer gast                   |                                                                                                                                                                                     | ja                |
 | letto_user_admin_password                | Klartextpasswort für die Kommunikation zu einem anderen Service als Benutzer admin                  |                                                                                                                                                                                     | ja                |
@@ -116,7 +116,7 @@ school muss durch das Schulkürzel ersetzt werden!!
 
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-school.yml](http://letto.at/download/letto/setup/yml/docker-compose-school.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-school.yml](https://build.letto.at/download/install/yml/docker-compose-school.yml)
 * Environment Einstellungen für die .env-Datei [LeTTo Environment](../LeTToEnvironment/index.md)
 
 

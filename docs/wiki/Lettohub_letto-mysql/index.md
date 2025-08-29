@@ -45,7 +45,7 @@ siehe auch
 
 
 ##  Docker Compose 
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-mysql.yml](http://letto.at/download/letto/setup/yml/docker-compose-mysql.yml)
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-mysql.yml](https://build.letto.at/download/install/yml/docker-compose-mysql.yml)
 * Environment Einstellungen für die .env-Datei [MySQL Environment](../MySQLEnvironment/index.md)
 
 ##  Scripts im Container 

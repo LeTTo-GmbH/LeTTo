@@ -91,7 +91,7 @@ siehe auch
 jaSE: ja - wird vom Setup erzeugt und in die .env Datei geschrieben
 
 = Docker Compose =
-* .yml File: [http://letto.at/download/letto/setup/yml/docker-compose-setup.yml http://letto.at/download/letto/setup/yml/docker-compose-setup.yml]
+* .yml File: [https://build.letto.at/download/install/yml/docker-compose-setup.yml https://build.letto.at/download/install/yml/docker-compose-setup.yml]
 * Environment Einstellungen für die .env-Datei [[Setup Environment]]
 
 

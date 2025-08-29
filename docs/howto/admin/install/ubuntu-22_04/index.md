@@ -1,6 +1,6 @@
 # Install Ubuntu 22.04
 ## Grundinstallation
-* download Iso-Image von
+* download Iso-Image von https://ubuntu.com/download/server
 * starte Ubuntu von Ubuntu-Server 22.04.4 ISO-Image
 * Sprache - Deutsch
 * Aktualisieren auf neuen Installer
@@ -25,9 +25,10 @@ apt-get autoremove -y
 ## Installation von LeTTo
 als root
 <pre>cd /opt
-wget http://letto.at/download/letto/install-letto-ubuntu-docker.sh
+wget https://build.letto.at/download/install/scripts/debian-ubuntu/install-letto-ubuntu-docker.sh
 bash ./install-letto-ubuntu-docker.sh
 </pre>
+* setzte das Passwort welches dann im LetTo-Setup für den Benutzer admin verwendet wird
 ## Erstkonfiguration im Setup-Service
 * Verbinden sie sich über den Browser mit '''https://ipadresse:3096/config''' und füllen sie das Formular mit ihren Daten aus. <br>![img_4.png](img_4.png)
   * Der Server muss mit https über den angegebnen DNS-Namen von Schülern und Lehrern erreichbar sein

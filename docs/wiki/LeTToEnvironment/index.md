@@ -12,23 +12,23 @@ siehe auch
 
 #### Security Variable
 
-| Variable                 | Beschreibung                                                                                                                                          | mögliche/default Werte        |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| ADMIN_PASSWORD           | Klartextpasswort für den Admin-Benutzer am Setup-Service. Wird automatisch beim Start des Setup-Services in das ADMIN_PASSWORD_ENCRYPTED umgewandelt. |                               |
-| ADMIN_PASSWORD_ENCRYPTED | Verschlüsseltes Passwort für den Admin-Benutzer am Setup-Service. Wird automatisch beim Start des Setup-Services aus dem Klartextpasswort generiert.  |                               |
-| LETTO_LICENSE_SERVER     | URL des LeTTo-Lizenzservers, welcher für die Lizenzprüfung verwendet wird.                                                                            | https://letto.at/lettolicense |
-| LETTO_LOCAL_PRIVATE_KEY  | Private-Key für Verschlüsselung (erforderlich)                                                                                                        |                               |
-| LETTO_LOCAL_PUBLIC_KEY   | Public-Key für Verschlüsselung - darf auch nach aussen weitergegeben werden (erforderlich)                                                            |                               |
-| LETTO_UID                | user-id des Benutzers letto im Unix-Filesystem des Host-Systems. Wird aktuell nicht verwendet                                                         |                               |
-| LETTO_RESTKEY            | Schlüssel welcher vom LeTTo-Lizenzserver für diesen Server vergeben wurde                                                                             |                               |
-| JWT_SECRET               | Secret für den JWT-Token der Token Authentifikation (erforderlich)                                                                                    |                               |
-| JWT_EXPIRATION_MS        | Gültigkeitsdauer des JWT-Tokens in Millisekunden                                                                                                      | 600000 (10 Minuten)           |
-| JWT_REFRESH_TIME_MS      | Sinkt die Token-Gültigkeit unter den Wert wird ein automatischer Token-Refresh ausgeführt.                                                            | 300000 (5 Minuten)            |
-| RUN_AS_ROOT              | Das Setup-Service wird als Benutzer root im Docker-Container ausgeführt                                                                               | true, false                   |
-| Server_SECRET            | Secret für den Server-Token (erforderlich)                                                                                                            |                               |
-| SERVICE_ADMIN_PASSWORD   | Klartextpasswort für die Service to Service Kommunikation als Administrator (erforderlich)                                                            |                               |
-| SERVICE_GAST_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als Gast-Benutzer (erforderlich)                                                            |                               |
-| SERVICE_USER_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als normaler Benutzer (erforderlich)                                                        |                               |
+| Variable                 | Beschreibung                                                                                                                                          | mögliche/default Werte                |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| ADMIN_PASSWORD           | Klartextpasswort für den Admin-Benutzer am Setup-Service. Wird automatisch beim Start des Setup-Services in das ADMIN_PASSWORD_ENCRYPTED umgewandelt. |                                       |
+| ADMIN_PASSWORD_ENCRYPTED | Verschlüsseltes Passwort für den Admin-Benutzer am Setup-Service. Wird automatisch beim Start des Setup-Services aus dem Klartextpasswort generiert.  |                                       |
+| LETTO_LICENSE_SERVER     | URL des LeTTo-Lizenzservers, welcher für die Lizenzprüfung verwendet wird.                                                                            | https://license.letto.at/lettolicense |
+| LETTO_LOCAL_PRIVATE_KEY  | Private-Key für Verschlüsselung (erforderlich)                                                                                                        |                                       |
+| LETTO_LOCAL_PUBLIC_KEY   | Public-Key für Verschlüsselung - darf auch nach aussen weitergegeben werden (erforderlich)                                                            |                                       |
+| LETTO_UID                | user-id des Benutzers letto im Unix-Filesystem des Host-Systems. Wird aktuell nicht verwendet                                                         |                                       |
+| LETTO_RESTKEY            | Schlüssel welcher vom LeTTo-Lizenzserver für diesen Server vergeben wurde                                                                             |                                       |
+| JWT_SECRET               | Secret für den JWT-Token der Token Authentifikation (erforderlich)                                                                                    |                                       |
+| JWT_EXPIRATION_MS        | Gültigkeitsdauer des JWT-Tokens in Millisekunden                                                                                                      | 600000 (10 Minuten)                   |
+| JWT_REFRESH_TIME_MS      | Sinkt die Token-Gültigkeit unter den Wert wird ein automatischer Token-Refresh ausgeführt.                                                            | 300000 (5 Minuten)                    |
+| RUN_AS_ROOT              | Das Setup-Service wird als Benutzer root im Docker-Container ausgeführt                                                                               | true, false                           |
+| Server_SECRET            | Secret für den Server-Token (erforderlich)                                                                                                            |                                       |
+| SERVICE_ADMIN_PASSWORD   | Klartextpasswort für die Service to Service Kommunikation als Administrator (erforderlich)                                                            |                                       |
+| SERVICE_GAST_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als Gast-Benutzer (erforderlich)                                                            |                                       |
+| SERVICE_USER_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als normaler Benutzer (erforderlich)                                                        |                                       |
 
 #### Server Konfiguration
 

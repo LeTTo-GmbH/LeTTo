@@ -15,7 +15,7 @@
 * 16 GB RAM oder mehr
 * 6 CPU Kerne
 * 200 GB Festplattenspeicher
-* Ubuntu 22.04
+* Ubuntu 24.04
 * Java 21 (wird vom setup-script mit installiert)
 * öffentlich aus dem Internet mit DNS-Namen erreichbar
   
