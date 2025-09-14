@@ -3,7 +3,7 @@
 ## Loginprobleme
 
 #### Ich habe mein ***Passwort vergessen***, was kann ich tun?
-  - Als Schüler wende dich an einen Lehrer deiner Schule - er kann dir das Passwort für LeTTo zurücksetzen.
+  - Als Schüler wende dich an einen Lehrer deiner Schule - er kann dir das [Passwort für LeTTo zurücksetzen](../Schülerpasswortsetzen/index.md).
   - Als Lehrer wende dich an den LeTTo-Administrator deiner Schule - er kann dir das Passwort für LeTTo zurücksetzen.
 
 #### Login am LeTTo-Server funktioniert nicht da der ***Fingerprint*** leer ist
