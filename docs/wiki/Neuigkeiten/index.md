@@ -2,6 +2,14 @@
 
 ## laufend
 
+## Stable - Rev 6746 - 13.9.2025
+* Bugfixes
+* Linux-Container auf Letztversionen aktualisiert
+* Import von Moodle-XML-Dateien mit Bildern verbessert
+* Datensicherung von MongoDB und RedisDB integriert
+* Fingerprint Bugfixes
+* Backup Email angepasst
+
 ## Stable - Rev 6730 - 5.7.2025
 * MathJax3 in Questionservice
 * Bugfixes #2066, #1932, #2124, #2129
