@@ -1,6 +1,13 @@
 # Neuigkeiten
 
 ## laufend
+* Performance-Verbesserungen im Parser #2250
+
+
+## Stable - Rev 6754 - 8.10.2025
+* Integration der LeTTo-App in den Setup-Service
+* Bugfixes
+* Konfigurationsmöglichkeit für den Fingerprint
 
 ## Stable - Rev 6746 - 13.9.2025
 * Bugfixes

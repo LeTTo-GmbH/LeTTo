@@ -1,4 +1,3 @@
-
 # Sonderzeichen
 ## Als Entity
 | Name               | Zeichen | Entity |

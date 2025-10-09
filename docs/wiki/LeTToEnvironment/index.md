@@ -30,6 +30,13 @@ siehe auch
 | SERVICE_GAST_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als Gast-Benutzer (erforderlich)                                                            |                                       |
 | SERVICE_USER_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als normaler Benutzer (erforderlich)                                                        |                                       |
 
+#### Login Konfiguration
+
+| Variable                  | Beschreibung                                                                            | mögliche/default Werte |
+|---------------------------|-----------------------------------------------------------------------------------------|------------------------|
+| STUDEND_MULTIPLE_LOGIN    | Gibt an ob sich ein Student mehrfach am Server anmelden darf.                           | false                  |
+| STUDENT_FINGERPRINT_CHECK | Gibt an ob geprüft wird ob der Schüler bereits auf einem anderen Server eingeloggt ist. | false                  |
+
 #### Server Konfiguration
 
 | Variable          | Beschreibung                                                                                                      | mögliche/default Werte     |
