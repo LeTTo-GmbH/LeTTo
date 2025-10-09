@@ -1,5 +1,19 @@
 # Login
 
+* Lehrer und Schüler können sich auf verschiedene Arten am LeTTo-Server anmelden.
+* Lehrer dürfen sich gleichzeitig von mehreren Geräten anmelden.
+* Schüler dürfen sich immer nur von einem Gerät anmelden. Bevor ein Schüler sich an 
+  einem anderen Gerät anmelden kann, muss er sich am ersten Gerät wieder abmelden.
+  * Je nach Servereinstellung gibt es zwei Möglichkeiten wenn der Schüler bereits an einem anderen Gerät angemeldet ist:
+    1. Der Schüler kann sich nicht anmelden solange er am ersten Gerät angemeldet ist.
+    2. Der Schüler wird automatisch am ersten Gerät abgemeldet wenn er sich an einem anderen Gerät anmeldet.
+* Bei der Anmeldung wird immer die Schule, der Benutzername und das Passwort benötigt.
+* Jeder Lehrer eine Schule kann den Schülern das Passwort zurücksetzen.
+* Das Passwort kann auch vom Administrator zurückgesetzt werden.
+* Jeder Schüler kann in seinem Profil am LeTTo-Server sein Passwort selbst ändern.
+* Hat die Schule einen AD- oder LDAP-Server angebunden, so können sich die Benutzer mit dem gleichen Passwort anmelden wie am AD/LDAP-Server.
+  * Hat bei einer AD/LDAP-Anbindung ein Lehrer/Admin das Passwort eines Schülers zurückgesetzt kann dieser dieses Passwort so lange verwenden bis er sich einmal mit seinem korrekten AD/LDAP Passwort eingeloggt hat. Danach gilt nur mehr das AD/LDAP-Passwort.
+
 ## Login am LeTTo-Server
 * Standard-Einstieg für Schüler und Lehrer
 * Server: https://serveradresse/letto[Schulkürzel]<br>
@@ -32,7 +46,8 @@
 
 ## Login in OpenProject [https://project.letto.at](https://project.letto.at)
 * Die Logins am OpenProject-Server sind unabhängig von den LeTTo-Logins
-* Jeder Benutzer muss sich separat am OpenProject-Server anmelden. 
+* Jeder Benutzer muss sich separat am OpenProject-Server anmelden. <br>
+  ![img_5.png](img_5.png) 
 * Bitte immer mit der Schul-Email-Adresse anmelden.
 * Server: https://project.letto.at<br>
 * Lehrer werden für die Benutzung freigeschaltet wenn sie nach der Registrierung eine Email an <mailto:werner.damboeck@letto.at> senden.
@@ -42,3 +57,4 @@
 * Der Project-Server dient zur Meldung von Fehlern, zur Dokumentation und für die Verwaltung von Aufgaben.
 * Weiters befindet sich darauf ein Forum für Fragen und Antworten rund um LeTTo.
 * Schüler sollten sich nicht am Project-Server anmelden.
+* ![img_4.png](img_4.png)
