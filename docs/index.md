@@ -8,4 +8,4 @@
 | Admin   | [Admin](./howto/admin/index.md)            | [Anforderungen](./howto/admin/install/anforderungen/index.md) | [Installation](./howto/admin/install/index.md)              |    
 | Betrieb | [Login](./howto/login/index.md)            |                                                               |                                                             |
 
-[LeTTo GmbH](https://letto.at/) - [Impressum](https://letto.at/wordpress/impressum/) - [Datenschutz](https://letto.at/wordpress/datenschutz/)
+[LeTTo GmbH](https://letto.at/) - [Impressum](https://letto.at/wordpress/index.php/impressum/)
