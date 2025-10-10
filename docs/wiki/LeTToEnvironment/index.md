@@ -30,7 +30,7 @@ siehe auch
 | SERVICE_GAST_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als Gast-Benutzer (erforderlich)                                                            |                                       |
 | SERVICE_USER_PASSWORD    | Klartextpasswort für die Service to Service Kommunikation als normaler Benutzer (erforderlich)                                                        |                                       |
 
-#### Login Konfiguration
+#### [Login](../../howto/login/index.md) Konfiguration
 
 | Variable                  | Beschreibung                                                                                   | mögliche/default Werte |
 |---------------------------|------------------------------------------------------------------------------------------------|------------------------|
