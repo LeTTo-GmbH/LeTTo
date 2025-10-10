@@ -87,7 +87,7 @@ nicht mehr nachrechenbar
 * ...
 Deswegen bitte nur in Ausnahmefällen behandeln.
 
-#### Zusammnfassung
+#### Zusammenfassung
 * Wenn Sie mit der Default-Einstellung Fragen in der Fragesammlung bearbeiten, dann werden diese 
 in Tests, die bereits begonnen wurden, nicht aktualisiert! 
 * Wenn Sie eine Änderung einer Frage in einer laufenden (bereits gestarteten) Aktivität 

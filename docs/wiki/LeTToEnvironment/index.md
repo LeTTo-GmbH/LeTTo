@@ -104,6 +104,14 @@ siehe auch
 | USEANGULAR                               | Gibt an ob die Anbindung an das Angular-Frontend verwendet werden soll.                                        | true,false                                                       |
 | SERVICE_URI_PROJEKTE                     | externe Uri der Schülerprojekte - überschreibt den PROJEKTE_ENDPOINT                                           | https://${SERVER_NAME:-localhost}}/${PROJEKTE_ENDPOINT:-projekte |
 
+#### App Konfiguration
+
+| Variable         | Beschreibung                                                                                                                                                                  | mögliche/default Werte                                        |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| APP_SERVER_LIST  | Angabe der Server, auf denen nach Schulen für den Login gesucht wird. Wenn leer, dann werden die Schulen der akt. Instanz verwendent. Trennung der Schulen durch Leerzeichen! | Leer oder zB. build.letto.at/private  s1.letto.at s2.letto.at | 
+| APP_PRIVATE_URI  | URI, unter der die Services für LeTTo-Private zu finden sind. Wenn leer, dann kein LeTTo-Private!                                                                             | Leer oder zB. https://build.letto.at/private                  |
+
+
 #### Debugging Konfiguration
 
 | Variable                    | Beschreibung                                                                                                | mögliche/default Werte |
