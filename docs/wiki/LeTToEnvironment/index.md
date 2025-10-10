@@ -32,10 +32,24 @@ siehe auch
 
 #### Login Konfiguration
 
-| Variable                  | Beschreibung                                                                            | mögliche/default Werte |
-|---------------------------|-----------------------------------------------------------------------------------------|------------------------|
-| STUDEND_MULTIPLE_LOGIN    | Gibt an ob sich ein Student mehrfach am Server anmelden darf.                           | false                  |
-| STUDENT_FINGERPRINT_CHECK | Gibt an ob geprüft wird ob der Schüler bereits auf einem anderen Server eingeloggt ist. | false                  |
+| Variable                  | Beschreibung                                                                                   | mögliche/default Werte |
+|---------------------------|------------------------------------------------------------------------------------------------|------------------------|
+| STUDEND_MULTIPLE_LOGIN    | Gibt an ob sich ein Student mehrfach am Server anmelden darf.                                  | false                  |
+| STUDENT_FINGERPRINT_CHECK | Gibt an ob geprüft wird ob der Schüler bereits von einem anderen Browser/Gerät eingeloggt ist. | false                  |
+ 
+* STUDENT_FINGERPRINT_CHECK hat nur einen Effekt bei Schülern/Studenten wenn STUDENT_MULTIPLE_LOGIN auf false gesetzt ist
+* Der Fingerprint des Browsers wird bei der Anmeldung gespeichert und bei jedem Request überprüft
+* Stimmt der Fingerprint nicht mehr überein wird der Benutzer automatisch ausgeloggt
+* Ist beim Login eines Schülers/Studenten bereits ein anderer Login mit anderem Fingerprint aktiv wird wie folgt reagiert:
+  
+ | STUDENT_FINGERPRINT_CHECK | Beschreibung                                                                                                                                                                                                                                                                        |
+ |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+ | true                      | Der aktuelle Login auf dem weiteren Browser wird verweigert. Schließt oder hat der Schüler den ersten Browser bereits geschlossen kann er sich nur von diesem Browser wieder einloggen - dort müsste er sich ausloggen um sich von einem anderen Browser/Gerät einloggen zu können. |
+ | false                     | Der aktuelle Login wird ausgeführt jedoch wird der Schüler, wenn kein Mehrfachlogin erlaubt ist, aus der anderen Session automatisch ausgeloggt.                                                                                                                                    |
+ | true htlxy                | Für alle Schulen des Servers true, ausser bei der Schule mit dem Kürzel htlxy                                                                                                                                                                                                       |
+ | false htlxy               | Für alle Schulen des Servers false, ausser bei der Schule mit dem Kürzel htlxy                                                                                                                                                                                                      |
+
+* Jeder Lehrer kann einen eingeloggten Schüler/Studenten jederzeit abmelden (auch wenn dieser auf einem Browser eingeloggt ist).
 
 #### Server Konfiguration
 
