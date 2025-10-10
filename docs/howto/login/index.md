@@ -2,17 +2,18 @@
 
 * Lehrer und Schüler können sich auf verschiedene Arten am LeTTo-Server anmelden.
 * Lehrer dürfen sich gleichzeitig von mehreren Geräten anmelden.
-* Schüler dürfen sich immer nur von einem Gerät anmelden. Bevor ein Schüler sich an 
+* **Schüler** dürfen sich immer nur **von einem Gerät** anmelden. Bevor ein Schüler sich an 
   einem anderen Gerät anmelden kann, muss er sich am ersten Gerät wieder abmelden.
   * Je nach Servereinstellung gibt es zwei Möglichkeiten wenn der Schüler bereits an einem anderen Gerät angemeldet ist:
     1. Der Schüler kann sich nicht anmelden solange er am ersten Gerät angemeldet ist.
     2. Der Schüler wird automatisch am ersten Gerät abgemeldet wenn er sich an einem anderen Gerät anmeldet.
   * Diese Einstellung kann nur vom Administrator geändert werden (siehe [Login-Konfiguration](../../wiki/LeTToEnvironment/index.md#login-konfiguration))
 * Bei der Anmeldung wird immer die Schule, der Benutzername und das Passwort benötigt.
-* Jeder Lehrer eine Schule kann den Schülern das Passwort zurücksetzen.
+* Jeder Lehrer einer Schule kann den Schülern das Passwort zurücksetzen und auch vom Server abmelden.
 * Das Passwort kann auch vom Administrator zurückgesetzt werden.
 * Jeder Schüler kann in seinem Profil am LeTTo-Server sein Passwort selbst ändern.
-* Hat die Schule einen AD- oder LDAP-Server angebunden, so können sich die Benutzer mit dem gleichen Passwort anmelden wie am AD/LDAP-Server.
+* Hat die Schule einen **AD- oder LDAP-Server** angebunden, so können sich die Benutzer mit dem gleichen Passwort anmelden wie am AD/LDAP-Server.
+  * VORSICHT: Bei einer AD/LDAP Konfiguration muss sich der Benutzer mindestens einmal erfolgreich am lettoserver (https://domainname/lettoXXX) anmelden damit der Login auf App,Main oder am Login-Service funktionieren kann.
   * Hat bei einer AD/LDAP-Anbindung ein Lehrer/Admin das Passwort eines Schülers zurückgesetzt kann dieser dieses Passwort so lange verwenden bis er sich einmal mit seinem korrekten AD/LDAP Passwort eingeloggt hat. Danach gilt nur mehr das AD/LDAP-Passwort.
 
 ## Login am LeTTo-Server
