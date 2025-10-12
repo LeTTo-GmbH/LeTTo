@@ -210,6 +210,7 @@ siehe auch
 | QUESTION_MONGO_DEFAULT_DATABASE     | Standard-Datenbank am Mongo-Server für den Question-Service                            | data  ????                                                                                                                                                                |
 | SETUP_MONGO_DEFAULT_DATABASE        | Standard-Datenbank am Mongo-Server für das Setup-Service                               | setup                                                                                                                                                                     |
 | VOLUME_DATABASE                     | Wird nicht verwendet                                                                   |                                                                                                                                                                           |
+| ADDITIONAL_DATABASES                | Liste aller Datenbanken die zusätzlich ins Datenbankbackup integriert werden           |                                                                                                                                                                           |
 
 #### Pfade und Volumes
 
