@@ -1,2 +1,2 @@
 # Lehrerpasswort setzen
-Siehe [ Schülerpasswort setzen ](../Schülerpasswortsetzen/index.md)</text>
+Siehe [Schülerpasswort setzen](../Schülerpasswortsetzen/index.md)
