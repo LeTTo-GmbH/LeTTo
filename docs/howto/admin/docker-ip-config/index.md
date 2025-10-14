@@ -18,7 +18,7 @@ systemctl restart docker
 
 ## Konfiguration der einzelnen Docker-Netzwerke von LeTTo
 * Erstelle alle Startscripts mit dem Button im Update-Bereich - liegen dann in /opt/letto/docker/scripts/linux
-![img.png](img.png)
+  <br>![img.png](img.png)
 
 * In der Ubuntu-Kommandline - stoppe alle Docker-Container mit
 ```bash
