@@ -58,3 +58,4 @@ siehe auch
 | spring_mail_address_noreply                      |                                                                              | noreply@letto.at                |
 | spring_mail_address_reply                        |                                                                              | service@letto.at                |
 | ADDITIONAL_DATABASES                             | Liste aller Datenbanken die zusätzlich ins Datenbankbackup integriert werden |                                 |
+| YML_SOURCE                                       | Gibt an von wo die yml-Dateien als erstes geladen werden                     | letto,local,https://...         |
