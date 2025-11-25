@@ -215,10 +215,9 @@ Alle  Datensätze, die bei der Frage definiert wurden sowie alle Ergebnisse der 
 | symbolischer Wert mit voller Optimierung                     | {=opt:name}                  | {=opt:y}   | setzt in den Ausdruck y, welcher in Maxima berechnet wurde, alle Datensätze ein und optimiert das Ergebnis so stark wie möglich                                                     |
 | symbolscher Wert mit Einheit und Genauigkeit                 | {=ausdruck;=einheit,ziffern} | {=y;=mV,3} | setzt in den Ausdruck y, welcher in Maxima berechnet wurde, alle Datensätze ein und gibt in mV mit 3 gültigen Ziffern aus.                                                          |
 | Datensatz - Vektor                                           | {name}                       | {v}        | Vektoren werden normal als Spaltenvektor dargestellt                                                                                                                                |
-| Zeilenvektor                                                 | {name,line}                  | {v,line}   | Vektor als Zeilenvektor: (1/2/3)                                                                                                                                                    |
-| Vektor in Eingabedarstellung                                 | {name,input}                 | {v,input}  | Vektor wird so dargestellt, wie er eingegeben werden kann: &#91;1,2,3]                                                                                                              |
+| Zeilenvektor                                                 | {name;line}                  | {v,line}   | Vektor als Zeilenvektor: (1/2/3)                                                                                                                                                    |
+| Vektor in Eingabedarstellung                                 | {name;input}                 | {v,input}  | Vektor wird so dargestellt, wie er eingegeben werden kann: &#91;1,2,3]                                                                                                              |
 | Matrix                                                       | {name}                       | {M}        | Darstellungsmodi von Matrizen sind gleich wie bei Vektoren                                                                                                                          |
-
 
 ### Beispiele
 

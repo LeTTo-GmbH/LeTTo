@@ -127,12 +127,13 @@ Liste der problematischen Funktionen:
 
 ##### Organisative Operatoren
 
-| Operator | Priorität | Beschreibung                                     | Beispiel | Ergebnis |
-|----------|-----------|--------------------------------------------------|----------|----------|
-| ,        | 0         | Listen-Trennzeichen                              | x,y      |          |
-| $        | 1         | Trennzeichen zwischen mehreren Berechnungen      |          |          |
-| ;        | 1         | Trennzeichen zwischen mehreren Berechnungen      |          |          |
-| :        | 2         | Zuweisung an eine Variablen auf der linken Seite | x:5      |          |
+| Operator | Priorität | Beschreibung                                                                        | Beispiel | Ergebnis |
+|----------|-----------|-------------------------------------------------------------------------------------|----------|----------|
+| ,        | 0         | Listen-Trennzeichen                                                                 | x,y      |          |
+| $        | 1         | Trennzeichen zwischen mehreren Berechnungen                                         |          |          |
+| ;        | 1         | Trennzeichen zwischen mehreren Berechnungen                                         |          |          |
+| :        | 2         | Zuweisung an eine Variable auf der linken Seite                                     | x:4/12   | 1/3      |
+| ::       | 2         | Zuweisung an eine Variable auf der linken Seite ohne die rechte Seite zu optimieren | x::4/12  | 4/12     |
 
 
 #### Prefix Operatoren

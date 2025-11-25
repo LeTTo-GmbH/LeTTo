@@ -22,7 +22,7 @@ Hat der Datensatz eine [Einheit](../Einheit/index.md), dann wird bei der Ersetzu
 
 #### Erzwingen von Einheiten
 Sollen andere Einheitenvielfache oder andere Dimensionen angezeigt werden, kann folgende Variablendefinition verwendet werden:
-  {t,=h} : Diese Definition bewirkt, dass die Zeit in Stunden angegeben wird.
+  {t;=h} : Diese Definition bewirkt, dass die Zeit in Stunden angegeben wird.
 Verwendung: Nach dem Variablennamen, getrennt durch einen Beistrich, wird mit dem Istgleichzeichen die geforderte _Zieleinheit_ definiert. Die korrekte Umrechnung der Werte erfolgt automatisch.
 
 ### Referenzierung von Werten aus der Lösung
