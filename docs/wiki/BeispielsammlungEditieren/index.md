@@ -376,6 +376,12 @@ Der Schüler kann eine oder mehrere vorgegebene Antworten als richtig ankreuzen.
 
 Die Definition der Antworten erfolgt über folgende Eingabemaske:
 <br>![img_4.png](img_4.png)<br>
+Bei der Eingabe der Antworten für die Multiple-Choice-Frage sind auch Tex-Formeln zwischen $-Symbolen möglich.
+Sollten Sie in der Antwort auch html-Tags verwenden wollen, so müssen Sie am Beginn der Zeile <b>HTML:</b> verwenden.<br>
+Beispiel:<br> 
+`HTML:<b>Dies ist ein fetter Text</b>`: Hier wird der Text fett dargestellt.<br>
+`<b>Dies ist ein fetter Text</b>`: Die gleiche Zeile ohne HTML bewirkt, dass der HTML-Code sichtbar  ist.
+
 Die korrekten Antworten werden über die Checkboxen ausgewählt. Auch Formeln im TEX-Format sind möglich. 
 Das Einfügen von Bildern über `[IMGx]`-Tags sowie Plugins über `[PI...]`-Tags wird ebenfalls unterstützt.
 
@@ -427,6 +433,13 @@ Das Maxima-Feld kann auch für Multiple-Choice-Fragen für Berechnungen und für
 Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.
 Im Prinzip hat der Schüler 2 Listen mit Antworten und Fragen, die er richtig zuordnen muss.
 <br>![img_7.png](img_7.png)<br>
+Bei der Eingabe der Antworten für die Multiple-Choice-Frage sind auch Tex-Formeln zwischen $-Symbolen möglich.
+Sollten Sie in der Antwort für die linke und rechte Seite auch html-Tags verwenden wollen, so müssen Sie am Beginn der Zeile <b>HTML:</b> verwenden.<br>
+Beispiel:<br>
+`HTML:<b>Dies ist ein fetter Text</b>`: Hier wird der Text fett dargestellt.<br>
+`<b>Dies ist ein fetter Text</b>`: Die gleiche Zeile ohne HTML bewirkt, dass der HTML-Code sichtbar  ist.
+
+
 Mit der Auswahlliste für das Anzeigeverhalten (***Sortierung:***) kann gesteuert werden, ob und wie die Zuordnungen bei einem Test gemischt werden.
 _Nur links mischen_ bedeutet, dass die Antwortmöglichkeiten auf der linken Seite der Zuordnungsfrage bei jedem Öffnen der Frage anders dargestellt werden.
 
