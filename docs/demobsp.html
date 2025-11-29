@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<style>
+    body { font-family: system-ui, Arial; padding: 20px; }
+    iframe { width:100%; height:75vh; border: 1px solid #ddd; }
+    .error { color: #b00; }
+</style>
+<div id="info">Lade...</div>
+<div id="wrapper">
+    <iframe id="targetFrame" sandbox="allow-scripts allow-same-origin"></iframe>
+</div>
+
+<script>
+    // === Konfiguration ===
+    const allowedBases = [
+        'https://demo.letto.at/app/pages/test/open/demo.letto.at/demo/'
+    ];
+    const fallbackMessage = 'Keine gültige ID in URL gefunden. Verwende ?id=123 oder #/123.';
+
+    // === Hilfsfunktionen ===
+    function getIdFromQuery() {
+        return new URLSearchParams(location.search).get('id');
+    }
+    function getIdFromHash() {
+        const h = location.hash || '';
+        const m = h.match(/#\/?(\d+)$/);
+        return m ? m[1] : null;
+    }
+    function getIdFromPath() {
+        // ACHTUNG: Pfad-Variante braucht SPA-Fallback auf GitHub Pages (siehe Hinweise weiter unten)
+        const m = location.pathname.match(/\/(\d+)\/?$/);
+        return m ? m[1] : null;
+    }
+
+    function isNumeric(s) { return /^\d+$/.test(s); }
+
+    function buildUrl(id) {
+        // Beispiel: baue Ziel-URL. Passe das Format an deine Zielseite an.
+        // Wir wählen die erste erlaubte Basis als Beispiel.
+        const base = allowedBases[0];
+        // safe: id ist schon numeric validiert
+        return base + encodeURIComponent(id); // z.B. https://example.com/item/123
+    }
+
+    // === Ablauf ===
+    (function() {
+        const info = document.getElementById('info');
+        const iframe = document.getElementById('targetFrame');
+
+        // 1) ID aus URL auslesen (query, hash, path)
+        let id = getIdFromQuery() || getIdFromHash() || getIdFromPath();
+
+        if (!id) {
+            info.innerHTML = '<span class="error">'+fallbackMessage+'</span>';
+            iframe.style.display = 'none';
+            return;
+        }
+
+        // 2) Validieren (nur Ziffern)
+        if (!isNumeric(id)) {
+            info.innerHTML = '<span class="error">Ungültige ID: nur Ziffern erlaubt.</span>';
+            iframe.style.display = 'none';
+            return;
+        }
+
+        // 3) URL bauen und optional Whitelist prüfen
+        const target = buildUrl(id);
+        const allowed = allowedBases.some(b => target.startsWith(b));
+        if (!allowed) {
+            info.innerHTML = '<span class="error">Ziel-URL nicht erlaubt.</span>';
+            iframe.style.display = 'none';
+            return;
+        }
+
+        // 4) iframe setzen
+        info.innerHTML = 'Embedded: <a href="'+target+'">'+target+'</a>';
+        iframe.src = target;
+        // Optional: onload/error behandeln
+        iframe.addEventListener('error', () => {
+            info.innerHTML = '<span class="error">Laden der eingebetteten Seite fehlgeschlagen — möglicherweise blockiert die Zielseite Frame-Einbettung.</span>';
+        });
+    })();
+</script>
+
