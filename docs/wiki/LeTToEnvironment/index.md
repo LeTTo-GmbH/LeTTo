@@ -348,6 +348,8 @@ siehe auch
 | LETTO_1_LETTO_DEBUG       | Gibt an ob der LeTTo-Server im Debug-Modus gestartet werden soll                                      | true,false                                                                                                                                                                |
 | LETTO_1_LOGAD             | Gibt an ob der LeTTo-Server Logins am Active-Directory-Server protokollieren soll                     | true,false                                                                                                                                                                |
 | LETTO_1_LOGMAXIMA         | Gibt an ob die Maxima-Berechnungen genauer geloggt werden sollen                                      | true,false                                                                                                                                                                |
+| LETTO_1_REDIRECT_APP      | Umleitung auf die neue LeTTo-Oberfläche beim Loginvorgang, wenn true                                  | true,false                                                                                                                                                                |
+
 
 #### zusätzliche Question-Service Variablen für externe Question-Services (Verlage, etc.)
 
@@ -358,6 +360,9 @@ siehe auch
 | Variable             | Beschreibung                                                                                                      | mögliche/default Werte |
 |----------------------|-------------------------------------------------------------------------------------------------------------------|------------------------|
 | QUESTION_1_NAME      | Name des Question-Services, wie er im Setup-Service angezeigt wird (container: letto-question-${QUESTION_1_NAME}) | hanser                 |
-| QUESTION_1_OPEN      |                                                                                                                   | true,false/true        |
-| QUESTION_1_PRERENDER |                                                                                                                   | true,false/false       |
-| QUESTION_1_CACHE     |                                                                                                                   | true,false/true        |
+| QUESTION_1_OPEN      | Die Fragen können über Open-Endpoints geladen und beurteilt werden                                                | true,false/true        |
+| QUESTION_1_PRERENDER | Die Fragen werden bei Service-Start vorgerendert, damit sie rasch verfügbar sind                                  | true,false/false       |
+| QUESTION_1_CACHE     | Durchgerechnete Fragen werden im Cache abgelegt                                                                   | true,false/true        |
+| QUESTION_1_SAVEASYNC | Asynchrones Speichern der Fragen                                                                                  | true,false/true        |
+| QUESTION_HTMLPRERENDER_EXTERN     | Beim Rendern der HTML-Vorschau (Frage=>Image) wird die externe Uri verwendet                                      | false,false/true       |
+|    
