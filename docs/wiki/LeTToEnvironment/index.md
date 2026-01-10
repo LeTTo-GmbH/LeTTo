@@ -51,6 +51,17 @@ siehe auch
 
 * Jeder Lehrer kann einen eingeloggten Schüler/Studenten jederzeit abmelden (auch wenn dieser auf einem Browser eingeloggt ist).
 
+#### Active-Directory/LDAP - [Login](../../howto/login/index.md) Konfiguration
+
+| Variable       | Beschreibung                                                   | mögliche/default Werte |
+|----------------|----------------------------------------------------------------|------------------------|
+| LDAP_MODE      | Art des LDAP-Logins 0..detect, 1..                             | 0 1 2 3 4              |
+| LDAP_AD_SERVER | Name/IP des Active-Directory-Servers                           |                        |
+| LDAP_SERVER    | ldap url des LDAP-Services                                     |                        |
+| LDAP_DOMAIN    | Domain des LDAP/AD-Servers                                     |                        |
+| LDAP_LOGGING   | Logging einschalten                                            | off, on                |
+| LDAP_LOGIN     | Gibt an ob beim Login ein LDAP/AD-Server verwendet werden soll | auto, on, off          |
+
 #### Server Konfiguration
 
 | Variable          | Beschreibung                                                                                                      | mögliche/default Werte     |
