@@ -36,7 +36,7 @@ Spalten für alle Arten von [Online-Tests](../Online-Tests/index.md) wie Tests, 
 Die ganze Tabelle ist bei vielen Eingaben auch vertikal verschiebbar (scrollbar)!
 
 ### Konfiguration der Anzeige
-<br>![600px-ClipCapIt-181209-215749.PNG](600px-ClipCapIt-181209-215749.PNG)
+<br>![img.png](img.png)
 
 Mit dem ![35px-ClipCapIt-180826-182009.PNG](35px-ClipCapIt-180826-182009.PNG)-Button öffnen Sie einen Dialog zur Konfiguration der Anzeige. 
 In der ersten Zeile sind alle Arten von [Online-Tests](../Online-Tests/index.md) angeführt, die ein- oder ausgeblendet werden können.
@@ -45,6 +45,17 @@ Die Checkboxen der zweiten Zeile haben folgende Bedeutung:
 * Noten editierbar: Ist die Checkbox ausgewählt, dann können direkt im Katalog die Noten eingetragen werden. Bei negativen Noten wird automatisch eind Dialog zur Auswahl von negativen Lehrinhalten geöffnet.
 * Fotos: Im Katalog werden die Schülerfotos eingeblendet, wenn die [Fotos hochgeladen hochladen-von-schülerfotos](../Datenimport/index.md#hochladen-von-schülerfotos) wurden.
 * Prozentanzeige: Im Katalog werden für die meisten Beurteilungen keine Symbole, sondern Prozentwerte angezeigt. Welche Beurteilungsformen davon betroffen sind, wird in der [Beurteilungskonfiguration](../Beurteilungskonfiguration/index.md) festgelegt.
+* Gewichtung mit 0 nicht anzeigen: Beurteilungen mit Gewichtung 0 werden im Katalog ausgeblendet.
+* Sortierung nach Ordnern: Es wird der katalog icht nach Art der Beurteilung (Test, Schulabrbeit, ...), sondern nach den Ordnern sortiert, in denen die Aktivitäten liegen.
+* Schülergruppen: Anzeige einer Spalte für Schülergruppen im Katalog. Damit können in einer Klasse Gruppen gebildet werden.
+
+#### Schülergruppen
+Wenn Schülergruppen in der Konfiguration der Anzeige aktiviert wurden, dann wird im Katalog eine Spalte 
+für die Gruppen angezeigt. Mit dem ![25px-ClipCapIt-180831-113134.PNG](25px-ClipCapIt-180831-113134.PNG)-Button in der 
+Buttonleiste des Katalogs können die Gruppenbezeichnungen für die Schüler eingetragen und editiert werden.
+Wenn Schülergruppen aktiviert sind, dann können die Schüler auch gruppenweise sortiert werden, indem Sie auf die Spaltenüberschrift 'Gruppe' klicken. 
+Die alphabetische Sortierung erreichen Sie über einen Klick auf die Spaltenüberschrift.
+Über die 'Konfiguration der Anzeige' können Sie dann auch unter Auswahl den Gruppennamen eingeben und danach filtern.
 
 Mit dem ![35px-ClipCapIt-180826-190507.PNG](35px-ClipCapIt-180826-190507.PNG)-Button werden die Darstellungs-Optionen für all ihre Kataloge gespeichert. Mit der ESC-Taste kann der Dialog auch geschlossen werden.
 

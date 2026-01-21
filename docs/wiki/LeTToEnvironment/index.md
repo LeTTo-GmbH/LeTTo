@@ -368,12 +368,15 @@ siehe auch
 * Die Nummer des Question-Services muss mit der Nummer in der docker-service-question-extern.yml Datei übereinstimmen.
 * Alle Variablen sind hier für das Question-Service mit der Nummer 1 dokumentiert.
 
-| Variable             | Beschreibung                                                                                                      | mögliche/default Werte |
-|----------------------|-------------------------------------------------------------------------------------------------------------------|------------------------|
-| QUESTION_1_NAME      | Name des Question-Services, wie er im Setup-Service angezeigt wird (container: letto-question-${QUESTION_1_NAME}) | hanser                 |
-| QUESTION_1_OPEN      | Die Fragen können über Open-Endpoints geladen und beurteilt werden                                                | true,false/true        |
-| QUESTION_1_PRERENDER | Die Fragen werden bei Service-Start vorgerendert, damit sie rasch verfügbar sind                                  | true,false/false       |
-| QUESTION_1_CACHE     | Durchgerechnete Fragen werden im Cache abgelegt                                                                   | true,false/true        |
-| QUESTION_1_SAVEASYNC | Asynchrones Speichern der Fragen                                                                                  | true,false/true        |
-| QUESTION_HTMLPRERENDER_EXTERN     | Beim Rendern der HTML-Vorschau (Frage=>Image) wird die externe Uri verwendet                                      | false,false/true       |
-|    
+| Variable                        | Beschreibung                                                                                                      | mögliche/default Werte        |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| QUESTION_1_NAME                 | Name des Question-Services, wie er im Setup-Service angezeigt wird (container: letto-question-${QUESTION_1_NAME}) | hanser                        |
+| QUESTION_1_SERVER_NAME          | Server-Name, auf dem das Service läuft.                                                                           | hanser.letto.at / SERVER_NAME |
+| QUESTION_1_OPEN                 | Die Fragen können über Open-Endpoints geladen und beurteilt werden                                                | true,false / true             |
+| QUESTION_1_PRERENDER            | Die Fragen werden bei Service-Start vorgerendert, damit sie rasch verfügbar sind                                  | true,false / false            |
+| QUESTION_1_CACHE                | Durchgerechnete Fragen werden im Cache abgelegt                                                                   | true,false / true             |
+| QUESTION_1_SAVEASYNC            | Asynchrones Speichern der Fragen                                                                                  | true,false / true             |
+| QUESTION_1_HTMLPRERENDER_EXTERN | Beim Rendern der HTML-Vorschau (Frage=>Image) wird die externe Uri verwendet                                      | false,false / true            |
+| QUESTION_1_MONGO_DATABASE       | Mono-Datenbank für dieses Question-Service                                                                        | hanser / question             |
+| QUESTION_1_DEBUG                | Debuggen dieses Question-Services                                                                                 | true,false / false            |
+| QUESTION_1_DEBUG_PORT           | Port für den Remote-Debugging-Zugriff auf dieses Question-Service                                                 | 15102                          |
