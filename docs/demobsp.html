@@ -75,7 +75,7 @@ layout: default
         }
 
         // 4) iframe setzen
-        info.innerHTML = 'Embedded: <a href="'+target+'">'+target+'</a>';
+        info.innerHTML = 'Embedded: <a href="'+target+'" target="_blank">'+target+'</a>';
         iframe.src = target;
         // Optional: onload/error behandeln
         iframe.addEventListener('error', () => {
