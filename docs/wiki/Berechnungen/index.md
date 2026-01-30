@@ -646,33 +646,33 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 
 ####  Datums und Zeitfunktionen 
 
-| Funktion       | Beschreibung                                                                                                         | Beispiel | Ergebnis | REvision |
-|----------------|----------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
-| dateparse      | Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000 [DEMO-Beispiel](../../demobsp.html?id=3497) |          |          | 6530     |
-| date           | date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 00:00:00                              |          |          | 6530     |
-| date           | date(y,m,d) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 00:00:00                                        |          |          | 6530     |
-| time           | time(h,min,sec) erzeugt eine Uhrzeit als Ganzzahl in Sekunden seit Mitternacht                                       |          |          | 6762     |
-| datestring     | datestring(x) datestring(x,&quot;format&quot;) erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe  |          |          | 6530     |
-| timestring     | erzeugt eine Uhrzeit als String                                                                                      |          |          | 6530     |
-| datetimestring | erzeugt Datum und Uhrzeit als String                                                                                 |          |          | 6530     |
-| dateyear       | Erzeugt aus einem Datum als Ganzzahl das Jahr                                                                        |          |          | 6530     |
-| datemonth      | Erzeugt aus einem Datum als Ganzzahl das Monat                                                                       |          |          | 6530     |
-| dateday        | Erzeugt aus einem Datum als Ganzzahl den Tag                                                                         |          |          | 6530     |
-| datehour       | Erzeugt aus einem Datum als Ganzzahl die Stunde                                                                      |          |          | 6530     |
-| dateminute     | Erzeugt aus einem Datum als Ganzzahl die Minute                                                                      |          |          | 6530     |
-| datesecond     | Erzeugt aus einem Datum als Ganzzahl die Sekunde                                                                     |          |          | 6530     |
-| datemix        | Erzeugt aus einem Datumswert (Sekunden seit 1.1.00 0:00:00) einen Vektor mit Jahr,Monat,Tag,Stunde,Minute,Sekunde    |          |          | 6641     |
-| datediff       | Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datum. Ergebnis als Double in Sekunden   |          |          | 6530     |
-| dateweekday    | Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7                                                   |          |          | 6530     |
-| dateweek       | Liefert die Kalenderwoche des Tages innerhalb des Jahres                                                             |          |          | 6530     |
-| datedayofyear  | Liefert den Tag des Jahres                                                                                           |          |          | 6530     |
-| years          | Erzeugt aus einem Sekundenwert die Jahre (/365d) als Double ohne Einheit                                             |          |          | 6530     |
-| months         | Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit                                             |          |          | 6530     |
-| weeks          | Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit                                              |          |          | 6530     |
-| days           | Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit                                                      |          |          | 6530     |
-| hours          | Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit                                                   |          |          | 6530     |
-| minutes        | Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit                                                   |          |          | 6530     |
-| seconds        | Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit                                                  |          |          | 6530     |
+| Funktion       | Beschreibung                                                                                                                        | Beispiel | Ergebnis | REvision |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------|----------|----------|----------|
+| dateparse      | Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000 [DEMO-Beispiel](../../demobsp.html?id=3497)                |          |          | 6530     |
+| date           | date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 00:00:00 [DEMO-Beispiel](../../demobsp.html?id=3634) |          |          | 6530     |
+| date           | date(y,m,d) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 00:00:00 [DEMO-Beispiel](../../demobsp.html?id=3634)                                                      |          |          | 6530     |
+| time           | time(h,min,sec) erzeugt eine Uhrzeit als Ganzzahl in Sekunden seit Mitternacht [DEMO-Beispiel](../../demobsp.html?id=3635)          |          |          | 6762     |
+| datestring     | datestring(x) datestring(x,&quot;format&quot;) erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe                 |          |          | 6530     |
+| timestring     | erzeugt eine Uhrzeit als String                                                                                                     |          |          | 6530     |
+| datetimestring | erzeugt Datum und Uhrzeit als String                                                                                                |          |          | 6530     |
+| dateyear       | Erzeugt aus einem Datum als Ganzzahl das Jahr                                                                                       |          |          | 6530     |
+| datemonth      | Erzeugt aus einem Datum als Ganzzahl das Monat                                                                                      |          |          | 6530     |
+| dateday        | Erzeugt aus einem Datum als Ganzzahl den Tag                                                                                        |          |          | 6530     |
+| datehour       | Erzeugt aus einem Datum als Ganzzahl die Stunde                                                                                     |          |          | 6530     |
+| dateminute     | Erzeugt aus einem Datum als Ganzzahl die Minute                                                                                     |          |          | 6530     |
+| datesecond     | Erzeugt aus einem Datum als Ganzzahl die Sekunde                                                                                    |          |          | 6530     |
+| datemix        | Erzeugt aus einem Datumswert (Sekunden seit 1.1.00 0:00:00) einen Vektor mit Jahr,Monat,Tag,Stunde,Minute,Sekunde                   |          |          | 6641     |
+| datediff       | Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datum. Ergebnis als Double in Sekunden                  |          |          | 6530     |
+| dateweekday    | Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7                                                                  |          |          | 6530     |
+| dateweek       | Liefert die Kalenderwoche des Tages innerhalb des Jahres                                                                            |          |          | 6530     |
+| datedayofyear  | Liefert den Tag des Jahres                                                                                                          |          |          | 6530     |
+| years          | Erzeugt aus einem Sekundenwert die Jahre (/365d) als Double ohne Einheit                                                            |          |          | 6530     |
+| months         | Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit                                                            |          |          | 6530     |
+| weeks          | Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit                                                             |          |          | 6530     |
+| days           | Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit                                                                     |          |          | 6530     |
+| hours          | Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit                                                                  |          |          | 6530     |
+| minutes        | Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit                                                                  |          |          | 6530     |
+| seconds        | Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit                                                                 |          |          | 6530     |
 
 
 ####  Spezialfunktionen LeTTo 
