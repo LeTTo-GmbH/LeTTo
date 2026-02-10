@@ -32,3 +32,8 @@ Die Anbindung erfolgt über das LTI-Service welches in einem eigenen Docker-Cont
 
 ## Konfiguration im LeTTo LTI-Service
 
+## Konfiguration am Moodle
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
