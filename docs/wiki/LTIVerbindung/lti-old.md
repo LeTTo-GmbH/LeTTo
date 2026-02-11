@@ -1,11 +1,10 @@
-# LTI Verbindung
+# LTI Verbindung (ALT - ohne Docker)
 ##  Allgemeines zu LTI 
 LTI[https://www.imsglobal.org/activity/learning-tools-interoperability|LTI](https://www.imsglobal.org/activity/learning-tools-interoperability|LTI) kann für die Anbindung[https://docs.moodle.org/311/de/LTI_und_Moodle|Anbindung](https://docs.moodle.org/311/de/LTI_und_Moodle|Anbindung) von LeTTo an einen Moodle-Server[https://moodle.com/|Moodle](https://moodle.com/|Moodle) verwendet werden. 
 
 Die Anbindung erfolgt über ein neben LeTTo laufendes LTI-Service. Bei einer Standardinstallation wird das LTI-Service im Verzeichnis /opt/letto/lti mit Start- und Stoppscript installiert. Mit dem Script /opt/letto/status.sh wird angezeigt ob neben dem LeTTo-Server auch das LTI-Service läuft.
 
-alter LTI-Lösung (ohne Docker) siehe [LTI-Verbindung alt](lti-old.md)
-
+neue LTI-Lösung (mit Docker) siehe [LTI-Verbindung mit Docker](index.md)
 ##  Installation 
 ###  Installation des LTI-Services 
 ####  Standardinstallation 

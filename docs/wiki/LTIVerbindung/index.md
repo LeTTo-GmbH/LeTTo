@@ -4,6 +4,8 @@
 
 Die Anbindung erfolgt über das LTI-Service welches in einem eigenen Docker-Container läuft.
 
+alte LTI-Lösung (ohne Docker) siehe [LTI-Verbindung alt](lti-old.md)
+
 ## Installation des LTI-Services
 * wähle "update-config" im Setup-Service(/config)<br>![img.png](img.png)
 * wähle unten bei den verfügbaren yml-Files bei lti "install Service"<br>![img_1.png](img_1.png)
