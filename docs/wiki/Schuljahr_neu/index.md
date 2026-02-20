@@ -10,7 +10,7 @@ Je nach Auswahl werden die Daten für ein Schuljahr, einen Gegenstand eines Lehr
 Diese Ansicht ist die Standard-Ansicht für Schüler. 
 Aufruf dieser Seite über das [Menü](../MenueSchueler/index.md) auf der linken Seite.
 
-Für jeden Gegenstand gint es einen eigenen Reiter:
+Für jeden Gegenstand gint es einen eigenen Reiter:<br>
 ![img.png](gegenstand.png)<br>
 Beim Klick auf die Detail-Ansicht bekommen nur mehr die Information und Aktivitäten für diesen Gegenstand eines bestimmten Lehrers.
 Sollten mehrere Lehrer den gleichen Gegenstand unterrichten, dann ginb es pro Lehrer einen eigenen Eintrag.
