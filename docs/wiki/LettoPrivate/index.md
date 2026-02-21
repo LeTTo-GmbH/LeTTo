@@ -96,7 +96,7 @@ In question.conf (alle NAME - Einträge durch den jeweiligen Servicenamen ersetz
 <pre>
 location /NAME/ {
     rewrite ^/NAME(.*)$  /question$1 break;
-    resolver 127.0.0.11;
+    resolver 127.0.0.11 valid=5s ipv6=off;
     proxy_set_header   Host $host;
     proxy_set_header   X-Real-IP $remote_addr;
     proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -110,7 +110,7 @@ location /NAME/ {
 <pre>
 location /hanser/ {
     rewrite ^/hanser(.*)$  /question$1 break;
-    resolver 127.0.0.11;
+    resolver 127.0.0.11 valid=5s ipv6=off;
     proxy_set_header   Host $host;
     proxy_set_header   X-Real-IP $remote_addr;
     proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
