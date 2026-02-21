@@ -335,7 +335,8 @@ Liste der problematischen Funktionen:
 | chr      | Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus einen String zusammen. [DEMO-Beispiel](../../demobsp.html?id=3289) | chr(0x65,105)   | "ei"     |
 | val      | Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter übergeben wurde. [DEMO-Beispiel](../../demobsp.html?id=3290)          | val("a")        | 97       |
 | strcat   | Fügt mehrere Strings zusammen. [DEMO-Beispiel](../../demobsp.html?id=3291)                                                                      | strcat("a","b") | "ab"     |
-
+| string   | Wandelt eine Zahl in einen String um.                                                                                                           | string(123)     | "123"    |
+| parse    | Wenn der Parameter ein String ist wird dieser String mit dem Parser interpretiert [DEMO-Beispiel](../../demobsp.html?id=3482)                   | parse("2+3")    | 5        |
 
 #### trigonometrische Funktionen
 
