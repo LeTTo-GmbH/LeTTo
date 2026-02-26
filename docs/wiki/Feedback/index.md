@@ -12,8 +12,11 @@ Das Einfügen von Bildern und die Verwendung von Plugins ist wie bei der Eingabe
 ## Syntax
 
 ### Allgemeiner Teil
-* Allgemeiner Text
-* `[hint]`: Allgemeiner Tipp
+* `[hint]`: Allgemeiner Tipp, es kann die gleiche Syntax wie bei den Teilfragen verwendet werden.
+
+Ein allgemeiner **hint** kann auch ohne dem [hint]-Tag definiert werden. 
+Einfach am Beginn des Feedback-Texts den allgemeinen Hint formulieren. Nur wenn es Einschränkungen für die Anzeige 
+des **hints** geben soll, dann muss der [hint]-Tag verwendet werden.
 
 Ist nur eine Teilfrage definiert oder ist die Frage eine Freitextfrage, dann wird dieser Teil
 der Feedbackdefinition für die gesamte Frage genommen. Es wird also der allgemeine
