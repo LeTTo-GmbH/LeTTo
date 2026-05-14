@@ -29,6 +29,8 @@ Auch das manuelle Eintippen von [IMG...]-tags ist möglich, wenn Sie die den Tag
 
 ====Listing einfügen (CTRL-L)====
 Einfügen eines Listings, siehe auch [[#Listing|hier]].
+
+
 ====Freihandskizze einfügen (CTRL-F)====
 Öffnen einer Möglichkeit zum Erstellen von einfachen Freihand-Skizzen, die dann als Image zur Frage gebunden werden können.
 :[[Datei:ClipCapIt-180831-172611.PNG|400px]]

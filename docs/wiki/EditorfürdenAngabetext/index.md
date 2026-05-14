@@ -31,7 +31,33 @@ Alle Dateien, die in der Frage verwendet werden können, können auch über den 
 Auch das manuelle Eintippen von &#91;IMG...]-tags ist möglich, wenn Sie die den Tag des Bildes aus obigem Dialog ermittelt haben.
 
 ##### Listing einfügen (STRG-P)
-Einfügen eines Listings, siehe auch [Listings](#Listings).
+Einfügen eines Listings, dadurch wird folgender Teil im Editor eingefügt:
+
+[listing]
+
+[/listing]
+
+Zwischen diese Tags fügen Sie bitte den Source-Code ein.
+Sie können hier auch die Programiersprache mit dem Attribut **lang** festlegen.<br>
+zB.: [listing lang="java"]
+
+Folgende Sprachen werden unterstützt:
+* markup:      für html/xml
+* css
+* clike
+* javascript
+* typescript
+* java
+* c
+* cpp
+* csharp
+* json
+* scss
+* python
+* sql
+* bash
+* yaml
+* markdown
 
 ##### Freihandskizze einfügen (STRG-F)
 Öffnen einer Möglichkeit zum Erstellen von einfachen Freihand-Skizzen, die dann als Image zur Frage gebunden werden können.
