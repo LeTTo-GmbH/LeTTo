@@ -19,7 +19,7 @@
 | &lt;F3&gt;                  | Datensatz als Formel ergänzen. Wie &lt;F2&gt; jedoch wird eine Formel $x={x}$ für den Datensatz erzeugt.                                               |
 | &lt;Strg&gt; - i            | Bild von Datei einbinden                                                                                                                               |
 | &lt;Strg&gt; - F            | Datei hochladen und als Link einbinden                                                                                                                 |
-| &lt;Strg&gt; - L            | Sourcecode-Listing einfügen                                                                                                                            |
+| &lt;Strg&gt; - P            | Sourcecode-Listing einfügen (Programm)                                                                                                                 |
 | &lt;Strg&gt; - Q            | neue Teilfrage einfügen                                                                                                                                |
 | &lt;Alt&gt; - Q             | neue Teilfrage einfügen (Für MAC, da dort &lt;Strg&gt;-&lt;Q&gt; das Fenster schließt!                                                                 |
 | &lt;Strg&gt; - &lt; Del&gt; | aktuellen Tag (in eckigen Klammern) löschen                                                                                                            |

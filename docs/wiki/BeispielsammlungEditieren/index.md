@@ -477,5 +477,5 @@ Bei der Frageerstellung kann nur das Feedbackfeld ausgefüllt werden. Dieses kan
   *        und beim Online-Test dem Schüler als Feedback nach dem Test bekanntgegeben werden.
   *        Bei Beispielsammlungen kann der Schüler das Feedbackfeld nie einsehen!
   *        Bei Hausübungen kann der Schüler das Feedbackfeld erst nach Ablauf der Abgabefrist einsehen!
-* Sowohl Feedbackfeld als auch das Fragefeld kann Bilder, Tabellen, externe Dateien und Sourcode-Listings enthalten.
+* Sowohl Feedbackfeld als auch das Fragefeld kann Bilder, Tabellen, externe Dateien und [Sourcode-Listings](../EditorfürdenAngabetext/#listing-einfügen-strg-p)  Sourcode-Listings enthalten.
 
