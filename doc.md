@@ -31,3 +31,7 @@
 # Kommentare in md-Dateien:
 [//]: Diese Art von Kommentaren ist nicht kompatibel mit Github-DOC!!!
 <!-- Dies ist ein Kommentar -->
+
+# Vorgangsweise wenn der Suchindex nicht aktualisiert wird
+* Öffne im Brower die Datei https://doc.letto.at/search.json
+  * Hier tritt wahrscheinW

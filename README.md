@@ -16,6 +16,7 @@ Offenes Repository mit [Wiki](https://doc.letto.at/), [Discussions](https://gith
   * Arguments: $FilePath$
   * Working directory: $ProjectFileDir$
   * OK
+
 * Rechtsklick auf ein Bild in IntelliJ -> External Tools -> Paint.NET
 * Bild automatisch in der IntelliJ per Doubleclick in Paint.NET öffnen
   * Im Windows Explorer *.png per Rechtsklick -> Open with -> Choose another app -> Paint.NET
@@ -24,3 +25,4 @@ Offenes Repository mit [Wiki](https://doc.letto.at/), [Discussions](https://gith
   * IntelliJ: Einstellungen / Preferences (Strg+Alt+S) → Editor → File Types.
       * Wähle in der Liste Files opened in associated applications (oder „Files opened in associated application“).
       * Füge ein Pattern *.png (oder *.PNG) hinzu.
+
