@@ -219,7 +219,7 @@ Mehrere Muster welche durch Raute getrennt werden können angegeben werden, wobe
 
 Im wesentlichen gibt es zwei Arten wie das Suchmuster definiert sein kann:
 * Als Mengendefinition wenn das Suchmuster mit einer eckigen Klammer beginnt
-* ansonsten als regulärer Ausdruck, der vom Syntax her an die regulären Ausdrücke von Java angelehnt ist sich jedoch bei der Klammerung und den Platzhaltern von den Java-RegExp unterscheidet.
+* ansonsten als [regulärer Ausdruck](../RegularExpression/index.md), der vom Syntax her an die regulären Ausdrücke von Java angelehnt ist sich jedoch bei der Klammerung und den Platzhaltern von den Java-RegExp unterscheidet.
 
 ####  Zeichen für die Definition
 
@@ -252,7 +252,7 @@ Beispiele:
 
 ####  Definition als regulärer Ausdruck
 
-Ein Regulärer Ausdruck besteht aus den definierten Mengen, fixen Zeichen und Gruppierungen mit Verknüpfungen.
+Ein [regulärer Ausdruck](../RegularExpression/index.md) besteht aus den definierten Mengen, fixen Zeichen und Gruppierungen mit Verknüpfungen.
 
 Die Mengen NZRCGVKE sind wie schon zuvor definiert.
 

@@ -218,7 +218,7 @@ Art der Antwort:
 
 * Single-Choice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen genau eine Antwort auswählen. Die Lösungen stehen als String im Lösungsfeld. Es sind bei Single-Choice-Fragen keine TEX-Formeln zulässig.
 * Text: Die Lösung welche im Lösungsfeld steht ist eine Zeichenkette die vom Schüler genau so eingegeben werden muss
-* Regexp: Im Lösungsfeld wird ein regulärer Ausdruck angeben, mit dem überprüft wird, ob die Antwort des Schülers richtig ist.
+* Regexp: Im Lösungsfeld wird ein [regulärer Ausdruck](../RegularExpression/index.md) angeben, mit dem überprüft wird, ob die Antwort des Schülers richtig ist.
 * Multichoice: Es gibt mehrere Lösungen, die dem Schüler vorgeschlagen werden. Der Schüler muss nun von diesen Lösungen eine oder mehrere Auswählen. Die Lösungen stehen als String in Lösungsfeld.
 * Calculated: Im Lösungsfeld steht ein symbolischer Ausdruck, der aus dem Maxima-Feld errechnet wurde. Zur Laufzeit wird daraus mit dem Parser die Lösung berechnet.
 * Boolsch: Dieser Fragemode kann nur sinnvoll bei einer Mehrfachberechnungsfrage verwendet werden. In diesem Modus kann man die Schülereingaben anderer Teilfragen nach Eingabe durch den Parser auswerten lassen und damit Punkte vergeben. Es lassen sich somit Folgefehler von Schülern berücksichtigen und bei der Dimensionierung können Angabe-Bedingungen geprüft werden, die über die Lösung einer Teilfrage nicht eindeutig wären. Der Zugriff auf die Schülereingabe einer anderen Teilfrage erfolgt im Lösungsfeld mit der Variablen Q gefolgt von der Teilfragenummer (zB. Q1 für die Teilfrage 1)
