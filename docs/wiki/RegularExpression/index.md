@@ -1,4 +1,4 @@
-# Reguläre Ausdrücke
+# Reguläre Ausdrücke (regular expressions)
 Regluäre Ausdrücke definieren Suchmuster für Zeichenketten und werden in LeTTo an folgenden Positionen verwenden:
 * In der [Zieleinheit](../ZielEinheit/index.md) einer Teilfrage um Muster für die Schülereingabe zu definieren
 * In einer Teilfrage mit dem Fragetyp regexp
