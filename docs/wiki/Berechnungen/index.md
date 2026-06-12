@@ -335,14 +335,21 @@ Liste der problematischen Funktionen:
 
 #### Stringfunktionen
 
-| Funktion | Beschreibung                                                                                                                                    | Beispiel        | Ergebnis |
-|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
-| dechex   | Zahl in eine Ganzzahl wandeln und als Hexadezimal-String ausgeben [DEMO-Beispiel](../../demobsp.html?id=3288)                                   | dexhex(12)      | "0xC"    |
-| chr      | Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus einen String zusammen. [DEMO-Beispiel](../../demobsp.html?id=3289) | chr(0x65,105)   | "ei"     |
-| val      | Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter übergeben wurde. [DEMO-Beispiel](../../demobsp.html?id=3290)          | val("a")        | 97       |
-| strcat   | Fügt mehrere Strings zusammen. [DEMO-Beispiel](../../demobsp.html?id=3291)                                                                      | strcat("a","b") | "ab"     |
-| string   | Wandelt eine Zahl in einen String um.                                                                                                           | string(123)     | "123"    |
-| parse    | Wenn der Parameter ein String ist wird dieser String mit dem Parser interpretiert [DEMO-Beispiel](../../demobsp.html?id=3482)                   | parse("2+3")    | 5        |
+| Funktion               | Beschreibung                                                                                                                                                        | Beispiel                                     | Ergebnis    |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------|
+| dechex                 | Zahl in eine Ganzzahl wandeln und als Hexadezimal-String ausgeben [DEMO-Beispiel](../../demobsp.html?id=3288)                                                       | dexhex(12)                                   | "0xC"       |
+| chr                    | Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus einen String zusammen. [DEMO-Beispiel](../../demobsp.html?id=3289)                     | chr(0x65,105)                                | "ei"        |
+| val                    | Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter übergeben wurde. [DEMO-Beispiel](../../demobsp.html?id=3290)                              | val("a")                                     | 97          |
+| strcat                 | Fügt mehrere Strings zusammen. [DEMO-Beispiel](../../demobsp.html?id=3291)                                                                                          | strcat("a","b")                              | "ab"        |
+| string                 | Wandelt eine Zahl in einen String um.                                                                                                                               | string(123)                                  | "123"       |
+| parse                  | Wenn der Parameter ein String ist wird dieser String mit dem Parser interpretiert [DEMO-Beispiel](../../demobsp.html?id=3482)                                       | parse("2+3")                                 | 5           |
+| substring              | Liefert einen Teil eines Strings substring(string,startindex,endindex). Index beginnt bei 0 und endindex ist optional.  [DEMO-Beispiel](../../demobsp.html?id=5025) | substring("abcdefg",2,3)                     | "cd"        |
+| tailstring             | liefert den letzten Teil eines Strings teilstring(tailstring,zeichenanzahl) [DEMO-Beispiel](../../demobsp.html?id=5026)                                             | tailstring("abcdefg",2)                      | "fg"        |
+| replacestring          | Ersetzt alle Vorkommen einer Zeichenkette in einem String durch eine andere Zeichenkette. [DEMO-Beispiel](../../demobsp.html?id=5027)                               | replacestring("abcdefg","bc","xy")           | "axydefg" |
+| replaceallstring       | Ersetzt alle Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine andere Zeichenkette.  [DEMO-Beispiel](../../demobsp.html?id=5027)                         | replaceallstring("abcdefg","b.*e","xy")      | "axyfg" |
+| replacefirstestring | Ersetzt das erste Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine andere Zeichenkette.  [DEMO-Beispiel](../../demobsp.html?id=5027)                    | replacefirststring("abcdefg","b.*e","xy") | "axyfg" |
+| splitstring            | Teilt einen String in ein Array von Strings splitstring(string,separator) [DEMO-Beispiel](../../demobsp.html?id=5028)                                               | splitstring("abcdefg","b")                   | "a","c","defg" |
+| matchstring | Prüft ob eine String einem regulären Ausdruck entspricht.  [DEMO-Beispiel](../../demobsp.html?id=5029) | matchstring("abcdefg","b.*e") | true |
 
 #### trigonometrische Funktionen
 
