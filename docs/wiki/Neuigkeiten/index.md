@@ -5,7 +5,9 @@
 ## Stable - Rev 6893 - Version 1.2 - Juli 2026
 * Bugfixes
 * LeTTo-App: User-Konfiguration 
-* Performance-Verbesserungen im Parser #2250
+* Performance-Verbesserungen im Parser
+* verbesserter sicherer Prüfungsmodus
+* Schnittstelle für externe Plugins fertig definiert
 
 ## Stable - Rev 6754 - 8.10.2025
 * Integration der LeTTo-App in den Setup-Service
