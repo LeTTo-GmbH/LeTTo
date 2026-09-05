@@ -1,5 +1,7 @@
 # Update einer Docker-Installation von LeTTo
 - Grundsätzlich erfolgt das Update über das Setupservice welches mit https://serveradresse/config erreichbar ist
+- Vor jedem Update des Setup-Services sollte auch das Ubuntu/Debian-Host-System auf den aktuellen Stand gebracht werden. 
+  Dies kann über die Konsole mit den Befehlen <pre>apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y</pre> erfolgen.
 
 ## Information über die laufenden Versionen
 
