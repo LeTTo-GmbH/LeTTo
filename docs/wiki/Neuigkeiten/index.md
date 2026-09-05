@@ -1,8 +1,11 @@
 # Neuigkeiten
 
-## laufend
-* Performance-Verbesserungen im Parser #2250
+* die nächste Major-Version 1.3 wird voraussichtlich im Oktober 2026 als Beta-Version verfügbar sein
 
+## Stable - Rev 6893 - Version 1.2 - Juli 2026
+* Bugfixes
+* LeTTo-App: User-Konfiguration 
+* Performance-Verbesserungen im Parser #2250
 
 ## Stable - Rev 6754 - 8.10.2025
 * Integration der LeTTo-App in den Setup-Service
