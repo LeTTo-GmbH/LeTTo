@@ -60,7 +60,13 @@ Pflichtfeld für das Datum der Individualbeurteilung.
 
 Wird nur angezeigt bzw. editierbar, wenn die gewählte Beurteilungsart diese Form der Eingabe erlaubt. LeTTo interpretiert die Eingabe anhand der im Schema definierten Bewertungsstufen.
 
-Zwischennoten wie `1-2` oder `+2` sind nur erlaubt, wenn die Beurteilungsart entsprechend konfiguriert wurde.
+### Zwischennoten
+
+Zwischennoten können direkt im Feld **Prozent / Note** sowie – bei zusammengesetzten Beurteilungen – in den Eingabefeldern der Teilbeurteilungen verwendet werden. Voraussetzung ist, dass für die gewählte Beurteilungsart im Beurteilungsschema die Checkbox **`1-2 +3`** aktiviert ist.
+
+Je nach Schema sind beispielsweise Eingaben wie `1-2`, `2-3`, `+2` oder `2-` möglich. LeTTo interpretiert die Zwischenstufe und ordnet ihr den entsprechenden Prozentwert zwischen den konfigurierten Bewertungsstufen zu. Dadurch fließt die Zwischennote korrekt in die Berechnung ein.
+
+Ist **`1-2 +3`** für die Beurteilungsart nicht aktiviert, sind diese Zwischenformen nicht vorgesehen. Details zur Freigabe finden sich unter [Beurteilungskonfiguration – 1-2 +3](../Beurteilungsschema/index.md#1-2-3).
 
 ### Gewicht
 

@@ -28,6 +28,20 @@ Das Eingabefeld nimmt – abhängig von der Konfiguration – eine Note, ein Bew
 
 Die in Klammern angezeigte Zahl, z. B. `Prüfung (1.0)`, ist die Gewichtung dieser Teilbeurteilung innerhalb der Gesamtbeurteilung.
 
+## Zwischennoten
+
+Zwischennoten können direkt in die Eingabefelder der Haupt- oder Teilbeurteilungen eingegeben werden, **wenn für die verwendete Beurteilungsart im Beurteilungsschema die Option `1-2 +3` aktiviert ist**.
+
+Mögliche Eingaben sind – abhängig vom verwendeten Schema – beispielsweise:
+
+* `1-2` oder `2-3` für eine Zwischenstufe zwischen zwei Noten,
+* `+2` für eine positive Tendenz zur Note 2,
+* `2-` für eine negative Tendenz zur Note 2.
+
+LeTTo interpretiert die Eingabe und berechnet daraus den zugehörigen Prozentwert. Dadurch können Zwischennoten genauso wie normale Noten in die Gesamtberechnung der Klassenbeurteilung einfließen. Ist **`1-2 +3`** für die betreffende Beurteilungsart nicht aktiviert, sind diese Zwischenformen nicht vorgesehen.
+
+Die Freigabe erfolgt in der [Beurteilungskonfiguration](../Beurteilungsschema/index.md#1-2-3).
+
 ### Teilbeurteilung mit Online-Aktivität
 
 Ist eine Teilbeurteilung mit einer Online-Aktivität verknüpft, kommt das Ergebnis grundsätzlich aus dieser Aktivität. Je nach Zustand stehen zusätzliche Funktionen zur Verfügung, beispielsweise:

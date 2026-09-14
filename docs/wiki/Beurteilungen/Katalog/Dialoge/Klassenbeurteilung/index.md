@@ -2,9 +2,9 @@
 
 Eine **klassenweise Beurteilung** wird einmal für die gesamte Klasse definiert. Danach erscheint sie als eigene Spalte im Beurteilungskatalog und kann für jeden Schüler einzeln bewertet werden. Typische Beispiele sind Tests, Laborübungen, Projektarbeiten, Hausübungen oder gemeinsame Prüfungen.
 
-Die folgende Abbildung stammt aus der bestehenden Wiki-Dokumentation und zeigt den Aufbau des Dialogs sehr kompakt. Die aktuelle Oberfläche ist optisch moderner, die fachlichen Felder und ihre Bedeutung entsprechen jedoch weiterhin diesem Prinzip.
+Die folgende Abbildung zeigt die **aktuelle Oberfläche** zum Anlegen bzw. Bearbeiten einer klassenweisen Beurteilung.
 
-![Klassenbeurteilung anlegen oder bearbeiten](klassenbeurteilung-definition.png)
+![Klassenbeurteilung anlegen oder bearbeiten](klassenbeurteilung-anlegen-bearbeiten.png)
 
 ## Unterschied zur Individualbeurteilung
 
@@ -21,7 +21,7 @@ Der Titel lautet je nach Zustand **Neue Klassenbeurteilung** oder **Klassenbeurt
 
 ## Allgemeine Daten
 
-![Grunddaten der Klassenbeurteilung](detail-klassenbeurteilung-grunddaten.png)
+![Allgemeine Angaben der Klassenbeurteilung](detail-allgemeine-angaben.png)
 
 ### Bezeichnung
 
@@ -41,7 +41,17 @@ Checkbox zur Steuerung, ob das Datum bei der Beurteilung im Katalog bzw. bei den
 
 ### Noten
 
-Das Feld **Noten / importNoten** dient für vom System unterstützte Notenimport- bzw. Vorbelegungsfunktionen. Es wird gemeinsam mit der Klassenbeurteilung gespeichert.
+![Noten für die Klasse gesammelt eingeben](detail-notenimport.png)
+
+Im Feld **Noten** können die Noten für diese klassenweise Beurteilung **durch Beistrich getrennt** eingegeben werden. LeTTo weist die eingegebenen Werte anschließend den Schülern der Klasse **in alphabetischer Reihenfolge** zu.
+
+Beispiel:
+
+`1,2,2,3,1-2,4`
+
+Der erste Wert wird dem alphabetisch ersten Schüler zugeordnet, der zweite Wert dem nächsten Schüler usw. Dadurch können Noten sehr schnell aus einer bereits alphabetisch sortierten Liste übernommen werden. Besonders praktisch ist dies für einen Import aus einer **Excel- bzw. CSV-Liste**: Die Notenspalte kann dort entsprechend vorbereitet, als kommaseparierte Folge kopiert und in dieses Feld eingefügt werden.
+
+Wichtig ist, dass die Reihenfolge der Werte mit der alphabetischen Reihenfolge der Schüler in der Klasse übereinstimmt. Auch zulässige Zwischennoten können verwendet werden, sofern sie für die gewählte Beurteilungsart im Beurteilungsschema freigeschaltet sind.
 
 ### Aufgabenstellung
 
@@ -49,7 +59,7 @@ Mehrzeiliges Textfeld für Aufgabenstellung, Thema oder Beschreibung. Bei länge
 
 ## Beurteilungsart
 
-![Beurteilungsart und Kompetenzzuordnung](detail-klassenbeurteilung-art-und-kompetenzen.png)
+![Beurteilungsart und Online-Aktivitäten](detail-beurteilungsart-onlineaktivitaet.png)
 
 Die Buttons zeigen alle im aktiven Beurteilungsschema verfügbaren Beurteilungsarten, z. B. **Übung, Prüfung, Mitarbeit, Hausübung, Labor, Allgemeines, Projekt, SMÜ, Test**.
 
@@ -85,6 +95,8 @@ Wenn eine Teilbeurteilung einen Online-Test erlaubt, stehen – abhängig davon,
 
 ## Kompetenzen / Deskriptoren
 
+![Kompetenzen und Deskriptoren](detail-kompetenzen-deskriptoren.png)
+
 Wenn für den Gegenstand Kompetenzen hinterlegt sind, kann die Klassenbeurteilung einer Kompetenz zugeordnet werden.
 
 * **Grundlagen / Basiswissen** – ordnet die Leistung der grundlegenden Kompetenzstufe zu.
@@ -95,6 +107,8 @@ Wenn für den Gegenstand Kompetenzen hinterlegt sind, kann die Klassenbeurteilun
 Diese Zuordnung wird später unter anderem in der [Leistungsübersicht](../Leistungsuebersicht/index.md) verwendet.
 
 ## Speichern, Abbrechen und Löschen
+
+![Aktionen in der Fußleiste](detail-dialogaktionen.png)
 
 * **Speichern** – speichert die Definition. Pflichtfelder müssen gültig sein; während eines laufenden Speichervorgangs ist der Button deaktiviert.
 * **Abbrechen** – verwirft die noch nicht gespeicherten Änderungen und schließt den Dialog.

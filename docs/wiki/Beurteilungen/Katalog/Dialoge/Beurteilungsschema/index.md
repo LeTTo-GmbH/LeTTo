@@ -91,7 +91,11 @@ Checkbox **Prozentanzeige**. Ist sie aktiviert, kann das Ergebnis dieser Beurtei
 
 ### 1-2 +3
 
-Erlaubt Zwischennoten wie `1-2` oder `+3`. Der dazugehörige Prozentwert wird zwischen den definierten Bewertungsstufen ermittelt.
+![Option für Zwischennoten](detail-zwischennoten-option.png)
+
+Die Checkbox **1-2 +3** legt für jede Beurteilungsart fest, ob **Zwischennoten** eingegeben werden dürfen. Ist die Option aktiviert, akzeptiert LeTTo neben den normalen Noten auch Zwischenstufen, zum Beispiel `1-2`, `2-3`, `+2` oder `2-`. Der dazugehörige Prozentwert wird aus den im Schema hinterlegten Bewertungsstufen abgeleitet.
+
+Ist die Checkbox nicht aktiviert, sollen für diese Beurteilungsart nur die regulär vorgesehenen Noten bzw. Bewertungssymbole verwendet werden. Die Einstellung wirkt sowohl bei [Individualbeurteilungen](../Individualbeurteilung/index.md#zwischennoten) als auch beim [Bewerten einer Klassenbeurteilung](../KlassenbeurteilungBewerten/index.md#zwischennoten).
 
 ### Papierkorb / X
 
@@ -111,7 +115,7 @@ Eine Zahl am Ende einer Teilbeurteilung definiert deren Gewichtung. Beispiel:
 
 Damit geht das Protokoll fünfmal so stark wie die Mitarbeit und 2,5-mal so stark wie die Prüfung in die zusammengesetzte Beurteilung ein.
 
-![Beispiel einer zusammengesetzten Beurteilung aus der bisherigen Wiki-Dokumentation](detail-zusammengesetzte-beurteilung-alt.png)
+![Aktuelle Konfiguration der verwendeten Beurteilungsarten](detail-verwendete-beurteilungsarten.png)
 
 ### Sonderzeichen in der Definition
 
