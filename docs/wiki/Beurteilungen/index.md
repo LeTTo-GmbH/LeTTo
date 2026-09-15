@@ -9,15 +9,15 @@ Dieser Bereich beschreibt die aktuelle Beurteilungsoberfläche für Lehrkräfte 
 
 ## Dialoge des Beurteilungskatalogs
 
-* [Individualbeurteilung](Katalog/Dialoge/Individualbeurteilung/index.md)
-* [Klassenbeurteilung anlegen oder bearbeiten](Katalog/Dialoge/Klassenbeurteilung/index.md)
-* [Klassenbeurteilung für einen Schüler bewerten](Katalog/Dialoge/KlassenbeurteilungBewerten/index.md)
-* [Leistungsübersicht](Katalog/Dialoge/Leistungsuebersicht/index.md)
-* [Schüler-Ergebnisse](Katalog/Dialoge/SchuelerErgebnisse/index.md)
-* [Details zu einer Kompetenzbeurteilung](Katalog/Dialoge/Kompetenzdetails/index.md)
-* [Konfiguration der angezeigten Inhalte](Katalog/Dialoge/Anzeigekonfiguration/index.md)
-* [Beurteilungsschema bearbeiten](Katalog/Dialoge/Beurteilungsschema/index.md)
-* [Import / Export / Druck](Katalog/Dialoge/ImportExportDruck/index.md)
-* [Online-Aktivität bearbeiten](Katalog/Dialoge/OnlineAktivitaet/index.md)
+* [Individualbeurteilung](Katalog/Individualbeurteilung/index.md)
+* [Klassenbeurteilung anlegen oder bearbeiten](Katalog/Klassenbeurteilung/index.md)
+* [Klassenbeurteilung für einen Schüler bewerten](Katalog/KlassenbeurteilungBewerten/index.md)
+* [Leistungsübersicht](Katalog/Leistungsuebersicht/index.md)
+* [Schüler-Ergebnisse](Katalog/SchuelerErgebnisse/index.md)
+* [Details zu einer Kompetenzbeurteilung](Katalog/Kompetenzdetails/index.md)
+* [Konfiguration der angezeigten Inhalte](Katalog/Anzeigekonfiguration/index.md)
+* [Beurteilungsschema bearbeiten](Katalog/Beurteilungsschema/index.md)
+* [Import / Export / Druck](Katalog/ImportExportDruck/index.md)
+* [Online-Aktivität bearbeiten](Katalog/OnlineAktivitaet/index.md)
 
 > **Datenschutz:** In den in dieser Dokumentation verwendeten Screenshots wurden personenbezogene Namen verpixelt. Die Bilddateien wurden außerdem mit sprechenden Dateinamen versehen.

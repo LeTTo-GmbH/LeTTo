@@ -2,7 +2,7 @@
 
 Unter **Beurteilungskatalog** versteht LeTTo die gemeinsame Übersicht über die Leistungen aller Schüler einer Klasse in einem Gegenstand. Der Katalog verbindet Semester- bzw. Jahresnoten, Individualbeurteilungen, klassenweise Beurteilungen und Ergebnisse aus Online-Tests in einer Tabelle.
 
-Je nach Schulform und Konfiguration wird ein Katalog für ein Semester oder für das gesamte Schuljahr geführt. Welche Beurteilungsarten verwendet werden, wie stark sie gewichtet werden und wie sie im Katalog dargestellt werden, legt das verwendete [Beurteilungsschema](Dialoge/Beurteilungsschema/index.md) fest.
+Je nach Schulform und Konfiguration wird ein Katalog für ein Semester oder für das gesamte Schuljahr geführt. Welche Beurteilungsarten verwendet werden, wie stark sie gewichtet werden und wie sie im Katalog dargestellt werden, legt das verwendete [Beurteilungsschema](Beurteilungsschema/index.md) fest.
 
 ![Beurteilungskatalog – Übersicht](beurteilungen-katalog-uebersicht.png)
 
@@ -12,11 +12,11 @@ Rechts oben befinden sich die wichtigsten Aktionen für den Katalog. Die Symbole
 
 ![Aktionsbuttons im Katalog](details/katalog-aktionsbuttons.png)
 
-* <a href="Dialoge/Klassenbeurteilung/index.md"><img src="details/button-klassenbeurteilung.png" width="34" alt="Klassenbeurteilung"></a> **[Klassenbeurteilung anlegen](Dialoge/Klassenbeurteilung/index.md)** – legt eine neue Beurteilung an, die grundsätzlich für die gesamte Klasse vorgesehen ist. Die Definition enthält z. B. Bezeichnung, Datum, Beurteilungsart, Aufgabenstellung und Kompetenzen. Danach wird das Ergebnis für die einzelnen Schüler in der entsprechenden Katalogspalte eingetragen.
-* <a href="Dialoge/Leistungsuebersicht/index.md"><img src="details/button-leistungsuebersicht.png" width="34" alt="Leistungsübersicht"></a> **[Leistungsübersicht](Dialoge/Leistungsuebersicht/index.md)** – zeigt eine zusammenfassende bzw. kompetenzorientierte Auswertung der Leistungen.
-* <a href="Dialoge/Anzeigekonfiguration/index.md"><img src="details/button-anzeigekonfiguration.png" width="34" alt="Anzeigekonfiguration"></a> **[Konfiguration der angezeigten Inhalte](Dialoge/Anzeigekonfiguration/index.md)** – legt Zeitraum, Schema, sichtbare Beurteilungsarten und zusätzliche Anzeigeoptionen fest.
+* <a href="Dialoge/Klassenbeurteilung/index.md"><img src="details/button-klassenbeurteilung.png" width="34" alt="Klassenbeurteilung"></a> **[Klassenbeurteilung anlegen](Klassenbeurteilung/index.md)** – legt eine neue Beurteilung an, die grundsätzlich für die gesamte Klasse vorgesehen ist. Die Definition enthält z. B. Bezeichnung, Datum, Beurteilungsart, Aufgabenstellung und Kompetenzen. Danach wird das Ergebnis für die einzelnen Schüler in der entsprechenden Katalogspalte eingetragen.
+* <a href="Dialoge/Leistungsuebersicht/index.md"><img src="details/button-leistungsuebersicht.png" width="34" alt="Leistungsübersicht"></a> **[Leistungsübersicht](Leistungsuebersicht/index.md)** – zeigt eine zusammenfassende bzw. kompetenzorientierte Auswertung der Leistungen.
+* <a href="Dialoge/Anzeigekonfiguration/index.md"><img src="details/button-anzeigekonfiguration.png" width="34" alt="Anzeigekonfiguration"></a> **[Konfiguration der angezeigten Inhalte](Anzeigekonfiguration/index.md)** – legt Zeitraum, Schema, sichtbare Beurteilungsarten und zusätzliche Anzeigeoptionen fest.
 * <img src="details/button-gemeinsamer-katalog.png" width="34" alt="Gemeinsamer Katalog"> **Gemeinsamer Katalog (∑)** – wechselt in die lehrerübergreifende Ansicht, wenn mehrere Lehrkräfte denselben Gegenstand gemeinsam unterrichten. Details siehe [Gemeinsamer Katalog](#gemeinsamer-katalog).
-* <a href="Dialoge/ImportExportDruck/index.md"><img src="details/button-weitere-aktionen.png" width="34" alt="Import Export Druck"></a> **[Import / Export / Druck](Dialoge/ImportExportDruck/index.md)** – öffnet Export, Import, Aktivitätssuche, Zuordnung von Testversuchen und die Verwaltung von Testversuchen.
+* <a href="Dialoge/ImportExportDruck/index.md"><img src="details/button-weitere-aktionen.png" width="34" alt="Import Export Druck"></a> **[Import / Export / Druck](ImportExportDruck/index.md)** – öffnet Export, Import, Aktivitätssuche, Zuordnung von Testversuchen und die Verwaltung von Testversuchen.
 
 ## Aufbau der Katalogtabelle
 
@@ -28,13 +28,13 @@ Die Tabelle ist horizontal und – bei vielen Schülern – vertikal scrollbar. 
 
 Die Spalte **Name** enthält die Schüler. Ein Klick auf die Überschrift sortiert alphabetisch; der Pfeil zeigt die aktuelle Sortierrichtung.
 
-In der normalen Desktopansicht wird durch Anklicken eines Schülers eine neue [Individualbeurteilung](Dialoge/Individualbeurteilung/index.md) angelegt. Auf kleinen Bildschirmen werden dafür eigene Aktionsflächen verwendet.
+In der normalen Desktopansicht wird durch Anklicken eines Schülers eine neue [Individualbeurteilung](Individualbeurteilung/index.md) angelegt. Auf kleinen Bildschirmen werden dafür eigene Aktionsflächen verwendet.
 
 ### Gruppe
 
-Die Spalte **Gruppe** erscheint nur, wenn **Schülergruppen** in der [Anzeigekonfiguration](Dialoge/Anzeigekonfiguration/index.md) aktiviert sind. Hier kann für jeden Schüler eine Gruppenbezeichnung eingetragen werden. Ein Klick auf die Spaltenüberschrift sortiert nach den Gruppen.
+Die Spalte **Gruppe** erscheint nur, wenn **Schülergruppen** in der [Anzeigekonfiguration](Anzeigekonfiguration/index.md) aktiviert sind. Hier kann für jeden Schüler eine Gruppenbezeichnung eingetragen werden. Ein Klick auf die Spaltenüberschrift sortiert nach den Gruppen.
 
-Die Gruppenbezeichnung wird auch von der Funktion **Für Gruppe übernehmen** verwendet: Eine dafür konfigurierte Teilbeurteilung kann mit einem Klick für alle Schüler derselben Gruppe übernommen werden. Siehe [Klassenbeurteilung bewerten – Für Gruppe übernehmen](Dialoge/KlassenbeurteilungBewerten/index.md#für-gruppe-übernehmen).
+Die Gruppenbezeichnung wird auch von der Funktion **Für Gruppe übernehmen** verwendet: Eine dafür konfigurierte Teilbeurteilung kann mit einem Klick für alle Schüler derselben Gruppe übernommen werden. Siehe [Klassenbeurteilung bewerten – Für Gruppe übernehmen](KlassenbeurteilungBewerten/index.md#für-gruppe-übernehmen).
 
 ### 1. Semester und 2. Semester
 
@@ -49,13 +49,13 @@ Abhängig von der Anzeigekonfiguration enthält jedes Semester:
 
 Die Spalte **∑(%)** zeigt den berechneten Gesamt-Prozentwert des Schülers. Die Berechnung erfolgt über die im Beurteilungsschema definierten Beurteilungsgruppen, Beurteilungsarten und Gewichtungen.
 
-Ein Klick auf den Prozentwert öffnet die ausführliche [Schüler-Ergebnisübersicht](Dialoge/SchuelerErgebnisse/index.md). Dort kann nachvollzogen werden, welche einzelnen Leistungen in das Ergebnis eingehen.
+Ein Klick auf den Prozentwert öffnet die ausführliche [Schüler-Ergebnisübersicht](SchuelerErgebnisse/index.md). Dort kann nachvollzogen werden, welche einzelnen Leistungen in das Ergebnis eingehen.
 
 ### Individualbeurteilungen
 
 Der Bereich **Beurteilungen** enthält Leistungen, die nur für einen einzelnen Schüler erfasst wurden, z. B. eine mündliche Prüfung, eine einzelne Mitarbeitsaufzeichnung oder eine besondere Beobachtung.
 
-Ein Klick auf einen vorhandenen Eintrag öffnet den Dialog [Individualbeurteilung](Dialoge/Individualbeurteilung/index.md). Je nach Beurteilungsart wird die Leistung als Note/Symbol oder als Prozentwert dargestellt.
+Ein Klick auf einen vorhandenen Eintrag öffnet den Dialog [Individualbeurteilung](Individualbeurteilung/index.md). Je nach Beurteilungsart wird die Leistung als Note/Symbol oder als Prozentwert dargestellt.
 
 ### Klassenweise Beurteilungen
 
@@ -69,7 +69,7 @@ Die Spaltenüberschrift kann laut Beurteilungsschema unterschiedlich dargestellt
 * **Abkürzung** – zeigt die ersten Zeichen des Namens.
 * **Voller Titel** – zeigt die vollständige Bezeichnung und gegebenenfalls weitere Informationen.
 
-Ein Klick auf die **Spaltenüberschrift** öffnet die Definition der Klassenbeurteilung. Ein Klick auf eine **Schülerzelle** öffnet die [Bewertung der Klassenbeurteilung](Dialoge/KlassenbeurteilungBewerten/index.md) für genau diesen Schüler.
+Ein Klick auf die **Spaltenüberschrift** öffnet die Definition der Klassenbeurteilung. Ein Klick auf eine **Schülerzelle** öffnet die [Bewertung der Klassenbeurteilung](KlassenbeurteilungBewerten/index.md) für genau diesen Schüler.
 
 ### Gewichtung
 
@@ -83,7 +83,7 @@ Im Katalog kann die Gewichtung in der Zeile **Gewichtung** direkt angeklickt und
 
 Online-Tests erscheinen – abhängig von der Anzeigekonfiguration – nach Art oder nach der Ordnerstruktur. Ein Klick auf das Ergebnis öffnet die Testergebnisse des betreffenden Versuchs. Auch die Gewichtung eines Tests kann direkt in der Gewichtungszeile geändert werden.
 
-Über **… → Aktivitäten** können Testversuche für einen Zeitraum gesucht werden. Die dabei gefundenen Testnoten werden nach dem Schließen des Dialogs **im Katalog farblich hervorgehoben sowie größer/fett dargestellt**, damit die Treffer unmittelbar in der Tabelle auffallen. Details siehe [Aktivitäten und Zuordnung der Testversuche](Dialoge/ImportExportDruck/index.md#register-aktivitäten).
+Über **… → Aktivitäten** können Testversuche für einen Zeitraum gesucht werden. Die dabei gefundenen Testnoten werden nach dem Schließen des Dialogs **im Katalog farblich hervorgehoben sowie größer/fett dargestellt**, damit die Treffer unmittelbar in der Tabelle auffallen. Details siehe [Aktivitäten und Zuordnung der Testversuche](ImportExportDruck/index.md#register-aktivitäten).
 
 ## Individualbeurteilung oder klassenweise Beurteilung?
 
