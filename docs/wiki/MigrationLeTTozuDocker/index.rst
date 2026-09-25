@@ -6,7 +6,7 @@
 * [[Dockerinstallation Erstkonfiguration]]
 
 == Migration einer Linux-basierten LeTTo-Installation direkt auf den bestehenden Server ==
-Besteht bereits eine lokale Installation auf einem Linux Server (idealerweise Ubuntu 18.04,20.04,22.04 oder Debian 11) dann kann direkt auf diesem Server eine dockerbasierte Installation vorgenommen und dabei die bestehenden Daten übernommen werden.
+Besteht bereits eine lokale Installation auf einem Linux Server (idealerweise Ubuntu-Server LTS oder Debian) dann kann direkt auf diesem Server eine dockerbasierte Installation vorgenommen und dabei die bestehenden Daten übernommen werden.
 
 === Als root-Benutzer am Server auf dem LeTTo im Verzeichnise /opt/letto installiert ist ===
 * Firewall so konfigurieren, dass der Port 9096 des Servers von dem PC erreichbar ist, von dem aus das Setup eingerichtet werden soll.
@@ -107,7 +107,7 @@ Liegt eine LeTTo-Installation auf einem beliebigen System vor, so kann sie wie h
 * Die erstellten Dateien werden dann am Zielsystem für den Datenimport benötigt.
 
 === Als root-Benutzer am Ziel Server ===
-* Installation des Servers als Ubuntu 22.04 oder Debian 11 System 
+* Installation des Servers als Ubuntu Server LTS oder Debian System
   * ssh-server sollte installiert sein 
   * Port 80,443,9096 müssen frei sein (kein Webserver wie etwa apache2 oder nginx installiert!)
 * !! '''Docker aus den Ubuntu oder Debian-Quellen darf nicht installiert sein''', bzw. muss vor dem Installationsscript deinstalliert werden. Das Install-Script installiert Docker aus den original Docker-Quellen !! 

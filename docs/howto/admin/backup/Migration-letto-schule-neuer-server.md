@@ -19,7 +19,7 @@
 5. Zum Vergleich der neuen mit der alten Installation kann man noch die Verzeichniss compose, proxy und public ebenfalls packen
    <pre>tar -czf lettocpp.tgz -C /opt/letto/docker compose proxy public</pre>
 
-## Den neuen Server mit Ubuntu 22.04 server installieren
+## Den neuen Server mit Ubuntu 24.04 server installieren
 Bei einem virtuellen Server ist folgendes zu beachten.
 * Unter Linux nur vollvirtualisierte Systeme verwenden, keine LXC-Container-Virtualisierungen verwenden
 * Bei der Linux-Installation nicht die Docker-Version aus den Ubuntu oder Debian-Quellen verwenden

@@ -1,6 +1,6 @@
 # Anforderungen an die virtuelle Maschine eines LeTTo-Servers
 * In dem virtuellen Server wo der LeTTo-Server läuft wird ein Docker-System installiert
-* Als Betriebssystem des virtuellen Servers empfehlen wir Ubuntu-Server LTS (22.04)
+* Als Betriebssystem des virtuellen Servers empfehlen wir Ubuntu-Server LTS (24.04)
 
 ## Hardware
 ### minimale Anforderungen

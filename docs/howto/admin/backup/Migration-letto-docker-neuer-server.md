@@ -15,7 +15,7 @@
    <pre>tar -czf lettodocker.tgz -C /opt/letto docker</pre>
 4. Die erstellte Datei lettodocker.tgz enthält nun alle Daten die am neuen Server benötigt werden!
 
-## Den neuen Server mit Ubuntu 22.04 server installieren
+## Den neuen Server mit Ubuntu 24.04 server installieren
 Bei einem virtuellen Server ist folgendes zu beachten.
 * Unter Linux nur vollvirtualisierte Systeme verwenden, keine LXC-Container-Virtualisierungen verwenden
 * Bei der Linux-Installation nicht die Docker-Version aus den Ubuntu oder Debian-Quellen verwenden
