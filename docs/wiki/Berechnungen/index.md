@@ -773,7 +773,7 @@ Diese Funktionen haben entweder einen oder zwei Parameter. Der erste Parameter s
 
 Die folgenden Angaben werden aus den registrierten Parserfunktionen und deren Implementierung abgeleitet. Bei Funktionen mit mehreren zulässigen Parameterzahlen sind alle Aufrufvarianten angegeben. Datentypen bezeichnen die vom Parser akzeptierte bzw. erwartete Art des Parameters.
 
-<details>
+<details markdown="1">
 <summary><code>abs(x)</code></summary>
 
 Liefert den Absolutbetrag einer komplexen Zahl
@@ -787,7 +787,7 @@ Liefert den Absolutbetrag einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acos(x1)</code></summary>
 
 Arcus-Cosinus
@@ -801,7 +801,7 @@ Arcus-Cosinus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acosh(x1)</code></summary>
 
 Area-Cosinus-Hyperbolicus
@@ -815,7 +815,7 @@ Area-Cosinus-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acot(x1)</code></summary>
 
 Arcus-Cotangens.
@@ -829,7 +829,7 @@ Arcus-Cotangens.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acoth(x1)</code></summary>
 
 Area-Cotangens-Hyperbolicus
@@ -843,7 +843,7 @@ Area-Cotangens-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acsc(x1)</code></summary>
 
 Arcus-Kosekans, inverse Funktion zu `csc`.
@@ -857,7 +857,7 @@ Arcus-Kosekans, inverse Funktion zu `csc`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>acsch(x1)</code></summary>
 
 Area-Kosekans-Hyperbolicus, inverse Funktion zu `csch`.
@@ -871,7 +871,7 @@ Area-Kosekans-Hyperbolicus, inverse Funktion zu `csch`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>allbut(...)</code></summary>
 
 Liefert eine Liste aller Variablen des Parsers als Menge(Vektor) mit Ausnahme der als Parameter angegebenen Variablen
@@ -885,7 +885,7 @@ Liefert eine Liste aller Variablen des Parsers als Menge(Vektor) mit Ausnahme de
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>aopt(x)</code></summary>
 
 Bei Maxima und Lösung geht die Funktion verloren, nur innerhalb von noopt bleibt sie erhalten. Bei der Anzeige führt sie zur Optimierung das Ausdruckes nach Einsetzen der Datensätze.
@@ -899,7 +899,7 @@ Bei Maxima und Lösung geht die Funktion verloren, nur innerhalb von noopt bleib
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>arccos(x1)</code></summary>
 
 Arcus-Cosinus
@@ -915,7 +915,7 @@ Alias/Kompatibilitätsname zu `acos`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>arccot(x1)</code></summary>
 
 Arcus-Cotangens.
@@ -931,7 +931,7 @@ Alias/Kompatibilitätsname zu `acot`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>arcsin(x1)</code></summary>
 
 Arcus-Sinus
@@ -947,7 +947,7 @@ Alias/Kompatibilitätsname zu `asin`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>arctan(x1)</code></summary>
 
 Arcus-Tangens
@@ -963,7 +963,7 @@ Alias/Kompatibilitätsname zu `atan`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>arctan2(y, x)</code></summary>
 
 Arcus-Tangens atan2(y,x)=arctan(y/x)
@@ -980,7 +980,7 @@ Alias/Kompatibilitätsname zu `atan2`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>argnorm(arg)</code></summary>
 
 Wandelt einen Winkel auf den Bereich von 0°-360°
@@ -994,7 +994,7 @@ Wandelt einen Winkel auf den Bereich von 0°-360°
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>asec(x1)</code></summary>
 
 Arcus-Secans, inverse Funktion zu `sec`.
@@ -1008,7 +1008,7 @@ Arcus-Secans, inverse Funktion zu `sec`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>asech(x1)</code></summary>
 
 Area-Secans-Hyperbolicus, inverse Funktion zu `sech`.
@@ -1022,7 +1022,7 @@ Area-Secans-Hyperbolicus, inverse Funktion zu `sech`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>asin(x1)</code></summary>
 
 Arcus-Sinus
@@ -1036,7 +1036,7 @@ Arcus-Sinus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>asinh(x1)</code></summary>
 
 Area-Sinus-Hyperbolicus
@@ -1050,7 +1050,7 @@ Area-Sinus-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>atan(x1)</code></summary>
 
 Arcus-Tangens
@@ -1064,7 +1064,7 @@ Arcus-Tangens
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>atan2(y, x)</code></summary>
 
 Arcus-Tangens atan2(y,x)=arctan(y/x)
@@ -1079,7 +1079,7 @@ Arcus-Tangens atan2(y,x)=arctan(y/x)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>atanh(x1)</code></summary>
 
 Area-Tangens-Hyperbolicus
@@ -1093,7 +1093,7 @@ Area-Tangens-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>band(wert1, ...)</code></summary>
 
 bitweises UND
@@ -1108,7 +1108,7 @@ bitweises UND
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bcd(x)</code></summary>
 
 Wandelt in eine Long-Zahl in ein Feld aus BCD-kodierten Zahlen um
@@ -1122,7 +1122,7 @@ Wandelt in eine Long-Zahl in ein Feld aus BCD-kodierten Zahlen um
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>between(minimum, wert, maximum) / between(minimum, wert, maximum, toleranz, absolut)</code></summary>
 
 prüft ob Parameter1 kleiner als Parameter2 und Parameter2 kleiner als Parameter 3 . Parameter 4 und 5 können optinal für die Toleranz verwendet werden.
@@ -1140,7 +1140,7 @@ prüft ob Parameter1 kleiner als Parameter2 und Parameter2 kleiner als Parameter
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bimp(wert1, wert2)</code></summary>
 
 bitweises Parameter1 impliziert Parameter2
@@ -1155,7 +1155,7 @@ bitweises Parameter1 impliziert Parameter2
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bin(A)</code></summary>
 
 Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Binär-String mit Präfix `0b` aus.
@@ -1171,7 +1171,7 @@ Alias/Kompatibilitätsname zu `decbin`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>binomial(x, y)</code></summary>
 
 Liefert den Binomialkoeffizienten von zwei positiven ganzen Zahlen
@@ -1186,7 +1186,7 @@ Liefert den Binomialkoeffizienten von zwei positiven ganzen Zahlen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>binv(x)</code></summary>
 
 bitweises NICHT mit 8 bit
@@ -1200,7 +1200,7 @@ bitweises NICHT mit 8 bit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bitstream(x, bit) / bitstream(x, bit, groupSize)</code></summary>
 
 Erzeugt aus einer Ganzzahl einen Bitstrom als String mit einer definierten Anzahl von Bit (MSB werden nötigenfalls mit 0 gefüllt) : bitstream(Daten,Bitanzahl,Gruppengröße)
@@ -1216,7 +1216,7 @@ Erzeugt aus einer Ganzzahl einen Bitstrom als String mit einer definierten Anzah
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>blockparity(paritaet, codewortlaenge, codewortanzahl, datenwort, ...)</code></summary>
 
 Kreuz oder Blockparität : blockparity(Parität,Codewortlänge,Codewortanzahl,Datenwort)
@@ -1233,7 +1233,7 @@ Kreuz oder Blockparität : blockparity(Parität,Codewortlänge,Codewortanzahl,Da
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bor(wert1, ...)</code></summary>
 
 bitweises ODER
@@ -1248,7 +1248,7 @@ bitweises ODER
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>bxor(wert1, ...)</code></summary>
 
 bitweises EXKLUSIV ODER
@@ -1263,7 +1263,7 @@ bitweises EXKLUSIV ODER
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>byte(x)</code></summary>
 
 Zahl in eine Ganzzahl wandeln und die letzten 8bit der Zahl Abschneiden, Einheit geht verloren
@@ -1277,7 +1277,7 @@ Zahl in eine Ganzzahl wandeln und die letzten 8bit der Zahl Abschneiden, Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cabs(x)</code></summary>
 
 Liefert den Absolutbetrag einer komplexen Zahl
@@ -1291,7 +1291,7 @@ Liefert den Absolutbetrag einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cAbs(x)</code></summary>
 
 Liefert den Absolutbetrag einer komplexen Zahl
@@ -1307,7 +1307,7 @@ Alias/Kompatibilitätsname zu `cabs`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>carg(x)</code></summary>
 
 Liefert das Argument einer komplexen Zahl
@@ -1321,7 +1321,7 @@ Liefert das Argument einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cArg(x)</code></summary>
 
 Liefert das Argument einer komplexen Zahl
@@ -1337,7 +1337,7 @@ Alias/Kompatibilitätsname zu `carg`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cConjugate(x)</code></summary>
 
 Liefert die konjugiert komplexe Zahl einer komplexen Zahl
@@ -1353,7 +1353,7 @@ Alias/Kompatibilitätsname zu `conjugate`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ccround(wert) / ccround(wert, kommastellen)</code></summary>
 
 Rundet die Zahl kaufmännisch, der zweite Parameter gibt die Anzahl der Kommastellen an, bei komplexe Zahlen wird Real und Imaginärteil gerundet.
@@ -1368,7 +1368,7 @@ Rundet die Zahl kaufmännisch, der zweite Parameter gibt die Anzahl der Kommaste
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ceiling(x)</code></summary>
 
 ceiling(x) Rundet auf die kleinste ganze Zahl, welche größer oder gleich x ist
@@ -1382,7 +1382,7 @@ ceiling(x) Rundet auf die kleinste ganze Zahl, welche größer oder gleich x ist
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>chr(...)</code></summary>
 
 Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus einen String zusammen.
@@ -1396,7 +1396,7 @@ Bestimmt die Zeichen mit dem ASC-II-Code der Long-Parameter und setzt daraus ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cIm(re)</code></summary>
 
 Liefert den Imaginärteil einer komplexen Zahl
@@ -1412,7 +1412,7 @@ Alias/Kompatibilitätsname zu `imagpart`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cnewton(funktion, startwert)</code></summary>
 
 Bestimmt eine komplexe Nullstelle einer Funktion nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der komplexe Startwert.
@@ -1427,7 +1427,7 @@ Bestimmt eine komplexe Nullstelle einer Funktion nach dem Newton-Verfahren. Der 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cnewtonall(funktion, maximalerBetrag)</code></summary>
 
 Bestimmt alle komplexen Nullstellen einer Funktion mit einem Betrag des Funktionsparameters kleiner als ein definierter Wert nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der maximale Betrag des Funktionsparameters. Das Ergebnis ist immer ein Vektor mit den Nullstellen.
@@ -1442,7 +1442,7 @@ Bestimmt alle komplexen Nullstellen einer Funktion mit einem Betrag des Funktion
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>code(codewortlaenge, datenwort1, ...)</code></summary>
 
 Code aus mehreren Codeworten zusammensetzen : code(Codewortlänge,Datenwort)
@@ -1458,7 +1458,7 @@ Code aus mehreren Codeworten zusammensetzen : code(Codewortlänge,Datenwort)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>color(wert) / color(wert, farbringe, modus)</code></summary>
 
 Widerstandsfarbcode berechnen. 1. Parameter muss ein Double sein 2. Parameter sind die Anzahl der Farbringe 3. Parameter ist der Darstellungsmodus (0 = Deutsch ausgeschrieben, 1 = Abkürzung Deutsch mit drei Buchstaben, 2 = Abkürzung Deutsch mit zwei Buchstaben, 3 = Englisch ausgeschrieben, 4 = Abkürzung Englisch mit drei Buchstaben, 5 = Abkürzung Englisch mit zwei Buchstaben)
@@ -1474,7 +1474,7 @@ Widerstandsfarbcode berechnen. 1. Parameter muss ein Double sein 2. Parameter si
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>conjugate(x)</code></summary>
 
 Liefert die konjugiert komplexe Zahl einer komplexen Zahl
@@ -1488,7 +1488,7 @@ Liefert die konjugiert komplexe Zahl einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cos(x1)</code></summary>
 
 Cosinus
@@ -1502,7 +1502,7 @@ Cosinus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cosh(x1)</code></summary>
 
 Cosinus-Hyperbolicus
@@ -1516,7 +1516,7 @@ Cosinus-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cot(x1)</code></summary>
 
 Cotangens, `cot(x)=1/tan(x)`.
@@ -1530,7 +1530,7 @@ Cotangens, `cot(x)=1/tan(x)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>coth(x1)</code></summary>
 
 Cotangens-Hyperbolicus
@@ -1544,7 +1544,7 @@ Cotangens-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cRe(re)</code></summary>
 
 Liefert den Realteil einer komplexen Zahl
@@ -1560,7 +1560,7 @@ Alias/Kompatibilitätsname zu `realpart`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cRectform(x)</code></summary>
 
 hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert wird wie zB.: {=3arg2;karti}
@@ -1573,7 +1573,7 @@ Alias/Kompatibilitätsname zu `rectform`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cround(wert) / cround(wert, kommastellen)</code></summary>
 
 Rundet die Zahl kaufmännisch, der zweite Parameter gibt die Anzahl der Kommastellen an, ohne 2.Parameter wird auf Ganzzahlen gerundet, bei komplexen Zahlen wird Betrag und Winkel in Grad gerundet.
@@ -1588,7 +1588,7 @@ Rundet die Zahl kaufmännisch, der zweite Parameter gibt die Anzahl der Kommaste
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>csc(x1)</code></summary>
 
 Kosecans, `csc(x)=1/sin(x)`.
@@ -1602,7 +1602,7 @@ Kosecans, `csc(x)=1/sin(x)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>csch(x1)</code></summary>
 
 Kosecans-Hyperbolicus, `csch(x)=1/sinh(x)`.
@@ -1616,7 +1616,7 @@ Kosecans-Hyperbolicus, `csch(x)=1/sinh(x)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>csin(zeiger) / csin(zeiger, frequenz, zeitvariable)</code></summary>
 
 Erzeugt aus einer komplexen Zahl (Effektivwert) und einer Frequenz einen Sinusfunktion in der Zeit
@@ -1632,7 +1632,7 @@ Erzeugt aus einer komplexen Zahl (Effektivwert) und einer Frequenz einen Sinusfu
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>cssin(zeiger) / cssin(zeiger, frequenz, zeitvariable)</code></summary>
 
 Erzeugt aus einer komplexen Zahl, die als Spitzenwert interpretiert wird, eine Sinusfunktion. `cssin(U)`, `cssin(U,f)` oder `cssin(U,f,x)`.
@@ -1648,7 +1648,7 @@ Erzeugt aus einer komplexen Zahl, die als Spitzenwert interpretiert wird, eine S
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>curveHTML(mat, variable, variable)</code></summary>
 
 Liefert eine HTML-Ansicht einer Tabelle.
@@ -1664,7 +1664,7 @@ Liefert eine HTML-Ansicht einer Tabelle.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>curveinterpol(tabelle, xSpalte, ySpalte, wert)</code></summary>
 
 Interpoliert in einer gespeicherten Tabelle zwischen den Stützpunkten. Als Ergebnis wird ein Vektor aller gefundenen Punkte auf der Kennlinie geliefert
@@ -1681,7 +1681,7 @@ Interpoliert in einer gespeicherten Tabelle zwischen den Stützpunkten. Als Erge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>curveinterpolfirst(tabelle, xSpalte, ySpalte, wert)</code></summary>
 
 Interpoliert in einer gespeicherten Tabelle und liefert den ersten interpolierten Punkt auf der Kennlinie.
@@ -1698,7 +1698,7 @@ Interpoliert in einer gespeicherten Tabelle und liefert den ersten interpolierte
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>curvepv(tabelle, xSpalte, ySpalte)</code></summary>
 
 Liest aus einer gespeicherten Tabelle die Spalte "spalteX" für die x-Werte und die Spalte "spalteY" für die Y-Werte eines pv-Vektors
@@ -1714,7 +1714,7 @@ Liest aus einer gespeicherten Tabelle die Spalte "spalteX" für die x-Werte und 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>curveunits(mat)</code></summary>
 
 Liefert einen Vektor aller Einheiten der Spalten einer Matrix
@@ -1728,7 +1728,7 @@ Liefert einen Vektor aller Einheiten der Spalten einer Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dataset(name)</code></summary>
 
 liefert alle Datensätze einer Datensatz-Definition in einem Vektor
@@ -1741,7 +1741,7 @@ liefert alle Datensätze einer Datensatz-Definition in einem Vektor
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>date(year, month, day, hour, minute, second, ...)</code></summary>
 
 date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 00:00:00
@@ -1758,7 +1758,7 @@ date(y,m,d,h,min,sec) erzeugt ein Datum als Ganzzahl in Sekunden seit 1.1.0000 0
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateday(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl den Tag
@@ -1769,7 +1769,7 @@ Erzeugt aus einem Datum als Ganzzahl den Tag
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datedayofyear(date)</code></summary>
 
 Liefert den Tag des Jahres
@@ -1780,7 +1780,7 @@ Liefert den Tag des Jahres
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datediff(date1, date2)</code></summary>
 
 Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datum. Ergebnis als Double in Sekunden
@@ -1792,7 +1792,7 @@ Rechnet die Differenz von 2 ganzzahligen Datumswerten. Erstes minus zweites Datu
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datehour(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl die Stunde
@@ -1803,7 +1803,7 @@ Erzeugt aus einem Datum als Ganzzahl die Stunde
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateminute(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl die Minute
@@ -1814,7 +1814,7 @@ Erzeugt aus einem Datum als Ganzzahl die Minute
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datemix(di)</code></summary>
 
 Erzeugt aus einem Datumswert (Sekunden seit 1.1.00 0:00:00) einen Vektor mit Jahr,Monat,Tag,Stunde,Minute,Sekunde
@@ -1825,7 +1825,7 @@ Erzeugt aus einem Datumswert (Sekunden seit 1.1.00 0:00:00) einen Vektor mit Jah
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datemonth(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl das Monat
@@ -1836,7 +1836,7 @@ Erzeugt aus einem Datum als Ganzzahl das Monat
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateparse(string)</code></summary>
 
 Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000
@@ -1847,7 +1847,7 @@ Wandelt einen String in ein Datum als Ganzzahl in Sekunden seit 1.1.0000
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datesecond(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl die Sekunde
@@ -1858,7 +1858,7 @@ Erzeugt aus einem Datum als Ganzzahl die Sekunde
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datestring(datum, format)</code></summary>
 
 datestring(x) datestring(x,"format") erzeugt aus einem Datum in Sekunden seit 1.1.0000 eine Stringausgabe
@@ -1870,7 +1870,7 @@ datestring(x) datestring(x,"format") erzeugt aus einem Datum in Sekunden seit 1.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>datetimestring(datum, format)</code></summary>
 
 erzeugt Datum und Uhrzeit als String
@@ -1882,7 +1882,7 @@ erzeugt Datum und Uhrzeit als String
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateweek(date)</code></summary>
 
 Liefert die Kalenderwoche des Tages innerhalb des Jahres
@@ -1893,7 +1893,7 @@ Liefert die Kalenderwoche des Tages innerhalb des Jahres
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateweekday(date)</code></summary>
 
 Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7
@@ -1904,7 +1904,7 @@ Liefert den Wochentag beginnend mit Montag als 1 und Sonntag als 7
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dateyear(date)</code></summary>
 
 Erzeugt aus einem Datum als Ganzzahl das Jahr
@@ -1915,7 +1915,7 @@ Erzeugt aus einem Datum als Ganzzahl das Jahr
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>days(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit
@@ -1926,7 +1926,7 @@ Erzeugt aus einem Sekundenwert die Tage als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dB(oe)</code></summary>
 
 Wandelt einen Zahlenwert in eine nicht skalierende Dezibel-Einheit um. Einheitenlos wird in dB20 gewandelt, mit den Einheiten V,mV,uV,W,mW,uW wird in die zugehörige dB-Einheit gewandelt.
@@ -1940,7 +1940,7 @@ Wandelt einen Zahlenwert in eine nicht skalierende Dezibel-Einheit um. Einheiten
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dB10(oe)</code></summary>
 
 wandelt eine Zahl in einen Dezibel Wert dB10 mit 10dB pro Dekade
@@ -1954,7 +1954,7 @@ wandelt eine Zahl in einen Dezibel Wert dB10 mit 10dB pro Dekade
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBm(oe)</code></summary>
 
 Wandelt eine Leistung in dBm um. Bezugsleistung ist 1 mW: `10*log10(P/1mW)`. Bei komplexen Leistungen wird der Betrag verwendet; vorhandene dBW/dBm/dBu-Werte werden entsprechend umgerechnet.
@@ -1968,7 +1968,7 @@ Wandelt eine Leistung in dBm um. Bezugsleistung ist 1 mW: `10*log10(P/1mW)`. Bei
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBmV(oe)</code></summary>
 
 Wandelt eine Spannung in dBmV um. Bezugsspannung ist 1 mV: `20*log10(U/1mV)`. Bei komplexen Spannungen wird der Betrag verwendet.
@@ -1982,7 +1982,7 @@ Wandelt eine Spannung in dBmV um. Bezugsspannung ist 1 mV: `20*log10(U/1mV)`. Be
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBu(oe)</code></summary>
 
 Wandelt eine Leistung in den in LeTTo verwendeten dBu-Pegel mit Bezugsleistung 1 µW um: `10*log10(P/1uW)`. Hinweis: Dies ist die LeTTo-Definition von dBu und nicht die übliche Spannungsdefinition bezogen auf 0,775 V.
@@ -1996,7 +1996,7 @@ Wandelt eine Leistung in den in LeTTo verwendeten dBu-Pegel mit Bezugsleistung 1
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBuV(oe)</code></summary>
 
 Wandelt eine Spannung in dBuV um. Bezugsspannung ist 1 µV: `20*log10(U/1uV)`. Bei komplexen Spannungen wird der Betrag verwendet.
@@ -2010,7 +2010,7 @@ Wandelt eine Spannung in dBuV um. Bezugsspannung ist 1 µV: `20*log10(U/1uV)`. B
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBV(oe)</code></summary>
 
 Wandelt eine Spannung in dBV um. Bezugsspannung ist 1 V: `20*log10(U/1V)`. Bei komplexen Spannungen wird der Betrag verwendet; vorhandene dBV/dBmV/dBuV-Werte werden entsprechend umgerechnet.
@@ -2024,7 +2024,7 @@ Wandelt eine Spannung in dBV um. Bezugsspannung ist 1 V: `20*log10(U/1V)`. Bei k
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dBW(oe)</code></summary>
 
 wandelt eine Leistung in einen Dezibel Wert dBW mit 10dB pro Dekade
@@ -2038,7 +2038,7 @@ wandelt eine Leistung in einen Dezibel Wert dBW mit 10dB pro Dekade
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>decbin(A)</code></summary>
 
 Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Binär-String mit Präfix `0b` aus.
@@ -2052,7 +2052,7 @@ Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Binär-String mit Präfix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>dechex(A)</code></summary>
 
 Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Hexadezimal-String mit Präfix `0x` aus.
@@ -2066,7 +2066,7 @@ Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Hexadezimal-String mit Pr
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>declare(variable)</code></summary>
 
 Deklariert Variablentypen für die Maxima-Kompatibilität. Die Funktion ist im internen Parser derzeit noch nicht funktional umgesetzt und liefert dort `false`.
@@ -2080,7 +2080,7 @@ Deklariert Variablentypen für die Maxima-Kompatibilität. Die Funktion ist im i
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>defrac(wertOderZaehler) / defrac(wertOderZaehler, nenner)</code></summary>
 
 zerlegt eine rationale Zahl in Zähler und Nenner als Menge Die erhaltene Menge kann mit dem Format-Modfier frac als gemischter Bruch dargestellt werden
@@ -2095,7 +2095,7 @@ zerlegt eine rationale Zahl in Zähler und Nenner als Menge Die erhaltene Menge 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>defracmix(wertOderGanzzahl) / defracmix(wertOderGanzzahl, nennerOderZaehler) / defracmix(wertOderGanzzahl, nennerOderZaehler, nenner)</code></summary>
 
 zerlegt eine rationale Zahl in einen gemischten Bruch aus ganzzahligem Summanden, Zähler und Nenner als Menge Die erhaltene Menge kann mit dem Format-Modfier frac als gemischter Bruch dargestellt werden (siehe Zahlendarstellung)
@@ -2111,7 +2111,7 @@ zerlegt eine rationale Zahl in einen gemischten Bruch aus ganzzahligem Summanden
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>deg(string)</code></summary>
 
 erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen WinkelString einen Winkel im Bogenmaß
@@ -2125,7 +2125,7 @@ erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>degmix(string)</code></summary>
 
 zerlegt einen Winkel im Bogenmaß in einen Winkel in Grad, Minuten und Sekunden in einem Vektor
@@ -2139,7 +2139,7 @@ zerlegt einen Winkel im Bogenmaß in einen Winkel in Grad, Minuten und Sekunden 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>degstring(winkel)</code></summary>
 
 erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder einen Winkel im Bogenmaß einen String der Winkeldarstellung
@@ -2153,7 +2153,7 @@ erzeugt aus einem Vektor mit Grad, Minuten und Sekunden als Zahlenwerte oder ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>delay(t)</code></summary>
 
 Test-/Diagnosefunktion: verzögert die Auswertung um die angegebene Anzahl Sekunden und prüft dabei regelmäßig auf einen Timeout/Abbruch.
@@ -2167,7 +2167,7 @@ Test-/Diagnosefunktion: verzögert die Auswertung um die angegebene Anzahl Sekun
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>diff(funktion, variable) / diff(funktion, variable, anzahl)</code></summary>
 
 Berechnet die Ableitung einer Funktion.
@@ -2183,7 +2183,7 @@ Berechnet die Ableitung einer Funktion.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>div(dividend, divisor)</code></summary>
 
 Ganzzahldivision, Ergebnis wird abgeschnitten
@@ -2198,7 +2198,7 @@ Ganzzahldivision, Ergebnis wird abgeschnitten
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>double(A)</code></summary>
 
 Zahl in eine Gleitkommazahl umwandeln, die Einheit geht dabei verloren
@@ -2212,7 +2212,7 @@ Zahl in eine Gleitkommazahl umwandeln, die Einheit geht dabei verloren
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>e12(A)</code></summary>
 
 rundet einen Zahlenwert auf den nächstliegenden Wert der Normreihe E12. Die Rundung erfolgt geometrisch d.h. der Quotient zwischen Normwert und zu rundendem Wert wird minimiert.
@@ -2226,7 +2226,7 @@ rundet einen Zahlenwert auf den nächstliegenden Wert der Normreihe E12. Die Run
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>e12down(A)</code></summary>
 
 rundet einen Zahlenwert auf den nächstkleineren Wert der Normreihe E12
@@ -2240,7 +2240,7 @@ rundet einen Zahlenwert auf den nächstkleineren Wert der Normreihe E12
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>e12up(A)</code></summary>
 
 rundet einen Zahlenwert auf den nächstgrößerern Wert der Normreihe E12
@@ -2254,7 +2254,7 @@ rundet einen Zahlenwert auf den nächstgrößerern Wert der Normreihe E12
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>eh(wert)</code></summary>
 
 Liefert zu einem numerischen Wert die zugehörige Einheit als Wert 1 zurück; bei einem einheitenlosen Wert wird `1` geliefert.
@@ -2268,7 +2268,7 @@ Liefert zu einem numerischen Wert die zugehörige Einheit als Wert 1 zurück; be
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>eq(wert1, wert2) / eq(wert1, wert2, toleranz, absolut)</code></summary>
 
 gleich eq(wert1,wert2),eq(wert1,wert2,toleranz),eq(wert1,wert2,toleranz,absolut)
@@ -2285,7 +2285,7 @@ gleich eq(wert1,wert2),eq(wert1,wert2,toleranz),eq(wert1,wert2,toleranz,absolut)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>eqruntime(x1, x2)</code></summary>
 
 symbolischer Vergleich, welcher symbolisch erst bei der Ergebnisberechnung ausgeführt wird. Muss verwendet werden, wenn bei Vergleichen symbolische Antworten von Schülern (Q0,Q1,...) verwendet werden.
@@ -2300,7 +2300,7 @@ symbolischer Vergleich, welcher symbolisch erst bei der Ergebnisberechnung ausge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ev(ausdruck, ...)</code></summary>
 
 Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden, welche dann in den Ausdruck eingesetzt werden
@@ -2315,7 +2315,7 @@ Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden,
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>evruntime(ausdruck, ...)</code></summary>
 
 Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden, welche dann in den Ausdruck eingesetzt werden. Das Einsetzen erfolgt erst bei der Ergebnisberechnung!
@@ -2330,7 +2330,7 @@ Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden,
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>exp(x1)</code></summary>
 
 Exponentialfunktion
@@ -2344,7 +2344,7 @@ Exponentialfunktion
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>factfrompolynom(polynom)</code></summary>
 
 Erzeugt aus einem Polynom einen Vektor mit den Polynomfaktoren. Erste Zeile Zählerfaktoren, zweite Zeile Nennerfaktoren, dritte Zeile Polynomvariable, vierte Zeile Einheit der Polynomvariable
@@ -2358,7 +2358,7 @@ Erzeugt aus einem Polynom einen Vektor mit den Polynomfaktoren. Erste Zeile Zäh
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>factorial(wert)</code></summary>
 
 Liefert die Fakultät einer positiven ganzen Zahl
@@ -2372,7 +2372,7 @@ Liefert die Fakultät einer positiven ganzen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fifth() / fifth(variable)</code></summary>
 
 liefert das fünfte Element mit dem Index 4 eines Vektors
@@ -2386,7 +2386,7 @@ liefert das fünfte Element mit dem Index 4 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>first() / first(variable)</code></summary>
 
 liefert das erste Element mit dem Index 0 eines Vektors
@@ -2400,7 +2400,7 @@ liefert das erste Element mit dem Index 0 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>floor(x)</code></summary>
 
 Rundet auf die größte ganze Zahl, welche kleiner oder gleich x ist
@@ -2414,7 +2414,7 @@ Rundet auf die größte ganze Zahl, welche kleiner oder gleich x ist
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>foreach(menge, variable, ausdruck)</code></summary>
 
 Führt für jedes Element eine Berechnung aus und verbindet die Ergebnisse mit der Aggregatfunktion
@@ -2430,7 +2430,7 @@ Führt für jedes Element eine Berechnung aus und verbindet die Ergebnisse mit d
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>forloop(variable, startwert, bedingung, inkrement, ausdruck)</code></summary>
 
 Führt eine Zählschleife aus forloop(Variable,Startwert,Wiederholbedingung,Inkrement,Ausdruck,Aggregatsfunktion). Ohne Aggregatsfunktion wird ein Feld mit den Ergebnissen der Schleifeniterationen geliefert.
@@ -2448,7 +2448,7 @@ Führt eine Zählschleife aus forloop(Variable,Startwert,Wiederholbedingung,Inkr
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fourth() / fourth(variable)</code></summary>
 
 liefert das vierte Element mit dem Index 3 eines Vektors
@@ -2462,7 +2462,7 @@ liefert das vierte Element mit dem Index 3 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>frac(v1) / frac(v1, anzahl) / frac(v1, anzahl, anzahl)</code></summary>
 
 erzeugt aus einer Menge aus 2 oder 3 Elementen (von defrac) eine rationale Zahl
@@ -2478,7 +2478,7 @@ erzeugt aus einer Menge aus 2 oder 3 Elementen (von defrac) eine rationale Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdB(oe)</code></summary>
 
 Wandelt eine nicht skalierende Dezibel-Einheit in einen normalen Zahlenwert um
@@ -2492,7 +2492,7 @@ Wandelt eine nicht skalierende Dezibel-Einheit in einen normalen Zahlenwert um
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdB10(oe)</code></summary>
 
 wandelt einen Dezibel Wert mit 10dB pro Dekade in den Ausgangswert
@@ -2506,7 +2506,7 @@ wandelt einen Dezibel Wert mit 10dB pro Dekade in den Ausgangswert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBm(oe)</code></summary>
 
 Wandelt einen dBm-Wert in eine Leistung zurück. Ein einheitenloser Zahlenwert wird als dBm interpretiert und als Leistung in mW zurückgegeben.
@@ -2520,7 +2520,7 @@ Wandelt einen dBm-Wert in eine Leistung zurück. Ein einheitenloser Zahlenwert w
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBmV(oe)</code></summary>
 
 Wandelt einen dBmV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert wird als dBmV interpretiert und als Spannung in mV zurückgegeben.
@@ -2534,7 +2534,7 @@ Wandelt einen dBmV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBu(oe)</code></summary>
 
 Wandelt einen LeTTo-dBu-Wert in eine Leistung zurück. Ein einheitenloser Zahlenwert wird als dBu interpretiert und als Leistung in µW zurückgegeben.
@@ -2548,7 +2548,7 @@ Wandelt einen LeTTo-dBu-Wert in eine Leistung zurück. Ein einheitenloser Zahlen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBuV(oe)</code></summary>
 
 Wandelt einen dBuV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert wird als dBuV interpretiert und als Spannung in µV zurückgegeben.
@@ -2562,7 +2562,7 @@ Wandelt einen dBuV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBV(oe)</code></summary>
 
 Wandelt einen dBV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert wird als dBV interpretiert und als Spannung in V zurückgegeben.
@@ -2576,7 +2576,7 @@ Wandelt einen dBV-Wert in eine Spannung zurück. Ein einheitenloser Zahlenwert w
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>fromdBW(oe)</code></summary>
 
 wandelt einen Dezibel Wert mit 10dB pro Dekade in eine Leistung
@@ -2590,7 +2590,7 @@ wandelt einen Dezibel Wert mit 10dB pro Dekade in eine Leistung
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ge(wert1, wert2) / ge(wert1, wert2, toleranz, absolut)</code></summary>
 
 größer gleich ge(wert1,wert2),ge(wert1,wert2,toleranz),ge(wert1,wert2,toleranz,absolut)
@@ -2607,7 +2607,7 @@ größer gleich ge(wert1,wert2),ge(wert1,wert2,toleranz),ge(wert1,wert2,toleranz
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>getvars(variable)</code></summary>
 
 Liefert alle im Ausdruck vorkommenden Variablennamen als Vektor von Strings.
@@ -2621,7 +2621,7 @@ Liefert alle im Ausdruck vorkommenden Variablennamen als Vektor von Strings.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ggT(wert1, ...)</code></summary>
 
 berechnet den größten gemeinsamen Teiler von mehreren Zahlen
@@ -2636,7 +2636,7 @@ berechnet den größten gemeinsamen Teiler von mehreren Zahlen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ground(wert, gueltigeZiffern)</code></summary>
 
 Rundet die Zahl auf die im zweiten Parameter angegebenen gültigen Ziffern
@@ -2651,7 +2651,7 @@ Rundet die Zahl auf die im zweiten Parameter angegebenen gültigen Ziffern
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>gt(wert1, wert2) / gt(wert1, wert2, toleranz, absolut)</code></summary>
 
 größer
@@ -2668,7 +2668,7 @@ größer
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>hamming(codewort1, codewort2, ...)</code></summary>
 
 Bestimmt den Hamming-Abstand von mehreren Codeworten
@@ -2684,7 +2684,7 @@ Bestimmt den Hamming-Abstand von mehreren Codeworten
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>hex(A)</code></summary>
 
 Wandelt eine Zahl in eine Ganzzahl um und gibt sie als Hexadezimal-String mit Präfix `0x` aus.
@@ -2700,7 +2700,7 @@ Alias/Kompatibilitätsname zu `dechex`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>hours(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit
@@ -2711,7 +2711,7 @@ Erzeugt aus einem Sekundenwert die Stunden als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>if(e1, e2, e3)</code></summary>
 
 if(bedingung,wahr,falsch)
@@ -2727,7 +2727,7 @@ if(bedingung,wahr,falsch)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ilt(funktion, variable, zielvariable)</code></summary>
 
 Bestimmt die inverse Laplace-Transformierte eine Laplace-Funktion
@@ -2743,7 +2743,7 @@ Bestimmt die inverse Laplace-Transformierte eine Laplace-Funktion
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>imagpart(re)</code></summary>
 
 Liefert den Imaginärteil einer komplexen Zahl
@@ -2757,7 +2757,7 @@ Liefert den Imaginärteil einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>infiniteloop()</code></summary>
 
 Test-/Diagnosefunktion: erzeugt absichtlich eine Endlosschleife und dient zum Testen der Timeout-Behandlung. Nicht für reguläre Aufgaben verwenden.
@@ -2768,7 +2768,7 @@ Test-/Diagnosefunktion: erzeugt absichtlich eine Endlosschleife und dient zum Te
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>int(x)</code></summary>
 
 Zahl in eine Ganzzahl wandeln und die letzten 32bit der Zahl Abschneiden, Einheit geht verloren
@@ -2782,7 +2782,7 @@ Zahl in eine Ganzzahl wandeln und die letzten 32bit der Zahl Abschneiden, Einhei
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>integrate(funktion, variable) / integrate(funktion, variable, untergrenze, obergrenze)</code></summary>
 
 Berechnet das unbestimmte oder bestimmte Integral einer Funktion.
@@ -2799,7 +2799,7 @@ Berechnet das unbestimmte oder bestimmte Integral einer Funktion.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>interpol(pv, py) / interpol(pv, py, x)</code></summary>
 
 Interpolationsfunktion zwischen mehreren Stützpunkten in einem Koordinatensystem. interpol(WerteX,WerteY,x)
@@ -2815,7 +2815,7 @@ Interpolationsfunktion zwischen mehreren Stützpunkten in einem Koordinatensyste
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>inv(wertOderMatrix)</code></summary>
 
 invertiert eine quadratische Matrix oder bildet 1/x
@@ -2829,7 +2829,7 @@ invertiert eine quadratische Matrix oder bildet 1/x
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>inv16(x)</code></summary>
 
 bitweise Invertieren und die letzten 16 Bit bestimmen
@@ -2843,7 +2843,7 @@ bitweise Invertieren und die letzten 16 Bit bestimmen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>inv32(x)</code></summary>
 
 bitweise Invertieren und die letzten 32 Bit bestimmen
@@ -2857,7 +2857,7 @@ bitweise Invertieren und die letzten 32 Bit bestimmen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>inv64(x)</code></summary>
 
 bitweise Invertieren und die letzten 64 Bit bestimmen
@@ -2871,7 +2871,7 @@ bitweise Invertieren und die letzten 64 Bit bestimmen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>inv8(x)</code></summary>
 
 bitweises NICHT mit 8 bit
@@ -2887,7 +2887,7 @@ Alias/Kompatibilitätsname zu `binv`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ip(e1) / ip(e1, e2, e3, e4)</code></summary>
 
 Wandelt eine Long-Zahl in einen String als IP-Adresse um, oder 4 Byte-Zahlen in eine Long Zahl als IP-32-bit-Adresse
@@ -2904,7 +2904,7 @@ Wandelt eine Long-Zahl in einen String als IP-Adresse um, oder 4 Byte-Zahlen in 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ise12(wert)</code></summary>
 
 prüft ob der als Parameter übergebenen Wert ein Wert der Normreihe E12 ist.
@@ -2918,7 +2918,7 @@ prüft ob der als Parameter übergebenen Wert ein Wert der Normreihe E12 ist.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>islong(wert)</code></summary>
 
 Prüft ob es sich um eine ganze Zahl handelt.
@@ -2932,7 +2932,7 @@ Prüft ob es sich um eine ganze Zahl handelt.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>isNearInteger(wert) / isNearInteger(wert, toleranz)</code></summary>
 
 prüft ob eine Zahl nahe genug an einer Ganzzahl liegt, um als Ganzzahl interpretiert zu werden. Es wird die Toleranz der Frage verwendet
@@ -2947,7 +2947,7 @@ prüft ob eine Zahl nahe genug an einer Ganzzahl liegt, um als Ganzzahl interpre
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>isnorm(wert, normreihe)</code></summary>
 
 prüft ob der als Parameter übergebenen Wert ein Wert einer gegebenen Wertereihe oder Normreihe ist.
@@ -2962,7 +2962,7 @@ prüft ob der als Parameter übergebenen Wert ein Wert einer gegebenen Wertereih
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ispolynom(ausdruck) / ispolynom(ausdruck, variable, numerisch)</code></summary>
 
 Prüft, ob der Ausdruck ein Polynom ist. Die Funktion wird ausgewertet, sobald der Parameter als Polynom erkannt bzw. nicht als Polynom erkannt werden kann.
@@ -2978,7 +2978,7 @@ Prüft, ob der Ausdruck ein Polynom ist. Die Funktion wird ausgewertet, sobald d
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>isprim(x1)</code></summary>
 
 prüft ob die angegebene Zahl eine Primzahl ist
@@ -2992,7 +2992,7 @@ prüft ob die angegebene Zahl eine Primzahl ist
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>isset(wert)</code></summary>
 
 Prüft ob es sich um eine Menge handelt.
@@ -3006,7 +3006,7 @@ Prüft ob es sich um eine Menge handelt.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>issetlong(wert)</code></summary>
 
 Prüft ob es sich um eine Menge aus ganzen Zahlen handelt.
@@ -3020,7 +3020,7 @@ Prüft ob es sich um eine Menge aus ganzen Zahlen handelt.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>issetnumeric(wert)</code></summary>
 
 Prüft ob es sich um eine Menge aus reellen Zahlen handelt.
@@ -3034,7 +3034,7 @@ Prüft ob es sich um eine Menge aus reellen Zahlen handelt.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>kgV(wert1, ...)</code></summary>
 
 berechnet das kleinste gemeinsame Vielfache von mehreren Zahlen
@@ -3049,7 +3049,7 @@ berechnet das kleinste gemeinsame Vielfache von mehreren Zahlen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>kill(variable1)</code></summary>
 
 löscht Variable aus dem Variablenspeicher
@@ -3063,7 +3063,7 @@ löscht Variable aus dem Variablenspeicher
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>komplement(x) / komplement(x, bit)</code></summary>
 
 Bildet das Zweierkomplement mit einer negativen Zahl mit einer bestimmten Bitanzahl, fehlt die Bitanzahl, so wird ein 32Bit-2er-komplement gebildet
@@ -3078,7 +3078,7 @@ Bildet das Zweierkomplement mit einer negativen Zahl mit einer bestimmten Bitanz
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>land(...)</code></summary>
 
 logisches UND
@@ -3091,7 +3091,7 @@ logisches UND
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>laplace(funktion, variable, zielvariable)</code></summary>
 
 Bestimmt die Laplace-Transformierte einer Funktion.
@@ -3107,7 +3107,7 @@ Bestimmt die Laplace-Transformierte einer Funktion.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>last() / last(variable)</code></summary>
 
 liefert das letzte Element eines Vektors
@@ -3121,7 +3121,7 @@ liefert das letzte Element eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>le(wert1, wert2) / le(wert1, wert2, toleranz, absolut)</code></summary>
 
 kleiner gleich le(wert1,wert2),le(wert1,wert2,toleranz),le(wert1,wert2,toleranz,absolut)
@@ -3138,7 +3138,7 @@ kleiner gleich le(wert1,wert2),le(wert1,wert2,toleranz),le(wert1,wert2,toleranz,
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lhs(ausdruck)</code></summary>
 
 liefert die linke Seite einer Gleichung, Ungleichung oder eines Infix Operators
@@ -3152,7 +3152,7 @@ liefert die linke Seite einer Gleichung, Ungleichung oder eines Infix Operators
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>linspace(von, bis, anz)</code></summary>
 
 linspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert mit gleichem Abstand
@@ -3168,7 +3168,7 @@ linspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ln(x1)</code></summary>
 
 natürlicher Logarythmus
@@ -3184,7 +3184,7 @@ Alias/Kompatibilitätsname zu `log`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lnoopt(ausdruck)</code></summary>
 
 Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird die Funktion entfernt und in der Lösung wird nach dem Einsetzen der Werte der Ausdruck nicht mehr optimiert.
@@ -3198,7 +3198,7 @@ Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird di
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lnot(bedingung)</code></summary>
 
 logisches NICHT. Vorsicht ein symbolisches Ergebnis von Maxima liefert not als Prefix-Operator, welcher vom Parser nicht unterstützt wird ( Verwende statt dessen lnot )
@@ -3213,7 +3213,7 @@ Alias/Kompatibilitätsname zu `not`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>log(x1)</code></summary>
 
 natürlicher Logarythmus
@@ -3227,7 +3227,7 @@ natürlicher Logarythmus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>log10(x1)</code></summary>
 
 Logarythmus zur Basis 10
@@ -3241,7 +3241,7 @@ Logarythmus zur Basis 10
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>logspace(von, bis, anz)</code></summary>
 
 logspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert mit gleichem logarithmischen Abstand
@@ -3257,7 +3257,7 @@ logspace(start,ende,anzahl) liefert ein Feld von Werte von Startwert bis Endwert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>long(A)</code></summary>
 
 Zahl in eine Ganzzahl wandeln , Einheit geht verloren
@@ -3271,7 +3271,7 @@ Zahl in eine Ganzzahl wandeln , Einheit geht verloren
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lopt(ausdruck)</code></summary>
 
 Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird die Funktion entfernt und in der Lösung wird nach dem Einsetzen der Werte der Ausdruck vollständig optimiert.
@@ -3285,7 +3285,7 @@ Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird di
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>loptnumeric(ausdruck)</code></summary>
 
 Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird die Funktion entfernt und in der Lösung wird nach dem Einsetzen der Werte der Ausdruck nur numerisch optimiert.
@@ -3299,7 +3299,7 @@ Im Maximafeld bleibt die Funktion ohne Funktion erhalten, im Ergebnis {= wird di
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lor(...)</code></summary>
 
 logisches ODER
@@ -3312,7 +3312,7 @@ logisches ODER
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>lt(wert1, wert2) / lt(wert1, wert2, toleranz, absolut)</code></summary>
 
 kleiner
@@ -3329,7 +3329,7 @@ kleiner
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>matchstring(string, regexp)</code></summary>
 
 Prüft ob eine String einem regulären Ausdruck entspricht.
@@ -3344,7 +3344,7 @@ Prüft ob eine String einem regulären Ausdruck entspricht.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>matrix(...)</code></summary>
 
 erzeugt aus mehreren gleich langen Vektoren eine Matrix
@@ -3358,7 +3358,7 @@ erzeugt aus mehreren gleich langen Vektoren eine Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>max(werte, ...)</code></summary>
 
 Maximum von mehreren Werten suchen
@@ -3373,7 +3373,7 @@ Maximum von mehreren Werten suchen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mcdelete(matrix, pos)</code></summary>
 
 mcdelete(matrix,position) Löscht die angegebene Spalte aus einer Matrix
@@ -3388,7 +3388,7 @@ mcdelete(matrix,position) Löscht die angegebene Spalte aus einer Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mcinsert(matrix, matrixOderVektor, position)</code></summary>
 
 mcinsert(matrix,matrixodervektor,position) Fügt an der Spaltenposition eine Matrix oder einen Vektor als neue Spalten ein
@@ -3404,7 +3404,7 @@ mcinsert(matrix,matrixodervektor,position) Fügt an der Spaltenposition eine Mat
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mcols(m1)</code></summary>
 
 liefert die Anzahl der Spalten einer Matrix
@@ -3418,7 +3418,7 @@ liefert die Anzahl der Spalten einer Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mcunion(matrix1, wert2)</code></summary>
 
 Fügt mehrere Matrizen oder Vektoren spaltenweise(nebeneinander) zusammen
@@ -3433,7 +3433,7 @@ Fügt mehrere Matrizen oder Vektoren spaltenweise(nebeneinander) zusammen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mdet(matrix)</code></summary>
 
 Bildet die Determinante einer quadratischen Matrix
@@ -3447,7 +3447,7 @@ Bildet die Determinante einer quadratischen Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>min(werte, ...)</code></summary>
 
 Minimum von mehrere Werten suchen
@@ -3462,7 +3462,7 @@ Minimum von mehrere Werten suchen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>minutes(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit
@@ -3473,7 +3473,7 @@ Erzeugt aus einem Sekundenwert die Minuten als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>minv(matrix)</code></summary>
 
 Bildet die inverse Matrix
@@ -3487,7 +3487,7 @@ Bildet die inverse Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mod(re1, re2)</code></summary>
 
 Mathematische Implementierung von modulo: Divisionsrest einer Division mit ganzzahligem Ergebnis
@@ -3502,7 +3502,7 @@ Mathematische Implementierung von modulo: Divisionsrest einer Division mit ganzz
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mod2(re1, re2)</code></summary>
 
 Symmetrische Implementierung von modulo: Divisionsrest einer Division mit ganzzahligem Ergebnis Der Unterschied zu mod liegt in der Behandlung von negativen Zahlen des ersten Arguments Siehe auch Divisionsrest des Parser-Operators % Berechnungen arithmetische-operatoren-
@@ -3517,7 +3517,7 @@ Symmetrische Implementierung von modulo: Divisionsrest einer Division mit ganzza
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>months(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit
@@ -3528,7 +3528,7 @@ Erzeugt aus einem Sekundenwert die Monate (/30d) als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mprod(matrix1, matrix2)</code></summary>
 
 Bildet das Matrixprodukt aus zwei Matrizen
@@ -3543,7 +3543,7 @@ Bildet das Matrixprodukt aus zwei Matrizen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mrdelete(matrix, pos)</code></summary>
 
 mrdelete(matrix,position) Löscht die angegebene Zeile aus einer Matrix
@@ -3558,7 +3558,7 @@ mrdelete(matrix,position) Löscht die angegebene Zeile aus einer Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mrinsert(matrix, matrixOderVektor, position)</code></summary>
 
 mrinsert(matrix,matrixodervektor,position) Fügt an der Zeilenposition eine Matrix oder einen Vektor als neue Zeilen ein
@@ -3574,7 +3574,7 @@ mrinsert(matrix,matrixodervektor,position) Fügt an der Zeilenposition eine Matr
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mrows(m1)</code></summary>
 
 liefert die Anzahl der Zeilen einer Matrix
@@ -3588,7 +3588,7 @@ liefert die Anzahl der Zeilen einer Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mrunion(matrix1, wert2)</code></summary>
 
 Fügt mehrere Matrizen oder Vektoren zeileweise(untereinander) zusammen
@@ -3603,7 +3603,7 @@ Fügt mehrere Matrizen oder Vektoren zeileweise(untereinander) zusammen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>msub(matrix, oz) / msub(matrix, oz, os, zeilen, spalten)</code></summary>
 
 msub(matrix,zeile,spalte,zeilen,spalten) Liefert eine Untermatrix beginnend bei Zeile und Spalten mit der angegebenen Anzahl von Zeilen und Spalten. Die Parameter Spalte,Zeilen und Spalten sind dabei optional.
@@ -3621,7 +3621,7 @@ msub(matrix,zeile,spalte,zeilen,spalten) Liefert eine Untermatrix beginnend bei 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>mtrans(matrix)</code></summary>
 
 Bildet die transponierte Matrix
@@ -3635,7 +3635,7 @@ Bildet die transponierte Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ne(wert1, wert2) / ne(wert1, wert2, toleranz, absolut)</code></summary>
 
 ungleich ne(wert1,wert2),ne(wert1,wert2,toleranz),ne(wert1,wert2,toleranz,absolut)
@@ -3652,7 +3652,7 @@ ungleich ne(wert1,wert2),ne(wert1,wert2,toleranz),ne(wert1,wert2,toleranz,absolu
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>newton(funktion, startwert)</code></summary>
 
 Bestimmt eine Nullstelle einer Funktion nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der Startwert.
@@ -3667,7 +3667,7 @@ Bestimmt eine Nullstelle einer Funktion nach dem Newton-Verfahren. Der erste Par
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>newtonall(funktion, maximalerBetrag)</code></summary>
 
 Bestimmt alle Nullstellen einer Funktion mit einem Betrag des Funktionsparameters kleiner als ein definierter Wert nach dem Newton-Verfahren. Der erste Parameter ist ein Ausdruck in einer Variablen, der zweite Parameter ist der maximale Betrag des Funktionsparameters. Das Ergebnis ist immer ein Vektor mit den nach aufsteigendem Funktionswert sortierten Nullstellen.
@@ -3682,7 +3682,7 @@ Bestimmt alle Nullstellen einer Funktion mit einem Betrag des Funktionsparameter
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ni(wert) / ni(wert, toleranz)</code></summary>
 
 prüft ob eine Zahl nahe genug an einer Ganzzahl liegt, um als Ganzzahl interpretiert zu werden. Es wird die Toleranz der Frage verwendet
@@ -3699,7 +3699,7 @@ Alias/Kompatibilitätsname zu `isNearInteger`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>noopt(ausdruck)</code></summary>
 
 Ausdruck wird nicht optimiert, bleibt also so erhalten wie angegeben. Die Funktion an sich geht aber verloren.
@@ -3713,7 +3713,7 @@ Ausdruck wird nicht optimiert, bleibt also so erhalten wie angegeben. Die Funkti
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>nopt(ausdruck)</code></summary>
 
 Ausdruck wird nicht optimiert, bleibt also so erhalten wie angegeben. Die Funktion bleibt erhalten und wird erst bei der Lösungsberechnung oder durch opt() entfernt.
@@ -3727,7 +3727,7 @@ Ausdruck wird nicht optimiert, bleibt also so erhalten wie angegeben. Die Funkti
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>norm(wert, normreihe)</code></summary>
 
 rundet einen Zahlenwert auf den nächstliegenden Wert einer gegebenen Wertereihe oder Normreihe. Die Rundung erfolgt geometrisch wenn es sich um eine logarithmisch aufgeteilte Normreihe handelt, oder sonst linear.
@@ -3742,7 +3742,7 @@ rundet einen Zahlenwert auf den nächstliegenden Wert einer gegebenen Wertereihe
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>normdown(wert, normreihe)</code></summary>
 
 rundet einen Zahlenwert auf den nächstkleineren Wert einer gegebenen Wertereihe oder Normreihe.
@@ -3757,7 +3757,7 @@ rundet einen Zahlenwert auf den nächstkleineren Wert einer gegebenen Wertereihe
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>normup(wert, normreihe)</code></summary>
 
 rundet einen Zahlenwert auf den nächstgrößerern Wert einer gegebenen Wertereihe oder Normreihe.
@@ -3772,7 +3772,7 @@ rundet einen Zahlenwert auf den nächstgrößerern Wert einer gegebenen Werterei
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>not(bedingung)</code></summary>
 
 logisches NICHT. Vorsicht ein symbolisches Ergebnis von Maxima liefert not als Prefix-Operator, welcher vom Parser nicht unterstützt wird ( Verwende statt dessen lnot )
@@ -3785,7 +3785,7 @@ logisches NICHT. Vorsicht ein symbolisches Ergebnis von Maxima liefert not als P
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>nullfrompolynom(polynom)</code></summary>
 
 Erzeugt aus einem Polynom einen Vektor mit den PolynomNullstellen und Polstellen. Erste Zeile gemeinsamer Faktor, zweite Zeile Nullstellen, dritte Zeile Polstellen, vierte Zeile Polynomvariable
@@ -3799,7 +3799,7 @@ Erzeugt aus einem Polynom einen Vektor mit den PolynomNullstellen und Polstellen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>number(ausdruck)</code></summary>
 
 Erzwingt die numerische Auswertung aller numerisch berechenbaren Teile. Bleibt bei einem weiterhin symbolischen Ergebnis als Funktion erhalten.
@@ -3813,7 +3813,7 @@ Erzwingt die numerische Auswertung aller numerisch berechenbaren Teile. Bleibt b
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>numdif(position, funktion, variable, schrittweite)</code></summary>
 
 numerisches Differenzieren einer Funktion "funktion" nach einer Variablen "Variable" an der Stelle "position" mit einer Differenz der Variablen von "differenz" numdif(position,funktion,Variable,differenz)
@@ -3830,7 +3830,7 @@ numerisches Differenzieren einer Funktion "funktion" nach einer Variablen "Varia
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>numeric(oE)</code></summary>
 
 verwirft die Einheit, wenn eine vorhanden ist und liefert nur den Zahlenwert (bezogen auf die Einheit!). Bei einer SI-Einheit wird der Zahlenwert bezogen auf die Basiseinheit geliefert, bei dimensonslosen Größen wird der Zahlenwert bezogen auf die verwendete dimensionslose Einheit gewählt. numeric(x)*unit(x) liefert wieder x
@@ -3844,7 +3844,7 @@ verwirft die Einheit, wenn eine vorhanden ist und liefert nur den Zahlenwert (be
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>numint(untergrenze, obergrenze, funktion, variable, anzahl, ...)</code></summary>
 
 numerische Integration numint(untereGrenze,obereGrenze,funktion,Variable) numint(untereGrenze,obereGrenze,funktion,Variable,punkteAnzahl)
@@ -3863,7 +3863,7 @@ numerische Integration numint(untereGrenze,obereGrenze,funktion,Variable) numint
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>nv(ausdruck, ...)</code></summary>
 
 Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden, welche dann in den Ausdruck eingesetzt werden. Im Gegensatz zu ev werden bestehende Variable nur in den Gleichungen, aber nicht im Ausdruck selbst eingesetzt!
@@ -3878,7 +3878,7 @@ Auswertung eines Ausdruckes, als Parameter können Gleichungen angegeben werden,
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>onlypos(variable)</code></summary>
 
 liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht nur die Lösungen welche positiv nicht Null sind
@@ -3892,7 +3892,7 @@ liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>onlyreal(matrix)</code></summary>
 
 liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht nur die Lösungen welche reell sind
@@ -3906,7 +3906,7 @@ liefert aus dem Lösungsvektor von solve welcher aus lauter Gleichungen besteht 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>opt(ausdruck)</code></summary>
 
 Ausdruck wird vollständig optimiert, die Funktion wird ausgewertet und ist danach nicht mehr vorhanden. Nur bei der Verwendung des internen Parser sinnvoll.
@@ -3920,7 +3920,7 @@ Ausdruck wird vollständig optimiert, die Funktion wird ausgewertet und ist dana
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>optorder(ausdruck)</code></summary>
 
 Optimiert nur die symbolische Reihenfolge des Ausdrucks. Optional steuert ein zweiter ganzzahliger Modus, ob bzw. wie lange die Funktion im Ausdruck erhalten bleibt.
@@ -3934,7 +3934,7 @@ Optimiert nur die symbolische Reihenfolge des Ausdrucks. Optional steuert ein zw
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>originnumeric(x)</code></summary>
 
 liefert immer den Zahlenwert einer einheitenbehafteten Größe bezogen auf die vorhandene Einheit. Gibt es keine Originaleinheit da der Wert berechnet wurde wird der Zahlenwert bezogen auf die SI-Grundeinheit genommen. originnumeric(x)*originunit(x) liefert wieder x
@@ -3948,7 +3948,7 @@ liefert immer den Zahlenwert einer einheitenbehafteten Größe bezogen auf die v
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>originunit(oE)</code></summary>
 
 gibt die SI-Einheit eines einheitenbehafteten Wertes mit dem Zahlenwert 1 zurück. originnumeric(x)*originunit(x) liefert wieder x
@@ -3962,7 +3962,7 @@ gibt die SI-Einheit eines einheitenbehafteten Wertes mit dem Zahlenwert 1 zurüc
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>par(wert1) / par(wert1, wert2)</code></summary>
 
 Parallelschaltung von Widerständen
@@ -3977,7 +3977,7 @@ Parallelschaltung von Widerständen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>parity(paritaet, codewortlaenge, datenwort, ...)</code></summary>
 
 Paritätsberechnung : parity(Parität,Codewortlänge,Datenwort)
@@ -3993,7 +3993,7 @@ Paritätsberechnung : parity(Parität,Codewortlänge,Datenwort)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>parse(string)</code></summary>
 
 Wenn der Parameter ein String ist wird dieser String mit dem Parser interpretiert
@@ -4007,7 +4007,7 @@ Wenn der Parameter ein String ist wird dieser String mit dem Parser interpretier
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>parsecolor(farbcode)</code></summary>
 
 Wandelt einen String mit einem Widerstandsfarbcode in einen Double-Wert
@@ -4021,7 +4021,7 @@ Wandelt einen String mit einem Widerstandsfarbcode in einen Double-Wert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>parseip(ipAdresse)</code></summary>
 
 Wandelt einen String mit einer IP-Adresse in einen Long-Wert
@@ -4035,7 +4035,7 @@ Wandelt einen String mit einer IP-Adresse in einen Long-Wert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>parser(ausdruck)</code></summary>
 
 Markierungsfunktion für Ausdrücke, die von Maxima unverändert an den internen Parser weitergereicht werden sollen. Im internen Parser selbst wird lediglich der einzelne Parameter ausgewertet.
@@ -4049,7 +4049,7 @@ Markierungsfunktion für Ausdrücke, die von Maxima unverändert an den internen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>periodic(variable, periodeExtern, periodeIntern, funktion)</code></summary>
 
 Erzeugt aus einer beliebigen Funktion zwischen 0 und Periodendauer eine periodische Funktion periodic(Variable,Periodendauer,Funktion) periodic(Variable,Periodendauer,Funktionsperiodendauer,Funktion)
@@ -4066,7 +4066,7 @@ Erzeugt aus einer beliebigen Funktion zwischen 0 und Periodendauer eine periodis
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pi()</code></summary>
 
 Funktionsschreibweise der Kreiszahl Pi. `pi()` hat keine Parameter und entspricht `%pi`.
@@ -4077,7 +4077,7 @@ Funktionsschreibweise der Kreiszahl Pi. `pi()` hat keine Parameter und entsprich
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>plugin(pluginname, ...)</code></summary>
 
 Ruft die Berechnungsmethode des Plugins, welches als erster Stringparameter angegeben werden muss auf und übergibt die weiteren Parameter an die Berechnungsmethode des Plugins.
@@ -4092,7 +4092,7 @@ Ruft die Berechnungsmethode des Plugins, welches als erster Stringparameter ange
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>points(teilfrage)</code></summary>
 
 Berechnet die erreichbare Gesamtpunkteanzahl einer Frage
@@ -4106,7 +4106,7 @@ Berechnet die erreichbare Gesamtpunkteanzahl einer Frage
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pol(betrag, winkel)</code></summary>
 
 erzeugt aus Betrag und Argument eine komplexe Zahl
@@ -4121,7 +4121,7 @@ erzeugt aus Betrag und Argument eine komplexe Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>polgrad(betrag, winkel)</code></summary>
 
 Erzeugt aus Betrag und einem Winkel im Gradmaß eine komplexe Zahl.
@@ -4136,7 +4136,7 @@ Erzeugt aus Betrag und einem Winkel im Gradmaß eine komplexe Zahl.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>polynom() / polynom(polynom, varName, varEinheit, wert4)</code></summary>
 
 Erzeugt aus einem Ausdruck welcher genau eine Variable besitzen muss ein Polynom in dieser Variablen
@@ -4153,7 +4153,7 @@ Erzeugt aus einem Ausdruck welcher genau eine Variable besitzen muss ein Polynom
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>polynomfromfact(x) / polynomfromfact(x, varName, varName, ee)</code></summary>
 
 Erzeugt aus einer Faktoren-Liste, welche mit factfrompolynom erstellt wurde ein neues Polynom
@@ -4170,7 +4170,7 @@ Erzeugt aus einer Faktoren-Liste, welche mit factfrompolynom erstellt wurde ein 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>polynomfromnull(x, varName, varName)</code></summary>
 
 Erzeugt aus einer Nullstellen-Polstellen-Liste, welche mit nullfrompolynom erstellt wurde ein neues Polynom
@@ -4186,7 +4186,7 @@ Erzeugt aus einer Nullstellen-Polstellen-Liste, welche mit nullfrompolynom erste
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>polynomk(polynom)</code></summary>
 
 Bestimmt den Faktor, welcher vom Polynom herausgehoben werden kann, so dass die höchste Potenz der Polynomvariable den Multiplikator Eins hat.
@@ -4200,7 +4200,7 @@ Bestimmt den Faktor, welcher vom Polynom herausgehoben werden kann, so dass die 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pow(basis, exponent)</code></summary>
 
 Potenzfunktion
@@ -4215,7 +4215,7 @@ Potenzfunktion
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>prims(x1)</code></summary>
 
 zerlegt eine Ganzzahl in ihre Primfaktoren
@@ -4229,7 +4229,7 @@ zerlegt eine Ganzzahl in ihre Primfaktoren
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>product(funktion, variable, untergrenze, obergrenze)</code></summary>
 
 Produktbildung
@@ -4246,7 +4246,7 @@ Produktbildung
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pulse(wert) / pulse(wert, wert, wert)</code></summary>
 
 Rechteckfunktion: pulse(x,x0) ist gleich 1 für x0 < x < x0 + 1, sonst 0 pulse(x,x0,L) ist gleich 1 für x0 < x < x0 + L, sonst 0 !300px-Pulse.png
@@ -4262,7 +4262,7 @@ Rechteckfunktion: pulse(x,x0) ist gleich 1 für x0 < x < x0 + 1, sonst 0 pulse(x
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvabs(punkte) / pvabs(punkte, index)</code></summary>
 
 Bestimmt den Betrag eines Punktes oder aller Ortsvektoren zu den Punkten.
@@ -4277,7 +4277,7 @@ Bestimmt den Betrag eines Punktes oder aller Ortsvektoren zu den Punkten.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvarg(punkte) / pvarg(punkte, index)</code></summary>
 
 Bestimmt den Winkel eines Punktes oder aller Ortsvektoren zu den Punkten.
@@ -4292,7 +4292,7 @@ Bestimmt den Winkel eines Punktes oder aller Ortsvektoren zu den Punkten.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvcompare(referenz, eingabe) / pvcompare(referenz, eingabe, toleranz) / pvcompare(referenz, eingabe, toleranz, minX, maxX, minY) / pvcompare(referenz, eingabe, toleranz, minX, maxX, minY, maxY)</code></summary>
 
 Vergleicht einen Referenz-Linienzug mit einem eingegebenen Linienzug unter Berücksichtigung der Toleranz. Die Toleranz stellt eine relative Tolerenz bezogen auf den Bereich zwischen MinXY und MaxXY da, wobei eine Toleranz von 0.1 gleichbedeutend 10 Prozent bezogen auf Max-Min ist (Mit dem String "a0.1" könnte man auch ein absolute Toleranz von 0.1 für x und y realisieren) pvcompare(Referenz,Eingabe) pvcompare(Referenz,Eingabe,Toleranz) pvcompare(Referenz,Eingabe,MinX,MaxX,MinY,MaxY) pvcompare(Referenz,Eingabe,MinX,MaxX,MinY,MaxY,Toleranz)
@@ -4312,7 +4312,7 @@ Vergleicht einen Referenz-Linienzug mit einem eingegebenen Linienzug unter Berü
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvdistance(punkte)</code></summary>
 
 Bestimmt die Abstände als Vektoren zwischen den Punkten. pvdistance([A,B,C]) liefert [AB,BC,CA]
@@ -4326,7 +4326,7 @@ Bestimmt die Abstände als Vektoren zwischen den Punkten. pvdistance([A,B,C]) li
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvequals(referenz, eingabe) / pvequals(referenz, eingabe, toleranz)</code></summary>
 
 Prüft ob zwei Punktevektoren gleich sind. Die Genauigkeit wird als dritter Parameter angegeben, oder bei einem Antwortfeld von der Antworttoleranz genommen. Prozentangaben der Genauigkeit beziehen sich auf die Breite bzw. Höhe des Punktefeldes im karthesischen Koordinatensystem.
@@ -4342,7 +4342,7 @@ Prüft ob zwei Punktevektoren gleich sind. Die Genauigkeit wird als dritter Para
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvforeachline(punkte, variable, ausdruck) / pvforeachline(punkte, variable, ausdruck, aggregation)</code></summary>
 
 Führt für jedes Punktepaar eine Berechnung aus und verbindet die Ergebnisse mit der Aggregatfunktion
@@ -4359,7 +4359,7 @@ Führt für jedes Punktepaar eine Berechnung aus und verbindet die Ergebnisse mi
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvfunc(y, varlist, isnumeric, bis, schrittweite)</code></summary>
 
 Erzeugt aus einer Funktionen in einer Variablen (x-Achse) eine Punktmatrix der Funktionswerte (y-Achse). pvfunc(funktion,variable,minx,maxx,deltax)
@@ -4377,7 +4377,7 @@ Erzeugt aus einer Funktionen in einer Variablen (x-Achse) eine Punktmatrix der F
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvget(punkte, index)</code></summary>
 
 Liefert einen Punkt der Punkteliste.
@@ -4392,7 +4392,7 @@ Liefert einen Punkt der Punkteliste.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvgetx(punkte) / pvgetx(punkte, index)</code></summary>
 
 Bestimmt die x-Koordinate eines Punktes oder aller Punkte.
@@ -4407,7 +4407,7 @@ Bestimmt die x-Koordinate eines Punktes oder aller Punkte.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvgety(punkte) / pvgety(punkte, index)</code></summary>
 
 Bestimmt die y-Koordinate eines Punktes oder aller Punkte.
@@ -4422,7 +4422,7 @@ Bestimmt die y-Koordinate eines Punktes oder aller Punkte.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvhasline(punkte, linie) / pvhasline(punkte, linie, toleranz)</code></summary>
 
 Prüft ob sich eine Linie innerhalb des Punktefeldes von Linien befindet. Die Genauigkeit kann wie bei pvequals als dritter Parameter angegeben werden.
@@ -4438,7 +4438,7 @@ Prüft ob sich eine Linie innerhalb des Punktefeldes von Linien befindet. Die Ge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvhaspoint(punkte, punkt) / pvhaspoint(punkte, punkt, toleranz)</code></summary>
 
 Prüft ob sich ein Punkt innerhalb des Punktefeldes befindet. Die Genauigkeit kann wie bei pvequals als dritter Parameter angegeben werden.
@@ -4454,7 +4454,7 @@ Prüft ob sich ein Punkt innerhalb des Punktefeldes befindet. Die Genauigkeit ka
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvinsert(punkte, punkt, index)</code></summary>
 
 Fügt einen Punkt in die Punktemenge ein
@@ -4470,7 +4470,7 @@ Fügt einen Punkt in die Punktemenge ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvinsertlast(punkte, punkt)</code></summary>
 
 Fügt am Ende der Punktemenge einen Punkt ein
@@ -4485,7 +4485,7 @@ Fügt am Ende der Punktemenge einen Punkt ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvline(punkte) / pvline(punkte, index)</code></summary>
 
 Bestimmt die Geradengleichung einer Geraden durch das n-te Punktepaar
@@ -4500,7 +4500,7 @@ Bestimmt die Geradengleichung einer Geraden durch das n-te Punktepaar
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvlineabs(punkte) / pvlineabs(punkte, index)</code></summary>
 
 Bestimmt aus dem n-ten Punktepaar den Absolutbetrag des Abstandes.
@@ -4515,7 +4515,7 @@ Bestimmt aus dem n-ten Punktepaar den Absolutbetrag des Abstandes.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvlinearg(punkte) / pvlinearg(punkte, index)</code></summary>
 
 Bestimmt aus dem n-ten Punktepaar den Winkel der Strecke zur x-Achse
@@ -4530,7 +4530,7 @@ Bestimmt aus dem n-ten Punktepaar den Winkel der Strecke zur x-Achse
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvlined(punkte) / pvlined(punkte, index)</code></summary>
 
 Bestimmt den Schnittpunkt einer Geraden durch das n-te Punktepaar mit der y-Achse
@@ -4545,7 +4545,7 @@ Bestimmt den Schnittpunkt einer Geraden durch das n-te Punktepaar mit der y-Achs
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvlinek(punkte) / pvlinek(punkte, index)</code></summary>
 
 Bestimmt die Steigung der zugehörigen Geraden dem n-ten Punktepaar
@@ -4560,7 +4560,7 @@ Bestimmt die Steigung der zugehörigen Geraden dem n-ten Punktepaar
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvlines(punkte) / pvlines(punkte, reserviert)</code></summary>
 
 Bestimmt die Anzahl der Linien bzw. Punktepaare eines Punktevektors.
@@ -4575,7 +4575,7 @@ Bestimmt die Anzahl der Linien bzw. Punktepaare eines Punktevektors.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvpoints(punkte) / pvpoints(punkte, reserviert)</code></summary>
 
 Bestimmt die Anzahl der Punkte
@@ -4590,7 +4590,7 @@ Bestimmt die Anzahl der Punkte
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvrect(punkte)</code></summary>
 
 Liefert aus einer Punktewolke ein Rechteck als zwei Eckpunkte links-unten und rechts-oben.
@@ -4604,7 +4604,7 @@ Liefert aus einer Punktewolke ein Rechteck als zwei Eckpunkte links-unten und re
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvremove(punkte, index)</code></summary>
 
 Löscht einen Punkt aus der Punktemenge
@@ -4619,7 +4619,7 @@ Löscht einen Punkt aus der Punktemenge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsort(punkte)</code></summary>
 
 Sortiert die Punkte zuerst nach steigender x-Koordinate und bei gleicher x-Koordinate nach steigender y-Koordinate.
@@ -4633,7 +4633,7 @@ Sortiert die Punkte zuerst nach steigender x-Koordinate und bei gleicher x-Koord
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortabs(punkte)</code></summary>
 
 Sortiert die Punkte nach steigendem Absolutbetrag des Ortsvektors
@@ -4647,7 +4647,7 @@ Sortiert die Punkte nach steigendem Absolutbetrag des Ortsvektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortarg(punkte)</code></summary>
 
 Sortiert die Punkte nach steigendem Winkel des Ortsvektors (-pi bis pi)
@@ -4661,7 +4661,7 @@ Sortiert die Punkte nach steigendem Winkel des Ortsvektors (-pi bis pi)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortlineabs(punkte)</code></summary>
 
 Sortiert Punktepaare nach steigendem Betrag der Linienlänge.
@@ -4675,7 +4675,7 @@ Sortiert Punktepaare nach steigendem Betrag der Linienlänge.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortlinearg(punkte)</code></summary>
 
 Sortiert Punktepaare nach steigendem Winkel der Linienrichtung.
@@ -4689,7 +4689,7 @@ Sortiert Punktepaare nach steigendem Winkel der Linienrichtung.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortlinex(punkte)</code></summary>
 
 Sortiert Punktepaare nach steigender x-Koordinate der kleineren x-Koordinate des Paares.
@@ -4703,7 +4703,7 @@ Sortiert Punktepaare nach steigender x-Koordinate der kleineren x-Koordinate des
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortliney(punkte)</code></summary>
 
 Sortiert Punktepaare nach steigender y-Koordinate der kleineren y-Koordinate des Paares.
@@ -4717,7 +4717,7 @@ Sortiert Punktepaare nach steigender y-Koordinate der kleineren y-Koordinate des
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsortx(punkte)</code></summary>
 
 Sortiert die Punkte nach steigender x-Koordinate
@@ -4731,7 +4731,7 @@ Sortiert die Punkte nach steigender x-Koordinate
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvsorty(punkte)</code></summary>
 
 Sortiert die Punkte nach steigender y-Koordinate
@@ -4745,7 +4745,7 @@ Sortiert die Punkte nach steigender y-Koordinate
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvunion(punktevektor1, wert2, ...)</code></summary>
 
 hängt mehrere Punktevektoren zu einem größereren Punktevektor zusammen
@@ -4761,7 +4761,7 @@ hängt mehrere Punktevektoren zu einem größereren Punktevektor zusammen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>pvvect(punkte) / pvvect(punkte, index)</code></summary>
 
 Bestimmt einen Vector aus dem n-te Punktepaar
@@ -4776,7 +4776,7 @@ Bestimmt einen Vector aus dem n-te Punktepaar
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>qopt(ausdruck)</code></summary>
 
 Im Maximafeld wird alles innerhalb der Funktion nicht ausgewertet und die Funktion bleibt erhalten, bei der Lösung wird nach dem Einsetzen der Werte der Ausdruck vollständig optimiert. Anwendung findet die Funktion bei boolschen Fragen und Folgefehlerbehandlung.
@@ -4790,7 +4790,7 @@ Im Maximafeld wird alles innerhalb der Funktion nicht ausgewertet und die Funkti
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>quadrant(winkel) / quadrant(winkel, toleranz)</code></summary>
 
 Liefert den Quadranten eines Winkels mit einer Toleranzangabe.
@@ -4805,7 +4805,7 @@ Liefert den Quadranten eines Winkels mit einer Toleranzangabe.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ramp(x) / ramp(x, wert, wert)</code></summary>
 
 Rampenfunktion: ramp(x,x0) Rampe von x0 < x < x0 + 1 ramp(x,x0,L) Rampe von x0 < x < x0 + L !300px-Funktion_ramp.png
@@ -4821,7 +4821,7 @@ Rampenfunktion: ramp(x,x0) Rampe von x0 < x < x0 + 1 ramp(x,x0,L) Rampe von x0 <
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>random(minimum) / random(minimum, maximum)</code></summary>
 
 Zufallszahl aus einem definierten Zahlenbereich random(minimal,maximal) VORSICHT! Die Zufallszahl wird bei jedem Aufruf neu berechnet, weshalb sich der Wert bei jedem Anzeigevorgang einer Frage ändert. Sollte sich der berechnete Wert für eine Schülerangabe zwischen Fragestellung und Ergebniskontrolle nicht ändern dürfen (ist der Normalfall) muss man einen Datensatz statt einer Zufallszahl verwenden! Zufallszahlen haben in der Ergebnisberechnung keinen Sinn, und sollten maximal für angezeigte zufällige Werte verwendet werden!
@@ -4836,7 +4836,7 @@ Zufallszahl aus einem definierten Zahlenbereich random(minimal,maximal) VORSICHT
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>randomC(minimum) / randomC(minimum, maximum)</code></summary>
 
 komplexe Zufallszahl aus einem definierten Zahlenbereich für den Betrag VORSICHT! Die Zufallszahl wird bei jedem Aufruf neu berechnet!
@@ -4851,7 +4851,7 @@ komplexe Zufallszahl aus einem definierten Zahlenbereich für den Betrag VORSICH
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>range(x)</code></summary>
 
 range(anzahl) liefert ein Feld von ganzzahligen Werten von 0 beginnend
@@ -4865,7 +4865,7 @@ range(anzahl) liefert ein Feld von ganzzahligen Werten von 0 beginnend
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>ratsimp(ausdruck)</code></summary>
 
 Ausdruck wird vollständig optimiert, die Funktion wird ausgewertet und ist danach nicht mehr vorhanden (wie opt, wird jedoch auch von Maxima ausgewertet)
@@ -4879,7 +4879,7 @@ Ausdruck wird vollständig optimiert, die Funktion wird ausgewertet und ist dana
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>realpart(re)</code></summary>
 
 Liefert den Realteil einer komplexen Zahl
@@ -4893,7 +4893,7 @@ Liefert den Realteil einer komplexen Zahl
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>rectform(x)</code></summary>
 
 hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert wird wie zB.: {=3arg2;karti}
@@ -4904,7 +4904,7 @@ hat in LeTTo keine Relevanz, da die Zahlendarstellung bei der Ausgabe definiert 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>removeunit(ausdruck)</code></summary>
 
 entfernt bei einem Ausdruck alle Einheiten und ersetzt dabei alle einheitenbehafteten Größen durch den Zahlenwert bezogen auf die BasisEinheit des SI-Systems
@@ -4918,7 +4918,7 @@ entfernt bei einem Ausdruck alle Einheiten und ersetzt dabei alle einheitenbehaf
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>replaceallstring(string, sold, snew)</code></summary>
 
 Ersetzt alle Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine andere Zeichenkette.
@@ -4934,7 +4934,7 @@ Ersetzt alle Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine ander
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>replacefirststring(string, sold, snew)</code></summary>
 
 Ersetzt das erste Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine andere Zeichenkette.
@@ -4950,7 +4950,7 @@ Ersetzt das erste Vorkommen einer Zeichenkette (regulärer Ausdruck) durch eine 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>replacestring(string, sold, snew)</code></summary>
 
 Ersetzt alle Vorkommen einer Zeichenkette in einem String durch eine andere Zeichenkette.
@@ -4966,7 +4966,7 @@ Ersetzt alle Vorkommen einer Zeichenkette in einem String durch eine andere Zeic
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>reverse(v1)</code></summary>
 
 Alias zu `setreverse`: Dreht die Reihenfolge eines Vektors/einer Menge um.
@@ -4980,7 +4980,7 @@ Alias zu `setreverse`: Dreht die Reihenfolge eines Vektors/einer Menge um.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>rhs(ausdruck)</code></summary>
 
 liefert die rechte Seite einer Gleichung, Ungleichung oder eines Infix Operators
@@ -4994,7 +4994,7 @@ liefert die rechte Seite einer Gleichung, Ungleichung oder eines Infix Operators
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>root(wert) / root(wert, wurzelexponent)</code></summary>
 
 Quadratwurzel. Entspricht `root(x,2)`.
@@ -5011,7 +5011,7 @@ Alias/Kompatibilitätsname zu `sqrt`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>round(wert) / round(wert, kommastellen)</code></summary>
 
 Rundet die Zahl kaufmännisch, der zweite Parameter gibt die Anzahl der Kommastellen an, ohne 2.Parameter wird auf Ganzzahlen gerundet, bei komplexen Zahlen wird Betrag und Winkel in Grad gerundet.
@@ -5028,7 +5028,7 @@ Alias/Kompatibilitätsname zu `cround`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>runtime(ausdruck)</code></summary>
 
 Bei dieser Funktion wird erst bei der Berechnung der Frageantwort, nach dem Einsetzen der Datensätze das komplette Maxima-Feld mit dem internen Parser durchgerechnet und danach der Parameter-Ausdruck berechnet. Dadurch kann man bei komplizierten Berechnungen eine sehr aufwendige symbolische Berechnung verhindern!
@@ -5041,7 +5041,7 @@ Bei dieser Funktion wird erst bei der Berechnung der Frageantwort, nach dem Eins
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>runtimeexception(wert1)</code></summary>
 
 Test-/Diagnosefunktion: erzeugt absichtlich eine RuntimeException. Ein optionaler Parameter wird als Fehlermeldung verwendet.
@@ -5055,7 +5055,7 @@ Test-/Diagnosefunktion: erzeugt absichtlich eine RuntimeException. Ein optionale
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sec(x1)</code></summary>
 
 Secans, `sec(x)=1/cos(x)`.
@@ -5069,7 +5069,7 @@ Secans, `sec(x)=1/cos(x)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sech(x1)</code></summary>
 
 Secans-Hyperbolicus, `sech(x)=1/cosh(x)`.
@@ -5083,7 +5083,7 @@ Secans-Hyperbolicus, `sech(x)=1/cosh(x)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>second() / second(variable)</code></summary>
 
 liefert das zweite Element mit dem Index 1 eines Vektors
@@ -5097,7 +5097,7 @@ liefert das zweite Element mit dem Index 1 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>seconds(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit
@@ -5108,7 +5108,7 @@ Erzeugt aus einem Sekundenwert die Sekunden als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>selective_kill(...)</code></summary>
 
 Löscht alle Variablen aus dem Variablenspeicher außer den angegebenen Variablen bzw. Variablenvektoren und liefert die Anzahl der gelöschten Variablen.
@@ -5122,7 +5122,7 @@ Löscht alle Variablen aus dem Variablenspeicher außer den angegebenen Variable
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setapply(variable, menge, ausdruck)</code></summary>
 
 wendet einen Ausdruck oder Funktion auf alle Elemente einer Menge an
@@ -5138,7 +5138,7 @@ wendet einen Ausdruck oder Funktion auf alle Elemente einer Menge an
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setboxplot(v1)</code></summary>
 
 Liefert die Werte des Boxplot einer Menge (Minimum, unteres Quartil, Median, oberes Quartil, Maximum) als Vektor verwendbar für das Plot-Plugin#definierte-zeichenelemente-
@@ -5152,7 +5152,7 @@ Liefert die Werte des Boxplot einer Menge (Minimum, unteres Quartil, Median, obe
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setcompare(p1, p2)</code></summary>
 
 vergleicht zwei Mengen miteinander, wobei die Reihenfolge egal ist
@@ -5167,7 +5167,7 @@ vergleicht zwei Mengen miteinander, wobei die Reihenfolge egal ist
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setcomparend(p1, p2)</code></summary>
 
 vergleicht zwei Mengen miteinander, wobei die Reihenfolge egal ist und doppelte Werte als einfach behandelt werden.
@@ -5182,7 +5182,7 @@ vergleicht zwei Mengen miteinander, wobei die Reihenfolge egal ist und doppelte 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setcount(menge) / setcount(menge, wert)</code></summary>
 
 Bestimmt die Anzahl wie oft ein Element in einer Menge vorkommt oder die Anzahl der Elemente der Menge
@@ -5197,7 +5197,7 @@ Bestimmt die Anzahl wie oft ein Element in einer Menge vorkommt oder die Anzahl 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setcut()</code></summary>
 
 Bildet die Schnittmenge aus mehreren Mengen
@@ -5208,7 +5208,7 @@ Bildet die Schnittmenge aus mehreren Mengen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setgeomittel(v1)</code></summary>
 
 Bestimmt das geometrische Mittelwert einer Menge aus positiven reellen Zahlen
@@ -5222,7 +5222,7 @@ Bestimmt das geometrische Mittelwert einer Menge aus positiven reellen Zahlen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setget(variable, anzahl) / setget(variable, anzahl, string)</code></summary>
 
 Liefert ein Element einer Menge oder einer Matrix (Menge von Mengen)
@@ -5238,7 +5238,7 @@ Liefert ein Element einer Menge oder einer Matrix (Menge von Mengen)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setgetfirst(v1)</code></summary>
 
 Liefert den ersten Wert einer Menge
@@ -5252,7 +5252,7 @@ Liefert den ersten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setgetlast(v1)</code></summary>
 
 Liefert den letzten Wert einer Menge
@@ -5266,7 +5266,7 @@ Liefert den letzten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setgetmax(v1)</code></summary>
 
 Liefert den größten Wert einer Menge
@@ -5280,7 +5280,7 @@ Liefert den größten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setgetmin(v1)</code></summary>
 
 Liefert den kleinsten Wert einer Menge
@@ -5294,7 +5294,7 @@ Liefert den kleinsten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setinsert(menge, index, wert)</code></summary>
 
 fügt ein Element in eine Menge an eine gegebene Stelle ein
@@ -5310,7 +5310,7 @@ fügt ein Element in eine Menge an eine gegebene Stelle ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setlength(v1)</code></summary>
 
 liefert die Anzahl der Elemente einer Liste, Menge oder eines Vektors
@@ -5324,7 +5324,7 @@ liefert die Anzahl der Elemente einer Liste, Menge oder eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setmakelist(ausdruck, variable, startOderMenge, stop, schrittweite, ...)</code></summary>
 
 setmakelist(f,x,start,stop) setzt in den Ausdruck f für x die Werte von start bis stop mit einer Schrittweite von 1 ein.
@@ -5343,7 +5343,7 @@ setmakelist(f,x,start,stop) setzt in den Ausdruck f für x die Werte von start b
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setmedian(v1)</code></summary>
 
 Liefert den Median einer Menge
@@ -5357,7 +5357,7 @@ Liefert den Median einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setmittel(v1)</code></summary>
 
 Bestimmt den Mittelwert einer Menge
@@ -5371,7 +5371,7 @@ Bestimmt den Mittelwert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setmodus(v1)</code></summary>
 
 Liefert das Element einer Menge, welches am öftesten vorkommt oder die Elemente als Menge wenn mehrere Elemente gleich oft vorkommen
@@ -5385,7 +5385,7 @@ Liefert das Element einer Menge, welches am öftesten vorkommt oder die Elemente
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setnd(v1)</code></summary>
 
 Löscht alle Duplikate aus der Menge
@@ -5399,7 +5399,7 @@ Löscht alle Duplikate aus der Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setpartof(p1, p2)</code></summary>
 
 prüft ob die erste Menge eine Teilmenge der zweite Menge ist wobei die Reihenfolge egal ist aber mehrfache Werte berücksichtigt werden
@@ -5414,7 +5414,7 @@ prüft ob die erste Menge eine Teilmenge der zweite Menge ist wobei die Reihenfo
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setpartofnd(p1, p2)</code></summary>
 
 prüft ob die erste Menge eine Teilmenge der zweite Menge ist wobei die Reihenfolge und mehrfache Werte egal sind
@@ -5429,7 +5429,7 @@ prüft ob die erste Menge eine Teilmenge der zweite Menge ist wobei die Reihenfo
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setprod(v1)</code></summary>
 
 Bestimmt das Produkt aller Werte einer Menge
@@ -5443,7 +5443,7 @@ Bestimmt das Produkt aller Werte einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setquadratmittel(v1)</code></summary>
 
 Bestimmt den quadratischen Mittelwert einer Menge
@@ -5457,7 +5457,7 @@ Bestimmt den quadratischen Mittelwert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setremove(variable, anzahl)</code></summary>
 
 löscht ein Element einer Menge
@@ -5472,7 +5472,7 @@ löscht ein Element einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setremovefirst(v1)</code></summary>
 
 Entfernt den ersten Wert einer Menge
@@ -5486,7 +5486,7 @@ Entfernt den ersten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setremovelast(v1)</code></summary>
 
 Entfernt den letzten Wert einer Menge
@@ -5500,7 +5500,7 @@ Entfernt den letzten Wert einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setreverse(v1)</code></summary>
 
 Alias zu `setreverse`: Dreht die Reihenfolge eines Vektors/einer Menge um.
@@ -5516,7 +5516,7 @@ Alias/Kompatibilitätsname zu `reverse`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setset(mengeOderMatrix, indexOderZeile, wertOderSpalte) / setset(mengeOderMatrix, indexOderZeile, wertOderSpalte, wert)</code></summary>
 
 setzt ein Element einer Menge oder einer Matrix (Menge von Mengen)
@@ -5533,7 +5533,7 @@ setzt ein Element einer Menge oder einer Matrix (Menge von Mengen)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setshuffle(v1) / setshuffle(v1, nummer)</code></summary>
 
 Mischt eine Menge in eine andere Reihenfolge. VORSICHT, ohne zweiten Parameter (ganze Zahl) ändert sich die Reihenfolge bei jedem mal neu Laden automatisch und ist nicht nachvollziehbar, weshalb sie dann für Schülerbeispiele nicht einsetzbar ist! Daher ist es für eine praktische Anwendung in einem Schülerbeispiel erforderlich, dass der zweite Parameter determiniert (beispielsweise über einen Integer-Datensatz-Wert zwischen 0 und 1000) festgelegt wird.
@@ -5548,7 +5548,7 @@ Mischt eine Menge in eine andere Reihenfolge. VORSICHT, ohne zweiten Parameter (
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setsort(v1)</code></summary>
 
 Sortiert die Elemente einer Menge aufsteigend
@@ -5562,7 +5562,7 @@ Sortiert die Elemente einer Menge aufsteigend
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setsortnd(v1)</code></summary>
 
 Sortiert die Elemente einer Menge aufsteigend und entfernt alle mehrfach vorkommenden Elemente
@@ -5576,7 +5576,7 @@ Sortiert die Elemente einer Menge aufsteigend und entfernt alle mehrfach vorkomm
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setsub(v1, von, bis)</code></summary>
 
 setsub(M,x,y) Liefert eine Teilmenge von M der Elemente vom index x bis zum Index y
@@ -5592,7 +5592,7 @@ setsub(M,x,y) Liefert eine Teilmenge von M der Elemente vom index x bis zum Inde
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setsum(v1)</code></summary>
 
 Bestimmt die Summe aller Werte einer Menge
@@ -5606,7 +5606,7 @@ Bestimmt die Summe aller Werte einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setunion()</code></summary>
 
 Fügt mehrere Mengen zu einer neuen Menge zusammen
@@ -5617,7 +5617,7 @@ Fügt mehrere Mengen zu einer neuen Menge zusammen
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setunionnd()</code></summary>
 
 Fügt mehrere Mengen zu einer neuen Menge zusammen, sortiert diese und entfernt alle mehrfachen Elemente
@@ -5628,7 +5628,7 @@ Fügt mehrere Mengen zu einer neuen Menge zusammen, sortiert diese und entfernt 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>setvarianz(v1)</code></summary>
 
 Bestimmt die empirische Varianz einer Menge
@@ -5642,7 +5642,7 @@ Bestimmt die empirische Varianz einer Menge
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>shl(wert) / shl(wert, stellen)</code></summary>
 
 Schiebe Ganzzahl bitweise nach links
@@ -5657,7 +5657,7 @@ Schiebe Ganzzahl bitweise nach links
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>shr(wert) / shr(wert, stellen)</code></summary>
 
 Schiebe Ganzzahl bitweise nach rechts
@@ -5672,7 +5672,7 @@ Schiebe Ganzzahl bitweise nach rechts
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sigma(x) / sigma(x, wert)</code></summary>
 
 Sprungfunktion: sigma(x) liefert 0 für x<0 und 1 für x>=0
@@ -5687,7 +5687,7 @@ Sprungfunktion: sigma(x) liefert 0 für x<0 und 1 für x>=0
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>signum(wert)</code></summary>
 
 Liefert das Vorzeichen einer Zahl (-1,0,1). Bei einer komplexen Zahl das Vorzeichen des Realteils.
@@ -5701,7 +5701,7 @@ Liefert das Vorzeichen einer Zahl (-1,0,1). Bei einer komplexen Zahl das Vorzeic
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sin(x1)</code></summary>
 
 Sinus
@@ -5715,7 +5715,7 @@ Sinus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sinh(x1)</code></summary>
 
 Sinus-Hyperbolicus
@@ -5729,7 +5729,7 @@ Sinus-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sixth() / sixth(variable)</code></summary>
 
 liefert das sechste Element mit dem Index 5 eines Vektors
@@ -5743,52 +5743,52 @@ liefert das sechste Element mit dem Index 5 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>solve(gleichungen, varlist)</code></summary>
 
 löst eine Gleichung oder ein Gleichungssystem nach einer oder mehrerer Variablen
 
-| Parameter     | Beschreibung            | Möglicher Datentyp            | Optional |
-|---------------|-------------------------|-------------------------------|----------|
-| `gleichungen` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein     |
-| `varlist`     | Parameter der Funktion. | Ausdruck / passender Datentyp | nein     |
+| Parameter | Beschreibung | Möglicher Datentyp | Optional |
+|---|---|---|---|
+| `gleichungen` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
+| `varlist` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
 
 **Beispiel:** `solve([2*x+y=3,x-y=0],[x,y])`  
 **Ergebnis:** [[ x=1,y=1 ]]
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>solvevalue(cc, varlist, ausdruck)</code></summary>
 
 löst eine Gleichung oder ein Gleichungssystem nach einer Variablen und liefert genau die erste Lösung wenn sie numerisch berechenbar ist
 
-| Parameter  | Beschreibung                                         | Möglicher Datentyp            | Optional |
-|------------|------------------------------------------------------|-------------------------------|----------|
-| `cc`       | Parameter der Funktion.                              | Ausdruck / passender Datentyp | nein     |
-| `varlist`  | Parameter der Funktion.                              | Ausdruck / passender Datentyp | nein     |
-| `ausdruck` | Ausdruck bzw. Funktion, die verarbeitet werden soll. | Ausdruck                      | nein     |
+| Parameter | Beschreibung | Möglicher Datentyp | Optional |
+|---|---|---|---|
+| `cc` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
+| `varlist` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
+| `ausdruck` | Ausdruck bzw. Funktion, die verarbeitet werden soll. | Ausdruck | nein |
 
 **Beispiel:** `solvevalue([ 2*x+y=3,x-y=0 ],[ x,y ],x)`  
 **Ergebnis:** 1
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>splitoptunit(oE)</code></summary>
 
 Zerlegt einen numerischen Wert in Zahlenwert und die optimale Einheit mit Zahlenwert 1 als Feld mit Zahlenwert als Index 0 und Einheit als Index 1
 
-| Parameter | Beschreibung            | Möglicher Datentyp | Optional |
-|-----------|-------------------------|--------------------|----------|
-| `oE`      | Parameter der Funktion. | Vektor / Ganzzahl  | nein     |
+| Parameter | Beschreibung | Möglicher Datentyp | Optional |
+|---|---|---|---|
+| `oE` | Parameter der Funktion. | Vektor / Ganzzahl | nein |
 
 **Beispiel:** `splitoptunit(1300kVA)`  
 **Ergebnis:** [1.3,1MVA]
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>splitstring(string, tz)</code></summary>
 
 Teilt einen String in ein Array von Strings splitstring(string,separator)
@@ -5803,7 +5803,7 @@ Teilt einen String in ein Array von Strings splitstring(string,separator)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>splitunit(oE)</code></summary>
 
 Zerlegt einen numerischen Wert in Zahlenwert und die originale/optimale Einheit mit Zahlenwert 1 als Feld mit Zahlenwert als Index 0 und Einheit als Index 1
@@ -5817,7 +5817,7 @@ Zerlegt einen numerischen Wert in Zahlenwert und die originale/optimale Einheit 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sqrt(wert) / sqrt(wert, wurzelexponent)</code></summary>
 
 Quadratwurzel. Entspricht `root(x,2)`.
@@ -5832,7 +5832,7 @@ Quadratwurzel. Entspricht `root(x,2)`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>stackoverflow()</code></summary>
 
 Test-/Diagnosefunktion: erzeugt absichtlich einen StackOverflow. Nicht für reguläre Aufgaben verwenden.
@@ -5843,7 +5843,7 @@ Test-/Diagnosefunktion: erzeugt absichtlich einen StackOverflow. Nicht für regu
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>strcat(...)</code></summary>
 
 Fügt mehrere Strings zusammen.
@@ -5857,7 +5857,7 @@ Fügt mehrere Strings zusammen.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>string(...)</code></summary>
 
 Fügt mehrere Strings zusammen.
@@ -5873,7 +5873,7 @@ Alias/Kompatibilitätsname zu `strcat`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>substring(string, startindex) / substring(string, startindex, endindex)</code></summary>
 
 Liefert einen Teil eines Strings substring(string,startindex,endindex). Index beginnt bei 0 und endindex ist optional.
@@ -5889,7 +5889,7 @@ Liefert einen Teil eines Strings substring(string,startindex,endindex). Index be
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>sum(funktion, variable, untergrenze, obergrenze)</code></summary>
 
 Summenbildung
@@ -5906,7 +5906,7 @@ Summenbildung
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>svphtosv(phaseA) / svphtosv(phaseA, phaseB, phaseC)</code></summary>
 
 berechnet aus den Stranggrößen (a,b,c) einen komplexen Raumzeiger
@@ -5922,7 +5922,7 @@ berechnet aus den Stranggrößen (a,b,c) einen komplexen Raumzeiger
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>svsvtoph(raumzeiger) / svsvtoph(raumzeiger, index)</code></summary>
 
 berechnet aus einem komplexen Raumzeiger die Stranggrössen berechnet aus einem komplexen Raumzeiger die Stranggrössen, index selektiert Stranggröße als Rückgabewert
@@ -5937,7 +5937,7 @@ berechnet aus einem komplexen Raumzeiger die Stranggrössen berechnet aus einem 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>symbolic(ausdruck)</code></summary>
 
 Bei allen Variablen innerhalb von symbolic werden nur nicht-numerische Werte eingesetzt! Wird vor allem im Angabtext bei {= } verwendet
@@ -5951,7 +5951,7 @@ Bei allen Variablen innerhalb von symbolic werden nur nicht-numerische Werte ein
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>tailstring(string, length)</code></summary>
 
 liefert den letzten Teil eines Strings teilstring(tailstring,zeichenanzahl)
@@ -5966,7 +5966,7 @@ liefert den letzten Teil eines Strings teilstring(tailstring,zeichenanzahl)
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>tan(x1)</code></summary>
 
 Tangens
@@ -5980,7 +5980,7 @@ Tangens
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>tanh(x1)</code></summary>
 
 Tangens-Hyperbolicus
@@ -5994,7 +5994,7 @@ Tangens-Hyperbolicus
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>third() / third(variable)</code></summary>
 
 liefert das dritte Element mit dem Index 2 eines Vektors
@@ -6008,7 +6008,7 @@ liefert das dritte Element mit dem Index 2 eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>time(hour, minute, second, ...)</code></summary>
 
 time(h,min,sec) erzeugt eine Uhrzeit als Ganzzahl in Sekunden seit Mitternacht
@@ -6022,7 +6022,7 @@ time(h,min,sec) erzeugt eine Uhrzeit als Ganzzahl in Sekunden seit Mitternacht
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>timestring(zeit, format)</code></summary>
 
 erzeugt eine Uhrzeit als String
@@ -6034,7 +6034,7 @@ erzeugt eine Uhrzeit als String
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>todB(oe)</code></summary>
 
 versieht einen Zahlenwert mit der skalierenden Dezibel-Einheit dB welche mit 20*log10 berechnet wird
@@ -6048,7 +6048,7 @@ versieht einen Zahlenwert mit der skalierenden Dezibel-Einheit dB welche mit 20*
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>tomaxima(ausdruck1) / tomaxima(ausdruck1, wert2)</code></summary>
 
 Führt die Berechnung aller Parameter von links nach rechts hintereinander mit Maxima aus. Das Ergebnis ist dann das Ergebnis des letzten Parameters.
@@ -6063,7 +6063,7 @@ Führt die Berechnung aller Parameter von links nach rechts hintereinander mit M
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>trunc(wert)</code></summary>
 
 Schneidet die Zahl nach dem Komma ab
@@ -6077,7 +6077,7 @@ Schneidet die Zahl nach dem Komma ab
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>unit(oE)</code></summary>
 
 gibt die SI-Einheit eines einheitenbehafteten Wertes mit dem Zahlenwert 1 ohne Einheitenvielfache zurück. numeric(x)*unit(x) liefert wieder x
@@ -6091,7 +6091,7 @@ gibt die SI-Einheit eines einheitenbehafteten Wertes mit dem Zahlenwert 1 ohne E
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>unitopt(calcPhysical)</code></summary>
 
 liefert bei einem einheitenbehafteten Wert die optimale SI-Einheit mit optimierten Einheitenvielfachen
@@ -6105,7 +6105,7 @@ liefert bei einem einheitenbehafteten Wert die optimale SI-Einheit mit optimiert
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vabs(variable)</code></summary>
 
 Berechnet den Betrag eines Vektors
@@ -6119,7 +6119,7 @@ Berechnet den Betrag eines Vektors
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vadd(v1, v2)</code></summary>
 
 Addiert zwei Vektoren elementweise
@@ -6134,7 +6134,7 @@ Addiert zwei Vektoren elementweise
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>val(string)</code></summary>
 
 Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter übergeben wurde.
@@ -6148,7 +6148,7 @@ Bestimmt den ASC-II-Code des ersten Zeichens welches als String-Parameter überg
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vdiv(v1, v2)</code></summary>
 
 Dividiert zwei Vektoren elementweise
@@ -6163,7 +6163,7 @@ Dividiert zwei Vektoren elementweise
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>verweis(matrix, wert, spalte)</code></summary>
 
 verweis(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Spalte) einer Matrix M wo x dem Wert in der ersten Spalte am nächsten liegt
@@ -6179,7 +6179,7 @@ verweis(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Spalte
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>verweisdown(matrix, wert, spalte)</code></summary>
 
 verweisdown(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Spalte) einer Matrix M wo x dem Wert in der ersten Spalte am nächsten liegt
@@ -6195,7 +6195,7 @@ verweisdown(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Sp
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>verweisup(matrix, wert, spalte)</code></summary>
 
 verweisup(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Spalte) einer Matrix M wo x dem Wert in der ersten Spalte am nächsten liegt
@@ -6211,7 +6211,7 @@ verweisup(M,x,n) liefert den Wert der n-ten Spalte (ohne Angabe von n die 2.Spal
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vex(v1, v2)</code></summary>
 
 Berechnet das ex-Produkt von 2 Vektoren im 3-dimensionalen Raum
@@ -6226,7 +6226,7 @@ Berechnet das ex-Produkt von 2 Vektoren im 3-dimensionalen Raum
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vget(variable, anzahl) / vget(variable, anzahl, string)</code></summary>
 
 Liefert ein Element einer Menge oder einer Matrix (Menge von Mengen)
@@ -6244,7 +6244,7 @@ Alias/Kompatibilitätsname zu `setget`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vgetmaxima(variable, anzahl) / vgetmaxima(variable, anzahl, string)</code></summary>
 
 liefert ein Element eines Vektors oder einer Matrix wobei der Index (wie bei Maxima) bei 1 startet.
@@ -6260,7 +6260,7 @@ liefert ein Element eines Vektors oder einer Matrix wobei der Index (wie bei Max
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>viewpow(ausdruck)</code></summary>
 
 Gibt alle Wurzeln als Potenzen aus, und stellt alle Potenzen im Nenner als negativen Exponenten im Zähler dar
@@ -6274,7 +6274,7 @@ Gibt alle Wurzeln als Potenzen aus, und stellt alle Potenzen im Nenner als negat
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>viewsqrt(ausdruck)</code></summary>
 
 Gibt Potenzen welche als Wurzel darstellbar sind auch als als Wurzeln mit der Funktion sqrt oder root aus
@@ -6288,7 +6288,7 @@ Gibt Potenzen welche als Wurzel darstellbar sind auch als als Wurzeln mit der Fu
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vin(v1, v2)</code></summary>
 
 Berechnet das innere Produkt von 2 Vektoren
@@ -6303,7 +6303,7 @@ Berechnet das innere Produkt von 2 Vektoren
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vindex(vektor, wert)</code></summary>
 
 vindex(v,x) liefert den Index des Elementes eines Vektors, welcher am nächsten bei x liegt
@@ -6318,7 +6318,7 @@ vindex(v,x) liefert den Index des Elementes eines Vektors, welcher am nächsten 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vindexdown(vektor, wert)</code></summary>
 
 vindexdown(v,x) liefert den Index des Elementes eines Vektors, welcher kleiner oder gleich x ist
@@ -6333,7 +6333,7 @@ vindexdown(v,x) liefert den Index des Elementes eines Vektors, welcher kleiner o
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vindexup(vektor, wert)</code></summary>
 
 vindexup(v,x) liefert den Index des Elementes eines Vektors, welcher größer oder gleich x ist
@@ -6348,7 +6348,7 @@ vindexup(v,x) liefert den Index des Elementes eines Vektors, welcher größer od
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vinsert(menge, index, wert)</code></summary>
 
 fügt ein Element in eine Menge an eine gegebene Stelle ein
@@ -6366,7 +6366,7 @@ Alias/Kompatibilitätsname zu `setinsert`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vmatrix(variable)</code></summary>
 
 Erzeugt aus genau einem Vektor eine Matrix. Enthaltene Vektoren werden zu Matrixzeilen, einzelne Werte zu ein-elementigen Zeilen; eine Matrix wird unverändert zurückgegeben.
@@ -6380,7 +6380,7 @@ Erzeugt aus genau einem Vektor eine Matrix. Enthaltene Vektoren werden zu Matrix
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vmul(v1, v2)</code></summary>
 
 Multipliziert zwei Vektoren elementweise
@@ -6395,7 +6395,7 @@ Multipliziert zwei Vektoren elementweise
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vpow(v1, v2)</code></summary>
 
 Potenziert zwei Vektoren elementweise
@@ -6410,7 +6410,7 @@ Potenziert zwei Vektoren elementweise
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vremove(variable, anzahl)</code></summary>
 
 löscht ein Element einer Menge
@@ -6427,7 +6427,7 @@ Alias/Kompatibilitätsname zu `setremove`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vset(mengeOderMatrix, indexOderZeile, wertOderSpalte) / vset(mengeOderMatrix, indexOderZeile, wertOderSpalte, wert)</code></summary>
 
 setzt ein Element einer Menge oder einer Matrix (Menge von Mengen)
@@ -6446,7 +6446,7 @@ Alias/Kompatibilitätsname zu `setset`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vsetmaxima(vektorOderMatrix, indexOderZeile, wertOderSpalte) / vsetmaxima(vektorOderMatrix, indexOderZeile, wertOderSpalte, wert)</code></summary>
 
 setzt ein Element eines Vektors oder einer Matrix wobei der Index (wie bei Maxima) bei 1 startet.
@@ -6463,7 +6463,7 @@ setzt ein Element eines Vektors oder einer Matrix wobei der Index (wie bei Maxim
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>vsub(v1, v2)</code></summary>
 
 Subtrahiert zwei Vektoren elementweise
@@ -6478,7 +6478,7 @@ Subtrahiert zwei Vektoren elementweise
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>weeks(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit
@@ -6489,7 +6489,7 @@ Erzeugt aus einem Sekundenwert die Wochen (/7d) als Double ohne Einheit
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>wenn(e1, e2, e3)</code></summary>
 
 if(bedingung,wahr,falsch)
@@ -6507,7 +6507,7 @@ Alias/Kompatibilitätsname zu `if`.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>word(x)</code></summary>
 
 Zahl in eine Ganzzahl wandeln und die letzten 16bit der Zahl Abschneiden, Einheit geht verloren
@@ -6521,7 +6521,7 @@ Zahl in eine Ganzzahl wandeln und die letzten 16bit der Zahl Abschneiden, Einhei
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><code>years(sec)</code></summary>
 
 Erzeugt aus einem Sekundenwert die Jahre (/365d) als Double ohne Einheit
