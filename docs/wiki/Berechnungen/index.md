@@ -5748,10 +5748,10 @@ liefert das sechste Element mit dem Index 5 eines Vektors
 
 löst eine Gleichung oder ein Gleichungssystem nach einer oder mehrerer Variablen
 
-| Parameter | Beschreibung | Möglicher Datentyp | Optional |
-|---|---|---|---|
-| `gleichungen` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
-| `varlist` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
+| Parameter     | Beschreibung            | Möglicher Datentyp            | Optional |
+|---------------|-------------------------|-------------------------------|----------|
+| `gleichungen` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein     |
+| `varlist`     | Parameter der Funktion. | Ausdruck / passender Datentyp | nein     |
 
 **Beispiel:** `solve([2*x+y=3,x-y=0],[x,y])`  
 **Ergebnis:** [[ x=1,y=1 ]]
@@ -5763,11 +5763,11 @@ löst eine Gleichung oder ein Gleichungssystem nach einer oder mehrerer Variable
 
 löst eine Gleichung oder ein Gleichungssystem nach einer Variablen und liefert genau die erste Lösung wenn sie numerisch berechenbar ist
 
-| Parameter | Beschreibung | Möglicher Datentyp | Optional |
-|---|---|---|---|
-| `cc` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
-| `varlist` | Parameter der Funktion. | Ausdruck / passender Datentyp | nein |
-| `ausdruck` | Ausdruck bzw. Funktion, die verarbeitet werden soll. | Ausdruck | nein |
+| Parameter  | Beschreibung                                         | Möglicher Datentyp            | Optional |
+|------------|------------------------------------------------------|-------------------------------|----------|
+| `cc`       | Parameter der Funktion.                              | Ausdruck / passender Datentyp | nein     |
+| `varlist`  | Parameter der Funktion.                              | Ausdruck / passender Datentyp | nein     |
+| `ausdruck` | Ausdruck bzw. Funktion, die verarbeitet werden soll. | Ausdruck                      | nein     |
 
 **Beispiel:** `solvevalue([ 2*x+y=3,x-y=0 ],[ x,y ],x)`  
 **Ergebnis:** 1
@@ -5779,9 +5779,9 @@ löst eine Gleichung oder ein Gleichungssystem nach einer Variablen und liefert 
 
 Zerlegt einen numerischen Wert in Zahlenwert und die optimale Einheit mit Zahlenwert 1 als Feld mit Zahlenwert als Index 0 und Einheit als Index 1
 
-| Parameter | Beschreibung | Möglicher Datentyp | Optional |
-|---|---|---|---|
-| `oE` | Parameter der Funktion. | Vektor / Ganzzahl | nein |
+| Parameter | Beschreibung            | Möglicher Datentyp | Optional |
+|-----------|-------------------------|--------------------|----------|
+| `oE`      | Parameter der Funktion. | Vektor / Ganzzahl  | nein     |
 
 **Beispiel:** `splitoptunit(1300kVA)`  
 **Ergebnis:** [1.3,1MVA]
