@@ -17,6 +17,7 @@
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | &lt;F2&gt;                  | Datensatz ergänzen. Der Text links neben dem Cursor wird als Variablenname interpretiert, in geschwungene Klammern gesetzt und ein Datensatz angelegt. |
 | &lt;F3&gt;                  | Datensatz als Formel ergänzen. Wie &lt;F2&gt; jedoch wird eine Formel $x={x}$ für den Datensatz erzeugt.                                               |
+| &lt;F8&gt;                  | nur bei Lückentextfragen: Mit F8 kann das aktuelle Wort, bei dem der Cursor steht, als Textlücke definiert werden. |
 | &lt;Strg&gt; - i            | Bild von Datei einbinden                                                                                                                               |
 | &lt;Strg&gt; - F            | Datei hochladen und als Link einbinden                                                                                                                 |
 | &lt;Strg&gt; - P            | Sourcecode-Listing einfügen (Programm)                                                                                                                 |
@@ -25,3 +26,9 @@
 | &lt;Strg&gt; - &lt; Del&gt; | aktuellen Tag (in eckigen Klammern) löschen                                                                                                            |
 | &lt;Strg&gt; - B            | Fettschrift                                                                                                                                            |
 | &lt;Strg&gt; - U            | Unterstrichen                                                                                                                                          |
+
+**Shortcuts im Maxima-Feld**:
+
+| Shortcut                    | Beschreibung                                                                                                                                           |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| &lt;Strg&gt; - &lt;Space&gt;| Hilfs-Infotext zur aktuellen Funktion                                                                                                                  |

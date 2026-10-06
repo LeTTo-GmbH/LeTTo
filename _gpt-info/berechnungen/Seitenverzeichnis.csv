@@ -1,0 +1,452 @@
+Name;Art;Kategorie;Datei;Programmrevision;Implementierung
+band;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/band/index.md;;CalculateBitOperators.java
+bor;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bor/index.md;;CalculateBitOperators.java
+bxor;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bxor/index.md;;CalculateBitOperators.java
+bimp;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bimp/index.md;;CalculateBitOperators.java
+binv;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/binv/index.md;;CalculateBitOperators.java
+shl;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/shl/index.md;;CalculateBitOperators.java
+shr;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/shr/index.md;;CalculateBitOperators.java
+div;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/div/index.md;;CalculateArithmeticOperators.java
+inv8;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/inv8/index.md;;CalculateBitOperators.java
+inv16;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/inv16/index.md;;CalculateBitOperators.java
+inv32;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/inv32/index.md;;CalculateBitOperators.java
+inv64;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/inv64/index.md;;CalculateBitOperators.java
+byte;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/byte/index.md;;CalculateArithmeticFunctions.java
+word;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/word/index.md;;CalculateArithmeticFunctions.java
+int;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/int/index.md;;CalculateArithmeticFunctions.java
+long;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/long/index.md;;CalculateArithmeticFunctions.java
+parity;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/parity/index.md;;CalculateBitOperators.java
+blockparity;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/blockparity/index.md;;CalculateBitOperators.java
+bcd;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bcd/index.md;;CalculateBitOperators.java
+code;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/code/index.md;;CalculateBitOperators.java
+hamming;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/hamming/index.md;;CalculateBitOperators.java
+komplement;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/komplement/index.md;;CalculateBitOperators.java
+bitstream;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bitstream/index.md;;CalculateBitOperators.java
+dechex;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/dechex/index.md;;CalculateArithmeticFunctions.java
+hex;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/hex/index.md;;CalculateArithmeticFunctions.java
+decbin;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/decbin/index.md;;CalculateArithmeticFunctions.java
+bin;function;Funktionen für Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-ganzzahlen/bin/index.md;;CalculateArithmeticFunctions.java
+kgV;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/kgv-gross-2/index.md;;CalculateArithmeticFunctions.java
+ggT;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/ggt-gross-2/index.md;;CalculateArithmeticFunctions.java
+isprim;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/isprim/index.md;;CalculateArithmeticFunctions.java
+prims;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/prims/index.md;;CalculateArithmeticFunctions.java
+defracmix;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/defracmix/index.md;;CalculateArithmeticFunctions.java
+defrac;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/defrac/index.md;;CalculateArithmeticFunctions.java
+frac;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/frac/index.md;;CalculateArithmeticFunctions.java
+mod;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/mod/index.md;;CalculateArithmeticOperators.java
+mod2;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/mod2/index.md;;CalculateArithmeticOperators.java
+isNearInteger;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/isnearinteger-gross-2-6/index.md;;CalculateCompareOperators.java
+ni;function;Funktionen für rationale und Ganzzahlen;wiki/Berechnungen/func/funktionen-fuer-rationale-und-ganzzahlen/ni/index.md;;CalculateCompareOperators.java
+degmix;function;Funktionen für Winkel im Gradmaß;wiki/Berechnungen/func/funktionen-fuer-winkel-im-gradmass/degmix/index.md;;CalculateArithmeticFunctions.java
+deg;function;Funktionen für Winkel im Gradmaß;wiki/Berechnungen/func/funktionen-fuer-winkel-im-gradmass/deg/index.md;;CalculateArithmeticFunctions.java
+degstring;function;Funktionen für Winkel im Gradmaß;wiki/Berechnungen/func/funktionen-fuer-winkel-im-gradmass/degstring/index.md;;CalculateArithmeticFunctions.java
+eq;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/eq/index.md;;CalculateCompareOperators.java
+eqruntime;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/eqruntime/index.md;;CalculateCompareOperators.java
+ne;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/ne/index.md;;CalculateCompareOperators.java
+ge;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/ge/index.md;;CalculateCompareOperators.java
+le;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/le/index.md;;CalculateCompareOperators.java
+gt;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/gt/index.md;;CalculateCompareOperators.java
+lt;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/lt/index.md;;CalculateCompareOperators.java
+between;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/between/index.md;;CalculateCompareOperators.java
+land;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/land/index.md;;CalculateLogicalOperators.java
+lor;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/lor/index.md;;CalculateLogicalOperators.java
+not;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/not/index.md;;CalculateLogicalOperators.java
+lnot;function;boolesche(boolsche) Funktionen;wiki/Berechnungen/func/boolesche-boolsche-funktionen/lnot/index.md;;CalculateLogicalOperators.java
+double;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/double/index.md;;CalculateArithmeticFunctions.java
+float;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/float/index.md;;CalculateArithmeticFunctions.java
+numeric;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/numeric/index.md;;CalculateArithmeticFunctions.java
+originnumeric;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/originnumeric/index.md;;CalculateArithmeticFunctions.java
+removeunit;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/removeunit/index.md;;CalculateArithmeticFunctions.java
+unit;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/unit/index.md;;CalculateArithmeticFunctions.java
+originunit;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/originunit/index.md;;CalculateArithmeticFunctions.java
+splitunit;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/splitunit/index.md;;CalculateArithmeticFunctions.java
+splitoptunit;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/splitoptunit/index.md;;CalculateArithmeticFunctions.java
+unitopt;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/unitopt/index.md;;CalculateArithmeticFunctions.java
+eh;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/eh/index.md;;CalculateFunctions.java
+dB;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/db-gross-1/index.md;;CalculateDbFunctions.java
+fromdB;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdb-gross-5/index.md;;CalculateDbFunctions.java
+todB;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/todb-gross-3/index.md;;CalculateDbFunctions.java
+dB10;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/db10-gross-1/index.md;;CalculateDbFunctions.java
+fromdB10;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdb10-gross-5/index.md;;CalculateDbFunctions.java
+dBW;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbw-gross-1-2/index.md;;CalculateDbFunctions.java
+fromdBW;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbw-gross-5-6/index.md;;CalculateDbFunctions.java
+dBm;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbm-gross-1/index.md;;CalculateDbFunctions.java
+fromdBm;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbm-gross-5/index.md;;CalculateDbFunctions.java
+dBu;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbu-gross-1/index.md;;CalculateDbFunctions.java
+fromdBu;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbu-gross-5/index.md;;CalculateDbFunctions.java
+dBV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbv-gross-1-2/index.md;;CalculateDbFunctions.java
+fromdBV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbv-gross-5-6/index.md;;CalculateDbFunctions.java
+dBmV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbmv-gross-1-3/index.md;;CalculateDbFunctions.java
+fromdBmV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbmv-gross-5-7/index.md;;CalculateDbFunctions.java
+dBuV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/dbuv-gross-1-3/index.md;;CalculateDbFunctions.java
+fromdBuV;function;Funktionen zu Einheiten;wiki/Berechnungen/func/funktionen-zu-einheiten/fromdbuv-gross-5-7/index.md;;CalculateDbFunctions.java
+cround;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/cround/index.md;;CalculateArithmeticFunctions.java
+ccround;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/ccround/index.md;;CalculateArithmeticFunctions.java
+round;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/round/index.md;;CalculateArithmeticFunctions.java
+ground;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/ground/index.md;;CalculateArithmeticFunctions.java
+floor;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/floor/index.md;;CalculateArithmeticFunctions.java
+trunc;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/trunc/index.md;;CalculateArithmeticFunctions.java
+ceiling;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/ceiling/index.md;;CalculateArithmeticFunctions.java
+pow;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/pow/index.md;;CalculateArithmeticOperators.java
+par;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/par/index.md;;CalculateArithmeticOperators.java
+min;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/min/index.md;;CalculateArithmeticFunctions.java
+max;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/max/index.md;;CalculateArithmeticFunctions.java
+random;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/random/index.md;;CalculateArithmeticFunctions.java
+randomC;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/randomc-gross-6/index.md;;CalculateArithmeticFunctions.java
+signum;function;arithmetische Funktionen;wiki/Berechnungen/func/arithmetische-funktionen/signum/index.md;;CalculateArithmeticFunctions.java
+integrate;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/integrate/index.md;;CalculateMaximaFunctions.java
+diff;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/diff/index.md;;CalculateMaximaFunctions.java
+tomaxima;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/tomaxima/index.md;;CalculateMaximaFunctions.java
+laplace;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/laplace/index.md;;CalculateMaximaFunctions.java
+ilt;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/ilt/index.md;;CalculateMaximaFunctions.java
+sum;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/sum/index.md;;CalculateMaximaFunctions.java
+product;function;Maxima-basierte Funktionen;wiki/Berechnungen/func/maxima-basierte-funktionen/product/index.md;;CalculateMaximaFunctions.java
+sigma;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/sigma/index.md;;CalculateArithmeticFunctions.java
+pulse;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/pulse/index.md;;CalculateArithmeticFunctions.java
+ramp;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/ramp/index.md;;CalculateArithmeticFunctions.java
+interpol;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/interpol/index.md;;CalculateFunctions.java
+periodic;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/periodic/index.md;;CalculateFunctions.java
+numint;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/numint/index.md;;CalculateFunctions.java
+numdif;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/numdif/index.md;;CalculateFunctions.java
+solve;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/solve/index.md;;CalculateFunctions.java
+solvevalue;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/solvevalue/index.md;;CalculateFunctions.java
+newton;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/newton/index.md;;CalculateFunctions.java
+cnewton;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/cnewton/index.md;;CalculateFunctions.java
+newtonall;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/newtonall/index.md;;CalculateFunctions.java
+cnewtonall;function;erweiterte arithmetische Funktionen;wiki/Berechnungen/func/erweiterte-arithmetische-funktionen/cnewtonall/index.md;;CalculateFunctions.java
+lhs;function;Gleichungen und Gleichungssysteme;wiki/Berechnungen/func/gleichungen-und-gleichungssysteme/lhs/index.md;6521;CalculateCompareOperators.java
+rhs;function;Gleichungen und Gleichungssysteme;wiki/Berechnungen/func/gleichungen-und-gleichungssysteme/rhs/index.md;6521;CalculateCompareOperators.java
+onlypos;function;Gleichungen und Gleichungssysteme;wiki/Berechnungen/func/gleichungen-und-gleichungssysteme/onlypos/index.md;6522;CalculateAlgebraFunctions.java
+onlyreal;function;Gleichungen und Gleichungssysteme;wiki/Berechnungen/func/gleichungen-und-gleichungssysteme/onlyreal/index.md;6522;CalculateAlgebraFunctions.java
+chr;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/chr/index.md;;CalculateStringFunctions.java
+val;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/val/index.md;;CalculateStringFunctions.java
+strcat;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/strcat/index.md;;CalculateStringFunctions.java
+string;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/string/index.md;;CalculateStringFunctions.java
+parse;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/parse/index.md;;CalculateFunctions.java
+substring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/substring/index.md;;CalculateStringFunctions.java
+tailstring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/tailstring/index.md;;CalculateStringFunctions.java
+replacestring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/replacestring/index.md;;CalculateStringFunctions.java
+replaceallstring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/replaceallstring/index.md;;CalculateStringFunctions.java
+replacefirststring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/replacefirststring/index.md;;CalculateStringFunctions.java
+splitstring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/splitstring/index.md;;CalculateStringFunctions.java
+matchstring;function;Stringfunktionen;wiki/Berechnungen/func/stringfunktionen/matchstring/index.md;;CalculateStringFunctions.java
+sin;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/sin/index.md;;CalculateTrigonometricFunctions.java
+cos;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/cos/index.md;;CalculateTrigonometricFunctions.java
+tan;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/tan/index.md;;CalculateTrigonometricFunctions.java
+cot;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/cot/index.md;;CalculateTrigonometricFunctions.java
+asin;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/asin/index.md;;CalculateTrigonometricFunctions.java
+arcsin;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/arcsin/index.md;;CalculateTrigonometricFunctions.java
+acos;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acos/index.md;;CalculateTrigonometricFunctions.java
+arccos;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/arccos/index.md;;CalculateTrigonometricFunctions.java
+atan;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/atan/index.md;;CalculateTrigonometricFunctions.java
+arctan;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/arctan/index.md;;CalculateTrigonometricFunctions.java
+acot;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acot/index.md;;CalculateTrigonometricFunctions.java
+arccot;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/arccot/index.md;;CalculateTrigonometricFunctions.java
+atan2;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/atan2/index.md;;CalculateTrigonometricFunctions.java
+arctan2;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/arctan2/index.md;;CalculateTrigonometricFunctions.java
+sinh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/sinh/index.md;;CalculateTrigonometricFunctions.java
+cosh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/cosh/index.md;;CalculateTrigonometricFunctions.java
+tanh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/tanh/index.md;;CalculateTrigonometricFunctions.java
+coth;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/coth/index.md;;CalculateTrigonometricFunctions.java
+sec;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/sec/index.md;;CalculateTrigonometricFunctions.java
+csc;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/csc/index.md;;CalculateTrigonometricFunctions.java
+sech;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/sech/index.md;;CalculateTrigonometricFunctions.java
+csch;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/csch/index.md;;CalculateTrigonometricFunctions.java
+asinh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/asinh/index.md;;CalculateTrigonometricFunctions.java
+acosh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acosh/index.md;;CalculateTrigonometricFunctions.java
+atanh;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/atanh/index.md;;CalculateTrigonometricFunctions.java
+acoth;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acoth/index.md;;CalculateTrigonometricFunctions.java
+asec;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/asec/index.md;;CalculateTrigonometricFunctions.java
+acsc;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acsc/index.md;;CalculateTrigonometricFunctions.java
+asech;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/asech/index.md;;CalculateTrigonometricFunctions.java
+acsch;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/acsch/index.md;;CalculateTrigonometricFunctions.java
+csin;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/csin/index.md;;CalculateTrigonometricFunctions.java
+cssin;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/cssin/index.md;;CalculateTrigonometricFunctions.java
+quadrant;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/quadrant/index.md;;CalculateTrigonometricFunctions.java
+argnorm;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/argnorm/index.md;;CalculateTrigonometricFunctions.java
+pi;function;trigonometrische Funktionen;wiki/Berechnungen/func/trigonometrische-funktionen/pi/index.md;;CalculateTrigonometricFunctions.java
+sqrt;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/sqrt/index.md;;CalculateArithmeticFunctions.java
+root;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/root/index.md;;CalculateArithmeticFunctions.java
+exp;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/exp/index.md;;CalculateArithmeticFunctions.java
+log;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/log/index.md;;CalculateArithmeticFunctions.java
+ln;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/ln/index.md;;CalculateArithmeticFunctions.java
+log10;function;Exponentialfunktionen;wiki/Berechnungen/func/exponentialfunktionen/log10/index.md;;CalculateArithmeticFunctions.java
+abs;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/abs/index.md;;CalculateArithmeticFunctions.java
+cabs;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/cabs/index.md;;CalculateArithmeticFunctions.java
+cAbs;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/cabs-gross-1/index.md;;CalculateArithmeticFunctions.java
+carg;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/carg/index.md;;CalculateArithmeticFunctions.java
+cArg;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/carg-gross-1/index.md;;CalculateArithmeticFunctions.java
+realpart;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/realpart/index.md;;CalculateArithmeticFunctions.java
+cRe;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/cre-gross-1/index.md;;CalculateArithmeticFunctions.java
+imagpart;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/imagpart/index.md;;CalculateArithmeticFunctions.java
+cIm;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/cim-gross-1/index.md;;CalculateArithmeticFunctions.java
+conjugate;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/conjugate/index.md;;CalculateArithmeticFunctions.java
+cConjugate;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/cconjugate-gross-1/index.md;;CalculateArithmeticFunctions.java
+rectform;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/rectform/index.md;;CalculateArithmeticFunctions.java
+cRectform;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/crectform-gross-1/index.md;;CalculateArithmeticFunctions.java
+pol;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/pol/index.md;;CalculateArithmeticFunctions.java
+polgrad;function;komplexe Zahlen;wiki/Berechnungen/func/komplexe-zahlen/polgrad/index.md;;CalculateArithmeticFunctions.java
+polynom;function;Polynome;wiki/Berechnungen/func/polynome/polynom/index.md;;CalculatePolynomFunctions.java
+factfrompolynom;function;Polynome;wiki/Berechnungen/func/polynome/factfrompolynom/index.md;;CalculatePolynomFunctions.java
+polynomfromfact;function;Polynome;wiki/Berechnungen/func/polynome/polynomfromfact/index.md;;CalculatePolynomFunctions.java
+nullfrompolynom;function;Polynome;wiki/Berechnungen/func/polynome/nullfrompolynom/index.md;;CalculatePolynomFunctions.java
+polynomfromnull;function;Polynome;wiki/Berechnungen/func/polynome/polynomfromnull/index.md;;CalculatePolynomFunctions.java
+polynomk;function;Polynome;wiki/Berechnungen/func/polynome/polynomk/index.md;;CalculatePolynomFunctions.java
+ispolynom;function;Polynome;wiki/Berechnungen/func/polynome/ispolynom/index.md;;CalculatePolynomFunctions.java
+getvars;function;Polynome;wiki/Berechnungen/func/polynome/getvars/index.md;;CalculatePolynomFunctions.java
+factorial;function;statistische Funktionen;wiki/Berechnungen/func/statistische-funktionen/factorial/index.md;;CalculateStatistik.java
+binomial;function;statistische Funktionen;wiki/Berechnungen/func/statistische-funktionen/binomial/index.md;;CalculateStatistik.java
+setget;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setget/index.md;;CalculateAlgebraFunctions.java
+setset;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setset/index.md;;CalculateAlgebraFunctions.java
+setlength;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setlength/index.md;;CalculateMengenFunctions.java
+setinsert;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setinsert/index.md;;CalculateAlgebraFunctions.java
+setremove;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setremove/index.md;;CalculateAlgebraFunctions.java
+setapply;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setapply/index.md;5965;CalculateMengenFunctions.java
+setmedian;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setmedian/index.md;;CalculateMengenFunctions.java
+setboxplot;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setboxplot/index.md;;CalculateMengenFunctions.java
+setsort;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setsort/index.md;;CalculateMengenFunctions.java
+setsortnd;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setsortnd/index.md;;CalculateMengenFunctions.java
+setcount;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setcount/index.md;;CalculateMengenFunctions.java
+setmodus;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setmodus/index.md;;CalculateMengenFunctions.java
+setreverse;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setreverse/index.md;;CalculateMengenFunctions.java
+reverse;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/reverse/index.md;;CalculateMengenFunctions.java
+setnd;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setnd/index.md;;CalculateMengenFunctions.java
+setshuffle;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setshuffle/index.md;6082;CalculateMengenFunctions.java
+setmittel;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setmittel/index.md;;CalculateMengenFunctions.java
+setgeomittel;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setgeomittel/index.md;;CalculateMengenFunctions.java
+setvarianz;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setvarianz/index.md;;CalculateMengenFunctions.java
+setquadratmittel;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setquadratmittel/index.md;;CalculateMengenFunctions.java
+setsum;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setsum/index.md;;CalculateMengenFunctions.java
+setprod;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setprod/index.md;;CalculateMengenFunctions.java
+setunion;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setunion/index.md;;CalculateMengenFunctions.java
+setunionnd;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setunionnd/index.md;;CalculateMengenFunctions.java
+setcut;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setcut/index.md;;CalculateMengenFunctions.java
+setcompare;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setcompare/index.md;;CalculateMengenFunctions.java
+setcomparend;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setcomparend/index.md;;CalculateMengenFunctions.java
+setpartof;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setpartof/index.md;;CalculateMengenFunctions.java
+setpartofnd;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setpartofnd/index.md;;CalculateMengenFunctions.java
+setgetmin;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setgetmin/index.md;;CalculateMengenFunctions.java
+setgetmax;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setgetmax/index.md;;CalculateMengenFunctions.java
+setremovefirst;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setremovefirst/index.md;;CalculateMengenFunctions.java
+setremovelast;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setremovelast/index.md;;CalculateMengenFunctions.java
+setgetfirst;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setgetfirst/index.md;;CalculateMengenFunctions.java
+setgetlast;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setgetlast/index.md;;CalculateMengenFunctions.java
+setsub;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setsub/index.md;;CalculateMengenFunctions.java
+setmakelist;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/setmakelist/index.md;;CalculateMengenFunctions.java
+foreach;function;Mengen-Funktionen;wiki/Berechnungen/func/mengen-funktionen/foreach/index.md;6075,6075;CalculateFunctions.java
+curvepv;function;Funktionen für importierte Tabellen;wiki/Berechnungen/func/funktionen-fuer-importierte-tabellen/curvepv/index.md;;CalculateFunctions.java
+curveinterpol;function;Funktionen für importierte Tabellen;wiki/Berechnungen/func/funktionen-fuer-importierte-tabellen/curveinterpol/index.md;;CalculateFunctions.java
+curveinterpolfirst;function;Funktionen für importierte Tabellen;wiki/Berechnungen/func/funktionen-fuer-importierte-tabellen/curveinterpolfirst/index.md;;CalculateFunctions.java
+curveHTML;function;Funktionen für importierte Tabellen;wiki/Berechnungen/func/funktionen-fuer-importierte-tabellen/curvehtml-gross-5-6-7-8/index.md;;CalculateTable.java
+curveunits;function;Funktionen für importierte Tabellen;wiki/Berechnungen/func/funktionen-fuer-importierte-tabellen/curveunits/index.md;;CalculateTable.java
+pvabs;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvabs/index.md;6077;CalculatePointVectorFunctions.java
+pvarg;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvarg/index.md;6077;CalculatePointVectorFunctions.java
+pvget;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvget/index.md;6077;CalculatePointVectorFunctions.java
+pvgetx;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvgetx/index.md;6077;CalculatePointVectorFunctions.java
+pvgety;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvgety/index.md;6077;CalculatePointVectorFunctions.java
+pvinsert;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvinsert/index.md;6678;CalculatePointVectorFunctions.java
+pvinsertlast;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvinsertlast/index.md;6678;CalculatePointVectorFunctions.java
+pvremove;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvremove/index.md;6678;CalculatePointVectorFunctions.java
+pvdistance;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvdistance/index.md;6569;CalculatePointVectorFunctions.java
+pvlineabs;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvlineabs/index.md;6075;CalculatePointVectorFunctions.java
+pvlinearg;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvlinearg/index.md;6075;CalculatePointVectorFunctions.java
+pvlinek;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvlinek/index.md;6075;CalculatePointVectorFunctions.java
+pvlined;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvlined/index.md;6075;CalculatePointVectorFunctions.java
+pvline;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvline/index.md;6075;CalculatePointVectorFunctions.java
+pvpoints;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvpoints/index.md;6075;CalculatePointVectorFunctions.java
+pvlines;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvlines/index.md;;CalculatePointVectorFunctions.java
+pvvect;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvvect/index.md;6075;CalculatePointVectorFunctions.java
+pvrect;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvrect/index.md;;CalculatePointVectorFunctions.java
+pvsort;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsort/index.md;;CalculatePointVectorFunctions.java
+pvsortx;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortx/index.md;6077;CalculatePointVectorFunctions.java
+pvsorty;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsorty/index.md;6077;CalculatePointVectorFunctions.java
+pvsortabs;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortabs/index.md;6077;CalculatePointVectorFunctions.java
+pvsortarg;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortarg/index.md;6077;CalculatePointVectorFunctions.java
+pvsortlinex;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortlinex/index.md;6077;CalculatePointVectorFunctions.java
+pvsortliney;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortliney/index.md;6077;CalculatePointVectorFunctions.java
+pvsortlineabs;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortlineabs/index.md;6077;CalculatePointVectorFunctions.java
+pvsortlinearg;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvsortlinearg/index.md;6077;CalculatePointVectorFunctions.java
+pvequals;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvequals/index.md;6077;CalculatePointVectorFunctions.java
+pvhaspoint;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvhaspoint/index.md;6077;CalculatePointVectorFunctions.java
+pvhasline;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvhasline/index.md;6078;CalculatePointVectorFunctions.java
+pvforeachline;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvforeachline/index.md;6075,6075;CalculatePointVectorFunctions.java
+pvfunc;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvfunc/index.md;6080;CalculatePointVectorFunctions.java
+pvcompare;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvcompare/index.md;6080;CalculatePointVectorFunctions.java
+pvunion;function;Punkte-Mengen-Funktionen;wiki/Berechnungen/func/punkte-mengen-funktionen/pvunion/index.md;6569;CalculateAlgebraFunctions.java
+isset;function;Typ-Funktionen;wiki/Berechnungen/func/typ-funktionen/isset/index.md;;CalculateMengenFunctions.java
+issetnumeric;function;Typ-Funktionen;wiki/Berechnungen/func/typ-funktionen/issetnumeric/index.md;;CalculateMengenFunctions.java
+issetlong;function;Typ-Funktionen;wiki/Berechnungen/func/typ-funktionen/issetlong/index.md;;CalculateMengenFunctions.java
+islong;function;Typ-Funktionen;wiki/Berechnungen/func/typ-funktionen/islong/index.md;;CalculateMengenFunctions.java
+matrix;function;Algebra;wiki/Berechnungen/func/algebra/matrix/index.md;;CalculateAlgebraFunctions.java
+vmatrix;function;Algebra;wiki/Berechnungen/func/algebra/vmatrix/index.md;;CalculateAlgebraFunctions.java
+inv;function;Algebra;wiki/Berechnungen/func/algebra/inv/index.md;;CalculateAlgebraFunctions.java
+vget;function;Algebra;wiki/Berechnungen/func/algebra/vget/index.md;;CalculateAlgebraFunctions.java
+first;function;Algebra;wiki/Berechnungen/func/algebra/first/index.md;;CalculateAlgebraFunctions.java
+second;function;Algebra;wiki/Berechnungen/func/algebra/second/index.md;;CalculateAlgebraFunctions.java
+third;function;Algebra;wiki/Berechnungen/func/algebra/third/index.md;;CalculateAlgebraFunctions.java
+fourth;function;Algebra;wiki/Berechnungen/func/algebra/fourth/index.md;;CalculateAlgebraFunctions.java
+fifth;function;Algebra;wiki/Berechnungen/func/algebra/fifth/index.md;;CalculateAlgebraFunctions.java
+sixth;function;Algebra;wiki/Berechnungen/func/algebra/sixth/index.md;;CalculateAlgebraFunctions.java
+last;function;Algebra;wiki/Berechnungen/func/algebra/last/index.md;;CalculateAlgebraFunctions.java
+vgetmaxima;function;Algebra;wiki/Berechnungen/func/algebra/vgetmaxima/index.md;;CalculateAlgebraFunctions.java
+vset;function;Algebra;wiki/Berechnungen/func/algebra/vset/index.md;;CalculateAlgebraFunctions.java
+vsetmaxima;function;Algebra;wiki/Berechnungen/func/algebra/vsetmaxima/index.md;;CalculateAlgebraFunctions.java
+vinsert;function;Algebra;wiki/Berechnungen/func/algebra/vinsert/index.md;;CalculateAlgebraFunctions.java
+vremove;function;Algebra;wiki/Berechnungen/func/algebra/vremove/index.md;;CalculateAlgebraFunctions.java
+vabs;function;Algebra;wiki/Berechnungen/func/algebra/vabs/index.md;;CalculateAlgebraFunctions.java
+vin;function;Algebra;wiki/Berechnungen/func/algebra/vin/index.md;;CalculateAlgebraFunctions.java
+vex;function;Algebra;wiki/Berechnungen/func/algebra/vex/index.md;;CalculateAlgebraFunctions.java
+vadd;function;Algebra;wiki/Berechnungen/func/algebra/vadd/index.md;;CalculateAlgebraFunctions.java
+vsub;function;Algebra;wiki/Berechnungen/func/algebra/vsub/index.md;;CalculateAlgebraFunctions.java
+vmul;function;Algebra;wiki/Berechnungen/func/algebra/vmul/index.md;;CalculateAlgebraFunctions.java
+vdiv;function;Algebra;wiki/Berechnungen/func/algebra/vdiv/index.md;;CalculateAlgebraFunctions.java
+vpow;function;Algebra;wiki/Berechnungen/func/algebra/vpow/index.md;;CalculateAlgebraFunctions.java
+mrows;function;Algebra;wiki/Berechnungen/func/algebra/mrows/index.md;;CalculateMengenFunctions.java
+mcols;function;Algebra;wiki/Berechnungen/func/algebra/mcols/index.md;;CalculateMengenFunctions.java
+mprod;function;Algebra;wiki/Berechnungen/func/algebra/mprod/index.md;;CalculateAlgebraFunctions.java
+mtrans;function;Algebra;wiki/Berechnungen/func/algebra/mtrans/index.md;;CalculateAlgebraFunctions.java
+minv;function;Algebra;wiki/Berechnungen/func/algebra/minv/index.md;;CalculateAlgebraFunctions.java
+mdet;function;Algebra;wiki/Berechnungen/func/algebra/mdet/index.md;;CalculateAlgebraFunctions.java
+mcunion;function;Algebra;wiki/Berechnungen/func/algebra/mcunion/index.md;;CalculateAlgebraFunctions.java
+mrunion;function;Algebra;wiki/Berechnungen/func/algebra/mrunion/index.md;;CalculateAlgebraFunctions.java
+msub;function;Algebra;wiki/Berechnungen/func/algebra/msub/index.md;;CalculateAlgebraFunctions.java
+mcinsert;function;Algebra;wiki/Berechnungen/func/algebra/mcinsert/index.md;;CalculateAlgebraFunctions.java
+mrinsert;function;Algebra;wiki/Berechnungen/func/algebra/mrinsert/index.md;;CalculateAlgebraFunctions.java
+mcdelete;function;Algebra;wiki/Berechnungen/func/algebra/mcdelete/index.md;;CalculateAlgebraFunctions.java
+mrdelete;function;Algebra;wiki/Berechnungen/func/algebra/mrdelete/index.md;;CalculateAlgebraFunctions.java
+vindex;function;Algebra;wiki/Berechnungen/func/algebra/vindex/index.md;;CalculateAlgebraFunctions.java
+vindexup;function;Algebra;wiki/Berechnungen/func/algebra/vindexup/index.md;;CalculateAlgebraFunctions.java
+vindexdown;function;Algebra;wiki/Berechnungen/func/algebra/vindexdown/index.md;;CalculateAlgebraFunctions.java
+verweis;function;Algebra;wiki/Berechnungen/func/algebra/verweis/index.md;;CalculateAlgebraFunctions.java
+verweisup;function;Algebra;wiki/Berechnungen/func/algebra/verweisup/index.md;;CalculateAlgebraFunctions.java
+verweisdown;function;Algebra;wiki/Berechnungen/func/algebra/verweisdown/index.md;;CalculateAlgebraFunctions.java
+range;function;Algebra;wiki/Berechnungen/func/algebra/range/index.md;;CalculateAlgebraFunctions.java
+linspace;function;Algebra;wiki/Berechnungen/func/algebra/linspace/index.md;;CalculateAlgebraFunctions.java
+logspace;function;Algebra;wiki/Berechnungen/func/algebra/logspace/index.md;;CalculateAlgebraFunctions.java
+kill;function;Variable;wiki/Berechnungen/func/variable/kill/index.md;;CalculateFunctions.java
+allbut;function;Variable;wiki/Berechnungen/func/variable/allbut/index.md;;CalculateFunctions.java
+ev;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/ev/index.md;;CalculateFunctions.java
+evruntime;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/evruntime/index.md;;CalculateFunctions.java
+nv;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/nv/index.md;;CalculateFunctions.java
+if;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/if/index.md;;CalculateFunctions.java
+wenn;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/wenn/index.md;;CalculateFunctions.java
+plugin;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/plugin/index.md;;CalculateFunctions.java
+symbolic;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/symbolic/index.md;;CalculateFunctions.java
+runtime;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/runtime/index.md;;CalculateFunctions.java
+dataset;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/dataset/index.md;;CalculateFunctions.java
+forloop;function;Auswertung und Programmierung;wiki/Berechnungen/func/auswertung-und-programmierung/forloop/index.md;6077;CalculateFunctions.java
+opt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/opt/index.md;;CalculateFunctions.java
+optorder;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/optorder/index.md;;CalculateFunctions.java
+number;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/number/index.md;;CalculateFunctions.java
+mathe;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/mathe/index.md;;CalculateFunctions.java
+ratsimp;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/ratsimp/index.md;;CalculateFunctions.java
+noopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/noopt/index.md;;CalculateFunctions.java
+nopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/nopt/index.md;;CalculateFunctions.java
+lopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/lopt/index.md;;CalculateViewFunctions.java
+qopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/qopt/index.md;;CalculateViewFunctions.java
+lnoopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/lnoopt/index.md;;CalculateViewFunctions.java
+loptnumeric;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/loptnumeric/index.md;;CalculateViewFunctions.java
+aopt;function;Optimierung der Ausdrücke;wiki/Berechnungen/func/optimierung-der-ausdruecke/aopt/index.md;;CalculateViewFunctions.java
+viewpow;function;Anzeige und Lösungsberechnung;wiki/Berechnungen/func/anzeige-und-loesungsberechnung/viewpow/index.md;;CalculateViewFunctions.java
+viewsqrt;function;Anzeige und Lösungsberechnung;wiki/Berechnungen/func/anzeige-und-loesungsberechnung/viewsqrt/index.md;;CalculateViewFunctions.java
+dateparse;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateparse/index.md;6530;CalculateDateFunctions.java
+date;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/date/index.md;6530,6530;CalculateDateFunctions.java
+time;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/time/index.md;6762;CalculateDateFunctions.java
+datestring;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datestring/index.md;6530;CalculateDateFunctions.java
+timestring;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/timestring/index.md;6530;CalculateDateFunctions.java
+datetimestring;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datetimestring/index.md;6530;CalculateDateFunctions.java
+dateyear;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateyear/index.md;6530;CalculateDateFunctions.java
+datemonth;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datemonth/index.md;6530;CalculateDateFunctions.java
+dateday;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateday/index.md;6530;CalculateDateFunctions.java
+datehour;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datehour/index.md;6530;CalculateDateFunctions.java
+dateminute;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateminute/index.md;6530;CalculateDateFunctions.java
+datesecond;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datesecond/index.md;6530;CalculateDateFunctions.java
+datemix;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datemix/index.md;6641;CalculateDateFunctions.java
+datediff;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datediff/index.md;6530;CalculateDateFunctions.java
+dateweekday;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateweekday/index.md;6530;CalculateDateFunctions.java
+dateweek;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/dateweek/index.md;6530;CalculateDateFunctions.java
+datedayofyear;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/datedayofyear/index.md;6530;CalculateDateFunctions.java
+years;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/years/index.md;6530;CalculateDateFunctions.java
+months;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/months/index.md;6530;CalculateDateFunctions.java
+weeks;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/weeks/index.md;6530;CalculateDateFunctions.java
+days;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/days/index.md;6530;CalculateDateFunctions.java
+hours;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/hours/index.md;6530;CalculateDateFunctions.java
+minutes;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/minutes/index.md;6530;CalculateDateFunctions.java
+seconds;function;Datums und Zeitfunktionen;wiki/Berechnungen/func/datums-und-zeitfunktionen/seconds/index.md;6530;CalculateDateFunctions.java
+points;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/points/index.md;;CalculateFunctions.java
+parser;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/parser/index.md;;CalculateFunctions.java
+declare;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/declare/index.md;;CalculateFunctions.java
+selective_kill;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/selective-kill/index.md;;CalculateFunctions.java
+stackoverflow;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/stackoverflow/index.md;;CalculateFunctions.java
+runtimeexception;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/runtimeexception/index.md;;CalculateFunctions.java
+infiniteloop;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/infiniteloop/index.md;;CalculateFunctions.java
+delay;function;Spezialfunktionen LeTTo;wiki/Berechnungen/func/spezialfunktionen-letto/delay/index.md;;CalculateFunctions.java
+color;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/color/index.md;;CalculateStringFunctions.java
+parsecolor;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/parsecolor/index.md;;CalculateStringFunctions.java
+ip;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/ip/index.md;;CalculateStringFunctions.java
+parseip;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/parseip/index.md;;CalculateStringFunctions.java
+e12;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/e12/index.md;;CalculateArithmeticFunctions.java
+e12up;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/e12up/index.md;;CalculateArithmeticFunctions.java
+e12down;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/e12down/index.md;;CalculateArithmeticFunctions.java
+ise12;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/ise12/index.md;;CalculateArithmeticFunctions.java
+norm;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/norm/index.md;;CalculateArithmeticFunctions.java
+normup;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/normup/index.md;;CalculateArithmeticFunctions.java
+normdown;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/normdown/index.md;;CalculateArithmeticFunctions.java
+isnorm;function;Spezialfunktionen Technik;wiki/Berechnungen/func/spezialfunktionen-technik/isnorm/index.md;;CalculateArithmeticFunctions.java
+svphtosv;function;Raumzeiger für elektrische Maschinen;wiki/Berechnungen/func/raumzeiger-fuer-elektrische-maschinen/svphtosv/index.md;;CalculateRaumzeigerFunctions.java
+svsvtoph;function;Raumzeiger für elektrische Maschinen;wiki/Berechnungen/func/raumzeiger-fuer-elektrische-maschinen/svsvtoph/index.md;;CalculateRaumzeigerFunctions.java
++;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/plus/index.md;;
+-;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/minus/index.md;;
+*;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/multiplikation/index.md;;
+/;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/division/index.md;;
+%;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/prozent/index.md;;
+||;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/parallel/index.md;;
+^;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/potenz/index.md;;
+.*.;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/implizite-multiplikation/index.md;;
+|;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/oder/index.md;;
+or;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/or/index.md;;
+&;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/und/index.md;;
+and;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/and/index.md;;
+xor;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/xor/index.md;;
+imp;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/imp/index.md;;
+<<;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/links-schieben/index.md;;
+>>;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/rechts-schieben/index.md;;
+=;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/gleichung/index.md;;
+==;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/gleich/index.md;;
+!=;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/ungleich/index.md;;
+<;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/kleiner/index.md;;
+<=;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/kleiner-gleich/index.md;;
+>;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/groesser/index.md;;
+>=;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/groesser-gleich/index.md;;
+,;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/komma/index.md;;
+$;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/dollar/index.md;;
+";";infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/semikolon/index.md;;
+:;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/zuweisung/index.md;;
+::;infix;Infix-Operatoren;wiki/Berechnungen/operatoren/infix/zuweisung-ohne-optimierung/index.md;;
++;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/plus/index.md;;
+-;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/minus/index.md;;
+~;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/bit-inversion/index.md;;
+!;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/logisches-nicht/index.md;;
+++;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/inkrement/index.md;;
+--;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/dekrement/index.md;;
+%;prefix;Prefix-Operatoren;wiki/Berechnungen/operatoren/prefix/prozent/index.md;;
+++;suffix;Suffix-Operatoren;wiki/Berechnungen/operatoren/suffix/inkrement/index.md;;
+--;suffix;Suffix-Operatoren;wiki/Berechnungen/operatoren/suffix/dekrement/index.md;;
+%c0;constant;konstanten;wiki/Berechnungen/konstanten/c0/index.md;;
+%e;constant;konstanten;wiki/Berechnungen/konstanten/e/index.md;;
+%e0;constant;konstanten;wiki/Berechnungen/konstanten/e0/index.md;;
+%epsilon0;constant;konstanten;wiki/Berechnungen/konstanten/epsilon0/index.md;;
+%g;constant;konstanten;wiki/Berechnungen/konstanten/g/index.md;;
+%h;constant;konstanten;wiki/Berechnungen/konstanten/h/index.md;;
+%i;constant;konstanten;wiki/Berechnungen/konstanten/i/index.md;;
+%j;constant;konstanten;wiki/Berechnungen/konstanten/j/index.md;;
+%k;constant;konstanten;wiki/Berechnungen/konstanten/k/index.md;;
+%m0;constant;konstanten;wiki/Berechnungen/konstanten/m0/index.md;;
+%mu0;constant;konstanten;wiki/Berechnungen/konstanten/mu0/index.md;;
+%NA;constant;konstanten;wiki/Berechnungen/konstanten/na/index.md;;
+%pi;constant;konstanten;wiki/Berechnungen/konstanten/pi/index.md;;
+%Qe;constant;konstanten;wiki/Berechnungen/konstanten/qe/index.md;;
+%R0;constant;konstanten;wiki/Berechnungen/konstanten/r0/index.md;;
+[ ];bracket;klammern;wiki/Berechnungen/klammern/eckige-klammern/index.md;;
+{ };bracket;klammern;wiki/Berechnungen/klammern/geschweifte-klammern/index.md;;
+( );bracket;klammern;wiki/Berechnungen/klammern/runde-klammern/index.md;;
