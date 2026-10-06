@@ -10,7 +10,7 @@
 
 Kreiszahl.
 
-**Wert laut bereitgestellter Übersicht:** 3.141592653589793
+**Wert:** 3.141592653589793
 
 ### Anwendung und Besonderheiten
 

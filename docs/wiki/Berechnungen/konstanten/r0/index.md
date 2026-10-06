@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-8.314459848'J/Kmol'.
+Universelle Gaskonstante.
 
-**Wert laut bereitgestellter Übersicht:** Universelle Gaskonstante
+**Wert:** 8.314459848'J/Kmol'
 
 ### Anwendung und Besonderheiten
 

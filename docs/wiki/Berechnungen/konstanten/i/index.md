@@ -10,7 +10,7 @@
 
 komplexer Parameter als Lösung der Gleichung x^2=-1.
 
-**Wert laut bereitgestellter Übersicht:** i
+**Wert:** i
 
 ### Anwendung und Besonderheiten
 

@@ -10,7 +10,7 @@
 
 komplexer Parameter als Lösung der Gleichung x^2=-1<br><b>Wichtig:</b> Wir nur vom Parser unterstützt, nicht von Maxima.
 
-**Wert laut bereitgestellter Übersicht:** i
+**Wert:** i
 
 ### Anwendung und Besonderheiten
 

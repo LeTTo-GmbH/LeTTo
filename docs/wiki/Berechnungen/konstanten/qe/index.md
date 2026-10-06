@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-1.602176620898E-19As.
+Elementarladung.
 
-**Wert laut bereitgestellter Übersicht:** Elementarladung
+**Wert:** 1.602176620898E-19'As'
 
 ### Anwendung und Besonderheiten
 

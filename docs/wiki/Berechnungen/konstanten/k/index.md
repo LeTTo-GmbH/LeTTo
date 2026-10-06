@@ -10,7 +10,7 @@
 
 Boltzmann-Konstante.
 
-**Wert laut bereitgestellter Übersicht:** Stefan Bolzman Konstante
+**Wert:** 1.380649E-23'J/K'
 
 ### Anwendung und Besonderheiten
 

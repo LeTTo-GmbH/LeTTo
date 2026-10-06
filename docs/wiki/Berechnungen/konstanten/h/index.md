@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-6.6260704081E-34Js.
+Planksches Wirkungsquantum.
 
-**Wert laut bereitgestellter Übersicht:** planksches Wirkungsquantum
+**Wert:** 6.6260704081E-34'Js'
 
 ### Anwendung und Besonderheiten
 

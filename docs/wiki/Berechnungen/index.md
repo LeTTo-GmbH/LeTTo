@@ -26,17 +26,17 @@ Liste der definierten Konstanten:
 | [%j](konstanten/j/index.md) | i | komplexer Parameter als Lösung der Gleichung x^2=-1<br><b>Wichtig:</b> Wir nur vom Parser unterstützt, nicht von Maxima |
 | [%e](konstanten/e/index.md) | 2.718281828459045 | Eulersche Zahl |
 | [%pi](konstanten/pi/index.md) | 3.141592653589793 | Kreiszahl |
-| [%mu0](konstanten/mu0/index.md) | magnetische Feldkonstante | 4*%pi*1E-7'Vs/Am' |
-| [%m0](konstanten/m0/index.md) | magnetische Feldkonstante (alt, wird bald entfernt werden) | 4*%pi*1E-7'Vs/Am' |
-| [%epsilon0](konstanten/epsilon0/index.md) | elektrische Feldkonstante | 8.85418781762039E-12'As/Vm' |
-| [%e0](konstanten/e0/index.md) | elektrische Feldkonstante (alt, wird bald entfernt werden) | 8.85418781762039E-12'As/Vm' |
-| [%c0](konstanten/c0/index.md) | Lichtgeschwindigkeit | 299792458'm/s' |
-| [%Qe](konstanten/qe/index.md) | Elementarladung | 1.602176620898E-19As |
-| [%g](konstanten/g/index.md) | Erdbeschleunigung | 9.81'm/s^2' |
-| [%NA](konstanten/na/index.md) | Avogadro Konstante | 6.02214085774E23/mol |
-| [%k](konstanten/k/index.md) | Stefan Bolzman Konstante | Boltzmann-Konstante |
-| [%R0](konstanten/r0/index.md) | Universelle Gaskonstante | 8.314459848'J/Kmol' |
-| [%h](konstanten/h/index.md) | planksches Wirkungsquantum | 6.6260704081E-34Js |
+| [%mu0](konstanten/mu0/index.md) | 4*%pi*1E-7'Vs/Am' | magnetische Feldkonstante |
+| [%m0](konstanten/m0/index.md) | 4*%pi*1E-7'Vs/Am' | magnetische Feldkonstante (alt, wird bald entfernt werden) |
+| [%epsilon0](konstanten/epsilon0/index.md) | 8.85418781762039E-12'As/Vm' | elektrische Feldkonstante |
+| [%e0](konstanten/e0/index.md) | 8.85418781762039E-12'As/Vm' | elektrische Feldkonstante (alt, wird bald entfernt werden) |
+| [%c0](konstanten/c0/index.md) | 299792458'm/s' | Lichtgeschwindigkeit |
+| [%Qe](konstanten/qe/index.md) | 1.602176620898E-19As | Elementarladung |
+| [%g](konstanten/g/index.md) | 9.81'm/s^2' | Erdbeschleunigung |
+| [%NA](konstanten/na/index.md) | 6.02214085774E23'1/mol' | Avogadro Konstante |
+| [%k](konstanten/k/index.md) | 1.380649E-23'J/K' | Boltzmann-Konstante |
+| [%R0](konstanten/r0/index.md) | 8.314459848'J/Kmol' | Universelle Gaskonstante |
+| [%h](konstanten/h/index.md) | 6.6260704081E-34Js | planksches Wirkungsquantum |
 
 
 ## Berechnung mit Maxima

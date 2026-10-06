@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-4*%pi*1E-7'Vs/Am'.
+magnetische Feldkonstante (alt, wird bald entfernt werden).
 
-**Wert laut bereitgestellter Übersicht:** magnetische Feldkonstante (alt, wird bald entfernt werden)
+**Wert:** 4*%pi*1E-7'Vs/Am'
 
 ### Anwendung und Besonderheiten
 

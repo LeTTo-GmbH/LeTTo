@@ -10,7 +10,7 @@
 
 Eulersche Zahl.
 
-**Wert laut bereitgestellter Übersicht:** 2.718281828459045
+**Wert:** 2.718281828459045
 
 ### Anwendung und Besonderheiten
 

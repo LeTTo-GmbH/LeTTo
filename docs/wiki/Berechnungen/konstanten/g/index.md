@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-9.81'm/s^2'.
+Erdbeschleunigung.
 
-**Wert laut bereitgestellter Übersicht:** Erdbeschleunigung
+**Wert:** 9.81'm/s^2'
 
 ### Anwendung und Besonderheiten
 

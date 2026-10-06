@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-8.85418781762039E-12'As/Vm'.
+elektrische Feldkonstante.
 
-**Wert laut bereitgestellter Übersicht:** elektrische Feldkonstante
+**Wert:** 8.85418781762039E-12'As/Vm' 
 
 ### Anwendung und Besonderheiten
 

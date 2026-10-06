@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-299792458'm/s'.
+Lichtgeschwindigkeit.
 
-**Wert laut bereitgestellter Übersicht:** Lichtgeschwindigkeit
+**Wert:** 299792458'm/s'
 
 ### Anwendung und Besonderheiten
 

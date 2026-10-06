@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-6.02214085774E23/mol.
+Avogadro Konstante.
 
-**Wert laut bereitgestellter Übersicht:** Avogadro Konstante
+**Wert:** 6.02214085774E23'1/mol'
 
 ### Anwendung und Besonderheiten
 

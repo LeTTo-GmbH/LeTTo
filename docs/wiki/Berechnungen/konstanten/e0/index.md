@@ -8,9 +8,9 @@
 
 ## Detaillierte Beschreibung
 
-8.85418781762039E-12'As/Vm'.
+elektrische Feldkonstante (alt, wird bald entfernt werden).
 
-**Wert laut bereitgestellter Übersicht:** elektrische Feldkonstante (alt, wird bald entfernt werden)
+**Wert:** 8.85418781762039E-12'As/Vm'
 
 ### Anwendung und Besonderheiten
 
