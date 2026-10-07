@@ -1,6 +1,13 @@
 # Neuigkeiten
 
-* die nächste Major-Version 1.3 wird voraussichtlich im Oktober 2026 als Beta-Version verfügbar sein
+## Stable - Rev 7044 - Version 1.3 - Oktober 2026
+* Hilfe Maxima-Feld
+* Bugfixes
+* Neue Docker-Container-Struktur
+* Verwaltungs-Bereich für die LeTTo-App
+* Plugin-Konfiguration Umstellung auf Javascript
+* Pluginverwaltung im Setup-Service
+* Userstatistik im Setup-Service
 
 ## Stable - Rev 6893 - Version 1.2 - Juli 2026
 * Bugfixes
