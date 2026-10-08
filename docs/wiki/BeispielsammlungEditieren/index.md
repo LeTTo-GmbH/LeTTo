@@ -419,8 +419,9 @@ Vorraussetzung dafür ist, dass bei den Testeinstellungen ****Antworten mischen*
 Es sind 4 Beurteilungsmöglichkeiten implementiert.
 <br>![img_5.png](img_5.png)<br>
 
-| Normal      | Werden die korrekten Antworten teilweise markiert, gibt es Teilpunkte auf die Frage. Schüler kann mit richtigen Antworten Punkte sammeln. Eine falsche selektierte Antwort führt zu Null Prozent auf die ganze Frage. |
+| Beurteilung | Bedeutung |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Normal      | Werden die korrekten Antworten teilweise markiert, gibt es Teilpunkte auf die Frage. Schüler kann mit richtigen Antworten Punkte sammeln. Eine falsche selektierte Antwort führt zu Null Prozent auf die ganze Frage. |
 | Streng      | Das Lösungsmuster muss **exakt** getroffen werden. Wird eine korrekte Antwort nicht selektiert bzw. eine falsche Antwort selektiert führt das zu Null Prozent auf die ganze Frage.                                    |
 | mild        | Treffer werdern gegen Nieten gegengerechnet. Alle korrekten Antworten führen zur Summation der Teilpunkte und alle nicht korrekten Antworten zur Punktereduktion.                                                     |
 | HundertProz | Unabhängig von der Antwort gibt es immer 100 Prozent - TIPP: Kann interessant sein, wenn man SchülerInnenmeinungen abfragen möchte. BSP: War die Frage schwer?                                                        |
@@ -457,7 +458,8 @@ Um Zuordnungsfragen zu erschweren, können auf der rechten Seite auch falsche Be
 
 Weiters können auf der linken und rechten Seite auch mehrere gleichnamige Begriffe verwendet werden, um Zuordnungen zu Themengruppen zu ermöglichen.
 #### Beurteilung
-| Beurteilung |                                                                                                              |
+
+| Beurteilung | Bedeutung                                                                                                             |
 |-------------|--------------------------------------------------------------------------------------------------------------|
 | Normal      | Pro richtiger Zuordnung werden Punkte vergeben, bei falschen Antworten werden entsprechende Punkte abgezogen |
 | Streng      | Alle Zuordnungen müssen treffen                                                                              |
