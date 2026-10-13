@@ -161,8 +161,6 @@
 * [Zahlendarstellung](Zahlendarstellung/index.md)
 * [ZielEinheit](ZielEinheit/index.md)
 * [Zuordnung v. Beispielen](Zuordnungv.Beispielen/index.md)
-* [Dies ist eine Spezialseite und kann nicht bearbeitet werden.](DiesisteineSpezialseiteundkannnichtbearbeitetwerden./index.md)
-* [Zufällige Seite aufrufen [x]](ZufälligeSeiteaufrufenx/index.md)
 * [Liste aller Spezialseiten [q]](ListeallerSpezialseitenq/index.md)
 
 ## Kategorien
