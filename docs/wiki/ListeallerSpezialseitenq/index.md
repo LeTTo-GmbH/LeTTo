@@ -24,7 +24,7 @@ Fachinhalte, sondern helfen beim Finden und Navigieren.
 | [Berechnung](../Berechnung/index.md)                   | Seiten rund um Berechnungen in Fragen                  |
 | [Beispiele Editieren](../Beispiele_Editieren/index.md) | Seiten zum Erstellen und Bearbeiten von Fragen         |
 | [Dialoge](../Dialoge/index.md)                         | Beschreibungen der Dialoge in LeTTo                    |
-| [Export](../Export/index.md)                           | Seiten rund um den Export                              |
+| [Export](../Export/index.md)                           | Datenexport, PDF-Erstellung und Export-Service         |
 
 ## Funktionsreferenz für Berechnungen
 | Seite                                                               | Beschreibung                                         |

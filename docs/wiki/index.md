@@ -161,7 +161,7 @@
 * [Zahlendarstellung](Zahlendarstellung/index.md)
 * [ZielEinheit](ZielEinheit/index.md)
 * [Zuordnung v. Beispielen](Zuordnungv.Beispielen/index.md)
-* [Liste aller Spezialseiten [q]](ListeallerSpezialseitenq/index.md)
+* [Liste aller Spezialseiten](ListeallerSpezialseitenq/index.md)
 
 ## Kategorien
 * [Dialoge](Dialoge/index.md)

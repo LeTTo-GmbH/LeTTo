@@ -1,13 +1,13 @@
 # Dialoge
 * [Abos](../Abos/index.md)
 
-* [Berechtigungen verwalten](../Berechtigungen verwalten/index.md)
+* [Berechtigungen verwalten](../Berechtigungenverwalten/index.md)
 
-* [Dateien zur Frage verwalten](../Dateien zur Frage verwalten/index.md)
+* [Dateien zur Frage verwalten](../DateienzurFrageverwalten/index.md)
 
 * [Datensatz-Dialog](../Datensatz-Dialog/index.md)
 
-* [Definition von Plugins](../Definition von Plugins/index.md)
+* [Definition von Plugins](../DefinitionvonPlugins/index.md)
 
 * [Fachzuteilung-Abteilung](../Fachzuteilung-Abteilung/index.md)
 
@@ -17,5 +17,5 @@
 
 * [Reife- und Diplomprüfungsfragen](../Reife-undDiplomprüfungsfragen/index.md)
 
-* [Suche von Fragen in der Fragensammlung](../Suche von Fragen in der Fragensammlung/index.md)
+* [Suche von Fragen in der Fragensammlung](../SuchevonFrageninderFragensammlung/index.md)
 
