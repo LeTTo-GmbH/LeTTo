@@ -7,10 +7,5 @@ plugins:
   - jekyll-sitemap   # Sitemap-Plugin für bessere Indexierung durch Suchmaschinen
   - jekyll-feed      # Fügt RSS-Feed-Unterstützung hinzu
   - jekyll-paginate  # Unterstützt die Paginierung für Blog-Posts
-  - jekyll-search    # Fügt eine einfache JavaScript-Suchfunktion hinzu
-  - jekyll-archives  # Ermöglicht Archivierungsseiten, z.B. nach Jahren oder Kategorien
 
-# Konfiguration für die Suchfunktion (einfaches Suchplugin)
-search:
-  json: "/search.json"  # Pfad zur Suchdatei
-  files: [".md", ".html"]  # Welche Dateitypen durchsucht werden sollen
+# Die Suche läuft clientseitig über assets/js/simple-jekyll-search.min.js und search.json
