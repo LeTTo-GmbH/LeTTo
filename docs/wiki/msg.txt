@@ -59,7 +59,7 @@ Help-Wiki(25) -> Fehler 4 bei Link [[Titel#Überschrift des Abschnitts]]
 Help-Wiki(156) -> Fehler 1 bei Link [[Medium:Handbuch.pdf|Handbuch]]
 Help-Wiki(156) -> Fehler 1 bei Link [[Medium:Handbuch.pdf|Handbuch]]
 Help-Wiki(159) -> Fehler 1 bei Link [[Special:ListFiles]]
-Help-Wiki(173) -> Fehler 1 bei Link [[:Kategorie:Export‎]]
+Help-Wiki(173) -> Fehler 1 bei Link [[:Kategorie:Export]]
 Help-Wiki(175) -> Fehler 1 bei Link [[Special:Categories|alle Kategorien]]
 Help-Wiki(178) -> Fehler 1 bei Link [[Portal:Datenverwaltung]]
 Help-Wiki(181) -> Fehler 1 bei Link [[Special:Search/Server|&lt;code&gt;Server&lt;/code&gt;]]
@@ -101,6 +101,6 @@ ToDo-Liste(10) -> Fehler 1 bei Link [[Vorlage:Infobox]]
 ToDo-Liste(20) -> Fehler 1 bei Link [[Spezial:Kategorien]]
 ToDo-Liste(20) -> Fehler 1 bei Link [[Special:Categories]]
 create Kategorie: Dialoge
-create Kategorie: Export‎
+create Kategorie: Export
 create Kategorie: Berechnung
 create Kategorie: Beispiele_Editieren

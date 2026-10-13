@@ -169,9 +169,9 @@ Um Beiträge inhaltlich und strukturell zu verbinden, können Kategorien vergebe
 
 Alle Seiten einer Kategorie werden in Übersichtsseiten **automatisch** alphabetisch sortiert zusammengetragen, etwa:
 
-Dies erfolgt z.B. für Beiträge betreffend Exportfunktionen durch den Eintrag <code>&lt;nowiki&gt;Kategorie:Export‎&lt;/nowiki&gt;</code>.
+Dies erfolgt z.B. für Beiträge betreffend Exportfunktionen durch den Eintrag <code>&lt;nowiki&gt;Kategorie:Export&lt;/nowiki&gt;</code>.
 
-Zu einer Kategorieübersicht verlinkt man mit <code>&lt;nowiki&gt;:Kategorie:Export‎&lt;/nowiki&gt;</code>.
+Zu einer Kategorieübersicht verlinkt man mit <code>&lt;nowiki&gt;:Kategorie:Export&lt;/nowiki&gt;</code>.
 
 Hier sind '''Special:Categories|alle Kategorien''' aufgelistet.
 

@@ -1,5 +1,0 @@
-= Allgemeines =
-
-= siehe auch =
-* [[Plugins]]
-
