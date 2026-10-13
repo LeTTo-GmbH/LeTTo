@@ -34,4 +34,3 @@
 
 # Vorgangsweise wenn der Suchindex nicht aktualisiert wird
 * Öffne im Brower die Datei https://doc.letto.at/search.json
-  * Hier tritt wahrscheinW
