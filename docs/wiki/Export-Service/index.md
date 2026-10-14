@@ -1,7 +1,7 @@
 # Export-Service
 Das Export-Service wird für folgende Aufgaben bei einem LeTTo-Server verwendet:
 
-* Export von .lto-Dateien
+* Export von .lto-Dateien (Formatbeschreibung: [LTO-Dateiformat](../../lto/index.md))
 * Import von .lto-Dateien
 * Import von Moodle-XML-Dateien
 * Druck von PDF-Dateien

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letto mode="101" databaseinfo="sql">
+<question type="MoodleClozeCalc">
+   <id>0</id>
+   <idUser>0</idUser>
+   <questionType>22</questionType>
+   <single>2</single>
+   <name><![CDATA[Ohmsches Gesetz - Strom und Leistung]]></name>
+   <punkte>2.0</punkte>
+   <penalty/>
+   <hidden>0</hidden>
+   <tag><![CDATA[Elektrotechnik Grundlagen]]></tag>
+   <noAutoCorrect>0</noAutoCorrect>
+   <usecase>0</usecase>
+   <synchronize>0</synchronize>
+   <shuffleAnswers>1</shuffleAnswers>
+   <answerNumbering><![CDATA[abc]]></answerNumbering>
+   <unitGradingType>2</unitGradingType>
+   <unitPenalty>0.1</unitPenalty>
+   <showUnits>0</showUnits>
+   <unitsLeft>0</unitsLeft>
+   <maxima><![CDATA[I : U/R
+P : U*I]]></maxima>
+   <responseFormat><![CDATA[editor]]></responseFormat>
+   <responseFieldLines>10</responseFieldLines>
+   <attachments>3</attachments>
+   <md5/>
+   <units/>
+   <plugins/>
+   <sendToParser>false</sendToParser>
+   <preCalc>false</preCalc>
+   <streng>false</streng>
+   <licenceKey/>
+   <konstanteMitProzent>true</konstanteMitProzent>
+   <useSymbolicMode>false</useSymbolicMode>
+   <addDocumentsPossible>false</addDocumentsPossible>
+   <info><![CDATA[Beispiel aus der LTO-Formatdoku: Berechnungsfrage mit zwei Datensätzen.]]></info>
+   <randomDataset>false</randomDataset>
+   <creationDate></creationDate>
+   <lastChange></lastChange>
+   <security/>
+   <copyright/>
+   <onRamp>false</onRamp>
+   <jsonMap><![CDATA[{}]]></jsonMap>
+   <changeLogMap><![CDATA[{}]]></changeLogMap>
+   <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+   <questionCommentIcon>PROCESSING</questionCommentIcon>
+   <text art="Questiontext" id="0" format="html">   <inhalt><![CDATA[<p>Ein Widerstand $R = {R}$ liegt an der Spannung $U = {U}$.</p>
+
+<p>(a) Berechnen Sie den Strom $I = $&nbsp;[Q0]</p>
+
+<p>(b) Berechnen Sie die umgesetzte Leistung $P = $&nbsp;[Q1]</p>
+]]></inhalt>
+</text>
+   <text art="general feedback" id="0" format="html">   <inhalt><![CDATA[<p>$I = \frac{U}{R} = {=I}$, $P = U \cdot I = {=P}$</p>]]></inhalt>
+</text>
+   <text art="correct feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="partially correct feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="incorrect feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="grader info" id="0" format="html">   <inhalt/>
+</text>
+   <subquestion>
+      <id>0</id>
+      <grade>1.0</grade>
+      <mode>4</mode>
+      <name><![CDATA[Q0]]></name>
+      <maxima/>
+      <plugininfo/>
+      <shuffleAnswers>1</shuffleAnswers>
+      <schwierigkeit>0</schwierigkeit>
+      <answer>
+         <id>0</id>
+         <fraction>100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[U/R]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima><![CDATA[I]]></maxima>
+         <answer><![CDATA[52mA]]></answer>
+         <einheit><![CDATA[A]]></einheit>
+      </answer>
+   </subquestion>
+   <subquestion>
+      <id>0</id>
+      <grade>1.0</grade>
+      <mode>4</mode>
+      <name><![CDATA[Q1]]></name>
+      <maxima/>
+      <plugininfo/>
+      <shuffleAnswers>1</shuffleAnswers>
+      <schwierigkeit>0</schwierigkeit>
+      <answer>
+         <id>0</id>
+         <fraction>100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[U^2/R]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima><![CDATA[P]]></maxima>
+         <answer><![CDATA[4.056W]]></answer>
+         <einheit><![CDATA[W]]></einheit>
+      </answer>
+   </subquestion>
+   <dataset>
+      <id>0</id>
+      <status/>
+      <name><![CDATA[U]]></name>
+      <type><![CDATA[calculated]]></type>
+      <distribution><![CDATA[uniform]]></distribution>
+      <minimum><![CDATA[13]]></minimum>
+      <maximum><![CDATA[220]]></maximum>
+      <decimals><![CDATA[3]]></decimals>
+      <itemcount>40</itemcount>
+      <zahlenbereich><![CDATA[F2:5-230]]></zahlenbereich>
+      <ziffern>2</ziffern>
+      <einheit><![CDATA[V]]></einheit>
+      <items><![CDATA[78;39;150;21;130;87;18;120;13;100;21;25;100;190;33;55;150;220;130;94;220;15;200;70;37;32;74;190;46;140;150;89;130;19;18;51;160;100;76;140]]></items>
+   </dataset>
+   <dataset>
+      <id>0</id>
+      <status/>
+      <name><![CDATA[R]]></name>
+      <type><![CDATA[calculated]]></type>
+      <distribution><![CDATA[uniform]]></distribution>
+      <minimum><![CDATA[120]]></minimum>
+      <maximum><![CDATA[10000]]></maximum>
+      <decimals><![CDATA[3]]></decimals>
+      <itemcount>40</itemcount>
+      <zahlenbereich><![CDATA[E12:100-10k]]></zahlenbereich>
+      <ziffern>2</ziffern>
+      <einheit><![CDATA[Ohm]]></einheit>
+      <items><![CDATA[1500;820;560;390;270;6800;10000;390;150;3300;560;2200;1800;680;8200;1500;560;3900;150;180;2200;1200;270;10000;680;220;1800;1200;120;5600;150;10000;2700;3300;680;680;6800;820;3900;1800]]></items>
+   </dataset>
+</question>
+</letto>

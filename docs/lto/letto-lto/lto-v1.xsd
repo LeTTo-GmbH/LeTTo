@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  XML-Schema des LeTTo-Austauschformats .lto, Version 1 (letto mode="101").
+
+  Quelle der Wahrheit ist der Export-/Import-Code in letto-export:
+    exportservice/.../service/threads/XmlExport.java   (Schreiben)
+    exportservice/.../service/threads/XmlImport.java   (Lesen)
+    exportservice/.../xml/XMLfileLTO.java              (Root-Element)
+
+  Das Schema beschreibt die Dateien so, wie LeTTo sie exportiert (feste Elementreihenfolge).
+  Der Import selbst ist toleranter (Reihenfolge der Einzelfelder egal, fehlende Felder = Standardwert),
+  wer Dateien erzeugt, sollte sich aber an dieses Schema halten.
+
+  Was ein XML-Schema NICHT prüfen kann und trotzdem gilt (siehe Doku https://doc.letto.at/lto/):
+   * Textfelder, die als CDATA gekennzeichnet sind, MÜSSEN als <![CDATA[...]]> geschrieben werden,
+     der Import liest bei diesen Feldern nur CDATA-Abschnitte (Ausnahme: category/name).
+   * Die <text>-Elemente einer Frage werden über ihre Position zugeordnet, nicht über das Attribut art.
+   * Jeder Platzhalter [Name] im Fragetext muss einer Teilfrage mit diesem Namen entsprechen.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xml:lang="de">
+
+  <!-- =====================================================================================
+       Root
+       ===================================================================================== -->
+
+  <xs:element name="letto">
+    <xs:annotation><xs:documentation>
+      Wurzelelement. Enthält genau EIN Objekt: eine Kategorie (Fragesammlung mit Unterordnern),
+      eine einzelne Frage oder eine einzelne Teilfrage. Der Import liest nur das erste Kindelement.
+    </xs:documentation></xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="category"    type="CategoryType"/>
+        <xs:element name="question"    type="QuestionType"/>
+        <xs:element name="subquestion" type="SubQuestionType"/>
+      </xs:choice>
+      <xs:attribute name="mode" use="required">
+        <xs:annotation><xs:documentation>
+          Dateiformat-Version. 101 = LETTO_XML_V1 (einzige derzeit definierte Version).
+        </xs:documentation></xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string"><xs:enumeration value="101"/></xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="databaseinfo" type="xs:string" use="optional">
+        <xs:annotation><xs:documentation>
+          Information über die Quelldatenbank, LeTTo schreibt "sql". Wird beim Import nicht ausgewertet.
+        </xs:documentation></xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- =====================================================================================
+       Kategorie (Ordner einer Fragesammlung)
+       ===================================================================================== -->
+
+  <xs:complexType name="CategoryType">
+    <xs:annotation><xs:documentation>
+      Ordner einer Fragesammlung. Zuerst der Name, dann die Fragen, dann die Unterordner.
+      Beim Import werden gleichnamige Unterordner zusammengeführt und doppelte Fragenamen
+      durch Anhängen von "-1", "-2", ... eindeutig gemacht.
+    </xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="name"     type="xs:string"><xs:annotation><xs:documentation>Ordnername (CDATA empfohlen).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="question" type="QuestionType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="category" type="CategoryType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- =====================================================================================
+       Frage
+       ===================================================================================== -->
+
+  <xs:complexType name="QuestionType">
+    <xs:annotation><xs:documentation>
+      Eine Frage. Die Einzelfelder stehen in der vom Export erzeugten Reihenfolge, danach folgen
+      die Texte (text), die Teilfragen (subquestion) und die Datensatz-Definitionen (dataset).
+      Fast alle Fragen in LeTTo sind vom Typ MoodleClozeCalc (22, "Mehrfachberechnungsfrage");
+      die Art jeder Lücke wird über subquestion/mode festgelegt.
+    </xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="id"            type="xs:long" minOccurs="0"><xs:annotation><xs:documentation>ID der Frage in der Quelldatenbank. Wird beim Import ignoriert (neue ID). Für neue Fragen 0.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="idUser"        type="xs:long" minOccurs="0"><xs:annotation><xs:documentation>ID des Erstellers in der Quelldatenbank. Für neue Fragen 0.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="questionType"  type="QuestionTypeValue"/>
+      <xs:element name="single"        type="LueckentextModeValue" minOccurs="0"/>
+      <xs:element name="name"          type="xs:string"><xs:annotation><xs:documentation>Name der Frage, CDATA PFLICHT. Muss innerhalb der Kategorie eindeutig sein.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="punkte"        type="xs:double" minOccurs="0"><xs:annotation><xs:documentation>Maximale Punkte der Frage (Standard 1.0).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="penalty"       type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Abzug je Wiederholung, z.B. "0.3333333" oder "10%". Export-Services bis Revision 7045 lesen dieses Feld beim Import nicht ein (sie erwarten "abzug").</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="hidden"        type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>1 = versteckt, 0 = sichtbar.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="tag"           type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Schlagworte (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="noAutoCorrect" type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>1 = Autokorrektur aus, 0 = globale Einstellung.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="usecase"       type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>1 = Groß-/Kleinschreibung beachten.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="synchronize"   type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>1 = mehrere Datensätze synchronisieren.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="shuffleAnswers" type="AntwortenMischenValue" minOccurs="0"/>
+      <xs:element name="answerNumbering" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Nummerierung der Antworten, z.B. "abc" (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="unitGradingType" type="xs:int" minOccurs="0"><xs:annotation><xs:documentation>Einheitenbewertung: 0 = nur Zahlenwert, 1 = Einheit wird umgerechnet aber nicht bewertet, 2 = Einheit muss angegeben werden und wird bewertet (Standard).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="unitPenalty"   type="xs:double" minOccurs="0"><xs:annotation><xs:documentation>Abzug für falsche Einheit, 0..1 (Standard 0.1).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="showUnits"     type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>0 = Texteingabe der Einheit, 1 = Mehrfachauswahl, 2 = Dropdown, 3 = Anzeige am Webserver.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="unitsLeft"     type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>0 = Einheit rechts vom Wert, 1 = links.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="maxima"        type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Maxima-/Parser-Berechnung der Frage (CDATA), eine Anweisung pro Zeile, Zuweisung mit ":".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="maximaAngabe"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Automatisch erzeugtes Angabefeld (CDATA). Wird von LeTTo berechnet; beim Erzeugen weglassen.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="responseFormat" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Antwortformat für Freitextfragen, Standard "editor" (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="responseFieldLines" type="xs:int" minOccurs="0"/>
+      <xs:element name="attachments"   type="xs:int"  minOccurs="0"/>
+      <xs:element name="md5"           type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Prüfsumme, wird von LeTTo verwaltet; beim Erzeugen leer lassen.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="revNrServer"   type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>VERALTET (SVN), wird ignoriert.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="revNrLocal"    type="xs:int"  minOccurs="0"><xs:annotation><xs:documentation>VERALTET (SVN), wird ignoriert.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="units"         type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Einheiten für Moodle (CDATA), in LeTTo meist leer.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="plugins"       type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Plugin-Definitionen der Frage (CDATA), je Zeile z.B. [PI Plugin1 Plot "..."].</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="sendToParser"  type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = Berechnung mit dem LeTTo-Parser, false = mit Maxima.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="preCalc"       type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = Frage wird mit eingesetzten Zahlenwerten vorberechnet.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="streng"        type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = Frage ist nur ganz richtig oder ganz falsch.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="licenceKey"    type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Lizenzschlüssel für verschlüsselte Fragen (CDATA); beim Erzeugen leer lassen.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="konstanteMitProzent" type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = physikalische Konstanten mit % (z.B. %pi, %e). Standard true.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="useSymbolicMode" type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = symbolisch rechnen, false = Konstanten als Gleitkommawerte.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="addDocumentsPossible" type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = Schüler können Dokumente zur Antwort hochladen.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="info"          type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Optionale Beschreibung der Funktionsweise der Frage (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="randomDataset" type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = Datensätze werden bei jedem Aufruf neu zufällig erzeugt.</xs:documentation></xs:annotation></xs:element>
+      <!-- seit April 2024 -->
+      <xs:element name="creationDate"  type="DateValue" minOccurs="0"/>
+      <xs:element name="lastChange"    type="DateValue" minOccurs="0"/>
+      <xs:element name="security"      type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Geschützter Gültigkeits-/Lizenzstring (CDATA), wird von LeTTo verwaltet.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="copyright"     type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Copyright-Information (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="onRamp"        type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = nächste Teilfrage erst nach korrekter Abgabe der vorigen einblenden.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="jsonMap"       type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>JSON-Objekt Map&lt;String,String&gt; mit Zusatzdaten (CDATA), sonst "{}".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="changeLogMap"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>JSON-Objekt Map&lt;String,String&gt; mit Änderungsprotokoll (CDATA), sonst "{}".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="questionCommentMsg"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Bearbeitungskommentar zur Frage (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="questionCommentIcon" type="IconTypeValue" minOccurs="0"/>
+      <xs:element name="text"          type="LettoTextType" maxOccurs="unbounded"><xs:annotation><xs:documentation>
+        Texte der Frage, positionsabhängig: 1. Fragetext, 2. allgemeines Feedback, 3. Feedback richtig,
+        4. Feedback teilweise richtig, 5. Feedback falsch, 6. Info für Beurteiler, 7.+8. leer/reserviert,
+        ab 9. Hinweise (hints). LeTTo exportiert immer die ersten sechs.
+      </xs:documentation></xs:annotation></xs:element>
+      <xs:element name="subquestion"   type="SubQuestionType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="dataset"       type="DatasetType"     minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:string" use="optional">
+      <xs:annotation><xs:documentation>
+        Fragetyp als Name (z.B. "MoodleClozeCalc"), nur zur Information; maßgeblich ist das Element questionType.
+      </xs:documentation></xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <!-- =====================================================================================
+       Text mit Dateien
+       ===================================================================================== -->
+
+  <xs:complexType name="LettoTextType">
+    <xs:sequence>
+      <xs:element name="inhalt" type="xs:string"><xs:annotation><xs:documentation>HTML-Inhalt des Textes, CDATA PFLICHT. Leerer Text: &lt;inhalt/&gt;.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="file"   type="LettoFileType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="art"    type="TextArtValue" use="optional"/>
+    <xs:attribute name="id"     type="xs:long"   use="optional"/>
+    <xs:attribute name="format" type="xs:string" use="optional"><xs:annotation><xs:documentation>"html" oder leer.</xs:documentation></xs:annotation></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="LettoFileType">
+    <xs:annotation><xs:documentation>
+      Eingebettete Datei (meist Bild), die im zugehörigen Text über ihren Dateinamen referenziert wird.
+      Inhalt entweder Base64-codiert (empfohlen) oder als URL (webPath).
+      Ein file ohne Inhalt (exportiert, wenn die Datei am Server fehlt) wird beim Import verworfen.
+    </xs:documentation></xs:annotation>
+    <xs:choice minOccurs="0">
+      <xs:element name="base64"  type="xs:string"><xs:annotation><xs:documentation>Dateiinhalt Base64-codiert (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="webPath" type="xs:string"><xs:annotation><xs:documentation>URL, von der die Datei beim Import geladen wird (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="inhalt"  type="xs:string"><xs:annotation><xs:documentation>VERALTET, gleichbedeutend mit base64.</xs:documentation></xs:annotation></xs:element>
+    </xs:choice>
+    <xs:attribute name="filename" type="xs:string" use="required"><xs:annotation><xs:documentation>Dateiname inkl. Endung; die Endung bestimmt beim Import den Dateityp.</xs:documentation></xs:annotation></xs:attribute>
+    <xs:attribute name="id"       type="xs:long"   use="optional"/>
+    <xs:attribute name="ext"      type="xs:string" use="optional"/>
+    <xs:attribute name="md5"      type="xs:string" use="optional"/>
+    <xs:attribute name="filePath" type="xs:string" use="optional"/>
+    <xs:attribute name="idUser"   type="xs:string" use="optional"><xs:annotation><xs:documentation>VERALTET.</xs:documentation></xs:annotation></xs:attribute>
+    <xs:attribute name="width"    type="SizeValue" use="optional"><xs:annotation><xs:documentation>Breite "50%" oder "300px"; ohne Einheit: Werte &gt; 105 gelten als Pixel, sonst Prozent.</xs:documentation></xs:annotation></xs:attribute>
+    <xs:attribute name="height"   type="SizeValue" use="optional"/>
+    <xs:attribute name="title"    type="xs:string" use="optional"/>
+    <xs:attribute name="alt"      type="xs:string" use="optional"/>
+    <xs:attribute name="style"    type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <!-- =====================================================================================
+       Teilfrage und Antwort
+       ===================================================================================== -->
+
+  <xs:complexType name="SubQuestionType">
+    <xs:annotation><xs:documentation>
+      Teilfrage = eine Lücke im Fragetext. Sie wird im Fragetext über [name] platziert, z.B. [Q0].
+    </xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="id"             type="xs:long"   minOccurs="0"/>
+      <xs:element name="grade"          type="xs:double" minOccurs="0"><xs:annotation><xs:documentation>Gewichtung der Teilfrage innerhalb der Frage (Standard 1.0).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="mode"           type="SQModeValue" minOccurs="0"/>
+      <xs:element name="name"           type="xs:string"><xs:annotation><xs:documentation>Name der Teilfrage, CDATA PFLICHT, z.B. "Q0".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="maxima"         type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Berechnung der Teilfrage (CDATA); bei mode PLUGIN der Plugin-Name.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="plugininfo"     type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Plugin-Zuordnung bei mode PLUGIN, z.B. "Plugin1:" (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="plugininputimage" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>VERALTET, wird ignoriert.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="einheit"        type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>VERALTET: Einheit für alle Antworten ohne eigene Einheit (nur Import).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="shuffleAnswers" type="AntwortenMischenValue" minOccurs="0"/>
+      <xs:element name="schwierigkeit"  type="SchwierigkeitValue"    minOccurs="0"/>
+      <xs:element name="answer"         type="AnswerType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AnswerType">
+    <xs:annotation><xs:documentation>
+      Antwort einer Teilfrage. Die Bedeutung von text / answer / maxima hängt vom mode der Teilfrage ab
+      (siehe Doku). Alle Textfelder: CDATA PFLICHT.
+    </xs:documentation></xs:annotation>
+    <xs:sequence>
+      <xs:element name="id"                  type="xs:long"   minOccurs="0"/>
+      <xs:element name="fraction"            type="FractionValue" minOccurs="0"><xs:annotation><xs:documentation>Bewertung in Prozent -100..100: 100 = richtig, 0 = falsch, negativ = Abzug bei Auswahl (Multiple Choice).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="format"              type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Format des Antworttextes, "html".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="text"                type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Antworttext (Auswahl-Text) bzw. Ergebnis mit Einheit.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="feedback"            type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Feedback zu dieser Antwort (HTML).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="tolerance"           type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Toleranz: "1%" relativ, "a0.1" absolut, "0" exakt.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="correctAnswerFormat" type="xs:int"    minOccurs="0"><xs:annotation><xs:documentation>1 = Nachkommastellen, 2 = signifikante Stellen (Standard).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="correctAnswerLength" type="xs:int"    minOccurs="0"><xs:annotation><xs:documentation>Stellenanzahl zu correctAnswerFormat (Standard 5).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="maxima"              type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Formel für das richtige Ergebnis (bei Berechnungen).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="answer"              type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Lösung/Zahlenwert bzw. Zuordnungspartner.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="einheit"             type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Ziel-Einheit bzw. Einheitenangabe, z.B. "V", "ms", "symbolfull", "=%".</xs:documentation></xs:annotation></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- =====================================================================================
+       Datensatz-Definition (Variable mit Zufallswerten)
+       ===================================================================================== -->
+
+  <xs:complexType name="DatasetType">
+    <xs:sequence>
+      <xs:element name="id"            type="xs:long"   minOccurs="0"/>
+      <xs:element name="status"        type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>"", "shared" oder "private"; wird beim Import ignoriert.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="name"          type="xs:string"><xs:annotation><xs:documentation>Variablenname, CDATA PFLICHT.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="type"          type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Immer "calculated".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="distribution"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Immer "uniform".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="minimum"       type="xs:string" minOccurs="0"/>
+      <xs:element name="maximum"       type="xs:string" minOccurs="0"/>
+      <xs:element name="decimals"      type="xs:string" minOccurs="0"/>
+      <xs:element name="itemcount"     type="xs:int"    minOccurs="0"><xs:annotation><xs:documentation>Anzahl der erzeugten Werte (Standard 40).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="zahlenbereich" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Definition des Wertebereichs, z.B. "3:1:16", "I1-10", "E12:1k-5k", Liste "1,2,5".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="ziffern"       type="xs:int"    minOccurs="0"><xs:annotation><xs:documentation>Gültige Ziffern bei der Werterzeugung.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="einheit"       type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Einheit der Variablen, z.B. "ms" (CDATA).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="items"         type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Erzeugte Werte, durch ";" getrennt, in SI-Basiseinheit (CDATA). Leer = LeTTo erzeugt die Werte.</xs:documentation></xs:annotation></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- =====================================================================================
+       Einfache Typen
+       ===================================================================================== -->
+
+  <xs:simpleType name="QuestionTypeValue">
+    <xs:annotation><xs:documentation>
+      Fragetyp als Zahl (so exportiert LeTTo) oder als Name:
+      10 MoodleNumerical, 11 MoodleCalculated, 12 MoodleCalculated_Multi, 13 MoodleCalculated_Simple,
+      14 MoodleMultichoice, 15 MoodleShortAnswer, 16 MoodleDescription, 17 MoodleEssay, 18 MoodleMatching,
+      19 MoodleCloze, 20 MoodleTrueFalse, 21 MoodleRandomsMatch, 22 MoodleClozeCalc, 23 LinkedQuestion.
+    </xs:documentation></xs:annotation>
+    <xs:union>
+      <xs:simpleType><xs:restriction base="xs:int"><xs:minInclusive value="10"/><xs:maxInclusive value="23"/></xs:restriction></xs:simpleType>
+      <xs:simpleType><xs:restriction base="xs:string">
+        <xs:enumeration value="MoodleNumerical"/><xs:enumeration value="MoodleCalculated"/>
+        <xs:enumeration value="MoodleMultichoice"/><xs:enumeration value="MoodleShortAnswer"/>
+        <xs:enumeration value="MoodleDescription"/><xs:enumeration value="MoodleEssay"/>
+        <xs:enumeration value="MoodleMatching"/><xs:enumeration value="MoodleCloze"/>
+        <xs:enumeration value="MoodleTrueFalse"/><xs:enumeration value="MoodleRandomsMatch"/>
+        <xs:enumeration value="MoodleClozeCalc"/><xs:enumeration value="LinkedQuestion"/>
+      </xs:restriction></xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:simpleType name="LueckentextModeValue">
+    <xs:annotation><xs:documentation>
+      Lückentextmodus: 0 MultipleChoice, 1 SingleChoice, 2 Texteingabe, 3 DragAndDrop,
+      4 RegularExpression, 5 CaseSensitive.
+    </xs:documentation></xs:annotation>
+    <xs:union>
+      <xs:simpleType><xs:restriction base="xs:int"><xs:minInclusive value="0"/><xs:maxInclusive value="5"/></xs:restriction></xs:simpleType>
+      <xs:simpleType><xs:restriction base="xs:string">
+        <xs:enumeration value="MultipleChoice"/><xs:enumeration value="SingleChoice"/>
+        <xs:enumeration value="Texteingabe"/><xs:enumeration value="DragAndDrop"/>
+        <xs:enumeration value="RegularExpression"/><xs:enumeration value="CaseSensitive"/>
+      </xs:restriction></xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:simpleType name="AntwortenMischenValue">
+    <xs:annotation><xs:documentation>
+      Antworten mischen: 0 Nicht_mischen, 1 Mischen (Standard), 2 Nur_links_mischen, 3 Nur_rechts_mischen
+      (2 und 3 für Zuordnung), 4 Normal, 5 Streng, 6 Mild (4-6 für Bildabgabe).
+    </xs:documentation></xs:annotation>
+    <xs:union>
+      <xs:simpleType><xs:restriction base="xs:int"><xs:minInclusive value="0"/><xs:maxInclusive value="6"/></xs:restriction></xs:simpleType>
+      <xs:simpleType><xs:restriction base="xs:string">
+        <xs:enumeration value="Nicht_mischen"/><xs:enumeration value="Mischen"/>
+        <xs:enumeration value="Nur_links_mischen"/><xs:enumeration value="Nur_rechts_mischen"/>
+        <xs:enumeration value="Normal"/><xs:enumeration value="Streng"/><xs:enumeration value="Mild"/>
+      </xs:restriction></xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:simpleType name="SchwierigkeitValue">
+    <xs:annotation><xs:documentation>
+      Bewertungsstrenge der Teilfrage: 0 Normal (Standard), 1 Streng, 2 Mild, 3 HundertProz.
+    </xs:documentation></xs:annotation>
+    <xs:union>
+      <xs:simpleType><xs:restriction base="xs:int"><xs:minInclusive value="0"/><xs:maxInclusive value="3"/></xs:restriction></xs:simpleType>
+      <xs:simpleType><xs:restriction base="xs:string">
+        <xs:enumeration value="Normal"/><xs:enumeration value="Streng"/>
+        <xs:enumeration value="Mild"/><xs:enumeration value="HundertProz"/>
+      </xs:restriction></xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:simpleType name="SQModeValue">
+    <xs:annotation><xs:documentation>
+      Art der Teilfrage: 0 SINGLECHOICE, 1 TEXT, 2 REGEXP, 3 MULTICHOICE, 4 CALCULATED (Standard),
+      5 BOOLSCH, 6 PLUGIN, 7 FREITEXT, 8 ZUORDNUNG, 9 IMAGE, 10 SCHIEBER.
+    </xs:documentation></xs:annotation>
+    <xs:union>
+      <xs:simpleType><xs:restriction base="xs:int"><xs:minInclusive value="0"/><xs:maxInclusive value="10"/></xs:restriction></xs:simpleType>
+      <xs:simpleType><xs:restriction base="xs:string">
+        <xs:enumeration value="SINGLECHOICE"/><xs:enumeration value="TEXT"/><xs:enumeration value="REGEXP"/>
+        <xs:enumeration value="MULTICHOICE"/><xs:enumeration value="CALCULATED"/><xs:enumeration value="BOOLSCH"/>
+        <xs:enumeration value="PLUGIN"/><xs:enumeration value="FREITEXT"/><xs:enumeration value="ZUORDNUNG"/>
+        <xs:enumeration value="IMAGE"/><xs:enumeration value="SCHIEBER"/>
+      </xs:restriction></xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:simpleType name="IconTypeValue">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WARNING"/><xs:enumeration value="REVIEWED"/>
+      <xs:enumeration value="PROCESSING"/><xs:enumeration value="BLOCKED"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TextArtValue">
+    <xs:annotation><xs:documentation>Nur zur Information, der Import ignoriert dieses Attribut.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Questiontext"/><xs:enumeration value="general feedback"/>
+      <xs:enumeration value="correct feedback"/><xs:enumeration value="partially correct feedback"/>
+      <xs:enumeration value="incorrect feedback"/><xs:enumeration value="grader info"/>
+      <xs:enumeration value=""/><xs:enumeration value="hint"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="FractionValue">
+    <xs:restriction base="xs:double"><xs:minInclusive value="-100"/><xs:maxInclusive value="100"/></xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DateValue">
+    <xs:annotation><xs:documentation>Datum im Format dd/MM/yyyy oder leer.</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:string"><xs:pattern value="(\d{2}/\d{2}/\d{4})?"/></xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SizeValue">
+    <xs:restriction base="xs:string"><xs:pattern value="\s*\d+(\.\d+)?\s*(px|%)?\s*"/></xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

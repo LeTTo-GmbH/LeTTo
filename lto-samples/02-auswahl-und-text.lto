@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letto mode="101" databaseinfo="sql">
+<question type="MoodleClozeCalc">
+   <id>0</id>
+   <idUser>0</idUser>
+   <questionType>22</questionType>
+   <single>0</single>
+   <name><![CDATA[Halbleiter - Auswahl und Texteingabe]]></name>
+   <punkte>3.0</punkte>
+   <penalty/>
+   <hidden>0</hidden>
+   <tag/>
+   <noAutoCorrect>0</noAutoCorrect>
+   <usecase>0</usecase>
+   <synchronize>0</synchronize>
+   <shuffleAnswers>1</shuffleAnswers>
+   <answerNumbering><![CDATA[abc]]></answerNumbering>
+   <unitGradingType>2</unitGradingType>
+   <unitPenalty>0.1</unitPenalty>
+   <showUnits>0</showUnits>
+   <unitsLeft>0</unitsLeft>
+   <maxima/>
+   <responseFormat><![CDATA[editor]]></responseFormat>
+   <responseFieldLines>10</responseFieldLines>
+   <attachments>3</attachments>
+   <md5/>
+   <units/>
+   <plugins/>
+   <sendToParser>false</sendToParser>
+   <preCalc>false</preCalc>
+   <streng>false</streng>
+   <licenceKey/>
+   <konstanteMitProzent>true</konstanteMitProzent>
+   <useSymbolicMode>false</useSymbolicMode>
+   <addDocumentsPossible>false</addDocumentsPossible>
+   <info><![CDATA[Beispiel aus der LTO-Formatdoku: Single-Choice, Multiple-Choice und Texteingabe ohne Datensätze.]]></info>
+   <randomDataset>false</randomDataset>
+   <creationDate></creationDate>
+   <lastChange></lastChange>
+   <security/>
+   <copyright/>
+   <onRamp>false</onRamp>
+   <jsonMap><![CDATA[{}]]></jsonMap>
+   <changeLogMap><![CDATA[{}]]></changeLogMap>
+   <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+   <questionCommentIcon>PROCESSING</questionCommentIcon>
+   <text art="Questiontext" id="0" format="html">   <inhalt><![CDATA[<p>(a) Welches Element wird am häufigsten als Halbleiter-Grundmaterial verwendet? [Q0]</p>
+
+<p>(b) Welche der folgenden Elemente sind fünfwertig und eignen sich zur n-Dotierung von Silizium? [Q1]</p>
+
+<p>(c) Wie heißt die Grenzschicht zwischen p- und n-dotiertem Gebiet (ein Wort)? [Q2]</p>
+]]></inhalt>
+</text>
+   <text art="general feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="correct feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="partially correct feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="incorrect feedback" id="0" format="html">   <inhalt/>
+</text>
+   <text art="grader info" id="0" format="html">   <inhalt/>
+</text>
+   <subquestion>
+      <id>0</id>
+      <grade>1.0</grade>
+      <mode>0</mode>
+      <name><![CDATA[Q0]]></name>
+      <maxima/>
+      <plugininfo/>
+      <shuffleAnswers>1</shuffleAnswers>
+      <schwierigkeit>0</schwierigkeit>
+      <answer>
+         <id>0</id>
+         <fraction>100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Silizium]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+      <answer>
+         <id>0</id>
+         <fraction>0.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Kupfer]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+      <answer>
+         <id>0</id>
+         <fraction>0.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Aluminium]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+   </subquestion>
+   <subquestion>
+      <id>0</id>
+      <grade>1.0</grade>
+      <mode>3</mode>
+      <name><![CDATA[Q1]]></name>
+      <maxima/>
+      <plugininfo/>
+      <shuffleAnswers>1</shuffleAnswers>
+      <schwierigkeit>0</schwierigkeit>
+      <answer>
+         <id>0</id>
+         <fraction>50.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Phosphor]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+      <answer>
+         <id>0</id>
+         <fraction>50.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Arsen]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+      <answer>
+         <id>0</id>
+         <fraction>-100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Bor]]></text>
+         <feedback><![CDATA[Bor ist dreiwertig und wird zur p-Dotierung verwendet.]]></feedback>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+      <answer>
+         <id>0</id>
+         <fraction>-100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Gallium]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer/>
+         <einheit/>
+      </answer>
+   </subquestion>
+   <subquestion>
+      <id>0</id>
+      <grade>1.0</grade>
+      <mode>1</mode>
+      <name><![CDATA[Q2]]></name>
+      <maxima/>
+      <plugininfo/>
+      <shuffleAnswers>1</shuffleAnswers>
+      <schwierigkeit>0</schwierigkeit>
+      <answer>
+         <id>0</id>
+         <fraction>100.0</fraction>
+         <format><![CDATA[html]]></format>
+         <text><![CDATA[Sperrschicht]]></text>
+         <feedback/>
+         <tolerance><![CDATA[1%]]></tolerance>
+         <correctAnswerFormat>2</correctAnswerFormat>
+         <correctAnswerLength>5</correctAnswerLength>
+         <maxima/>
+         <answer><![CDATA["Sperrschicht"]]></answer>
+         <einheit/>
+      </answer>
+   </subquestion>
+</question>
+</letto>

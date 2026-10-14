@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letto mode="101" databaseinfo="sql">
+<category>
+   <name><![CDATA[Mechanik Test]]></name>
+   <category>
+      <name><![CDATA[Kinematik]]></name>
+   <question type="MoodleClozeCalc">
+      <id>0</id>
+      <idUser>0</idUser>
+      <questionType>22</questionType>
+      <single>2</single>
+      <name><![CDATA[Gleichförmige Bewegung - Weg und Zeit]]></name>
+      <punkte>2.0</punkte>
+      <penalty/>
+      <hidden>0</hidden>
+      <tag><![CDATA[Mechanik Kinematik]]></tag>
+      <noAutoCorrect>0</noAutoCorrect>
+      <usecase>0</usecase>
+      <synchronize>0</synchronize>
+      <shuffleAnswers>1</shuffleAnswers>
+      <answerNumbering><![CDATA[abc]]></answerNumbering>
+      <unitGradingType>2</unitGradingType>
+      <unitPenalty>0.1</unitPenalty>
+      <showUnits>0</showUnits>
+      <unitsLeft>0</unitsLeft>
+      <maxima><![CDATA[sw : v*t
+ts : t]]></maxima>
+      <responseFormat><![CDATA[editor]]></responseFormat>
+      <responseFieldLines>10</responseFieldLines>
+      <attachments>3</attachments>
+      <md5/>
+      <units/>
+      <plugins/>
+      <sendToParser>false</sendToParser>
+      <preCalc>false</preCalc>
+      <streng>false</streng>
+      <licenceKey/>
+      <konstanteMitProzent>true</konstanteMitProzent>
+      <useSymbolicMode>false</useSymbolicMode>
+      <addDocumentsPossible>false</addDocumentsPossible>
+      <info><![CDATA[Gleichförmige Bewegung: Weg aus Geschwindigkeit (km/h) und Zeit (min), Zeitumrechnung in Sekunden.]]></info>
+      <randomDataset>false</randomDataset>
+      <creationDate></creationDate>
+      <lastChange></lastChange>
+      <security/>
+      <copyright/>
+      <onRamp>false</onRamp>
+      <jsonMap><![CDATA[{}]]></jsonMap>
+      <changeLogMap><![CDATA[{}]]></changeLogMap>
+      <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+      <questionCommentIcon>PROCESSING</questionCommentIcon>
+      <text art="Questiontext" id="0" format="html">      <inhalt><![CDATA[<p>Ein Fahrzeug fährt mit der konstanten Geschwindigkeit $v = {v}$ während der Zeit $t = {t}$.</p>
+
+<p>(a) Welchen Weg legt es zurück? $s = $&nbsp;[Q0] (in km)</p>
+
+<p>(b) Wie lange ist die Fahrzeit in Sekunden? $t = $&nbsp;[Q1] (in s)</p>
+]]></inhalt>
+</text>
+      <text art="general feedback" id="0" format="html">      <inhalt><![CDATA[<p>$s = v \cdot t = {=sw;=km,4}$, $t = {=ts;=s}$</p>]]></inhalt>
+</text>
+      <text art="correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="partially correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="incorrect feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="grader info" id="0" format="html">      <inhalt/>
+</text>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>4</mode>
+         <name><![CDATA[Q0]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[v*t]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima><![CDATA[sw]]></maxima>
+            <answer><![CDATA[75.83km]]></answer>
+            <einheit><![CDATA[=km]]></einheit>
+         </answer>
+      </subquestion>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>4</mode>
+         <name><![CDATA[Q1]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[t]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima><![CDATA[ts]]></maxima>
+            <answer><![CDATA[2100s]]></answer>
+            <einheit><![CDATA[=s]]></einheit>
+         </answer>
+      </subquestion>
+      <dataset>
+         <id>0</id>
+         <status/>
+         <name><![CDATA[v]]></name>
+         <type><![CDATA[calculated]]></type>
+         <distribution><![CDATA[uniform]]></distribution>
+         <minimum><![CDATA[8.33333]]></minimum>
+         <maximum><![CDATA[36.1111]]></maximum>
+         <decimals><![CDATA[3]]></decimals>
+         <itemcount>40</itemcount>
+         <zahlenbereich><![CDATA[30:10:130]]></zahlenbereich>
+         <ziffern>3</ziffern>
+         <einheit><![CDATA[km/h]]></einheit>
+         <items><![CDATA[36.1111;11.1111;8.33333;19.4444;16.6667;16.6667;13.8889;11.1111;36.1111;30.5556;11.1111;33.3333;25;8.33333;8.33333;11.1111;16.6667;16.6667;30.5556;33.3333;8.33333;30.5556;16.6667;36.1111;30.5556;25;16.6667;27.7778;33.3333;19.4444;8.33333;13.8889;25;22.2222;19.4444;13.8889;16.6667;22.2222;11.1111;11.1111]]></items>
+      </dataset>
+      <dataset>
+         <id>0</id>
+         <status/>
+         <name><![CDATA[t]]></name>
+         <type><![CDATA[calculated]]></type>
+         <distribution><![CDATA[uniform]]></distribution>
+         <minimum><![CDATA[300]]></minimum>
+         <maximum><![CDATA[3600]]></maximum>
+         <decimals><![CDATA[3]]></decimals>
+         <itemcount>40</itemcount>
+         <zahlenbereich><![CDATA[5:5:60]]></zahlenbereich>
+         <ziffern>2</ziffern>
+         <einheit><![CDATA[min]]></einheit>
+         <items><![CDATA[2100;600;1800;1800;3000;1500;300;3600;2400;2700;600;2100;600;2700;1500;3300;3000;1800;3000;1200;3600;600;300;3300;1200;1500;600;1200;600;2100;1500;2400;3300;1800;900;1800;1800;1200;3300;1500]]></items>
+      </dataset>
+   </question>
+   <question type="MoodleClozeCalc">
+      <id>0</id>
+      <idUser>0</idUser>
+      <questionType>22</questionType>
+      <single>2</single>
+      <name><![CDATA[Freier Fall - Fallzeit und Aufprallgeschwindigkeit]]></name>
+      <punkte>2.0</punkte>
+      <penalty/>
+      <hidden>0</hidden>
+      <tag><![CDATA[Mechanik Kinematik]]></tag>
+      <noAutoCorrect>0</noAutoCorrect>
+      <usecase>0</usecase>
+      <synchronize>0</synchronize>
+      <shuffleAnswers>1</shuffleAnswers>
+      <answerNumbering><![CDATA[abc]]></answerNumbering>
+      <unitGradingType>2</unitGradingType>
+      <unitPenalty>0.1</unitPenalty>
+      <showUnits>0</showUnits>
+      <unitsLeft>0</unitsLeft>
+      <maxima><![CDATA[tF : sqrt(2*h/%g)
+vF : %g*tF]]></maxima>
+      <responseFormat><![CDATA[editor]]></responseFormat>
+      <responseFieldLines>10</responseFieldLines>
+      <attachments>3</attachments>
+      <md5/>
+      <units/>
+      <plugins/>
+      <sendToParser>false</sendToParser>
+      <preCalc>false</preCalc>
+      <streng>false</streng>
+      <licenceKey/>
+      <konstanteMitProzent>true</konstanteMitProzent>
+      <useSymbolicMode>false</useSymbolicMode>
+      <addDocumentsPossible>false</addDocumentsPossible>
+      <info><![CDATA[Freier Fall ohne Luftwiderstand aus Höhe h: Fallzeit und Aufprallgeschwindigkeit, g = %g.]]></info>
+      <randomDataset>false</randomDataset>
+      <creationDate></creationDate>
+      <lastChange></lastChange>
+      <security/>
+      <copyright/>
+      <onRamp>false</onRamp>
+      <jsonMap><![CDATA[{}]]></jsonMap>
+      <changeLogMap><![CDATA[{}]]></changeLogMap>
+      <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+      <questionCommentIcon>PROCESSING</questionCommentIcon>
+      <text art="Questiontext" id="0" format="html">      <inhalt><![CDATA[<p>Ein Körper fällt aus der Höhe $h = {h}$ aus der Ruhe frei herab (Luftwiderstand vernachlässigen, $g = 9.81\,\mathrm{m/s^2}$).</p>
+
+<p>(a) Berechnen Sie die Fallzeit $t_F = $&nbsp;[Q0]</p>
+
+<p>(b) Berechnen Sie die Aufprallgeschwindigkeit in m/s: $v_F = $&nbsp;[Q1]</p>
+]]></inhalt>
+</text>
+      <text art="general feedback" id="0" format="html">      <inhalt><![CDATA[<p>$t_F = \sqrt{\frac{2h}{g}} = {=tF}$, $v_F = g \cdot t_F = {=vF;=m/s,3}$</p>]]></inhalt>
+</text>
+      <text art="correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="partially correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="incorrect feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="grader info" id="0" format="html">      <inhalt/>
+</text>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>4</mode>
+         <name><![CDATA[Q0]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[sqrt(2*h/%g)]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima><![CDATA[tF]]></maxima>
+            <answer><![CDATA[4.188s]]></answer>
+            <einheit><![CDATA[s]]></einheit>
+         </answer>
+      </subquestion>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>4</mode>
+         <name><![CDATA[Q1]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[sqrt(2*%g*h)]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima><![CDATA[vF]]></maxima>
+            <answer><![CDATA[41.07m/s]]></answer>
+            <einheit><![CDATA[=m/s]]></einheit>
+         </answer>
+      </subquestion>
+      <dataset>
+         <id>0</id>
+         <status/>
+         <name><![CDATA[h]]></name>
+         <type><![CDATA[calculated]]></type>
+         <distribution><![CDATA[uniform]]></distribution>
+         <minimum><![CDATA[11]]></minimum>
+         <maximum><![CDATA[120]]></maximum>
+         <decimals><![CDATA[3]]></decimals>
+         <itemcount>40</itemcount>
+         <zahlenbereich><![CDATA[F2:5-120]]></zahlenbereich>
+         <ziffern>2</ziffern>
+         <einheit><![CDATA[m]]></einheit>
+         <items><![CDATA[86;84;13;78;66;33;58;36;110;84;30;42;93;11;100;98;51;13;110;70;88;29;62;110;79;21;21;91;67;91;54;72;47;120;21;62;92;100;23;23]]></items>
+      </dataset>
+   </question>
+   <question type="MoodleClozeCalc">
+      <id>0</id>
+      <idUser>0</idUser>
+      <questionType>22</questionType>
+      <single>0</single>
+      <name><![CDATA[Newtonsche Gesetze - Auswahl]]></name>
+      <punkte>2.0</punkte>
+      <penalty/>
+      <hidden>0</hidden>
+      <tag><![CDATA[Mechanik Dynamik]]></tag>
+      <noAutoCorrect>0</noAutoCorrect>
+      <usecase>0</usecase>
+      <synchronize>0</synchronize>
+      <shuffleAnswers>1</shuffleAnswers>
+      <answerNumbering><![CDATA[abc]]></answerNumbering>
+      <unitGradingType>2</unitGradingType>
+      <unitPenalty>0.1</unitPenalty>
+      <showUnits>0</showUnits>
+      <unitsLeft>0</unitsLeft>
+      <maxima/>
+      <responseFormat><![CDATA[editor]]></responseFormat>
+      <responseFieldLines>10</responseFieldLines>
+      <attachments>3</attachments>
+      <md5/>
+      <units/>
+      <plugins/>
+      <sendToParser>false</sendToParser>
+      <preCalc>false</preCalc>
+      <streng>false</streng>
+      <licenceKey/>
+      <konstanteMitProzent>true</konstanteMitProzent>
+      <useSymbolicMode>false</useSymbolicMode>
+      <addDocumentsPossible>false</addDocumentsPossible>
+      <info><![CDATA[Single-Choice und Multiple-Choice zu den Newtonschen Axiomen.]]></info>
+      <randomDataset>false</randomDataset>
+      <creationDate></creationDate>
+      <lastChange></lastChange>
+      <security/>
+      <copyright/>
+      <onRamp>false</onRamp>
+      <jsonMap><![CDATA[{}]]></jsonMap>
+      <changeLogMap><![CDATA[{}]]></changeLogMap>
+      <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+      <questionCommentIcon>PROCESSING</questionCommentIcon>
+      <text art="Questiontext" id="0" format="html">      <inhalt><![CDATA[<p>(a) Welches Newtonsche Gesetz besagt, dass ein Körper ohne resultierende Kraft in Ruhe oder gleichförmiger Bewegung bleibt? [Q0]</p>
+
+<p>(b) Welche der folgenden Aussagen sind richtig? [Q1]</p>
+]]></inhalt>
+</text>
+      <text art="general feedback" id="0" format="html">      <inhalt><![CDATA[<p>1. Gesetz: Trägheitsprinzip. 2. Gesetz: $F = m \cdot a$. 3. Gesetz: actio = reactio.</p>]]></inhalt>
+</text>
+      <text art="correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="partially correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="incorrect feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="grader info" id="0" format="html">      <inhalt/>
+</text>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>0</mode>
+         <name><![CDATA[Q0]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[1. Newtonsches Gesetz (Trägheitsprinzip)]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>0.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[2. Newtonsches Gesetz (Aktionsprinzip)]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>0.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[3. Newtonsches Gesetz (Wechselwirkungsprinzip)]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+      </subquestion>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>3</mode>
+         <name><![CDATA[Q1]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>50.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Die resultierende Kraft ist das Produkt aus Masse und Beschleunigung: $F = m \cdot a$.]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>50.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Kraft und Gegenkraft sind gleich groß und entgegengesetzt gerichtet.]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>-100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Kraft und Gegenkraft greifen am selben Körper an und heben sich auf.]]></text>
+            <feedback><![CDATA[Kraft und Gegenkraft wirken auf verschiedene Körper.]]></feedback>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>-100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Ein Körper in gleichförmiger Bewegung benötigt eine ständige Kraft in Bewegungsrichtung.]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+      </subquestion>
+   </question>
+   </category>
+</category>
+</letto>

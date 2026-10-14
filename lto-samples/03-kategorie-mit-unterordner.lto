@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letto mode="101" databaseinfo="sql">
+<category>
+   <name><![CDATA[Elektrotechnik 1]]></name>
+   <question type="MoodleClozeCalc">
+      <id>0</id>
+      <idUser>0</idUser>
+      <questionType>22</questionType>
+      <single>0</single>
+      <name><![CDATA[Einheit der Spannung]]></name>
+      <punkte>1.0</punkte>
+      <penalty/>
+      <hidden>0</hidden>
+      <tag/>
+      <noAutoCorrect>0</noAutoCorrect>
+      <usecase>0</usecase>
+      <synchronize>0</synchronize>
+      <shuffleAnswers>1</shuffleAnswers>
+      <answerNumbering><![CDATA[abc]]></answerNumbering>
+      <unitGradingType>2</unitGradingType>
+      <unitPenalty>0.1</unitPenalty>
+      <showUnits>0</showUnits>
+      <unitsLeft>0</unitsLeft>
+      <maxima/>
+      <responseFormat><![CDATA[editor]]></responseFormat>
+      <responseFieldLines>10</responseFieldLines>
+      <attachments>3</attachments>
+      <md5/>
+      <units/>
+      <plugins/>
+      <sendToParser>false</sendToParser>
+      <preCalc>false</preCalc>
+      <streng>false</streng>
+      <licenceKey/>
+      <konstanteMitProzent>true</konstanteMitProzent>
+      <useSymbolicMode>false</useSymbolicMode>
+      <addDocumentsPossible>false</addDocumentsPossible>
+      <info/>
+      <randomDataset>false</randomDataset>
+      <creationDate></creationDate>
+      <lastChange></lastChange>
+      <security/>
+      <copyright/>
+      <onRamp>false</onRamp>
+      <jsonMap><![CDATA[{}]]></jsonMap>
+      <changeLogMap><![CDATA[{}]]></changeLogMap>
+      <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+      <questionCommentIcon>PROCESSING</questionCommentIcon>
+      <text art="Questiontext" id="0" format="html">      <inhalt><![CDATA[<p>In welcher Einheit wird die elektrische Spannung angegeben? [Q0]</p>]]></inhalt>
+</text>
+      <text art="general feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="partially correct feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="incorrect feedback" id="0" format="html">      <inhalt/>
+</text>
+      <text art="grader info" id="0" format="html">      <inhalt/>
+</text>
+      <subquestion>
+         <id>0</id>
+         <grade>1.0</grade>
+         <mode>0</mode>
+         <name><![CDATA[Q0]]></name>
+         <maxima/>
+         <plugininfo/>
+         <shuffleAnswers>1</shuffleAnswers>
+         <schwierigkeit>0</schwierigkeit>
+         <answer>
+            <id>0</id>
+            <fraction>100.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Volt]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>0.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Ampere]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+         <answer>
+            <id>0</id>
+            <fraction>0.0</fraction>
+            <format><![CDATA[html]]></format>
+            <text><![CDATA[Watt]]></text>
+            <feedback/>
+            <tolerance><![CDATA[1%]]></tolerance>
+            <correctAnswerFormat>2</correctAnswerFormat>
+            <correctAnswerLength>5</correctAnswerLength>
+            <maxima/>
+            <answer/>
+            <einheit/>
+         </answer>
+      </subquestion>
+   </question>
+   <category>
+      <name><![CDATA[Gleichstrom]]></name>
+      <question type="MoodleClozeCalc">
+         <id>0</id>
+         <idUser>0</idUser>
+         <questionType>22</questionType>
+         <single>2</single>
+         <name><![CDATA[Reihenschaltung zweier Widerstände]]></name>
+         <punkte>1.0</punkte>
+         <penalty/>
+         <hidden>0</hidden>
+         <tag/>
+         <noAutoCorrect>0</noAutoCorrect>
+         <usecase>0</usecase>
+         <synchronize>0</synchronize>
+         <shuffleAnswers>1</shuffleAnswers>
+         <answerNumbering><![CDATA[abc]]></answerNumbering>
+         <unitGradingType>2</unitGradingType>
+         <unitPenalty>0.1</unitPenalty>
+         <showUnits>0</showUnits>
+         <unitsLeft>0</unitsLeft>
+         <maxima><![CDATA[Rg : R1 + R2]]></maxima>
+         <responseFormat><![CDATA[editor]]></responseFormat>
+         <responseFieldLines>10</responseFieldLines>
+         <attachments>3</attachments>
+         <md5/>
+         <units/>
+         <plugins/>
+         <sendToParser>false</sendToParser>
+         <preCalc>false</preCalc>
+         <streng>false</streng>
+         <licenceKey/>
+         <konstanteMitProzent>true</konstanteMitProzent>
+         <useSymbolicMode>false</useSymbolicMode>
+         <addDocumentsPossible>false</addDocumentsPossible>
+         <info/>
+         <randomDataset>false</randomDataset>
+         <creationDate></creationDate>
+         <lastChange></lastChange>
+         <security/>
+         <copyright/>
+         <onRamp>false</onRamp>
+         <jsonMap><![CDATA[{}]]></jsonMap>
+         <changeLogMap><![CDATA[{}]]></changeLogMap>
+         <questionCommentMsg><![CDATA[KI-generiert – bitte prüfen]]></questionCommentMsg>
+         <questionCommentIcon>PROCESSING</questionCommentIcon>
+         <text art="Questiontext" id="0" format="html">         <inhalt><![CDATA[<p>Die Widerstände $R_1 = {R1}$ und $R_2 = {R2}$ sind in Reihe geschaltet. Gesamtwiderstand $R_g = $&nbsp;[Q0]</p>]]></inhalt>
+</text>
+         <text art="general feedback" id="0" format="html">         <inhalt/>
+</text>
+         <text art="correct feedback" id="0" format="html">         <inhalt/>
+</text>
+         <text art="partially correct feedback" id="0" format="html">         <inhalt/>
+</text>
+         <text art="incorrect feedback" id="0" format="html">         <inhalt/>
+</text>
+         <text art="grader info" id="0" format="html">         <inhalt/>
+</text>
+         <subquestion>
+            <id>0</id>
+            <grade>1.0</grade>
+            <mode>4</mode>
+            <name><![CDATA[Q0]]></name>
+            <maxima/>
+            <plugininfo/>
+            <shuffleAnswers>1</shuffleAnswers>
+            <schwierigkeit>0</schwierigkeit>
+            <answer>
+               <id>0</id>
+               <fraction>100.0</fraction>
+               <format><![CDATA[html]]></format>
+               <text><![CDATA[R1+R2]]></text>
+               <feedback/>
+               <tolerance><![CDATA[1%]]></tolerance>
+               <correctAnswerFormat>2</correctAnswerFormat>
+               <correctAnswerLength>5</correctAnswerLength>
+               <maxima><![CDATA[Rg]]></maxima>
+               <answer><![CDATA[3.2kOhm]]></answer>
+               <einheit><![CDATA[Ohm]]></einheit>
+            </answer>
+         </subquestion>
+         <dataset>
+            <id>0</id>
+            <status/>
+            <name><![CDATA[R1]]></name>
+            <type><![CDATA[calculated]]></type>
+            <distribution><![CDATA[uniform]]></distribution>
+            <minimum><![CDATA[1000]]></minimum>
+            <maximum><![CDATA[8200]]></maximum>
+            <decimals><![CDATA[3]]></decimals>
+            <itemcount>40</itemcount>
+            <zahlenbereich><![CDATA[E12:1k-10k]]></zahlenbereich>
+            <ziffern>2</ziffern>
+            <einheit><![CDATA[Ohm]]></einheit>
+            <items><![CDATA[2200;1000;4700;1500;8200;3300;1200;6800;2700;1800;3900;5600;1000;2200;4700;8200;1500;3300;1200;6800;2700;1800;3900;5600;1000;2200;4700;8200;1500;3300;1200;6800;2700;1800;3900;5600;1000;2200;4700;8200]]></items>
+         </dataset>
+         <dataset>
+            <id>0</id>
+            <status/>
+            <name><![CDATA[R2]]></name>
+            <type><![CDATA[calculated]]></type>
+            <distribution><![CDATA[uniform]]></distribution>
+            <minimum><![CDATA[1000]]></minimum>
+            <maximum><![CDATA[8200]]></maximum>
+            <decimals><![CDATA[3]]></decimals>
+            <itemcount>40</itemcount>
+            <zahlenbereich><![CDATA[E12:1k-10k]]></zahlenbereich>
+            <ziffern>2</ziffern>
+            <einheit><![CDATA[Ohm]]></einheit>
+            <items><![CDATA[1000;3300;1500;6800;2200;4700;8200;1200;3900;1800;5600;2700;3300;1000;6800;1500;4700;2200;8200;1200;3900;1800;5600;2700;1000;3300;1500;6800;2200;4700;8200;1200;3900;1800;5600;2700;3300;1000;6800;1500]]></items>
+         </dataset>
+      </question>
+   </category>
+</category>
+</letto>
