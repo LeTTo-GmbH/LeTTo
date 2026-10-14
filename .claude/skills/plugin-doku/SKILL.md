@@ -151,6 +151,14 @@ Ziel: Von jeder Erwähnung eines Endpunkts, DTOs oder Enums kommt man mit einem 
 - Jekyll verarbeitet die Seiten mit Liquid: Platzhalter wie `{{servicepath}}` – auch in Backticks und Code-Blöcken – als
   `{% raw %}{{servicepath}}{% endraw %}` schreiben, sonst werden sie auf der Seite leer dargestellt.
 - Code-Beispiele als ```java, ```json bzw. ```bash-Blöcke, kurz halten und nur Ausschnitte zitieren, die den Sachverhalt zeigen.
+- **Suchindex `docs/search.json` darf nie ungültig werden.** Die Suche in der Titelleiste lädt diese Datei; ist sie kein gültiges JSON,
+  zeigt die Suche für **alle** Seiten keine Treffer mehr. Regeln:
+  - Das Template `docs/search.json` maskiert Titel und Inhalt mit `| escape | jsonify` (ohne umschließende Anführungszeichen).
+    Diese Form nicht ändern – insbesondere nicht zurück zu `"{{ … | escape }}"` und nicht auf `replace`-Filter umstellen
+    (ein `replace: '\', '\\'` wirkt auf GitHub Pages nicht).
+  - Damit sind Backslashes (z.B. Windows-Pfade wie `C:\Program Files`), Anführungszeichen und Tabs im Seitentext unkritisch.
+    Fehlt `jsonify` im Template oder wurde es entfernt: zuerst das Template reparieren, dann die Doku veröffentlichen.
+  - Nach jedem Push, sobald der Pages-Build fertig ist, den veröffentlichten Index prüfen (siehe Ablauf, Schritt 7).
 - Diagramme als ```text-Block (ASCII). Mermaid wird vom Layout `docs/_layouts/default.html` nicht gerendert.
 - Bilder in den jeweiligen Seitenordner legen und relativ einbinden.
 
@@ -201,6 +209,18 @@ Ziel: Von jeder Erwähnung eines Endpunkts, DTOs oder Enums kommt man mit einem 
    - Keine verwaisten Ordner: Jeder Ordner unter `dtos/`, `enums/` und `rest-schnittstelle/` entspricht einer existierenden Klasse bzw. Methode.
    - Jede Detailseite wird von mindestens einer Übersichtsseite verlinkt.
    - Stichprobe der Rückverweise: Für zwei DTOs und eine Enum per Grep in den Controllern und DTOs nachprüfen, dass „Verwendet in" vollständig ist.
-   - Falls Ruby/Jekyll lokal verfügbar ist, optional `bundle exec jekyll build` in `docs/` ausführen.
+   - Suchindex-Template: `docs/search.json` enthält bei `title` und `content` jeweils `| jsonify` (siehe Format-Konventionen).
+     Fehlt es, Template reparieren, bevor veröffentlicht wird.
+   - Falls Ruby/Jekyll lokal verfügbar ist, `bundle exec jekyll build` in `docs/` ausführen und `_site/search.json`
+     mit `python -I -c "import json; json.load(open('_site/search.json', encoding='utf-8'))"` auf gültiges JSON prüfen.
 6. **Zusammenfassung** für den Benutzer: Quellstand, Anzahl neuer/geänderter/gelöschter Seiten (je Gruppe), offene Punkte (undokumentierte Stellen).
-   Nicht committen, außer der Benutzer verlangt es.
+   Nicht committen und nicht pushen, außer der Benutzer verlangt es.
+7. **Nach dem Push** (nur wenn gepusht wurde): Warten, bis der GitHub-Actions-Lauf „pages build and deployment" für den Commit
+   abgeschlossen ist (`https://api.github.com/repos/LeTTo-GmbH/LeTTo/actions/runs?per_page=1`, `head_sha` und `status`/`conclusion`),
+   dann den veröffentlichten Suchindex prüfen:
+   ```bash
+   python -I .claude/skills/plugin-doku/scripts/checksearch.py
+   ```
+   Das Script lädt `https://doc.letto.at/search.json` am CDN-Cache vorbei, prüft auf gültiges JSON und zählt die Treffer für „plugin".
+   Meldet es einen Fehler, sofort beheben (Fehlerstelle steht in der Ausgabe) und den Benutzer informieren – solange ist die Suche
+   der gesamten Doku ausgefallen. Zusätzlich zwei, drei neue Seiten per HTTP-Status (200) prüfen.
