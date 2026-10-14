@@ -1,11 +1,11 @@
 # REST-Schnittstelle des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 * Die Python-Version bietet dieselben Pfade, Request- und Response-DTOs wie das Java-Plugin. Jeder Endpunkt verlinkt unten auf seine
   ausführliche Beschreibung in der [REST-Schnittstelle des Java-Plugins](../../referenz-plugin-java/rest-schnittstelle/index.md);
   die Spalte „Python" nennt, was die Python-Version tatsächlich liefert.
 * `<servicepath>` ist der Servicepfad des Plugins (Standard `/plugindemopython`).
-* Die Swagger-UI des laufenden Services liegt unter `<servicepath>/docs`; jeder Endpunkt verlinkt dort ebenfalls auf die Java-Doku.
+* Die Swagger-UI des laufenden Services liegt unter `<servicepath>/docs`; ihre Beschreibung verlinkt auf diese Doku, jeder Endpunkt auf seine Seite in der Java-Doku.
 * Unbekannter Plugin-Typ: Die Python-Version antwortet **nicht** mit 404 wie das Java-Plugin, sondern mit HTTP 200 und einem leeren Ergebnis (siehe Tabelle).
 
 ## Plugin-API – `/open` und `<servicepath>/open`
@@ -76,8 +76,8 @@ Das Verhalten entspricht den gleichnamigen Endpunkten unter `/open`.
 
 | Pfad | Inhalt |
 |---|---|
-| `<servicepath>/`, `<servicepath>/index.html`, `<servicepath>/help` | Hilfeseite aus `resources/index.html` (erscheint nicht in der Swagger-UI) |
-| `<servicepath>/docs` | Swagger-UI, Endpunkte und Schemas alphabetisch sortiert, mit Links zur Java-Doku |
+| `<servicepath>/`, `<servicepath>/index.html`, `<servicepath>/help` | Hilfeseite aus `resources/index.html` mit Links auf Swagger-UI, Quellcode, Docker Hub, diese Doku und die Java-Doku (erscheint nicht in der Swagger-UI) |
+| `<servicepath>/docs` | Swagger-UI, Endpunkte und Schemas alphabetisch sortiert; Beschreibung mit Links auf diese Doku und die Java-Doku, je Endpunkt und DTO Link auf die Java-Detailseite |
 | `<servicepath>/openapi.json` | OpenAPI-Beschreibung |
 
 ## Nicht vorhanden

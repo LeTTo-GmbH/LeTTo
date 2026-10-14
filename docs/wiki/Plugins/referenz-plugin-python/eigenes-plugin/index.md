@@ -1,5 +1,5 @@
 # Eigenes Plugin in Python erstellen
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Ein Script wie `setpluginname.bat` im Java-Projekt gibt es im Python-Projekt nicht; Servicepfad und Namen werden von Hand angepasst.
 Die folgenden Schritte ergeben sich aus dem Aufbau des Projekts.

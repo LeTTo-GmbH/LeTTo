@@ -1,5 +1,5 @@
 # Build und Deployment des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Build
 
@@ -139,7 +139,7 @@ Die Tests laufen ohne Docker und ohne LeTTo (`PLUGIN_REGISTER_ON_READY=false`, R
 | Datei | prüft |
 |---|---|
 | `tests/test_scorer.py` | Zeitumrechnung, Uhrzeit-Vergleich über 12 Uhr, relative und absolute Toleranz, `PluginDemo.score`, Endpunkt `/open/score` unter `/open` und `<servicepath>/open` |
-| `tests/test_openapi.py` | alphabetische Sortierung in der OpenAPI-Beschreibung, Links jedes Endpunkts, DTOs und Enum-Felds auf die Java-Doku, Link auf der Hilfeseite |
+| `tests/test_openapi.py` | alphabetische Sortierung in der OpenAPI-Beschreibung, Links jedes Endpunkts, DTOs und Enum-Felds auf die Java-Doku, Link auf diese Python-Doku in OpenAPI-Beschreibung und `externalDocs`, Links auf Java- und Python-Doku auf der Hilfeseite |
 
 ## Debugging mit PyCharm
 

@@ -1,5 +1,5 @@
 # DTOs des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 * Die DTOs sind Pydantic-Modelle in `app/main.py` mit **denselben Feldnamen wie die Java-DTOs**; das JSON auf der Leitung ist daher gleich.
   Die Bedeutung jedes Feldes steht in der [DTO-Doku des Java-Plugins](../../referenz-plugin-java/dtos/index.md).

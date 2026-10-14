@@ -1,5 +1,5 @@
 # Referenz-Plugin (Python)
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Das Projekt **plugin-demo-python** ist eine Referenzimplementierung eines LeTTo-Plugin-Services in Python (FastAPI).
 Es ist eine Portierung des [Referenz-Plugins (Java)](../referenz-plugin-java/index.md) und implementiert **dieselbe REST-Schnittstelle**.
@@ -34,7 +34,7 @@ Das Plugin dient nur zur Veranschaulichung und ist nicht für den Unterricht ged
 * Docker-Image: [https://hub.docker.com/r/lettohub/letto-plugin-demopython](https://hub.docker.com/r/lettohub/letto-plugin-demopython)
 * Am eigenen Server (bei installiertem Plugin):
   * Hilfeseite: `https://<servername>/plugindemopython/help`
-  * Swagger-UI: `https://<servername>/plugindemopython/docs` – jeder Endpunkt und jedes DTO verlinkt dort auf die passende Seite der Java-Doku
+  * Swagger-UI: `https://<servername>/plugindemopython/docs` – oben mit Link auf diese Doku, jeder Endpunkt und jedes DTO verlinkt auf die passende Seite der Java-Doku
   * OpenAPI-Beschreibung (JSON): `https://<servername>/plugindemopython/openapi.json`
 * Plugintester zum Testen: `https://<servername>/plugintester` (über das Setup-Service installierbar)
 

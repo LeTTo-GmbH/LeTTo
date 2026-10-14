@@ -1,5 +1,5 @@
 # Architektur des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 7902099 (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Aufbau des Services
 
@@ -23,7 +23,7 @@
 | Registrierung | Warten auf die eigene Erreichbarkeit, dann Registrierung am Setup-Service mit Wiederholungen |
 | Zustandsverarbeitung | `PluginConfigurationState` und `CONFIG_STATES` für die Konfigurationssitzungen |
 | FastAPI app | App mit Swagger-UI unter `<servicepath>/docs`, Router für die Endpunkte |
-| OpenAPI | Links von jedem Endpunkt und DTO in der Swagger-UI auf die Java-Doku, alphabetische Sortierung |
+| OpenAPI | Beschreibung und `externalDocs` verlinken auf diese Python-Doku (`DOC_PYTHON_URL`); jeder Endpunkt und jedes DTO verlinkt auf seine Seite in der Java-Doku; alphabetische Sortierung |
 
 Weitere Dateien:
 
