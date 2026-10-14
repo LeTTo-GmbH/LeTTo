@@ -130,6 +130,7 @@
 * [Profil anzeigen](Profilanzeigen/index.md)
 * [Punktstyle](Punktstyle/index.md)
 * [Quadrant](Quadrant/index.md)
+* [Referenz-Plugin (Java)](Plugins/referenz-plugin-java/index.md)
 * [Reife- und Diplomprüfungsfragen](Reife-undDiplomprüfungsfragen/index.md)
 * [Schul-Administrator](Schul-Administrator/index.md)
 * [Schul-Konfiguration](Schul-Konfiguration/index.md)

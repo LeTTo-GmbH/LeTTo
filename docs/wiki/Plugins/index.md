@@ -28,32 +28,22 @@ Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt
 
 ####  Plugin-Entwicklung 
 
-* Um eigene Plugins entwickeln zu können steht ein Demoplugin einer einfachen Uhr auf Github zur Verfügung https://github.com/LeTTo-GmbH/letto-pluginuhr.git
-* Die Kommunikation erfolgt über eine Rest-Schnittstelle (Swagger-Doku des Uhr Plugins https://build.letto.at/pluginuhr/swagger-ui/index.html)
-* Das Plugin muss am eigenen LeTTo-Server der Schule wo es genutzt werden soll über das Setup-Service [https://servername/config](https://name/config) regisitriert werden und eingebunden sein.
+* Als Vorlage für eigene Plugins steht das Referenz-Plugin (Java) mit einem Demo-Plugin einer einfachen Uhr auf GitHub zur Verfügung: https://github.com/LeTTo-GmbH/plugin-demo-java
+  * Dokumentation: [Referenz-Plugin (Java)](../Plugins/referenz-plugin-java/index.md)
+  * [Eigenes Plugin erstellen](../Plugins/referenz-plugin-java/eigenes-plugin/index.md): Schritt-für-Schritt-Anleitung aus dem Demoprojekt
+  * [Architektur](../Plugins/referenz-plugin-java/architektur/index.md): Aufbau des Services und Ablauf zwischen LeTTo-Server und Plugin
+  * [Plugin-API](../Plugins/referenz-plugin-java/plugin-api/index.md): Methoden, die ein Plugin überschreibt (`BasePlugin`)
+* Die Kommunikation erfolgt über eine REST-Schnittstelle, siehe [REST-Schnittstelle](../Plugins/referenz-plugin-java/rest-schnittstelle/index.md)
+  * ApiController: die eigentliche Plugin-Schnittstelle zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar)
+  * ApiExternOpenController: offene Endpoints für Ajax und allgemeine Informationen (von extern erreichbar)
+  * ConfigHttpController: Konfigurationsdialog des Plugins, wenn er über ein iframe in LeTTo eingebunden wird (von extern erreichbar)
+  * InfoController: Ping, Version und Service-Informationen für Health-Check etc.
+  * Die Datentransfer-Klassen der REST-Schnittstelle sind unter [DTOs und Enums](../Plugins/referenz-plugin-java/dtos/index.md) beschrieben.
+  * Am eigenen Server liefert jedes installierte Plugin seine Swagger-Doku unter https://servername/&lt;endpoint&gt;/swagger-ui.html und die JavaDoc unter https://servername/&lt;endpoint&gt;/open/javadoc/index.html
+* Das Plugin muss am eigenen LeTTo-Server der Schule wo es genutzt werden soll über das Setup-Service [https://servername/config](https://name/config) registriert werden und eingebunden sein.
   * Die Doku für die Endpoints des Setup-Services liegt ebenfalls als Swagger-Doku vor (https://build.letto.at/config/swagger-ui/index.html) 
-  * Für die Registratur eines Plugins benötigt man den Endpoint 
-    * /config/auth/user/registerplugin
-    * aus dem config-controller
-* Die Dokumentation befindet sich ebenfalls im Uhr-Plugin im Sourcecode.
-  * JavaDoc vom Uhr-Plugin : https://build.letto.at/pluginuhr/open/javadoc/index.html
-    * DTO-Klassen für die REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/letto/plugins/dto/package-summary.html
-    * Controller-Klassen der REST-Schnittstelle: https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
-  * Die notwendigen Controller für die REST-Kommunikation findet man im Verzeichnis 
-    * src/main/java/at/open/letto/plugin/controller
-    * https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/package-summary.html
-    * [info-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/InfoController.html) :  allgemeine Information we lche jedes Plugin liefern muss (von extern erreichbar)
-    * [api-extern-open-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiExternOpenController.html): offene Endpoints welche von extern erreichbar sein müssen für ajax und allgemeine Informationen (von extern erreichbar)
-    * [api-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiController.html) : die eigentliche Plugin-Schnittstelle zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar)
-    * [api-extern-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/ApiExternController.html) : für eine gesicherte Verbindung von einem externen LeTTo-Server wenn Plugin und LeTTo nicht auf dem gleichen Server liegen (noch nicht fertig implementiert) jedoch gleiche Funktion wie api-controller  (von extern erreichbar)
-    * [iframe-configuration-controller](https://build.letto.at/pluginuhr/open/javadoc/at/open/letto/plugin/controller/IFrameConfigurationController.html) : Wenn die Konfiguration des Plugins nicht über JavaScript sondern über ein IFrame in LeTTo eingebunden wird ist hier der Konfigurationsdialog des Plugins (von extern erreichbar)
-  * jedes Service und Plugin sollte auch die Endpoints des BaseInfoControllers und PingControllers implementieren (**src/main/java/at/letto/basespringboot/controller)** 
-    * [base-info-controller](https://build.letto.at/pluginuhr/open/javadoc/at/letto/basespringboot/controller/BaseInfoController.html) : allgemeine Information welche jedes Service liefern muss (nur aus dem Docker-Netzwerk erreichbar)
-    * [ping-controller](https://build.letto.at/pluginuhr/open/javadoc/at/letto/basespringboot/controller/PingController.html) : interner und externer Ping für health-check etc.
-  * Den Rest-Client für die Registratur am Setup-Service findet man in der Klasse RestSetupService.class (Methode registerPlugin()) im Verzeichnis **src/main/java/at/letto/setup/restclient**
-    * Im Uhr Plugin erledigt die Registrator das ConnectionService mit der Methode registerPluigin()
-    * JavaDOC: https://build.letto.at/pluginuhr/open/javadoc/at/letto/setup/restclient/RestSetupService.html
-  * Die Datentransfer-JSON-Klassen für die REST-Schnittstelle als dokumentierte Java-Klassen findet man im Verzeichnis **src/main/java/at/letto/plugins/**
+  * Für die Registratur eines Plugins benötigt man den Endpoint /config/auth/user/registerplugin aus dem config-controller
+  * Das Referenz-Plugin registriert sich beim Start automatisch, siehe [Build und Deployment](../Plugins/referenz-plugin-java/build-deployment/index.md#registrierung-am-letto-server)
 * Um selbst entwickelte Plugins testen zu können kann der Plugintester(https://servername/plugintester)  verwendet werden, welcher über das Setup-Service (https://servername/config) installiert werden kann.
 
 [Plugins](../Plugins/index.md)
