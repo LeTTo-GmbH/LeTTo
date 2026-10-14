@@ -79,7 +79,7 @@ pluginConfiguration.registerPlugin("Mein", "at.letto.plugins.plugin.meinplugin.P
 
 * Verzeichnis `src/main/resources/plugins/<plugin>/` anlegen (ein Verzeichnis je Plugin).
 * Darin:
-  * Hilfedatei(en) als HTML – nur der Inhalt von `<body>` wird verwendet. Der Platzhalter `{{servicepath}}` wird durch den Endpoint-Pfad ersetzt (z.B. für Links zur Swagger-UI).
+  * Hilfedatei(en) als HTML – nur der Inhalt von `<body>` wird verwendet. Der Platzhalter `{% raw %}{{servicepath}}{% endraw %}` wird durch den Endpoint-Pfad ersetzt (z.B. für Links zur Swagger-UI).
   * JavaScript-Dateien für die interaktive Eingabe und den Konfigurationsdialog. Sie werden als Quelltext an LeTTo übergeben (`javascriptLibrariesLocal()`).
 * Pfade in `helpfiles` und `javascriptLibs` relativ zum Klassenpfad angeben, z.B. `plugins/uhr/uhr1Script.js`.
 
@@ -87,13 +87,13 @@ pluginConfiguration.registerPlugin("Mein", "at.letto.plugins.plugin.meinplugin.P
 
 | Funktion | Aufruf | Vorgaben von LeTTo |
 |---|---|---|
-| Init-Methode (`initPluginJS`) | `initPluginUhr1(dtoString, active)` – `dtoString` ist das `PluginDto` als JSON, `active=false` bedeutet keine Eingabe erlaubt (Lösungsansicht) | Ausgabe in das `div` `#<tagName>_div`, Ergebnis in das versteckte Feld `.<tagName>_inp` |
-| Konfigurations-Methode (`configPluginJS`) | `configPluginUhr1(dtoString)` – `dtoString` ist das `PluginConfigDto` als JSON | Ausgabe in `#configform_div`, Ergebnis (Konfigurationsstring) in das versteckte Feld `.configform_config` |
+| Init-Methode (`initPluginJS`) | `initPluginUhr1(dtoString, active)` – `dtoString` ist das [`PluginDto`](../dtos/PluginDto/index.md) als JSON, `active=false` bedeutet keine Eingabe erlaubt (Lösungsansicht) | Ausgabe in das `div` `#<tagName>_div`, Ergebnis in das versteckte Feld `.<tagName>_inp` |
+| Konfigurations-Methode (`configPluginJS`) | `configPluginUhr1(dtoString)` – `dtoString` ist das [`PluginConfigDto`](../dtos/PluginConfigDto/index.md) als JSON | Ausgabe in `#configform_div`, Ergebnis (Konfigurationsstring) in das versteckte Feld `.configform_config` |
 
 * Alle Hilfsfunktionen als innere Funktionen der Init- bzw. Konfigurationsmethode anlegen, um Namenskonflikte zu vermeiden.
 * jQuery steht zur Verfügung.
-* Für die Vorschau im Konfigurationsdialog sendet das Uhr-Plugin per Ajax einen `LoadPluginRequestDto` an `dto.pluginDtoUri`
-  und ruft mit dem erhaltenen `PluginDto` die Init-Methode erneut auf.
+* Für die Vorschau im Konfigurationsdialog sendet das Uhr-Plugin per Ajax einen [`LoadPluginRequestDto`](../dtos/LoadPluginRequestDto/index.md) an `dto.pluginDtoUri`
+  und ruft mit dem erhaltenen [`PluginDto`](../dtos/PluginDto/index.md) die Init-Methode erneut auf.
 
 ## 6. Bauen, deployen, testen
 

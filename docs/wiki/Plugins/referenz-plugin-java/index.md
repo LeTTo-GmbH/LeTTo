@@ -43,8 +43,9 @@ eingestellt und mit der Musterlösung verglichen wird. Das Uhr-Plugin dient nur 
 * [Architektur](architektur/index.md): Aufbau des Services, Paketstruktur, Ablauf zwischen LeTTo-Server und Plugin
 * [Eigenes Plugin erstellen](eigenes-plugin/index.md): Schritt-für-Schritt-Anleitung aus dem Demoprojekt
 * [Plugin-API](plugin-api/index.md): `BasePlugin` und `PluginService` – welche Methoden ein Plugin überschreibt, am Beispiel Uhr
-* [REST-Schnittstelle](rest-schnittstelle/index.md): alle Endpunkte je Controller
-* [DTOs und Enums](dtos/index.md): Datenklassen der Schnittstelle
+* [REST-Schnittstelle](rest-schnittstelle/index.md): alle Controller und Endpunkte, je Endpunkt eine eigene Seite mit Request, Response, Ablauf und Fehlerfällen
+* [DTOs](dtos/index.md): Datenklassen der Schnittstelle, je DTO eine Seite mit Feldern und allen Endpunkten, in denen es vorkommt
+* [Enums](enums/index.md): Aufzählungstypen der Schnittstelle, je Enum eine Seite mit Werten und Verwendung
 * [Build und Deployment](build-deployment/index.md): Build-Scripts, Docker, Proxy, Registrierung, Debugging
 
 [Plugins](../index.md)

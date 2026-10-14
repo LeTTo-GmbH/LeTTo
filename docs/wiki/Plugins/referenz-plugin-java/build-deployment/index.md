@@ -86,13 +86,13 @@ docker restart letto-proxy
 
 * Nach dem vollständigen Start (`ApplicationReadyEvent`) ruft `PluginRegistrationOnReady` die Methode
   `PluginConfiguration.registerPluginInSetup()` auf.
-* Diese sendet ein `ConfigServiceDto` per `POST` an `<letto.setup.uri>/config/auth/user/registerplugin`
+* Diese sendet ein [`ConfigServiceDto`](../dtos/ConfigServiceDto/index.md) per `POST` an `<letto.setup.uri>/config/auth/user/registerplugin`
   (Basic Auth mit `letto.user.user.name` / `letto.user.user.password`).
 * Gemeldet werden u.a.:
-  * `uriIntern` = `letto.plugin.uri.intern` + `/open` (Basis des `ApiController`)
+  * `uriIntern` = `letto.plugin.uri.intern` + `/open` (Basis des [`ApiController`](../rest-schnittstelle/ApiController/index.md))
   * `uriExtern` = `letto.plugin.uri.extern` + `/<endpoint>/auth/user`
   * `nwLettoAddress`, `dockerName`, `plugin=true`, `extern=true`, `stateless=true`, `scalable=false`
-* Das Ergebnis (`RegisterServiceResultDto`) wird geloggt: neu registriert oder aktualisiert, Anzahl der Instanzen.
+* Das Ergebnis ([`RegisterServiceResultDto`](../dtos/RegisterServiceResultDto/index.md)) wird geloggt: neu registriert oder aktualisiert, Anzahl der Instanzen.
   Ist das Setup nicht erreichbar, wird nur ein Fehler geloggt – eine erneute Registrierung erfolgt erst beim nächsten Start.
 * Die Swagger-Doku der Endpunkte des Setup-Services liegt unter `https://<servername>/config/swagger-ui/index.html`.
 

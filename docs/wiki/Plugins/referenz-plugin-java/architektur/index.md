@@ -15,7 +15,7 @@
 |---|---|
 | `at.letto.plugins` | `PluginDemoJavaApplication` – Startklasse |
 | `at.letto.plugins.config` | `Endpoint` (alle Pfade), `PluginConfiguration` (Plugin-Verwaltung, Registrierung, Konfigurationssitzungen), `StartupConfiguration` (Registrierung der Plugin-Typen), `PluginRegistrationOnReady` (Registrierung am Setup-Service), `OpenApiConfig` (Swagger) |
-| `at.letto.plugins.controller` | REST-Controller: `ApiController`, `ApiExternOpenController`, `ConfigHttpController`, `InfoController`, `HelpController` |
+| `at.letto.plugins.controller` | REST-Controller: [`ApiController`](../rest-schnittstelle/ApiController/index.md), [`ApiExternOpenController`](../rest-schnittstelle/ApiExternOpenController/index.md), [`ConfigHttpController`](../rest-schnittstelle/ConfigHttpController/index.md), [`InfoController`](../rest-schnittstelle/InfoController/index.md), [`HelpController`](../rest-schnittstelle/HelpController/index.md) |
 | `at.letto.plugins.dto` | DTOs der REST-Schnittstelle |
 | `at.letto.plugins.enums` | Enums der Schnittstelle |
 | `at.letto.plugins.plugin` | `PluginService` (Interface), `BasePlugin` (abstrakte Basisklasse) |
@@ -30,11 +30,11 @@
 
 | Basispfad | Controller | erreichbar |
 |---|---|---|
-| `/open/...` | `ApiController` | nur im Docker-Netzwerk (interne URI `http://letto-<endpoint>.nw-letto:8080/open`) |
-| `/ping`, `/info`, `/version` | `InfoController` | nur im Docker-Netzwerk |
-| `/<endpoint>/api/open/...` | `ApiExternOpenController` | extern über den Proxy |
-| `/<endpoint>/open/...` | `InfoController`, `ConfigHttpController`, statische Dateien | extern über den Proxy |
-| `/<endpoint>/`, `/<endpoint>/help` | `HelpController` | extern über den Proxy |
+| `/open/...` | [`ApiController`](../rest-schnittstelle/ApiController/index.md) | nur im Docker-Netzwerk (interne URI `http://letto-<endpoint>.nw-letto:8080/open`) |
+| [`/ping`](../rest-schnittstelle/InfoController/ping/index.md), [`/info`](../rest-schnittstelle/InfoController/info/index.md), [`/version`](../rest-schnittstelle/InfoController/version/index.md) | [`InfoController`](../rest-schnittstelle/InfoController/index.md) | nur im Docker-Netzwerk |
+| `/<endpoint>/api/open/...` | [`ApiExternOpenController`](../rest-schnittstelle/ApiExternOpenController/index.md) | extern über den Proxy |
+| `/<endpoint>/open/...` | [`InfoController`](../rest-schnittstelle/InfoController/index.md), [`ConfigHttpController`](../rest-schnittstelle/ConfigHttpController/index.md), statische Dateien | extern über den Proxy |
+| [`/<endpoint>/`](../rest-schnittstelle/HelpController/help/index.md), [`/<endpoint>/help`](../rest-schnittstelle/HelpController/help/index.md) | [`HelpController`](../rest-schnittstelle/HelpController/index.md) | extern über den Proxy |
 | `/<endpoint>/swagger-ui.html`, `/<endpoint>/v3/api-docs` | springdoc | extern über den Proxy |
 
 Der Proxy leitet nur `/<endpoint>/` an den Container weiter, daher sind die Pfade ohne Endpoint-Präfix von außen nicht erreichbar.
@@ -60,19 +60,19 @@ Der Proxy leitet nur `/<endpoint>/` an den Container weiter, daher sind die Pfad
 
 ### Fragedarstellung und Bewertung
 
-1. LeTTo fragt die allgemeinen Plugin-Informationen ab (`/open/generalinfolist` bzw. `/open/generalinfo`), u.a. Name der
+1. LeTTo fragt die allgemeinen Plugin-Informationen ab ([`/open/generalinfolist`](../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) bzw. [`/open/generalinfo`](../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md)), u.a. Name der
    JavaScript-Init-Methode und die JavaScript-Libraries.
-2. Für die Darstellung einer Frage ruft LeTTo `/open/loadplugindto` auf. Das Plugin liefert ein `PluginDto` (Bild als URL
+2. Für die Darstellung einer Frage ruft LeTTo [`/open/loadplugindto`](../rest-schnittstelle/ApiController/loadPluginDto/index.md) auf. Das Plugin liefert ein [`PluginDto`](../dtos/PluginDto/index.md) (Bild als URL
    oder Base64, Größe, Tag-Name, Parameter).
 3. Im Browser wird die Init-Methode des Plugins (`initPluginJS`, beim Uhr-Plugin `initPluginUhr1(dtoString, active)`) mit dem
-   `PluginDto` als JSON aufgerufen. Das Plugin zeichnet in das `div` `#<tagName>_div` und schreibt die Eingabe in das versteckte
+   [`PluginDto`](../dtos/PluginDto/index.md) als JSON aufgerufen. Das Plugin zeichnet in das `div` `#<tagName>_div` und schreibt die Eingabe in das versteckte
    Feld `.<tagName>_inp`.
-4. Die Schülereingabe wird über `/open/score` bewertet; das Plugin liefert ein `PluginScoreInfoDto`.
-5. Für Druck und Ergebnisansicht gibt es `/open/renderlatex` und `/open/renderpluginresult`.
+4. Die Schülereingabe wird über [`/open/score`](../rest-schnittstelle/ApiController/score/index.md) bewertet; das Plugin liefert ein [`PluginScoreInfoDto`](../dtos/PluginScoreInfoDto/index.md).
+5. Für Druck und Ergebnisansicht gibt es [`/open/renderlatex`](../rest-schnittstelle/ApiController/renderLatex/index.md) und [`/open/renderpluginresult`](../rest-schnittstelle/ApiController/renderPluginResult/index.md).
 
 ### Konfigurationsdialog
 
-* Der Modus wird vom Plugin in `PluginConfigurationInfoDto.configurationMode` festgelegt:
+* Der Modus wird vom Plugin in [`PluginConfigurationInfoDto.configurationMode`](../dtos/PluginConfigurationInfoDto/index.md) festgelegt:
 
 | Konstante | Wert | Bedeutung |
 |---|---|---|
@@ -81,15 +81,15 @@ Der Proxy leitet nur `/<endpoint>/` an den Container weiter, daher sind die Pfad
 | `CONFIGMODE_JAVASCRIPT` | 2 | Konfiguration über eine JavaScript-Funktion des Plugins |
 | `CONFIGMODE_URL` | 3 | Dialog in einem iframe oder Browser-Tab, vom Plugin-Service über eine URL bereitgestellt |
 
-* `/open/configurationinfo` legt eine Konfigurationssitzung (`PluginConfigurationConnection`) mit der `configurationID` an.
+* [`/open/configurationinfo`](../rest-schnittstelle/ApiController/configurationInfo/index.md) legt eine Konfigurationssitzung ([`PluginConfigurationConnection`](../dtos/PluginConfigurationConnection/index.md)) mit der `configurationID` an.
   Die Konfiguration ist **nicht zustandslos** – `typ`, `name` und `config` werden in der Sitzung gespeichert.
   Ohne `configurationID` erzeugt der Service eine zufällige ID.
 * Sitzungen werden nach Ablauf von `timeout` Sekunden ohne Zugriff entfernt.
-* `/open/setconfigurationdata` übergibt Konfiguration und Frage; das Plugin liefert ein `PluginConfigDto` für das JavaScript.
+* [`/open/setconfigurationdata`](../rest-schnittstelle/ApiController/setConfigurationData/index.md) übergibt Konfiguration und Frage; das Plugin liefert ein [`PluginConfigDto`](../dtos/PluginConfigDto/index.md) für das JavaScript.
 * Im Modus `CONFIGMODE_URL` liefert `/<endpoint>/open/confighttp?typ=..&configurationID=..` die HTML-Seite des Dialogs;
-  die URL steht in `PluginConfigurationInfoDto.configurationUrl`.
-* Die Vorschau im Dialog holt per Ajax ein neues `PluginDto` über `/<endpoint>/api/open/reloadplugindto` (URL in
-  `PluginConfigDto.pluginDtoUri`); dabei wird die Konfiguration der Sitzung aktualisiert.
-* LeTTo holt das Ergebnis mit `/open/getconfiguration` ab.
+  die URL steht in [`PluginConfigurationInfoDto.configurationUrl`](../dtos/PluginConfigurationInfoDto/index.md).
+* Die Vorschau im Dialog holt per Ajax ein neues [`PluginDto`](../dtos/PluginDto/index.md) über [`/<endpoint>/api/open/reloadplugindto`](../rest-schnittstelle/ApiExternOpenController/reloadPluginDto/index.md) (URL in
+  [`PluginConfigDto.pluginDtoUri`](../dtos/PluginConfigDto/index.md)); dabei wird die Konfiguration der Sitzung aktualisiert.
+* LeTTo holt das Ergebnis mit [`/open/getconfiguration`](../rest-schnittstelle/ApiController/getConfiguration/index.md) ab.
 
 [Referenz-Plugin (Java)](../index.md)
