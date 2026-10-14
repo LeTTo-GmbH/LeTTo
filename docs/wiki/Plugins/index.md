@@ -33,6 +33,11 @@ Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt
   * [Eigenes Plugin erstellen](../Plugins/referenz-plugin-java/eigenes-plugin/index.md): Schritt-für-Schritt-Anleitung aus dem Demoprojekt
   * [Architektur](../Plugins/referenz-plugin-java/architektur/index.md): Aufbau des Services und Ablauf zwischen LeTTo-Server und Plugin
   * [Plugin-API](../Plugins/referenz-plugin-java/plugin-api/index.md): Methoden, die ein Plugin überschreibt (`BasePlugin`)
+* Für Plugins in Python steht das Referenz-Plugin (Python) mit dem Demo-Plugin UhrPy zur Verfügung: https://github.com/LeTTo-GmbH/plugin-demo-python
+  * Es ist eine Portierung des Java-Plugins mit derselben REST-Schnittstelle (FastAPI), das Docker-Image gibt es auf [Docker Hub](https://hub.docker.com/r/lettohub/letto-plugin-demopython).
+  * Dokumentation: [Referenz-Plugin (Python)](../Plugins/referenz-plugin-python/index.md)
+  * [Eigenes Plugin in Python erstellen](../Plugins/referenz-plugin-python/eigenes-plugin/index.md)
+  * [REST-Schnittstelle (Python)](../Plugins/referenz-plugin-python/rest-schnittstelle/index.md): alle Endpunkte mit den Unterschieden zur Java-Version
 * Die Kommunikation erfolgt über eine REST-Schnittstelle, siehe [REST-Schnittstelle](../Plugins/referenz-plugin-java/rest-schnittstelle/index.md)
   * ApiController: die eigentliche Plugin-Schnittstelle zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar)
   * ApiExternOpenController: offene Endpoints für Ajax und allgemeine Informationen (von extern erreichbar)

@@ -31,6 +31,7 @@ eingestellt und mit der Musterlösung verglichen wird. Das Uhr-Plugin dient nur 
 ## Links
 
 * Quellcode: [https://github.com/LeTTo-GmbH/plugin-demo-java](https://github.com/LeTTo-GmbH/plugin-demo-java)
+* Python-Portierung mit derselben REST-Schnittstelle: [Referenz-Plugin (Python)](../referenz-plugin-python/index.md)
 * Am eigenen Server (bei installiertem Plugin, `<endpoint>` z.B. `plugindemo`):
   * Hilfeseite: `https://<servername>/<endpoint>/help`
   * Swagger-UI: `https://<servername>/<endpoint>/swagger-ui.html`
