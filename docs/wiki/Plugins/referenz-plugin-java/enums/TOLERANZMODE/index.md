@@ -1,5 +1,5 @@
 # TOLERANZMODE
-<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ dced892 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Art der Toleranzverarbeitung RELATIV : Die Toleranz wird relativ zum größeren Wert des Vergleiches bestimmt ABSOLUT : Die Toleranz wird absolut angegeben und ist von den Werten unabhängig
 

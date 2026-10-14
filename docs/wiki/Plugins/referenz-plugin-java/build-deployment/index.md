@@ -1,5 +1,5 @@
 # Build und Deployment des Referenz-Plugins
-<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ dced892 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 ## Build
 
@@ -62,11 +62,18 @@ Weitere Variablen (`jwt_secret`, `server_secret`, `spring.mail.*` u.a.) sind in 
 
 * Das Image wird als [lettohub/letto-service-plugindemo](https://hub.docker.com/r/lettohub/letto-service-plugindemo) veröffentlicht, Tag `stable` = Stand von `master`.
 * `build.bat` bzw. `build.sh` bauen das Image nur lokal; der Push auf Docker Hub erfolgt getrennt mit `docker push lettohub/letto-service-plugindemo:stable`.
-* Die Beschreibung auf Docker Hub steht in `DOCKERHUB.md` im Repo. `build/dockerhub-description.ps1` lädt sie über die Docker-Hub-API hoch (PowerShell, benötigt einen Docker-Hub-Zugang mit Schreibrecht auf `lettohub`, z.B. einen Personal Access Token in `DOCKERHUB_TOKEN`):
+* Die Beschreibung auf Docker Hub steht in `DOCKERHUB.md` im Repo. `build/dockerhub-description.ps1` lädt sie über die Docker-Hub-API hoch
+  (PowerShell, benötigt einen Docker-Hub-Zugang mit Schreibrecht auf `lettohub`):
 
 ```bash
-powershell -ExecutionPolicy Bypass -File build\dockerhub-description.ps1 -User <dockerhub-user>
+powershell -ExecutionPolicy Bypass -File build\dockerhub-description.ps1
 ```
+
+* Zugangsdaten verwendet das Script in dieser Reihenfolge:
+  1. Parameter `-User` und `-Token` bzw. Umgebungsvariable `DOCKERHUB_TOKEN` (Personal Access Token mit „Read & Write"),
+  2. die Anmeldung von Docker Desktop aus dem Credential-Store (`credsStore` in `~/.docker/config.json`),
+  3. interaktive Abfrage von Benutzer und Token.
+* Weitere Parameter: `-Repo` (Standard `lettohub/letto-service-plugindemo`), `-Short` (Kurzbeschreibung), `-File` (Standard `DOCKERHUB.md`).
 
 ## Proxy
 
