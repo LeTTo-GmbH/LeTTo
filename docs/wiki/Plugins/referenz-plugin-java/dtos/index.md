@@ -1,5 +1,5 @@
 # DTOs des Referenz-Plugins
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * Paket `at.letto.plugins.dto`; die DTOs werden als JSON übertragen, Feldnamen im JSON entsprechen den Java-Feldnamen.
 * Getter/Setter und Konstruktoren erzeugt Lombok.
@@ -10,7 +10,7 @@
 
 | DTO | Beschreibung | Endpunkte |
 |---|---|---|
-| [PluginRequestDto](PluginRequestDto/index.md) | Anfragedaten für die Auswahl eines Plugins anhand von Typ, Name und Konfiguration | 7 |
+| [PluginRequestDto](PluginRequestDto/index.md) | Anfragedaten für die Auswahl eines Plugins anhand von Typ, Name und Konfiguration | 8 |
 | [LoadPluginRequestDto](LoadPluginRequestDto/index.md) | Anfragedaten für das Laden eines Plugin-DTOs | 3 |
 | [PluginAngabeRequestDto](PluginAngabeRequestDto/index.md) | Anfragedaten für die Verarbeitung eines Angabetextes | 2 |
 | [PluginParserRequestDto](PluginParserRequestDto/index.md) | Anfragedaten für die Auswertung einer Plugin-Parserfunktion | 1 |
@@ -27,14 +27,14 @@
 
 | DTO | Beschreibung | Endpunkte |
 |---|---|---|
-| [PluginQuestionDto](PluginQuestionDto/index.md) | Daten die von einer Question an ein Plugin übergeben werden sollten | 13 |
-| [PluginSubQuestionDto](PluginSubQuestionDto/index.md) | Daten die von einer SubQuestion an ein Plugin übergeben werden sollten | 13 |
-| [VarHashDto](VarHashDto/index.md) | VarHash für den Transport in Rest-Services | 16 |
-| [VarDto](VarDto/index.md) | Ein Eintrag eines VarHashes für die Übertragung in einem Rest-Service | 16 |
-| [CalcErgebnisDto](CalcErgebnisDto/index.md) | Speichert ein CalcErgebnis als Dto um über eine Rest- oder Service-Schittstelle zu übertragen | 16 |
-| [CalcParamsDto](CalcParamsDto/index.md) | Berechnungsparameter für Parser, Zahlendarstellung und Toleranzvergleich | 16 |
-| [ToleranzDto](ToleranzDto/index.md) | Beschreibt Wert und Modus der Toleranz bei der Antwortbewertung | 16 |
-| [PluginMaximaCalcModeDto](PluginMaximaCalcModeDto/index.md) | Legt fest, ob Maxima verwendet und ob Datensatzwerte vor der Berechnung eingesetzt werden | 7 |
+| [PluginQuestionDto](PluginQuestionDto/index.md) | Daten die von einer Question an ein Plugin übergeben werden sollten | 14 |
+| [PluginSubQuestionDto](PluginSubQuestionDto/index.md) | Daten die von einer SubQuestion an ein Plugin übergeben werden sollten | 14 |
+| [VarHashDto](VarHashDto/index.md) | VarHash für den Transport in Rest-Services | 17 |
+| [VarDto](VarDto/index.md) | Ein Eintrag eines VarHashes für die Übertragung in einem Rest-Service | 17 |
+| [CalcErgebnisDto](CalcErgebnisDto/index.md) | Speichert ein CalcErgebnis als Dto um über eine Rest- oder Service-Schittstelle zu übertragen | 17 |
+| [CalcParamsDto](CalcParamsDto/index.md) | Berechnungsparameter für Parser, Zahlendarstellung und Toleranzvergleich | 17 |
+| [ToleranzDto](ToleranzDto/index.md) | Beschreibt Wert und Modus der Toleranz bei der Antwortbewertung | 17 |
+| [PluginMaximaCalcModeDto](PluginMaximaCalcModeDto/index.md) | Legt fest, ob Maxima verwendet und ob Datensatzwerte vor der Berechnung eingesetzt werden | 8 |
 
 ## Plugin-Informationen
 
@@ -51,8 +51,8 @@
 | [PluginDto](PluginDto/index.md) | Dto welches vom Plugin über Letto zum JavaScript des Plugins geschickt wird | 7 |
 | [PluginRenderDto](PluginRenderDto/index.md) | Enthält gerenderten HTML- oder LaTeX-Code und die zugehörigen Bilder | 2 |
 | [ImageBase64Dto](ImageBase64Dto/index.md) | image with image-information of an image-file which is coded in base64 | 1 |
-| [ImageUrlDto](ImageUrlDto/index.md) | image with image-information of an image-file at an open Url | 0 |
-| [ImageInfoDto](ImageInfoDto/index.md) | Information of an Image which is stored in the Image-Service or returned from other service | 1 |
+| [ImageUrlDto](ImageUrlDto/index.md) | image with image-information of an image-file at an open Url | 1 |
+| [ImageInfoDto](ImageInfoDto/index.md) | Information of an Image which is stored in the Image-Service or returned from other service | 2 |
 | [PluginImageResultDto](PluginImageResultDto/index.md) | Sammelt Status und Fehlermeldungen der Plugin-Bilderzeugung | 0 |
 
 ## Bewertung

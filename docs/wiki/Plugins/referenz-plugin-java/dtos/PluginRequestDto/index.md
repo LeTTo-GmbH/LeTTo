@@ -1,5 +1,5 @@
 # PluginRequestDto
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Anfragedaten für die Auswahl eines Plugins anhand von Typ, Name und Konfiguration.
 
@@ -28,6 +28,7 @@ Anfragedaten für die Auswahl eines Plugins anhand von Typ, Name und Konfigurati
 | [`POST /open/generatedatasets`](../../rest-schnittstelle/ApiController/generateDatasets/index.md) | Request | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
 | [`POST /open/maxima`](../../rest-schnittstelle/ApiController/getMaxima/index.md) | Request | Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins |
 | [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Request | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Request | Liefert eine öffentliche URL auf das gerenderte Bild |
 | [`POST /open/imagetemplates`](../../rest-schnittstelle/ApiController/getImageTemplates/index.md) | Request | Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays |
 | [`POST /open/getvars`](../../rest-schnittstelle/ApiController/getVars/index.md) | Request | Liefert eine Liste aller Variablen welche als Dataset benötigt werden |
 

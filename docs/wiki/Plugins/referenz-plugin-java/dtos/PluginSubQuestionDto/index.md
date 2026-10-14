@@ -1,5 +1,5 @@
 # PluginSubQuestionDto
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Daten die von einer SubQuestion an ein Plugin übergeben werden sollten
 
@@ -24,6 +24,7 @@ Daten die von einer SubQuestion an ein Plugin übergeben werden sollten
 | [`POST /open/generatedatasets`](../../rest-schnittstelle/ApiController/generateDatasets/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
 | [`POST /open/maxima`](../../rest-schnittstelle/ApiController/getMaxima/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins |
 | [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 | [`POST /open/imagetemplates`](../../rest-schnittstelle/ApiController/getImageTemplates/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays |
 | [`POST /open/getvars`](../../rest-schnittstelle/ApiController/getVars/index.md) | Request über [`PluginRequestDto.q`](../../dtos/PluginRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | Liefert eine Liste aller Variablen welche als Dataset benötigt werden |
 | [`POST /open/modifyangabe`](../../rest-schnittstelle/ApiController/modifyAngabe/index.md) | Request über [`PluginAngabeRequestDto.q`](../../dtos/PluginAngabeRequestDto/index.md) → [`PluginQuestionDto.subQuestions`](../../dtos/PluginQuestionDto/index.md) | verändert einen Angabetext, der in der Angabe in PI Tags eingeschlossen wurde Die Funktion wird vor dem Darstellen der Frage ausgeführt |

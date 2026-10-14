@@ -1,5 +1,5 @@
 # InfoController
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 REST-Endpunkte zur Erreichbarkeit, Version und Laufzeitinformation des Plugin-Services.
 

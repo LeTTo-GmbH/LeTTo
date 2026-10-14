@@ -1,5 +1,5 @@
 # ImageUrlDto
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 image with image-information of an image-file at an open Url
 
@@ -18,7 +18,9 @@ image with image-information of an image-file at an open Url
 
 ## Verwendet in Endpunkten
 
-wird in keinem Endpunkt verwendet
+| Endpunkt | Rolle | Beschreibung |
+|---|---|---|
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Response | Liefert eine öffentliche URL auf das gerenderte Bild |
 
 ## Verwendet in DTOs
 

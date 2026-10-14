@@ -1,5 +1,5 @@
 # REST-Schnittstelle des Referenz-Plugins
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * Alle Pfade sind in `at.letto.plugins.config.Endpoint` definiert. `<endpoint>` steht für den Endpoint-Pfad des Plugins (im Demo `plugindemo`).
 * Request- und Response-Bodies sind JSON. Die Datenklassen sind unter [DTOs](../dtos/index.md) und [Enums](../enums/index.md) beschrieben.
@@ -10,7 +10,7 @@
 
 | Controller | Basispfad | Erreichbarkeit | Endpunkte | Zweck |
 |---|---|---|---|---|
-| [ApiController](ApiController/index.md) | `/open` | nur im Docker-Netzwerk (`http://letto-<endpoint>.nw-letto:8080/open/...`) | 23 | REST-Schnittstelle des Plugins zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar) |
+| [ApiController](ApiController/index.md) | `/open` | nur im Docker-Netzwerk (`http://letto-<endpoint>.nw-letto:8080/open/...`) | 24 | REST-Schnittstelle des Plugins zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar) |
 | [ApiExternOpenController](ApiExternOpenController/index.md) | `/<endpoint>/api/open` | extern über den Proxy | 4 | offene Endpoints welche von extern erreichbar sein müssen für ajax und allgemeine Informationen (von extern erreichbar) |
 | [ConfigHttpController](ConfigHttpController/index.md) | – | extern über den Proxy | 1 | Liefert den Konfigurationsdialog eines Plugins im Mode CONFIGMODE_URL als HTML-Seite, welche von LeTTo in einem iframe oder Browser-Tab geöffnet wird |
 | [HelpController](HelpController/index.md) | – | extern über den Proxy | 1 | Liefert die Hilfeseite des Plugin-Services mit einer kurzen Beschreibung und Links zur JavaDoc und zur Swagger-Dokumentation |
@@ -28,6 +28,7 @@
 | POST | [`/open/generatedatasets`](ApiController/generateDatasets/index.md) | [ApiController](ApiController/index.md) | [PluginRequestDto](../dtos/PluginRequestDto/index.md) | [PluginDatasetListDto](../dtos/PluginDatasetListDto/index.md) | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
 | POST | [`/open/maxima`](ApiController/getMaxima/index.md) | [ApiController](ApiController/index.md) | [PluginRequestDto](../dtos/PluginRequestDto/index.md) | String | Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins |
 | POST | [`/open/image`](ApiController/getImage/index.md) | [ApiController](ApiController/index.md) | [PluginRequestDto](../dtos/PluginRequestDto/index.md) | [ImageBase64Dto](../dtos/ImageBase64Dto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| POST | [`/open/imageurl`](ApiController/getImageUrl/index.md) | [ApiController](ApiController/index.md) | [PluginRequestDto](../dtos/PluginRequestDto/index.md) | [ImageUrlDto](../dtos/ImageUrlDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 | POST | [`/open/imagetemplates`](ApiController/getImageTemplates/index.md) | [ApiController](ApiController/index.md) | [PluginRequestDto](../dtos/PluginRequestDto/index.md) | Vector&lt;String[]&gt; | Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays |
 | POST | [`/open/parserplugin`](ApiController/parserPlugin/index.md) | [ApiController](ApiController/index.md) | [PluginParserRequestDto](../dtos/PluginParserRequestDto/index.md) | [CalcErgebnisDto](../dtos/CalcErgebnisDto/index.md) | Wird verwendet wenn im Lösungsfeld die Funktion plugin("pluginname",p1,p2,p3) verwendet wird |
 | POST | [`/open/parserplugineinheit`](ApiController/parserPluginEinheit/index.md) | [ApiController](ApiController/index.md) | [PluginEinheitRequestDto](../dtos/PluginEinheitRequestDto/index.md) | String | Bestimmt die Recheneinheit, welche bei der Methode parserPlugin als Ergebnis herauskommt wenn die Parameter die Einheiten wie in der Liste p haben |
@@ -69,8 +70,8 @@
 
 Siehe [Build und Deployment](../build-deployment/index.md#registrierung-am-letto-server).
 
-## Offene Punkte im Code
+## Hinweise
 
-* In `Endpoint` sind `getImageUrl` (`/imageurl`) und `EXTERN_API` (`/<endpoint>/auth/user`) definiert, aber kein Controller stellt Endpunkte darunter bereit. `EXTERN_API` wird nur als externe URI an das Setup-Service gemeldet. Im Code nicht dokumentiert, wofür sie vorgesehen sind.
+* `EXTERN_API` (`/<endpoint>/auth/user`) wird bei der Registrierung als externe URI (`uriExtern`) an das Setup-Service gemeldet; ein Controller für eine authentifizierte externe API ist im Demo nicht implementiert.
 
 [Referenz-Plugin (Java)](../index.md)

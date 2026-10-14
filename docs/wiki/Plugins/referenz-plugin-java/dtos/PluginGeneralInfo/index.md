@@ -1,5 +1,5 @@
 # PluginGeneralInfo
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Liefert allgemein Informationen zu einem Plugin, welche ohne Definition einer Plugin-Instanz allgemein gültig sind
 
@@ -28,13 +28,13 @@ Liefert allgemein Informationen zu einem Plugin, welche ohne Definition einer Pl
 | `cacheable` | boolean | `true` | Plugin ist stateless und liefert bei gleicher Angabe immer das gleiche Verhalten |
 | `useVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den VarHash der Datensätze |
 | `useCVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den VarHash der cvars - Konstante und Datensätze |
-| `useVarsMaxima` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Maxima-Berechnungen ohne eingesetzte Datensatz-Variable |
+| `useVarsMaxima` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Maxima-Berechnungen ohne eingesetzte Datensatz-Variable. Entspricht `useMaximaVars` in BasePlugin und [PluginConfigurationInfoDto](../../dtos/PluginConfigurationInfoDto/index.md). Der Feldname ist Teil der REST-Schnittstelle und wird vom LeTTo-Server unter diesem Namen gelesen – nicht umbenennen. |
 | `useMVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Datensätze und Maxima-Ergebnisse mit eingesetzten Werten kombiniert in einem Hash |
 | `pluginServiceURL` | String | `""` | URL des Plugin-Services für die direkte Kommunikation |
 
 ## Hinweise
 
-* Das Feld `useVarsMaxima` heißt in `BasePlugin` und [`PluginConfigurationInfoDto`](../../dtos/PluginConfigurationInfoDto/index.md) `useMaximaVars`.
+* Das Feld `useVarsMaxima` heißt in `BasePlugin` und [`PluginConfigurationInfoDto`](../../dtos/PluginConfigurationInfoDto/index.md) `useMaximaVars`. Der Name ist Teil der REST-Schnittstelle und wird vom LeTTo-Server so gelesen – er darf nicht angeglichen werden.
 
 ## Verwendet in Endpunkten
 

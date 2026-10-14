@@ -1,5 +1,5 @@
 # ApiController
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 REST-Schnittstelle des Plugins zwischen LeTTo und Plugin (nur aus dem Docker-Netzwerk erreichbar)
 
@@ -22,6 +22,7 @@ REST-Schnittstelle des Plugins zwischen LeTTo und Plugin (nur aus dem Docker-Net
 | POST | [`/open/generatedatasets`](generateDatasets/index.md) | [PluginRequestDto](../../dtos/PluginRequestDto/index.md) | [PluginDatasetListDto](../../dtos/PluginDatasetListDto/index.md) | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
 | POST | [`/open/maxima`](getMaxima/index.md) | [PluginRequestDto](../../dtos/PluginRequestDto/index.md) | String | Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins |
 | POST | [`/open/image`](getImage/index.md) | [PluginRequestDto](../../dtos/PluginRequestDto/index.md) | [ImageBase64Dto](../../dtos/ImageBase64Dto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| POST | [`/open/imageurl`](getImageUrl/index.md) | [PluginRequestDto](../../dtos/PluginRequestDto/index.md) | [ImageUrlDto](../../dtos/ImageUrlDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 | POST | [`/open/imagetemplates`](getImageTemplates/index.md) | [PluginRequestDto](../../dtos/PluginRequestDto/index.md) | Vector&lt;String[]&gt; | Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays |
 | POST | [`/open/parserplugin`](parserPlugin/index.md) | [PluginParserRequestDto](../../dtos/PluginParserRequestDto/index.md) | [CalcErgebnisDto](../../dtos/CalcErgebnisDto/index.md) | Wird verwendet wenn im Lösungsfeld die Funktion plugin("pluginname",p1,p2,p3) verwendet wird |
 | POST | [`/open/parserplugineinheit`](parserPluginEinheit/index.md) | [PluginEinheitRequestDto](../../dtos/PluginEinheitRequestDto/index.md) | String | Bestimmt die Recheneinheit, welche bei der Methode parserPlugin als Ergebnis herauskommt wenn die Parameter die Einheiten wie in der Liste p haben |

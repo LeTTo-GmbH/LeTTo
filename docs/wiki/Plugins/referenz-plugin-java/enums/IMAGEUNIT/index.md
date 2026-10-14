@@ -1,5 +1,5 @@
 # IMAGEUNIT
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Einheiten welche für die Größenangaben von Bildern verwendet werden können none : keine Angabe der Dateigröße px : Pixel pt : Punkte cm : Zentimeter percent : Prozent der Bildschirmbreite em : Vielfache der Standardschriftgröße
 
@@ -24,6 +24,7 @@ Einheiten welche für die Größenangaben von Bildern verwendet werden können n
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
 | [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Response über [`ImageBase64Dto.imageInfoDto`](../../dtos/ImageBase64Dto/index.md) → [`ImageInfoDto.unit`](../../dtos/ImageInfoDto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Response über [`ImageUrlDto.imageInfoDto`](../../dtos/ImageUrlDto/index.md) → [`ImageInfoDto.unit`](../../dtos/ImageInfoDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 
 ## Verwendet in DTOs
 

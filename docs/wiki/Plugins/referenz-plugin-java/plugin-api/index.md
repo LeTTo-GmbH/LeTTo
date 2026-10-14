@@ -1,5 +1,5 @@
 # Plugin-API (BasePlugin)
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * `PluginService` (`at.letto.plugins.plugin`) ist das Interface, das jedes Plugin erfüllt. Die DTOs sind von LeTTo unabhängig.
 * `BasePlugin` ist die abstrakte Basisklasse mit Standardimplementierungen. Ein eigenes Plugin erbt davon,
@@ -60,7 +60,7 @@
 | `Vector<String> getVars()` | [`/open/getvars`](../rest-schnittstelle/ApiController/getVars/index.md) | `null` | Variablen, die als Dataset benötigt werden |
 | `String getMaxima(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q,` [`PluginMaximaCalcModeDto`](../dtos/PluginMaximaCalcModeDto/index.md) `mode)` | [`/open/maxima`](../rest-schnittstelle/ApiController/getMaxima/index.md) | `""` | Maxima-Berechnungsstring |
 | [`ImageBase64Dto`](../dtos/ImageBase64Dto/index.md) `getImageDto(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/image`](../rest-schnittstelle/ApiController/getImage/index.md) | erzeugt Bild über `parseDrawParams` + `paint`, PNG Base64 | Bild als Base64 |
-| [`ImageUrlDto`](../dtos/ImageUrlDto/index.md) `getImageUrl(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | – (intern, z.B. im [`PluginDto`](../dtos/PluginDto/index.md)-Konstruktor) | speichert Bild im Image-Service, liefert URL | Bild als öffentliche URL |
+| [`ImageUrlDto`](../dtos/ImageUrlDto/index.md) `getImageUrl(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/imageurl`](../rest-schnittstelle/ApiController/getImageUrl/index.md), außerdem im [`PluginDto`](../dtos/PluginDto/index.md)-Konstruktor | speichert Bild im Image-Service, liefert URL | Bild als öffentliche URL |
 | `String getPluginImageDescription(String imageParams,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | – | aus Typ, Version, Name, Config, Parametern und Frage | eindeutige Beschreibung, daraus wird der Dateiname des Bildes gebildet |
 | `Vector<String[]> getImageTemplates()` | [`/open/imagetemplates`](../rest-schnittstelle/ApiController/getImageTemplates/index.md) | `null` | Bildvarianten: [0] Beschreibung, [1] PIG-Tag, [2] Hilfetext |
 | [`CalcErgebnisDto`](../dtos/CalcErgebnisDto/index.md) `parserPlugin(`[`VarHashDto`](../dtos/VarHashDto/index.md) `vars,` [`CalcParamsDto`](../dtos/CalcParamsDto/index.md) `cp,` [`CalcErgebnisDto`](../dtos/CalcErgebnisDto/index.md)`... p)` | [`/open/parserplugin`](../rest-schnittstelle/ApiController/parserPlugin/index.md) | `null` | Funktion `plugin("name",p1,p2,…)` im Lösungsfeld |

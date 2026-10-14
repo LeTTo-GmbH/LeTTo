@@ -1,5 +1,5 @@
 # POST /open/image
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 | | |
 |---|---|
@@ -63,6 +63,7 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
+* [`POST /open/imageurl`](../../../rest-schnittstelle/ApiController/getImageUrl/index.md) – Liefert eine öffentliche URL auf das gerenderte Bild
 * [`POST /open/imagetemplates`](../../../rest-schnittstelle/ApiController/getImageTemplates/index.md) – Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays
 * [`POST /open/loadplugindto`](../../../rest-schnittstelle/ApiController/loadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
 

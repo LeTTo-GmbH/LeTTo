@@ -83,6 +83,9 @@ Das Verhalten entspricht den gleichnamigen Endpunkten unter `/open`.
 ## Nicht vorhanden
 
 * `confighttp` – der Konfigurationsdialog im iframe (`CONFIGMODE_URL`) ist nicht implementiert, siehe [ConfigHttpController](../../referenz-plugin-java/rest-schnittstelle/ConfigHttpController/index.md) in Java.
+* `/open/imageurl` – Bild als öffentliche URL, siehe [getImageUrl](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImageUrl/index.md) in Java.
+  Der LeTTo-Server ruft diesen Endpunkt vor `/open/image` auf; weil er fehlt, verwendet der Server das Base64-Bild von `/open/image`.
+  Bei einer Umsetzung muss das Feld `ImageUrlDto.imageInfo` in `imageInfoDto` umbenannt werden, da der Server dieses Feld liest (siehe [DTOs](../dtos/index.md)).
 
 ## Registrierung am Setup-Service (ausgehend)
 

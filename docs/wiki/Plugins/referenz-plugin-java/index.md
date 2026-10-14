@@ -1,5 +1,5 @@
 # Referenz-Plugin (Java)
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Das Projekt **plugin-demo-java** ist die Referenzimplementierung eines LeTTo-Plugin-Services in Java (Spring Boot).
 Es dient als Vorlage für eigene Plugins und enthält als Beispiel das Plugin **Uhr1** – ein Uhrblatt, auf dem eine Uhrzeit

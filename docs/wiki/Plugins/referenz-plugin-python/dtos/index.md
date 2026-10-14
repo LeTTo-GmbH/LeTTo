@@ -17,7 +17,7 @@
 | `CalcParamsDto` | [CalcParamsDto](../../referenz-plugin-java/dtos/CalcParamsDto/index.md) | Standardwerte, siehe unten |
 | `ImageBase64Dto` | [ImageBase64Dto](../../referenz-plugin-java/dtos/ImageBase64Dto/index.md) | – |
 | `ImageInfoDto` | [ImageInfoDto](../../referenz-plugin-java/dtos/ImageInfoDto/index.md) | **`pluginType` statt `pluginTyp`**; `lifetime` Standard 0 |
-| `ImageUrlDto` | [ImageUrlDto](../../referenz-plugin-java/dtos/ImageUrlDto/index.md) | **`imageInfo` statt `imageInfoDto`**; wird von keinem Endpunkt verwendet |
+| `ImageUrlDto` | [ImageUrlDto](../../referenz-plugin-java/dtos/ImageUrlDto/index.md) | **`imageInfo` statt `imageInfoDto`**; wird von keinem Endpunkt verwendet, da `/open/imageurl` fehlt – bei einer Umsetzung auf `imageInfoDto` ändern, der LeTTo-Server liest dieses Feld |
 | `JavascriptLibrary` | [JavascriptLibrary](../../referenz-plugin-java/dtos/JavascriptLibrary/index.md) | – |
 | `LoadPluginRequestDto` | [LoadPluginRequestDto](../../referenz-plugin-java/dtos/LoadPluginRequestDto/index.md) | – |
 | `PluginAngabeRequestDto` | [PluginAngabeRequestDto](../../referenz-plugin-java/dtos/PluginAngabeRequestDto/index.md) | – |

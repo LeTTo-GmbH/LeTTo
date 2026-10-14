@@ -1,5 +1,5 @@
 # PluginScoreRequestDto
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Anfragedaten für die Bewertung einer Plugin-Antwort.
 
@@ -19,12 +19,8 @@ Anfragedaten für die Bewertung einer Plugin-Antwort.
 | `antwort` | String |  | Antwort die der Schüler eingegeben hat |
 | `toleranz` | [ToleranzDto](../../dtos/ToleranzDto/index.md) |  | Toleranz für die Lösung |
 | `varsQuestion` | [VarHashDto](../../dtos/VarHashDto/index.md) |  | Referenz auf VarHash, wird dynamisch nachgeladen |
-| `answerDto` | [PluginAnswerDto](../../dtos/PluginAnswerDto/index.md) |  | Antwort des Schülers |
+| `answerDto` | [PluginAnswerDto](../../dtos/PluginAnswerDto/index.md) |  | korrekte Antwort und Informationen für den Scorer des Plugins (Musterlösung, nicht die Antwort des Schülers) |
 | `grade` | double |  | Maximale Punktanzahl für die richtige Antwort |
-
-## Hinweise
-
-* Unstimmigkeit im Code: Die JavaDoc von `answerDto` lautet „Antwort des Schülers"; laut Controller und Plugin-API ist es die Musterlösung mit Informationen für den Scorer.
 
 ## Verwendet in Endpunkten
 

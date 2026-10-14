@@ -276,7 +276,8 @@ SEE_ALSO = {
     ('ApiController', 'generateDatasets'): [('ApiController', 'getVars'), ('ApiController', 'getAngabe')],
     ('ApiController', 'getVars'): [('ApiController', 'generateDatasets')],
     ('ApiController', 'getMaxima'): [('ApiController', 'parserPlugin')],
-    ('ApiController', 'getImage'): [('ApiController', 'getImageTemplates'), ('ApiController', 'loadPluginDto')],
+    ('ApiController', 'getImage'): [('ApiController', 'getImageUrl'), ('ApiController', 'getImageTemplates'), ('ApiController', 'loadPluginDto')],
+    ('ApiController', 'getImageUrl'): [('ApiController', 'getImage'), ('ApiController', 'loadPluginDto')],
     ('ApiController', 'getImageTemplates'): [('ApiController', 'getImage')],
     ('ApiController', 'parserPlugin'): [('ApiController', 'parserPluginEinheit'), ('ApiController', 'getMaxima')],
     ('ApiController', 'parserPluginEinheit'): [('ApiController', 'parserPlugin')],
@@ -315,6 +316,10 @@ EP_NOTES = {
         'Das `PluginDto` wird mit der in der Sitzung gespeicherten Frage (`pluginQuestionDto`) erzeugt, `q` aus dem Request wird ignoriert.'],
     ('ApiController', 'pluginGeneralInfo'): ['Der Request-Body ist der Plugin-Typ als reiner String (kein JSON-Objekt).'],
     ('ApiExternOpenController', 'pluginGeneralInfo'): ['Der Request-Body ist der Plugin-Typ als reiner String (kein JSON-Objekt).'],
+    ('ApiController', 'getImageUrl'): [
+        'Das Bild wird über `parseDrawParams` und `paint` erzeugt und im Image-Service des Plugins gespeichert (Verzeichnis `letto.pathPlugins` + Servicepfad); `imageUrl` und `imageInfoDto.url` enthalten die öffentliche URL.',
+        'Der LeTTo-Server ruft diesen Endpunkt vor `image` auf. Liefert er keine URL oder schlägt er fehl, verwendet der Server das Base64-Bild von `image`.',
+        'Kann das Bild nicht gespeichert werden, steht die Meldung in `error`.'],
     ('ApiController', 'getImageTemplates'): ['Die Antwort ist ein Array von String-Arrays: [0] beschreibender Text, [1] PIG-Tag, [2] Hilfetext.'],
     ('ConfigHttpController', 'configHttp'): [
         'Die Seite bindet `' + EP + '/open/js/jquery-3.6.0.min.js` und den Quelltext aller lokalen JavaScript-Libraries des Plugins (`javascriptLibrariesLocal()`) ein.',
@@ -345,10 +350,8 @@ DTO_NOTES = {
     'ImageInfoDto': ['`lifetimeOutdated()` prüft, ob `lifetime` überschritten ist.'],
     'ConfigServiceDto': ['`htmlServiceStartTime()` / `htmlLastRegistrationTime()` formatieren die Zeitpunkte für die Anzeige.',
                          'Das Demo übergibt in `programmingLanguage` die Java-Version (`serverStatus.getJavaVersion()`).'],
-    'PluginScoreRequestDto': ['Unstimmigkeit im Code: Die JavaDoc von `answerDto` lautet „Antwort des Schülers"; laut Controller und Plugin-API ist es die Musterlösung mit Informationen für den Scorer.'],
-    'PluginRenderResultRequestDto': ['Unstimmigkeit im Code: Die JavaDoc von `answerDto` lautet „Antwort des Schülers"; laut Controller und Plugin-API ist es die Musterlösung mit Informationen für den Scorer.'],
-    'PluginGeneralInfo': ['Das Feld `useVarsMaxima` heißt in `BasePlugin` und `PluginConfigurationInfoDto` `useMaximaVars`.'],
-    'PluginRenderLatexRequestDto': ['Die möglichen Werte von `mode` sind im Code nicht dokumentiert.'],
+    'PluginGeneralInfo': ['Das Feld `useVarsMaxima` heißt in `BasePlugin` und `PluginConfigurationInfoDto` `useMaximaVars`. Der Name ist Teil der REST-Schnittstelle und wird vom LeTTo-Server so gelesen – er darf nicht angeglichen werden.'],
+    'PluginRenderLatexRequestDto': ['`mode` lässt sich derzeit nicht auswerten: Der LeTTo-Server übergibt `TexPrintMode.toString()`, und diese Klasse hat kein eigenes `toString()` – das Plugin erhält nur einen Objekt-Bezeichner wie `at.letto.tools.tex.TexPrintMode@6d06d69c`.'],
     'PluginQuestionDto': ['`clone()` liefert eine flache Kopie.'],
     'ServiceInfoDTO': ['Im Demo bleibt `endpoints` leer und `jarLibs` ist `null`.'],
 }
@@ -613,9 +616,9 @@ L += ['', '## Konfigurationssitzung', '',
       '| Methode | Pfad am Setup-Service | Request | Response | Authentifizierung |', '|---|---|---|---|---|',
       f'| POST | `/config/auth/user/registerplugin` | {type_md("ConfigServiceDto", 1)} | {type_md("RegisterServiceResultDto", 1)} | Basic Auth (`letto.user.user.name` / `letto.user.user.password`) |',
       '', 'Siehe [Build und Deployment](../build-deployment/index.md#registrierung-am-letto-server).', '',
-      '## Offene Punkte im Code', '',
-      '* In `Endpoint` sind `getImageUrl` (`/imageurl`) und `EXTERN_API` (`/<endpoint>/auth/user`) definiert, aber kein Controller stellt Endpunkte darunter bereit. '
-      '`EXTERN_API` wird nur als externe URI an das Setup-Service gemeldet. Im Code nicht dokumentiert, wofür sie vorgesehen sind.',
+      '## Hinweise', '',
+      '* `EXTERN_API` (`/<endpoint>/auth/user`) wird bei der Registrierung als externe URI (`uriExtern`) an das Setup-Service gemeldet; '
+      'ein Controller für eine authentifizierte externe API ist im Demo nicht implementiert.',
       nav(1, [('Referenz-Plugin (Java)', '../index.md')])]
 write('rest-schnittstelle', '\n'.join(L))
 

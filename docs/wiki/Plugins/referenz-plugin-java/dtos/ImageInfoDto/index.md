@@ -1,5 +1,5 @@
 # ImageInfoDto
-<!-- generiert aus plugin-demo-java @ 010a31c (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Information of an Image which is stored in the Image-Service or returned from other service. It consists any Data about the source of then image and the properties to view in LeTTo.
 
@@ -34,6 +34,7 @@ Information of an Image which is stored in the Image-Service or returned from ot
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
 | [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Response über [`ImageBase64Dto.imageInfoDto`](../../dtos/ImageBase64Dto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Response über [`ImageUrlDto.imageInfoDto`](../../dtos/ImageUrlDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 
 ## Verwendet in DTOs
 
