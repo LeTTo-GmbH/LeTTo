@@ -1,5 +1,5 @@
 # Plugin-API (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Anders als in Java gibt es keine Basisklasse mit überschreibbaren Methoden. Die Plugin-Logik besteht aus drei Teilen:
 
@@ -40,6 +40,7 @@ Anders als in Java gibt es keine Basisklasse mit überschreibbaren Methoden. Die
 | `get_help()` | Inhalt aller `CONF_HELPFILES` | – (in `PluginGeneralInfo`) | `getHelp()` |
 | `plugin_general_info(typ)` | allgemeine Informationen, JavaScript-Dateien als Quelltext (`local="JAVASCRIPT"`) | [generalinfo](../../referenz-plugin-java/rest-schnittstelle/ApiController/pluginGeneralInfo/index.md), [generalinfolist](../../referenz-plugin-java/rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) | `getPluginGeneralInfo()` |
 | `get_image_base64(params, q)` | Uhrblatt als PNG (320 × 320 Pixel), Base64-codiert | [image](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImage/index.md), [loadplugindto](../../referenz-plugin-java/rest-schnittstelle/ApiController/loadPluginDto/index.md) | `getImageDto()` |
+| `get_image_url(params, q)` | Uhrblatt speichern (`save_plugin_image`) und öffentliche URL mit `ImageInfoDto` liefern | [imageurl](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImageUrl/index.md) | `getImageUrl()` |
 | `get_html(params, q)` | kurzer HTML-Hinweis „Gib die Zeit im Format HH:MM ein." | [gethtml](../../referenz-plugin-java/rest-schnittstelle/ApiController/getHtml/index.md), [renderpluginresult](../../referenz-plugin-java/rest-schnittstelle/ApiController/renderPluginResult/index.md) | `getHTML()` |
 | `get_angabe()` | fester Angabetext „Stelle die Uhr ab und gib die Zeit im Format HH:MM ein." | [angabe](../../referenz-plugin-java/rest-schnittstelle/ApiController/getAngabe/index.md) | `getAngabe()` |
 | `score(antwort, toleranz, answerDto, grade)` | Bewertung der Schülereingabe, siehe unten | [score](../../referenz-plugin-java/rest-schnittstelle/ApiController/score/index.md) | `score()` |

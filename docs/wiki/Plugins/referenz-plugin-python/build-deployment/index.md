@@ -1,5 +1,5 @@
 # Build und Deployment des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Build
 
@@ -63,9 +63,11 @@ Wichtige Umgebungsvariablen:
 | `letto_plugin_uri_extern` | `https://${SERVER_NAME}` | externe URI des Servers; Basis für `pluginDtoUri` |
 | `network_letto_address`, `docker_container_name` | `letto-plugindemopython` | werden an das Setup gemeldet |
 | `RESOURCE_DIR` | `/app/resources` | Verzeichnis der Ressourcen |
+| `letto_pathPlugins` | `/opt/letto/plugins` | Bildablage für `/open/imageurl` (Volume `${VOLUME_PLUGINS}`); Dateien unter `<servicepath>/<2 Zeichen>/<md5>.png` |
+| `letto_webPathPlugins` | `${SERVER_NAME}/images/plugins` | öffentlicher Pfad dieser Bildablage; daraus wird die Bild-URL `https://…` gebildet |
 | `debug` | `DEBUG_PLUGINS` bzw. `DEBUG` | Start mit Debugger |
 
-Weitere Variablen (`letto_pathImages`, `letto_webPathImages`, `letto_pathPlugins`, `letto_webPathPlugins`, `letto_schulen`,
+Weitere Variablen (`letto_pathImages`, `letto_webPathImages`, `letto_schulen`,
 `letto_user_gast_password`, `servername`) sind gesetzt, werden im Python-Code aber nicht ausgewertet.
 
 Einstellungen der Registrierung (nicht in der Compose-Datei, Standardwerte im Code):
@@ -138,6 +140,7 @@ Die Tests laufen ohne Docker und ohne LeTTo (`PLUGIN_REGISTER_ON_READY=false`, R
 
 | Datei | prüft |
 |---|---|
+| `tests/test_imageurl.py` | `/open/imageurl` unter `/open` und `<servicepath>/open`: Ablage und URL, gleiches Bild – gleiche Datei, Datei entspricht dem Base64-Bild, fehlende Bildablage, unbekanntes Plugin, URL ohne doppelte Schrägstriche |
 | `tests/test_scorer.py` | Zeitumrechnung, Uhrzeit-Vergleich über 12 Uhr, relative und absolute Toleranz, `PluginDemo.score`, Endpunkt `/open/score` unter `/open` und `<servicepath>/open` |
 | `tests/test_openapi.py` | alphabetische Sortierung in der OpenAPI-Beschreibung, Links jedes Endpunkts, DTOs und Enum-Felds auf die Java-Doku, Link auf diese Python-Doku in OpenAPI-Beschreibung und `externalDocs`, Links auf Java- und Python-Doku auf der Hilfeseite |
 

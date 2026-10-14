@@ -1,5 +1,5 @@
 # REST-Schnittstelle des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 * Die Python-Version bietet dieselben Pfade, Request- und Response-DTOs wie das Java-Plugin. Jeder Endpunkt verlinkt unten auf seine
   ausführliche Beschreibung in der [REST-Schnittstelle des Java-Plugins](../../referenz-plugin-java/rest-schnittstelle/index.md);
@@ -23,6 +23,7 @@ zusätzlich unter `<servicepath>/open/...` (über den Proxy erreichbar).
 | POST | `/open/generatedatasets` | [PluginRequestDto](../../referenz-plugin-java/dtos/PluginRequestDto/index.md) | [PluginDatasetListDto](../../referenz-plugin-java/dtos/PluginDatasetListDto/index.md) | immer leere Liste | [generateDatasets](../../referenz-plugin-java/rest-schnittstelle/ApiController/generateDatasets/index.md) |
 | POST | `/open/maxima` | [PluginRequestDto](../../referenz-plugin-java/dtos/PluginRequestDto/index.md) | `String` | immer `""` | [getMaxima](../../referenz-plugin-java/rest-schnittstelle/ApiController/getMaxima/index.md) |
 | POST | `/open/image` | [PluginRequestDto](../../referenz-plugin-java/dtos/PluginRequestDto/index.md) | [ImageBase64Dto](../../referenz-plugin-java/dtos/ImageBase64Dto/index.md) | Uhrblatt 320 × 320 Pixel, `params` werden nicht ausgewertet; unbekannter Typ: `error = "unknown plugin"` | [getImage](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImage/index.md) |
+| POST | `/open/imageurl` | [PluginRequestDto](../../referenz-plugin-java/dtos/PluginRequestDto/index.md) | [ImageUrlDto](../../referenz-plugin-java/dtos/ImageUrlDto/index.md) | speichert das Uhrblatt (320 × 320) unter `<letto_pathPlugins><servicepath>/<2 Zeichen>/<md5>.png` und liefert die URL `https://<letto_webPathPlugins><servicepath>/…`; ohne diese Variablen leere URL mit Meldung in `error`; unbekannter Typ: `error = "unknown plugin"`. Der LeTTo-Server ruft den Endpunkt vor `/open/image` auf. | [getImageUrl](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImageUrl/index.md) |
 | POST | `/open/imagetemplates` | [PluginRequestDto](../../referenz-plugin-java/dtos/PluginRequestDto/index.md) | `List<String[]>` | fest `[["default", "[PIG PluginVomTester \"\"]", "Uhrblatt"]]` – der Plugin-Name im PIG-Tag ist fest eingetragen | [getImageTemplates](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImageTemplates/index.md) |
 | POST | `/open/parserplugin` | [PluginParserRequestDto](../../referenz-plugin-java/dtos/PluginParserRequestDto/index.md) | [CalcErgebnisDto](../../referenz-plugin-java/dtos/CalcErgebnisDto/index.md) | `CalcErgebnisDto` mit `string = null`, `type = "STRING"` (Java: `null`) | [parserPlugin](../../referenz-plugin-java/rest-schnittstelle/ApiController/parserPlugin/index.md) |
 | POST | `/open/parserplugineinheit` | [PluginEinheitRequestDto](../../referenz-plugin-java/dtos/PluginEinheitRequestDto/index.md) | `String` | immer `""` (Java: `null`) | [parserPluginEinheit](../../referenz-plugin-java/rest-schnittstelle/ApiController/parserPluginEinheit/index.md) |
@@ -83,9 +84,6 @@ Das Verhalten entspricht den gleichnamigen Endpunkten unter `/open`.
 ## Nicht vorhanden
 
 * `confighttp` – der Konfigurationsdialog im iframe (`CONFIGMODE_URL`) ist nicht implementiert, siehe [ConfigHttpController](../../referenz-plugin-java/rest-schnittstelle/ConfigHttpController/index.md) in Java.
-* `/open/imageurl` – Bild als öffentliche URL, siehe [getImageUrl](../../referenz-plugin-java/rest-schnittstelle/ApiController/getImageUrl/index.md) in Java.
-  Der LeTTo-Server ruft diesen Endpunkt vor `/open/image` auf; weil er fehlt, verwendet der Server das Base64-Bild von `/open/image`.
-  Bei einer Umsetzung muss das Feld `ImageUrlDto.imageInfo` in `imageInfoDto` umbenannt werden, da der Server dieses Feld liest (siehe [DTOs](../dtos/index.md)).
 
 ## Registrierung am Setup-Service (ausgehend)
 

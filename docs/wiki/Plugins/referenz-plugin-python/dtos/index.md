@@ -1,5 +1,5 @@
 # DTOs des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 * Die DTOs sind Pydantic-Modelle in `app/main.py` mit **denselben Feldnamen wie die Java-DTOs**; das JSON auf der Leitung ist daher gleich.
   Die Bedeutung jedes Feldes steht in der [DTO-Doku des Java-Plugins](../../referenz-plugin-java/dtos/index.md).
@@ -16,8 +16,8 @@
 | `CalcErgebnisDto` | [CalcErgebnisDto](../../referenz-plugin-java/dtos/CalcErgebnisDto/index.md) | Feld heißt in Python `json_value`, im JSON aber `json` (Alias) |
 | `CalcParamsDto` | [CalcParamsDto](../../referenz-plugin-java/dtos/CalcParamsDto/index.md) | Standardwerte, siehe unten |
 | `ImageBase64Dto` | [ImageBase64Dto](../../referenz-plugin-java/dtos/ImageBase64Dto/index.md) | – |
-| `ImageInfoDto` | [ImageInfoDto](../../referenz-plugin-java/dtos/ImageInfoDto/index.md) | **`pluginType` statt `pluginTyp`**; `lifetime` Standard 0 |
-| `ImageUrlDto` | [ImageUrlDto](../../referenz-plugin-java/dtos/ImageUrlDto/index.md) | **`imageInfo` statt `imageInfoDto`**; wird von keinem Endpunkt verwendet, da `/open/imageurl` fehlt – bei einer Umsetzung auf `imageInfoDto` ändern, der LeTTo-Server liest dieses Feld |
+| `ImageInfoDto` | [ImageInfoDto](../../referenz-plugin-java/dtos/ImageInfoDto/index.md) | `lifetime` Standard 0 (`/open/imageurl` setzt ein Jahr) |
+| `ImageUrlDto` | [ImageUrlDto](../../referenz-plugin-java/dtos/ImageUrlDto/index.md) | – |
 | `JavascriptLibrary` | [JavascriptLibrary](../../referenz-plugin-java/dtos/JavascriptLibrary/index.md) | – |
 | `LoadPluginRequestDto` | [LoadPluginRequestDto](../../referenz-plugin-java/dtos/LoadPluginRequestDto/index.md) | – |
 | `PluginAngabeRequestDto` | [PluginAngabeRequestDto](../../referenz-plugin-java/dtos/PluginAngabeRequestDto/index.md) | – |

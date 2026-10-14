@@ -1,5 +1,5 @@
 # Architektur des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Aufbau des Services
 
@@ -16,7 +16,7 @@
 | Environment | Werte aus der Compose-Datei: Setup-URI, Passwort, interne/externe URI, Einstellungen der Registrierung |
 | Paths | Basispfade `LOCAL_API` (`/open`), `EXTERN_OPEN` (`<servicepath>/api/open`), Ping- und Info-Pfade |
 | Logging | Log-Format; Aufrufe von `/open/pluginlist`, `/open/generalinfolist`, `/version` und `/ping` werden aus dem Zugriffslog gefiltert |
-| Utilities | Zeitumrechnung `parse_time_seconds`, Uhrzeit-Vergleich mit Toleranz, Lesen von Ressourcen, Zeichnen des Uhrblatts mit Pillow |
+| Utilities | Zeitumrechnung `parse_time_seconds`, Uhrzeit-Vergleich mit Toleranz, Lesen von Ressourcen, Zeichnen des Uhrblatts mit Pillow, Speichern von Bildern in der Bildablage (`save_plugin_image`) |
 | DTOs | Pydantic-Modelle mit denselben Feldnamen wie die Java-DTOs – siehe [DTOs](../dtos/index.md) |
 | Plugin | Klasse `PluginDemo` – die eigentliche Plugin-Logik |
 | Plugin registry | `REGISTERED_PLUGINS` und `create_plugin` (entspricht der `StartupConfiguration` in Java) |

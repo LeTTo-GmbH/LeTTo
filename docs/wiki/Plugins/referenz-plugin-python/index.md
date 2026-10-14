@@ -1,5 +1,5 @@
 # Referenz-Plugin (Python)
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Das Projekt **plugin-demo-python** ist eine Referenzimplementierung eines LeTTo-Plugin-Services in Python (FastAPI).
 Es ist eine Portierung des [Referenz-Plugins (Java)](../referenz-plugin-java/index.md) und implementiert **dieselbe REST-Schnittstelle**.

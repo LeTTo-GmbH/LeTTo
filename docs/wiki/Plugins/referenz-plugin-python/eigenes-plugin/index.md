@@ -1,5 +1,5 @@
 # Eigenes Plugin in Python erstellen
-<!-- erstellt aus plugin-demo-python @ 10ecc4f (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Ein Script wie `setpluginname.bat` im Java-Projekt gibt es im Python-Projekt nicht; Servicepfad und Namen werden von Hand angepasst.
 Die folgenden Schritte ergeben sich aus dem Aufbau des Projekts.
@@ -49,7 +49,7 @@ CONF_JSLIBS = ["plugins/mein/meinScript.js", "plugins/mein/meinConfigScript.js"]
 ## 4. Plugin-Klasse programmieren
 
 * Die Klasse `PluginDemo` übernehmen oder eine eigene Klasse mit denselben Methoden schreiben:
-  `__init__(name, params)`, `get_help`, `plugin_general_info`, `get_image_base64`, `get_html`, `get_angabe`, `score`.
+  `__init__(name, params)`, `get_help`, `plugin_general_info`, `get_image_base64`, `get_image_url`, `get_html`, `get_angabe`, `score`.
 * Der Konstruktor wertet den Konfigurationsstring aus (im Demo durch `;` getrennt).
 * Endpunkte, die im Demo feste Antworten liefern (z.B. `maxima`, `generatedatasets`, `renderlatex`), in `mount_internal_open` auf eigene
   Methoden der Plugin-Klasse umstellen, wenn das Plugin sie braucht. Was jeder Endpunkt liefern soll, steht in der
