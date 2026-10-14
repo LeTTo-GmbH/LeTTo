@@ -29,3 +29,5 @@ Die Suche in der Titelleiste lädt `search.json`. Ist die Datei kein gültiges J
 
 - `/plugin-doku` erzeugt die Doku des Java-Referenz-Plugins (`../plugin-demo-java`) unter `docs/wiki/Plugins/referenz-plugin-java/`.
   Details in `.claude/skills/plugin-doku/SKILL.md`.
+- `/plugin-doku-python` erzeugt die Doku des Python-Referenz-Plugins (`../plugin-demo-python`) unter `docs/wiki/Plugins/referenz-plugin-python/`;
+  sie verlinkt für Endpunkte und DTOs auf die Java-Doku. Details in `.claude/skills/plugin-doku-python/SKILL.md`.

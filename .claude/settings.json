@@ -1,5 +1,8 @@
 {
   "permissions": {
-    "additionalDirectories": ["../plugin-demo-java"]
+    "additionalDirectories": [
+      "../plugin-demo-java",
+      "../plugin-demo-python"
+    ]
   }
 }
