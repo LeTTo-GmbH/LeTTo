@@ -52,9 +52,33 @@ def process_text(seg, rel, me):
         out.append(bare(seg[pos:m.start()], rel, me))
         r = resolve_code(m.group(1))
         if r and r != me: out.append(f'[{m.group(0)}]({target(rel, *r)})')
-        else: out.append(m.group(0))
+        elif r: out.append(m.group(0))
+        else: out.append(split_code(m.group(1), rel, me))
         pos = m.end()
     out.append(bare(seg[pos:], rel, me))
+    return ''.join(out)
+
+TOKEN = re.compile(r'(?<![\w/.\-])(' + NAME_RE + r')(?![\w.\-]*\.html)(?!\w)')
+
+def split_code(code, rel, me):
+    """Code-Span mit enthaltenen Typnamen (z.B. Signatur) in Code-Stücke und verlinkte Namen aufteilen.
+    Leerzeichen an den Rändern der Stücke stehen außerhalb der Backticks, da Markdown sie im Code-Span entfernt."""
+    hits = [m for m in TOKEN.finditer(code)
+            if (('ctrl' if m.group(1) in CTRLS else 'type'), m.group(1)) != me]
+    if not hits: return f'`{code}`'
+    def piece(t):
+        if not t: return ''
+        core = t.strip()
+        if not core: return t
+        lead = t[:len(t) - len(t.lstrip())]; trail = t[len(t.rstrip()):]
+        return f'{lead}`{core}`{trail}'
+    out, pos = [], 0
+    for m in hits:
+        n = m.group(1)
+        out.append(piece(code[pos:m.start()]))
+        out.append(f'[`{n}`]({target(rel, "ctrl" if n in CTRLS else "type", n)})')
+        pos = m.end()
+    out.append(piece(code[pos:]))
     return ''.join(out)
 
 def bare(text, rel, me):

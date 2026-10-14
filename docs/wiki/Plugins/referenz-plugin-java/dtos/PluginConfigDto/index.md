@@ -42,7 +42,7 @@ Dto welches vom Plugin über Letto zum JavaScript der Konfiguration des Plugins 
 
 ## Verwendet in der Plugin-API
 
-* [`setConfigurationData`](../../plugin-api/index.md): `PluginConfigDto setConfigurationData(String configuration, PluginQuestionDto questionDto)`
+* [`setConfigurationData`](../../plugin-api/index.md): `PluginConfigDto setConfigurationData(String configuration,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `questionDto)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

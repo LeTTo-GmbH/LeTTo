@@ -60,15 +60,15 @@ Daten die von einer Question an ein Plugin übergeben werden sollten
 ## Verwendet in der Plugin-API
 
 * [`getHTML`](../../plugin-api/index.md): `String getHTML(String params, PluginQuestionDto q)`
-* [`getMaxima`](../../plugin-api/index.md): `String getMaxima(String params, PluginQuestionDto q, PluginMaximaCalcModeDto pluginMaximaCalcMode )`
-* [`parseDrawParams`](../../plugin-api/index.md): `void parseDrawParams(String params,PluginQuestionDto q, PluginImageResultDto pluginImageResultDto)`
-* [`getImageDto`](../../plugin-api/index.md): `ImageBase64Dto getImageDto(String params, PluginQuestionDto q)`
-* [`getImageUrl`](../../plugin-api/index.md): `ImageUrlDto getImageUrl(String params, PluginQuestionDto q)`
+* [`getMaxima`](../../plugin-api/index.md): `String getMaxima(String params, PluginQuestionDto q,` [`PluginMaximaCalcModeDto`](../../dtos/PluginMaximaCalcModeDto/index.md) `pluginMaximaCalcMode )`
+* [`parseDrawParams`](../../plugin-api/index.md): `void parseDrawParams(String params,PluginQuestionDto q,` [`PluginImageResultDto`](../../dtos/PluginImageResultDto/index.md) `pluginImageResultDto)`
+* [`getImageDto`](../../plugin-api/index.md): [`ImageBase64Dto`](../../dtos/ImageBase64Dto/index.md) `getImageDto(String params, PluginQuestionDto q)`
+* [`getImageUrl`](../../plugin-api/index.md): [`ImageUrlDto`](../../dtos/ImageUrlDto/index.md) `getImageUrl(String params, PluginQuestionDto q)`
 * [`getPluginImageDescription`](../../plugin-api/index.md): `String getPluginImageDescription(String imageParams, PluginQuestionDto q)`
-* [`loadPluginDto`](../../plugin-api/index.md): `PluginDto loadPluginDto(String params, PluginQuestionDto q, int nr)`
+* [`loadPluginDto`](../../plugin-api/index.md): [`PluginDto`](../../dtos/PluginDto/index.md) `loadPluginDto(String params, PluginQuestionDto q, int nr)`
 * [`modifyAngabe`](../../plugin-api/index.md): `String modifyAngabe(String text, PluginQuestionDto q)`
 * [`modifyAngabeTextkomplett`](../../plugin-api/index.md): `String modifyAngabeTextkomplett(String text, PluginQuestionDto q)`
-* [`setConfigurationData`](../../plugin-api/index.md): `PluginConfigDto setConfigurationData(String configuration, PluginQuestionDto questionDto)`
+* [`setConfigurationData`](../../plugin-api/index.md): [`PluginConfigDto`](../../dtos/PluginConfigDto/index.md) `setConfigurationData(String configuration, PluginQuestionDto questionDto)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

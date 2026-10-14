@@ -50,7 +50,7 @@ Speichert ein CalcErgebnis als Dto um über eine Rest- oder Service-Schittstelle
 
 ## Verwendet in der Plugin-API
 
-* [`parserPlugin`](../../plugin-api/index.md): `CalcErgebnisDto parserPlugin(VarHashDto vars, CalcParamsDto cp, CalcErgebnisDto ... p)`
+* [`parserPlugin`](../../plugin-api/index.md): `CalcErgebnisDto parserPlugin(`[`VarHashDto`](../../dtos/VarHashDto/index.md) `vars,` [`CalcParamsDto`](../../dtos/CalcParamsDto/index.md) `cp, CalcErgebnisDto ... p)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

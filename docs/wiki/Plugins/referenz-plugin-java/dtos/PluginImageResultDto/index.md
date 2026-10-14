@@ -25,7 +25,7 @@ in keinem DTO als Feldtyp verwendet
 
 ## Verwendet in der Plugin-API
 
-* [`parseDrawParams`](../../plugin-api/index.md): `void parseDrawParams(String params,PluginQuestionDto q, PluginImageResultDto pluginImageResultDto)`
+* [`parseDrawParams`](../../plugin-api/index.md): `void parseDrawParams(String params,`[`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q, PluginImageResultDto pluginImageResultDto)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

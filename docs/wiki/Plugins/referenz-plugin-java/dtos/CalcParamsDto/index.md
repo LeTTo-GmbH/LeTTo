@@ -50,7 +50,7 @@ Berechnungsparameter für Parser, Zahlendarstellung und Toleranzvergleich.
 
 ## Verwendet in der Plugin-API
 
-* [`parserPlugin`](../../plugin-api/index.md): `CalcErgebnisDto parserPlugin(VarHashDto vars, CalcParamsDto cp, CalcErgebnisDto ... p)`
+* [`parserPlugin`](../../plugin-api/index.md): [`CalcErgebnisDto`](../../dtos/CalcErgebnisDto/index.md) `parserPlugin(`[`VarHashDto`](../../dtos/VarHashDto/index.md) `vars, CalcParamsDto cp,` [`CalcErgebnisDto`](../../dtos/CalcErgebnisDto/index.md) `... p)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

@@ -28,8 +28,8 @@ in keinem DTO als Feldtyp verwendet
 
 ## Verwendet in der Plugin-API
 
-* [`renderLatex`](../../plugin-api/index.md): `PluginRenderDto renderLatex(PluginDto pluginDto, String answer, String mode)`
-* [`renderPluginResult`](../../plugin-api/index.md): `PluginRenderDto renderPluginResult(boolean tex, PluginDto pluginDto, String antwort, ToleranzDto toleranz, VarHashDto varsQuestion, PluginAnswerDto answerDto, double grade)`
+* [`renderLatex`](../../plugin-api/index.md): `PluginRenderDto renderLatex(`[`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String answer, String mode)`
+* [`renderPluginResult`](../../plugin-api/index.md): `PluginRenderDto renderPluginResult(boolean tex,` [`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

@@ -118,6 +118,9 @@ Ziel: Von jeder Erwähnung eines Endpunkts, DTOs oder Enums kommt man mit einem 
   sowie jede Tabellenzelle zu verlinken.
 - **Jede** Erwähnung eines Endpunkts (Pfad wie `/open/score` oder Methodenname) ist ein Link auf die Endpunkt-Seite.
 - Die Plugin-API-Tabelle verlinkt in der Spalte „REST-Endpunkt" auf die Endpunkt-Seiten.
+- Auch DTO- und Enum-Namen **innerhalb** von Code-Spans (z.B. Methodensignaturen in der Plugin-API) werden verlinkt: Der Code-Span wird
+  in Code-Stücke und verlinkte Namen aufgeteilt (`` `String getHTML(String params,` [`PluginQuestionDto`](…) `q)` ``).
+  Leerzeichen an den Rändern der Stücke stehen außerhalb der Backticks, da Markdown sie im Code-Span entfernt. Das erledigt `linkify.py`.
 - Die Querverweise „Verwendet in …" werden **aus dem Code berechnet**, nicht geschätzt: zuerst eine vollständige Zuordnung
   Endpunkt → Request-/Response-Typ aus den Controllern bilden, dann für jeden Typ rekursiv alle Feldtypen (inkl. Generics und Arrays) auflösen
   und daraus die Rückverweise für jedes DTO und jede Enum ableiten. Die Zuordnung ist für alle Seiten dieselbe – Seiten nicht unabhängig voneinander befüllen.

@@ -13,7 +13,7 @@ image with image-information of an image-file which is coded in base64
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
 | `base64Image` | String | `""` | base64 coded image |
-| `imageInfoDto` | [ImageInfoDto](../../dtos/ImageInfoDto/index.md) | `new ImageInfoDto()` | image information |
+| `imageInfoDto` | [ImageInfoDto](../../dtos/ImageInfoDto/index.md) | `new` [`ImageInfoDto`](../../dtos/ImageInfoDto/index.md)`()` | image information |
 | `error` | String | `""` | error message if the image cannot be created |
 
 ## Verwendet in Endpunkten
@@ -28,7 +28,7 @@ in keinem DTO als Feldtyp verwendet
 
 ## Verwendet in der Plugin-API
 
-* [`getImageDto`](../../plugin-api/index.md): `ImageBase64Dto getImageDto(String params, PluginQuestionDto q)`
+* [`getImageDto`](../../plugin-api/index.md): `ImageBase64Dto getImageDto(String params,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

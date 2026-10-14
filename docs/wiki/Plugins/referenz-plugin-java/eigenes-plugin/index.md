@@ -42,7 +42,7 @@ Achtung: Das Script entfernt `src/main/resources/static` mit `git rm -r` und leg
 * Neue Klasse im Paket `at.letto.plugins.plugin` (z.B. `at.letto.plugins.plugin.meinplugin.PluginMein`), die von `BasePlugin` erbt.
 * Der Konstruktor muss die Signatur `(String name, String params)` haben – das Plugin wird per Reflection erzeugt.
   Beim Registrieren wird er mit `name=""` und `params=""` aufgerufen und muss dabei alle Standardwerte korrekt setzen.
-* Die abstrakte Methode `paint(Graphics2D g, PluginImageResultDto r)` muss implementiert werden.
+* Die abstrakte Methode `paint(Graphics2D g,` [`PluginImageResultDto`](../dtos/PluginImageResultDto/index.md) `r)` muss implementiert werden.
 * Details siehe [Plugin-API](../plugin-api/index.md).
 
 ```java

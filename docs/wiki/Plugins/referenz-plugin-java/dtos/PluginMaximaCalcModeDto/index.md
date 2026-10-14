@@ -33,7 +33,7 @@ Legt fest, ob Maxima verwendet und ob Datensatzwerte vor der Berechnung eingeset
 
 ## Verwendet in der Plugin-API
 
-* [`getMaxima`](../../plugin-api/index.md): `String getMaxima(String params, PluginQuestionDto q, PluginMaximaCalcModeDto pluginMaximaCalcMode )`
+* [`getMaxima`](../../plugin-api/index.md): `String getMaxima(String params,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q, PluginMaximaCalcModeDto pluginMaximaCalcMode )`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

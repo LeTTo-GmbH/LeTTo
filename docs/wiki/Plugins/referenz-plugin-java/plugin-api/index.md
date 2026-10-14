@@ -44,9 +44,9 @@
 
 | Methode | Zweck |
 |---|---|
-| `void paint(Graphics2D g, PluginImageResultDto r)` | Zeichnet das Plugin-Bild (Größe `width` × `height`). Fehlermeldungen in `r` eintragen (`ok=false`, `messages`). |
-| `void parseDrawParams(String params, PluginQuestionDto q, PluginImageResultDto r)` | Wertet die Parameter des PIG-Tags vor dem Zeichnen aus (z.B. Bildgröße). |
-| `PluginScoreInfoDto score(PluginDto, String antwort, ToleranzDto, VarHashDto, PluginAnswerDto, double grade)` | Bewertet die Schülereingabe (REST: [`/open/score`](../rest-schnittstelle/ApiController/score/index.md)). |
+| `void paint(Graphics2D g,` [`PluginImageResultDto`](../dtos/PluginImageResultDto/index.md) `r)` | Zeichnet das Plugin-Bild (Größe `width` × `height`). Fehlermeldungen in `r` eintragen (`ok=false`, `messages`). |
+| `void parseDrawParams(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q,` [`PluginImageResultDto`](../dtos/PluginImageResultDto/index.md) `r)` | Wertet die Parameter des PIG-Tags vor dem Zeichnen aus (z.B. Bildgröße). |
+| [`PluginScoreInfoDto`](../dtos/PluginScoreInfoDto/index.md) `score(`[`PluginDto`](../dtos/PluginDto/index.md)`, String antwort,` [`ToleranzDto`](../dtos/ToleranzDto/index.md)`,` [`VarHashDto`](../dtos/VarHashDto/index.md)`,` [`PluginAnswerDto`](../dtos/PluginAnswerDto/index.md)`, double grade)` | Bewertet die Schülereingabe (REST: [`/open/score`](../rest-schnittstelle/ApiController/score/index.md)). |
 
 `BasePlugin` implementiert `parseDrawParams` und `score` nicht, daher sind sie in jedem Plugin zu implementieren.
 
@@ -54,37 +54,37 @@
 
 | Methode | REST-Endpunkt | Standard in `BasePlugin` | Zweck |
 |---|---|---|---|
-| `String getHTML(String params, PluginQuestionDto q)` | [`/open/gethtml`](../rest-schnittstelle/ApiController/getHtml/index.md) | `""` | Fragetext für einen PIT-Tag |
+| `String getHTML(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/gethtml`](../rest-schnittstelle/ApiController/getHtml/index.md) | `""` | Fragetext für einen PIT-Tag |
 | `String getAngabe(String params)` | [`/open/angabe`](../rest-schnittstelle/ApiController/getAngabe/index.md) | `null` | Angabetext für das Textfeld der Frage |
-| `List<PluginDatasetDto> generateDatasets()` | [`/open/generatedatasets`](../rest-schnittstelle/ApiController/generateDatasets/index.md) | leere Liste | Datensätze, die in der Frage vorhanden sein sollten |
+| `List<`[`PluginDatasetDto`](../dtos/PluginDatasetDto/index.md)`> generateDatasets()` | [`/open/generatedatasets`](../rest-schnittstelle/ApiController/generateDatasets/index.md) | leere Liste | Datensätze, die in der Frage vorhanden sein sollten |
 | `Vector<String> getVars()` | [`/open/getvars`](../rest-schnittstelle/ApiController/getVars/index.md) | `null` | Variablen, die als Dataset benötigt werden |
-| `String getMaxima(String params, PluginQuestionDto q, PluginMaximaCalcModeDto mode)` | [`/open/maxima`](../rest-schnittstelle/ApiController/getMaxima/index.md) | `""` | Maxima-Berechnungsstring |
-| `ImageBase64Dto getImageDto(String params, PluginQuestionDto q)` | [`/open/image`](../rest-schnittstelle/ApiController/getImage/index.md) | erzeugt Bild über `parseDrawParams` + `paint`, PNG Base64 | Bild als Base64 |
-| `ImageUrlDto getImageUrl(String params, PluginQuestionDto q)` | – (intern, z.B. im [`PluginDto`](../dtos/PluginDto/index.md)-Konstruktor) | speichert Bild im Image-Service, liefert URL | Bild als öffentliche URL |
-| `String getPluginImageDescription(String imageParams, PluginQuestionDto q)` | – | aus Typ, Version, Name, Config, Parametern und Frage | eindeutige Beschreibung, daraus wird der Dateiname des Bildes gebildet |
+| `String getMaxima(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q,` [`PluginMaximaCalcModeDto`](../dtos/PluginMaximaCalcModeDto/index.md) `mode)` | [`/open/maxima`](../rest-schnittstelle/ApiController/getMaxima/index.md) | `""` | Maxima-Berechnungsstring |
+| [`ImageBase64Dto`](../dtos/ImageBase64Dto/index.md) `getImageDto(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/image`](../rest-schnittstelle/ApiController/getImage/index.md) | erzeugt Bild über `parseDrawParams` + `paint`, PNG Base64 | Bild als Base64 |
+| [`ImageUrlDto`](../dtos/ImageUrlDto/index.md) `getImageUrl(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | – (intern, z.B. im [`PluginDto`](../dtos/PluginDto/index.md)-Konstruktor) | speichert Bild im Image-Service, liefert URL | Bild als öffentliche URL |
+| `String getPluginImageDescription(String imageParams,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | – | aus Typ, Version, Name, Config, Parametern und Frage | eindeutige Beschreibung, daraus wird der Dateiname des Bildes gebildet |
 | `Vector<String[]> getImageTemplates()` | [`/open/imagetemplates`](../rest-schnittstelle/ApiController/getImageTemplates/index.md) | `null` | Bildvarianten: [0] Beschreibung, [1] PIG-Tag, [2] Hilfetext |
-| `CalcErgebnisDto parserPlugin(VarHashDto vars, CalcParamsDto cp, CalcErgebnisDto... p)` | [`/open/parserplugin`](../rest-schnittstelle/ApiController/parserPlugin/index.md) | `null` | Funktion `plugin("name",p1,p2,…)` im Lösungsfeld |
+| [`CalcErgebnisDto`](../dtos/CalcErgebnisDto/index.md) `parserPlugin(`[`VarHashDto`](../dtos/VarHashDto/index.md) `vars,` [`CalcParamsDto`](../dtos/CalcParamsDto/index.md) `cp,` [`CalcErgebnisDto`](../dtos/CalcErgebnisDto/index.md)`... p)` | [`/open/parserplugin`](../rest-schnittstelle/ApiController/parserPlugin/index.md) | `null` | Funktion `plugin("name",p1,p2,…)` im Lösungsfeld |
 | `String parserPluginEinheit(String... p)` | [`/open/parserplugineinheit`](../rest-schnittstelle/ApiController/parserPluginEinheit/index.md) | `null` | Recheneinheit des Ergebnisses von `parserPlugin` |
-| `String modifyAngabe(String text, PluginQuestionDto q)` | [`/open/modifyangabe`](../rest-schnittstelle/ApiController/modifyAngabe/index.md) | `text` | verändert Text in PI-Tags vor dem Darstellen |
-| `String modifyAngabeTextkomplett(String text, PluginQuestionDto q)` | [`/open/modifyangabetextkomplett`](../rest-schnittstelle/ApiController/modifyAngabeTextkomplett/index.md) | `text` | verändert den gesamten Angabetext |
+| `String modifyAngabe(String text,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/modifyangabe`](../rest-schnittstelle/ApiController/modifyAngabe/index.md) | `text` | verändert Text in PI-Tags vor dem Darstellen |
+| `String modifyAngabeTextkomplett(String text,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/modifyangabetextkomplett`](../rest-schnittstelle/ApiController/modifyAngabeTextkomplett/index.md) | `text` | verändert den gesamten Angabetext |
 | `String updatePluginstringJavascript(String pluginDef, String jsResult)` | [`/open/updatepluginstringjavascript`](../rest-schnittstelle/ApiController/updatePluginstringJavascript/index.md) | `pluginDef` | passt die Plugindefinition an das JavaScript-Ergebnis an (z.B. interaktive Karte) |
-| `PluginDto loadPluginDto(String params, PluginQuestionDto q, int nr)` | [`/open/loadplugindto`](../rest-schnittstelle/ApiController/loadPluginDto/index.md) | `null` | [`PluginDto`](../dtos/PluginDto/index.md) für das JavaScript des Plugins |
-| `PluginRenderDto renderLatex(PluginDto, String answer, String mode)` | [`/open/renderlatex`](../rest-schnittstelle/ApiController/renderLatex/index.md) | leeres [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) | LaTeX-Quelltext für den Fragedruck |
-| `PluginRenderDto renderPluginResult(boolean tex, PluginDto, String antwort, ToleranzDto, VarHashDto, PluginAnswerDto, double grade)` | [`/open/renderpluginresult`](../rest-schnittstelle/ApiController/renderPluginResult/index.md) | leeres [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) | HTML oder LaTeX mit Schülereingabe und Lösung |
-| `InputElement getInputElement()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | `JAVASCRIPT` wenn `javaScript`, sonst `TextArea` | Eingabeelement der Subquestion |
+| [`PluginDto`](../dtos/PluginDto/index.md) `loadPluginDto(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q, int nr)` | [`/open/loadplugindto`](../rest-schnittstelle/ApiController/loadPluginDto/index.md) | `null` | [`PluginDto`](../dtos/PluginDto/index.md) für das JavaScript des Plugins |
+| [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) `renderLatex(`[`PluginDto`](../dtos/PluginDto/index.md)`, String answer, String mode)` | [`/open/renderlatex`](../rest-schnittstelle/ApiController/renderLatex/index.md) | leeres [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) | LaTeX-Quelltext für den Fragedruck |
+| [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) `renderPluginResult(boolean tex,` [`PluginDto`](../dtos/PluginDto/index.md)`, String antwort,` [`ToleranzDto`](../dtos/ToleranzDto/index.md)`,` [`VarHashDto`](../dtos/VarHashDto/index.md)`,` [`PluginAnswerDto`](../dtos/PluginAnswerDto/index.md)`, double grade)` | [`/open/renderpluginresult`](../rest-schnittstelle/ApiController/renderPluginResult/index.md) | leeres [`PluginRenderDto`](../dtos/PluginRenderDto/index.md) | HTML oder LaTeX mit Schülereingabe und Lösung |
+| [`InputElement`](../enums/InputElement/index.md) `getInputElement()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | `JAVASCRIPT` wenn `javaScript`, sonst `TextArea` | Eingabeelement der Subquestion |
 | `String getHelp()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | Inhalt aller `helpfiles` | HTML-Hilfe |
-| `List<JavascriptLibrary> javascriptLibraries()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | leer | externe JS-Libraries mit vollständiger URL |
-| `List<JavascriptLibrary> javascriptLibrariesLocal()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | Quelltext aller `javascriptLibs` | lokale JS-Libraries |
-| `PluginGeneralInfo getPluginGeneralInfo()` | [`/open/generalinfo`](../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) | aus den Eigenschaften | allgemeine Informationen |
-| `PluginConfigurationInfoDto configurationInfo(String configurationID)` | [`/open/configurationinfo`](../rest-schnittstelle/ApiController/configurationInfo/index.md) | aus den Eigenschaften | Informationen zum Start des Konfigurationsdialogs |
-| `PluginConfigDto setConfigurationData(String configuration, PluginQuestionDto q)` | [`/open/setconfigurationdata`](../rest-schnittstelle/ApiController/setConfigurationData/index.md) | setzt `config`, leeres [`PluginConfigDto`](../dtos/PluginConfigDto/index.md) | Daten für das Konfigurations-JavaScript |
+| `List<`[`JavascriptLibrary`](../dtos/JavascriptLibrary/index.md)`> javascriptLibraries()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | leer | externe JS-Libraries mit vollständiger URL |
+| `List<`[`JavascriptLibrary`](../dtos/JavascriptLibrary/index.md)`> javascriptLibrariesLocal()` | – (in [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md)) | Quelltext aller `javascriptLibs` | lokale JS-Libraries |
+| [`PluginGeneralInfo`](../dtos/PluginGeneralInfo/index.md) `getPluginGeneralInfo()` | [`/open/generalinfo`](../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) | aus den Eigenschaften | allgemeine Informationen |
+| [`PluginConfigurationInfoDto`](../dtos/PluginConfigurationInfoDto/index.md) `configurationInfo(String configurationID)` | [`/open/configurationinfo`](../rest-schnittstelle/ApiController/configurationInfo/index.md) | aus den Eigenschaften | Informationen zum Start des Konfigurationsdialogs |
+| [`PluginConfigDto`](../dtos/PluginConfigDto/index.md) `setConfigurationData(String configuration,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q)` | [`/open/setconfigurationdata`](../rest-schnittstelle/ApiController/setConfigurationData/index.md) | setzt `config`, leeres [`PluginConfigDto`](../dtos/PluginConfigDto/index.md) | Daten für das Konfigurations-JavaScript |
 | `String getConfiguration()` | [`/open/getconfiguration`](../rest-schnittstelle/ApiController/getConfiguration/index.md) | `config` | aktuelle Konfiguration (oder `"@ERROR: Meldung"`) |
 
 ### Hilfsmethoden in BasePlugin
 
 | Methode | Zweck |
 |---|---|
-| `BufferedImage getAWTImage(String params, PluginQuestionDto q, PluginImageResultDto r)` | erzeugt das Bild über `paint`, bei Fehlern ein Fehlerbild |
+| `BufferedImage getAWTImage(String params,` [`PluginQuestionDto`](../dtos/PluginQuestionDto/index.md) `q,` [`PluginImageResultDto`](../dtos/PluginImageResultDto/index.md) `r)` | erzeugt das Bild über `paint`, bei Fehlern ein Fehlerbild |
 | `void paintFehler(Graphics g, String msg)` | gibt eine Fehlermeldung im Bild aus |
 | `String loadHelpFile(String resource)` | lädt eine Hilfedatei und ersetzt Umlaute durch HTML-Entitäten |
 | `String getHelpMessageFromResource(String name)` | lädt den `<body>`-Inhalt einer HTML-Ressource, ersetzt `{% raw %}{{servicepath}}{% endraw %}` |
@@ -144,7 +144,7 @@ Bildparameter im PIG-Tag (durch `,` getrennt, ausgewertet in `parseDrawParams`):
 | `parseDrawParams` | wertet `size=` aus |
 | `getImageTemplates` | eine Vorlage `[PIG <name> ""]` („Uhrblatt") |
 | `score` | Musterlösung `answerText` als Zeit in Anführungszeichen (z.B. `"10:30"`) oder als Zahl (Sekunden); Schülereingabe wird mit `Datum.parseTime` in Sekunden umgerechnet und mit `PluginToolsMath.equals` unter Berücksichtigung der Toleranz verglichen → [`Score.OK`](../enums/Score/index.md) mit vollen Punkten, sonst [`Score.FALSCH`](../enums/Score/index.md) |
-| `loadPluginDto` | `new PluginDto(params, this, q, nr)` – Bild, Größe und Tag-Name |
+| `loadPluginDto` | `new` [`PluginDto`](../dtos/PluginDto/index.md)`(params, this, q, nr)` – Bild, Größe und Tag-Name |
 | `configurationInfo` | setzt `configurationMode`, `javaScriptMethode = configPluginJS` und `configurationID` |
 | `setConfigurationData` | übergibt Testparameter (`TEST`, `help`, `vars`) in [`PluginConfigDto.params`](../dtos/PluginConfigDto/index.md) |
 | `getVars`, `parserPlugin`, `parserPluginEinheit` | liefern `null` (nicht verwendet) |

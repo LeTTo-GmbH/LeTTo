@@ -52,9 +52,9 @@ VarHash für den Transport in Rest-Services
 
 ## Verwendet in der Plugin-API
 
-* [`parserPlugin`](../../plugin-api/index.md): `CalcErgebnisDto parserPlugin(VarHashDto vars, CalcParamsDto cp, CalcErgebnisDto ... p)`
-* [`score`](../../plugin-api/index.md): `PluginScoreInfoDto score(PluginDto pluginDto, String antwort, ToleranzDto toleranz, VarHashDto varsQuestion, PluginAnswerDto answerDto, double grade)`
-* [`renderPluginResult`](../../plugin-api/index.md): `PluginRenderDto renderPluginResult(boolean tex, PluginDto pluginDto, String antwort, ToleranzDto toleranz, VarHashDto varsQuestion, PluginAnswerDto answerDto, double grade)`
+* [`parserPlugin`](../../plugin-api/index.md): [`CalcErgebnisDto`](../../dtos/CalcErgebnisDto/index.md) `parserPlugin(VarHashDto vars,` [`CalcParamsDto`](../../dtos/CalcParamsDto/index.md) `cp,` [`CalcErgebnisDto`](../../dtos/CalcErgebnisDto/index.md) `... p)`
+* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../../dtos/PluginScoreInfoDto/index.md) `score(`[`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz, VarHashDto varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
+* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderPluginResult(boolean tex,` [`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz, VarHashDto varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

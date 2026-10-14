@@ -48,10 +48,10 @@ Dto welches vom Plugin über Letto zum JavaScript des Plugins geschickt wird
 
 ## Verwendet in der Plugin-API
 
-* [`loadPluginDto`](../../plugin-api/index.md): `PluginDto loadPluginDto(String params, PluginQuestionDto q, int nr)`
-* [`renderLatex`](../../plugin-api/index.md): `PluginRenderDto renderLatex(PluginDto pluginDto, String answer, String mode)`
-* [`score`](../../plugin-api/index.md): `PluginScoreInfoDto score(PluginDto pluginDto, String antwort, ToleranzDto toleranz, VarHashDto varsQuestion, PluginAnswerDto answerDto, double grade)`
-* [`renderPluginResult`](../../plugin-api/index.md): `PluginRenderDto renderPluginResult(boolean tex, PluginDto pluginDto, String antwort, ToleranzDto toleranz, VarHashDto varsQuestion, PluginAnswerDto answerDto, double grade)`
+* [`loadPluginDto`](../../plugin-api/index.md): `PluginDto loadPluginDto(String params,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q, int nr)`
+* [`renderLatex`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderLatex(PluginDto pluginDto, String answer, String mode)`
+* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../../dtos/PluginScoreInfoDto/index.md) `score(PluginDto pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
+* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderPluginResult(boolean tex, PluginDto pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)
