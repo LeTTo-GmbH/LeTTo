@@ -1,5 +1,5 @@
 # Score
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Ergebnis einer Fragen-Beurteilung NotScored : nicht bewertet, da das richtige Ergebnis nicht bekannt ist. zB bei Freitextfragen OK : Antwort ist richtig FALSCH : Antwort ist falsch TEILWEISE_OK : Antwort ist teilweise richtig EINHEITENFEHLER : Antwort hat einen Einheitenfehler OK_Lehrer : Das Ergebnis wurde vom Lehrer händisch als richtig beurteilt FALSCH_Lehrer : Das Ergebnis wurde vom Lehrer händisch als falsch beurteilt TEILWEISE_OK_Lehrer : Das Ergebnis wurde vom Lehrer händisch als teilweise richtig beurteilt EINHEITENFEHLER_Lehrer : Im Ergebnis der Beispielangabe ist ein Einheitenfehler ANGABEFEHLER_EH : Das Ergebnis der Beispielangabe kann wegen eines Rechenfehlers nicht berechnet werden PARSERFEHLER_SYSTEM : Der Parser kann das richtige Ergebnis nicht berechnen NichtEntschieden : Calculated: die Bewertung ist noch nicht entschieden, da das Ergebnis nicht gepasst hat. Sind alle Answers einer Frage nicht entschieden, so ist die Antwort falsch
 

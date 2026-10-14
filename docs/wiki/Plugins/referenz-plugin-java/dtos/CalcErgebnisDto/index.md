@@ -1,5 +1,5 @@
 # CalcErgebnisDto
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Speichert ein CalcErgebnis als Dto um über eine Rest- oder Service-Schittstelle zu übertragen.
 

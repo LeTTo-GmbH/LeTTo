@@ -1,5 +1,5 @@
 # ImageInfoDto
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Information of an Image which is stored in the Image-Service or returned from other service. It consists any Data about the source of then image and the properties to view in LeTTo.
 

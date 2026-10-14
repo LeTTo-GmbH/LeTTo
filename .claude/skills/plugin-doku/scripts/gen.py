@@ -351,7 +351,7 @@ DTO_NOTES = {
     'ConfigServiceDto': ['`htmlServiceStartTime()` / `htmlLastRegistrationTime()` formatieren die Zeitpunkte für die Anzeige.',
                          'Das Demo übergibt in `programmingLanguage` die Java-Version (`serverStatus.getJavaVersion()`).'],
     'PluginGeneralInfo': ['Das Feld `useVarsMaxima` heißt in `BasePlugin` und `PluginConfigurationInfoDto` `useMaximaVars`. Der Name ist Teil der REST-Schnittstelle und wird vom LeTTo-Server so gelesen – er darf nicht angeglichen werden.'],
-    'PluginRenderLatexRequestDto': ['`mode` lässt sich derzeit nicht auswerten: Der LeTTo-Server übergibt `TexPrintMode.toString()`, und diese Klasse hat kein eigenes `toString()` – das Plugin erhält nur einen Objekt-Bezeichner wie `at.letto.tools.tex.TexPrintMode@6d06d69c`.'],
+    'PluginRenderLatexRequestDto': ['`mode` hat das Format `<PRINTMODE>;datasets=<Nr,Nr>;recurse=<bool>;newPage=<bool>;line=<bool>` (`TexPrintMode.toString()` des LeTTo-Servers), z.B. `PRINTERGEBNIS;datasets=0,3;recurse=false;newPage=true;line=false`. Der Druckmodus ist der erste Teil (`mode.split(";")[0]`): `PRINTFRAGE`, `PRINTERGEBNIS`, `PRINTFORMEL`, `PRINTINFO`, `PRINTHTML`, `PRINTANTWORT`, `PRINTANTWORTERGEBNIS` oder `PRINTEINSICHTNAHME`.', 'Ältere LeTTo-Server übergeben nur einen nicht auswertbaren Objekt-Bezeichner wie `at.letto.tools.tex.TexPrintMode@6d06d69c`.'],
     'PluginQuestionDto': ['`clone()` liefert eine flache Kopie.'],
     'ServiceInfoDTO': ['Im Demo bleibt `endpoints` leer und `jarLibs` ist `null`.'],
 }

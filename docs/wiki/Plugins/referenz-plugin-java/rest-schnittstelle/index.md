@@ -1,5 +1,5 @@
 # REST-Schnittstelle des Referenz-Plugins
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * Alle Pfade sind in `at.letto.plugins.config.Endpoint` definiert. `<endpoint>` steht für den Endpoint-Pfad des Plugins (im Demo `plugindemo`).
 * Request- und Response-Bodies sind JSON. Die Datenklassen sind unter [DTOs](../dtos/index.md) und [Enums](../enums/index.md) beschrieben.

@@ -1,5 +1,5 @@
 # Plugin-API (BasePlugin)
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * `PluginService` (`at.letto.plugins.plugin`) ist das Interface, das jedes Plugin erfüllt. Die DTOs sind von LeTTo unabhängig.
 * `BasePlugin` ist die abstrakte Basisklasse mit Standardimplementierungen. Ein eigenes Plugin erbt davon,

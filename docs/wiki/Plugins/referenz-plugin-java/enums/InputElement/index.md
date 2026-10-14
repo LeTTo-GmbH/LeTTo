@@ -1,5 +1,5 @@
 # InputElement
-<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ a8aca2d (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Definiert das Eingabeelement für die Subquestion, deren Typ auf Plugin gesetzt ist. Mögliche Eingabetypen:
 
