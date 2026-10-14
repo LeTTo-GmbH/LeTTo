@@ -1,5 +1,5 @@
 # CALCMODE
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Art der Berechnung MAXIMA : Berechnung im Maxima-Feld einer Frage LOESUNG : Berechnung der Lösung aus dem Lösungsfeld EQUALS : Vergleich des Ergebnisses des Schülers mit dem Ergebnis des Lehrers VIEW : Berechnungen direkt mit Angabefeld mit {=
 

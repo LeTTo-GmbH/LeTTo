@@ -1,5 +1,5 @@
 # HelpController
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Liefert die Hilfeseite des Plugin-Services mit einer kurzen Beschreibung und Links zur JavaDoc und zur Swagger-Dokumentation. Die Seite liegt in src/main/resources/help/index.html, die Platzhalter {% raw %}{{servicepath}}{% endraw %}, {% raw %}{{name}}{% endraw %} und {% raw %}{{version}}{% endraw %} werden beim Laden ersetzt.
 

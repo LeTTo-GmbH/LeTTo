@@ -1,5 +1,5 @@
 # Referenz-Plugin (Java)
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Das Projekt **plugin-demo-java** ist die Referenzimplementierung eines LeTTo-Plugin-Services in Java (Spring Boot).
 Es dient als Vorlage für eigene Plugins und enthält als Beispiel das Plugin **Uhr1** – ein Uhrblatt, auf dem eine Uhrzeit
@@ -31,6 +31,7 @@ eingestellt und mit der Musterlösung verglichen wird. Das Uhr-Plugin dient nur 
 ## Links
 
 * Quellcode: [https://github.com/LeTTo-GmbH/plugin-demo-java](https://github.com/LeTTo-GmbH/plugin-demo-java)
+* Docker-Image: [https://hub.docker.com/r/lettohub/letto-service-plugindemo](https://hub.docker.com/r/lettohub/letto-service-plugindemo)
 * Python-Portierung mit derselben REST-Schnittstelle: [Referenz-Plugin (Python)](../referenz-plugin-python/index.md)
 * Am eigenen Server (bei installiertem Plugin, `<endpoint>` z.B. `plugindemo`):
   * Hilfeseite: `https://<servername>/<endpoint>/help`

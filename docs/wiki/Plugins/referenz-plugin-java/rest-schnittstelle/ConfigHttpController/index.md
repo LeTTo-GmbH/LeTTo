@@ -1,5 +1,5 @@
 # ConfigHttpController
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 Liefert den Konfigurationsdialog eines Plugins im Mode CONFIGMODE_URL als HTML-Seite, welche von LeTTo in einem iframe oder Browser-Tab geöffnet wird. Die Seite bindet die JavaScript-Libraries des Plugins ein und ruft die Konfigurations-Methode des Plugins mit dem [PluginConfigDto](../../dtos/PluginConfigDto/index.md) der Konfigurations-Verbindung auf. Änderungen der Konfiguration werden vom Plugin-JavaScript über den reloadPluginDto-Endpoint an die Verbindung übertragen, von wo LeTTo sie über getConfiguration abholt.
 

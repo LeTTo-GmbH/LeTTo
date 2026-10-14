@@ -1,10 +1,10 @@
 # Plugin-API (BasePlugin)
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 * `PluginService` (`at.letto.plugins.plugin`) ist das Interface, das jedes Plugin erfüllt. Die DTOs sind von LeTTo unabhängig.
 * `BasePlugin` ist die abstrakte Basisklasse mit Standardimplementierungen. Ein eigenes Plugin erbt davon,
   setzt im Konstruktor seine Eigenschaften und überschreibt die benötigten Methoden.
-* Jede REST-Anfrage erzeugt eine neue Instanz mit `new Plugin(name, config)`; danach wird `setImageService(...)` aufgerufen.
+* Jede REST-Anfrage erzeugt eine neue Instanz mit `new Plugin(name, config)`; danach setzt die `PluginConfiguration` mit `setTyp(...)` den registrierten Typ und mit `setImageService(...)` die Bildablage.
 * Getter für alle Eigenschaften erzeugt Lombok (`@Getter`).
 
 ## Eigenschaften (im Konstruktor setzen)
@@ -13,7 +13,7 @@
 |---|---|---|---|
 | `name` | String | Konstruktor | Name des Plugins in der Frage |
 | `config` | String | Konstruktor | Konfigurationsstring |
-| `typ` | String | – | Typ des Plugins |
+| `typ` | String | – | Typ des Plugins, unter dem es registriert ist; wird nach dem Erzeugen von der `PluginConfiguration` gesetzt (`setTyp`) und fließt in `getTag()`, den Dateinamen der Plugin-Bilder und [`ImageInfoDto.pluginTyp`](../dtos/ImageInfoDto/index.md) ein |
 | `version` | String | `"1.0"` | Version; ändert sich die Version, ändert sich auch die Prüfsumme jedes Plugin-Bildes |
 | `wikiHelp` | String | `"Plugins"` | Name der Wiki-Seite, wenn eine Doku am LeTTo-Wiki vorliegt |
 | `helpUrl` | String | `""` | Hilfe-URL für die Beschreibung des Plugins |

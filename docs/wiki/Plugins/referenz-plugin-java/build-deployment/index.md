@@ -1,5 +1,5 @@
 # Build und Deployment des Referenz-Plugins
-<!-- generiert aus plugin-demo-java @ f0143d1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
+<!-- generiert aus plugin-demo-java @ 060a0b1 (revision 1000) – nicht manuell editieren, Änderungen im Plugin-Repo bzw. im Skill plugin-doku vornehmen -->
 
 ## Build
 
@@ -27,7 +27,7 @@ Beide Scripts suchen das Projektverzeichnis (Datei `plugin-demo-java.info`), les
 
 `Dockerfile`:
 
-* Basis `eclipse-temurin:25-jdk-jammy`, Zeitzone Europe/Vienna
+* Basis `eclipse-temurin:25-jdk-jammy`, Zeitzone Europe/Vienna, Locales `en_US.UTF-8` und `de_DE.UTF-8` (für `LC_ALL` aus der Compose-Datei)
 * Jar als `plugin.jar`, Scripts nach `/scripts`
 * Ports 8080 (HTTP) und 5080 (Remote-Debugging)
 * Healthcheck alle 30 s mit `scripts/healthcheck.sh`: ruft `http://localhost:8080/ping` auf und erwartet `pong`. Nach
@@ -57,6 +57,16 @@ Wichtige Umgebungsvariablen:
 | `debug` | `true` startet mit Remote-Debugging (`DEBUG_PLUGINS` bzw. `DEBUG`) |
 
 Weitere Variablen (`jwt_secret`, `server_secret`, `spring.mail.*` u.a.) sind in der Compose-Datei gesetzt, werden im Demo-Code aber nicht ausgewertet.
+
+## Docker Hub
+
+* Das Image wird als [lettohub/letto-service-plugindemo](https://hub.docker.com/r/lettohub/letto-service-plugindemo) veröffentlicht, Tag `stable` = Stand von `master`.
+* `build.bat` bzw. `build.sh` bauen das Image nur lokal; der Push auf Docker Hub erfolgt getrennt mit `docker push lettohub/letto-service-plugindemo:stable`.
+* Die Beschreibung auf Docker Hub steht in `DOCKERHUB.md` im Repo. `build/dockerhub-description.ps1` lädt sie über die Docker-Hub-API hoch (PowerShell, benötigt einen Docker-Hub-Zugang mit Schreibrecht auf `lettohub`, z.B. einen Personal Access Token in `DOCKERHUB_TOKEN`):
+
+```bash
+powershell -ExecutionPolicy Bypass -File build\dockerhub-description.ps1 -User <dockerhub-user>
+```
 
 ## Proxy
 
