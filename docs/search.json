@@ -5,17 +5,17 @@ layout: null
 {"title":"home","url":"/","content":""}
 {% for post in site.posts %}
   ,{
-  "title": "{{ post.title | escape | replace: '\', '\\' }}",
+  "title": {{ post.title | escape | jsonify }},
   "url": "{{ site.baseurl }}{{ post.url }}",
-  "content": "{{ post.content | strip_html | strip_newlines | escape | replace: '\', '\\' }}"
+  "content": {{ post.content | strip_html | strip_newlines | escape | jsonify }}
   }
 {% endfor %}
 {% for page in site.pages %}
   {% if page.title != nil and page.layout != "null" %}
   ,{
-  "title": "{{ page.title | escape | replace: '\', '\\' }}",
+  "title": {{ page.title | escape | jsonify }},
   "url": "{{ site.baseurl }}{{ page.url }}",
-  "content": "{{ page.content | strip_html | strip_newlines | escape | replace: '\', '\\' }}"
+  "content": {{ page.content | strip_html | strip_newlines | escape | jsonify }}
   }
   {% endif %}
 {% endfor %}
