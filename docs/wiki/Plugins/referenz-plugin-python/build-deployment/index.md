@@ -1,5 +1,5 @@
 # Build und Deployment des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 7a69b2c (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Build
 
@@ -16,7 +16,23 @@ Nur das Image bauen:
 docker build -t lettohub/letto-plugin-demopython:latest -f Dockerfile .
 ```
 
-Das fertige Image wird auf Docker Hub als [lettohub/letto-plugin-demopython](https://hub.docker.com/r/lettohub/letto-plugin-demopython) veröffentlicht.
+## Docker Hub
+
+* Das Image wird als [lettohub/letto-plugin-demopython](https://hub.docker.com/r/lettohub/letto-plugin-demopython) veröffentlicht, Tag `latest` = Stand von `master`.
+* `build.bat` baut das Image nur lokal; der Push erfolgt getrennt mit `docker push lettohub/letto-plugin-demopython:latest`.
+* Die Beschreibung auf Docker Hub steht in `dockerhub/README.md`. `dockerhub/dockerhub-description.ps1` lädt sie über die Docker-Hub-API hoch
+  (PowerShell, benötigt einen Docker-Hub-Zugang mit Schreibrecht auf `lettohub`):
+
+```bash
+powershell -ExecutionPolicy Bypass -File dockerhub\dockerhub-description.ps1
+```
+
+* Zugangsdaten verwendet das Script in dieser Reihenfolge:
+  1. Parameter `-User` und `-Token` bzw. Umgebungsvariable `DOCKERHUB_TOKEN` (Personal Access Token mit „Read & Write"),
+  2. die Anmeldung von Docker Desktop aus dem Credential-Store (`credsStore` in `~/.docker/config.json`),
+  3. interaktive Abfrage von Benutzer und Passwort bzw. Token – nur in einer interaktiven Konsole; sonst bricht das Script mit einer Meldung ab.
+* Weitere Parameter: `-Repo` (Standard `lettohub/letto-plugin-demopython`), `-Short` (Kurzbeschreibung), `-File` (Standard `dockerhub/README.md`).
+* Das Script ist dasselbe wie im Java-Plugin, siehe [Build und Deployment (Java)](../../referenz-plugin-java/build-deployment/index.md).
 
 ## Docker
 

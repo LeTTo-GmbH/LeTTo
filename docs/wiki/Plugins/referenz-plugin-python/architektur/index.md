@@ -1,5 +1,5 @@
 # Architektur des Referenz-Plugins (Python)
-<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 7a69b2c (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 ## Aufbau des Services
 
@@ -34,7 +34,7 @@ Weitere Dateien:
 | `tests/` | pytest-Tests für Bewertung, Score-Endpunkt und OpenAPI-Doku |
 | `scripts/` | `start.sh` (Start mit/ohne Debugger), `healthcheck.sh` |
 | `yml/`, `proxy/`, `Dockerfile`, `build.bat` | Deployment – siehe [Build und Deployment](../build-deployment/index.md) |
-| `dockerhub/README.md` | Beschreibung des Images auf Docker Hub |
+| `dockerhub/README.md`, `dockerhub/dockerhub-description.ps1` | Beschreibung des Images auf Docker Hub und Script zum Hochladen |
 
 ## Erreichbarkeit der Endpunkte
 

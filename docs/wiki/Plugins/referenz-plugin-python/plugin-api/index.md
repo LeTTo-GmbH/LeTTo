@@ -1,5 +1,5 @@
 # Plugin-API (Python)
-<!-- erstellt aus plugin-demo-python @ 9b07fcd (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
+<!-- erstellt aus plugin-demo-python @ 7a69b2c (revision 1000) – bei Änderungen im Plugin-Repo nachziehen -->
 
 Anders als in Java gibt es keine Basisklasse mit überschreibbaren Methoden. Die Plugin-Logik besteht aus drei Teilen:
 
