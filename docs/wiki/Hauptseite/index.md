@@ -54,5 +54,7 @@ Die Dokumentation das LeTTo-Servers erfolgt in mehreren Formen:
 ###  [Administration](../Administration/index.md) 
 gehe zu [Administration](../Administration/index.md)
 
+[Update auf Stable-Version 1.3 rev70xx](../Updaterev70xx/index.md)
+
 [Update von rev65xx auf aktuelle Stable rev66xx](../Updaterev66xx/index.md)
 

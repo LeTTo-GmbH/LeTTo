@@ -16,6 +16,7 @@
 * [Datensicherung-Docker](../Datensicherung-Docker/index.md)
 * [https-Zertifikat](/notimplemented/index.md)
 * [docker compose files](../Dockercomposefiles/index.md)
+* [Update auf Stable-Version 1.3 rev70xx](../Updaterev70xx/index.md)
 * [Update von rev65xx auf aktuelle Stable rev66xx](../Updaterev66xx/index.md)
 
 ##  Betrieb einer Linux-basierten Installation ohne Docker 

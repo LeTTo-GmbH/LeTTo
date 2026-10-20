@@ -158,6 +158,7 @@
 * [Umstieg von Glassfish 4.1 auf TomEE 8](UmstiegvonGlassfish4.1aufTomEE8/index.md)
 * [Update](Update/index.md)
 * [Update rev66xx](Updaterev66xx/index.md)
+* [Update rev70xx](Updaterev70xx/index.md)
 * [User-Konfiguration](User-Konfiguration/index.md)
 * [Verzeichnisse und Docker-Volumes](VerzeichnisseundDocker-Volumes/index.md)
 * [Wsr](Wsr/index.md)
