@@ -52,8 +52,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/configurationinfo`](../../../rest-schnittstelle/ApiController/configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
-* [`POST /open/setconfigurationdata`](../../../rest-schnittstelle/ApiController/setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
+* [`POST /open/configurationinfo`](../configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
+* [`POST /open/setconfigurationdata`](../setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

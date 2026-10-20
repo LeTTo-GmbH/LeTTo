@@ -31,8 +31,8 @@ liefert eine Liste aller globalen Informationen über alle Plugins des verwaltet
 
 ## Siehe auch
 
-* [`GET /<endpoint>/api/open/generalinfolist`](../../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfoList/index.md) – liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
-* [`POST /open/generalinfo`](../../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) – Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin
+* [`GET /<endpoint>/api/open/generalinfolist`](../../ApiExternOpenController/pluginGeneralInfoList/index.md) – liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
+* [`POST /open/generalinfo`](../pluginGeneralInfo/index.md) – Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

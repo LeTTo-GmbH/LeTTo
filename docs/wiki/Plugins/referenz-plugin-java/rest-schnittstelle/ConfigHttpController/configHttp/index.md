@@ -45,10 +45,10 @@ Die Antwort ist eine HTML-Seite.
 
 ## Siehe auch
 
-* [`POST /open/configurationinfo`](../../../rest-schnittstelle/ApiController/configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
-* [`POST /open/setconfigurationdata`](../../../rest-schnittstelle/ApiController/setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
-* [`POST /<endpoint>/api/open/reloadplugindto`](../../../rest-schnittstelle/ApiExternOpenController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
-* [`POST /open/getconfiguration`](../../../rest-schnittstelle/ApiController/getConfiguration/index.md) – Liefert die aktuelle Konfiguration eines Plugins welches sich gerade in einem CONFIGMODE_URL Konfigurationsdialog befindet
+* [`POST /open/configurationinfo`](../../ApiController/configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
+* [`POST /open/setconfigurationdata`](../../ApiController/setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
+* [`POST /<endpoint>/api/open/reloadplugindto`](../../ApiExternOpenController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
+* [`POST /open/getconfiguration`](../../ApiController/getConfiguration/index.md) – Liefert die aktuelle Konfiguration eines Plugins welches sich gerade in einem CONFIGMODE_URL Konfigurationsdialog befindet
 
 
 [ConfigHttpController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

@@ -31,27 +31,27 @@ Dto welches vom Plugin über Letto zum JavaScript des Plugins geschickt wird
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`POST /open/score`](../../rest-schnittstelle/ApiController/score/index.md) | Request über [`PluginScoreRequestDto.pluginDto`](../../dtos/PluginScoreRequestDto/index.md) | Prüft die Eingabe eines Schülers |
+| [`POST /open/score`](../../rest-schnittstelle/ApiController/score/index.md) | Request über [`PluginScoreRequestDto.pluginDto`](../PluginScoreRequestDto/index.md) | Prüft die Eingabe eines Schülers |
 | [`POST /open/loadplugindto`](../../rest-schnittstelle/ApiController/loadPluginDto/index.md) | Response | Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung |
-| [`POST /open/renderlatex`](../../rest-schnittstelle/ApiController/renderLatex/index.md) | Request über [`PluginRenderLatexRequestDto.pluginDto`](../../dtos/PluginRenderLatexRequestDto/index.md) | Rendert ein Plugin für den Fragedruck als LaTeX-Quelltext |
-| [`POST /open/renderpluginresult`](../../rest-schnittstelle/ApiController/renderPluginResult/index.md) | Request über [`PluginRenderResultRequestDto.pluginDto`](../../dtos/PluginRenderResultRequestDto/index.md) | Rendert das Plugin inklusive der Schülereingabe und korrekter Lösung Es wird dabei entweder direkt ein HTML-Code oder LaTeX-Code erzeugt |
-| [`POST /open/setconfigurationdata`](../../rest-schnittstelle/ApiController/setConfigurationData/index.md) | Response über [`PluginConfigDto.pluginDto`](../../dtos/PluginConfigDto/index.md) | Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration |
+| [`POST /open/renderlatex`](../../rest-schnittstelle/ApiController/renderLatex/index.md) | Request über [`PluginRenderLatexRequestDto.pluginDto`](../PluginRenderLatexRequestDto/index.md) | Rendert ein Plugin für den Fragedruck als LaTeX-Quelltext |
+| [`POST /open/renderpluginresult`](../../rest-schnittstelle/ApiController/renderPluginResult/index.md) | Request über [`PluginRenderResultRequestDto.pluginDto`](../PluginRenderResultRequestDto/index.md) | Rendert das Plugin inklusive der Schülereingabe und korrekter Lösung Es wird dabei entweder direkt ein HTML-Code oder LaTeX-Code erzeugt |
+| [`POST /open/setconfigurationdata`](../../rest-schnittstelle/ApiController/setConfigurationData/index.md) | Response über [`PluginConfigDto.pluginDto`](../PluginConfigDto/index.md) | Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration |
 | [`POST /open/reloadplugindto`](../../rest-schnittstelle/ApiController/reloadPluginDto/index.md) | Response | Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung |
 | [`POST /<endpoint>/api/open/reloadplugindto`](../../rest-schnittstelle/ApiExternOpenController/reloadPluginDto/index.md) | Response | Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung |
 
 ## Verwendet in DTOs
 
-* [PluginConfigDto](../../dtos/PluginConfigDto/index.md) – Feld `pluginDto`
-* [PluginRenderLatexRequestDto](../../dtos/PluginRenderLatexRequestDto/index.md) – Feld `pluginDto`
-* [PluginRenderResultRequestDto](../../dtos/PluginRenderResultRequestDto/index.md) – Feld `pluginDto`
-* [PluginScoreRequestDto](../../dtos/PluginScoreRequestDto/index.md) – Feld `pluginDto`
+* [PluginConfigDto](../PluginConfigDto/index.md) – Feld `pluginDto`
+* [PluginRenderLatexRequestDto](../PluginRenderLatexRequestDto/index.md) – Feld `pluginDto`
+* [PluginRenderResultRequestDto](../PluginRenderResultRequestDto/index.md) – Feld `pluginDto`
+* [PluginScoreRequestDto](../PluginScoreRequestDto/index.md) – Feld `pluginDto`
 
 ## Verwendet in der Plugin-API
 
-* [`loadPluginDto`](../../plugin-api/index.md): `PluginDto loadPluginDto(String params,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q, int nr)`
-* [`renderLatex`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderLatex(PluginDto pluginDto, String answer, String mode)`
-* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../../dtos/PluginScoreInfoDto/index.md) `score(PluginDto pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
-* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderPluginResult(boolean tex, PluginDto pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
+* [`loadPluginDto`](../../plugin-api/index.md): `PluginDto loadPluginDto(String params,` [`PluginQuestionDto`](../PluginQuestionDto/index.md) `q, int nr)`
+* [`renderLatex`](../../plugin-api/index.md): [`PluginRenderDto`](../PluginRenderDto/index.md) `renderLatex(PluginDto pluginDto, String answer, String mode)`
+* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../PluginScoreInfoDto/index.md) `score(PluginDto pluginDto, String antwort,` [`ToleranzDto`](../ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../PluginAnswerDto/index.md) `answerDto, double grade)`
+* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../PluginRenderDto/index.md) `renderPluginResult(boolean tex, PluginDto pluginDto, String antwort,` [`ToleranzDto`](../ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../PluginAnswerDto/index.md) `answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

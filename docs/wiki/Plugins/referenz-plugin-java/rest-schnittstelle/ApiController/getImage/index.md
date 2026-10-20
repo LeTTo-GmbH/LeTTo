@@ -63,9 +63,9 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/imageurl`](../../../rest-schnittstelle/ApiController/getImageUrl/index.md) – Liefert eine öffentliche URL auf das gerenderte Bild
-* [`POST /open/imagetemplates`](../../../rest-schnittstelle/ApiController/getImageTemplates/index.md) – Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays
-* [`POST /open/loadplugindto`](../../../rest-schnittstelle/ApiController/loadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
+* [`POST /open/imageurl`](../getImageUrl/index.md) – Liefert eine öffentliche URL auf das gerenderte Bild
+* [`POST /open/imagetemplates`](../getImageTemplates/index.md) – Liefert eine Liste aller möglichen Varianten von Bildern in String-Arrays
+* [`POST /open/loadplugindto`](../loadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

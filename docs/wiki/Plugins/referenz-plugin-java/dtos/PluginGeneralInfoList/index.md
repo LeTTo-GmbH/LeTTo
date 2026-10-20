@@ -12,7 +12,7 @@ Liefert allgemein Informationen zu einem Plugin, welche ohne Definition einer Pl
 
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
-| `pluginInfos` | List&lt;[PluginGeneralInfo](../../dtos/PluginGeneralInfo/index.md)&gt; |  | Allgemeine Informationen der enthaltenen Plugins. |
+| `pluginInfos` | List&lt;[PluginGeneralInfo](../PluginGeneralInfo/index.md)&gt; |  | Allgemeine Informationen der enthaltenen Plugins. |
 
 ## Verwendet in Endpunkten
 

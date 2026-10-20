@@ -15,11 +15,11 @@ Anfragedaten für die Bewertung einer Plugin-Antwort.
 | `typ` | String | `""` | Typ des Plugins |
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
-| `pluginDto` | [PluginDto](../../dtos/PluginDto/index.md) |  | [PluginDto](../../dtos/PluginDto/index.md) welches für die JavaScript aktive Eingabe aufbereitet wurde |
+| `pluginDto` | [PluginDto](../PluginDto/index.md) |  | [PluginDto](../PluginDto/index.md) welches für die JavaScript aktive Eingabe aufbereitet wurde |
 | `antwort` | String |  | Antwort die der Schüler eingegeben hat |
-| `toleranz` | [ToleranzDto](../../dtos/ToleranzDto/index.md) |  | Toleranz für die Lösung |
-| `varsQuestion` | [VarHashDto](../../dtos/VarHashDto/index.md) |  | Referenz auf VarHash, wird dynamisch nachgeladen |
-| `answerDto` | [PluginAnswerDto](../../dtos/PluginAnswerDto/index.md) |  | korrekte Antwort und Informationen für den Scorer des Plugins (Musterlösung, nicht die Antwort des Schülers) |
+| `toleranz` | [ToleranzDto](../ToleranzDto/index.md) |  | Toleranz für die Lösung |
+| `varsQuestion` | [VarHashDto](../VarHashDto/index.md) |  | Referenz auf VarHash, wird dynamisch nachgeladen |
+| `answerDto` | [PluginAnswerDto](../PluginAnswerDto/index.md) |  | korrekte Antwort und Informationen für den Scorer des Plugins (Musterlösung, nicht die Antwort des Schülers) |
 | `grade` | double |  | Maximale Punktanzahl für die richtige Antwort |
 
 ## Verwendet in Endpunkten

@@ -16,9 +16,9 @@ Anfragedaten für das Laden eines Plugin-DTOs.
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
 | `params` | String | `""` | Parameter für die Antworterzeugung |
-| `q` | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
+| `q` | [PluginQuestionDto](../PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
 | `nr` | int |  | Laufende Nummer für alle PIG-Tags und Question-Plugins |
-| `configurationID` | String |  | Konfigurations-ID, wenn das [PluginDto](../../dtos/PluginDto/index.md) über AJAX bei der Konfiguration angefordert wird |
+| `configurationID` | String |  | Konfigurations-ID, wenn das [PluginDto](../PluginDto/index.md) über AJAX bei der Konfiguration angefordert wird |
 
 ## Verwendet in Endpunkten
 

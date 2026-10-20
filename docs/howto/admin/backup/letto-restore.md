@@ -1,7 +1,7 @@
 # Restore einer LeTTo-Sicherung
 
 ### siehe auch 
-* [Datensicherung-Docker](../../../wiki/Datensicherung-Docker/index.md)
+* [Datensicherung-Docker](../../../wiki/Administration/Datensicherung-Docker/index.md)
 * [Administration](../../../wiki/Administration/index.md)
 
 ## normaler Restore einer Datensicherung

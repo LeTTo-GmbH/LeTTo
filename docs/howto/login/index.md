@@ -7,9 +7,9 @@
   * Je nach Servereinstellung gibt es zwei Möglichkeiten wenn der Schüler bereits an einem anderen Gerät angemeldet ist:
     1. Der Schüler kann sich nicht anmelden solange er am ersten Gerät angemeldet ist.
     2. Der Schüler wird automatisch am ersten Gerät abgemeldet wenn er sich an einem anderen Gerät anmeldet.
-  * Diese Einstellung kann nur vom Administrator geändert werden (siehe [Login-Konfiguration](../../wiki/LeTToEnvironment/index.md#login-konfiguration))
+  * Diese Einstellung kann nur vom Administrator geändert werden (siehe [Login-Konfiguration](../../wiki/Administration/Docker/LeTToEnvironment/index.md#login-konfiguration))
 * Bei der Anmeldung wird immer die Schule, der Benutzername und das Passwort benötigt.
-* Jeder Lehrer einer Schule kann den Schülern das [Passwort für LeTTo zurücksetzen](../../wiki/Schülerpasswortsetzen/index.md) und auch vom Server abmelden.
+* Jeder Lehrer einer Schule kann den Schülern das [Passwort für LeTTo zurücksetzen](../../wiki/Konfiguration/Schülerpasswortsetzen/index.md) und auch vom Server abmelden.
 * Das Passwort kann auch vom Administrator zurückgesetzt werden.
 * Jeder Schüler kann in seinem Profil am LeTTo-Server sein Passwort selbst ändern.
 * Hat die Schule einen **AD- oder LDAP-Server** angebunden, so können sich die Benutzer mit dem gleichen Passwort anmelden wie am AD/LDAP-Server.

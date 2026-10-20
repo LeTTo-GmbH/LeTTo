@@ -35,15 +35,15 @@ Beschreibt eine JavaScript-Bibliothek als lokale Ressource, Serverdatei oder Que
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`GET /open/generalinfolist`](../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../../dtos/PluginGeneralInfoList/index.md) → [`PluginGeneralInfo.javascriptLibraries`](../../dtos/PluginGeneralInfo/index.md) (und 1 weiterer Weg) | Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
-| [`POST /open/generalinfo`](../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) | Response über [`PluginGeneralInfo.javascriptLibraries`](../../dtos/PluginGeneralInfo/index.md) (und 1 weiterer Weg) | Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin |
-| [`GET /<endpoint>/api/open/generalinfolist`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../../dtos/PluginGeneralInfoList/index.md) → [`PluginGeneralInfo.javascriptLibraries`](../../dtos/PluginGeneralInfo/index.md) (und 1 weiterer Weg) | liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
-| [`POST /<endpoint>/api/open/generalinfo`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfo/index.md) | Response über [`PluginGeneralInfo.javascriptLibraries`](../../dtos/PluginGeneralInfo/index.md) (und 1 weiterer Weg) | liefert die allgemeinen Konfigurationsinformationen zu einem Plugin Body: String - Name des Plugins |
+| [`GET /open/generalinfolist`](../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../PluginGeneralInfoList/index.md) → [`PluginGeneralInfo.javascriptLibraries`](../PluginGeneralInfo/index.md) (und 1 weiterer Weg) | Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
+| [`POST /open/generalinfo`](../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) | Response über [`PluginGeneralInfo.javascriptLibraries`](../PluginGeneralInfo/index.md) (und 1 weiterer Weg) | Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin |
+| [`GET /<endpoint>/api/open/generalinfolist`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../PluginGeneralInfoList/index.md) → [`PluginGeneralInfo.javascriptLibraries`](../PluginGeneralInfo/index.md) (und 1 weiterer Weg) | liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
+| [`POST /<endpoint>/api/open/generalinfo`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfo/index.md) | Response über [`PluginGeneralInfo.javascriptLibraries`](../PluginGeneralInfo/index.md) (und 1 weiterer Weg) | liefert die allgemeinen Konfigurationsinformationen zu einem Plugin Body: String - Name des Plugins |
 
 ## Verwendet in DTOs
 
-* [PluginGeneralInfo](../../dtos/PluginGeneralInfo/index.md) – Feld `javascriptLibraries`
-* [PluginGeneralInfo](../../dtos/PluginGeneralInfo/index.md) – Feld `javascriptLibrariesLocal`
+* [PluginGeneralInfo](../PluginGeneralInfo/index.md) – Feld `javascriptLibraries`
+* [PluginGeneralInfo](../PluginGeneralInfo/index.md) – Feld `javascriptLibrariesLocal`
 
 ## Verwendet in der Plugin-API
 

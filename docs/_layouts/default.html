@@ -39,7 +39,59 @@
     </nav>
 </header>
 <main class="content">
+{%- comment -%}
+    Navigation im Wiki-Baum: oben der Pfad zur Seite, unten die direkten Unterseiten, die die Seite nicht
+    schon selbst verlinkt. Beides wird aus page.url und site.pages berechnet, die Titel kommen aus der ersten
+    Überschrift der Seiten - in den Seiten selbst muss dafür nichts gepflegt werden.
+{%- endcomment -%}
+{%- assign wikiseite = false -%}
+{%- assign urlanfang = page.url | slice: 0, 6 -%}
+{%- if urlanfang == '/wiki/' -%}{%- assign wikiseite = true -%}{%- endif -%}
+{%- if wikiseite and page.url != '/wiki/' %}
+    <nav class="wiki-pfad">
+    {%- assign teile = page.url | split: '/' -%}
+    {%- assign pfad = '' -%}
+    {%- for teil in teile offset: 1 -%}
+        {%- assign pfad = pfad | append: '/' | append: teil -%}
+        {%- unless forloop.last -%}
+            {%- assign oberurl = pfad | append: '/' -%}
+            {%- assign oberseite = site.pages | where: 'url', oberurl | first -%}
+            {%- if oberseite -%}
+                <a href="{{ oberurl | relative_url }}">{% if oberurl == '/wiki/' %}Wiki{% else %}{{ oberseite.title }}{% endif %}</a> &rsaquo;
+            {% endif -%}
+        {%- endunless -%}
+    {%- endfor -%}
+        <span>{{ page.title }}</span>
+    </nav>
+{%- endif %}
     {{ content }}
+{%- if wikiseite -%}
+    {%- assign laenge = page.url | size -%}
+    {%- assign tiefe = page.url | split: '/' | size | plus: 1 -%}
+    {%- assign unterseiten = '' | split: '' -%}
+    {%- for p in site.pages -%}
+        {%- if p.url != page.url and p.title -%}
+            {%- assign anfang = p.url | slice: 0, laenge -%}
+            {%- if anfang == page.url -%}
+                {%- assign ptiefe = p.url | split: '/' | size -%}
+                {%- if ptiefe == tiefe -%}
+                    {%- unless content contains p.url -%}{%- assign unterseiten = unterseiten | push: p -%}{%- endunless -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {%- if unterseiten.size > 0 %}
+    <nav class="wiki-unterseiten">
+        <h2>Unterseiten</h2>
+        <ul>
+        {%- assign unterseiten = unterseiten | sort: 'title' -%}
+        {%- for p in unterseiten %}
+            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- endfor %}
+        </ul>
+    </nav>
+    {%- endif -%}
+{%- endif %}
 </main>
 <footer>
     <div class="logo handyoff">

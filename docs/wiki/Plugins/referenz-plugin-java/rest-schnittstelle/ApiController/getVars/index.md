@@ -63,7 +63,7 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/generatedatasets`](../../../rest-schnittstelle/ApiController/generateDatasets/index.md) – Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten
+* [`POST /open/generatedatasets`](../generateDatasets/index.md) – Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

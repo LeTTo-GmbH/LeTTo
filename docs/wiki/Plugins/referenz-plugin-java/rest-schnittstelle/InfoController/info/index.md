@@ -32,8 +32,8 @@ HTTP-Antwort mit Service-Informationen
 
 ## Siehe auch
 
-* [`GET /<endpoint>/open/info`](../../../rest-schnittstelle/InfoController/infoOpen/index.md) – Liefert Service-Informationen über den öffentlichen Endpunkt
-* [`GET /version`](../../../rest-schnittstelle/InfoController/version/index.md) – Liefert die Version des Plugin-Services
+* [`GET /<endpoint>/open/info`](../infoOpen/index.md) – Liefert Service-Informationen über den öffentlichen Endpunkt
+* [`GET /version`](../version/index.md) – Liefert die Version des Plugin-Services
 
 
 [InfoController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

@@ -96,7 +96,7 @@ Nicht vorhandene Inhalte nicht erfinden: Ist im Code etwas nicht dokumentiert od
 4. **Verlinkung** (nur diese Änderungen außerhalb des Zielordners):
    - `docs/wiki/Plugins/index.md`, Abschnitt „Plugin-Entwicklung": Punkt zum Referenz-Plugin (Python) mit Links auf
      `../Plugins/referenz-plugin-python/index.md`, `eigenes-plugin` und `rest-schnittstelle`; fehlende Links ergänzen, andere Inhalte nicht ohne Rückfrage löschen.
-   - `docs/wiki/index.md`: Eintrag „Referenz-Plugin (Python)" direkt nach „Referenz-Plugin (Java)", falls noch nicht vorhanden.
+   - `docs/wiki/index.md`: Eintrag „Referenz-Plugin (Python)" im Abschnitt „Alle Seiten (A–Z)" direkt nach „Referenz-Plugin (Java)", falls noch nicht vorhanden.
    - `docs/wiki/Plugins/referenz-plugin-java/index.md`, Abschnitt „Links": Verweis auf die Python-Portierung, falls noch nicht vorhanden.
 5. **Prüfen:**
    ```bash

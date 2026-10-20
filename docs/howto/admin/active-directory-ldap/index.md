@@ -10,4 +10,4 @@ LeTTo kann die Authentifikation eines Users auch an einen LDAP oder AD-Server we
 
 ## Konfiguration am LeTTo-Server
 * am LeTTo-Server muss anschließend noch der Login konfiguriert werden.
-* siehe [wiki LDAP](../../../wiki/AD-check/index.md)
+* siehe [wiki LDAP](../../../wiki/admin/global/AD-check/index.md)

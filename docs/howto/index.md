@@ -2,5 +2,5 @@
 * LeTTo - Homepage: [https://letto.at/wordpress/](https://letto.at/wordpress/)
 
 # HowTo
-* [Administration](./admin)
+* [Administration](admin)
 

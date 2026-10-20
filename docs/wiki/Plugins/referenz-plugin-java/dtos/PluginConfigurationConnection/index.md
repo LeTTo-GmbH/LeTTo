@@ -17,16 +17,16 @@ Speichert Zustand und Gültigkeit einer Plugin-Konfigurationssitzung.
 | `name` | String |  | Name des Plugins |
 | `config` | String |  | Konfigurationsstring des Plugins |
 | `pluginService` | PluginService |  | Plugin das gerade bearbeitet wird |
-| `pluginConfigurationInfoDto` | [PluginConfigurationInfoDto](../../dtos/PluginConfigurationInfoDto/index.md) |  | Plugin Konfigurations-Information |
-| `pluginConfigDto` | [PluginConfigDto](../../dtos/PluginConfigDto/index.md) |  | [PluginConfigDto](../../dtos/PluginConfigDto/index.md) welches aktuell gültig ist |
-| `pluginQuestionDto` | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) |  | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) der Frage welche zu dem Plugin gehört |
+| `pluginConfigurationInfoDto` | [PluginConfigurationInfoDto](../PluginConfigurationInfoDto/index.md) |  | Plugin Konfigurations-Information |
+| `pluginConfigDto` | [PluginConfigDto](../PluginConfigDto/index.md) |  | [PluginConfigDto](../PluginConfigDto/index.md) welches aktuell gültig ist |
+| `pluginQuestionDto` | [PluginQuestionDto](../PluginQuestionDto/index.md) |  | [PluginQuestionDto](../PluginQuestionDto/index.md) der Frage welche zu dem Plugin gehört |
 | `timeout` | long |  | Gültigkeitsdauer in Sekunden |
 | `lastTime` | long | `Datum.nowDateInteger()` | Zugriffszeitstempel des letzten Zugriffes als DateInteger in Sekunden |
 
 ## Hinweise
 
 * **Interne Klasse, wird nicht über REST übertragen.** Sie hält im Plugin-Service den Zustand einer Konfigurationssitzung; `PluginConfiguration` speichert die Sitzungen nach `configurationID`.
-* Der Konstruktor erzeugt eine zufällige ID (30 Zeichen), wenn keine `configurationID` übergeben wird, und legt ein [`PluginConfigDto`](../../dtos/PluginConfigDto/index.md) mit Größe 800×600 an.
+* Der Konstruktor erzeugt eine zufällige ID (30 Zeichen), wenn keine `configurationID` übergeben wird, und legt ein [`PluginConfigDto`](../PluginConfigDto/index.md) mit Größe 800×600 an.
 * `changeConfig(config, pluginService)` setzt Konfiguration und Plugin-Instanz neu und holt `configurationInfo` vom Plugin.
 
 ## Verwendet in Endpunkten

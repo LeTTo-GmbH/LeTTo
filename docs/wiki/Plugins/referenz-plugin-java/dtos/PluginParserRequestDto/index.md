@@ -15,9 +15,9 @@ Anfragedaten für die Auswertung einer Plugin-Parserfunktion.
 | `typ` | String | `""` | Typ des Plugins |
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
-| `vars` | [VarHashDto](../../dtos/VarHashDto/index.md) |  | Alle Variablen der Frage |
-| `cp` | [CalcParamsDto](../../dtos/CalcParamsDto/index.md) |  | Berechnungsparameter |
-| `p` | [CalcErgebnisDto](../../dtos/CalcErgebnisDto/index.md)[] |  | Liste von CalcErgebnis-Werten, welche an das Plugin von der Question aus übergeben werden können |
+| `vars` | [VarHashDto](../VarHashDto/index.md) |  | Alle Variablen der Frage |
+| `cp` | [CalcParamsDto](../CalcParamsDto/index.md) |  | Berechnungsparameter |
+| `p` | [CalcErgebnisDto](../CalcErgebnisDto/index.md)[] |  | Liste von CalcErgebnis-Werten, welche an das Plugin von der Question aus übergeben werden können |
 
 ## Verwendet in Endpunkten
 

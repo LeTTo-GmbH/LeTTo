@@ -78,8 +78,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/score`](../../../rest-schnittstelle/ApiController/score/index.md) – Prüft die Eingabe eines Schülers
-* [`POST /open/renderlatex`](../../../rest-schnittstelle/ApiController/renderLatex/index.md) – Rendert ein Plugin für den Fragedruck als LaTeX-Quelltext
+* [`POST /open/score`](../score/index.md) – Prüft die Eingabe eines Schülers
+* [`POST /open/renderlatex`](../renderLatex/index.md) – Rendert ein Plugin für den Fragedruck als LaTeX-Quelltext
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

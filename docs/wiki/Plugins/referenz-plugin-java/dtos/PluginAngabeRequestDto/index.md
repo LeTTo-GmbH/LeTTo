@@ -16,7 +16,7 @@ Anfragedaten für die Verarbeitung eines Angabetextes.
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
 | `text` | String | `""` | Angabetext der Frage oder Text in PI-Tags |
-| `q` | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
+| `q` | [PluginQuestionDto](../PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
 
 ## Verwendet in Endpunkten
 

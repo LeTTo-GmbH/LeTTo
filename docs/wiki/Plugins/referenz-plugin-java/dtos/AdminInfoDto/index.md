@@ -47,12 +47,12 @@ Information über ein Service für den Admin
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`GET /info`](../../rest-schnittstelle/InfoController/info/index.md) | Response über [`ServiceInfoDTO.adminInfoDto`](../../dtos/ServiceInfoDTO/index.md) | Liefert Informationen über den laufenden Plugin-Service |
-| [`GET /<endpoint>/open/info`](../../rest-schnittstelle/InfoController/infoOpen/index.md) | Response über [`ServiceInfoDTO.adminInfoDto`](../../dtos/ServiceInfoDTO/index.md) | Liefert Service-Informationen über den öffentlichen Endpunkt |
+| [`GET /info`](../../rest-schnittstelle/InfoController/info/index.md) | Response über [`ServiceInfoDTO.adminInfoDto`](../ServiceInfoDTO/index.md) | Liefert Informationen über den laufenden Plugin-Service |
+| [`GET /<endpoint>/open/info`](../../rest-schnittstelle/InfoController/infoOpen/index.md) | Response über [`ServiceInfoDTO.adminInfoDto`](../ServiceInfoDTO/index.md) | Liefert Service-Informationen über den öffentlichen Endpunkt |
 
 ## Verwendet in DTOs
 
-* [ServiceInfoDTO](../../dtos/ServiceInfoDTO/index.md) – Feld `adminInfoDto`
+* [ServiceInfoDTO](../ServiceInfoDTO/index.md) – Feld `adminInfoDto`
 
 ## Verwendet in der Plugin-API
 

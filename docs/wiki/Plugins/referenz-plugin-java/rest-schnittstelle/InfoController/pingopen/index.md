@@ -31,7 +31,7 @@ HTTP-Antwort mit der Erreichbarkeitsmeldung
 
 ## Siehe auch
 
-* [`GET /ping`](../../../rest-schnittstelle/InfoController/ping/index.md) – Bestätigt die Erreichbarkeit des internen Endpunkts
+* [`GET /ping`](../ping/index.md) – Bestätigt die Erreichbarkeit des internen Endpunkts
 
 
 [InfoController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

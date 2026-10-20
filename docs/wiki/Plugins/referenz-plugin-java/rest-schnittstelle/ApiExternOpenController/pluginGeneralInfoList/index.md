@@ -24,7 +24,7 @@ HTTP-Antwort mit den allgemeinen Informationen aller registrierten Plugins
 
 ## Ablauf im Service
 
-* Delegiert an [`GET /open/generalinfolist`](../../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) ([`ApiController.pluginGeneralInfoList`](../../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md)).
+* Delegiert an [`GET /open/generalinfolist`](../../ApiController/pluginGeneralInfoList/index.md) ([`ApiController.pluginGeneralInfoList`](../../ApiController/pluginGeneralInfoList/index.md)).
 
 ## Fehlerfälle
 
@@ -32,7 +32,7 @@ HTTP-Antwort mit den allgemeinen Informationen aller registrierten Plugins
 
 ## Siehe auch
 
-* [`GET /open/generalinfolist`](../../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
+* [`GET /open/generalinfolist`](../../ApiController/pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
 
 
 [ApiExternOpenController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

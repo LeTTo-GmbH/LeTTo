@@ -2,24 +2,24 @@
 
 | Browser-Empfehlung        | Firefox &amp; Chrome                                                                      |                                                                                            |                                                                              |                                                               |                                                    |                                                                                                  |
 |---------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Einführung                | [Einführung](../Einführung/index.md)                                                      | [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)                                       | [Beispielsammlung](../Beispielsammlung/index.md)                             | [Beispiele bearbeiten](../BeispielsammlungEditieren/index.md) | [Fragetypen](../Fragetypen/index.md)               |                                                                                                  |
-| Bearbeiten von Beispielen | [Ordnerverwaltung](../Ordnerverwaltung/index.md)                                          | [Fragenliste](../Fragenliste/index.md)                                                     | [Editor für den Angabetext](../EditorfürdenAngabetext/index.md)              | [Datensätze](../Datensätze/index.md)                          | [Berechnungen](../Berechnungen/index.md)           |                                                                                                  |
-| Online-Tests/Aktivitäten  | [Einführung Tests](../Online-Tests/index.md)                                              | [Erstellen von Tests](../ErstellenvonTests/index.md) [Video](https://youtu.be/jBtaOZVF-cE) | [Tests#test-durchführen-](/notimplemented/index.md)                          | [Test-Ergebnisse](../Test-Ergebnisse/index.md)                |                                                    |                                                                                                  |
-| Beurteilungen             | [Übersicht Beurteilungssystem](../Katalog/index.md) [Video](https://youtu.be/a0R4YYYkrMo) | [Konfiguration](../Beurteilungskonfiguration/index.md)                                     | [Klassenweise Beurteilungen](../Katalog/index.md#klassenweise-beurteilungen) | [Auswertungen](/notimplemented/index.md)                      |                                                    |                                                                                                  |
-| Kompetenzen               | [Kompetenzen](../Kompetenzen/index.md)                                                    | [Lehrpläne](../Lehrpläne/index.md)                                                         | [ Zuordnung v. Beispielen](../Zuordnungv.Beispielen/index.md)                | [mehreren Beispiel zuordnen](/notimplemented/index.md)        | [Ergebnisse](/notimplemented/index.md)             |                                                                                                  |
-| Mathematik                | [Datensätze](../Datensätzedefinieren/index.md) [Video](https://youtu.be/fZEv62EWVtE)      | [Einheiten](../Einheit/index.md)                                                           | [Berechnungen](../Berechnungen/index.md)                                     | [Plugins](../Plugins/index.md)                                | [Zahlendarstellung](../Zahlendarstellung/index.md) | [Folgefehlerbehandlung](../Folgefehlerbehandlung/index.md) [Video](https://youtu.be/CbpX537brTM) |
-| Sonstiges                 | [Neuigkeiten/Änderungen](../Neuigkeiten/index.md)                                         | [Shortcuts](../Shortcuts/index.md)                                                         | [FAQ](../FAQ/index.md)                                                       |                                                               |                                                    |                                                                                                  |
+| Einführung                | [Einführung](../Einstieg/Einführung/index.md)                                                      | [LeTTo-Hauptansicht](../Einstieg/LeTTo-Hauptansicht/index.md)                                       | [Beispielsammlung](../Fragen/Beispielsammlung/index.md)                             | [Beispiele bearbeiten](../Fragen/BeispielsammlungEditieren/index.md) | [Fragetypen](../Fragen/Fragetypen/index.md)               |                                                                                                  |
+| Bearbeiten von Beispielen | [Ordnerverwaltung](../Fragen/Ordnerverwaltung/index.md)                                          | [Fragenliste](../Fragen/Fragenliste/index.md)                                                     | [Editor für den Angabetext](../Fragen/EditorfürdenAngabetext/index.md)              | [Datensätze](../Berechnungen/Datensätze/index.md)                          | [Berechnungen](../Berechnungen/index.md)           |                                                                                                  |
+| Online-Tests/Aktivitäten  | [Einführung Tests](../Tests/Online-Tests/index.md)                                              | [Erstellen von Tests](../Tests/ErstellenvonTests/index.md) [Video](https://youtu.be/jBtaOZVF-cE) | Tests#test-durchführen-                          | [Test-Ergebnisse](../Tests/Test-Ergebnisse/index.md)                |                                                    |                                                                                                  |
+| Beurteilungen             | [Übersicht Beurteilungssystem](../Beurteilungen/Katalog-alt/index.md) [Video](https://youtu.be/a0R4YYYkrMo) | [Konfiguration](../Beurteilungen/Beurteilungskonfiguration/index.md)                                     | [Klassenweise Beurteilungen](../Beurteilungen/Katalog-alt/index.md#klassenweise-beurteilungen) | Auswertungen                      |                                                    |                                                                                                  |
+| Kompetenzen               | [Kompetenzen](../Beurteilungen/Kompetenzen/index.md)                                                    | [Lehrpläne](../Beurteilungen/Kompetenzen/Lehrpläne/index.md)                                                         | [ Zuordnung v. Beispielen](../Beurteilungen/Kompetenzen/Zuordnungv.Beispielen/index.md)                | mehreren Beispiel zuordnen        | Ergebnisse             |                                                                                                  |
+| Mathematik                | [Datensätze](../Berechnungen/Datensätzedefinieren/index.md) [Video](https://youtu.be/fZEv62EWVtE)      | [Einheiten](../Berechnungen/Einheit/index.md)                                                           | [Berechnungen](../Berechnungen/index.md)                                     | [Plugins](../Plugins/index.md)                                | [Zahlendarstellung](../Berechnungen/Zahlendarstellung/index.md) | [Folgefehlerbehandlung](../Fragen/Folgefehlerbehandlung/index.md) [Video](https://youtu.be/CbpX537brTM) |
+| Sonstiges                 | [Neuigkeiten/Änderungen](../Einstieg/Neuigkeiten/index.md)                                         | [Shortcuts](../Einstieg/Shortcuts/index.md)                                                         | [FAQ](../Einstieg/FAQ/index.md)                                                       |                                                               |                                                    |                                                                                                  |
 
 
 **Vorgänge**:
 
-| Passwort     | [eigenes Lehrerpasswort ändern](/notimplemented/index.md) | [Schülerpasswort setzen](../Schülerpasswortsetzen/index.md)           | [Lehrerpasswort setzen](../Lehrerpasswortsetzen/index.md)           | [Passwort mit Domain-Passwort synchronisieren](/notimplemented/index.md) |                                          |                                             |
+| Passwort     | eigenes Lehrerpasswort ändern | [Schülerpasswort setzen](../Konfiguration/Schülerpasswortsetzen/index.md)           | [Lehrerpasswort setzen](../Konfiguration/Schülerpasswortsetzen)           | Passwort mit Domain-Passwort synchronisieren |                                          |                                             |
 |--------------|-----------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------|---------------------------------------------|
-| Online-Tests | [Test anlegen](../Testanlegen/index.md)                   | [Beispiele zu Test hinzufügen](../BeispielezuTesthinzufügen/index.md) | [Testbearbeitung fortsetzen](../Testbearbeitungfortsetzen/index.md) | [Test ausführen](/notimplemented/index.md)                               | [Test beenden](/notimplemented/index.md) | [Test beurteilen](/notimplemented/index.md) |
-| Labor        | [Labor Benotung](../LaborBenotung/index.md)               | [Laborübung anlegen](../Laborübunganlegen/index.md)                   | [Labor Übungstest](../LaborÜbungstest/index.md)                     |                                                                          |                                          |                                             |
+| Online-Tests | [Test anlegen](../Tests/Testanlegen/index.md)                   | [Beispiele zu Test hinzufügen](../Tests/BeispielezuTesthinzufügen/index.md) | [Testbearbeitung fortsetzen](../Tests/Testbearbeitungfortsetzen/index.md) | Test ausführen                               | Test beenden | Test beurteilen |
+| Labor        | [Labor Benotung](../Tests/Labor/LaborBenotung/index.md)               | [Laborübung anlegen](../Tests/Labor/Laborübunganlegen/index.md)                   | [Labor Übungstest](../Tests/Labor/LaborÜbungstest/index.md)                     |                                                                          |                                          |                                             |
 
 ### Neuigkeiten
-[Neuigkeiten](../Neuigkeiten/index.md)
+[Neuigkeiten](../Einstieg/Neuigkeiten/index.md)
 
 ### Administration 
 
@@ -30,16 +30,16 @@ gehe zu [Administration](../Administration/index.md)
 
 **LeTTo** ist ein, vom Österreichischen Bundesministerium für Bildung, Wissenschaft und Forschung empfohlener E-Learning-Server. LeTTo ist breit einsetzbar und vor allem für technisch-mathematische-Gegenstände optimiert. LeTTo zeichnet sich durch einen kompetenzorientierten im System integrierten Notenkatalog aus.
 
-Wird der Server gestartet, so befindet man sich im [Lernbereich](../LeTTo-Hauptansicht/index.md) des Servers.
+Wird der Server gestartet, so befindet man sich im [Lernbereich](../Einstieg/LeTTo-Hauptansicht/index.md) des Servers.
 
 Die Erweiterbarkeit des Servers durch Module für Spezialanwendungen ist durch [Plugins](../Plugins/index.md) gegeben.
 
-Informationen zum [Hilfesystem](../Hilfesystem/index.md)
+Informationen zum [Hilfesystem](../Einstieg/Hilfesystem/index.md)
 
 ###  Aufbau 
-* [LeTTo-Hauptansicht](../LeTTo-Hauptansicht/index.md)
-* [Beispielsammlung](../Beispielsammlung/index.md)
-* [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md)
+* [LeTTo-Hauptansicht](../Einstieg/LeTTo-Hauptansicht/index.md)
+* [Beispielsammlung](../Fragen/Beispielsammlung/index.md)
+* [Beispielsammlung Editieren](../Fragen/BeispielsammlungEditieren/index.md)
 
 ###  Dokumentation 
 
@@ -54,7 +54,7 @@ Die Dokumentation das LeTTo-Servers erfolgt in mehreren Formen:
 ###  [Administration](../Administration/index.md) 
 gehe zu [Administration](../Administration/index.md)
 
-[Update auf Stable-Version 1.3 rev70xx](../Updaterev70xx/index.md)
+[Update auf Stable-Version 1.3 rev70xx](../Administration/Updaterev70xx/index.md)
 
-[Update von rev65xx auf aktuelle Stable rev66xx](../Updaterev66xx/index.md)
+[Update von rev65xx auf aktuelle Stable rev66xx](../Administration/Updaterev66xx/index.md)
 

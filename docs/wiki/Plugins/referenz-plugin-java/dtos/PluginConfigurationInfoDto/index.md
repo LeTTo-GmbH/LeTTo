@@ -31,7 +31,7 @@ Information vom Plugin an LeTTo welche Informationen für die Konfiguration des 
 | `addDataSet` | boolean | `false` | Gibt an, ob im Plugin-Konfig-Dialog Datensätze hinzugefügt werden können. =&gt; Button AddDataset in Fußzeile des umgebenden Dialogs, (nicht vom Plugin) |
 | `calcMaxima` | boolean | `false` | Gibt an ob im Plugin bei der Konfiguration die Maxima-Berechnung durchlaufen werden kann. =&gt; Button Maxima in Fußzeile des umgebenden Dialogs, (nicht vom Plugin) |
 | `externUrl` | boolean | `false` | Gibt an, ob das Plugin über den Browser direkt erreichbar ist |
-| `javaScriptMethode` | String | `null` | JavaScript-Methode, die beim Konfigurieren des Plugins aufgerufen wird. Als Parameter wird ein [PluginConfigDto](../../dtos/PluginConfigDto/index.md) übergeben (Konfigurationsstring des Plugins an diese Methode übergeben. JS-Code ist in den javascriptLibraries enthalten. |
+| `javaScriptMethode` | String | `null` | JavaScript-Methode, die beim Konfigurieren des Plugins aufgerufen wird. Als Parameter wird ein [PluginConfigDto](../PluginConfigDto/index.md) übergeben (Konfigurationsstring des Plugins an diese Methode übergeben. JS-Code ist in den javascriptLibraries enthalten. |
 | `configurationUrl` | String | `""` | Konfigurations-URL für den Konfigurationsdialog im Mode CONFIGMODE_URL |
 
 ## Verwendet in Endpunkten
@@ -42,7 +42,7 @@ Information vom Plugin an LeTTo welche Informationen für die Konfiguration des 
 
 ## Verwendet in DTOs
 
-* [PluginConfigurationConnection](../../dtos/PluginConfigurationConnection/index.md) – Feld `pluginConfigurationInfoDto`
+* [PluginConfigurationConnection](../PluginConfigurationConnection/index.md) – Feld `pluginConfigurationInfoDto`
 
 ## Verwendet in der Plugin-API
 

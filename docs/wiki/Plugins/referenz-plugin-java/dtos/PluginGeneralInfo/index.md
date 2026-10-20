@@ -22,32 +22,32 @@ Liefert allgemein Informationen zu einem Plugin, welche ohne Definition einer Pl
 | `pluginType` | String | `""` | Klasse des Plugins |
 | `initPluginJS` | String | `""` | Name der JAVA-Script Methode zur Plugin-Initialisierung für die interaktive Ergebniseingabe |
 | `javaScript` | boolean | `false` | Gibt an ob das Plugin eine JavaScript Schnittstelle bei der Beispieldarstellung hat |
-| `javascriptLibraries` | List&lt;[JavascriptLibrary](../../dtos/JavascriptLibrary/index.md)&gt; | `new ArrayList<>()` | Liste von JavaScript-Libraries, die im Header der HTML-Seite eingebunden werden müssen. Es muss die vollständige URL angegeben werden. für das Plugin notwendige JS-Libraries |
-| `javascriptLibrariesLocal` | List&lt;[JavascriptLibrary](../../dtos/JavascriptLibrary/index.md)&gt; | `new ArrayList<>()` | Liste von LOKALEN JavaScript-Libraries, die im Header der HTML-Seite eingebunden werden müssen. Pfade werden relativ zum akt. Servernamen übergeben für das Plugin notwendige JS-Libraries |
+| `javascriptLibraries` | List&lt;[JavascriptLibrary](../JavascriptLibrary/index.md)&gt; | `new ArrayList<>()` | Liste von JavaScript-Libraries, die im Header der HTML-Seite eingebunden werden müssen. Es muss die vollständige URL angegeben werden. für das Plugin notwendige JS-Libraries |
+| `javascriptLibrariesLocal` | List&lt;[JavascriptLibrary](../JavascriptLibrary/index.md)&gt; | `new ArrayList<>()` | Liste von LOKALEN JavaScript-Libraries, die im Header der HTML-Seite eingebunden werden müssen. Pfade werden relativ zum akt. Servernamen übergeben für das Plugin notwendige JS-Libraries |
 | `inputElement` | String | [`InputElement.TextField.toString()`](../../enums/InputElement/index.md) | anzuzeigendes Eingabeelement als String |
 | `cacheable` | boolean | `true` | Plugin ist stateless und liefert bei gleicher Angabe immer das gleiche Verhalten |
 | `useVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den VarHash der Datensätze |
 | `useCVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den VarHash der cvars - Konstante und Datensätze |
-| `useVarsMaxima` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Maxima-Berechnungen ohne eingesetzte Datensatz-Variable. Entspricht `useMaximaVars` in BasePlugin und [PluginConfigurationInfoDto](../../dtos/PluginConfigurationInfoDto/index.md). Der Feldname ist Teil der REST-Schnittstelle und wird vom LeTTo-Server unter diesem Namen gelesen – nicht umbenennen. |
+| `useVarsMaxima` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Maxima-Berechnungen ohne eingesetzte Datensatz-Variable. Entspricht `useMaximaVars` in BasePlugin und [PluginConfigurationInfoDto](../PluginConfigurationInfoDto/index.md). Der Feldname ist Teil der REST-Schnittstelle und wird vom LeTTo-Server unter diesem Namen gelesen – nicht umbenennen. |
 | `useMVars` | boolean | `true` | Plugin benötigt zur Berechnung und Darstellung den Varhash aller Datensätze und Maxima-Ergebnisse mit eingesetzten Werten kombiniert in einem Hash |
 | `pluginServiceURL` | String | `""` | URL des Plugin-Services für die direkte Kommunikation |
 
 ## Hinweise
 
-* Das Feld `useVarsMaxima` heißt in `BasePlugin` und [`PluginConfigurationInfoDto`](../../dtos/PluginConfigurationInfoDto/index.md) `useMaximaVars`. Der Name ist Teil der REST-Schnittstelle und wird vom LeTTo-Server so gelesen – er darf nicht angeglichen werden.
+* Das Feld `useVarsMaxima` heißt in `BasePlugin` und [`PluginConfigurationInfoDto`](../PluginConfigurationInfoDto/index.md) `useMaximaVars`. Der Name ist Teil der REST-Schnittstelle und wird vom LeTTo-Server so gelesen – er darf nicht angeglichen werden.
 
 ## Verwendet in Endpunkten
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`GET /open/generalinfolist`](../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../../dtos/PluginGeneralInfoList/index.md) | Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
+| [`GET /open/generalinfolist`](../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../PluginGeneralInfoList/index.md) | Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
 | [`POST /open/generalinfo`](../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) | Response | Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin |
-| [`GET /<endpoint>/api/open/generalinfolist`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../../dtos/PluginGeneralInfoList/index.md) | liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
+| [`GET /<endpoint>/api/open/generalinfolist`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfoList/index.md) | Response über [`PluginGeneralInfoList.pluginInfos`](../PluginGeneralInfoList/index.md) | liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services |
 | [`POST /<endpoint>/api/open/generalinfo`](../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfo/index.md) | Response | liefert die allgemeinen Konfigurationsinformationen zu einem Plugin Body: String - Name des Plugins |
 
 ## Verwendet in DTOs
 
-* [PluginGeneralInfoList](../../dtos/PluginGeneralInfoList/index.md) – Feld `pluginInfos`
+* [PluginGeneralInfoList](../PluginGeneralInfoList/index.md) – Feld `pluginInfos`
 
 ## Verwendet in der Plugin-API
 

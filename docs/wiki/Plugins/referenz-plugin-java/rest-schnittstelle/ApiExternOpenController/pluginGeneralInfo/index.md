@@ -30,7 +30,7 @@ HTTP-Antwort mit den allgemeinen Informationen des angefragten Plugins
 
 ## Ablauf im Service
 
-* Delegiert an [`POST /open/generalinfo`](../../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) ([`ApiController.pluginGeneralInfo`](../../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md)).
+* Delegiert an [`POST /open/generalinfo`](../../ApiController/pluginGeneralInfo/index.md) ([`ApiController.pluginGeneralInfo`](../../ApiController/pluginGeneralInfo/index.md)).
 * Der Request-Body ist der Plugin-Typ als reiner String (kein JSON-Objekt).
 
 ## Fehlerfälle
@@ -39,7 +39,7 @@ HTTP-Antwort mit den allgemeinen Informationen des angefragten Plugins
 
 ## Siehe auch
 
-* [`POST /open/generalinfo`](../../../rest-schnittstelle/ApiController/pluginGeneralInfo/index.md) – Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin
+* [`POST /open/generalinfo`](../../ApiController/pluginGeneralInfo/index.md) – Liefert die allgemeinen Konfigurationsinformationen zu einem Plugin
 
 
 [ApiExternOpenController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

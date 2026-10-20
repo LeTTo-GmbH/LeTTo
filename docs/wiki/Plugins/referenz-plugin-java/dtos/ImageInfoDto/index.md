@@ -33,13 +33,13 @@ Information of an Image which is stored in the Image-Service or returned from ot
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Response über [`ImageBase64Dto.imageInfoDto`](../../dtos/ImageBase64Dto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
-| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Response über [`ImageUrlDto.imageInfoDto`](../../dtos/ImageUrlDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
+| [`POST /open/image`](../../rest-schnittstelle/ApiController/getImage/index.md) | Response über [`ImageBase64Dto.imageInfoDto`](../ImageBase64Dto/index.md) | Liefert ein Base64 codiertes Bild mit den angegebenen Parametern |
+| [`POST /open/imageurl`](../../rest-schnittstelle/ApiController/getImageUrl/index.md) | Response über [`ImageUrlDto.imageInfoDto`](../ImageUrlDto/index.md) | Liefert eine öffentliche URL auf das gerenderte Bild |
 
 ## Verwendet in DTOs
 
-* [ImageBase64Dto](../../dtos/ImageBase64Dto/index.md) – Feld `imageInfoDto`
-* [ImageUrlDto](../../dtos/ImageUrlDto/index.md) – Feld `imageInfoDto`
+* [ImageBase64Dto](../ImageBase64Dto/index.md) – Feld `imageInfoDto`
+* [ImageUrlDto](../ImageUrlDto/index.md) – Feld `imageInfoDto`
 
 ## Verwendet in der Plugin-API
 

@@ -12,7 +12,7 @@ ScoreInfoDto für die score-Methode von Plugins
 
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
-| `schuelerErgebnis` | [CalcErgebnisDto](../../dtos/CalcErgebnisDto/index.md) |  | Eingabe des Schülers geparst als [CalcErgebnisDto](../../dtos/CalcErgebnisDto/index.md) |
+| `schuelerErgebnis` | [CalcErgebnisDto](../CalcErgebnisDto/index.md) |  | Eingabe des Schülers geparst als [CalcErgebnisDto](../CalcErgebnisDto/index.md) |
 | `zielEinheit` | String |  | ZielEinheit der Korrektur als String |
 | `punkteIst` | double |  | Punkte IST von der Korrektur |
 | `punkteSoll` | double |  | Punkte SOLL erreichbar |
@@ -32,7 +32,7 @@ in keinem DTO als Feldtyp verwendet
 
 ## Verwendet in der Plugin-API
 
-* [`score`](../../plugin-api/index.md): `PluginScoreInfoDto score(`[`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../../dtos/PluginAnswerDto/index.md) `answerDto, double grade)`
+* [`score`](../../plugin-api/index.md): `PluginScoreInfoDto score(`[`PluginDto`](../PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../VarHashDto/index.md) `varsQuestion,` [`PluginAnswerDto`](../PluginAnswerDto/index.md) `answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

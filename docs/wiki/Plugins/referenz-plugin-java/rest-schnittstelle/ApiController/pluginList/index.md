@@ -31,8 +31,8 @@ liefert eine Liste aller Plugins (Pluginnamen) , welche mit diesem Service verwa
 
 ## Siehe auch
 
-* [`GET /<endpoint>/api/open/pluginlist`](../../../rest-schnittstelle/ApiExternOpenController/pluginList/index.md) – liefert eine Liste aller Plugins (Pluginnamen) , welche mit diesem Service verwaltet werden
-* [`GET /open/generalinfolist`](../../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
+* [`GET /<endpoint>/api/open/pluginlist`](../../ApiExternOpenController/pluginList/index.md) – liefert eine Liste aller Plugins (Pluginnamen) , welche mit diesem Service verwaltet werden
+* [`GET /open/generalinfolist`](../pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

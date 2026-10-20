@@ -23,7 +23,7 @@ HTTP-Antwort mit den Namen der Plugin-Typen
 
 ## Ablauf im Service
 
-* Delegiert an [`GET /open/pluginlist`](../../../rest-schnittstelle/ApiController/pluginList/index.md) ([`ApiController.pluginList`](../../../rest-schnittstelle/ApiController/pluginList/index.md)).
+* Delegiert an [`GET /open/pluginlist`](../../ApiController/pluginList/index.md) ([`ApiController.pluginList`](../../ApiController/pluginList/index.md)).
 
 ## Fehlerfälle
 
@@ -31,7 +31,7 @@ HTTP-Antwort mit den Namen der Plugin-Typen
 
 ## Siehe auch
 
-* [`GET /open/pluginlist`](../../../rest-schnittstelle/ApiController/pluginList/index.md) – Liefert eine Liste aller Plugins (Pluginnamen) , welche mit diesem Service verwaltet werden
+* [`GET /open/pluginlist`](../../ApiController/pluginList/index.md) – Liefert eine Liste aller Plugins (Pluginnamen) , welche mit diesem Service verwaltet werden
 
 
 [ApiExternOpenController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

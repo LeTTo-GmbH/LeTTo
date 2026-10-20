@@ -20,4 +20,4 @@
 
 ![Administration](icon-administration.png) **Administration** ist für Schul-/Organisationsadministratoren vorgesehen. Die vollständige Beschreibung befindet sich in der **[ADMIN-Dokumentation](../admin/index.md)**.
 
-![Setup-Service](icon-setup-service.png) **Setup-Service** ist für **globale Administratoren** vorgesehen. Hinweise zu Installation, Serverkonfiguration, Updates und Setup finden Sie unter **[Setup-Service](../Setup-Service/index.md)**.
+![Setup-Service](icon-setup-service.png) **Setup-Service** ist für **globale Administratoren** vorgesehen. Hinweise zu Installation, Serverkonfiguration, Updates und Setup finden Sie unter **[Setup-Service](../Administration/Setup-Service/index.md)**.

@@ -32,7 +32,7 @@ HTTP-Antwort mit der Erreichbarkeitsmeldung
 
 ## Siehe auch
 
-* [`GET /<endpoint>/open/ping`](../../../rest-schnittstelle/InfoController/pingopen/index.md) – Bestätigt die Erreichbarkeit des öffentlichen Endpunkts
+* [`GET /<endpoint>/open/ping`](../pingopen/index.md) – Bestätigt die Erreichbarkeit des öffentlichen Endpunkts
 
 
 [InfoController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

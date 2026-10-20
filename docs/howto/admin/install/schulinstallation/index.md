@@ -2,7 +2,7 @@
 * melden sie sich am Setup-Service (https://dns-name-des-servers/config) als admin an.
 * Wählen sie den Button ![img_1.png](img_1.png) aus dem unterern Bereich des Setup-Services.
 * Im folgenden Dialog muss die Schule konfiguriert werden.<br> 
-  Hierbei kann auch eine bestehende Datenbank beim Anlegen der Schule import werden (siehe [Schule migrieren](./schulemigrieren.md))
+  Hierbei kann auch eine bestehende Datenbank beim Anlegen der Schule import werden (siehe [Schule migrieren](schulemigrieren.md))
   * Im ersten Schritt muss ein Schulkürzel für die Schule definiert werden 
     * kein Umlaute
     * nur Kleinbuchstaben

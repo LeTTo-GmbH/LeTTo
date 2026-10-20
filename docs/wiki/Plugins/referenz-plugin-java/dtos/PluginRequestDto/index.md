@@ -16,8 +16,8 @@ Anfragedaten für die Auswahl eines Plugins anhand von Typ, Name und Konfigurati
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
 | `params` | String | `""` | Parameter für die Antworterzeugung |
-| `q` | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
-| `pluginMaximaCalcMode` | [PluginMaximaCalcModeDto](../../dtos/PluginMaximaCalcModeDto/index.md) |  | Art der Berechnung |
+| `q` | [PluginQuestionDto](../PluginQuestionDto/index.md) |  | Frage wo das Plugin eingebettet ist |
+| `pluginMaximaCalcMode` | [PluginMaximaCalcModeDto](../PluginMaximaCalcModeDto/index.md) |  | Art der Berechnung |
 
 ## Verwendet in Endpunkten
 

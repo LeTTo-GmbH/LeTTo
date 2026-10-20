@@ -64,7 +64,7 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/image`](../../../rest-schnittstelle/ApiController/getImage/index.md) – Liefert ein Base64 codiertes Bild mit den angegebenen Parametern
+* [`POST /open/image`](../getImage/index.md) – Liefert ein Base64 codiertes Bild mit den angegebenen Parametern
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

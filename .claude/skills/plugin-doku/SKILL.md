@@ -200,7 +200,7 @@ Ziel: Von jeder Erwähnung eines Endpunkts, DTOs oder Enums kommt man mit einem 
 4. **Verlinkung** (nur diese Änderungen außerhalb des Zielordners):
    - `docs/wiki/Plugins/index.md`, Abschnitt „Plugin-Entwicklung": verweist auf `../Plugins/referenz-plugin-java/index.md` und die Unterseiten.
      Fehlende Links ergänzen; Links auf Seiten, die es nicht mehr gibt, anpassen. Andere Inhalte des Abschnitts nicht ohne Rückfrage löschen.
-   - `docs/wiki/index.md`: Eintrag „Referenz-Plugin (Java)" alphabetisch passend einfügen, falls noch nicht vorhanden.
+   - `docs/wiki/index.md`: Eintrag „Referenz-Plugin (Java)" im Abschnitt „Alle Seiten (A–Z)" alphabetisch passend einfügen, falls noch nicht vorhanden.
      Die Detailseiten werden dort **nicht** einzeln eingetragen.
 5. **Prüfen:**
    - Alle relativen Links im Zielordner zeigen auf existierende Dateien.

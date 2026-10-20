@@ -19,7 +19,7 @@
 | `endpoints` | String | `""` | Information über die Endpoints des Services |
 | `jarfilename` | String | `""` | Jardatei welche gestartet wurde |
 | `starttime` | String | `""` | Datum und Uhrzeit des Service-Starts |
-| `adminInfoDto` | [AdminInfoDto](../../dtos/AdminInfoDto/index.md) | `null` | Administrative Information über das Service |
+| `adminInfoDto` | [AdminInfoDto](../AdminInfoDto/index.md) | `null` | Administrative Information über das Service |
 | `jarLibs` | List&lt;String&gt; | `new ArrayList<>()` | Liste aller Library-jars welche in diesem Service verwendet werden |
 
 ## Hinweise

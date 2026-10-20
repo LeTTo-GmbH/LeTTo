@@ -12,7 +12,7 @@ Informationen über einen Dataset welcher vom Plugin angeforder werden kann
 
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
-| `datasets` | List&lt;[PluginDatasetDto](../../dtos/PluginDatasetDto/index.md)&gt; |  | Datensätze der Liste. |
+| `datasets` | List&lt;[PluginDatasetDto](../PluginDatasetDto/index.md)&gt; |  | Datensätze der Liste. |
 
 ## Verwendet in Endpunkten
 

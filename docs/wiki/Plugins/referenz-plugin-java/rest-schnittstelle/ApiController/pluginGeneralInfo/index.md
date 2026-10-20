@@ -36,8 +36,8 @@ liefert die allgemeinen Konfigurationsinformationen zu einem Plugin
 
 ## Siehe auch
 
-* [`POST /<endpoint>/api/open/generalinfo`](../../../rest-schnittstelle/ApiExternOpenController/pluginGeneralInfo/index.md) – liefert die allgemeinen Konfigurationsinformationen zu einem Plugin Body: String - Name des Plugins
-* [`GET /open/generalinfolist`](../../../rest-schnittstelle/ApiController/pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
+* [`POST /<endpoint>/api/open/generalinfo`](../../ApiExternOpenController/pluginGeneralInfo/index.md) – liefert die allgemeinen Konfigurationsinformationen zu einem Plugin Body: String - Name des Plugins
+* [`GET /open/generalinfolist`](../pluginGeneralInfoList/index.md) – Liefert eine Liste aller globalen Informationen über alle Plugins des verwalteten Services
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

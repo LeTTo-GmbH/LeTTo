@@ -31,7 +31,7 @@ HTTP-Antwort mit der Service-Version
 
 ## Siehe auch
 
-* [`GET /info`](../../../rest-schnittstelle/InfoController/info/index.md) – Liefert Informationen über den laufenden Plugin-Service
+* [`GET /info`](../info/index.md) – Liefert Informationen über den laufenden Plugin-Service
 
 
 [InfoController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

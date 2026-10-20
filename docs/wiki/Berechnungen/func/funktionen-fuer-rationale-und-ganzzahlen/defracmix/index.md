@@ -10,7 +10,7 @@
 
 zerlegt eine rationale Zahl in einen gemischten Bruch aus ganzzahligem Summanden, Zähler und Nenner als Menge Die erhaltene Menge kann mit dem Format-Modfier frac als gemischter Bruch dargestellt werden (siehe Zahlendarstellung)
 
-zerlegt eine rationale Zahl in einen gemischten Bruch aus ganzzahligem Summanden, Zähler und Nenner als Menge<br>Die erhaltene Menge kann mit dem Format-Modfier **frac** als gemischter Bruch dargestellt werden (siehe [Zahlendarstellung](../../../../Zahlendarstellung/index.md))
+zerlegt eine rationale Zahl in einen gemischten Bruch aus ganzzahligem Summanden, Zähler und Nenner als Menge<br>Die erhaltene Menge kann mit dem Format-Modfier **frac** als gemischter Bruch dargestellt werden (siehe [Zahlendarstellung](../../../Zahlendarstellung/index.md))
 
 ## Syntax
 

@@ -15,7 +15,7 @@ Anfragedaten für die LaTeX-Ausgabe eines Plugins.
 | `typ` | String | `""` | Typ des Plugins |
 | `name` | String | `""` | Name des Plugins in der Frage |
 | `config` | String | `""` | Konfigurationsstring des Plugins |
-| `pluginDto` | [PluginDto](../../dtos/PluginDto/index.md) |  | Das [PluginDto](../../dtos/PluginDto/index.md) welches am Webserver an das JavaScript des Plugins zum Rendern gesandt wird |
+| `pluginDto` | [PluginDto](../PluginDto/index.md) |  | Das [PluginDto](../PluginDto/index.md) welches am Webserver an das JavaScript des Plugins zum Rendern gesandt wird |
 | `answer` | String |  | Inhalt des Antwortfeldes welches der Schüler eingegeben hat |
 | `mode` | String |  | Druckmode, vom LeTTo-Server als `TexPrintMode.toString()` übergeben, z.B. `PRINTFRAGE;datasets=0,1;recurse=false;newPage=false;line=false`. Der erste Teil ist der Druckmodus: PRINTFRAGE, PRINTERGEBNIS, PRINTFORMEL, PRINTINFO, PRINTHTML, PRINTANTWORT, PRINTANTWORTERGEBNIS oder PRINTEINSICHTNAHME (z.B. `mode.split(";")[0]`); danach folgen die zu druckenden Datensätze, rekursiver Druck, neue Seite und Linie nach jeder Frage. Ältere LeTTo-Server übergeben nur einen nicht auswertbaren Objekt-Bezeichner (z.B. `at.letto.tools.tex.TexPrintMode@6d06d69c`). |
 

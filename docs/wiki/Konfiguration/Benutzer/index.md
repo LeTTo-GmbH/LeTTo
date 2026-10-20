@@ -10,6 +10,8 @@ Die Benutzerverwaltung dient zum Suchen, Auswählen und – abhängig von der ei
 
 Die Suche kann über **Login-Name**, **Active-Directory-Login**, **Nachname**, **Vorname**, **Klasse**, optional **Schuljahr** sowie eine **Eingrenzung/Rolle** erfolgen. **Suchen** führt die Abfrage aus. **Neuer Benutzer** öffnet den Dialog zum Anlegen eines Benutzers.
 
+**Wichtig:** Das Schuljahr ist bereits mit dem aktuellen Schuljahr vorausgefüllt. Um Benutzer zu finden, die nicht dem aktuellen Schuljahr zugeordnet sind, das Schuljahr auf **--Bitte Schuljahr auswählen--** stellen.
+
 ## Ergebnisliste und Auswahl
 
 Jede Zeile besitzt eine Checkbox. Über die Checkbox im Tabellenkopf können alle sichtbaren Treffer ausgewählt werden. Mehrere ausgewählte Benutzer können gemeinsam bearbeitet werden.

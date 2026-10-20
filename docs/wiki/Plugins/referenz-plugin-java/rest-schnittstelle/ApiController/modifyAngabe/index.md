@@ -61,7 +61,7 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/modifyangabetextkomplett`](../../../rest-schnittstelle/ApiController/modifyAngabeTextkomplett/index.md) – verändert den kompletten Angabetext der Frage
+* [`POST /open/modifyangabetextkomplett`](../modifyAngabeTextkomplett/index.md) – verändert den kompletten Angabetext der Frage
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

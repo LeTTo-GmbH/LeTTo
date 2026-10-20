@@ -15,7 +15,7 @@ Anfragedaten für die Übermittlung von Konfigurationsdaten.
 | `typ` | String |  | Typ des Plugins |
 | `configurationID` | String | `""` | eindeutige ID welche für die Verbindung zwischen Edit-Service, Browser und Plugin-Konfiguration verwendet wird |
 | `configuration` | String |  | aktueller Konfigurations-String des Plugins |
-| `questionDto` | [PluginQuestionDto](../../dtos/PluginQuestionDto/index.md) |  | Question-DTO mit Varhashes |
+| `questionDto` | [PluginQuestionDto](../PluginQuestionDto/index.md) |  | Question-DTO mit Varhashes |
 
 ## Verwendet in Endpunkten
 

@@ -63,8 +63,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/generatedatasets`](../../../rest-schnittstelle/ApiController/generateDatasets/index.md) – Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten
-* [`POST /open/modifyangabe`](../../../rest-schnittstelle/ApiController/modifyAngabe/index.md) – verändert einen Angabetext, der in der Angabe in PI Tags eingeschlossen wurde Die Funktion wird vor dem Darstellen der Frage ausgeführt
+* [`POST /open/generatedatasets`](../generateDatasets/index.md) – Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten
+* [`POST /open/modifyangabe`](../modifyAngabe/index.md) – verändert einen Angabetext, der in der Angabe in PI Tags eingeschlossen wurde Die Funktion wird vor dem Darstellen der Frage ausgeführt
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

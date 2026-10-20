@@ -36,7 +36,7 @@ Fehlermeldung wenn etwas nicht korrekt funktioniert hat
 
 * Verwendet `PluginConfiguration`: `setConfigurationData`, `getUriGetPluginDto`.
 * Ruft `setConfigurationData` des Plugins auf und ergänzt im Ergebnis `configurationID`, `typ`, `name`, `config`, `tagName` sowie ein `pluginDto` (über `loadPluginDto` mit leeren Parametern).
-* Der Controller setzt `pluginDtoUri` auf den externen Endpunkt [`/<endpoint>/api/open/reloadplugindto`](../../../rest-schnittstelle/ApiExternOpenController/reloadPluginDto/index.md) und `pluginDtoToken` auf einen Leerstring.
+* Der Controller setzt `pluginDtoUri` auf den externen Endpunkt [`/<endpoint>/api/open/reloadplugindto`](../../ApiExternOpenController/reloadPluginDto/index.md) und `pluginDtoToken` auf einen Leerstring.
 * Ohne gültige Sitzung enthält das Ergebnis `errorMsg = "cannot find connection or plugin"`.
 
 ## Fehlerfälle
@@ -60,9 +60,9 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/configurationinfo`](../../../rest-schnittstelle/ApiController/configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
-* [`POST /<endpoint>/api/open/reloadplugindto`](../../../rest-schnittstelle/ApiExternOpenController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
-* [`POST /open/getconfiguration`](../../../rest-schnittstelle/ApiController/getConfiguration/index.md) – Liefert die aktuelle Konfiguration eines Plugins welches sich gerade in einem CONFIGMODE_URL Konfigurationsdialog befindet
+* [`POST /open/configurationinfo`](../configurationInfo/index.md) – Liefert die Informationen welche notwendig sind um einen Konfigurationsdialog zu starten Ist die configurationID gesetzt wird eine Konfiguration gestartet und damit auch die restlichen Endpoints für die Konfiguration aktiviert
+* [`POST /<endpoint>/api/open/reloadplugindto`](../../ApiExternOpenController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
+* [`POST /open/getconfiguration`](../getConfiguration/index.md) – Liefert die aktuelle Konfiguration eines Plugins welches sich gerade in einem CONFIGMODE_URL Konfigurationsdialog befindet
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

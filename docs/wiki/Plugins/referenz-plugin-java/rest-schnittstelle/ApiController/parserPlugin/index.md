@@ -63,8 +63,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/parserplugineinheit`](../../../rest-schnittstelle/ApiController/parserPluginEinheit/index.md) – Bestimmt die Recheneinheit, welche bei der Methode parserPlugin als Ergebnis herauskommt wenn die Parameter die Einheiten wie in der Liste p haben
-* [`POST /open/maxima`](../../../rest-schnittstelle/ApiController/getMaxima/index.md) – Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins
+* [`POST /open/parserplugineinheit`](../parserPluginEinheit/index.md) – Bestimmt die Recheneinheit, welche bei der Methode parserPlugin als Ergebnis herauskommt wenn die Parameter die Einheiten wie in der Liste p haben
+* [`POST /open/maxima`](../getMaxima/index.md) – Liefert einen Maxima-Berechnungsstring für die Berechnung des Plugins
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

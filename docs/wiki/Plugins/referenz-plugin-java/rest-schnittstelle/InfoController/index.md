@@ -24,7 +24,7 @@ Swagger: Erreichbarkeit, Version und Informationen über den laufenden Plugin-Se
 
 ## Hinweise
 
-* Der Controller hat keinen gemeinsamen Basispfad; [`/ping`](../../rest-schnittstelle/InfoController/ping/index.md), [`/info`](../../rest-schnittstelle/InfoController/info/index.md) und [`/version`](../../rest-schnittstelle/InfoController/version/index.md) sind nur im Docker-Netzwerk erreichbar.
+* Der Controller hat keinen gemeinsamen Basispfad; [`/ping`](ping/index.md), [`/info`](info/index.md) und [`/version`](version/index.md) sind nur im Docker-Netzwerk erreichbar.
 
 
 [REST-Schnittstelle](../index.md) · [Referenz-Plugin (Java)](../../index.md)

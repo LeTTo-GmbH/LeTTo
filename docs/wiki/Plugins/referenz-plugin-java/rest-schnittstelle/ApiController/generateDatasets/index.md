@@ -63,8 +63,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/getvars`](../../../rest-schnittstelle/ApiController/getVars/index.md) – Liefert eine Liste aller Variablen welche als Dataset benötigt werden
-* [`POST /open/angabe`](../../../rest-schnittstelle/ApiController/getAngabe/index.md) – Liefert einen Angabestring für die Text-Angabe
+* [`POST /open/getvars`](../getVars/index.md) – Liefert eine Liste aller Variablen welche als Dataset benötigt werden
+* [`POST /open/angabe`](../getAngabe/index.md) – Liefert einen Angabestring für die Text-Angabe
 
 
 [ApiController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

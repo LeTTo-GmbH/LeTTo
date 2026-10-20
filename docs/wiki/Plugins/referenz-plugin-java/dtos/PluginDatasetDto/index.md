@@ -21,11 +21,11 @@ Informationen über einen Dataset welcher vom Plugin angeforder werden kann
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`POST /open/generatedatasets`](../../rest-schnittstelle/ApiController/generateDatasets/index.md) | Response über [`PluginDatasetListDto.datasets`](../../dtos/PluginDatasetListDto/index.md) | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
+| [`POST /open/generatedatasets`](../../rest-schnittstelle/ApiController/generateDatasets/index.md) | Response über [`PluginDatasetListDto.datasets`](../PluginDatasetListDto/index.md) | Liefert alle Datensätze, welche für das Plugin in der Frage vorhanden sein sollten |
 
 ## Verwendet in DTOs
 
-* [PluginDatasetListDto](../../dtos/PluginDatasetListDto/index.md) – Feld `datasets`
+* [PluginDatasetListDto](../PluginDatasetListDto/index.md) – Feld `datasets`
 
 ## Verwendet in der Plugin-API
 

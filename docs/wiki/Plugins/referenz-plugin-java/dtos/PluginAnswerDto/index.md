@@ -12,7 +12,7 @@ korrekte Antwort und Informationen für den Scorer des Plugins
 
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
-| `ergebnis` | [CalcErgebnisDto](../../dtos/CalcErgebnisDto/index.md) |  | korrektes Ergebnis |
+| `ergebnis` | [CalcErgebnisDto](../CalcErgebnisDto/index.md) |  | korrektes Ergebnis |
 | `answerText` | String |  | korrekte Antwort aus der Frage als String |
 | `ze` | String |  | Zieleinheit für die Korrektur |
 
@@ -20,18 +20,18 @@ korrekte Antwort und Informationen für den Scorer des Plugins
 
 | Endpunkt | Rolle | Beschreibung |
 |---|---|---|
-| [`POST /open/score`](../../rest-schnittstelle/ApiController/score/index.md) | Request über [`PluginScoreRequestDto.answerDto`](../../dtos/PluginScoreRequestDto/index.md) | Prüft die Eingabe eines Schülers |
-| [`POST /open/renderpluginresult`](../../rest-schnittstelle/ApiController/renderPluginResult/index.md) | Request über [`PluginRenderResultRequestDto.answerDto`](../../dtos/PluginRenderResultRequestDto/index.md) | Rendert das Plugin inklusive der Schülereingabe und korrekter Lösung Es wird dabei entweder direkt ein HTML-Code oder LaTeX-Code erzeugt |
+| [`POST /open/score`](../../rest-schnittstelle/ApiController/score/index.md) | Request über [`PluginScoreRequestDto.answerDto`](../PluginScoreRequestDto/index.md) | Prüft die Eingabe eines Schülers |
+| [`POST /open/renderpluginresult`](../../rest-schnittstelle/ApiController/renderPluginResult/index.md) | Request über [`PluginRenderResultRequestDto.answerDto`](../PluginRenderResultRequestDto/index.md) | Rendert das Plugin inklusive der Schülereingabe und korrekter Lösung Es wird dabei entweder direkt ein HTML-Code oder LaTeX-Code erzeugt |
 
 ## Verwendet in DTOs
 
-* [PluginRenderResultRequestDto](../../dtos/PluginRenderResultRequestDto/index.md) – Feld `answerDto`
-* [PluginScoreRequestDto](../../dtos/PluginScoreRequestDto/index.md) – Feld `answerDto`
+* [PluginRenderResultRequestDto](../PluginRenderResultRequestDto/index.md) – Feld `answerDto`
+* [PluginScoreRequestDto](../PluginScoreRequestDto/index.md) – Feld `answerDto`
 
 ## Verwendet in der Plugin-API
 
-* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../../dtos/PluginScoreInfoDto/index.md) `score(`[`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion, PluginAnswerDto answerDto, double grade)`
-* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../../dtos/PluginRenderDto/index.md) `renderPluginResult(boolean tex,` [`PluginDto`](../../dtos/PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../../dtos/ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../../dtos/VarHashDto/index.md) `varsQuestion, PluginAnswerDto answerDto, double grade)`
+* [`score`](../../plugin-api/index.md): [`PluginScoreInfoDto`](../PluginScoreInfoDto/index.md) `score(`[`PluginDto`](../PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../VarHashDto/index.md) `varsQuestion, PluginAnswerDto answerDto, double grade)`
+* [`renderPluginResult`](../../plugin-api/index.md): [`PluginRenderDto`](../PluginRenderDto/index.md) `renderPluginResult(boolean tex,` [`PluginDto`](../PluginDto/index.md) `pluginDto, String antwort,` [`ToleranzDto`](../ToleranzDto/index.md) `toleranz,` [`VarHashDto`](../VarHashDto/index.md) `varsQuestion, PluginAnswerDto answerDto, double grade)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

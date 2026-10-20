@@ -20,8 +20,8 @@ Dto welches vom Plugin über Letto zum JavaScript der Konfiguration des Plugins 
 | `height` | int | `500` | Höhe des Plugin-Bereiches in Pixel |
 | `configurationID` | String |  | Konfigurations-ID |
 | `errorMsg` | String |  | Fehlermeldung wenn das DTO nicht korrekt erzeugt wurde |
-| `pluginDto` | [PluginDto](../../dtos/PluginDto/index.md) |  | [PluginDto](../../dtos/PluginDto/index.md) für die Initialisierung des Plugins |
-| `pluginDtoUri` | String |  | Uri am Question-Service für das [PluginDto](../../dtos/PluginDto/index.md) |
+| `pluginDto` | [PluginDto](../PluginDto/index.md) |  | [PluginDto](../PluginDto/index.md) für die Initialisierung des Plugins |
+| `pluginDtoUri` | String |  | Uri am Question-Service für das [PluginDto](../PluginDto/index.md) |
 | `pluginDtoToken` | String |  | Token welcher an der pluginDtoUri benötigt wird |
 | `params` | HashMap&lt;String,String&gt; | `new HashMap<>()` | Parameter welche vom Plugin an JavaScript weitergegeben werden sollen, wird von LeTTo nicht verwendet, kann aber gelesen und verändert werden |
 | `jsonData` | String |  | JSON-String welcher vom Plugin an JavaScript weitergegeben werden soll, wird von LeTTo nicht verwendet |
@@ -38,11 +38,11 @@ Dto welches vom Plugin über Letto zum JavaScript der Konfiguration des Plugins 
 
 ## Verwendet in DTOs
 
-* [PluginConfigurationConnection](../../dtos/PluginConfigurationConnection/index.md) – Feld `pluginConfigDto`
+* [PluginConfigurationConnection](../PluginConfigurationConnection/index.md) – Feld `pluginConfigDto`
 
 ## Verwendet in der Plugin-API
 
-* [`setConfigurationData`](../../plugin-api/index.md): `PluginConfigDto setConfigurationData(String configuration,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `questionDto)`
+* [`setConfigurationData`](../../plugin-api/index.md): `PluginConfigDto setConfigurationData(String configuration,` [`PluginQuestionDto`](../PluginQuestionDto/index.md) `questionDto)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

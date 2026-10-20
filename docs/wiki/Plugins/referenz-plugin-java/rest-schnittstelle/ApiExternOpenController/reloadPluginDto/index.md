@@ -37,7 +37,7 @@ Typ: [PluginDto](../../../dtos/PluginDto/index.md)
 
 ## Ablauf im Service
 
-* Delegiert an [`POST /open/reloadplugindto`](../../../rest-schnittstelle/ApiController/reloadPluginDto/index.md) ([`ApiController.reloadPluginDto`](../../../rest-schnittstelle/ApiController/reloadPluginDto/index.md)).
+* Delegiert an [`POST /open/reloadplugindto`](../../ApiController/reloadPluginDto/index.md) ([`ApiController.reloadPluginDto`](../../ApiController/reloadPluginDto/index.md)).
 
 ## Fehlerfälle
 
@@ -64,8 +64,8 @@ JSON-Gerüst aus den Feldern des DTOs, Werte sind Platzhalter:
 
 ## Siehe auch
 
-* [`POST /open/reloadplugindto`](../../../rest-schnittstelle/ApiController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
-* [`POST /open/setconfigurationdata`](../../../rest-schnittstelle/ApiController/setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
+* [`POST /open/reloadplugindto`](../../ApiController/reloadPluginDto/index.md) – Rendern des Plugin-Images, Aufbau eines DTOs zur späteren JavaScript - Bearbeitung
+* [`POST /open/setconfigurationdata`](../../ApiController/setConfigurationData/index.md) – Sendet alle notwendigen (im ConfigurationInfo) angeforderten Daten im Mode CONFIGMODE_URL an die Plugin-Konfiguration
 
 
 [ApiExternOpenController](../index.md) · [REST-Schnittstelle](../../index.md) · [Referenz-Plugin (Java)](../../../index.md)

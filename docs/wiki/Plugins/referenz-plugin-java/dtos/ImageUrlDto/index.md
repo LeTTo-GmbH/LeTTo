@@ -13,7 +13,7 @@ image with image-information of an image-file at an open Url
 | Feld | Typ | Standard | Bedeutung |
 |---|---|---|---|
 | `imageUrl` | String | `""` | image Url |
-| `imageInfoDto` | [ImageInfoDto](../../dtos/ImageInfoDto/index.md) | `new` [`ImageInfoDto`](../../dtos/ImageInfoDto/index.md)`()` | image information |
+| `imageInfoDto` | [ImageInfoDto](../ImageInfoDto/index.md) | `new` [`ImageInfoDto`](../ImageInfoDto/index.md)`()` | image information |
 | `error` | String | `""` | error message if the image cannot be created |
 
 ## Verwendet in Endpunkten
@@ -28,7 +28,7 @@ in keinem DTO als Feldtyp verwendet
 
 ## Verwendet in der Plugin-API
 
-* [`getImageUrl`](../../plugin-api/index.md): `ImageUrlDto getImageUrl(String params,` [`PluginQuestionDto`](../../dtos/PluginQuestionDto/index.md) `q)`
+* [`getImageUrl`](../../plugin-api/index.md): `ImageUrlDto getImageUrl(String params,` [`PluginQuestionDto`](../PluginQuestionDto/index.md) `q)`
 
 
 [DTOs](../index.md) · [Referenz-Plugin (Java)](../../index.md)

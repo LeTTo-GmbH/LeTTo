@@ -3,10 +3,10 @@
 Das `.lto`-Format ist das XML-Austauschformat von LeTTo für Fragen und Fragesammlungen. Es lehnt sich an
 Moodle-XML an, enthält aber alle LeTTo-spezifischen Daten (Teilfragen, Datensätze, Maxima-Berechnungen,
 Einheiten, Plugins, eingebettete Bilder). Exportiert und importiert werden `.lto`-Dateien vom
-[Export-Service](../wiki/Export-Service/index.md).
+[Export-Service](../wiki/Administration/Export-Service/index.md).
 
 * **Export:** Fragesammlung → Rechtsklick auf einen Ordner → „Kategorie exportieren“
-  (alle Fragen und Unterordner, siehe [Ordnerverwaltung](../wiki/Ordnerverwaltung/index.md))
+  (alle Fragen und Unterordner, siehe [Ordnerverwaltung](../wiki/Fragen/Ordnerverwaltung/index.md))
 * **Import:** Rechtsklick auf den Zielordner → „Daten importieren“ → `.lto`-Datei wählen
 
 Diese Seite beschreibt das Format Version 1 (`<letto mode="101">`) vollständig. Sie richtet sich an alle,
@@ -108,10 +108,10 @@ maßgeblich ist das Element `questionType`. Die Einzelfelder in Exportreihenfolg
 | shuffleAnswers | Enum [Antworten mischen](#antworten-mischen-shuffleanswers) | 1 | |
 | answerNumbering | Text (CDATA) | `abc` | Nummerierung der Antworten |
 | unitGradingType | Ganzzahl | 2 | 0 = nur Zahlenwert, 1 = Einheit wird umgerechnet aber nicht bewertet, 2 = Einheit wird bewertet |
-| unitPenalty | Zahl | 0.1 | Abzug bei falscher Einheit (0..1), siehe [Einheit](../wiki/Einheit/index.md) |
+| unitPenalty | Zahl | 0.1 | Abzug bei falscher Einheit (0..1), siehe [Einheit](../wiki/Berechnungen/Einheit/index.md) |
 | showUnits | Ganzzahl | 0 | 0 = Texteingabe, 1 = Mehrfachauswahl, 2 = Dropdown, 3 = Anzeige am Webserver |
 | unitsLeft | Ganzzahl | 0 | 1 = Einheit links vom Wert |
-| maxima | Text (CDATA) | leer | Maxima-Feld der Frage, siehe [Maxima-Feld](../wiki/BeispielsammlungEditieren/index.md#maxima-feld) |
+| maxima | Text (CDATA) | leer | Maxima-Feld der Frage, siehe [Maxima-Feld](../wiki/Fragen/BeispielsammlungEditieren/index.md#maxima-feld) |
 | maximaAngabe | Text (CDATA) | | Automatisch erzeugtes Angabefeld. Wird nur exportiert, wenn kürzer als 10000 Zeichen und ohne Vorberechnung |
 | responseFormat | Text (CDATA) | `editor` | Antwortformat für Freitext |
 | responseFieldLines | Ganzzahl | 10 | Zeilen des Antwortfelds |
@@ -157,7 +157,7 @@ Import ignoriert:
 | Position | art | Bedeutung |
 |---|---|---|
 | 1 | `Questiontext` | Fragetext (Angabe) |
-| 2 | `general feedback` | Allgemeines Feedback, siehe [Feedback](../wiki/Feedback/index.md) |
+| 2 | `general feedback` | Allgemeines Feedback, siehe [Feedback](../wiki/Fragen/Feedback/index.md) |
 | 3 | `correct feedback` | Feedback bei richtiger Antwort |
 | 4 | `partially correct feedback` | Feedback bei teilweise richtiger Antwort |
 | 5 | `incorrect feedback` | Feedback bei falscher Antwort |
@@ -167,15 +167,15 @@ Import ignoriert:
 
 LeTTo exportiert immer die ersten sechs Texte. Attribute: `id` (Ganzzahl), `format` (`html` oder leer).
 Der Inhalt `inhalt` ist HTML in CDATA. Die Syntax des Fragetexts ist im
-[Editor für den Angabetext](../wiki/EditorfürdenAngabetext/index.md) beschrieben; die wichtigsten Elemente:
+[Editor für den Angabetext](../wiki/Fragen/EditorfürdenAngabetext/index.md) beschrieben; die wichtigsten Elemente:
 
 | Syntax | Bedeutung |
 |---|---|
 | `[Q0]`, `[Q1]` … | Position der Teilfrage mit diesem Namen (Eingabefeld) |
 | `$…$` | LaTeX-Formel |
-| `{x}`, `{x,=mA}`, `{x,3}` | Wert des Datensatzes x (mit Einheit, erzwungener Einheit, gültigen Ziffern), siehe [Datensätze](../wiki/Datensätze/index.md) und [Zahlendarstellung](../wiki/Zahlendarstellung/index.md) |
+| `{x}`, `{x,=mA}`, `{x,3}` | Wert des Datensatzes x (mit Einheit, erzwungener Einheit, gültigen Ziffern), siehe [Datensätze](../wiki/Berechnungen/Datensätze/index.md) und [Zahlendarstellung](../wiki/Berechnungen/Zahlendarstellung/index.md) |
 | `{=y}`, `{=x+y}`, `{=y;=mV,3}` | Ergebnis aus dem Maxima-Feld bzw. berechneter Ausdruck |
-| `[IMG0]`, `[LINK0 Text]` | Bild bzw. Download-Link auf die erste angehängte Datei, siehe [Dateien zur Frage](../wiki/DateienzurFrageverwalten/index.md) |
+| `[IMG0]`, `[LINK0 Text]` | Bild bzw. Download-Link auf die erste angehängte Datei, siehe [Dateien zur Frage](../wiki/Fragen/Dialoge/DateienzurFrageverwalten/index.md) |
 | `[PIG Plugin1 "…"]` | Plugin-Grafik, siehe [Plugins](../wiki/Plugins/index.md) |
 
 ### Datei `file`
@@ -221,7 +221,7 @@ Eine Teilfrage ist eine Lücke im Fragetext und wird dort über `[Name]` platzie
 ## Antwort `answer`
 
 Alle Textfelder in CDATA. Die Bedeutung von `text`, `answer` und `maxima` hängt vom Modus der Teilfrage ab
-(siehe [Lösung der Antwort](../wiki/BeispielsammlungEditieren/index.md)):
+(siehe [Lösung der Antwort](../wiki/Fragen/BeispielsammlungEditieren/index.md)):
 
 | Element | Typ | Standard | Bedeutung |
 |---|---|---|---|
@@ -230,12 +230,12 @@ Alle Textfelder in CDATA. Die Bedeutung von `text`, `answer` und `maxima` hängt
 | format | Text (CDATA) | `html` | Format des Antworttexts |
 | text | Text (CDATA) | | Antwort-/Optionstext bzw. Lösung |
 | feedback | Text (CDATA) | leer | Feedback zu dieser Antwort (HTML) |
-| tolerance | Text (CDATA) | `1.0%` | [Toleranz](../wiki/BeispielsammlungEditieren/toleranz/index.md): `1%` relativ, `0.02` relativ, `a0.1` absolut, `0` exakt |
+| tolerance | Text (CDATA) | `1.0%` | [Toleranz](../wiki/Fragen/BeispielsammlungEditieren/toleranz/index.md): `1%` relativ, `0.02` relativ, `a0.1` absolut, `0` exakt |
 | correctAnswerFormat | Ganzzahl | 2 | 1 = Nachkommastellen, 2 = signifikante Stellen |
 | correctAnswerLength | Ganzzahl | 5 | Stellenanzahl |
 | maxima | Text (CDATA) | leer | Formel bzw. Variable des richtigen Ergebnisses |
 | answer | Text (CDATA) | leer | Lösung / Zahlenwert des 1. Datensatzes / Zuordnungspartner |
-| einheit | Text (CDATA) | leer | [Ziel-Einheit](../wiki/ZielEinheit/index.md), z.B. `A`, `=mA`, `?km/h`, `string`, `symbolfull` |
+| einheit | Text (CDATA) | leer | [Ziel-Einheit](../wiki/Berechnungen/ZielEinheit/index.md), z.B. `A`, `=mA`, `?km/h`, `string`, `symbolfull` |
 
 Belegung je Modus (aus LeTTo-Exporten):
 
@@ -249,7 +249,7 @@ Belegung je Modus (aus LeTTo-Exporten):
 
 ## Datensatz `dataset`
 
-Ein Datensatz ist eine Zufallsvariable der Frage, siehe [Datensätze definieren](../wiki/Datensätzedefinieren/index.md).
+Ein Datensatz ist eine Zufallsvariable der Frage, siehe [Datensätze definieren](../wiki/Berechnungen/Datensätzedefinieren/index.md).
 
 | Element | Typ | Bedeutung |
 |---|---|---|
@@ -271,7 +271,7 @@ Ein Datensatz ist eine Zufallsvariable der Frage, siehe [Datensätze definieren]
 ### Fragetyp `questionType`
 
 LeTTo verwendet praktisch nur die Mehrfachberechnungsfrage `22`; die Art jeder Lücke bestimmt der
-[Teilfragen-Modus](#teilfragen-modus-mode). Siehe auch [Fragetypen](../wiki/Fragetypen/index.md).
+[Teilfragen-Modus](#teilfragen-modus-mode). Siehe auch [Fragetypen](../wiki/Fragen/Fragetypen/index.md).
 
 | Wert | Name | Wert | Name |
 |---|---|---|---|
@@ -313,7 +313,7 @@ Der Import akzeptiert auch die Namen; `SHORTANSWER` wird als `TEXT` gelesen.
 ### Bewertungsmodus `schwierigkeit`
 
 0 Normal, 1 Streng, 2 Mild, 3 HundertProz – Bedeutung je Fragetyp siehe
-[Beispielsammlung editieren](../wiki/BeispielsammlungEditieren/index.md).
+[Beispielsammlung editieren](../wiki/Fragen/BeispielsammlungEditieren/index.md).
 
 ## Beispiele
 
@@ -342,7 +342,7 @@ und dem Prüfskript.
 
 Danach genügt eine Anfrage wie „Erstelle 5 LeTTo-Rechenaufgaben zum Ohmschen Gesetz für die 1. Klasse HTL
 als .lto-Datei“. Erzeugte Fragen werden mit dem Kommentarstatus „in Bearbeitung“ importiert und sollten
-in der [Fragen-Vorschau](../wiki/Fragen-Vorschau/index.md) geprüft werden.
+in der [Fragen-Vorschau](../wiki/Fragen/Fragen-Vorschau/index.md) geprüft werden.
 
 ## Bekannte Abweichungen im Code
 
