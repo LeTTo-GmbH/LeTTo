@@ -1,9 +1,10 @@
 # Neuigkeiten
 
 ## Stable - Rev 7044 - Version 1.3 - Oktober 2026
+* [Update von Version 1.2 auf 1.3](../Updaterev70xx/index.md)
 * Hilfe Maxima-Feld
 * Bugfixes
-* Neue Docker-Container-Struktur
+* Neue Docker-Container-Struktur (siehe [Update rev70xx](../Updaterev70xx/index.md))
 * Verwaltungs-Bereich für die LeTTo-App
 * Plugin-Konfiguration Umstellung auf Javascript
 * Pluginverwaltung im Setup-Service
