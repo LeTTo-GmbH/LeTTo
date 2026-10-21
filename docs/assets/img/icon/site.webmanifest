@@ -1,0 +1,12 @@
+{
+  "name": "LeTTo Docs",
+  "short_name": "LeTTo Docs",
+  "icons": [
+    { "src": "/assets/img/icon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/icon/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/img/icon/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "theme_color": "#15181D",
+  "background_color": "#15181D",
+  "display": "standalone"
+}
