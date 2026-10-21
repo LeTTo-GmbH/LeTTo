@@ -1,80 +1,109 @@
 # Setup-Service
-##  siehe auch 
+
+Das Setup-Service ist die Verwaltungsoberfläche eines LeTTo-Servers. Damit werden alle Docker-Container (Datenbanken,
+Proxy, Services, Plugins, Schulen) gestartet, gestoppt und aktualisiert, die zentrale Konfigurationsdatei `.env` und die
+Compose-Dateien bearbeitet, Schulen angelegt, Datensicherungen eingerichtet und der Server überwacht.
+Es ist für **globale Administratoren** des Servers gedacht, nicht für Lehrer oder Schul-Administratoren.
+
+Diese Seite beschreibt Version 1.3. Die frühere Beschreibung (Setup direkt am Host) liegt im
+[Archiv](../Archiv/Setup-Service-alt/index.md).
+
+## Verbindung zum Setup-Service
+
+Das Setup-Service läuft als Docker-Container `letto-setup` am LeTTo-Server. Ein eigenes Setup direkt am Host (ohne
+Docker) gibt es seit Version 1.3 nicht mehr.
+
+| Weg | Adresse | Wann |
+|---|---|---|
+| über den Reverse-Proxy | `https://<server>/config` | Normalfall |
+| direkt am Container | `https://<server>:3096/config` | wenn der Proxy nicht läuft; Port 3096 (`PORT_SETUP` in der `.env`) darf nicht aus dem Internet erreichbar sein |
+| per ssh-Tunnel | `https://127.0.0.1:13096/config` | Port 3096 ist in der Firewall gesperrt, ssh ist erreichbar |
+
+Ein ssh-Tunnel auf den Port 3096 des Servers:
+
+```bash
+# Linux, macOS, Windows-PowerShell
+ssh benutzer@letto.meine-schule.at -L 13096:127.0.0.1:3096 -C -N
+```
+
+Im Container selbst lauscht das Setup auf Port 9096 (HTTPS). Dieser Port ist am Host als 3096 veröffentlicht.
+
+## Anmeldung
+
+Angemeldet wird auf der Seite [Anmeldung](Anmeldung/index.md):
+
+* Benutzer **`admin`** mit dem Passwort `ADMIN_PASSWORD` aus der `.env` – der lokale Administrator des Setups.
+  Solange noch keine Schule eingerichtet ist, kann sich nur dieser Benutzer anmelden.
+* LeTTo-Benutzer mit **globalen Administratorrechten** (z. B. `adminglobal<schulkürzel>`), angemeldet über den
+  Login-Service. Andere Benutzer werden abgewiesen.
+
+## Aufbau der Oberfläche
+
+Nach der Anmeldung erscheint die [Hauptseite](Hauptseite/index.md). Sie hat eine Titelleiste mit den Menüs
+**Werkzeuge**, **Konfiguration**, **Verwaltung** und **Hilfe** und vier Tabs:
+
+* [Systeminformation](Hauptseite/index.md#tab-systeminformation) – Zustand des Servers (Speicher, Festplatte, CPU, Erreichbarkeit)
+* [Services](Services/index.md) – alle Docker-Container von LeTTo mit Start, Stop, Update, Zertifikat, Weiterleitung
+* [Schulen](Schulen/index.md) – die installierten Schulen
+* [Question-Services](Question-Services/index.md) – externe Question-Services (Fragesammlungen)
+
+Alle anderen Seiten haben oben rechts die Buttons **Übersicht** (zurück zur Hauptseite) und **Abmelden** und meist einen
+Button **zurück** bzw. **Abbruch**. Das Ergebnis einer Aktion steht in einer Statusleiste am unteren Fensterrand
+(grün = in Ordnung, rot = Fehler, gelb = Warnung, blau = Information). Länger laufende Aktionen öffnen die
+[Befehlsausgabe](Befehlsausgabe/index.md).
+
+## Alle Seiten
+
+| Menü / Aufruf | Seite | Inhalt |
+|---|---|---|
+| – | [Anmeldung](Anmeldung/index.md) | Login am Setup |
+| – | [Hauptseite](Hauptseite/index.md) | Titelleiste, Menüs, Tab Systeminformation |
+| Tab Services | [Services](Services/index.md) | Docker-Container, Zertifikat, LTI-Datenbank, Restkey, Weiterleitung |
+| Tab Schulen | [Schulen](Schulen/index.md) | installierte Schulen, Logs, Updates, SQL-Dumps, Lizenzen |
+| Tab Question-Services | [Question-Services](Question-Services/index.md) | externe Question-Services |
+| Werkzeuge → Kommando-Eingabe | [Kommandoeingabe](Kommandoeingabe/index.md) | Shell-Befehle im Setup-Container |
+| Werkzeuge → MySQL-Kommando | [MySQL-Befehl](MySQL-Befehl/index.md) | SQL-Befehle an die MySQL-Datenbanken |
+| Werkzeuge → Explorer | [Explorer](Explorer/index.md) | Dateien anzeigen, bearbeiten, hoch- und herunterladen |
+| Konfiguration → Backup/Cronjob | [Datensicherung](Datensicherung/index.md) | automatisches Backup, Datenbank-Dumps |
+| Konfiguration → Allgemein | [Allgemeine Einstellungen](Allgemeine-Einstellungen/index.md) | Standardsprache |
+| Konfiguration → E-Mail | [E-Mail](E-Mail/index.md) | SMTP-Server, Test-Mail |
+| Konfiguration → Update-Konfiguration | [Update-Konfiguration](Update-Konfiguration/index.md) | Image-Tags, Updates aller Container, neue Services |
+| Konfiguration → Server-Token | [Server-Token](Server-Token/index.md) | Tokens für fremde Server |
+| Konfiguration → Plugins | [Plugins](Plugins/index.md) | registrierte Plugin-Services |
+| Plugins → hinzufügen | [Plugin hinzufügen](Plugin-hinzufuegen/index.md) | neues Plugin aus Proxy- und Compose-Datei |
+| Verwaltung → Benutzer | [Benutzer](Benutzer/index.md) | angemeldete Benutzer, Benutzerdetails |
+| Benutzer → Benutzer suchen | [Benutzersuche](Benutzersuche/index.md) | Benutzer aller Schulen suchen, Statistik |
+| Benutzer → LDAP/AD Login | [LDAP/AD](LDAP-AD/index.md) | Anmeldung über Active Directory/LDAP |
+| Verwaltung → Datenbanken | [Datenbanken](Datenbanken/index.md) | MySQL, Mongo, Redis, LTI, Schul-Datenbanken: Backup, Reparatur, Upgrade |
+| Verwaltung → Host | [Host](Host/index.md) | Betriebssystem, Ressourcen, Docker |
+| Verwaltung → System-Status | [System-Status](System-Status/index.md) | Verlauf von CPU, Speicher und Festplatte |
+| Hilfe → Dokumentation | [Dokumentation](Dokumentation/index.md) | Doku und Swagger der Services |
+| Services → STATUS | [Docker-Status](Docker-Status/index.md) | alle Container, Netzwerke und Volumes |
+| Services → Proxy Konfiguration | [Proxy-Konfiguration](Proxy-Konfiguration/index.md) | nginx-Konfiguration des Proxy |
+| Schulen → Schule hinzufügen / edit Daten | [Schule bearbeiten](Schule-bearbeiten/index.md) | Schule anlegen, bearbeiten, importieren, löschen |
+| Question-Services → Konfiguration | [Externes Questionservice](Externes-Questionservice/index.md) | Question-Service anlegen und konfigurieren |
+| EDIT YAML, EDIT .env, out, Log … | [Datei-Editor](Datei-Editor/index.md) | Dateien bearbeiten und Logs anzeigen |
+| Start, Stop, Update, Backup … | [Befehlsausgabe](Befehlsausgabe/index.md) | Ausgabe laufender Aktionen |
+
+## Wichtige Dateien und Verzeichnisse
+
+| Pfad am Host | Inhalt |
+|---|---|
+| `/opt/letto/docker/compose/letto/.env` | zentrale Konfiguration (Servername, Passwörter, Schulen, Mail, Backup …); im Setup als `EDIT .env` |
+| `/opt/letto/docker/compose/letto/*.yml` | Compose-Dateien aller Container (`docker-compose-*.yml`, `docker-service-*.yml`, `docker-lettoserver-<schule>.yml`, `docker-data-<schule>.yml`) |
+| `/opt/letto/docker/proxy` | nginx-Konfiguration des Proxy |
+| `/opt/letto/docker/storage/backup` | tägliche Datensicherungen |
+| `/opt/letto/docker/storage/database-dump` | SQL-Dumps der Schulen, die in Schulen importiert werden können |
+| `/opt/letto/docker/storage/database-backup` | Sicherungen der Datenbank-Container (MySQL, Mongo, Redis) |
+| `/opt/letto/docker/storage/log` | Logdateien aller Services |
+
+Änderungen an der `.env` und an den Compose-Dateien wirken erst, wenn der betroffene Container neu gestartet wird.
+
+## siehe auch
+
 * [Administration](../index.md)
 * [Installation](../Installation/index.md)
-
-= Setup Service = 
-###  Verbindung mit dem Setup Service 
-####  Direkt über Port 9096 
-Direkt nach der Installation ist das Setup-Service nur über den Port 9096 mit https erreichbar. Es sollte deshalb in der Firewall dieser Port so konfiguriert werden, dass man von dem konfigurierenden Client-PC diesen Port erreichen kann. 
-  https://letto.serverdns.at:9096/setup
-####  Mit ssh-Tunnel an Port 9096 
-Ist es nicht möglich oder gewünscht dass der Port 9096 an der Firewall freigegeben wird, der ssh-Port ist aber erreichbar, dann kann ein Tunnel vom Client auf den Setup-Port gesetzt werden.
-* In Windows mit [putty.exe](https://www.putty.org/)
-  putty ssh letto@letto.serverdns.at -pw dasSshPasswort -L 19096:127.0.0.1:9096 -C -N
-* In Linux per ssh
-  ssh letto@letto.serverdns.at -pw dasSshPasswort -L 19096:127.0.0.1:9096 -C -N
-Damit ist dann das Setup-Service am Browser an der lokalen IP an Port 19906 erreichbar über:
-  https://127.0.0.1:19096/setup
-####  über den Reversproxy 
-Das Setup-Service welches am Server außerhalb der Docker-Container auf Port 9096 läuft ist über den Reverse-Proxy "letto-proxy" erreichbar am Endpoint "setup" mit:
-  https://letto.serverdns.at/setup
-####  im Docker-Container über den Reversproxy 
-Nach erfolgreicher Installation läuft immer auch eine Setup-Instanz in einem Docker-Container "letto-setup". Diese kann sicher natürlich nicht selbst starten,stoppen oder updaten. Weiters sind natürlich auch direkte Zugriffe auf das Host-Filesystem nicht möglich. Es wird jedoch benötigt damit der LeTTo-Server die Systemkonfiguration abfragen kann. Grundlegende Vorgänge können jedoch auch mit dieser Setup-Instanz vorgenommen werden. Sie ist erreichbar am Endpoint "config" mit:
-  https://letto.serverdns.at/config
-
-###  Web-Oberfläche des Setup-Service 
-![1000px-Setupservice-welcome.png](1000px-Setupservice-welcome.png)
-####  allgemeine Informationen 
-* Im oberen Teil des Setup-Services stehen allgemeine Informationen zum System
-####  wichtige Buttons 
-* on/off bei Debug: Schaltet das Debugging für alle Services ein bzw. aus. Wird erst wirksam wenn das/die Services neu gestartet werden.
-* daily/stable bei Update Mode: setzt den Update-Mode für alle Services auf Daily oder Stable. Nur wenn Debug deaktiviert ist, da sonst immer latest verwendet wird.
-* refresh: Lädt die komplette Konfiguration des Systems neu und analysiert die Docker-Container. Das kann je nach System und Auslastung einige Sekunden dauern.
-* Edit Konfiguration: Editiert die Konfigurationsdatei des Setup-Services für die Installation von LeTTo ohne Docker
-* Anaylse des Rechner: Analysiert den Rechner nochmals und sucht nach einer lokalen Installation von LeTTo ohne Docker
-* reload: Lädt die Dateilisten und Auslastungswerte neu, analysiert aber nicht das Dockersystem, ist deshalb wesentlich schneller als refresh
-* Backup/Cronjob: Konfigurationsdialog für [Datenbank-Backups](../Datensicherung-Docker/index.md)
-* Kommando-Eingabe: Dialog zum Ausführen von Systemkommandos auf der Shell des Host-Systems
-* Explorer: Einfacher Explorer des Dateisystems mit der Möglichkeit von Datei-Up und Download.
-####  Docker Pfade - Buttons 
-* STATUS : Liefert den Status aller Docker-Container, Netwerke und Volumes
-* UPDATE ALL: Führt ein Update aller Docker-Container auf die, in den yml-Dateien, eingestellte Revision durch und aktualisiert dann auch alle YAML-Dateien
-* RESTART ALL: Führt einen Neustart aller Docker-Container durch
-* CHECK LICENSES: Führt einen Lizenzcheck bei allen Schulen durch
-####  MySQL,Setup,LeTTo Buttons 
-* EDIT .env : Editiert die .env Datei. Sie enthalten die komplette Systemkonfiguration und liegen in den Verzeichnissen /opt/letto/docker/compose/mysql, /opt/letto/docker/compose/setup, /opt/letto/docker/compose/letto
-* EDIT YAML : Editiert die docker-compose.yml Datei. Sie sollte nur in Ausnahmefällen verändert werden dient aber vor allem zur Installationsinformation.
-* UPDATE YAML : Aktualisiert die docker-compose.yml auf die vorgeschlagene Version des Setup-Services. Nach einem Setup-Update kann es sinnvoll sein auch die YAML-Datei zu aktualisieren
-* RESTART : Startet den Container neu
-* STOP : stoppt den Container
-* UPDATE : Führt ein Update des Containers durch und startet ihn bei einem erfolgten Update neu
-####  https-certificate 
-aktualisiert das lets encrypt Zertifikat oder erstellt ein komplett neues Zertifikat. Die Basisdaten dazu sind in der .env-Datei von letto in den Variablen SERVER_NAME und DOMAIN_ALTERNATIV
-* siehe auch [Https-Zertifikat](../Https-Zertifikat/index.md)
-
-####  redirection 
-Hier wird eingestellt welche Seite geöffnet wird wenn die root-URL des Servers besucht wird.
-####  Installierte Schulen 
-* EDIT YAML : Editiert die docker-compose.yml Datei. Sie sollte nur in Ausnahmefällen verändert werden dient aber vor allem zur Installationsinformation.
-* UPDATE YAML : Aktualisiert die docker-compose.yml auf die vorgeschlagene Version des Setup-Services. Nach einem Setup-Update kann es sinnvoll sein auch die YAML-Datei zu aktualisieren
-* RESTART : Startet den Container neu
-* STOP : stoppt den Container
-* UPDATE : Führt ein Update des Containers durch und startet ihn bei einem erfolgten Update neu
-* edit Daten: Editiert alle Einstellungen der Schule. Hier kann auch ein Datenbank-Dump über die bestehende Datenbank geschrieben werden und die Schule gelöscht werden.
-* Download des SQL Dump: Lädt einen zuvor erstellten SQL-Dump der Schuldatenbank auf den Client-PC herunter
-* erzeuge SQL-Dump: Erstellt einen SQL-Dump der Schuldatenbank im Verzeichnis /opt/letto/docker/storage/database-dump
-####  Schule hinzufügen 
-* neue Schule hinzufügen siehe [Setup - Schule hinzufügen](/notimplemented/index.md)
-
-##  Update Setup-Service 
-![800px-Setup-welcome-config.png](800px-Setup-welcome-config.png)
-* Editiere Setup-Einstellungen(letto.conf): Wenn das Setup auch eine lokale Installation von Letto ohne Docker verwalten soll kann hier einiges konfiguriert werden (undokumentiert)
-* Lösche Konfiguration und Analysiere das System neu: Löscht die Datei letto.conf und sucht nach einer lokalen Installation ohne Docker
-* update setup daily: Führt ein Update des Setup-Services auf die aktuelle Daily-Version durch
-* update setup stable: Führt ein Update des Setup-Services auf die aktuelle Stable-Version durch
-* Setup restarten: Startet das Setup-Service neu
-* Configuration neu laden (Lädt die Konfiguration einer lokalen Letto-Installation neu)
-
-[Administration](../index.md)
-
+* [Datensicherung-Docker](../Datensicherung-Docker/index.md)
+* [Https-Zertifikat](../Https-Zertifikat/index.md)
+* [Container Struktur](../Docker/ContainerStruktur/index.md)
+* [Setup-Service (alte Beschreibung)](../Archiv/Setup-Service-alt/index.md)
