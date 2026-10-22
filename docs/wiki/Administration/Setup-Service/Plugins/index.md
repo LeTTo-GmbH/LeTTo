@@ -39,8 +39,21 @@ aktualisiert.
 
 ![Plugin-Details](plugin-details.png)
 
-**bearbeiten** zeigt alle Angaben eines Plugin-Service. Die Seite dient nur zur Information, der einzige Button ist
-**Abbruch** (zurück zur Liste).
+**bearbeiten** zeigt alle Angaben eines Plugin-Service und bietet die Aktionen für seinen Container.
+
+| Button | Wirkung |
+|---|---|
+| Abbruch | zurück zur Liste |
+| Proxy-Datei bearbeiten | öffnet `/opt/letto/docker/proxy/<name>.conf` in der Seite [Plugin hinzufügen](../Plugin-hinzufuegen/index.md) zum Bearbeiten; vor dem Speichern wird die Datei geprüft |
+| Compose-Datei bearbeiten | öffnet `docker-service-<name>.yml` ebenso zum Bearbeiten |
+| Starten | startet den Container (`docker compose up -d`) |
+| Neu starten | startet den Container neu |
+| Aktualisieren | lädt das Image neu und startet den Container |
+| Logs | zeigt die letzten 1000 Zeilen des Container-Logs in der [Befehlsausgabe](../Befehlsausgabe/index.md) |
+| Proxy prüfen und neu starten | prüft die nginx-Konfiguration und startet den Proxy neu (mit Rückfrage – alle Schulen sind dabei kurz nicht erreichbar) |
+
+Hat sich ein Plugin noch nicht beim Setup angemeldet (z. B. gleich nach dem Anlegen), zeigt die Seite statt der Angaben
+einen Hinweis; die Buttons stehen trotzdem zur Verfügung.
 
 | Karte | Inhalt |
 |---|---|
@@ -48,6 +61,6 @@ aktualisiert.
 | Plugins | je Plugin-Typ: Version, WikiHelp und Help-URL, Standard-Konfiguration, Math, Plugin-Typ (Java-Klasse), Init-JS, JavaScript, Input-Element, Cacheable und die unterstützten Variablen-Arten |
 | JavaScript-Bibliotheken | JavaScript-Dateien, die das Plugin im Browser lädt |
 
-Das Passwort der Plugin-Verbindung steht auf dieser Seite im Klartext.
+Das Passwort der Plugin-Verbindung ist verdeckt und wird mit dem Auge-Symbol sichtbar.
 
 Zurück zur Übersicht: [Setup-Service](../index.md)

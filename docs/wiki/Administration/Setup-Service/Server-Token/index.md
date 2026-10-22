@@ -44,6 +44,6 @@ und Rechten. Buttons je Token:
 |---|---|
 | öffnen | übernimmt die Werte des Tokens in das Formular und das Feld Token |
 | aktivieren / deaktivieren | schaltet den Token ein oder aus |
-| löschen | löscht den Token (**ohne Rückfrage**); der fremde Server kann sich dann nicht mehr anmelden |
+| löschen | löscht den Token nach einer Rückfrage; der fremde Server kann sich dann nicht mehr anmelden |
 
 Zurück zur Übersicht: [Setup-Service](../index.md)

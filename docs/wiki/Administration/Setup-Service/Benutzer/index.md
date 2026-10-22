@@ -43,7 +43,7 @@ Die Benutzerdetails öffnen sich mit **Benutzer** hier oder in der [Benutzersuch
 |---|---|
 | neu Laden | Daten neu laden |
 | Abbruch | zurück zur vorigen Seite |
-| speichern | speichert die Änderungen in der Datenbank der Schule (nur bei Benutzern einer Schule) |
+| speichern | speichert die Änderungen über den Data-Service in der Datenbank der Schule (nur bei Benutzern einer Schule); bestätigt der Data-Service das Speichern nicht, erscheint eine Fehlermeldung |
 | Benutzerdaten | Stammdaten des Benutzers: Schulkürzel, User-ID, Benutzername, Vor- und Nachname, Active-Directory-Name, Personalnummer, Sokrates-ID, E-Mail, Geburtsdatum, Telefon, Sprache, die Rollen (Student, Lehrer/Vortragender, Administrator, globaler Administrator), Lizenz-Einstellungen und Abo-Einstellungen. Im Feld **Passwort** kann ein neues Passwort gesetzt werden – leer lassen, wenn es unverändert bleiben soll. Beim Setup-Benutzer `admin` gibt es nur den Benutzernamen |
 | Tokens | gültige Anmelde-Tokens mit Erstellt, Ablauf, gültig, Issuer, Audience, Benutzername, ursprünglicher Benutzer, Schulkürzel, Rollen, Session-ID und Token |
 | Sessions | Sitzungen des Benutzers mit Anmeldung, Abmeldung, IP-Adresse, Service und Browser; **Abmelden** beendet eine aktive Sitzung, **löschen** entfernt eine beendete (ohne Rückfrage), die eigene Sitzung ist als „aktuell“ markiert |

@@ -42,7 +42,7 @@ Die Vorlagen des Setup-Service in `/opt/letto/docker/proxy/templates`, z. B. `al
 | Button | Wirkung |
 |---|---|
 | Bearbeiten | Vorlage im Editor ansehen oder ändern |
-| In den Proxy kopieren | kopiert die Vorlage in das Proxy-Verzeichnis; eine Datei gleichen Namens wird **ohne Rückfrage überschrieben** |
+| In den Proxy kopieren | kopiert die Vorlage nach einer Rückfrage in das Proxy-Verzeichnis; eine Datei gleichen Namens wird dabei überschrieben |
 
 ## siehe auch
 

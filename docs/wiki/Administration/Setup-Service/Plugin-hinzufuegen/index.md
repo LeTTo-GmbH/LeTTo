@@ -31,9 +31,12 @@ Textfeld, gespeichert wird erst mit **speichern**.
 | speichern | erst nach erfolgreicher Prüfung möglich; schreibt beide Dateien (vorhandene Dateien werden nicht überschrieben). Jede Änderung im Textfeld verlangt eine neue Prüfung |
 | Zur Pluginliste | zurück zur Seite [Plugins](../Plugins/index.md) |
 
-Nach dem Speichern wird der Container noch nicht gestartet. Danach den Proxy neu starten
-([Proxy-Konfiguration](../Proxy-Konfiguration/index.md) → **Proxy neu starten**) und den neuen Service im Tab
-[Services](../Services/index.md) bzw. auf der Seite [Update-Konfiguration](../Update-Konfiguration/index.md) starten.
-Sobald das Plugin läuft, meldet es sich selbst an und erscheint in der Liste der [Plugins](../Plugins/index.md).
+Nach dem Speichern wird der Container noch nicht gestartet. Die Seite wechselt zu den
+[Plugin-Details](../Plugins/index.md#plugin-details) mit dem Hinweis, was noch zu tun ist: dort **Starten** und
+**Proxy prüfen und neu starten** drücken. Sobald das Plugin läuft, meldet es sich selbst an und erscheint mit allen
+Angaben in der Liste der [Plugins](../Plugins/index.md).
+
+Dieselbe Seite öffnet sich auch über **Proxy-Datei bearbeiten** bzw. **Compose-Datei bearbeiten** in den
+Plugin-Details. Dann ist der Pluginname fest und nur die gewählte Datei änderbar.
 
 Zurück zur Übersicht: [Setup-Service](../index.md)

@@ -29,7 +29,7 @@ oder die Verbindung zum Datenbank-Server fehlschlägt.
 | Importiere Datenbank von Datei (Leer für keinen Import) | Dump, der in die neue Schule importiert wird; **leeren** = ohne Import, die Schule startet mit leerer Datenbank |
 | Neu anlegen und Datenbank importieren | Schule anlegen und den gewählten Dump importieren |
 | Neu anlegen und bestehende Datenbank weiterverwenden | Schule auf einer bereits vorhandenen Datenbank `letto_<kürzel>` anlegen |
-| Neu anlegen und bestehende Datenbank löschen | derzeit nicht umgesetzt |
+| Neu anlegen und bestehende Datenbank löschen | nur wenn es die Datenbank `letto_<kürzel>` schon gibt: löscht sie nach einer Rückfrage, legt sie leer neu an und richtet die Schule wie bei **hinzufügen** ein – **alle Daten der alten Datenbank gehen verloren** |
 
 ### Schule
 

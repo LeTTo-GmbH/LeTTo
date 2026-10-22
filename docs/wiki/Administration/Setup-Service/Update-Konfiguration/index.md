@@ -48,7 +48,8 @@ Die Zeilen **STABLE** und **DAILY** setzen den Tag aller Services (nicht der Dat
 | erstelle Startscripts | erzeugt Skripte zum Starten, Stoppen, Neustarten und Aktualisieren jedes Containers in `/opt/letto/docker/scripts/linux` und `/opt/letto/docker/scripts/windows` |
 | Startscripts zeigen | öffnet das Skript-Verzeichnis im [Explorer](../Explorer/index.md) |
 
-Länger laufende Aktionen öffnen die [Befehlsausgabe](../Befehlsausgabe/index.md). Es gibt keine Rückfragen.
+Länger laufende Aktionen öffnen die [Befehlsausgabe](../Befehlsausgabe/index.md). Diese Buttons wirken ohne Rückfrage –
+vorher prüfen, ob gerade gearbeitet wird.
 
 ## Karte Services
 
@@ -62,7 +63,7 @@ Eine Zeile je Container (Setup, Proxy, Schulen `letto<n>`/`data<n>`, Question-Se
 | Revision | Revision des laufenden Containers |
 | Status | z. B. running |
 | BETA, DAILY, STABLE, LATEST | verfügbare Revision je Tag; rot, wenn sie von der laufenden abweicht |
-| Aktionen | Symbole für EDIT YAML, UPDATE YAML, UPDATE (grün, wenn ein Update verfügbar ist), RESTART und STOP (rot); bei Services, die entfernt werden dürfen, zusätzlich löschen |
+| Aktionen | Symbole für EDIT YAML, UPDATE YAML, UPDATE (grün, wenn ein Update verfügbar ist), RESTART und STOP (rot, mit Rückfrage; nicht beim Setup); bei Services, die entfernt werden dürfen, zusätzlich löschen (mit Rückfrage – stoppt den Service und löscht seine yml-Datei) |
 | Compose-Pfad, yml-Datei | Verzeichnis und Compose-Datei des Containers |
 
 ## Karte Datenbanken

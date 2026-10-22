@@ -55,7 +55,7 @@ Liste der Dateien in `/opt/letto/docker/storage/database-dump`. Diese Dumps kön
 | Button | Wirkung |
 |---|---|
 | Download | Dump herunterladen |
-| Datei löschen | Dump löschen (**ohne Rückfrage**) |
+| Datei löschen | Dump löschen (mit Rückfrage) |
 
 ## Datei hochladen
 

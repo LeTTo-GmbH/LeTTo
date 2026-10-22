@@ -14,7 +14,7 @@ können. Die Anmeldung prüft der Login-Service (`letto-login`). Wie Benutzer in
 | Button | Wirkung |
 |---|---|
 | neu Laden | Werte neu aus der `.env` laden |
-| speichern | Werte in der `.env` speichern und zurück zur Seite Benutzer |
+| speichern | Werte in der `.env` speichern; die Seite bleibt offen und erinnert an den nötigen Neustart |
 | Abbruch | zurück, ohne zu speichern |
 
 ## Verzeichnisdienst
@@ -28,8 +28,9 @@ können. Die Anmeldung prüft der Login-Service (`letto-login`). Wie Benutzer in
 | LDAP-Login aktiv | `LDAP_LOGIN` | Anmeldung über LDAP/AD einschalten |
 | Login Mode | `LDAP_MODE` | Verfahren: AUTO, AD, LDAP1, LDAP2, LDAP3 |
 
-Der Login-Service liest diese Werte beim Start. Nach dem Speichern den `login-service` im Tab
-[Services](../Services/index.md) neu starten.
+Der Login-Service liest diese Werte nur beim Start. Nach dem Speichern **Services neu starten** drücken – das startet
+nach einer Rückfrage die Services neu, die die LDAP-Einstellungen verwenden (normalerweise nur `login`). Während des
+Neustarts kann sich niemand anmelden.
 
 ## Test-Login
 

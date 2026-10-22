@@ -29,8 +29,9 @@ von Passwörtern. Mit einer Test-Mail lässt sich prüfen, ob die Einstellungen 
 | no reply address | `spring_mail_address_noreply` | Absenderadresse für Mails, auf die nicht geantwortet werden soll |
 | reply address | `spring_mail_address_reply` | Adresse für Antworten |
 
-Die anderen Services lesen diese Werte beim Start. Nach einer Änderung müssen sie neu gestartet werden
-(z. B. `login-service` im Tab [Services](../Services/index.md)).
+Die Services lesen diese Werte nur beim Start. Unter den Feldern steht, welche Services die Mail-Einstellungen
+verwenden (z. B. login, export, question, die Plugins und externe Question-Services). Nach dem Speichern startet
+**Services neu starten** genau diese Services nacheinander neu (mit Rückfrage, sie sind dabei kurz nicht erreichbar).
 
 ## Test-Email
 
@@ -43,7 +44,8 @@ Die anderen Services lesen diese Werte beim Start. Nach einer Änderung müssen 
 | sende mit gespeicherter Konfiguration | sendet die Test-Mail mit den **gespeicherten** Werten aus der `.env` |
 | sende mit gespeicherter Konfiguration als html | wie oben, aber als HTML-Mail |
 
-Die Meldung „Email wurde gesendet“ bedeutet nur, dass das Senden angestoßen wurde. Ob die Mail wirklich ankommt, zeigt
-erst das Postfach des Empfängers.
+„Email wurde gesendet an …“ bedeutet, dass der Mailserver die Mail angenommen hat. Scheitert das Senden (falscher
+Server, Port oder falsche Anmeldedaten), erscheint „Fehler - email kann nicht gesandt werden“; die Ursache steht im Log
+des Setup-Service. Ob die Mail wirklich ankommt, zeigt das Postfach des Empfängers (auch den Spam-Ordner prüfen).
 
 Zurück zur Übersicht: [Setup-Service](../index.md)

@@ -18,7 +18,7 @@ ist ihre Anzahl. An einem normalen Schulserver ist die Liste leer
 | EDIT YAML | Compose-Datei `docker-questionextern-<name>.yml` im [Datei-Editor](../Datei-Editor/index.md) |
 | UPDATE YAML | Compose-Datei aus der Vorlage neu erzeugen |
 | RESTART | Container neu starten |
-| STOP | Container stoppen (keine Rückfrage) |
+| STOP | Container stoppen (mit Rückfrage) |
 | UPDATE | Image neu laden und Container neu starten |
 | Konfiguration | öffnet die Seite [Externes Questionservice](../Externes-Questionservice/index.md) |
 

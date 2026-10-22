@@ -8,8 +8,8 @@ Stoppen und Aktualisieren. Darüber steht eine Zeile mit allen Services, Datenba
 „läuft“, rot „Fehler“ oder „gestoppt“ (Details im Tooltip).
 
 Alle Container-Befehle laufen als `docker compose …` im Verzeichnis `/opt/letto/docker/compose/letto` und zeigen ihren
-Fortschritt in der [Befehlsausgabe](../Befehlsausgabe/index.md). **Es gibt keine Rückfragen** – ein Klick auf STOP
-stoppt den Container sofort.
+Fortschritt in der [Befehlsausgabe](../Befehlsausgabe/index.md). Vor STOP fragt das Setup nach, alle anderen Buttons
+wirken sofort.
 
 ## Spalten
 
@@ -40,13 +40,13 @@ Für **MySQL Docker**, **Mongo Docker**, **Redis Docker**, **Setup Docker**, **P
 | EDIT YAML | öffnet die Compose-Datei des Containers (z. B. `docker-compose-mysql.yml`, `docker-service-login.yml`) im Editor |
 | UPDATE YAML | ersetzt die Compose-Datei durch die aktuelle Vorlage aus dem Setup-Service; **eigene Änderungen in der Datei gehen verloren** |
 | RESTART / START | startet den Container neu (`down`/`up`); START erscheint, wenn der Container nicht läuft |
-| STOP | stoppt den Container (rot) – bei MySQL, Mongo, Redis oder Proxy fallen damit alle Schulen aus |
+| STOP | stoppt den Container nach einer Rückfrage (rot) – bei MySQL, Mongo, Redis oder Proxy fallen damit alle Schulen aus |
 | UPDATE | lädt das Image mit dem Tag aus der Compose-Datei (`pull`) und startet den Container neu |
 | Proxy Konfiguration | nur beim Proxy: öffnet die [Proxy-Konfiguration](../Proxy-Konfiguration/index.md) |
 
 Besonderheiten beim **Setup Docker**: RESTART und UPDATE starten das Setup über einen Hilfscontainer selbst neu. Die
-Sitzung geht dabei verloren – nach etwa 20 Sekunden die Seite neu laden und neu anmelden. STOP ist beim Setup nicht
-möglich (Meldung „Das Stoppen des Setup-Service ist nicht möglich“).
+Sitzung geht dabei verloren – nach etwa 20 Sekunden die Seite neu laden und neu anmelden. Einen STOP-Button gibt es beim
+Setup nicht, weil sich das Setup nicht selbst stoppen kann.
 
 Welche Version (Tag) ein Container verwendet, wird auf der Seite [Update-Konfiguration](../Update-Konfiguration/index.md)
 eingestellt. Dort können auch alle Container auf einmal aktualisiert werden.

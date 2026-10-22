@@ -7,7 +7,7 @@ Aufruf: Button **STATUS** in der Zeile „Docker Pfade“ im Tab [Services](../S
 Der Docker-Status zeigt alle Container, Netzwerke und Volumes des Docker am Host – auch solche, die nicht zu LeTTo
 gehören – und steuert sie direkt mit `docker`-Befehlen. Das Bild zeigt den oberen Teil der Seite.
 
-**Vorsicht:** Die Buttons wirken sofort und **ohne Rückfrage**. Entfernen, Leeren und prune können Daten endgültig
+**Vorsicht:** Stoppen, Entfernen, Leeren, Löschen und prune fragen vorher nach – sie können aber Daten endgültig
 löschen. Für das normale Starten, Stoppen und Aktualisieren den Tab [Services](../Services/index.md) verwenden – dort
 wird `docker compose` mit den richtigen Einstellungen benutzt.
 
@@ -18,7 +18,7 @@ wird `docker compose` mit den richtigen Einstellungen benutzt.
 | Refresh | Docker im Hintergrund neu analysieren |
 | zurück | zurück zur Hauptseite |
 | neu Laden | Seite neu laden |
-| Alle unbenutzten Images, Volumes und Netzwerke entfernen (system prune all) | `docker system prune -a -f`: löscht alle Images, Netzwerke und den Build-Cache, die von keinem Container verwendet werden |
+| Gestoppte Container, unbenutzte Images und Netzwerke entfernen (system prune all) | `docker system prune -a -f`: löscht alle gestoppten Container, alle Images und Netzwerke, die von keinem Container verwendet werden, und den Build-Cache; Volumes bleiben erhalten |
 
 ## Container
 

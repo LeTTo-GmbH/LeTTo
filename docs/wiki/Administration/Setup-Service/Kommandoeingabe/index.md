@@ -26,8 +26,8 @@ Server. Die Seite listet außerdem alle Hintergrund-Aufgaben des Setups, auch di
 | OK | startet den Befehl im Hintergrund und öffnet die [Befehlsausgabe](../Befehlsausgabe/index.md) |
 | zurück | zurück zur Hauptseite |
 | Lösche fertige Tasks | entfernt alle abgeschlossenen Aufgaben aus der Liste |
-| stoppe alle laufenden Tasks | bricht alle laufenden Aufgaben ab – auch laufende Updates oder Backups |
-| lösche alle Tasks | stoppt und entfernt alle Aufgaben |
+| stoppe alle laufenden Tasks | bricht nach einer Rückfrage alle laufenden Aufgaben ab – auch laufende Updates oder Backups |
+| lösche alle Tasks | stoppt und entfernt nach einer Rückfrage alle Aufgaben |
 
 ## Gestartete Befehle
 

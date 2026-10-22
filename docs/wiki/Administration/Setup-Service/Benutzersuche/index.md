@@ -44,7 +44,7 @@ zu finden, die Mindestanzahlen auf 0 setzen.
 |---|---|
 | Vorname, Nachname, Benutzername, Schulkürzel, User-ID | der Benutzer |
 | Abteilung, Klasse, Gruppe | Zuordnung in der Schule; Gruppe `S` = Schüler, `T` = Lehrer |
-| Aktion | **Benutzer** öffnet die [Benutzerdetails](../Benutzer/index.md#benutzerdetails), **Statistik** die Benutzerstatistik, **Abmelden** meldet einen angemeldeten Benutzer ab; **Daten** hat derzeit keine Funktion |
+| Aktion | **Benutzer** öffnet die [Benutzerdetails](../Benutzer/index.md#benutzerdetails), **Statistik** die Benutzerstatistik, **Abmelden** meldet einen angemeldeten Benutzer ab |
 | Schuljahr, Letzter Login | Schuljahr der Klasse und letzte Anmeldung |
 | Sessions, S-SJ, S-Ausw. | Anmeldungen gesamt, im Schuljahr und im gewählten Zeitraum |
 | Noten, Tests, Beurteilungen | Anzahl der Noten, Tests und Beurteilungen |

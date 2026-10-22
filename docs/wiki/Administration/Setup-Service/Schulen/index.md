@@ -27,7 +27,7 @@ dem LeTTo-Server `letto-server-<schule>` und dem Data-Service `letto-data-<schul
 | EDIT Schul-Dataservice YAML | Compose-Datei `docker-data-<schule>.yml` im Editor |
 | UPDATE YAML | erzeugt beide Compose-Dateien der Schule neu aus den Vorlagen (eigene Änderungen gehen verloren) |
 | RESTART | startet beide Container der Schule neu |
-| STOP | stoppt und entfernt beide Container – die Schule ist danach nicht erreichbar (keine Rückfrage) |
+| STOP | stoppt und entfernt nach einer Rückfrage beide Container – die Schule ist danach nicht erreichbar |
 | UPDATE | lädt die Images neu und startet beide Container neu |
 | edit Daten | öffnet [Schule bearbeiten](../Schule-bearbeiten/index.md): Schuldaten, Administratoren, Lizenz, Datenbank importieren, Schule löschen |
 | Konfiguration | öffnet die [Schulkonfiguration](../Schule-bearbeiten/index.md#schulkonfiguration) (derzeit nur eine Platzhalterseite) |
