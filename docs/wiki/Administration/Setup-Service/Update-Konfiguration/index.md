@@ -51,6 +51,46 @@ Die Zeilen **STABLE** und **DAILY** setzen den Tag aller Services (nicht der Dat
 Länger laufende Aktionen öffnen die [Befehlsausgabe](../Befehlsausgabe/index.md). Diese Buttons wirken ohne Rückfrage –
 vorher prüfen, ob gerade gearbeitet wird.
 
+## Absicherung der Updates von Setup und Proxy
+
+Setup und Proxy sind die beiden Container, ohne die ein Server nicht mehr konfigurierbar ist. Deren Updates und
+Neustarts sind deshalb abgesichert – das gilt für die einzelnen Buttons UPDATE/RESTART in der Karte Services ebenso
+wie für UPDATE ALL, RESTART ALL und UPDATE/RESTART ALL YAML.
+
+**Proxy** (`letto-proxy`)
+
+1. Vor dem Umschalten auf ein neues Image wird es probeweise als `letto-proxy-test` gestartet – mit einer Kopie der
+   Konfiguration, ohne Ports. Liefert der Testcontainer `check.txt` nicht aus, bleibt der laufende Proxy unverändert, der
+   Tag zeigt wieder auf das laufende Image und die Befehlsausgabe meldet den Grund.
+2. Fehlerhafte Konfigurationsdateien werden deaktiviert, siehe [Proxy-Konfiguration](../Proxy-Konfiguration/index.md).
+3. Funktioniert der Proxy nach dem Umschalten 5 Minuten lang nicht, geht das Setup automatisch auf das vorige Image
+   (gleiche Image-ID) zurück.
+
+**Setup** (`letto-setup`)
+
+1. Vor dem Umschalten wird das neue Image als `letto-setup-test` im **Prüfmodus** gestartet: es bekommt die
+   Verzeichnisse nur lesend, kein Netzwerk und nur den Docker-Socket, schreibt nichts und startet keine Aufgaben. Dabei
+   wird auch geprüft, ob die Docker-Version im neuen Image mit dem Docker des Servers zusammenarbeitet.
+2. Schlägt das fehl, wird das Update abgebrochen, das laufende Setup bleibt unverändert, und die Befehlsausgabe sagt,
+   was zu tun ist – z. B. Docker am Server aktualisieren oder „Setup-Image passt nicht zu diesem Server, bitte an LeTTo
+   melden“.
+3. Das Umschalten übernimmt der Hilfscontainer `letto-setup-agent` (Image `lettohub/dockeragent`), weil sich das Setup
+   dabei selbst beendet. Funktioniert das neue Setup nach 5 Minuten nicht, startet der Agent wieder das vorige Image.
+4. Nach einem Rückweg oder Fehler zeigt die [Hauptseite](../Hauptseite/index.md) den Hinweis **Letztes Update/Restart des
+   Setups nicht erfolgreich** mit dem Grund, bis er mit **Hinweis ausblenden** quittiert wird. Ein zurückgenommenes Image
+   wird nicht erneut eingespielt, erst ein neueres. Beim UPDATE/RESTART ALL YAML werden die übrigen Container dann ohne
+   Neustart des Setups aktualisiert.
+
+Spätestens nach etwa 10 Minuten ist das Setup in jedem Fall wieder erreichbar. Normale Updates dauern durch die
+Testläufe nur rund 10 Sekunden länger.
+
+| Datei | Inhalt |
+|---|---|
+| `/opt/letto/docker/storage/log/proxy/proxy-config.log` | deaktivierte Proxy-Dateien, Rückwege des Proxy |
+| `/opt/letto/docker/storage/log/setup/setup-update.log` | Update/Restart des Setups durch den Agent (Zeiten in UTC) |
+| `/opt/letto/docker/scripts/tmp/setup-update-ergebnis.txt` | Ergebnis des letzten Laufs (`.gelesen`, sobald der Hinweis ausgeblendet wurde) |
+| `/opt/letto/docker/scripts/tmp/setup-update-abgelehnt.txt` | Image-IDs, die nach einem Update zurückgenommen wurden; eine Zeile löschen, um dieses Image doch wieder zuzulassen |
+
 ## Karte Services
 
 Eine Zeile je Container (Setup, Proxy, Schulen `letto<n>`/`data<n>`, Question-Services, Services, Plugins):

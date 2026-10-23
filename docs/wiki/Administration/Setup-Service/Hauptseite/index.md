@@ -29,6 +29,11 @@ Unten am Fenster erscheint bei Bedarf eine Statusleiste. Sie zeigt laufende Anal
 E-Mail-Adresse (`EMAIL`), fehlende Schlüssel oder noch nicht geänderte Standard-Passwörter. Diese Punkte sollten
 behoben werden (über **EDIT .env** im Tab [Services](../Services/index.md)).
 
+Hat das letzte Update oder der letzte Neustart des Setups nicht geklappt, steht oben auf der Seite der rote Hinweis
+**Letztes Update/Restart des Setups nicht erfolgreich** – z. B. „Update zurückgenommen“, wenn das neue Image nicht
+startete und wieder das vorige läuft. **Hinweis ausblenden** quittiert ihn. Details unter
+[Update-Konfiguration](../Update-Konfiguration/index.md#absicherung-der-updates-von-setup-und-proxy).
+
 ### Menü Werkzeuge
 
 ![Menü Werkzeuge](menue-werkzeuge.png)
