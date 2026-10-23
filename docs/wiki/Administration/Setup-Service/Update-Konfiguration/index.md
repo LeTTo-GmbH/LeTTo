@@ -81,6 +81,9 @@ wie für UPDATE ALL, RESTART ALL und UPDATE/RESTART ALL YAML.
    wird nicht erneut eingespielt, erst ein neueres. Beim UPDATE/RESTART ALL YAML werden die übrigen Container dann ohne
    Neustart des Setups aktualisiert.
 
+**Login** (`letto-login`, für die Anmeldung aller Schulen): Funktioniert er nach einem Update oder Neustart 5 Minuten lang
+nicht, startet das Setup wieder das vorige Image.
+
 Spätestens nach etwa 10 Minuten ist das Setup in jedem Fall wieder erreichbar. Normale Updates dauern durch die
 Testläufe nur rund 10 Sekunden länger.
 
