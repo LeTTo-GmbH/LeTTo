@@ -1,32 +1,77 @@
 # Test-Ergebnisse / Aktivität-Ergebnisse
-Ist ein Test aktiv, dann wird im [Navigationsbereich](../../Einstieg/LeTTo-Hauptansicht/index.md#navigation) der Baum mit **Test-Einstellungen** angezeigt.
-<br>![600px-Neu_asch.jpg](600px-Neu_asch.jpg)
 
-Der Menüpunkt **Ergebnisse** führt zur Übersicht über alle Ergebnisse eines Online-Tests bzw. Online-Aktivität.
+Die Ergebnisübersicht zeigt alle Versuche einer Online-Aktivität (Test, Hausübung, Abgabe …) mit Punkten, Note und den
+Ergebnissen jeder einzelnen Frage. Sie wird über den Menüpunkt **Ergebnisse** der Aktivität geöffnet.
 
-<img src="img_4.png" style="width:900px">
+Die Namen der Schüler sind in den Screenshots durch „Schüler 1, 2, …“ ersetzt.
 
-Dabei bedeutet:
-* violett umrahmt: Das letzte selektierte Bsp. innerhalb der Aktivität bzw. zur Aktivitätslaufzeit, dass gerade aktive Bsp.
-* grün: Bsp. ist als korrekt gelöst evaluiert worden
-* dunkel grün: Bsp. ist vom Lehrer manuel als korrekt evaluiert worden
-* rot: Bsp. ist als inkorrekt (nicht korrekt) evaluiert worden
-* gelb: Bsp. ist als teilweise korrekt evaluiert worden
+![Ergebnisübersicht einer Aktivität](ergebnis-uebersicht.png)
 
-## Ergebnisse einer Befragung
-siehe [Anonyme Befragung](../AnonymeBefragung/index.md)
-## Ergebnis-Übersicht für einen Test
+## Symbolleiste
 
-Folgende Spalten werden in der Ergebnisübersicht angezeigt:
-* Name des Schülers
-* Versuch: Zeitpunkt, wann der Testversuch gestartet wurde.
-* ![22px-ClipCapIt-180621-154007.PNG](22px-ClipCapIt-180621-154007.PNG): Diesen Schüler neu beurteilen:
-* ![22px-ClipCapIt-180621-154033.PNG](22px-ClipCapIt-180621-154033.PNG): Diesen Testversuch neu beurteilen, alle Beispiele ausser vom Lehrer beurteilte werden neu durchgerechnet und mit den Schülereingaben verglichen, die Note wird neu berechnet.
-* Punkte: ![110px-ClipCapIt-180621-154658.PNG](110px-ClipCapIt-180621-154658.PNG): Angabe von Soll- und Ist-Punktezahl, Prozentwert für dieses Beispiel
-* Note: Note für diesen Test
-* Für jede Frage eines Online-Tests wird eine eigene Spalte angezeigt: Hier werden die erreichten Punkte für diese Frage dargestellt. Farbliche Hinterlegung für falsch (rot), grün(richtig) und teilweise richtig (gelb). Wird diese Beurteilung vom Lehrer festgelegt, dann erscheint diese in grellerer Farbhinterlegung.
+Rechts oben über der Tabelle:
 
-Alle diese Ergebnisse sind als Links ausgeführt. Beim Klick darauf öffnet sich ein Dialog mit den konkreten Schülerergebnissen.
+* **Beurteilungen** – öffnet alle Beurteilungen dieses Gegenstandes (Katalog).
+* **Daumen hoch** – alle Versuche neu beurteilen. Vom Lehrer festgelegte Beurteilungen bleiben erhalten.
+* **Diagramm** – Statistik über alle Noten und Prozentwerte, dort auch das [Testprotokoll](#testprotokoll).
+* **Raster** (nur bei [gruppierten Fragen](../FragenGruppieren/index.md)) – gruppierte Fragen gemeinsam oder jede Frage
+  einzeln anzeigen.
+* **Pfeile im Kreis** – automatisches Aktualisieren (Polling) der Ergebnisse ein- und ausschalten; sinnvoll, während
+  eine Aktivität läuft.
+* **Liste** – die Beispielnummern der Schüler (Reihenfolge, in der der Schüler die Frage bekommen hat) in den
+  Ergebniszellen ein- oder ausblenden.
+* **Stopp** – Aktivität beenden und die Ergebnisse für die Schüler freigeben.
+* **Teilen** – Datenimport und -export der Ergebnisse (zB. Download aller abgegebenen Dateien).
+* **Pfeil nach oben** – Symbolleisten ausblenden, um mehr Platz für die Tabelle zu haben; eingeblendet werden sie
+  wieder über das Auge-Symbol rechts oben.
+
+## Tabelle
+
+* **Name** – Name des Schülers, beim Darüberfahren wird das Foto angezeigt. Ein Klick auf die Spaltenüberschrift sortiert
+  nach dem Namen.
+* **G** – Schülergruppe (nur, wenn die Klasse in Gruppen geteilt ist).
+* **Punkte** – erreichte / mögliche Punkte und Prozentwert. „-----“ bedeutet, dass der Schüler die Aktivität noch nicht
+  gestartet hat, „Test blockiert“, dass sie für ihn gesperrt wurde.
+* **Note** – Note des Versuchs; sie wird erst angezeigt, wenn der Versuch abgeschlossen ist.
+* **Bp.1, Bp.2, …** bzw. **Gr.1, …** – eine Spalte je Frage bzw. Fragengruppe mit den Punkten. Unter der Bezeichnung
+  stehen die möglichen Punkte; beim Darüberfahren werden die Fragen der Spalte angezeigt. Ein Klick auf die
+  Spaltenüberschrift öffnet einen Dialog, in dem für diese Frage bei allen Schülern
+  * die **Punkte geändert** und alle Versuche neu beurteilt,
+  * alle Versuche **neu beurteilt** (wahlweise auch die vom Lehrer beurteilten) und
+  * alle **abgegebenen Dateien als ZIP** heruntergeladen werden können.
+
+In den Ergebniszellen bedeutet:
+
+* **grün** – richtig gelöst, **dunkelgrün** – vom Lehrer als richtig beurteilt
+* **gelb** – teilweise richtig
+* **rot** – falsch
+* **grau** – noch nicht beurteilt (zB. gespeichert, aber noch nicht abgegeben)
+* **violetter Rahmen** – die Frage, die der Schüler zuletzt geöffnet hat (während einer laufenden Aktivität die gerade
+  bearbeitete Frage)
+* **blaues Dokument-Symbol** – vom Schüler abgegebene Datei, **gelbes Dokument-Symbol** – Korrektur- bzw.
+  Feedback-Datei des Lehrers; ein Klick lädt die Datei herunter.
+
+Eine **rot hinterlegte Zeile** zeigt einen **Fokusverlust** an: Der Schüler hat im geschützten Modus die Aktivität
+verlassen. Über das rote Schloss-Symbol links oben wird der Fokusverlust für alle Teilnehmer aufgehoben, für einen
+einzelnen Schüler über die Aktionen seines Versuchs.
+
+## Aktionen eines Versuchs
+
+Ein Klick auf eine Zeile zeigt darunter eine Leiste mit dem Namen, dem **Startzeitpunkt** des Versuchs und den Aktionen:
+
+![Aktionen eines Versuchs](ergebnis-versuch-aktionen.png)
+
+* **rotes X** – Versuch löschen
+* **Daumen hoch** – diesen Versuch neu beurteilen (Lehrer-Beurteilungen bleiben erhalten)
+* **Schloss** – abgeschlossenen Versuch wieder für Eingaben öffnen bzw. (rot) den Fokusverlust aufheben
+* **Stopp** (nur bei laufendem Versuch) – Versuch beenden und beurteilen
+* **Dokument** – PDF des Versuchs erstellen
+* **Abmelden** – den Schüler abmelden
+* **Anmelden** – als dieser Schüler einloggen (Rolle wechseln)
+
+Hat ein Schüler noch keinen Versuch, kann für ihn ein Versuch **angelegt** oder die Aktivität für ihn **blockiert**
+werden. Ist für die Aktivität eine fixe Reihenfolge der Fragen eingestellt, kann zusätzlich die Startfrage festgelegt
+werden.
 
 ## Mehrere Versuche derselben Person
 
@@ -35,65 +80,51 @@ wird **jeder Versuch in einer eigenen Zeile** angezeigt. Die Zeilen derselben Pe
 
 * Die Versuche werden nach dem **Startzeitpunkt** geordnet und dann nach dem Namen sortiert. Bei derselben Person steht
   daher immer der **ältere Versuch oben und der neuere unten**.
-* Das gilt auch, wenn die Übersicht nach einer anderen Spalte (zB. Punkte) sortiert wird: Bei gleichem Wert bleibt
+* Das gilt auch, wenn die Übersicht nach einer anderen Spalte (zB. Note) sortiert wird: Bei gleichem Wert bleibt
   der ältere Versuch vor dem neueren.
-* Den genauen Startzeitpunkt eines Versuchs sieht man, wenn man seine Zeile anklickt – in der Leiste oberhalb der
-  Übersicht wird der Name und **„Start: &lt;Datum Uhrzeit&gt;“** angezeigt. Start- und Stopzeit aller Versuche stehen
-  auch im [Testprotokoll](#anzeige-des-testprotokolls).
+* Den genauen Startzeitpunkt eines Versuchs sieht man, wenn man seine Zeile anklickt (siehe
+  [Aktionen eines Versuchs](#aktionen-eines-versuchs)). Start- und Stopzeit aller Versuche stehen auch im
+  [Testprotokoll](#testprotokoll).
 
-##  Beispielansicht 
+## Ergebnis einer Frage
 
-<br>![550px-ClipCapIt-180621-155334.PNG](550px-ClipCapIt-180621-155334.PNG)
-Links oben sind Name und Fragenummern zu sehen. Die Beispielangabe (Bp. ...) bezieht sich auf die Beispielnummer des Schülers bei der Testabwicklung. (Die Beispiele eines Tests werden bei der Testausführung zufällig angeordnet!)
+Ein Klick auf eine Ergebniszelle öffnet die Frage mit den Eingaben des Schülers:
 
-Für jede Teilfrage sind die erreichten Punkte angeführt. Diese können vom Lehrer überschrieben werden. 
-<br>![300px-ClipCapIt-180621-155837.PNG](300px-ClipCapIt-180621-155837.PNG)
-Wenn man mit der Maus über die Fragebezeichnung einer Teilfrage fährt, dann wird ein Tooltip mit dem zur Teilfrage gehörenden Fragetext angezeigt.
+![Ergebnis einer Frage](ergebnis-detaildialog.png)
 
-Nach jeder Änderung wird automatisch die Summe mitberechnet. ![40px-ClipCapIt-180621-160213.PNG](40px-ClipCapIt-180621-160213.PNG)
+* Oben links stehen Name, Frage, Beispielnummer des Schülers und Datensatz, rechts daneben die erreichten Punkte und die
+  Beurteilung.
+* Für jede Teilfrage (**Q0, Q1, …**) sind die möglichen und die erreichten Punkte angegeben. Die erreichten Punkte können
+  überschrieben werden; die Summe wird automatisch mitgerechnet. Damit gilt die Frage als vom Lehrer beurteilt.
+* **Individuelles Feedback** – Rückmeldung an den Schüler zu dieser Frage.
+* Darunter wird die Frage mit den Eingaben des Schülers und den richtigen Ergebnissen angezeigt.
 
-Der Link **Frage bearbeiten** dient dazu, dass bei ev. fehlerhaften Fragen diese direkt aus dieser Ansicht heraus bearbeitet und geändert werden können. Beim Klicken auf diesen Link wird die [Beispielsammlung](../../Fragen/BeispielsammlungEditieren/index.md) geöffnet und das Beispiel kann geändert werden.
+Die Symbole unter dem Feedback:
 
-Zu jedem Ergebnis kann der Lehrer ein **individuelles Feedback** geben und mit der Notenänderung speichern.
+* **Diskette** – Änderungen übernehmen
+* **Daumen hoch** – Frage neu automatisch beurteilen; ist die Frage vom Lehrer beurteilt (gelber Daumen), wird diese
+  Beurteilung dabei aufgehoben
+* **Pfeil links / rechts** – vorige / nächste Frage desselben Schülers
+* **Pfeil unten / oben** – nächster / voriger Schüler bei derselben Frage
+* **Stift** – Angabewerte (Datensatz) des Beispiels bearbeiten
+* **Büroklammer** – Feedback-Datei des Lehrers hochladen
+* **Liste** – alle gespeicherten Antworten des Schülers zu dieser Frage anzeigen
+* **Werkzeug** – Frage im Editor bearbeiten, zB. wenn die Frage fehlerhaft ist
 
-###  Weiterschalten / Abschliessen der Eingaben  
-Folgende Buttons stehen zur Verfügung:
-* Neu beurteilen: Die korrigierten Beurteilugen werden übernommen und der Dialog geschlossen
-* Pfeile nach oben und nach unten: Nächster / voriger Schüler: Beurteilungen übernehmen und zum nächsten oder vorigen Schüler bei gleichem Beispiel wechseln.
-* Pfeile nach rechts und links: Nächste / vorige Frage: Beurteilungen übernehmen und zur nächsten Frage bei gleichem Schüler gehen
-<br>![400px-ClipCapIt-181204-104725.PNG](400px-ClipCapIt-181204-104725.PNG) 
+## Testprotokoll
 
-###  Frage - Ergebnisse 
-Anzeige des aktuellen Beispiels mit den Schülereingaben.
+Das Testprotokoll wird in der **Statistik** (Diagramm-Symbol in der Symbolleiste) über den Button **Protokoll** angezeigt.
 
-###  Anzeige des Testprotokolls
-Klicken Sie auf das, durch den blauen Pfeil markierte Symbol - siehe folgende Abbildung.
-<br>
-<img src="img_1.png" style="width:800px">
+![Testprotokoll](ergebnis-protokoll.png)
 
-Das Testprotokol (Protokol der Online-Aktivität) wird angezeigt - siehe Abbildung darunter.
-* blauer Bereich: Allgemeine Daten der Online-Aktivität werden aufgelistet.
-* oranger Bereich: Schülerspezifische Informationen werden aufgelistet. Diese sind: Name, Note, Prozentwert, Start, Stop, Event-Loging
-  * Name
-  * Beurteilung/Note
-  * Prozentwert
-  * Startdatum
-  * Stopdatum
-  * Event-Loging
-    * F: Zeitstempel bei der Fortsetzung des Schülers nach Wiederöffnung des Lehrers nach Fokusverlust des Schülers
-    * E: Zeitstempel bei Ergebnisabruf vom Schüler
-    * O: Zeitstempel des abermaligen Öffnens der Aktivität durch Lehrer nach einem Focus-Verlust
-    * X: Zeitstempel bei Auftritt eines Focus-Verlusts
-    
+Oben stehen der Name der Aktivität, die Anzahl der Kandidaten und die Testfragen, darunter für jeden Teilnehmer Note,
+Prozentwert, Start- und Stopzeit und die protokollierten Ereignisse:
 
-[//]: # (    * NoCon: Systembedingter Fokusverlust - Bsp. Internetverbindung nicht vorhanden)
+* **F**: Zeitstempel, an dem der Schüler die Aktivität (zB. nach einer Unterbrechung) fortgesetzt hat
+* **E**: Zeitstempel, an dem der Schüler die Ergebnisse abgerufen hat
+* **O**: Zeitstempel, an dem der Lehrer die Aktivität nach einem Fokusverlust wieder geöffnet hat
+* **X**: Zeitstempel eines Fokusverlusts
 
+## Ergebnisse einer Befragung
 
-<img src="img.png" style="width:800px">
-
-
-
-
-
-
-
+siehe [Anonyme Befragung](../AnonymeBefragung/index.md)
