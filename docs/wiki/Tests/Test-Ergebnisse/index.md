@@ -33,13 +33,13 @@ Alle diese Ergebnisse sind als Links ausgeführt. Beim Klick darauf öffnet sich
 Hat eine Person eine Aktivität mehrmals durchgeführt (zB. bei mehreren erlaubten Versuchen oder bei Abgaben von Dateien),
 wird **jeder Versuch in einer eigenen Zeile** angezeigt. Die Zeilen derselben Person stehen untereinander.
 
-* Die Übersicht ist nach dem Namen sortiert. Bei gleichem Namen bleibt die Reihenfolge erhalten, in der die Versuche
-  gespeichert wurden – in der Regel steht daher der **ältere Versuch oben und der neuere unten**.
-* Diese Reihenfolge ist aber **nicht garantiert**: Wird die Übersicht nach einer anderen Spalte (zB. Punkte) sortiert,
-  ändert sich die Reihenfolge, und auch die Datenbank liefert die Versuche nicht in jedem Fall nach dem Startzeitpunkt.
-* **Sicher feststellen**, welcher Versuch der neuere ist: Zeile des Versuchs anklicken – in der Leiste oberhalb der
-  Übersicht wird der Name und **„Start: &lt;Datum Uhrzeit&gt;“** dieses Versuchs angezeigt. Start- und Stopzeit aller
-  Versuche stehen auch im [Testprotokoll](#anzeige-des-testprotokolls).
+* Die Versuche werden nach dem **Startzeitpunkt** geordnet und dann nach dem Namen sortiert. Bei derselben Person steht
+  daher immer der **ältere Versuch oben und der neuere unten**.
+* Das gilt auch, wenn die Übersicht nach einer anderen Spalte (zB. Punkte) sortiert wird: Bei gleichem Wert bleibt
+  der ältere Versuch vor dem neueren.
+* Den genauen Startzeitpunkt eines Versuchs sieht man, wenn man seine Zeile anklickt – in der Leiste oberhalb der
+  Übersicht wird der Name und **„Start: &lt;Datum Uhrzeit&gt;“** angezeigt. Start- und Stopzeit aller Versuche stehen
+  auch im [Testprotokoll](#anzeige-des-testprotokolls).
 
 ##  Beispielansicht 
 
