@@ -16,3 +16,5 @@
 * Klickt man in den Bereich "Online-Tests:" und wählt den Test aus, so werden alle Beispiele des Tests in der Frageliste angezeigt
 <br>![ClipCapIt-190927-094204.PNG](ClipCapIt-190927-094204.PNG)
 
+###  Fragen gruppieren
+Sollen aus mehreren Fragen bei jedem Versuch nur einige zufällig ausgewählt werden, können die Fragen in der Aktivität gruppiert werden – siehe [Fragen in Aktivität gruppieren](../FragenGruppieren/index.md).

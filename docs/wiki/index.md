@@ -80,6 +80,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Folgefehlerbehandlung](Fragen/Folgefehlerbehandlung/index.md)
 * [Fragen-Vorschau](Fragen/Fragen-Vorschau/index.md)
 * [Fragen importieren](Fragen/Dialoge/Fragenimportieren/index.md)
+* [Fragen in Aktivität gruppieren](Tests/FragenGruppieren/index.md)
 * [Fragenliste](Fragen/Fragenliste/index.md)
 * [Fragetypen](Fragen/Fragetypen/index.md)
 * [Freihand](Plugins/Freihand/index.md)

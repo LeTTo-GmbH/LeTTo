@@ -28,6 +28,19 @@ Folgende Spalten werden in der Ergebnisübersicht angezeigt:
 
 Alle diese Ergebnisse sind als Links ausgeführt. Beim Klick darauf öffnet sich ein Dialog mit den konkreten Schülerergebnissen.
 
+## Mehrere Versuche derselben Person
+
+Hat eine Person eine Aktivität mehrmals durchgeführt (zB. bei mehreren erlaubten Versuchen oder bei Abgaben von Dateien),
+wird **jeder Versuch in einer eigenen Zeile** angezeigt. Die Zeilen derselben Person stehen untereinander.
+
+* Die Übersicht ist nach dem Namen sortiert. Bei gleichem Namen bleibt die Reihenfolge erhalten, in der die Versuche
+  gespeichert wurden – in der Regel steht daher der **ältere Versuch oben und der neuere unten**.
+* Diese Reihenfolge ist aber **nicht garantiert**: Wird die Übersicht nach einer anderen Spalte (zB. Punkte) sortiert,
+  ändert sich die Reihenfolge, und auch die Datenbank liefert die Versuche nicht in jedem Fall nach dem Startzeitpunkt.
+* **Sicher feststellen**, welcher Versuch der neuere ist: Zeile des Versuchs anklicken – in der Leiste oberhalb der
+  Übersicht wird der Name und **„Start: &lt;Datum Uhrzeit&gt;“** dieses Versuchs angezeigt. Start- und Stopzeit aller
+  Versuche stehen auch im [Testprotokoll](#anzeige-des-testprotokolls).
+
 ##  Beispielansicht 
 
 <br>![550px-ClipCapIt-180621-155334.PNG](550px-ClipCapIt-180621-155334.PNG)
