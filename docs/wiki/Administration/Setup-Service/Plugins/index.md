@@ -13,8 +13,9 @@ Mehr zu Plugins: [Plugins](../../../Plugins/index.md).
 
 | Button | Wirkung |
 |---|---|
-| Abbruch | zurück zur Hauptseite |
-| hinzufügen | neues Plugin anlegen – siehe [Plugin hinzufügen](../Plugin-hinzufuegen/index.md) |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
+| Aktualisieren | in der Kopfzeile: Angaben der Plugins neu abfragen |
+| hinzufügen | in der Kopfzeile: neues Plugin anlegen – siehe [Plugin hinzufügen](../Plugin-hinzufuegen/index.md) |
 
 ## Registrierte Plugin-Services
 
@@ -43,11 +44,11 @@ aktualisiert.
 
 | Button | Wirkung |
 |---|---|
-| Abbruch | zurück zur Liste |
+| Zurück | in der Kopfzeile: zurück zur Liste |
 | Dateien bearbeiten | öffnet `/opt/letto/docker/proxy/<name>.conf` und `docker-service-<name>.yml` gemeinsam in der Seite [Plugin hinzufügen](../Plugin-hinzufuegen/index.md); vor dem Speichern werden beide geprüft |
 | Starten | startet den Container (`docker compose up -d`) |
 | Neu starten | startet den Container neu |
-| Aktualisieren | lädt das Image neu (bis zu 3 Versuche) und startet den Container damit; kann das Image nicht geholt werden, bleibt der Container unverändert und die Befehlsausgabe meldet es |
+| Image aktualisieren | lädt das Image neu (bis zu 3 Versuche) und startet den Container damit; kann das Image nicht geholt werden, bleibt der Container unverändert und die Befehlsausgabe meldet es |
 | Logs | zeigt die letzten 1000 Zeilen des Container-Logs in der [Befehlsausgabe](../Befehlsausgabe/index.md) |
 | Proxy prüfen und neu starten | startet den Proxy abgesichert neu (mit Rückfrage – alle Schulen sind dabei kurz nicht erreichbar): fehlerhafte Proxy-Dateien werden deaktiviert, und es wird gewartet, bis der Proxy wieder funktioniert – siehe [Proxy-Konfiguration](../Proxy-Konfiguration/index.md#fehlerhafte-konfigurationsdateien) |
 

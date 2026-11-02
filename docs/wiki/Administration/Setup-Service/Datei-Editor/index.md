@@ -18,11 +18,9 @@ die Seite **Datei anzeigen** (siehe unten).
 
 | Button | Wirkung |
 |---|---|
-| laden | Datei neu von der Festplatte laden |
-| zurücksetzen | Änderungen verwerfen und Datei neu laden |
-| speichern | Änderungen speichern und im Editor bleiben |
-| Ok | Änderungen speichern und zurück zur aufrufenden Seite |
-| Abbruch | zurück, ohne zu speichern |
+| Zurück | in der Kopfzeile: zurück zur aufrufenden Seite; bei ungespeicherten Änderungen mit Rückfrage |
+| Aktualisieren | in der Kopfzeile: Datei neu von der Festplatte laden (nicht gespeicherte Änderungen werden verworfen) |
+| Speichern | Änderungen speichern und im Editor bleiben |
 | Download File | Datei herunterladen |
 | « ‹ › » | zum Anfang, vorigen, nächsten oder letzten Abschnitt; daneben „Zeilen … von insgesamt …“ |
 | Gehe zu Zeile | springt zur eingegebenen Zeile |
@@ -44,8 +42,8 @@ werden abschnittsweise angezeigt, HTML-Dateien und Bilder direkt; bei Binärdate
 
 | Button | Wirkung |
 |---|---|
-| laden | Datei bzw. Log neu laden (bei Logs der aktuelle Stand) |
-| Abbruch | zurück zur aufrufenden Seite |
+| Zurück | in der Kopfzeile: zurück zur aufrufenden Seite |
+| Aktualisieren | in der Kopfzeile: Datei bzw. Log neu laden (bei Logs der aktuelle Stand) |
 | Download File | Datei bzw. Log herunterladen |
 | Navigation, Gehe zu Zeile, Zeilen pro Abschnitt | wie im Editor |
 

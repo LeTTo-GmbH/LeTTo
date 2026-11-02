@@ -22,8 +22,9 @@ nachzusehen. Änderungen (`UPDATE`, `DELETE`, `DROP` …) wirken sofort und ohne
 |---|---|
 | Befehl | ein SQL-Befehl; Enter führt ihn aus |
 | mehrzeiliges Feld | weitere Befehle; mehrere Befehle mit `;` trennen |
-| OK | führt die Befehle mit der aktuellen Verbindung aus |
-| zurück | zurück zur Hauptseite |
+| Ausführen | führt die Befehle mit der aktuellen Verbindung aus |
+
+**Zurück** in der Kopfzeile führt zur Hauptseite.
 
 Unter den Karten erscheint für jeden Befehl das Ergebnis – bei `SELECT`, `SHOW` oder `DESCRIBE` als Tabelle, sonst
 die Anzahl der geänderten Zeilen oder die Fehlermeldung. Nach einem Fehler werden die weiteren Befehle nicht mehr

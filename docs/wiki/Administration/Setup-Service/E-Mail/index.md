@@ -7,13 +7,13 @@ Aufruf: Menü **Konfiguration → E-Mail** auf der [Hauptseite](../Hauptseite/in
 Hier wird der Mailserver (SMTP) eingestellt, über den alle LeTTo-Services Mails verschicken – z. B. beim Zurücksetzen
 von Passwörtern. Mit einer Test-Mail lässt sich prüfen, ob die Einstellungen stimmen.
 
-## Buttons oben
+## Buttons
 
 | Button | Wirkung |
 |---|---|
-| reload | Einstellungen neu aus der `.env` laden (nicht gespeicherte Eingaben gehen verloren) |
-| save | Einstellungen in der `.env` speichern |
-| Abbruch | zurück zur Hauptseite, ohne zu speichern |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite; bei ungespeicherten Änderungen mit Rückfrage |
+| Aktualisieren | in der Kopfzeile: Einstellungen neu aus der `.env` laden (nicht gespeicherte Eingaben gehen verloren) |
+| Speichern | unter den Feldern des Mailservers: Einstellungen in der `.env` speichern und auf der Seite bleiben |
 
 ## Mailserver
 

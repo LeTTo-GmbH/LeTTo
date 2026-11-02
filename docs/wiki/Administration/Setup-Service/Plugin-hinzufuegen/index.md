@@ -40,15 +40,15 @@ dabei noch einmal, ob das Paar frei ist. Danach die Texte bei Bedarf anpassen, t
 | docker-service-.yml – Docker Compose | Compose-Datei des Containers; ebenfalls hochladen oder im Textfeld schreiben |
 
 Beide Dateien müssen UTF-8 sein und dürfen höchstens 1 MiB groß sein. Hochladen übernimmt den Inhalt nur in das
-Textfeld, gespeichert wird erst mit **speichern**.
+Textfeld, gespeichert wird erst mit **Speichern**.
 
 ## Buttons
 
 | Button | Wirkung |
 |---|---|
+| Zurück | in der Kopfzeile: zurück zur Seite [Plugins](../Plugins/index.md), im Bearbeiten-Modus (siehe unten) zu den [Plugin-Details](../Plugins/index.md#plugin-details); bei ungespeicherten Änderungen mit Rückfrage |
 | Testen | prüft beide Dateien: die nginx-Konfiguration in einer Kopie des Proxy-Containers und die Compose-Datei mit `docker compose config`. Das Ergebnis beider Prüfungen steht im Hinweisfeld, Fehler mit Dateiname und Zeile (z. B. `unknown directive "x" in pluginneu.conf:2`) |
 | Speichern | erst möglich, wenn beide Dateien im aktuellen Stand erfolgreich geprüft sind; jede Änderung im Textfeld verlangt eine neue Prüfung. Ein neues Plugin überschreibt keine vorhandenen Dateien |
-| Zur Pluginliste | zurück zur Seite [Plugins](../Plugins/index.md) |
 
 Nach dem Speichern wird der Container noch nicht gestartet. Die Seite wechselt zu den
 [Plugin-Details](../Plugins/index.md#plugin-details) mit dem Hinweis, was noch zu tun ist: dort **Starten** und

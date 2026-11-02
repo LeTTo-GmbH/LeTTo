@@ -27,19 +27,20 @@ Fragesammlung unabhängig von einer Schule bereitstellt. Dazu gehören die Compo
 | Externes HTML-Pre-Rendering | beim Rendern der HTML-Vorschau (Frage als Bild) wird die externe Adresse verwendet (`QUESTION_<n>_HTMLPRERENDER_EXTERN`) |
 
 **erstellen** legt Container, Datenbank, Compose-Datei, Proxy-Konfiguration und `.env`-Einträge an und startet das
-Service (erst möglich, wenn der Name gültig ist). **Abbruch** kehrt zur Hauptseite zurück.
+Service (erst möglich, wenn der Name gültig ist). **Zurück** in der Kopfzeile kehrt zur Hauptseite zurück (bei
+ungespeicherten Eingaben mit Rückfrage).
 
 ## Konfiguration externes Questionservice
 
 ![Konfiguration externes Questionservice](questionservice-konfiguration.png)
 
-### Buttons oben
+### Buttons
 
 | Button | Wirkung |
 |---|---|
-| neu Laden | Werte neu laden |
-| Abbruch | zurück zur Hauptseite |
-| speichern | Änderungen speichern, Compose-Datei erneuern und das Service neu starten |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite; bei ungespeicherten Änderungen mit Rückfrage |
+| Aktualisieren | in der Kopfzeile: Werte neu laden |
+| Speichern | am Ende der Seite: Änderungen speichern, Compose-Datei erneuern und das Service neu starten (öffnet die [Befehlsausgabe](../Befehlsausgabe/index.md)) |
 
 ### Karte Konfiguration externes Questionservice
 

@@ -45,7 +45,8 @@ Anlegen gilt zusätzlich:
 * Die Passwörter sind mit zufälligen Passwörtern vorbelegt (mindestens 10 Zeichen) – vor dem Anlegen notieren.
 * Datenbank-Benutzer und -Passwort werden automatisch gesetzt.
 
-Der Button **hinzufügen** am Ende legt die Schule an, **Abbruch** kehrt zur Hauptseite zurück.
+Der Button **hinzufügen** am Ende legt die Schule an, **Zurück** in der Kopfzeile kehrt zur Hauptseite zurück (bei
+ungespeicherten Eingaben mit Rückfrage).
 
 ## Schule Editieren
 
@@ -55,10 +56,9 @@ Der Button **hinzufügen** am Ende legt die Schule an, **Abbruch** kehrt zur Hau
 
 | Element | Wirkung |
 |---|---|
-| neu Laden | Daten neu aus der Datenbank laden |
-| Abbruch | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite; bei ungespeicherten Änderungen mit Rückfrage |
 | Datenbank-Dumpfiles, Importiere Datenbank von Datei | wie bei Neue Schule |
-| speichern | Änderungen speichern |
+| Speichern | Änderungen speichern (wie unten) |
 | letzte Sicherung der Schule importieren | spielt den letzten Dump `letto_<kürzel>.sql` der Schule ein – **alle Änderungen seit der Sicherung gehen verloren** (mit Rückfrage) |
 | Datenbank importieren | spielt den gewählten Dump in die Schule ein und ersetzt deren Daten (mit Rückfrage; nur sichtbar, wenn ein Dump gewählt ist) |
 
@@ -98,8 +98,7 @@ Kurzbezeichnung leer, wird eine Abteilung mit Kürzel und Namen der Schule angel
 
 | Button | Wirkung |
 |---|---|
-| speichern | Änderungen in der Schul-Datenbank (und Name/Lizenz in der `.env`) speichern |
-| Abbruch | zurück, ohne zu speichern |
+| Speichern | Änderungen in der Schul-Datenbank (und Name/Lizenz in der `.env`) speichern; der Fortschritt erscheint in der [Befehlsausgabe](../Befehlsausgabe/index.md) |
 | Datenbank neu anlegen - alle Daten gehen verloren! | löscht die Datenbank der Schule und legt sie leer neu an (mit Rückfrage) |
 | lösche Schule | stoppt die Container und entfernt die Schule mit ihren Dateien und Einträgen in der `.env`; die `.env` wird vorher gesichert (mit Rückfrage) |
 
@@ -112,6 +111,6 @@ Vor dem Löschen oder Neuanlegen einen Dump erstellen (**erzeuge SQL-Dump** im T
 Der Button **Konfiguration** im Tab [Schulen](../Schulen/index.md) öffnet die Seite **Schulkonfiguration**. Sie ist für
 weitere Einstellungen der Schule vorgesehen, zeigt derzeit aber nur das Kürzel. Die Buttons
 **Datenbank neu erstellen – alle Daten gehen verloren!** und **lösche Schule** haben hier noch keine Funktion – dafür
-die Seite **Schule Editieren** verwenden. **Refresh** lädt die Seite neu, **Abbruch** führt zur Hauptseite.
+die Seite **Schule Editieren** verwenden. In der Kopfzeile führt **Zurück** zur Hauptseite, **Aktualisieren** lädt die Seite neu.
 
 Zurück zur Übersicht: [Setup-Service](../index.md)
