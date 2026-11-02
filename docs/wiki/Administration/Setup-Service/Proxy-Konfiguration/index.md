@@ -15,8 +15,34 @@ weiter. Für jeden Service, jede Schule und jedes Plugin gibt es eine Konfigurat
 |---|---|
 | Refresh | Liste neu laden |
 | zurück | zurück zur Hauptseite |
-| Proxy neu starten | startet den Proxy neu (`docker restart letto-proxy`) und lädt damit alle Konfigurationsdateien neu |
+| Proxy neu starten | prüft zuerst die Konfiguration, startet den Proxy neu und wartet, bis er wieder funktioniert (siehe unten); die Ausgabe erscheint in der [Befehlsausgabe](../Befehlsausgabe/index.md) |
 | LeTTo-Proxy | Zustand des Proxy; in Klammern die Anzahl der Konfigurationsdateien |
+
+## Fehlerhafte Konfigurationsdateien
+
+Eine fehlerhafte Datei würde nginx am Start hindern – damit wären alle Schulen und das Setup selbst nicht mehr über
+`https://<server>/…` erreichbar. Deshalb gilt bei jedem Start und Neustart des Proxy:
+
+* Die Konfiguration wird mit `nginx -t` geprüft. Jede fehlerhafte Datei in `/opt/letto/docker/proxy` oder
+  `/opt/letto/docker/proxy/servers` wird in `<datei>.fehler` umbenannt (z. B. `edit.conf` → `edit.conf.fehler`), bis
+  die übrige Konfiguration gültig ist. Der Proxy startet dann ohne diese Dateien.
+* Das passiert sowohl, wenn das Setup den Proxy neu startet, als auch beim Start des Containers selbst (Server-Neustart,
+  `docker restart letto-proxy`).
+* Jede Umbenennung steht mit Zeitpunkt und nginx-Fehlermeldung in `/opt/letto/docker/storage/log/proxy/proxy-config.log`.
+* Nach einem Restart über das Setup wird bis zu 5 Minuten gewartet, bis der Proxy `check.txt` ausliefert und das Setup
+  über den Proxy erreichbar ist.
+
+Gibt es deaktivierte Dateien, zeigt die Seite die Karte **Deaktivierte Konfigurationsdateien**:
+
+| Element | Wirkung |
+|---|---|
+| Datei, Deaktiviert am | Name der umbenannten Datei und Zeitpunkt |
+| Aktivieren und neu starten | entfernt die Endung `.fehler` und startet den Proxy neu (mit Rückfrage). Ist die Datei noch fehlerhaft, wird sie dabei wieder deaktiviert |
+
+Vorgehen: die Datei `….conf.fehler` am Server bzw. im [Explorer](../Explorer/index.md) korrigieren, dann
+**Aktivieren und neu starten**. Die Karte **Letzte Einträge der Konfigurationsprüfung** zeigt die letzten Zeilen von
+`proxy-config.log`. Nicht umbenannt wird `https.conf` (Zertifikat) – ein Fehler dort oder in `default.conf` wird nur
+gemeldet.
 
 ## Proxy-Konfigurationen
 
