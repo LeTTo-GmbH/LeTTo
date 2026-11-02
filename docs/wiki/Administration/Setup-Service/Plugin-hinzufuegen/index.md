@@ -23,14 +23,13 @@ Die Karte **Aus Vorlage erzeugen** schlägt alle Werte vor, sodass es keine Konf
 | Pluginname (Karte darüber) | `pluginneu`, `pluginneu2`, … – der erste Name ohne vorhandene Dateien |
 | Art | **Java (Spring)** (wie die LeTTo-Plugins) oder **Python** (wie `plugindemopython`) |
 | Docker-Image | `lettohub/letto-service-<name>:stable-1.3`; folgt beim Tippen dem Pluginnamen, bis es selbst geändert wird |
-| Port | `82xx` am Server, im Container `8080` |
-| Debug-Port | `52xx` am Server, im Container `5080` – folgt dem Port, `xx` ist bei beiden gleich |
+| Port / Debug-Port | Auswahl der ersten 10 freien Paare `82xx / 52xx` – `82xx` ist im Container `8080`, `52xx` ist `5080`, `xx` ist bei beiden gleich |
 
-`xx` ist die kleinste Nummer, die weder als `82xx` noch als `52xx` in einer Compose-Datei, der `.env` oder bei einem
-Container vorkommt. Beide Ports werden nur lokal (`127.0.0.1`) gebunden – von außen ist das Plugin nur über den Proxy
-erreichbar, Debuggen geht per SSH-Tunnel. **Dateien aus Vorlage erzeugen** schreibt beide Textfelder neu (mit Rückfrage,
-wenn sie schon Text enthalten). Ist ein Port bereits belegt, kommt eine Meldung. Danach die Texte bei Bedarf anpassen,
-testen und speichern.
+Angeboten werden nur Nummern `xx`, bei denen weder `82xx` noch `52xx` in einer Compose-Datei, der `.env` oder bei
+einem Container vorkommt – belegte Ports lassen sich nicht auswählen. Beide Ports werden nur lokal (`127.0.0.1`)
+gebunden – von außen ist das Plugin nur über den Proxy erreichbar, Debuggen geht per SSH-Tunnel.
+**Dateien aus Vorlage erzeugen** schreibt beide Textfelder neu (mit Rückfrage, wenn sie schon Text enthalten) und prüft
+dabei noch einmal, ob das Paar frei ist. Danach die Texte bei Bedarf anpassen, testen und speichern.
 
 ## Felder
 
