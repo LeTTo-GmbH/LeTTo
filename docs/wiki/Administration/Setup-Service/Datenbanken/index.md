@@ -14,12 +14,12 @@ eine neuere Datenbank-Version. LeTTo verwendet:
 Sicherungen der Datenbank-Container liegen in `/opt/letto/docker/storage/database-backup`, SQL-Dumps der Schulen und der
 LTI-Datenbank in `/opt/letto/docker/storage/database-dump`. Siehe auch [Datensicherung](../Datensicherung/index.md).
 
-## Buttons oben
+## Buttons in der Kopfzeile
 
 | Button | Wirkung |
 |---|---|
-| neu Laden | Zustand neu ermitteln |
-| Abbruch | zurück zur Hauptseite |
+| Zurück | zurück zur Hauptseite |
+| Aktualisieren | Zustand neu ermitteln |
 | Host-Information | öffnet die Seite [Host](../Host/index.md) |
 
 ## MySQL-, Mongo- und Redis-Datenbank
@@ -38,7 +38,7 @@ Jede der drei Karten zeigt:
 |---|---|
 | YML bearbeiten | Compose-Datei im [Datei-Editor](../Datei-Editor/index.md) öffnen |
 | YML aktualisieren | Compose-Datei aus der Vorlage des Setup-Service erneuern |
-| Aktualisieren | Image neu laden und den Container neu starten |
+| Image aktualisieren | Image neu laden und den Container neu starten |
 | Neu starten | Container neu starten |
 | Backup erstellen | sichert die Daten des Containers; er wird dafür kurz gestoppt (mit Rückfrage) |
 | Reparieren | prüft und repariert die Datenbank (MySQL: root-Login, Tabellen prüfen und reparieren; Mongo: Reparatur und Indizes; Redis: Reparatur der Datendateien). Was genau passiert, steht in der Rückfrage |

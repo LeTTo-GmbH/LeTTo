@@ -13,8 +13,8 @@ wenig Speicher hat oder welcher Container die CPU belastet.
 
 | Button | Wirkung |
 |---|---|
-| Refresh, neu Laden | Diagramme neu laden |
-| zurück | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
+| Aktualisieren | in der Kopfzeile: Diagramme neu laden |
 
 ## CPU-Auslastung
 

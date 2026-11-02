@@ -11,8 +11,8 @@ Die Seite zeigt Informationen über den Rechner, auf dem LeTTo läuft. Sie ände
 
 | Button | Wirkung |
 |---|---|
-| zurück | zurück zur aufrufenden Seite |
-| neu Laden | Werte neu ermitteln |
+| Zurück | in der Kopfzeile: zurück zur aufrufenden Seite (Hauptseite oder Datenbanken) |
+| Aktualisieren | in der Kopfzeile: Werte neu ermitteln |
 
 ## Karten
 

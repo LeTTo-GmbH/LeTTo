@@ -9,13 +9,13 @@ können. Die Anmeldung prüft der Login-Service (`letto-login`). Wie Benutzer in
 [Active Directory / LDAP](../../../../howto/admin/active-directory-ldap/index.md) und
 [AD-Check](../../../admin/global/AD-check/index.md).
 
-## Buttons oben
+## Buttons
 
 | Button | Wirkung |
 |---|---|
-| neu Laden | Werte neu aus der `.env` laden |
-| speichern | Werte in der `.env` speichern; die Seite bleibt offen und erinnert an den nötigen Neustart |
-| Abbruch | zurück, ohne zu speichern |
+| Zurück | in der Kopfzeile: zurück zur Seite [Benutzer](../Benutzer/index.md); bei ungespeicherten Änderungen mit Rückfrage |
+| Aktualisieren | in der Kopfzeile: Werte neu aus der `.env` laden |
+| Speichern | unter den Feldern des Verzeichnisdienstes: Werte in der `.env` speichern; die Seite bleibt offen und erinnert an den nötigen Neustart |
 
 ## Verzeichnisdienst
 

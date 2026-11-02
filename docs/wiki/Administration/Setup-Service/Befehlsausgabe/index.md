@@ -12,8 +12,8 @@ Sekunde aktualisiert.
 
 | Button | Wirkung |
 |---|---|
-| Ok | zurück zur Seite, von der die Aktion gestartet wurde; die Aktion läuft im Hintergrund weiter |
-| Refresh | Seite neu laden |
+| Zurück | in der Kopfzeile: zurück zur Seite, von der die Aktion gestartet wurde; die Aktion läuft im Hintergrund weiter |
+| Aktualisieren | in der Kopfzeile: Seite neu laden |
 | STOP | versucht, die laufende Aktion abzubrechen |
 
 ## Karte Befehl

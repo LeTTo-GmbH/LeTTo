@@ -47,10 +47,27 @@ Nach der Anmeldung erscheint die [Hauptseite](Hauptseite/index.md). Sie hat eine
 * [Schulen](Schulen/index.md) – die installierten Schulen
 * [Question-Services](Question-Services/index.md) – externe Question-Services (Fragesammlungen)
 
-Alle anderen Seiten haben oben rechts die Buttons **Übersicht** (zurück zur Hauptseite) und **Abmelden** und meist einen
-Button **zurück** bzw. **Abbruch**. Das Ergebnis einer Aktion steht in einer Statusleiste am unteren Fensterrand
-(grün = in Ordnung, rot = Fehler, gelb = Warnung, blau = Information). Länger laufende Aktionen öffnen die
-[Befehlsausgabe](Befehlsausgabe/index.md).
+Alle anderen Seiten haben oben rechts die Buttons **Übersicht** (zurück zur Hauptseite) und **Abmelden**. Das Ergebnis
+einer Aktion steht in einer Statusleiste am unteren Fensterrand (grün = in Ordnung, rot = Fehler, gelb = Warnung,
+blau = Information). Länger laufende Aktionen öffnen die [Befehlsausgabe](Befehlsausgabe/index.md).
+
+## Bedienung der Unterseiten
+
+Alle Unterseiten (nicht die Hauptseite mit ihrer eigenen Menüleiste) werden gleich bedient:
+
+* In der **Kopfzeile** neben dem Seitentitel stehen, in dieser Reihenfolge:
+  * **Zurück** – führt zur Seite, von der man kam, bzw. zur übergeordneten Seite. Gibt es auf einer Formularseite
+    ungespeicherte Änderungen, fragt Zurück vorher nach.
+  * **Aktualisieren** – lädt die Angaben der Seite neu (nur auf manchen Seiten).
+  * Buttons, die zu anderen Seiten führen, z. B. **LDAP/AD Login** und **Benutzer suchen** auf der Seite Benutzer,
+    **hinzufügen** auf der Seite Plugins oder **Host-Information** auf der Seite Datenbanken.
+* Im Inhalt der Seite stehen nur Aktionen auf Daten, z. B. **Speichern**, Testen, Starten oder Löschen.
+* **Speichern** speichert und bleibt auf der Seite (grüne Meldung in der Statusleiste). Danach führt **Zurück** weg.
+* Auf den Seiten [Kommandoeingabe](Kommandoeingabe/index.md) und [MySQL-Befehl](MySQL-Befehl/index.md) startet
+  **Ausführen** den Befehl.
+
+Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es nicht mehr – sie sind durch **Zurück**,
+**Speichern** und **Aktualisieren** ersetzt.
 
 ## Alle Seiten
 

@@ -13,8 +13,8 @@ weiter. Für jeden Service, jede Schule und jedes Plugin gibt es eine Konfigurat
 
 | Element | Wirkung |
 |---|---|
-| Refresh | Liste neu laden |
-| zurück | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
+| Aktualisieren | in der Kopfzeile: Liste neu laden |
 | Proxy neu starten | prüft zuerst die Konfiguration, startet den Proxy neu und wartet, bis er wieder funktioniert (siehe unten); die Ausgabe erscheint in der [Befehlsausgabe](../Befehlsausgabe/index.md) |
 | LeTTo-Proxy | Zustand des Proxy; in Klammern die Anzahl der Konfigurationsdateien |
 

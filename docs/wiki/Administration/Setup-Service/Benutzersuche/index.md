@@ -7,12 +7,12 @@ Aufruf: Button **Benutzer suchen** auf der Seite [Benutzer](../Benutzer/index.md
 Die Benutzersuche findet Benutzer in allen Schulen des Servers und zeigt, wie stark LeTTo genutzt wird (Anmeldungen,
 Beurteilungen, Tests). Im Bild ist die Suche auf die Testschule `tx1` eingeschränkt.
 
-## Buttons oben
+## Buttons
 
 | Button | Wirkung |
 |---|---|
-| neu Laden | Suchkriterien zurücksetzen und neu suchen |
-| Abbruch | zurück zur Seite [Benutzer](../Benutzer/index.md) |
+| Zurück | in der Kopfzeile: zurück zur Seite [Benutzer](../Benutzer/index.md) |
+| Aktualisieren | in der Kopfzeile: Suchkriterien zurücksetzen und neu suchen |
 | Benutzer suchen | Suche mit den eingegebenen Kriterien starten |
 
 ## Suchkriterien
@@ -56,7 +56,7 @@ Schüler, Sessions, Beurteilungen, Tests und Beurteilungen gesamt.
 
 ## Benutzerstatistik
 
-**Statistik** bei einem Benutzer öffnet eine Detailseite (**neu Laden**, **Abbruch**) mit den Karten **Benutzer**
+**Statistik** bei einem Benutzer öffnet eine Detailseite (in der Kopfzeile **Zurück** und **Aktualisieren**) mit den Karten **Benutzer**
 (Stammdaten und Rollen), **Logins und Sessions** (erste und letzte Anmeldung, fehlgeschlagene Anmeldungen, Sitzungen),
 **Beurteilungen** und **Schuljahr-Klassen** (Beurteilungen und Tests je Schuljahr und Klasse).
 

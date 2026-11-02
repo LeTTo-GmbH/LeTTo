@@ -16,8 +16,8 @@ hoch- und heruntergeladen und gelöscht werden.
 
 | Button | Wirkung |
 |---|---|
-| refresh | Verzeichnis neu einlesen |
-| Abbruch | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Seite, von der der Explorer geöffnet wurde (Hauptseite, Datensicherung oder Services aktualisieren) |
+| Aktualisieren | in der Kopfzeile: Verzeichnis neu einlesen |
 
 ## Karte Verzeichnis
 

@@ -10,8 +10,7 @@ Die Seite sammelt die Links zur Dokumentation und zu den REST-Schnittstellen der
 
 | Button | Wirkung |
 |---|---|
-| Refresh | Zustand der Services neu ermitteln |
-| Abbruch | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
 | LeTTo-Dokumentation | öffnet [doc.letto.at](https://doc.letto.at) |
 
 ## Services

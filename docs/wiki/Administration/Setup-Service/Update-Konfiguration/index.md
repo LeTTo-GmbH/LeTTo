@@ -21,8 +21,8 @@ steht unter [Update](../../Update/index.md).
 
 | Button | Wirkung |
 |---|---|
-| zurück | zurück zur Hauptseite |
-| Refresh | Versionsinformationen neu laden (beim ersten Aufruf kann das einige Minuten dauern – „Daten werden geladen“) |
+| Zurück | zurück zur Hauptseite |
+| Aktualisieren | Versionsinformationen neu laden (beim ersten Aufruf kann das einige Minuten dauern – „Daten werden geladen“) |
 
 ## Verwalten aller Container
 

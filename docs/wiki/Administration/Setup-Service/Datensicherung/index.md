@@ -16,12 +16,12 @@ Mehr zur Sicherung und Wiederherstellung: [Datensicherung-Docker](../../Datensic
 
 | Button | Wirkung |
 |---|---|
-| refresh | Seite neu laden |
-| Ok | Einstellungen speichern und zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite; bei ungespeicherten Änderungen mit Rückfrage |
+| Aktualisieren | in der Kopfzeile: Einstellungen neu aus der `.env` laden (nicht gespeicherte Eingaben gehen verloren) |
+| Speichern | Einstellungen speichern und auf der Seite bleiben |
 | Starte Backup | Einstellungen speichern und sofort eine Sicherung starten (öffnet die [Befehlsausgabe](../Befehlsausgabe/index.md)); nicht möglich, solange schon eine Sicherung oder ein Dump läuft |
 | Check | prüft, ob genug Festplattenplatz frei ist und ob die Dumps aller Schulen aktuell (jünger als 24 Stunden) und nicht leer sind |
 | aktualisiere Edit-Cache | lädt alle Zwischenspeicher des Edit-Service neu (dauert ein Weilchen) |
-| Abbruch | zurück zur Hauptseite, ohne zu speichern |
 
 ## Einstellungen der Datensicherung
 

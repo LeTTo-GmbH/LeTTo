@@ -15,9 +15,8 @@ wird `docker compose` mit den richtigen Einstellungen benutzt.
 
 | Button | Wirkung |
 |---|---|
-| Refresh | Docker im Hintergrund neu analysieren |
-| zurück | zurück zur Hauptseite |
-| neu Laden | Seite neu laden |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
+| Aktualisieren | in der Kopfzeile: Docker im Hintergrund neu analysieren |
 | Gestoppte Container, unbenutzte Images und Netzwerke entfernen (system prune all) | `docker system prune -a -f`: löscht alle gestoppten Container, alle Images und Netzwerke, die von keinem Container verwendet werden, und den Build-Cache; Volumes bleiben erhalten |
 
 ## Container

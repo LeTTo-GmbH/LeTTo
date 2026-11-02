@@ -12,7 +12,7 @@ gespeichert und geprüft; er muss für diese Seite laufen.
 
 | Button | Wirkung |
 |---|---|
-| Abbruch | zurück zur Hauptseite |
+| Zurück | in der Kopfzeile: zurück zur Hauptseite |
 
 ## Neuen Server-Token erstellen
 
