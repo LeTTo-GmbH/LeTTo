@@ -1,5 +1,7 @@
 # Setup-Service: System-Status
 
+![System-Status: 30-Tage-Übersicht](system-status-uebersicht.jpg)
+
 Aufruf: Menü **Verwaltung → System-Status** auf der [Hauptseite](../Hauptseite/index.md) oder Button **Verlauf** im Tab
 Systeminformation.
 
@@ -81,6 +83,8 @@ Die Container sind in Gruppen aufgeteilt, jede Gruppe hat eine eigene Karte mit 
 | Schulen – Data-Services | `letto-data-…` |
 | Schulen – LeTTo-Server | `letto-server-…` |
 | Sonstige Container | alle anderen Container am Host |
+
+![Docker-Gruppe LeTTo-Services in der Tagesansicht](system-status-docker.jpg)
 
 Jede Gruppe zeigt anfangs die **6 Container mit der höchsten Last** des Tages. Mit **Container: x von y angezeigt** wählt man
 weitere Container dazu oder blendet welche aus; **Top 5**, **alle** und **keine** setzen die Auswahl schnell.
