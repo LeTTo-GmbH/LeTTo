@@ -66,7 +66,7 @@ startete und wieder das vorige läuft. **Hinweis ausblenden** quittiert ihn. Det
 | Benutzer | [Benutzer](../Benutzer/index.md) – angemeldete Benutzer |
 | Datenbanken | [Datenbanken](../Datenbanken/index.md) – Datenbanken des Servers und deren Wartung |
 | Host | [Host](../Host/index.md) – Betriebssystem, CPU, Speicher, Festplatte, Docker |
-| System-Status | [System-Status](../System-Status/index.md) – Verlauf von CPU, Speicher und Festplatte |
+| System-Status | [System-Status](../System-Status/index.md) – Verlauf von CPU, Speicher, Festplatte, Docker-Containern und Sessions pro Schule (30 Tage) |
 
 ### Menü Hilfe
 

@@ -93,7 +93,7 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 | Benutzer → LDAP/AD Login | [LDAP/AD](LDAP-AD/index.md) | Anmeldung über Active Directory/LDAP |
 | Verwaltung → Datenbanken | [Datenbanken](Datenbanken/index.md) | MySQL, Mongo, Redis, LTI, Schul-Datenbanken: Backup, Reparatur, Upgrade |
 | Verwaltung → Host | [Host](Host/index.md) | Betriebssystem, Ressourcen, Docker |
-| Verwaltung → System-Status | [System-Status](System-Status/index.md) | Verlauf von CPU, Speicher und Festplatte |
+| Verwaltung → System-Status | [System-Status](System-Status/index.md) | Verlauf von CPU, Speicher, Festplatte, Docker und Sessions pro Schule (30 Tage) |
 | Hilfe → Dokumentation | [Dokumentation](Dokumentation/index.md) | Doku und Swagger der Services |
 | Services → STATUS | [Docker-Status](Docker-Status/index.md) | alle Container, Netzwerke und Volumes |
 | Services → Proxy Konfiguration | [Proxy-Konfiguration](Proxy-Konfiguration/index.md) | nginx-Konfiguration des Proxy |

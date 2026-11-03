@@ -9,6 +9,7 @@
 * Plugin-Konfiguration Umstellung auf Javascript
 * Pluginverwaltung im Setup-Service
 * Userstatistik im Setup-Service
+* System-Status im Setup-Service: Verlauf der letzten 30 Tage in der MongoDB, Tagesauswahl, Sessions pro Schule, Docker-Container in Gruppen (siehe [System-Status](../../Administration/Setup-Service/System-Status/index.md))
 
 ## Stable - Rev 6893 - Version 1.2 - Juli 2026
 * Bugfixes

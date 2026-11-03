@@ -26,6 +26,6 @@ Die Seite zeigt Informationen über den Rechner, auf dem LeTTo läuft. Sie ände
 | Setup-Service | Revision, Startzeit, Java-Version und Java-Speicher des Setup-Service |
 
 Wird der Platz knapp, können unbenutzte Images im [Docker-Status](../Docker-Status/index.md) entfernt werden. Den
-Verlauf von CPU, Speicher und Festplatte zeigt der [System-Status](../System-Status/index.md).
+Den Verlauf von CPU, Speicher, Festplatte, Docker-Containern und Sessions pro Schule der letzten 30 Tage zeigt der [System-Status](../System-Status/index.md).
 
 Zurück zur Übersicht: [Setup-Service](../index.md)
