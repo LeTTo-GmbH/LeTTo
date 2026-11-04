@@ -44,6 +44,9 @@ erhalten.
 * **Client `letto-login`** für den Login-Service (vertraulich, PKCE S256, Rücksprungadresse `https://<server>/login/open/sso/callback`).
 * **Datenbank** `keycloak` im vorhandenen MySQL – es ist kein weiterer Datenbank-Container nötig.
 
+
+Der Realm selbst wird nur beim ersten Mal angelegt; Änderungen der Administratoren bleiben erhalten. Der **Client `letto-login` gehört dem Setup-Service**: Seine Rücksprungadressen, sein Geheimnis (aus der `.env`) und das Dienstkonto werden bei jeder Installation auf den Sollzustand gebracht.
+
 ## Erreichbarkeit und Sicherheit
 
 | Adresse | Erreichbar | Inhalt |
@@ -74,6 +77,12 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
   Gespeichert werden nur die Kennung des SSO-Kontos (Aussteller und `sub`) und die bestätigte E-Mail-Adresse.
 - Ein SSO-Login durchläuft dieselbe Prüfung wie der Passwort-Login: Mehrfach-Login, Fingerprint und Lizenzprüfung
   (abgelaufene oder überschrittene Lizenz weist Schüler ab) gelten unverändert.
+- **Gemeinsames Abmelden:** Wer sich in LeTTo abmeldet (Legacy-Server, Main-Service oder App – alle melden sich dabei beim
+  Login-Service ab), wird auch in Keycloak abgemeldet. Der nächste Klick auf „Mit SSO anmelden“ verlangt dann wieder die
+  Anmeldung, auch am selben Browser (wichtig für gemeinsam genutzte PCs). Dafür merkt sich der Login-Service zur LeTTo-Session
+  die Keycloak-Sitzung und beendet sie beim Logout über die Admin-API von Keycloak. Das Dienstkonto des Clients `letto-login`
+  hat dazu das Recht `manage-users` im Realm `letto`. Läuft Keycloak nicht, bleibt der Logout in LeTTo trotzdem wirksam;
+  die Keycloak-Sitzung läuft dann von selbst ab (Standard: 30 Minuten Leerlauf).
 - Ist Keycloak nicht erreichbar, bleibt der Login mit Benutzername und Passwort möglich.
 - Optional zeigt die Variable `SSO_PROVIDERS` (Aliasnamen der in Keycloak eingerichteten Anbieter, z. B. `google microsoft`)
   zusätzliche Schaltflächen je Anbieter.
