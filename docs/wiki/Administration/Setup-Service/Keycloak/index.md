@@ -1,0 +1,104 @@
+# Setup-Service: Keycloak (SSO)
+
+Keycloak ist die Grundlage für **Single Sign-On** (Anmeldung mit Microsoft oder Google) und die
+**2-Faktor-Authentifizierung** von LeTTo. Das Setup-Service installiert Keycloak wie jeden anderen Service als
+Docker-Container und richtet ihn für die Installation ein.
+
+> **Stand:** Version 1.3, in Entwicklung. Die Installation und Einrichtung von Keycloak ist umgesetzt. Die Anmeldung
+> über Keycloak im Login-Service, die Anbieter Microsoft, Google und ID Austria sowie der erzwungene zweite Faktor beim
+> Teststart folgen in weiteren Schritten und stehen noch nicht zur Verfügung.
+
+## Aufgabenteilung
+
+Keycloak vermittelt nur die Identität und verwaltet die Faktoren. Alles andere bleibt, wie es ist:
+
+| Aufgabe | zuständig |
+|---|---|
+| Anmeldung beim Anbieter (Microsoft, Google …), zweiter Faktor | Keycloak |
+| LeTTo-Token, Sitzung, Mehrfach-Login, Lizenzprüfung | [Login-Service](../../Docker/Lettohub_letto-service-login/index.md) bzw. Setup-Service |
+| Benutzer, Rollen, Schulen, Klassen, Passwörter | Data-Service der Schule |
+
+Rollen werden nie aus Angaben eines fremden Anbieters übernommen. Der Login-Service prüft die Anmeldung bei Keycloak
+selbst (Signatur, Aussteller, Stufe und Zeitpunkt der Anmeldung) und verlässt sich nicht darauf, dass Keycloak die
+verlangte Sicherheitsstufe eingehalten hat.
+
+## Installation
+
+1. Im Setup unter **Konfiguration → Update-Konfiguration** erscheint `keycloak` in der Liste **Verfügbare yml-Dateien**.
+2. **Service installieren** drücken. Das Setup
+   * erzeugt zufällige Passwörter und trägt sie mit der öffentlichen Adresse in die `.env` ein (nur fehlende Werte, vorhandene bleiben),
+   * legt die Datenbank `keycloak` und den Benutzer `keycloak` in `letto-mysql` an,
+   * schreibt `docker-service-keycloak.yml` und die Proxy-Datei `keycloak.conf`,
+   * startet den Container `letto-keycloak` und richtet danach den Realm `letto` ein (der erste Start dauert etwa eine Minute).
+3. Im Tab [Services](../Services/index.md) erscheint Keycloak in der Statuszeile unter **SSO**: grün = läuft, rot = installiert, läuft aber nicht.
+
+Die Einrichtung ist wiederholbar: Ein vorhandener Realm wird nie verändert, Anpassungen der Administratoren bleiben
+erhalten.
+
+## Was eingerichtet wird
+
+* **Realm `letto`** mit dem Anmeldeablauf `letto-browser`:
+  * Stufe 1 = Passwort (`acr` 1), Stufe 2 = Einmalcode/OTP (`acr` 2)
+  * Ein Anbieter kann über `kc_idp_hint` direkt gewählt werden.
+  * Stufe 2 muss bei jeder Anforderung neu nachgewiesen werden; Keycloak stuft nie still auf Stufe 1 ab.
+* **Client `letto-login`** für den Login-Service (vertraulich, PKCE S256, Rücksprungadresse `https://<server>/login/open/sso/callback`).
+* **Datenbank** `keycloak` im vorhandenen MySQL – es ist kein weiterer Datenbank-Container nötig.
+
+## Erreichbarkeit und Sicherheit
+
+| Adresse | Erreichbar | Inhalt |
+|---|---|---|
+| `https://<server>/auth/realms/letto/…` | von außen | Anmeldung, Discovery-Dokument, Schlüssel |
+| `https://<server>/auth/admin/…`, `/auth/realms/master/…`, `/auth/metrics`, `/auth/health` | **gesperrt** (404 im Proxy) | Admin-Konsole, Verwaltungs-Realm |
+| `http://127.0.0.1:8480/auth` | nur am Server (`PORT_KEYCLOAK`, gebunden an `SERVICE_BIND`) | Admin-Konsole und Admin-API, von außen nur per ssh-Tunnel |
+
+Ein ssh-Tunnel zur Admin-Konsole:
+
+```bash
+ssh benutzer@letto.meine-schule.at -L 8480:127.0.0.1:8480 -C -N
+# danach im Browser: http://localhost:8480/auth
+```
+
+Der Benutzer der Admin-Konsole ist `KEYCLOAK_ADMIN_USER` (Standard `admin`) mit dem Passwort `KEYCLOAK_ADMIN_PASSWORD` aus der `.env`.
+
+## Variablen in der .env
+
+| Variable | Bedeutung |
+|---|---|
+| `KEYCLOAK_DB_NAME`, `KEYCLOAK_DB_USER` | Datenbank und Benutzer in `letto-mysql` (Standard `keycloak`) |
+| `KEYCLOAK_DB_PASSWORD` | Passwort des Datenbank-Benutzers (wird bei der Installation erzeugt) |
+| `KEYCLOAK_ADMIN_USER`, `KEYCLOAK_ADMIN_PASSWORD` | Administrator der Admin-Konsole |
+| `KEYCLOAK_LOGIN_CLIENT_SECRET` | Geheimnis des Clients `letto-login` für den Login-Service |
+| `KEYCLOAK_PUBLIC_URL` | Adresse für den Browser, z. B. `https://letto.meine-schule.at/auth` (aus `SERVER_NAME` und `USE_HTTP`) |
+| `KEYCLOAK_ADMIN_URL` | Adresse der Admin-Konsole (Standard `http://localhost:8480/auth`) |
+| `KEYCLOAK_MEMORY_LIMIT` | Speicherlimit des Containers (Standard 1500M) |
+| `PORT_KEYCLOAK` | lokaler Port der Admin-Konsole (Standard 8480) |
+| `KEYCLOAK_IMAGE` | Image (Standard `quay.io/keycloak/keycloak:26.8.1`) |
+
+Die Passwörter nicht weitergeben. Ändert sich `SERVER_NAME` oder `USE_HTTP`, muss `KEYCLOAK_PUBLIC_URL` angepasst
+und Keycloak neu gestartet werden.
+
+## Betrieb
+
+* **Ressourcen:** etwa 0,8–1 GB Arbeitsspeicher im Betrieb, der Start dauert wenige Sekunden (beim allerersten Start
+  kommt das Anlegen des Datenbankschemas dazu, etwa 35 Sekunden).
+* **Update:** wie die anderen Services über die [Update-Konfiguration](../Update-Konfiguration/index.md); das Image ist
+  in der yml-Datei fest auf eine Version gesetzt.
+* **Datensicherung:** Keycloak speichert alles in der Datenbank `keycloak` von `letto-mysql`. Sie ist in der Sicherung
+  des MySQL-Containers (siehe [Datenbanken](../Datenbanken/index.md)) enthalten – es gibt keine zweite Sicherung.
+* **Log:** Container-Log über den Button **out** der Zeile `keycloak`, Datei `storage/log/keycloak/keycloak.log`.
+* **Ausfall:** Fällt Keycloak aus, funktionieren die Anmeldungen mit Passwort weiter. Tests mit erzwungenem zweitem
+  Faktor bleiben dann gesperrt, bis Keycloak wieder läuft.
+
+## Datenschutz
+
+Keycloak speichert Benutzername, die verifizierte E-Mail-Adresse und die eingerichteten Faktoren. In LeTTo wird zur
+Verknüpfung nur die Kennung des Anbieters (`sub`) und die verifizierte E-Mail gespeichert. Auf der Login-Seite
+steht dazu ein Hinweistext.
+
+## siehe auch
+
+* [Services](../Services/index.md) – Statuszeile und Container-Zeilen
+* [Update-Konfiguration](../Update-Konfiguration/index.md) – Service installieren, Updates
+* [Proxy-Konfiguration](../Proxy-Konfiguration/index.md) – Datei `keycloak.conf`
+* [Datenbanken](../Datenbanken/index.md) – Sicherung von `letto-mysql`

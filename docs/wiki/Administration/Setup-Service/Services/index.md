@@ -6,6 +6,7 @@ Der Tab **Services** der [Hauptseite](../Hauptseite/index.md) wird nach der Anme
 **Docker Installation von LeTTo** listet alle Docker-Container von LeTTo mit ihrem Zustand und Buttons zum Starten,
 Stoppen und Aktualisieren. Darüber steht eine Zeile mit allen Services, Datenbanken und Schulen – grün bedeutet
 „läuft“, rot „Fehler“ oder „gestoppt“ (Details im Tooltip).
+Ist [Keycloak](../Keycloak/index.md) installiert, steht in dieser Zeile zusätzlich **SSO: Keycloak**.
 
 Alle Container-Befehle laufen als `docker compose …` im Verzeichnis `/opt/letto/docker/compose/letto` und zeigen ihren
 Fortschritt in der [Befehlsausgabe](../Befehlsausgabe/index.md). Vor STOP fragt das Setup nach, alle anderen Buttons
