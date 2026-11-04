@@ -21,7 +21,9 @@ Rechts oben über der Tabelle:
 * **Liste** – die Beispielnummern der Schüler (Reihenfolge, in der der Schüler die Frage bekommen hat) in den
   Ergebniszellen ein- oder ausblenden.
 * **Stopp** – Aktivität beenden und die Ergebnisse für die Schüler freigeben.
-* **Teilen** – Datenimport und -export der Ergebnisse (zB. Download aller abgegebenen Dateien).
+* **Teilen** – Dialog „Import / Export / Druck“ für die Ergebnisse. Die von den Schülern **abgegebenen Dateien**
+  werden nicht hier, sondern je Frage heruntergeladen: Klick auf die Spaltenüberschrift der Frage (Bp.1, Bp.2, …) und
+  dort „Alle Schülerdokumente als ZIP downloaden“ (siehe [Tabelle](#tabelle)).
 * **Pfeil nach oben** – Symbolleisten ausblenden, um mehr Platz für die Tabelle zu haben; eingeblendet werden sie
   wieder über das Auge-Symbol rechts oben.
 
@@ -38,7 +40,7 @@ Rechts oben über der Tabelle:
   Spaltenüberschrift öffnet einen Dialog, in dem für diese Frage bei allen Schülern
   * die **Punkte geändert** und alle Versuche neu beurteilt,
   * alle Versuche **neu beurteilt** (wahlweise auch die vom Lehrer beurteilten) und
-  * alle **abgegebenen Dateien als ZIP** heruntergeladen werden können.
+  * alle **abgegebenen Dateien als ZIP** heruntergeladen werden können („Alle Schülerdokumente als ZIP downloaden“).
 
 In den Ergebniszellen bedeutet:
 
