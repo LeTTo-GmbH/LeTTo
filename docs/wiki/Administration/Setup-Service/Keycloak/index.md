@@ -89,6 +89,38 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
 - Optional zeigt die Variable `SSO_PROVIDERS` (Aliasnamen der in Keycloak eingerichteten Anbieter, z. B. `google microsoft`)
   zusätzliche Schaltflächen je Anbieter.
 
+## Google und Microsoft einrichten
+
+Die Anbieter werden im Setup-Service unter **Konfiguration → SSO-Anbieter** eingetragen. Vorher muss beim Anbieter eine App
+registriert werden. Die **Weiterleitungs-URI** dafür zeigt die Setup-Seite an, sie lautet
+`https://&lt;Server&gt;/auth/realms/letto/broker/google/endpoint` bzw. `.../broker/microsoft/endpoint`.
+
+**Google**
+
+1. In der Google Cloud Console (console.cloud.google.com) ein Projekt anlegen.
+2. Den **OAuth-Zustimmungsbildschirm** einrichten. Für Tests: Nutzertyp „Extern“, Status „Testing“ und die eigene Adresse als
+   Testnutzer eintragen. Für Schulen mit Google Workspace for Education: Nutzertyp „Intern“.
+3. Unter „Anmeldedaten“ eine **OAuth-Client-ID** vom Typ „Webanwendung“ anlegen und die Weiterleitungs-URI eintragen.
+4. Client-ID und Client-Geheimnis in der Setup-Seite eintragen. Mit **Erlaubte Domain** (z. B. `schule.at`) dürfen sich nur
+   Konten dieser Workspace-Domain anmelden.
+
+**Microsoft (Schul-Tenant, Microsoft Entra ID)**
+
+1. Im Azure-Portal unter „Microsoft Entra ID → App-Registrierungen“ eine neue Registrierung anlegen
+   (Konten in diesem Organisationsverzeichnis). Dafür sind Rechte im Tenant nötig, sonst die IT der Schule fragen.
+2. Die Weiterleitungs-URI (Typ Web) eintragen.
+3. Unter „Zertifikate & Geheimnisse“ ein **Client-Geheimnis** anlegen und den **Wert** sofort kopieren (er wird nur einmal angezeigt).
+4. Anwendungs-ID (Client-ID), Verzeichnis-ID (Tenant) und Geheimnis in der Setup-Seite eintragen. Statt der Verzeichnis-ID geht
+   auch eine Domain des Tenants oder `organizations` (alle Schul- und Arbeitskonten). Private Microsoft-Konten sind nicht erlaubt.
+
+Beim Speichern trägt das Setup-Service die Anbieter in Keycloak ein und startet den Login-Service neu; danach erscheinen auf
+der Login-Seite die Schaltflächen „Mit Google anmelden“ bzw. „Mit Microsoft anmelden“. Wird ein Anbieter abgeschaltet, bleibt er
+in Keycloak erhalten (nur deaktiviert), die Verknüpfungen der Benutzer gehen nicht verloren.
+
+Die erste Anmeldung eines Benutzers mit einem Google- oder Microsoft-Konto führt wie oben beschrieben zur einmaligen Bestätigung mit dem
+LeTTo-Passwort. Rollen, Schule und Rechte kommen immer aus LeTTo. Die Vertrauensstellung der E-Mail-Adresse des Anbieters wird nie
+für die Zuordnung verwendet.
+
 ## Variablen in der .env
 
 | Variable | Bedeutung |
@@ -99,6 +131,10 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
 | `KEYCLOAK_LOGIN_CLIENT_SECRET` | Geheimnis des Clients `letto-login` für den Login-Service |
 | `KEYCLOAK_PUBLIC_URL` | Adresse für den Browser, z. B. `https://letto.meine-schule.at/auth` (aus `SERVER_NAME` und `USE_HTTP`) |
 | `KEYCLOAK_ADMIN_URL` | Adresse der Admin-Konsole (Standard `http://localhost:8480/auth`) |
+| `SSO_GOOGLE_CLIENT_ID`, `SSO_GOOGLE_CLIENT_SECRET`, `SSO_GOOGLE_DOMAIN` | Google-App und erlaubte Workspace-Domain (Setup-Seite SSO-Anbieter) |
+| `SSO_MICROSOFT_CLIENT_ID`, `SSO_MICROSOFT_CLIENT_SECRET`, `SSO_MICROSOFT_TENANT` | Microsoft-App und Tenant (Setup-Seite SSO-Anbieter) |
+| `SSO_PROVIDERS` | aktive Anbieter auf der Login-Seite (setzt das Setup-Service, z. B. `google microsoft`) |
+| `LOGIN_REDIRECT_APP` | `false` = nach dem Login zum LeTTo-Server der Schule statt zur App (Standard `true`) |
 | `KEYCLOAK_MEMORY_LIMIT` | Speicherlimit des Containers (Standard 1500M) |
 | `PORT_KEYCLOAK` | lokaler Port der Admin-Konsole (Standard 8480) |
 | `KEYCLOAK_IMAGE` | Image (Standard `quay.io/keycloak/keycloak:26.8.1`) |
