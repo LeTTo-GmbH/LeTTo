@@ -4,9 +4,9 @@ Keycloak ist die Grundlage für **Single Sign-On** (Anmeldung mit Microsoft oder
 **2-Faktor-Authentifizierung** von LeTTo. Das Setup-Service installiert Keycloak wie jeden anderen Service als
 Docker-Container und richtet ihn für die Installation ein.
 
-> **Stand:** Version 1.3, in Entwicklung. Die Installation und Einrichtung von Keycloak ist umgesetzt. Die Anmeldung
-> über Keycloak im Login-Service, die Anbieter Microsoft, Google und ID Austria sowie der erzwungene zweite Faktor beim
-> Teststart folgen in weiteren Schritten und stehen noch nicht zur Verfügung.
+> **Stand:** Version 1.3, in Entwicklung. Die Installation und Einrichtung von Keycloak und die Anmeldung über Keycloak
+> im Login-Service sind umgesetzt (siehe unten). Die Anbieter Microsoft, Google und ID Austria sowie der erzwungene
+> zweite Faktor beim Teststart folgen in weiteren Schritten und stehen noch nicht zur Verfügung.
 
 ## Aufgabenteilung
 
@@ -60,6 +60,23 @@ ssh benutzer@letto.meine-schule.at -L 8480:127.0.0.1:8480 -C -N
 ```
 
 Der Benutzer der Admin-Konsole ist `KEYCLOAK_ADMIN_USER` (Standard `admin`) mit dem Passwort `KEYCLOAK_ADMIN_PASSWORD` aus der `.env`.
+
+## Anmeldung über SSO
+
+Ist Keycloak installiert, zeigt die Login-Seite unter dem Passwort-Login einen Bereich **Anmeldung über SSO** mit
+Schulwahl und der Schaltfläche **Mit SSO anmelden**. Nach der Installation von Keycloak startet das Setup-Service den
+Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
+
+- Der Login-Service prüft das ID-Token von Keycloak selbst (Signatur, Aussteller, Zielgruppe, Gültigkeit, `nonce`).
+- Rollen, Schule und Rechte kommen **immer aus LeTTo**, nie aus dem Token des Anbieters.
+- Es werden **keine Benutzer automatisch angelegt**. Beim ersten SSO-Login bestätigt der Benutzer einmal mit LeTTo-Benutzername
+  und Passwort, dass das Konto ihm gehört; danach ist das SSO-Konto mit dem LeTTo-Benutzer verknüpft und der SSO-Login genügt.
+  Gespeichert werden nur die Kennung des SSO-Kontos (Aussteller und `sub`) und die bestätigte E-Mail-Adresse.
+- Ein SSO-Login durchläuft dieselbe Prüfung wie der Passwort-Login: Mehrfach-Login, Fingerprint und Lizenzprüfung
+  (abgelaufene oder überschrittene Lizenz weist Schüler ab) gelten unverändert.
+- Ist Keycloak nicht erreichbar, bleibt der Login mit Benutzername und Passwort möglich.
+- Optional zeigt die Variable `SSO_PROVIDERS` (Aliasnamen der in Keycloak eingerichteten Anbieter, z. B. `google microsoft`)
+  zusätzliche Schaltflächen je Anbieter.
 
 ## Variablen in der .env
 
