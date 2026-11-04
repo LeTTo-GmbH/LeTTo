@@ -83,6 +83,8 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
   die Keycloak-Sitzung und beendet sie beim Logout über die Admin-API von Keycloak. Das Dienstkonto des Clients `letto-login`
   hat dazu das Recht `manage-users` im Realm `letto`. Läuft Keycloak nicht, bleibt der Logout in LeTTo trotzdem wirksam;
   die Keycloak-Sitzung läuft dann von selbst ab (Standard: 30 Minuten Leerlauf).
+- Nach dem Login (mit Passwort oder SSO) leitet der Login-Service wie LeTTo-Main zur **App** weiter
+  (`/app/pages/token/&lt;Schule&gt;/&lt;Token&gt;`). Mit `LOGIN_REDIRECT_APP=false` in der `.env` geht es wie früher zum LeTTo-Server der Schule.
 - Ist Keycloak nicht erreichbar, bleibt der Login mit Benutzername und Passwort möglich.
 - Optional zeigt die Variable `SSO_PROVIDERS` (Aliasnamen der in Keycloak eingerichteten Anbieter, z. B. `google microsoft`)
   zusätzliche Schaltflächen je Anbieter.
