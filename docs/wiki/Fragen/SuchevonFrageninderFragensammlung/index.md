@@ -1,4 +1,7 @@
 # Suche von Fragen in der Fragensammlung
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/Suche/index.md).
+
 Mit diesem Dialog können in der [Fragensammlung](../Beispielsammlung/index.md) bereits bestehende Fragen gesucht, bearbeitet und in Tests eingebunden werden.
 Der Dialog zur Suche von Fragen kann in der [Beispielsammlung](../Beispielsammlung/index.md) über den [Toolbar](../Toolbar/index.md) mit dem Button ![22px-ClipCapIt-180618-221017.PNG](22px-ClipCapIt-180618-221017.PNG) geöffnet werden.
 <br>![500px-ClipCapIt-180618-174258.PNG](500px-ClipCapIt-180618-174258.PNG)

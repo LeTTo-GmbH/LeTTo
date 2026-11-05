@@ -6,6 +6,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 
 * **[Einstieg](Einstieg/index.md)** – Erste Schritte, Hilfe, FAQ, Neuigkeiten
 * **[Schüler](Schueler/index.md)** – Dashboard, Aktivitäten, Eingabe von Ergebnissen
+* **[Bibliothek](Bibliothek/index.md)** – Fragensammlung der App: Ordner, Fragen, Suche, Aktivitäten, Editor
 * **[Fragen erstellen](Fragen/index.md)** – Beispielsammlung, Editor, Fragetypen, Export
   * [Dialoge](Fragen/Dialoge/index.md)
 * **[Berechnungen](Berechnungen/index.md)** – Berechnungen, Datensätze, Einheiten, Funktionen
@@ -29,6 +30,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [AD-check](admin/global/AD-check/index.md)
 * [Abos](Fragen/Dialoge/Abos/index.md)
 * [Administration](Administration/index.md)
+* [Aktivitäten in der Bibliothek](Bibliothek/Aktivitaeten/index.md)
 * [Allgemein gültige Beispielsammlungen](Fragen/AllgemeingültigeBeispielsammlungen/index.md)
 * [Anforderungen](Administration/Anforderungen/index.md)
 * [Anlegen von einzelnen Lehrern mit Gegenständen](admin/AnlegenvoneinzelnenLehrernmitGegenständen/index.md)
@@ -38,6 +40,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Beispielsammlung Editieren](Fragen/BeispielsammlungEditieren/index.md)
 * [Benutzer](Konfiguration/Benutzer-alt/index.md)
 * [Berechnungen](Berechnungen/index.md)
+* [Bibliothek](Bibliothek/index.md)
 * [Berechtigungen verwalten](Fragen/Dialoge/Berechtigungenverwalten/index.md)
 * [Betreiben hinter einem Apache-Server](Administration/BetreibenhintereinemApache-Server/index.md)
 * [Beurteilungskonfiguration](Beurteilungen/Beurteilungskonfiguration/index.md)

@@ -1,4 +1,7 @@
 # Fragenliste
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/Fragen/index.md).
+
 ## Liste mit allen Fragen der aktuellen Kategorie
 
 <br>![200px-ClipCapIt-180618-205930.PNG](200px-ClipCapIt-180618-205930.PNG)

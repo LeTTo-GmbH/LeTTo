@@ -1,4 +1,7 @@
 # Editor (Beispielsammlung editieren)
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/Editor/index.md).
+
 In der Edit-Ansicht können Beispiele verändert, geprüft und neu erstellt werden. 
 
 Zurück zu [LeTTo](/notimplemented/index.md), [Beispielsammlung](../Beispielsammlung/index.md)

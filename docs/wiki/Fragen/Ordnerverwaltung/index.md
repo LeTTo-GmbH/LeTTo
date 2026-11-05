@@ -1,4 +1,7 @@
 # Ordnerverwaltung
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/Ordner/index.md).
+
 ## Verwaltung von Kategorien und Ordnern
 
 Kategorien und Hauptthemen sind Synonyme für einen Ordner, wie er in einem Dateisystem verwendet wird. In Letto wird für einen Ordner häufig auch der Begriff **Kategorie verwendet**, da in vielen Learn-Management-Systemen dieser Begriff üblich ist.

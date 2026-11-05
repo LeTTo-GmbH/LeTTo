@@ -21,6 +21,7 @@ Direkt unter `docs/wiki` liegen nur die Bereiche, jede Seite gehört in einen Be
 | `Hauptseite` | Startseite (vom Layout, der Download-Seite und der F1-Hilfe verlinkt) |
 | `Einstieg` | Einführung, Hauptansicht, Hilfesystem, Shortcuts, FAQ, Neuigkeiten |
 | `Schueler` | Sicht der Schüler: Dashboard, Aktivitäten, gesicherter Modus, Eingabe von Ergebnissen |
+| `Bibliothek` | Fragensammlung der App (neue Oberfläche): Ordner, Fragen, Suche, Aktivitäten, Editor, Einstellungen |
 | `Fragen` (+ `Dialoge`) | Beispielsammlung, Editor, Fragetypen, Export; Dialoge der Beispielsammlung |
 | `Berechnungen` (+ `Funktionen`, `func`) | Berechnungen, Datensätze, Einheiten; Funktionsreferenz |
 | `Plugins` | alle Plugin-Seiten und die Referenz-Plugins – wird aus den Plugins verlinkt, nicht verschieben |

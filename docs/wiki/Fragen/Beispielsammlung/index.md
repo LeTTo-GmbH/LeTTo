@@ -1,4 +1,7 @@
 # Beispielsammlung
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/index.md).
+
 In der Beispielsammlung kann auf alle Beispiele, die auf dem Server gespeichert sind, zugegriffen werden. Die Organisation der Beispiele erfolgt über eine Ordnerstruktur im [Tree](../Ordnerverwaltung/index.md). In der [Fragenliste](../Fragenliste/index.md) kann eine Frage zur Ansicht ausgewählt werden, daneben sieht man die Vorschau der Frage.
 
 ![beispielsammlung.png](beispielsammlung.png)

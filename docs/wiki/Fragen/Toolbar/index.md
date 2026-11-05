@@ -1,4 +1,7 @@
 # Toolbar
+
+> **Alte Oberfläche:** Diese Seite beschreibt den bisherigen LeTTo-Server. Die aktuelle Beschreibung steht unter [Bibliothek](../../Bibliothek/index.md#kopfzeile).
+
 ## Symbolleiste zur Steuerung der Fragensammlung
 
 Mit den Toolsbars im oberen Bereich der [Beispielsammlung](../Beispielsammlung/index.md) bzw. des Modus [Beispielsammlung Editieren](../BeispielsammlungEditieren/index.md) kann die Beispielerstellung gesteuert und unterschiedliche Dialoge zur Bearbeitung angezeigt werden.
