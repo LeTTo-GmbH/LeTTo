@@ -4,9 +4,9 @@ Keycloak ist die Grundlage für **Single Sign-On** (Anmeldung mit Microsoft oder
 **2-Faktor-Authentifizierung** von LeTTo. Das Setup-Service installiert Keycloak wie jeden anderen Service als
 Docker-Container und richtet ihn für die Installation ein.
 
-> **Stand:** Version 1.3, in Entwicklung. Die Installation und Einrichtung von Keycloak und die Anmeldung über Keycloak
-> im Login-Service sind umgesetzt (siehe unten). Die Anbieter Microsoft, Google und ID Austria sowie der erzwungene
-> zweite Faktor beim Teststart folgen in weiteren Schritten und stehen noch nicht zur Verfügung.
+> **Stand:** Version 1.3, in Entwicklung. Umgesetzt sind die Installation und Einrichtung von Keycloak, die Anmeldung über SSO mit Google und
+> Microsoft (Einrichtung der Anbieter im Setup-Service) und der [zweite Faktor](Zweiter-Faktor/index.md) bei der Anmeldung über SSO.
+> ID Austria sowie der erzwungene zweite Faktor beim Teststart folgen in weiteren Schritten und stehen noch nicht zur Verfügung.
 
 ## Aufgabenteilung
 
@@ -136,6 +136,7 @@ für die Zuordnung verwendet.
 | `SSO_MICROSOFT_CLIENT_ID`, `SSO_MICROSOFT_CLIENT_SECRET`, `SSO_MICROSOFT_TENANT` | Microsoft-App und Tenant (Setup-Seite SSO-Anbieter) |
 | `SSO_PROVIDERS` | aktive Anbieter auf der Login-Seite (setzt das Setup-Service, z. B. `google microsoft`) |
 | `LOGIN_REDIRECT_APP` | `false` = nach dem Login zum LeTTo-Server der Schule statt zur App (Standard `true`) |
+| `SSO_RETURN_PREFIXES` | zusätzliche Rücksprungadressen für das Verknüpfen im Profil, z. B. das Schema der App (Komma-getrennt, siehe [Zweiter Faktor](Zweiter-Faktor/index.md)) |
 | `KEYCLOAK_MEMORY_LIMIT` | Speicherlimit des Containers (Standard 1500M) |
 | `PORT_KEYCLOAK` | lokaler Port der Admin-Konsole (Standard 8480) |
 | `KEYCLOAK_IMAGE` | Image (Standard `quay.io/keycloak/keycloak:26.8.1`) |
@@ -163,6 +164,8 @@ steht dazu ein Hinweistext.
 
 ## siehe auch
 
+* [Zweiter Faktor bei der Anmeldung über SSO](Zweiter-Faktor/index.md)
+* [Registrierungsdaten für Google und Microsoft besorgen](Registrierungsdaten/index.md)
 * [Services](../Services/index.md) – Statuszeile und Container-Zeilen
 * [Update-Konfiguration](../Update-Konfiguration/index.md) – Service installieren, Updates
 * [Proxy-Konfiguration](../Proxy-Konfiguration/index.md) – Datei `keycloak.conf`
