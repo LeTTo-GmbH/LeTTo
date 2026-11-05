@@ -89,6 +89,17 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
 - Optional zeigt die Variable `SSO_PROVIDERS` (Aliasnamen der in Keycloak eingerichteten Anbieter, z. B. `google microsoft`)
   zusätzliche Schaltflächen je Anbieter.
 
+## SSO und zweiten Faktor zentral ein- und ausschalten
+
+Im Setup-Service unter **Konfiguration → SSO-Anbieter** gibt es im Abschnitt **Allgemein** zwei Schalter für den ganzen Server:
+
+* **Anmeldung über SSO eingeschaltet:** Ist er aus, zeigt die Login-Seite nichts von SSO, die Anmeldung über SSO wird abgelehnt und das Profil bietet
+  keine Verknüpfungen an. Verknüpfungen und Einstellungen der Benutzer bleiben gespeichert und gelten wieder, sobald SSO eingeschaltet wird.
+* **Zweiter Faktor (2FA) eingeschaltet:** Ist er aus, wird kein zweiter Faktor verlangt, auch wenn Benutzer ihn für sich eingeschaltet haben. Das Profil bietet die
+  Einstellung dann nicht an. Er gilt nur, wenn SSO eingeschaltet ist.
+
+Beim Speichern wird der Login-Service neu gestartet. Beide Schalter sind ab Werk eingeschaltet (`SSO_ENABLED`, `SSO_MFA_ENABLED` in der `.env`).
+
 ## Google und Microsoft einrichten
 
 Die Anbieter werden im Setup-Service unter **Konfiguration → SSO-Anbieter** eingetragen. Vorher muss beim Anbieter eine App
@@ -135,6 +146,8 @@ für die Zuordnung verwendet.
 | `SSO_GOOGLE_CLIENT_ID`, `SSO_GOOGLE_CLIENT_SECRET`, `SSO_GOOGLE_DOMAIN` | Google-App und erlaubte Workspace-Domain (Setup-Seite SSO-Anbieter) |
 | `SSO_MICROSOFT_CLIENT_ID`, `SSO_MICROSOFT_CLIENT_SECRET`, `SSO_MICROSOFT_TENANT` | Microsoft-App und Tenant (Setup-Seite SSO-Anbieter) |
 | `SSO_PROVIDERS` | aktive Anbieter auf der Login-Seite (setzt das Setup-Service, z. B. `google microsoft`) |
+| `SSO_ENABLED` | `false` schaltet SSO für alle Benutzer aus: Login-Seite, Profil und Apps zeigen nichts davon (Standard `true`; Setup-Seite SSO-Anbieter, Abschnitt Allgemein) |
+| `SSO_MFA_ENABLED` | `false` schaltet den zweiten Faktor für alle Benutzer aus (Standard `true`) |
 | `LOGIN_REDIRECT_APP` | `false` = nach dem Login zum LeTTo-Server der Schule statt zur App (Standard `true`) |
 | `SSO_RETURN_PREFIXES` | zusätzliche Rücksprungadressen für das Verknüpfen im Profil, z. B. das Schema der App (Komma-getrennt, siehe [Zweiter Faktor](Zweiter-Faktor/index.md)) |
 | `KEYCLOAK_MEMORY_LIMIT` | Speicherlimit des Containers (Standard 1500M) |

@@ -7,6 +7,9 @@ Anmeldung beim Anbieter. Er ersetzt sie nicht.
 > **Stand:** Version 1.3, in Entwicklung. Der zweite Faktor gilt **nur für den Weg über SSO**. Die Anmeldung mit LeTTo-Benutzername und Passwort
 > bleibt wie sie ist, dort gibt es noch keinen zweiten Faktor. Ein erzwungener zweiter Faktor beim Start eines Tests folgt in einem späteren Schritt.
 
+> **Zentraler Schalter:** Der Administrator des Servers kann den zweiten Faktor (und SSO insgesamt) im Setup-Service für alle Benutzer aus- und einschalten
+> (Konfiguration → SSO-Anbieter → Allgemein, siehe [Keycloak](../index.md)). Ist er aus, gibt es in Profil und App keine Einstellung dazu und es wird kein Code verlangt.
+
 ## Für Benutzer
 
 ### Zweiten Faktor einschalten
