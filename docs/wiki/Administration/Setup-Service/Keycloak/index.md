@@ -92,7 +92,8 @@ Login-Service neu, damit er Adresse und Client-Geheimnis übernimmt.
 ## Google und Microsoft einrichten
 
 Die Anbieter werden im Setup-Service unter **Konfiguration → SSO-Anbieter** eingetragen. Vorher muss beim Anbieter eine App
-registriert werden. Die **Weiterleitungs-URI** dafür zeigt die Setup-Seite an, sie lautet
+registriert werden. Eine ausführliche Schritt-für-Schritt-Anleitung (inklusive Fragen an die Schul-IT und Fehlersuche) steht unter
+[Registrierungsdaten für Google und Microsoft besorgen](Registrierungsdaten/index.md). Die **Weiterleitungs-URI** dafür zeigt die Setup-Seite an, sie lautet
 `https://&lt;Server&gt;/auth/realms/letto/broker/google/endpoint` bzw. `.../broker/microsoft/endpoint`.
 
 **Google**
