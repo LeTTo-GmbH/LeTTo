@@ -16,6 +16,8 @@ Beim Wechsel des Schuljahres werden die Zuordnungen passend zum neuen Schuljahr 
 
 Klassen werden aus den im gewählten Schuljahr verfügbaren Klassen hinzugefügt. Innerhalb jeder Klasse können anschließend mehrere Gegenstände zugeordnet werden.
 
+Derselbe Gegenstand kann einer Klasse auch **mehrmals** zugeordnet werden (zB. für getrennte Gruppen). Ist er schon zugeordnet, erscheint eine Rückfrage; nach der Bestätigung entsteht beim Speichern ein weiterer, eigener Katalog, und der Gegenstand steht mehrfach in der Klasse. Der Lehrer kann die Kataloge danach in der [Klassenzuordnung](../../Konfiguration/Klassenzuordnung/index.md#gegenstand-umbenennen) mit eigenen Bezeichnungen unterscheiden.
+
 Bereits vom Backend geladene Zuordnungen gelten als bestehend und können in dieser Bearbeitung nicht einfach lokal entfernt werden. Neu hinzugefügte Klassen oder Gegenstände können dagegen vor dem Speichern wieder entfernt werden. Dadurch werden bestehende, bereits verwendete Lehrer-Klasse-Zuordnungen vor unbeabsichtigtem Löschen geschützt.
 
 ## Speichern

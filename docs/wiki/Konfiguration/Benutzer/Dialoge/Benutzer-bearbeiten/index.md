@@ -22,7 +22,7 @@ Die Checkboxen steuern Eigenschaften und Berechtigungen des Benutzers: **Männli
 
 ![Klassen und Kataloge](detail-klassen-und-kataloge.png)
 
-Rechts werden bestehende **Klassen-Zuordnungen** angezeigt. Bei Schülern sind dies die Klassen je Schuljahr; bei Lehrern werden zusätzlich Gegenstand/Katalog-Zuordnungen geführt. Der **Papierkorb** entfernt die jeweilige Zuordnung. Über die Auswahl des Schuljahrs können weitere Zuordnungen für das passende Jahr verwaltet werden.
+Rechts werden bestehende **Klassen-Zuordnungen** angezeigt. Bei Schülern sind dies die Klassen je Schuljahr; bei Lehrern werden zusätzlich Gegenstand/Katalog-Zuordnungen geführt. Der **Papierkorb** entfernt die jeweilige Zuordnung. Über die Auswahl des Schuljahrs können weitere Zuordnungen für das passende Jahr verwaltet werden. Ist eine Klasse mit dem gewählten Gegenstand schon zugeordnet, erscheint eine Rückfrage; nach der Bestätigung entsteht ein weiterer, eigener Katalog (siehe [Klassenzuordnung](../../../Klassenzuordnung/index.md)).
 
 ## Speichern und Abbrechen
 

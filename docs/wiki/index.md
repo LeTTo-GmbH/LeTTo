@@ -31,6 +31,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Abos](Fragen/Dialoge/Abos/index.md)
 * [Administration](Administration/index.md)
 * [Aktivitäten in der Bibliothek](Bibliothek/Aktivitaeten/index.md)
+* [Aktivitätskopie](Bibliothek/Aktivitaeten/index.md#aktivitätskopie)
 * [Allgemein gültige Beispielsammlungen](Fragen/AllgemeingültigeBeispielsammlungen/index.md)
 * [Anforderungen](Administration/Anforderungen/index.md)
 * [Anlegen von einzelnen Lehrern mit Gegenständen](admin/AnlegenvoneinzelnenLehrernmitGegenständen/index.md)
