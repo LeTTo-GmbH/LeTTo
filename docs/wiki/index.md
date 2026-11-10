@@ -106,6 +106,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Installation Glassfish Server](Administration/Archiv/InstallationGlassfishServer/index.md)
 * [Installation TomEE-8](Administration/Archiv/InstallationTomEE-8/index.md)
 * [Installation TomEE Server](Administration/Archiv/InstallationTomEEServer/index.md)
+* [JavaScript-Schnittstelle der Plugins](Plugins/JavaScript-Schnittstelle/index.md)
 * [Katalog](Beurteilungen/Katalog-alt/index.md)
 * [Kategorien](admin/ordner)
 * [Klasse](admin/Klasse/index.md)

@@ -12,7 +12,11 @@ Mit Kompetenz kann die Suche auf den Fragen zugeordnete [Kompetenzbereiche](../.
 
 Mit den Buttons UND/ODER neben jedem Suchbegriff wird festgelgt, ob **alle** Suchbegriffe oder **mindestens ein** Suchbegriff in Titel, Kompetenz oder dem Fragetext vorkommen müssen/können.
 
-Die Suche kann noch zusätzlich auf einen Benutzer oder einen Kategorienamen eingeschränkt werden.
+Die Suche kann noch zusätzlich auf einen Benutzer oder einen Kategorienamen eingeschränkt werden. Der Benutzer (Autor) kann die Suche nur **ergänzen**: Eine Suche nur nach dem Autor ist nicht möglich,
+weil sie sehr große Datenmengen liefern kann – dann erscheint ein entsprechender Hinweis. Sind alle Suchfelder leer,
+weist eine Meldung darauf hin, Suchbegriffe einzugeben.
+
+Die Begriffe im Titel werden mit der UND/ODER-Einstellung des Titels verknüpft, die im Text mit der des Textes.
 
 Die Verknüfung der einzelnen Suchoptionen kann ebenfalls auf UND/ODER festgelegt werden.
 Weiters ist eine Auswahl von bestimmten :Kategorie:Fragetypen|Fragetypen für die Suche möglich.

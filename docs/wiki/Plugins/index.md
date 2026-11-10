@@ -33,6 +33,7 @@ Ein Anführungszeichen " muss im Definitionsstring mit einem Backslash verblockt
   * [Eigenes Plugin erstellen](referenz-plugin-java/eigenes-plugin/index.md): Schritt-für-Schritt-Anleitung aus dem Demoprojekt
   * [Architektur](referenz-plugin-java/architektur/index.md): Aufbau des Services und Ablauf zwischen LeTTo-Server und Plugin
   * [Plugin-API](referenz-plugin-java/plugin-api/index.md): Methoden, die ein Plugin überschreibt (`BasePlugin`)
+  * [JavaScript-Schnittstelle](JavaScript-Schnittstelle/index.md): Aufruf des Plugin-JavaScripts im Browser, Rückgabe der Eingabe, Design und Prüfen-Buttons der App (`window.LeTTo`, Ereignis `letto-umgebung`) und die Hilfsfunktionen `lettoUmgebung`, `lettoDunkel`, `lettoPruefen` in `plugintools.js`
 * Für Plugins in Python steht das Referenz-Plugin (Python) mit dem Demo-Plugin UhrPy zur Verfügung: https://github.com/LeTTo-GmbH/plugin-demo-python
   * Es ist eine Portierung des Java-Plugins mit derselben REST-Schnittstelle (FastAPI), das Docker-Image gibt es auf [Docker Hub](https://hub.docker.com/r/lettohub/letto-plugin-demopython).
   * Dokumentation: [Referenz-Plugin (Python)](referenz-plugin-python/index.md)

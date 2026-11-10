@@ -47,4 +47,11 @@ Der zugehörige [Statusdialog](../logs/dialog-status/index.md) kann geschlossen 
 
 ![Schülerimport und Zusatzdaten](untis-schueler.png)
 
-Nach abgeschlossenem Unterrichtsimport können Schülerdaten übernommen werden. Zusätzlich unterstützt die Oberfläche unter anderem Sokrates-/Login-Zuordnungen und den Import von Schülerfotos. Fotoimporte können ebenfalls als Hintergrundtransaktion laufen.
+Nach abgeschlossenem Unterrichtsimport können Schülerdaten übernommen werden. Im Schüler-Bereich wird gewählt, wie
+der **Login-Name neuer Schüler** gebildet wird:
+
+* **vorname.nachname** oder
+* **Sokrates-ID**.
+
+Die Einstellung gilt nur für Schüler, die beim Import neu angelegt werden; bestehende Logins bleiben unverändert. Hat ein
+Schüler keine Sokrates-ID, wird vorname.nachname verwendet. Zusätzlich unterstützt die Oberfläche unter anderem Sokrates-/Login-Zuordnungen und den Import von Schülerfotos. Fotoimporte können ebenfalls als Hintergrundtransaktion laufen.

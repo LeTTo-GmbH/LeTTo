@@ -6,6 +6,9 @@ In der Beispielsammlung kann auf alle Beispiele, die auf dem Server gespeichert 
 
 ![beispielsammlung.png](beispielsammlung.png)
 
+Beim erneuten Öffnen der Beispielsammlung – auch aus der App über den Menüpunkt **Bibliothek** bzw. einen Link auf eine
+Aktivität – werden der zuletzt gewählte Ordner und der zuletzt gewählte Test wieder angezeigt.
+
 ### Editor / Bibliothek
 Dieser Teil der Anwendung besteht aus zwei Teilen:
 * Der **Bibliothek** zum Ansehen der fertigen Beispiele bzw. zur Auswahl von Beispielen für Online-Aktivitäten. Die ehemalige Feedback-Ansicht entfällt in der neuen Version und wurde durch den Button **Prüfen/Ergebnisanzeige** ersetzt. 

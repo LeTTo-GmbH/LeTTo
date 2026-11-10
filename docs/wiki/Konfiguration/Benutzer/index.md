@@ -14,7 +14,7 @@ Die Suche kann über **Login-Name**, **Active-Directory-Login**, **Nachname**, *
 
 ## Ergebnisliste und Auswahl
 
-Jede Zeile besitzt eine Checkbox. Über die Checkbox im Tabellenkopf können alle sichtbaren Treffer ausgewählt werden. Mehrere ausgewählte Benutzer können gemeinsam bearbeitet werden.
+Benutzer ohne Nachname werden ebenfalls angezeigt. Jede Zeile besitzt eine Checkbox. Über die Checkbox im Tabellenkopf können alle sichtbaren Treffer ausgewählt werden. Mehrere ausgewählte Benutzer können gemeinsam bearbeitet werden.
 
 ![Mehrfachauswahl – Passwort](detail-mehrfachauswahl-passwort.png)
 

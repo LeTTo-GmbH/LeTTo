@@ -6,7 +6,9 @@ Der Dialog wird beim Anlegen eines neuen Benutzers oder über das Stift-Symbol e
 
 ## Benutzerdaten
 
-Links werden **Login-Name**, **Active-Directory-Login**, **Nachname**, **Vorname**, **E-Mail** und – sofern verwendet – eine **Sokrates-ID** gepflegt. Beim Anlegen sollte zumindest ein eindeutiger Login festgelegt werden; Vor- und Nachname erleichtern die spätere Suche und Zuordnung.
+Links werden **Login-Name**, **Active-Directory-Login**, **Nachname**, **Vorname**, **E-Mail** und – sofern verwendet – eine **Sokrates-ID** gepflegt. **Login-Name** und **Nachname** sind Pflichtfelder; ohne sie kann nicht gespeichert werden. Fehlt der Login-Name, wird der Active-Directory-Login (in Kleinbuchstaben) vorgeschlagen.
+
+Der Dialog lädt immer genau den Benutzer, dessen Stift-Symbol angeklickt wurde – auch bei Benutzern ohne Login-Name.
 
 ## Passwort
 
@@ -22,8 +24,10 @@ Die Checkboxen steuern Eigenschaften und Berechtigungen des Benutzers: **Männli
 
 ![Klassen und Kataloge](detail-klassen-und-kataloge.png)
 
-Rechts werden bestehende **Klassen-Zuordnungen** angezeigt. Bei Schülern sind dies die Klassen je Schuljahr; bei Lehrern werden zusätzlich Gegenstand/Katalog-Zuordnungen geführt. Der **Papierkorb** entfernt die jeweilige Zuordnung. Über die Auswahl des Schuljahrs können weitere Zuordnungen für das passende Jahr verwaltet werden. Ist eine Klasse mit dem gewählten Gegenstand schon zugeordnet, erscheint eine Rückfrage; nach der Bestätigung entsteht ein weiterer, eigener Katalog (siehe [Klassenzuordnung](../../../Klassenzuordnung/index.md)).
+Rechts werden bestehende **Klassen-Zuordnungen** angezeigt. Bei Schülern sind dies die Klassen je Schuljahr; bei Lehrern werden zusätzlich Gegenstand/Katalog-Zuordnungen geführt. Der **Papierkorb** entfernt die jeweilige Zuordnung endgültig (Tooltip „Klassenzuordnung endgültig löschen“ bzw. „Lehrerzuordnung endgültig löschen“). Über die Auswahl des Schuljahrs können weitere Zuordnungen für das passende Jahr verwaltet werden. Ist eine Klasse mit dem gewählten Gegenstand schon zugeordnet, erscheint eine Rückfrage; nach der Bestätigung entsteht ein weiterer, eigener Katalog (siehe [Klassenzuordnung](../../../Klassenzuordnung/index.md)).
 
 ## Speichern und Abbrechen
 
-**Speichern** übernimmt die Änderungen. **Abbrechen** bzw. das Schließen des Dialogs verwirft nicht gespeicherte Änderungen.
+**Speichern** übernimmt die Änderungen. Der Dialog schließt sich erst, wenn das Speichern gelungen ist; sonst bleibt er mit der Fehlermeldung offen. Danach wird die Benutzerliste neu geladen. **Abbrechen** bzw. das Schließen des Dialogs verwirft nicht gespeicherte Änderungen.
+
+Administratoren können einen bestehenden Benutzer mit **Benutzer löschen** direkt im Dialog löschen; er verschwindet danach auch aus der Ergebnisliste.

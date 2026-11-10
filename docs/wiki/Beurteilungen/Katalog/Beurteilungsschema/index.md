@@ -152,7 +152,17 @@ Dabei gilt grundsätzlich:
 
 Die fachlichen Regeln und Beispiele zur Beurteilungskonfiguration sind auf dieser Seite zusammengeführt.
 
+## Prüfung, Notenskala und Beispielrechnung
+
+Das Schema wird beim Bearbeiten laufend geprüft. Ein **Prüfbericht** mit Ampel zeigt Fehler, Warnungen und Hinweise;
+solange Fehler bestehen, kann nicht gespeichert werden. Dazu kommen die **Notenskala** als Balken von 0 bis 100 %,
+die Beispielrechnung **Was wäre wenn?** mit Rechenweg, **Vorlagen** für neue Schemen und Hilfetexte **(i)** zu den
+Feldern. Details siehe [Beurteilungskonfiguration](../../../Konfiguration/Beurteilung/index.md#prüfung-des-schemas-prüfbericht).
+
+Notenstufen mit dem Prozentwert **-1** (zB. E, T, K, Ø) sind Markierungen und werden nie aus einem Prozentwert vergeben.
+
 ## Speichern und Abbrechen
 
 * **Abbrechen** – schließt den Dialog ohne Übernahme der noch nicht gespeicherten Änderungen.
-* **Speichern** – speichert das Schema und seine geänderten Gewichtungen/Eigenschaften.
+* **Speichern** – speichert das Schema und seine geänderten Gewichtungen/Eigenschaften. Hat das Schema Fehler, wird
+  das Speichern abgelehnt.

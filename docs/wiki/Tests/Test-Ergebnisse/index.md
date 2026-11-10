@@ -20,7 +20,8 @@ Rechts oben über der Tabelle:
   eine Aktivität läuft.
 * **Liste** – die Beispielnummern der Schüler (Reihenfolge, in der der Schüler die Frage bekommen hat) in den
   Ergebniszellen ein- oder ausblenden.
-* **Stopp** – Aktivität beenden und die Ergebnisse für die Schüler freigeben.
+* **Stopp** – Aktivität beenden und die Ergebnisse für die Schüler freigeben. Das Symbol zeigt den Zustand der
+  Aktivität (siehe [Aktivität beenden](#aktivität-beenden)).
 * **Teilen** – Dialog „Import / Export / Druck“ für die Ergebnisse. Die von den Schülern **abgegebenen Dateien**
   werden nicht hier, sondern je Frage heruntergeladen: Klick auf die Spaltenüberschrift der Frage (Bp.1, Bp.2, …) und
   dort „Alle Schülerdokumente als ZIP downloaden“ (siehe [Tabelle](#tabelle)).
@@ -30,12 +31,13 @@ Rechts oben über der Tabelle:
 ## Tabelle
 
 * **Name** – Name des Schülers, beim Darüberfahren wird das Foto angezeigt. Ein Klick auf die Spaltenüberschrift sortiert
-  nach dem Namen.
+  nach dem Namen (siehe [Sortierung](#sortierung)).
 * **G** – Schülergruppe (nur, wenn die Klasse in Gruppen geteilt ist).
 * **Punkte** – erreichte / mögliche Punkte und Prozentwert. „-----“ bedeutet, dass der Schüler die Aktivität noch nicht
   gestartet hat, „Test blockiert“, dass sie für ihn gesperrt wurde.
 * **Note** – Note des Versuchs; sie wird erst angezeigt, wenn der Versuch abgeschlossen ist.
-* **Bp.1, Bp.2, …** bzw. **Gr.1, …** – eine Spalte je Frage bzw. Fragengruppe mit den Punkten. Unter der Bezeichnung
+* **Bp.1, Bp.2, …** bzw. **Gr.1, …** – eine Spalte je Frage bzw. Fragengruppe mit den Punkten, in der Reihenfolge der
+  Fragen in der Aktivität; eine Fragengruppe steht an der Position ihrer ersten Frage. Unter der Bezeichnung
   stehen die möglichen Punkte; beim Darüberfahren werden die Fragen der Spalte angezeigt. Ein Klick auf die
   Spaltenüberschrift öffnet einen Dialog, in dem für diese Frage bei allen Schülern
   * die **Punkte geändert** und alle Versuche neu beurteilt,
@@ -56,6 +58,34 @@ In den Ergebniszellen bedeutet:
 Eine **rot hinterlegte Zeile** zeigt einen **Fokusverlust** an: Der Schüler hat im geschützten Modus die Aktivität
 verlassen. Über das rote Schloss-Symbol links oben wird der Fokusverlust für alle Teilnehmer aufgehoben, für einen
 einzelnen Schüler über die Aktionen seines Versuchs.
+
+Angezeigt werden die Schüler des Katalogs: Ist im Katalog eine
+[Schülerauswahl bzw. weitere Klassen](../../Beurteilungen/Katalog/Anzeigekonfiguration/index.md#klassen-und-schüler)
+festgelegt, gilt sie auch hier.
+
+## Sortierung
+
+Ein Klick auf die Spaltenüberschrift **Name**, **G** (Schülergruppe) oder **Punkte** sortiert die Liste, ein weiterer
+Klick kehrt die Richtung um. Ohne gewählte Sortierung wird nach der Schülergruppe (falls vorhanden) und dann nach dem
+Namen sortiert.
+
+* Die gewählte Sortierung **bleibt beim automatischen Aktualisieren (Polling) erhalten** und wird im Browser
+  **gemerkt** – sie gilt auch beim nächsten Öffnen einer Ergebnisseite.
+* Bei gleichem Wert wird nach dem Namen und danach nach dem Startzeitpunkt sortiert
+  (siehe [Mehrere Versuche derselben Person](#mehrere-versuche-derselben-person)).
+
+## Aktivität beenden
+
+Der **Stopp**-Knopf in der Symbolleiste (ebenso im [Klassenzimmer](../../Schueler/AktivitaetStart/index.md#ansicht-des-lehrers))
+zeigt drei Zustände:
+
+| Symbol | Zustand | Klick |
+|---|---|---|
+| rotes Stopp-Symbol, Umriss | Aktivität läuft | öffnet den Bereich „Aktivität beenden und Ergebnisse freigeben …“ |
+| rotes Stopp-Symbol, gefüllt | Beenden-Bereich ist geöffnet | schließt den Bereich wieder |
+| grünes Häkchen | Aktivität ist beendet, der Tooltip zeigt das Datum | erneut beenden bzw. neu beurteilen |
+
+Grün bedeutet also immer: Die Aktivität ist beendet. Nach dem Beenden wird die Seite mit dem neuen Zustand neu geladen.
 
 ## Aktionen eines Versuchs
 
@@ -94,7 +124,7 @@ Ein Klick auf eine Ergebniszelle öffnet die Frage mit den Eingaben des Schüler
 
 ![Ergebnis einer Frage](ergebnis-detaildialog.png)
 
-* Oben links stehen Name, Frage, Beispielnummer des Schülers und Datensatz, rechts daneben die erreichten Punkte und die
+* Oben links stehen Name, Frage, Beispielnummer des Schülers (dieselbe Nummer, die der Schüler sieht) und Datensatz, rechts daneben die erreichten Punkte und die
   Beurteilung.
 * Für jede Teilfrage (**Q0, Q1, …**) sind die möglichen und die erreichten Punkte angegeben. Die erreichten Punkte können
   überschrieben werden; die Summe wird automatisch mitgerechnet. Damit gilt die Frage als vom Lehrer beurteilt.
@@ -111,7 +141,10 @@ Die Symbole unter dem Feedback:
 * **Stift** – Angabewerte (Datensatz) des Beispiels bearbeiten
 * **Büroklammer** – Feedback-Datei des Lehrers hochladen
 * **Liste** – alle gespeicherten Antworten des Schülers zu dieser Frage anzeigen
-* **Werkzeug** – Frage im Editor bearbeiten, zB. wenn die Frage fehlerhaft ist
+* **Werkzeug** – Frage im Editor bearbeiten, zB. wenn die Frage fehlerhaft ist. Je nach Einstellung der Schule
+  ([BIBLIOTHEK_NEU](../../Administration/Docker/LeTToEnvironment/index.md#app-konfiguration)) öffnet sich die Aktivität in
+  der [Bibliothek](../../Bibliothek/Aktivitaeten/index.md#fragen-der-aktivität) mit der Frage im Editor oder die Frage in
+  der alten Oberfläche (main). Dasselbe gilt für die Fragen mit dem Werkzeug-Symbol im Dialog der Spaltenüberschrift.
 
 ## Testprotokoll
 

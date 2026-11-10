@@ -102,6 +102,11 @@ Checkbox aktiviert eine feste Startzeit. Ohne Aktivierung wird die entsprechende
 
 Checkbox aktiviert eine feste End-/Stopzeit.
 
+Checkbox und Zeitauswahl sind getrennt: Ein Klick auf die Checkbox schaltet die Zeitbeschränkung ein oder aus, Datum
+und Uhrzeit werden daneben gewählt. Eine gesetzte Zeit bleibt sichtbar – bei ausgeschalteter Checkbox ausgegraut –
+und kann jederzeit geändert werden. Bereits eingegebene Zeiten werden durch die Vorbelegung beim Öffnen des Dialogs
+nicht überschrieben.
+
 ### Begrenzung (Dauer in [min])
 
 Checkbox aktiviert eine maximale Bearbeitungsdauer; das zugehörige Zahlenfeld legt die Dauer in Minuten fest. `0` steht in der sichtbaren Konfiguration für keine positive Zeitvorgabe.
@@ -115,6 +120,8 @@ Mehrzeiliges Feld für eine Beschreibung bzw. Hinweise zur Aktivität.
 ![Aktionsleiste der Online-Aktivität](detail-online-fussleiste.png)
 
 
-* **Fragen bearbeiten** – öffnet die Fragen-/Testbearbeitung der Aktivität.
+* **Fragen bearbeiten** – öffnet die Fragen-/Testbearbeitung der Aktivität: je nach Einstellung der Schule
+  ([BIBLIOTHEK_NEU](../../../Administration/Docker/LeTToEnvironment/index.md#app-konfiguration)) in der
+  [Bibliothek](../../../Bibliothek/Aktivitaeten/index.md#fragen-der-aktivität) oder in der alten Oberfläche (main).
 * **Abbrechen** – verwirft nicht gespeicherte Änderungen und schließt den Dialog.
 * **Speichern** – speichert die Aktivitätseinstellungen.

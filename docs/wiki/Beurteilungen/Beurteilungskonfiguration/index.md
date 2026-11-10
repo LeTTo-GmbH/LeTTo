@@ -1,4 +1,7 @@
 # Beurteilungskonfiguration
+
+> In der App wird jedes Schema vor dem Speichern geprüft (Prüfbericht mit Ampel), die Notenskala als Balken angezeigt
+> und mit **Was wäre wenn?** durchgerechnet – siehe [Beurteilungskonfiguration in der App](../../Konfiguration/Beurteilung/index.md).
 <br>![800px-ClipCapIt-181204-091825.PNG](800px-ClipCapIt-181204-091825.PNG)
 ### Einführung
 

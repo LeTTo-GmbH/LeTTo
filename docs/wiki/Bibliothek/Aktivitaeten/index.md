@@ -28,6 +28,10 @@ vergeben wurde (zB. „M 1“), daneben der Name des Gegenstands. Alle Änderung
 Verschieben, Kopieren, Einfügen, Sichtbarkeit, Löschen) sind sofort auch auf der Startseite und in den anderen
 Ansichten der App sichtbar – ein Neuladen ist nicht nötig.
 
+Die **Reihenfolge der Aktivitäten** bleibt nach dem Verschieben überall gleich – in der App, in der alten Oberfläche
+und nach einem Neustart des Servers. Als HTML eingefügte Fragen und Dokumente werden am Ende eingereiht, kopierte
+Aktivitäten an der Zielposition.
+
 ### Kontextmenü eines Fachs oder Ordners
 
 Die drei Punkte beim gewählten Fach bzw. die rechte Maustaste auf einen Ordner öffnen das Kontextmenü:
@@ -163,6 +167,21 @@ Die Seite zeigt alle Fragen der Aktivität als Kacheln in der Reihenfolge, in de
 13. **Punkte** der Frage in dieser Aktivität – mit **Tab** oder **Enter** geht es zur nächsten Frage
 14. **Alle auswählen** – Kästchen für alle Fragen setzen bzw. entfernen
 
+Die **Nummer** der Kachel ist die Beispielnummer, die die Schüler sehen (ohne Mischen der Fragen) und die in den
+[Test-Ergebnissen](../../Tests/Test-Ergebnisse/index.md#tabelle) als Spalte Bp.1, Bp.2, … erscheint.
+
+### Hinweis „Reihenfolge kontrollieren“
+
+Bei einem Update wurden fehlende Positionen von Fragen automatisch ergänzt und die gespeicherte Reihenfolge
+vereinheitlicht. Konnte dabei die ursprüngliche Reihenfolge nicht sicher bestimmt werden (zB. bei Gruppen, deren Fragen
+nicht nebeneinander standen), zeigt die Seite über den Kacheln den Hinweis:
+
+> Die Reihenfolge der Fragen dieser Aktivität wurde bei einem Update automatisch korrigiert. Bitte kontrollieren Sie die
+> Reihenfolge.
+
+Nach der Kontrolle entfernt **Reihenfolge passt** den Hinweis. Wird die Reihenfolge durch Ziehen einer Kachel geändert,
+verschwindet er ebenfalls. In der alten Oberfläche (main) erscheint beim Öffnen einer solchen Aktivität dieselbe Meldung.
+
 Hat die Aktivität mehrere **Testgruppen** (A, B, …) oder **Bereiche**, werden sie unter der Titelzeile als Reiter
 angezeigt; die Punktesumme gilt dann für den gewählten Bereich, **Gesamt** für die ganze Testgruppe.
 
@@ -171,7 +190,9 @@ angezeigt; die Punktesumme gilt dann für den gewählten Bereich, **Gesamt** fü
 Werden mehrere Fragen ausgewählt, erscheint unten **Gruppieren**: Die gewählten Fragen werden zu einer Gruppe
 zusammengefasst, aus der jeder Schüler nur einen Teil bekommt (zB. 2 aus 5). Gruppierte Fragen haben einen farbigen
 Rahmen und ein Band mit der Anzahl; dort wird die Anzahl geändert oder die Gruppierung aufgehoben
-(siehe [Fragen gruppieren](../../Tests/FragenGruppieren/index.md)).
+(siehe [Fragen gruppieren](../../Tests/FragenGruppieren/index.md)). Die gruppierten Fragen werden dabei in der
+Reihenfolge der Aktivität als zusammenhängender Block an die Stelle der ersten gewählten Frage gestellt – auch wenn
+sie nicht nebeneinander standen oder in anderer Reihenfolge angeklickt wurden.
 
 ### Fragen bearbeiten und entkoppeln
 
@@ -191,6 +212,21 @@ der Aktivität trotzdem **bearbeitet** werden. Der [Editor](../Editor/index.md) 
 orangen Hinweis **wird getrennt**. Beim Speichern bekommt die Aktivität automatisch eine eigene Kopie der Frage – sie
 wird von der Fragensammlung getrennt, das Original bleibt unverändert. Der Editor bearbeitet danach gleich die Kopie
 weiter.
+
+### Aus den Ergebnissen hierher
+
+Je nach Einstellung der Schule ([BIBLIOTHEK_NEU](../../Administration/Docker/LeTToEnvironment/index.md#app-konfiguration))
+führen folgende Links der App in diese Seite statt in die alte Oberfläche (main):
+
+* **Aktivität bearbeiten** bzw. **Fragen bearbeiten** im Eigenschaften-Dialog einer Aktivität aus dem Klassenzimmer
+  und aus den Beurteilungen,
+* der Menüpunkt **Fragen bearbeiten** einer Aktivität,
+* das Bearbeiten einer einzelnen Frage aus den [Test-Ergebnissen](../../Tests/Test-Ergebnisse/index.md#ergebnis-einer-frage)
+  – dann öffnet sich die Aktivität im richtigen Bereich und die Frage gleich im [Editor](../Editor/index.md). Ist die
+  Frage nicht mehr Teil der Aktivität, erscheint ein Hinweis.
+
+Aus der Bibliothek selbst geöffnete Aktivitäten bleiben immer hier. Die Menüpunkte **Bibliothek** (alte Oberfläche)
+und **Bibliothek neu** sind unabhängig von der Einstellung beide vorhanden.
 
 ### siehe auch
 

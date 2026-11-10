@@ -1,5 +1,40 @@
 # Neuigkeiten
 
+## Version 1.3 - 10.11.2026 (Entwicklungsstand)
+* **Beurteilungsschema:** Prüfung vor dem Speichern mit Prüfbericht (Ampel), Notenskala als Balken, Beispielrechnung
+  „Was wäre wenn?“ mit Rechenweg, Vorlagen, Hilfetexte zu jedem Feld, Zuordnung globaler Definitionen bei Import/Kopie,
+  eindeutiges Default-Schema, Markierungen (-1 %) nie aus einem Prozentwert; im Admin-Modus „Schemen prüfen“ und
+  Schutz verwendeter globaler Definitionen – siehe [Beurteilungskonfiguration](../../Konfiguration/Beurteilung/index.md)
+* **Katalog:** ohne Schülerauswahl werden alle Schüler angezeigt, die Auswahl gilt auch für die Testergebnisse –
+  siehe [Anzeigekonfiguration](../../Beurteilungen/Katalog/Anzeigekonfiguration/index.md#klassen-und-schüler)
+* **Untis-Import:** Login-Name neuer Schüler wählbar (vorname.nachname oder Sokrates-ID) – siehe
+  [Untis-Import](../../admin/untis-import/index.md#schüler-und-zusatzdaten)
+* **Plugins:** Design und Prüfen-Buttons der App für das Plugin-JavaScript (`window.LeTTo`, `plugintools.js`) – siehe
+  [JavaScript-Schnittstelle](../../Plugins/JavaScript-Schnittstelle/index.md)
+* **Einstellung BIBLIOTHEK_NEU:** je Schule wählbar, ob „Aktivität/Fragen bearbeiten“ und das Bearbeiten einer Frage aus
+  den Ergebnissen in die Bibliothek neu oder in die alte Oberfläche führen – siehe
+  [LeTTo Environment](../../Administration/Docker/LeTToEnvironment/index.md#app-konfiguration)
+* **Bugfixes Aktivitäten und Ergebnisse:**
+  * keine leere Seite mehr bei „Eigene Eingaben ansehen“; nach der Abgabe Status aller Fragen bei Aktivitäten mit
+    Prüfen, Lösungen erst nach dem Ende (#2562, #2344) – siehe [Aktivität starten](../../Schueler/AktivitaetStart/index.md#nach-der-abgabe)
+  * abgegebene Versuche werden nicht wieder bearbeitbar, kein doppelter Start (#2500, #2544)
+  * gleiche Beispielnummern bei Lehrer und Schüler, Ergebnisspalten in der Reihenfolge der Aktivität, Gruppieren
+    speichert einen zusammenhängenden Block, Hinweis „Reihenfolge kontrollieren“ (#2543) – siehe
+    [Fragen der Aktivität](../../Bibliothek/Aktivitaeten/index.md#hinweis-reihenfolge-kontrollieren)
+  * Sortierung der Ergebnisliste bleibt beim Polling und wird gemerkt (#2569) – siehe
+    [Test-Ergebnisse](../../Tests/Test-Ergebnisse/index.md#sortierung)
+  * Stopp-Knopf mit drei Zuständen (läuft / Bereich offen / beendet) (#2548) – siehe
+    [Aktivität beenden](../../Tests/Test-Ergebnisse/index.md#aktivität-beenden)
+  * Start-/Stoppzeit im Aktivitäts-Dialog wieder sichtbar und änderbar (#2573) – siehe
+    [Online-Aktivität](../../Beurteilungen/Katalog/OnlineAktivitaet/index.md#zeitbegrenzung)
+  * Reihenfolge der Aktivitäten bleibt erhalten (#2565)
+* **Bugfixes Verwaltung und alte Oberfläche:**
+  * Benutzer-Dialog öffnet den richtigen Benutzer, Login und Nachname Pflicht, Löschen im Dialog, richtige Tooltips
+    (#2567, #2574) – siehe [Benutzer bearbeiten](../../Konfiguration/Benutzer/Dialoge/Benutzer-bearbeiten/index.md)
+  * Fragensuche: richtige Meldung bei Suche nur nach dem Autor (#1386)
+  * Beispielsammlung merkt den zuletzt gewählten Ordner/Test (#2575)
+  * Verbindungsfehler zu Fremdservern (Exchange) werden protokolliert (#2557)
+
 ## Stable - Rev 7044 - Version 1.3 - Oktober 2026
 * [Update von Version 1.2 auf 1.3](../../Administration/Updaterev70xx/index.md)
 * Hilfe Maxima-Feld

@@ -121,6 +121,7 @@ siehe auch
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | APP_SERVER_LIST  | Angabe der Server, auf denen nach Schulen für den Login gesucht wird. Wenn leer, dann werden die Schulen der akt. Instanz verwendent. Trennung der Schulen durch Leerzeichen! | Leer oder zB. build.letto.at/private  s1.letto.at s2.letto.at | 
 | APP_PRIVATE_URI  | URI, unter der die Services für LeTTo-Private zu finden sind. Wenn leer, dann kein LeTTo-Private!                                                                             | Leer oder zB. https://build.letto.at/private                  |
+| BIBLIOTHEK_NEU   | Schulen, deren Bibliotheks-Links in der App in die neue [Bibliothek](../../../Bibliothek/Aktivitaeten/index.md#aus-den-ergebnissen-hierher) statt in die alte Oberfläche (main) führen (Edit-Service, `letto_bibliothekNeu`). Die Menüpunkte **Bibliothek** (main) und **Bibliothek neu** sind unabhängig davon immer vorhanden. Schulkürzel durch Leerzeichen, Beistrich oder Strichpunkt getrennt, `*` = alle Schulen, leer = alle nach main. | Leer (Standard), zB. `htlstp tgm` oder `*`                     |
 
 
 #### Debugging Konfiguration

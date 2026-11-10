@@ -86,6 +86,20 @@ Die Gruppen werden auch für die Funktion **Für Gruppe übernehmen** genutzt: T
 
 Das Eingabefeld erscheint bei aktivierten Schülergruppen. Es dient zur kurzen Gruppen-Auswahl bzw. Filterangabe und wird gemeinsam mit der Anzeigekonfiguration gespeichert.
 
+## Klassen und Schüler
+
+Ein Katalog kann neben der Ausgangsklasse weitere Klassen desselben Schuljahres enthalten und auf einzelne Schüler
+eingeschränkt werden (zB. bei Gruppen, die aus mehreren Klassen zusammengesetzt sind).
+
+* **Weitere Klassen auswählen** – zusätzliche Klassen im selben Schuljahr aufnehmen; ohne Auswahl gilt **Nur die
+  Ausgangsklasse**.
+* **Schüler auswählen** – die anzuzeigenden Schüler aus allen zugeordneten Klassen festlegen. Angezeigt wird, wie viele
+  Schüler ausgewählt sind bzw. **Alle Schüler**.
+
+Ist **keine Schülerauswahl** gespeichert (oder ist sie leer bzw. ungültig), zeigt der Katalog **alle Schüler** der
+zugeordneten Klassen. Die Auswahl der Schüler und die zusätzlichen Klassen gelten auch für die
+[Ergebnisse der Online-Aktivitäten](../../../Tests/Test-Ergebnisse/index.md) dieses Katalogs.
+
 ## Fußleiste
 
 * **Abbrechen** – schließt den Dialog ohne Übernahme der Änderungen.
