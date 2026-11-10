@@ -109,8 +109,8 @@ Gerechnet wird am Server mit derselben Berechnung wie in der Notenübersicht. An
 
 ## Hilfetexte
 
-Zu den Feldern, Checkboxen und Spaltenüberschriften der Schema-Seite gibt es Hilfeknöpfe **(i)**. Ein Klick zeigt eine
-kurze Erklärung und ein Beispiel, wie sich die Einstellung auswirkt – etwa bei **Min-%** und **Min.-Prozentsatz
+Zu den Feldern, Checkboxen und Spaltenüberschriften der Schema-Seite gibt es Tooltips: Bleibt die Maus kurz über dem
+Feld, erscheint eine kurze Erklärung mit einem Beispiel, wie sich die Einstellung auswirkt – etwa bei **Min-%** und **Min.-Prozentsatz
 verwenden**, den Gewichten von Gruppe und Beurteilungsart, Zwischennoten, **Summe über Lehrer**, der Untergrenze einer
 Notenstufe und den Markierungen.
 
