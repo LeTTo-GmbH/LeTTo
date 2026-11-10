@@ -105,7 +105,8 @@ Checkbox aktiviert eine feste End-/Stopzeit.
 Checkbox und Zeitauswahl sind getrennt: Ein Klick auf die Checkbox schaltet die Zeitbeschränkung ein oder aus, Datum
 und Uhrzeit werden daneben gewählt. Eine gesetzte Zeit bleibt sichtbar – bei ausgeschalteter Checkbox ausgegraut –
 und kann jederzeit geändert werden. Bereits eingegebene Zeiten werden durch die Vorbelegung beim Öffnen des Dialogs
-nicht überschrieben.
+nicht überschrieben. Wird die Checkbox ohne gesetzte Zeit eingeschaltet, schlägt LeTTo eine Zeit vor (Startzeit: jetzt,
+Stoppzeit: eine Stunde nach dem Start).
 
 ### Begrenzung (Dauer in [min])
 

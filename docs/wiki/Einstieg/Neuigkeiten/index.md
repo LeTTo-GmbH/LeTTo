@@ -33,7 +33,7 @@
     (#2567, #2574) – siehe [Benutzer bearbeiten](../../Konfiguration/Benutzer/Dialoge/Benutzer-bearbeiten/index.md)
   * Fragensuche: richtige Meldung bei Suche nur nach dem Autor (#1386)
   * Beispielsammlung merkt den zuletzt gewählten Ordner/Test (#2575)
-  * Verbindungsfehler zu Fremdservern (Exchange) werden protokolliert (#2557)
+  * Verbindungsfehler zu Fremdservern (Exchange) werden in main in `/opt/letto/log/fremdserver.log` und im Docker-Log protokolliert (#2557)
 
 ## Stable - Rev 7044 - Version 1.3 - Oktober 2026
 * [Update von Version 1.2 auf 1.3](../../Administration/Updaterev70xx/index.md)
