@@ -1,6 +1,12 @@
 # Neuigkeiten
 
 ## Version 1.3 - 10.11.2026 (Entwicklungsstand)
+* **Lernmaterialien und Info-Seite für Schüler:** Der Menüpunkt „Beispiele“ heißt jetzt **Lernmaterialien** und erscheint
+  nur, wenn es für den Schüler Übungsaufgaben gibt; auch Klassen allgemein gültiger Schuljahre, in denen der Schüler direkt
+  Mitglied ist, zählen dazu. Allgemein gültige Schuljahre sind für Schüler nie das aktuelle Schuljahr. Sind Info-Seite und
+  Lernmaterialien aktiv und hat der Schüler keine Inhalte im aktuellen Schuljahr, werden Dashboard und Startseite
+  ausgeblendet. Die mitgelieferte Info-Seite erklärt das Selbstlernen und gibt es in allen 5 Sprachen – siehe
+  [Lernmaterialien](../../Schueler/Lernmaterialien/index.md) und [Info-Seite](../../Schueler/Info-Seite/index.md)
 * **Beurteilungsschema:** Prüfung vor dem Speichern mit Prüfbericht (Ampel), Notenskala als Balken, Beispielrechnung
   „Was wäre wenn?“ mit Rechenweg, Vorlagen, Hilfetexte zu jedem Feld, Zuordnung globaler Definitionen bei Import/Kopie,
   eindeutiges Default-Schema, Markierungen (-1 %) nie aus einem Prozentwert; im Admin-Modus „Schemen prüfen“ und

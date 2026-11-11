@@ -21,7 +21,13 @@ Bitte jedenfalls Themenbereich und Abteilung korrekt auswählen!
 Aus jeder Kategorie wird beim Erstellen der Beispielsammlung ein Test gemacht, in den die Fragen der aktuellen Kategorie automatisch eingefügt werden. Tests entsprechen dann der kleinsten Einheit der Beispielsammlung, die quasi ein Kapitel oder Unterkapitel abbilden. [Online-Tests](../../Tests/Online-Tests/index.md) in immer-gültigen Schuljahren werden bei der Bearbeitung durch Schüler oder externe Benutzer zwar in der Datenbank gespeichert, fliessen aber nicht in die Beurteilungen für den Schüler ein. Diese Tests laufen immer im Rechenübungs-Modus, sodass Schüler üben können und dann die gerechneten oder beantworteten Aufgabenstellungen kontrolliert werden können. Der Start eines Tests über **Test starten** und das **Test beendent** entfällt im Übungsmodus.
 
 ### Sichtweise für Schüler
-Für jeden Schüler sind die angelegten Themenbereiche und die darin angelegten Gegenstände und Beispiele über die [Navigation](../../Einstieg/LeTTo-Hauptansicht/index.md#navigation) unter **Beispiele** zu finden:
+**In der App** stehen die allgemein gültigen Beispielsammlungen für Schüler unter **Lernmaterialien** – mit Übersicht der
+Gegenstände, Kapiteln, Starten/Fortsetzen/Wiederholen und Lernfortschritt, siehe [Lernmaterialien](../../Schueler/Lernmaterialien/index.md).
+Ein Schüler bekommt die Klassen der Beispielsammlung, die in Schultyp und Jahrgang zu seiner aktuellen Klasse passen,
+sowie Klassen, in denen er direkt Mitglied ist. Allgemein gültige Schuljahre gelten in der App nie als aktuelles
+Schuljahr, ihr Inhalt erscheint also nicht auf der Startseite.
+
+**Alte Oberfläche:** Für jeden Schüler sind die angelegten Themenbereiche und die darin angelegten Gegenstände und Beispiele über die [Navigation](../../Einstieg/LeTTo-Hauptansicht/index.md#navigation) unter **Beispiele** zu finden:
 
 <br>![500px-ClipCapIt-181005-224850.PNG](500px-ClipCapIt-181005-224850.PNG)
 
