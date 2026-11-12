@@ -110,6 +110,7 @@ Einzelfelder der Frage in Reihenfolge mit empfohlenen Werten (Standardwerte von 
 | security, copyright | leer | |
 | onRamp | false | true = nächste Teilfrage erst nach richtiger Antwort |
 | jsonMap, changeLogMap | CDATA `{}` | |
+| autor, uuid, revision | weglassen bzw. aus der Sammlung | dauerhafter Fragen-Schlüssel (ab 2026-11): Autor-/Schul-ID, UUID (nie ändern), Revision (nur bei inhaltlicher Änderung erhöhen); LeTTo erkennt die Frage beim erneuten Import daran wieder |
 | questionCommentMsg | CDATA `KI-generiert – bitte prüfen` | Bearbeitungskommentar |
 | questionCommentIcon | PROCESSING | Status: PROCESSING, REVIEWED, WARNING, BLOCKED |
 
