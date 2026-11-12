@@ -39,7 +39,8 @@ QUESTION = [
     ("streng", "B"), ("licenceKey", "C"), ("konstanteMitProzent", "B"), ("useSymbolicMode", "B"),
     ("addDocumentsPossible", "B"), ("info", "C"), ("randomDataset", "B"), ("creationDate", "DATE"),
     ("lastChange", "DATE"), ("security", "C"), ("copyright", "C"), ("onRamp", "B"),
-    ("jsonMap", "JSON"), ("changeLogMap", "JSON"), ("questionCommentMsg", "C"),
+    ("jsonMap", "JSON"), ("changeLogMap", "JSON"), ("autor", "S"), ("uuid", "S"), ("revision", "I"),
+    ("questionCommentMsg", "C"),
     ("questionCommentIcon", "E:icon"), ("text", "TEXT*!"), ("subquestion", "SUBQUESTION*"),
     ("dataset", "DATASET*"),
 ]

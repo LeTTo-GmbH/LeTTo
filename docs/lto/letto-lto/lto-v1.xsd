@@ -126,6 +126,9 @@
       <xs:element name="onRamp"        type="xs:boolean" minOccurs="0"><xs:annotation><xs:documentation>true = nächste Teilfrage erst nach korrekter Abgabe der vorigen einblenden.</xs:documentation></xs:annotation></xs:element>
       <xs:element name="jsonMap"       type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>JSON-Objekt Map&lt;String,String&gt; mit Zusatzdaten (CDATA), sonst "{}".</xs:documentation></xs:annotation></xs:element>
       <xs:element name="changeLogMap"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>JSON-Objekt Map&lt;String,String&gt; mit Änderungsprotokoll (CDATA), sonst "{}".</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="autor"         type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Dauerhafter Fragen-Schlüssel: Autor-/Schul-ID (ab 2026-11, nur zusammen mit uuid).</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="uuid"          type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Dauerhafter Fragen-Schlüssel: UUID der Frage, bleibt bei Export/Import erhalten.</xs:documentation></xs:annotation></xs:element>
+      <xs:element name="revision"      type="xs:int"    minOccurs="0"><xs:annotation><xs:documentation>Dauerhafter Fragen-Schlüssel: Revision, wird nur bei inhaltlichen Änderungen erhöht.</xs:documentation></xs:annotation></xs:element>
       <xs:element name="questionCommentMsg"  type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Bearbeitungskommentar zur Frage (CDATA).</xs:documentation></xs:annotation></xs:element>
       <xs:element name="questionCommentIcon" type="IconTypeValue" minOccurs="0"/>
       <xs:element name="text"          type="LettoTextType" maxOccurs="unbounded"><xs:annotation><xs:documentation>
