@@ -86,6 +86,7 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 | Konfiguration → E-Mail | [E-Mail](E-Mail/index.md) | SMTP-Server, Test-Mail |
 | Konfiguration → Update-Konfiguration | [Update-Konfiguration](Update-Konfiguration/index.md) | Image-Tags, Updates aller Container, neue Services |
 | Konfiguration → Server-Token | [Server-Token](Server-Token/index.md) | Tokens für fremde Server |
+| Konfiguration → Lizenz-Umzug | [Lizenz-Umzug](Lizenz-Umzug/index.md) | Transfer-Code für Hardware-Umzug oder Schulwechsel erzeugen und einlösen |
 | Konfiguration → Plugins | [Plugins](Plugins/index.md) | registrierte Plugin-Services |
 | Plugins → hinzufügen | [Plugin hinzufügen](Plugin-hinzufuegen/index.md) | neues Plugin aus Proxy- und Compose-Datei |
 | Verwaltung → Benutzer | [Benutzer](Benutzer/index.md) | angemeldete Benutzer, Benutzerdetails |
@@ -114,6 +115,7 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 | `/opt/letto/docker/storage/database-dump` | SQL-Dumps der Schulen, die in Schulen importiert werden können |
 | `/opt/letto/docker/storage/database-backup` | Sicherungen der Datenbank-Container (MySQL, Mongo, Redis) |
 | `/opt/letto/docker/storage/log` | Logdateien aller Services |
+| `/opt/letto/docker/storage/setup/lizenz` | Schlüsselpaar und Lizenzzustand dieses Servers (neue [Lizenzvergabe](../Lizenzvergabe/index.md)); nie weitergeben |
 
 Änderungen an der `.env` und an den Compose-Dateien wirken erst, wenn der betroffene Container neu gestartet wird.
 
@@ -123,5 +125,6 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 * [Installation](../Installation/index.md)
 * [Datensicherung-Docker](../Datensicherung-Docker/index.md)
 * [Https-Zertifikat](../Https-Zertifikat/index.md)
+* [Lizenzvergabe (Version 1.3)](../Lizenzvergabe/index.md)
 * [Container Struktur](../Docker/ContainerStruktur/index.md)
 * [Setup-Service (alte Beschreibung)](../Archiv/Setup-Service-alt/index.md)

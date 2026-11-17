@@ -13,6 +13,7 @@
 * [Verzeichnisse und Docker-Volumes](Docker/VerzeichnisseundDocker-Volumes/index.md)
 * [Container Struktur](Docker/ContainerStruktur/index.md)
 * [Setup-Service](Setup-Service/index.md)
+* [Lizenzvergabe (Version 1.3)](Lizenzvergabe/index.md)
 * [Datensicherung-Docker](Datensicherung-Docker/index.md)
 * [https-Zertifikat](/notimplemented/index.md)
 * [docker compose files](Docker/Dockercomposefiles/index.md)

@@ -55,6 +55,7 @@ startete und wieder das vorige läuft. **Hinweis ausblenden** quittiert ihn. Det
 | E-Mail | [E-Mail](../E-Mail/index.md) – SMTP-Einstellungen |
 | Update-Konfiguration | [Update-Konfiguration](../Update-Konfiguration/index.md) – Updates der Services |
 | Server-Token | [Server-Token](../Server-Token/index.md) – Tokens für fremde Server |
+| Lizenz-Umzug | [Lizenz-Umzug](../Lizenz-Umzug/index.md) – Transfer-Code für Hardware-Umzug oder Schulwechsel |
 | Plugins | [Plugins](../Plugins/index.md) – Plugin-Verwaltung |
 
 ### Menü Verwaltung
@@ -104,7 +105,7 @@ Der Tab zeigt nur Informationen, er hat keine Eingabefelder.
 | Servername | `SERVER_NAME` aus der `.env` – DNS-Name des Servers |
 | Serverinfo | `SERVER_INFO` aus der `.env` – freier Beschreibungstext |
 | HTTPS-REST-Ping (selbst) | **OK**, wenn der Server sich über seinen eigenen DNS-Namen per https erreicht; bei **FAIL** siehe [Https REST ping](../../HttpsRESTping/index.md) |
-| Lizenzserver | Erreichbarkeit des LeTTo-Lizenzservers (für Lizenzen und Restkey nötig) |
+| Lizenzserver | Erreichbarkeit des LeTTo-Lizenzservers (für Lizenzen und Restkey nötig); ein rotes **v2** nennt als Tooltip die Meldung der neuen [Lizenzvergabe](../../Lizenzvergabe/index.md) |
 | Festplatte (frei/gesamt) | freier und gesamter Platz des Docker-Verzeichnisses |
 | Java-Speicher (belegt/gesamt) | Speicher des Setup-Service |
 | CPU (aktuell/Mittel/CPUs) | CPU-Last jetzt und im Mittel, Anzahl CPUs; **Verlauf** öffnet den [System-Status](../System-Status/index.md) |

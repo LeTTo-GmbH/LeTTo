@@ -70,6 +70,13 @@ Die Vorlagen des Setup-Service in `/opt/letto/docker/proxy/templates`, z. B. `al
 | Bearbeiten | Vorlage im Editor ansehen oder ändern |
 | In den Proxy kopieren | kopiert die Vorlage nach einer Rückfrage in das Proxy-Verzeichnis; eine Datei gleichen Namens wird dabei überschrieben |
 
+### Neue Lizenzvergabe: Erreichbarkeitsnachweis
+
+Die Vorlage `config.conf` enthält seit Version 1.3 eine Regel, die `/.well-known/letto-license/` an das Setup weiterleitet. Der Lizenzserver
+prüft damit, dass der Server unter seinem Namen erreichbar ist (nötig für produktive Lizenzen, siehe [Lizenzvergabe](../../Lizenzvergabe/index.md)).
+Die Vorlagen erreichen den **laufenden** Proxy nicht von selbst: bei einer bestehenden Installation die Vorlage `config.conf` einmal mit
+**In den Proxy kopieren** übernehmen und den Proxy neu starten. Eigene Änderungen in der aktiven `config.conf` gehen dabei verloren, vorher sichern.
+
 ## siehe auch
 
 * [Https-Zertifikat](../../Https-Zertifikat/index.md)

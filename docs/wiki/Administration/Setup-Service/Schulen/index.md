@@ -13,6 +13,7 @@ dem LeTTo-Server `letto-server-<schule>` und dem Data-Service `letto-data-<schul
 | Schulname | Bezeichnung der Schule, Link auf die Schule (`https://<server>/letto<schule>`) |
 | Kürzel | Kurzbezeichnung der Schule, ebenfalls ein Link |
 | LIC | Lizenzstatus; z. B. `LICrestkey noLIC`, wenn Restkey oder Lizenz fehlen |
+| v2 | neue [Lizenzvergabe](../../Lizenzvergabe/index.md): grün = Token gültig, orange = Pflichtcheck versäumt, rot = gesperrt, abgelaufen oder ungültig; der Tooltip nennt Einzelheiten |
 | Datum (x/y) | Ablaufdatum der Lizenz – grün, orange (läuft in weniger als 20 Tagen ab) oder rot (abgelaufen) – und in Klammern die vergebenen/erlaubten Schülerlizenzen; **Keine Lizenz**, wenn die Schule keinen Lizenzcode hat |
 | Letto(Rev…) / Data(Rev…) | Revision, CPU- und Speicherauslastung der beiden Container; rot = nicht die aktuelle Revision (in Klammern die verfügbare) |
 

@@ -141,6 +141,8 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Live-Update](admin/global/Live-Update/index.md)
 * [Lizenz](admin/lizenzen)
 * [Lizenz-Key](admin/global/Lizenz-Key/index.md)
+* [Lizenz-Umzug (Setup-Service)](Administration/Setup-Service/Lizenz-Umzug/index.md)
+* [Lizenzvergabe (Version 1.3)](Administration/Lizenzvergabe/index.md)
 * [Login-Seite](admin/global/Login-Seite/index.md)
 * [Migration LeTTo zu Docker](Administration/MigrationLeTTozuDocker/index.md)
 * [MultiMeter](Plugins/MultiMeter/index.md)

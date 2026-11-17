@@ -14,4 +14,6 @@ Je nach Lizenz werden unter anderem folgende Bereiche angezeigt:
 - technische Lizenz- und Schlüsselangaben
 - Hash-/Sammlungsinformationen, sofern vorhanden
 
+Aus Sicherheitsgründen zeigt die Seite weder den Restkey noch die Passwörter der Beispielsammlungen; bei den Beispielsammlungen stehen nur der Name und die Benutzer mit Bearbeitungsrecht. Wie Lizenzen vergeben werden, steht unter [Lizenzvergabe](../../Administration/Lizenzvergabe/index.md).
+
 Die Daten werden nicht auf dieser Seite editiert. **Neu laden** liest den aktuellen Lizenzstand erneut vom Backend.
