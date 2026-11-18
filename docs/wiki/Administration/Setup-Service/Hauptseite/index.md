@@ -53,6 +53,7 @@ startete und wieder das vorige läuft. **Hinweis ausblenden** quittiert ihn. Det
 | Backup/Cronjob | [Datensicherung](../Datensicherung/index.md) – automatischer Datenbank-Dump und Lizenz-Update |
 | Allgemein | [Allgemeine Einstellungen](../Allgemeine-Einstellungen/index.md) – Standardsprache |
 | E-Mail | [E-Mail](../E-Mail/index.md) – SMTP-Einstellungen |
+| .env als Tabelle | [.env als Tabelle](../Env-Tabelle/index.md) – alle Variablen der `.env` mit Kommentar und Hilfetext |
 | Update-Konfiguration | [Update-Konfiguration](../Update-Konfiguration/index.md) – Updates der Services |
 | Server-Token | [Server-Token](../Server-Token/index.md) – Tokens für fremde Server |
 | Lizenz-Umzug | [Lizenz-Umzug](../Lizenz-Umzug/index.md) – Transfer-Code für Hardware-Umzug oder Schulwechsel |

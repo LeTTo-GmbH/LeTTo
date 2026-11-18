@@ -84,6 +84,7 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 | Konfiguration → Backup/Cronjob | [Datensicherung](Datensicherung/index.md) | automatisches Backup, Datenbank-Dumps |
 | Konfiguration → Allgemein | [Allgemeine Einstellungen](Allgemeine-Einstellungen/index.md) | Standardsprache |
 | Konfiguration → E-Mail | [E-Mail](E-Mail/index.md) | SMTP-Server, Test-Mail |
+| Konfiguration → .env als Tabelle | [.env als Tabelle](Env-Tabelle/index.md) | alle Variablen der `.env` mit Kommentar und Hilfetext, sortier- und filterbar, Variablen hinzufügen |
 | Konfiguration → Update-Konfiguration | [Update-Konfiguration](Update-Konfiguration/index.md) | Image-Tags, Updates aller Container, neue Services |
 | Konfiguration → Server-Token | [Server-Token](Server-Token/index.md) | Tokens für fremde Server |
 | Konfiguration → Lizenz-Umzug | [Lizenz-Umzug](Lizenz-Umzug/index.md) | Transfer-Code für Hardware-Umzug oder Schulwechsel erzeugen und einlösen |

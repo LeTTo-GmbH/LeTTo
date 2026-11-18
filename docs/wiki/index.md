@@ -72,6 +72,7 @@ Startseite: [Hauptseite](Hauptseite/index.md) · Die Seiten sind in Bereiche geg
 * [Einführung](Einstieg/Einführung/index.md)
 * [Eingabe von Resultaten in LeTTo](Schueler/EingabevonResultateninLeTTo/index.md)
 * [Einheit](Berechnungen/Einheit/index.md)
+* [.env als Tabelle (Setup-Service)](Administration/Setup-Service/Env-Tabelle/index.md)
 * [Einzelne Kompetenz zuweisen](Fragen/Dialoge/EinzelneKompetenzzuweisen/index.md)
 * [Elektronik](Fragen/Elektronik/index.md)
 * [Ergebniseingabe](Berechnungen/Ergebniseingabe/index.md)
