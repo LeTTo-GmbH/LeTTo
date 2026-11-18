@@ -6,9 +6,8 @@ LeTTo-Server prüft die Unterschrift selbst und braucht dafür keine Verbindung.
 Passwort verschlüsselter Text und ein „Restkey“) lässt sich im Gegensatz dazu nachbauen und wird nicht mehr zur
 Durchsetzung verwendet.
 
-> **Stand:** Die neue Lizenzvergabe läuft zurzeit am Testlizenzserver `t1.letto.at` (Entwicklungsrechner und Tests). Für
-> den Lizenzserver `license.letto.at` wird sie nach dem Praxistest freigeschaltet. Bis dahin arbeiten alle
-> Produktivserver unverändert mit der bisherigen Lizenz. Ältere Server (Version 1.2 und früher) funktionieren
+> **Stand:** Der Lizenzserver `license.letto.at` bedient die neue Lizenzvergabe bereits. Sie wird aktiv, sobald ein Server mit
+> dem neuen Setup-Service (Version 1.3) läuft. Bis dahin arbeiten Produktivserver unverändert mit der bisherigen Lizenz. Ältere Server (Version 1.2 und früher) funktionieren
 > weiterhin und werden vom Lizenzserver wie bisher bedient.
 
 ## Überblick
@@ -21,6 +20,8 @@ Durchsetzung verwendet.
 | Karenz | Wurde 14 Tage nicht geprüft, läuft alles **7 Tage** weiter, die Anzeige wird orange. Danach ist die Lizenz **gesperrt**: Schüler werden abgewiesen, Lehrer und Administratoren können weiter arbeiten. Sobald der Lizenzserver wieder erreichbar ist, gilt die Lizenz sofort wieder. |
 | Servername | Das Token gilt nur für den **Servernamen** (`SERVER_NAME` in der `.env`, mit `LETTO_PUBLIC_HOST` übersteuerbar). Bei einem anderen Namen ist es ungültig. Ein Namenswechsel braucht einen [Transfer-Code](../Setup-Service/Lizenz-Umzug/index.md). |
 | Erreichbarkeit | Für **produktive** Lizenzen muss der Server unter seinem Namen aus dem Internet erreichbar sein (siehe unten). Ausnahme: reine Intranetserver, die der Lizenzserver-Betreiber freigeschaltet hat. |
+| Identität einer Schule | Eindeutig ist auf einem Server das **Schulkürzel**. Es darf nie geändert werden und kommt je Server nur einmal vor. Der Lizenzserver erkennt die Schule daran und merkt es sich beim ersten Durchlauf. |
+| Lizenztyp | Der Betreiber des Lizenzservers stellt in der Lizenz über **Demolizenz** zwischen Demo und produktiv um. Jede Änderung erzeugt eine neue Lizenz, das Token kommt beim nächsten Durchlauf. |
 | Identität des Servers | Das Schlüsselpaar des Servers liegt in `/opt/letto/docker/storage/setup/lizenz` und ist Teil der Datensicherung von `/opt/letto/docker`. **Diese Dateien nie weitergeben oder in Dumps und Berichte kopieren.** |
 
 ## Anzeige im Setup-Service
