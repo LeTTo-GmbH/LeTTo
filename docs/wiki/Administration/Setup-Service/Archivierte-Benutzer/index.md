@@ -37,7 +37,8 @@ Bei ihnen fehlt der Button; ein Aufruf über den Data-Service wird abgewiesen.
 
 * **Zähler und Lizenz:** Archivierte Benutzer zählen nicht in den Schüler- und Lehrerzahlen der Schulverwaltung des Setup. Die Lizenzzählung ist eine
   Verbrauchszählung: wer im Lizenzzeitraum angemeldet war, bleibt bis zum Ende dieses Zeitraums mitgezählt.
-* **Technik:** Der Data-Service setzt in der Tabelle `user` das Feld `ARCHIVIERT` (Zeitpunkt) und zusätzlich `DISABLED=1`. Die Spalte legt er beim ersten
+* **Technik:** Der Data-Service setzt in der Tabelle `user` das Feld `ARCHIVIERT` (Zeitpunkt) und zusätzlich `DISABLED=1`; den bisherigen Wert von `DISABLED` merkt er sich in `ARCHIVIERT_DISABLED`.
+  Beim Wiederherstellen bekommt `DISABLED` diesen Wert zurück: ein Benutzer, der schon vorher deaktiviert war, bleibt deaktiviert. Die beiden Spalten legt er beim ersten
   Zugriff jeder Schule selbst an. Der **ältere LeTTo-Server** (Version 1.2 und früher) kennt `ARCHIVIERT` nicht: dort sperrt `DISABLED` die Anmeldung, in seinen Listen
   erscheint der Benutzer aber weiter.
 * **Namenskonflikt:** Soll ein neuer Benutzer den Login eines archivierten bekommen, zuerst den archivierten wiederherstellen oder dessen Login ändern.
