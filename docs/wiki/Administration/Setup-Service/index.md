@@ -92,6 +92,8 @@ Die früheren Buttons **Abbruch**, **OK** und **Refresh**/**neu Laden** gibt es 
 | Plugins → hinzufügen | [Plugin hinzufügen](Plugin-hinzufuegen/index.md) | neues Plugin aus Proxy- und Compose-Datei |
 | Verwaltung → Benutzer | [Benutzer](Benutzer/index.md) | angemeldete Benutzer, Benutzerdetails |
 | Benutzer → Benutzer suchen | [Benutzersuche](Benutzersuche/index.md) | Benutzer aller Schulen suchen, Statistik |
+| Benutzer → Neuer Benutzer | [Neuer Benutzer](Benutzer-anlegen/index.md) | Benutzer an einer Schule anlegen, Initialpasswort |
+| Benutzer → Archivierte Benutzer | [Archivierte Benutzer](Archivierte-Benutzer/index.md) | Benutzer archivieren und wiederherstellen (kein Löschen) |
 | Benutzer → LDAP/AD Login | [LDAP/AD](LDAP-AD/index.md) | Anmeldung über Active Directory/LDAP |
 | Verwaltung → Datenbanken | [Datenbanken](Datenbanken/index.md) | MySQL, Mongo, Redis, LTI, Schul-Datenbanken: Backup, Reparatur, Upgrade |
 | Verwaltung → Host | [Host](Host/index.md) | Betriebssystem, Ressourcen, Docker |
