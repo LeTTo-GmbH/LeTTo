@@ -62,7 +62,7 @@ neu berechnet, wenn sich die beteiligten Tabellen geändert haben. Der Stand lie
 |---|---|
 | Vorname, Nachname, Benutzername, Schulkürzel, User-ID | der Benutzer |
 | Abteilung, Klasse, Gruppe | Zuordnung in der Schule; Gruppe `S` = Schüler, `T` = Lehrer |
-| Aktion | **Benutzer** öffnet die [Benutzerdetails](../Benutzer/index.md#benutzerdetails) (nur für Benutzer, die sich schon angemeldet haben), **Statistik** die Benutzerstatistik, **Abmelden** meldet einen angemeldeten Benutzer ab, der rote Button **archiviert** den Benutzer nach einer Rückfrage (siehe [Archivierte Benutzer](../Archivierte-Benutzer/index.md); bei Administratoren fehlt er) |
+| Aktion | **Benutzer** öffnet die [Benutzerdetails](../Benutzer/index.md#benutzerdetails), **Statistik** die Benutzerstatistik, **Abmelden** meldet einen angemeldeten Benutzer ab, der rote Button **archiviert** den Benutzer nach einer Rückfrage (siehe [Archivierte Benutzer](../Archivierte-Benutzer/index.md); bei Administratoren fehlt er) |
 | Schuljahr, Letzter Login | Schuljahr der Klasse und letzte Anmeldung |
 | Sessions, S-SJ, S-Ausw. | Anmeldungen gesamt, im Schuljahr und im gewählten Zeitraum |
 | Noten, Tests, Beurteilungen | Anzahl der Noten, Tests und Beurteilungen |
