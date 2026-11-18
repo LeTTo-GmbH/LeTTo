@@ -50,14 +50,18 @@ Bevor der Lizenzserver für eine produktive Lizenz ein Token ausstellt, ruft er
 und Zufallswert. Damit ist bewiesen, dass unter diesem Namen genau dieser Server antwortet. Der Aufruf geht nur über
 HTTPS (Port 443), der Lizenzserver folgt keinen Weiterleitungen.
 
-Der **Proxy** muss diese Adresse an das Setup weiterleiten. Neue Installationen haben die Regel in der Vorlage
-`config.conf`. Bei **bestehenden Installationen** muss sie einmal übernommen werden:
+Der **Proxy** muss diese Adresse an das Setup weiterleiten. Das Setup erledigt das **selbst**: Beim Start (nach einem Update) prüft
+es die Datei `config.conf` des Proxys und setzt die Regel vor den bestehenden Inhalt, falls sie fehlt. Eigene Änderungen bleiben
+erhalten, die alte Datei wird als `config.conf.vor-lizenz-<Datum>` gesichert. Die neue Konfiguration wird mit `nginx -t` geprüft und
+ohne Neustart des Proxys geladen; ist sie ungültig, stellt das Setup die alte Datei wieder her. Mit `LETTO_LICENSE_V2=false` ist das aus.
+
+Nur wenn das Setup die Regel nicht setzen kann (z. B. Proxy-Konfiguration von Hand verändert), geht es manuell:
 
 1. Setup-Service → Services → **Proxy Konfiguration** → Abschnitt **Konfigurations-Vorlagen**.
 2. Vorlage `config.conf` mit **In den Proxy kopieren** übernehmen.
 3. Den Proxy neu starten (Services → `letto-proxy` → Restart).
 
-Ohne diesen Schritt bekommen produktive Lizenzen kein Token. Die Meldung am Lizenzserver lautet dann `NOT_REACHABLE`.
+Ohne die Regel bekommen produktive Lizenzen kein Token. Die Meldung am Lizenzserver lautet dann `NOT_REACHABLE`.
 Entwicklungsrechner und Intranetserver brauchen ihn nicht. Siehe auch [Proxy-Konfiguration](../Setup-Service/Proxy-Konfiguration/index.md).
 
 ## Server auf neue Hardware umziehen
