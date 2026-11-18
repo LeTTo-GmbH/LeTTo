@@ -27,7 +27,7 @@ wirken sofort.
 | Pfade erzeugen | nur sichtbar, wenn Verzeichnisse fehlen: legt `/opt/letto/docker` mit allen Unterverzeichnissen (`compose`, `proxy`, `storage` …) an |
 | STATUS | öffnet den [Docker-Status](../Docker-Status/index.md) mit allen Containern, Netzwerken und Volumes |
 | CHECK ALL LICENSES | holt für alle Schulen die Lizenz vom Lizenzserver und speichert sie in der `.env` und in den Schul-Datenbanken |
-| EDIT .env | öffnet die zentrale Konfiguration `/opt/letto/docker/compose/letto/.env` im [Datei-Editor](../Datei-Editor/index.md) |
+| EDIT .env | öffnet die zentrale Konfiguration `/opt/letto/docker/compose/letto/.env` als Tabelle mit Hilfetexten ([.env als Tabelle](../Env-Tabelle/index.md)); der Text der Datei ist dort über **Texteditor** im [Datei-Editor](../Datei-Editor/index.md) erreichbar |
 
 ## Container-Zeilen
 
