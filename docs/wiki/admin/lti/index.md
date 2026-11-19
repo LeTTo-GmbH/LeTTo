@@ -2,7 +2,7 @@
 
 Die Seite **LTI-Verwaltung** konfiguriert, wie Benutzer und Kurse/Klassen beim Zugriff über LTI automatisch in LeTTo angelegt und zugeordnet werden.
 
-![LTI-Konfiguration](LTI-config.png)
+![LTI-Verwaltung in der LeTTo-App](LTI-config.jpg)
 
 ## Schüler / Studierende
 

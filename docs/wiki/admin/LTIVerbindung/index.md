@@ -66,7 +66,12 @@ Schlägt ein Schritt fehl, hilft die Tabelle [Fehlersuche](#fehlersuche) am Ende
 | Datenschutz - Anwendernamen an Tool übergeben       | Immer                                                                                                                                                                      | Immer                                          |
 | Datenschutz - Email des Anwenders an Tool übergeben | Immer                                                                                                                                                                      | Immer                                          |
 | Datenschutz - Bewertungen aus dem Tool akzeptieren  | Immer                                                                                                                                                                      | Immer                                          |
-* Beispielhafte Konfiguration eines externen Tools am Moodle-Server: <br> ![img_3.png](img_3.png)<br>![img_4.png](img_4.png)
+* Beispielhafte Konfiguration des externen Tools am Moodle-Server (Test-Server t1):
+
+  ![Moodle: Konfiguration des externen Tools, Teil 1](lti-moodle-tool-1.jpg)
+
+  ![Moodle: Konfiguration des externen Tools, Teil 2 mit angepassten Parametern](lti-moodle-tool-2.jpg)
+
 * Die Adressen des LeTTo-Servers und der Public-Key kann aus der LeTTo-Konfigurationsseite übernommen werden.
 * Name und Email-Adresse müssen im Punkt "Privacy" mitgeschickt werden!
 * Nach dem Speichern zeigt Moodle beim Tool die **Tool-Konfigurationsdetails**: Plattform-ID, Client-ID, Deployment-ID, öffentliche Schlüsselgruppen-URL (= JWKS-Endpunkt),
