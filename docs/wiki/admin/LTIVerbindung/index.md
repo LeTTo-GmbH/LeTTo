@@ -121,4 +121,6 @@ Die Meldungen stehen im Browser (LTI-Fehlerseite) und im Log des Containers `let
 | „Geforderter Kurs konnte nicht gefunden werden“ | Der Schüler hat in LeTTo noch keinen Kurs zur Moodle-Kurs-ID: zuerst als Lehrer mit `kursname=_self` starten oder den Kurs mit dieser ID in LeTTo anlegen. |
 | „Laut LTI-Konfiguration …“ | Die Schul-Einstellung in der [LTI-Konfiguration](../lti/index.md) erlaubt das Anlegen oder Einschreiben nicht. |
 | „Falscher RestKey“ beim Ping oder Speichern der Plattform | Der RestKey im LTI-Service stimmt nicht mit dem des LeTTo-Servers überein: im LeTTo-Server unter LTI-Konfiguration „LTI-Verbindung initialisieren“. |
-| „Der Benutzer ist archiviert …“ | Der Benutzer wurde im Setup archiviert: Archivierung aufheben oder Login ändern. Ältere Stände des Data-Service zeigten stattdessen eine SQL-Meldung „Duplicate entry … for key 'user.Name'“. |
+| „Der Benutzer ist archiviert …“ | Der Benutzer wurde im Setup archiviert: Archivierung aufheben oder Login ändern. Ältere Stände des Data-Service zeigten stattdessen eine SQL-Meldung „Duplicate entry … for key 'user.Name'“. Meldung siehe Bild unten. |
+
+![Meldung beim LTI-Start eines archivierten Benutzers](lti-archiviert-meldung.jpg)
