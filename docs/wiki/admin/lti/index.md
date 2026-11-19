@@ -30,6 +30,16 @@ Diese Einstellung bestimmt, anhand welcher LTI-Information LeTTo einen Benutzer 
 
 Die Wahl sollte zur Benutzerverwaltung der angebundenen Lernplattform passen, damit bei wiederholten LTI-Aufrufen keine unerwünschten Doppelkonten entstehen.
 
+## Hinweise zum Verhalten
+
+- **Schüler brauchen einen vorhandenen Kurs:** „Benutzer automatisch anlegen“ und „In Kurs einschreiben“ wirken nur, wenn der Kurs in LeTTo schon existiert
+  (über die Moodle-Kurs-ID, die Klassen-ID oder einen Test gefunden). Den Kurs legt am einfachsten ein Vortragender an, der die Aktivität zuerst startet
+  (Option „Kurse / Klassen automatisch anlegen“).
+- **Neue Vortragende werden deaktiviert angelegt** und müssen von einem Administrator freigeschaltet werden, bevor die Anmeldung gelingt.
+- **Archivierte oder deaktivierte Benutzer** können sich über LTI nicht anmelden; es wird auch kein neuer Benutzer mit demselben Namen angelegt
+  (siehe [Archivierte Benutzer](../../Administration/Setup-Service/Archivierte-Benutzer/index.md)).
+- Der Parameter `school` (Schulkürzel) muss im externen Tool von Moodle gesetzt sein, siehe [LTI-Service](../LTIVerbindung/index.md#fehlersuche).
+
 ## Speichern und neu laden
 
 **Speichern** überträgt die aktuelle schulbezogene Konfiguration. **Neu laden** verwirft nicht gespeicherte Änderungen und liest die Daten erneut vom Backend. Kann die Konfiguration nicht vollständig geladen werden, zeigt die Seite einen Warnhinweis und verwendet zunächst Standardwerte.

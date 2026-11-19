@@ -68,7 +68,7 @@ Nach dem ersten Start des LTI-Services muss das LTI-Service noch mit LeTTo verbu
 | OIDC-Endpunkt, JWKS-Endpunkt, OAUTH2-Endpunkt | ergeben sich für Moodle aus der Moodle-Server-URL und sollte automatisch aus dieser korrekt gesetzt werden.                                                                        |
 | Deployment-ID                                 | Kommt vom Moodle Server und ist im Normalfall 1                                                                                                                                    |
 | Tool-KID-ID                                   | Ist eine ID die den LeTTo-Server beschreibt und wird aktuell noch nicht verwendet. Setze hier irgendeinen Wert ein.                                                                |
-| Plattform-KID                                 | Ist eine ID die den Moodle-Server beschreibt und wird aktuell noch nicht verwendet. Setze hier irgendeinen Wert ein.                                                               |
+| Plattform-KID                                 | Schlüssel-ID (`kid`) des Moodle-Servers aus `https://<moodle-server>/mod/lti/certs.php`. Der LTI-Service sucht damit den öffentlichen Schlüssel von Moodle, ein beliebiger Wert führt zu Fehler 500 beim Start. |
 
 * Nach der Konfiguration des LeTTo-Servers bitte die Daten **speichern**.
 *  Konfigurationsparameter am **externen Tool** von **Moodle**:
