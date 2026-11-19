@@ -88,8 +88,11 @@ Ruft ein Teilnehmer die Aktivität auf, zeigt Moodle die Seite **Go to LeTTo**. 
 
 ![Aktivität LeTTo in Moodle](lti-start-moodle.jpg)
 
-Nach dem Klick ist der Teilnehmer in der LeTTo-App angemeldet (links Name und Server). Enthält der Link einen Test, öffnet die App ihn gleich, ohne Test-Angabe
-meldet sie, dass kein Test gefunden wurde (`test_not_found`).
+Nach dem Klick ist der Teilnehmer in der LeTTo-App angemeldet (links Name und Server). Enthält die Aktivität den Parameter `kursname=test:<ID des Tests>`, öffnet die App den Test
+gleich (im Bild „Newton-Gesetze“ mit dem Button „Neuen Versuch starten“). Ohne Test-Angabe (zB. `kursname=_self`) meldet die App, dass kein Test gefunden wurde (`test_not_found`).
+
+**Wo stehen die Parameter?** `school` gilt für das ganze Tool (Einstellung des externen Tools). `kursname` gehört in die **Aktivität** (Feld „Angepasste Parameter“ der Aktivität),
+weil er je Aktivität verschieden ist. Steht `kursname` im Tool, überschreibt er die Angabe der Aktivität und alle Aktivitäten öffnen denselben Kurs statt des gewünschten Tests.
 
 ![LeTTo-App nach dem LTI-Login](lti-nach-login-app.jpg)
 
