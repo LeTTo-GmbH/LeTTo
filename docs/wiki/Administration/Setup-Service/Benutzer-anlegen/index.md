@@ -15,7 +15,8 @@ auf die Tabelle zu.
 | Schulkürzel | die Schule, an der der Benutzer angelegt wird |
 | Benutzername | der Login: Buchstaben, Ziffern und `.` `_` `-` `@` `+`, 2 bis 100 Zeichen, keine Leerzeichen. Er muss in der Schule noch **frei** sein |
 | Vorname, Nachname, E-Mail | optional; die E-Mail-Adresse wird auf ein gültiges Format geprüft |
-| Rolle | **genau eine** Rolle: Schüler oder Lehrer. Administratorrechte und weitere Eigenschaften lassen sich danach im [Benutzerdialog](../Benutzer/index.md#benutzerdetails) ändern |
+| Geschlecht | optional: männlich oder weiblich. Ohne Auswahl wird der Benutzer wie bisher als nicht männlich gespeichert |
+| Rolle | mindestens eine Rolle: **Schüler**, **Lehrer**, **Administrator** oder **globaler Administrator**. Lehrer, Administrator und globaler Administrator lassen sich kombinieren. **Schüler schließt die anderen Rollen aus**: Wird Lehrer, Administrator oder globaler Administrator angekreuzt, wird Schüler automatisch abgewählt (und umgekehrt). Weitere Eigenschaften lassen sich danach im [Benutzerdialog](../Benutzer/index.md#benutzerdetails) ändern |
 | Passwort | optional, mindestens 8 Zeichen. **Leer lassen** erzeugt ein zufälliges Initialpasswort |
 | Benutzer anlegen | legt den Benutzer an und setzt das Passwort |
 | Zurück | in der Kopfzeile: zurück zur Seite [Benutzer](../Benutzer/index.md) |
@@ -27,7 +28,7 @@ Nach dem Anlegen steht das **Initialpasswort einmal** auf der Seite. Es wird nir
 
 * **Login schon vergeben:** Ein vorhandener Benutzer wird nie überschrieben. Auch der Login eines **archivierten** Benutzers gilt als vergeben; die Meldung nennt
   dann den Grund. Zuerst die Archivierung aufheben ([Archivierte Benutzer](../Archivierte-Benutzer/index.md)) oder einen anderen Login wählen.
-* **Eingaben:** Fehlende Schule, ungültiger Login, ungültige E-Mail-Adresse, keine oder zwei Rollen und ein zu kurzes Passwort werden mit einer Meldung abgewiesen.
+* **Eingaben:** Fehlende Schule, ungültiger Login, ungültige E-Mail-Adresse, keine Rolle, Schüler zusammen mit einer anderen Rolle und ein zu kurzes Passwort werden mit einer Meldung abgewiesen.
 * **Data-Service nicht erreichbar:** Die Meldung nennt die Schule; es wird nichts angelegt.
 * **Passwort konnte nicht gesetzt werden:** Der Benutzer ist angelegt. Die Meldung weist darauf hin, im Benutzerdialog ein Passwort zu setzen.
 
